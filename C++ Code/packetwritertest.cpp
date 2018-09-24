@@ -71,10 +71,3 @@ int main(void)
 
 return 0;
 }
-
-int signedCharToHex(char value)
-{
-
-
-  return value;
-}
