@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: plutotransmitter
-# Generated: Tue Oct  2 15:10:25 2018
+# Generated: Tue Oct  2 15:15:33 2018
 ##################################################
 
 
@@ -27,7 +27,7 @@ class plutotransmitter(gr.top_block):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.freq = freq = 2400000000
+        self.freq = freq = 1280000000
 
         ##################################################
         # Blocks

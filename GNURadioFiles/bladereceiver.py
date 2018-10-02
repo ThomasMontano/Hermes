@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: bladereceiver
-# Generated: Mon Oct  1 19:41:49 2018
+# Generated: Tue Oct  2 15:15:23 2018
 ##################################################
 
 
@@ -45,7 +45,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.freq = freq = 2400000000
+        self.freq = freq = 1280000000
 
         ##################################################
         # Blocks
@@ -67,7 +67,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         )
         self.Add(self.wxgui_fftsink2_0.win)
         self.osmosdr_source_0 = osmosdr.source( args="numchan=" + str(1) + " " + '' )
-        self.osmosdr_source_0.set_sample_rate(200000)
+        self.osmosdr_source_0.set_sample_rate(3000000)
         self.osmosdr_source_0.set_center_freq(freq, 0)
         self.osmosdr_source_0.set_freq_corr(0, 0)
         self.osmosdr_source_0.set_dc_offset_mode(2, 0)
@@ -90,7 +90,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         	log=False,
         )
         self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/thomas/Documents/esft/transmittedpacket', False)
-        self.blocks_file_sink_0.set_unbuffered(False)
+        self.blocks_file_sink_0.set_unbuffered(True)
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
         		access_code='',
         		threshold=-1,
