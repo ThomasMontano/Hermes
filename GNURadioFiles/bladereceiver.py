@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: bladereceiver
-# Generated: Tue Oct  2 15:15:23 2018
+# Generated: Wed Oct  3 11:22:59 2018
 ##################################################
 
 
@@ -45,7 +45,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.freq = freq = 1280000000
+        self.freq = freq = 2400000000
 
         ##################################################
         # Blocks
