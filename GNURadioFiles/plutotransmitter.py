@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: plutotransmitter
-# Generated: Wed Oct  3 14:02:09 2018
+# Generated: Wed Oct  3 14:21:41 2018
 ##################################################
 
 
@@ -32,7 +32,7 @@ class plutotransmitter(gr.top_block):
         ##################################################
         # Blocks
         ##################################################
-        self.pluto_sink_0 = iio.pluto_sink('', freq, 200000, 200000, 0x8000, False, 10.0, '', True)
+        self.pluto_sink_0 = iio.pluto_sink('', freq, 100000000, 200000, 0x8000, False, 10.0, '', True)
         self.digital_gfsk_mod_0 = digital.gfsk_mod(
         	samples_per_symbol=2,
         	sensitivity=1.0,
@@ -69,7 +69,7 @@ class plutotransmitter(gr.top_block):
 
     def set_freq(self, freq):
         self.freq = freq
-        self.pluto_sink_0.set_params(self.freq, 200000, 200000, 10.0, '', True)
+        self.pluto_sink_0.set_params(self.freq, 100000000, 200000, 10.0, '', True)
 
 
 def main(top_block_cls=plutotransmitter, options=None):
