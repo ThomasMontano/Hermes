@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: bladereceiver
-# Generated: Wed Oct  3 14:01:25 2018
+# Generated: Wed Oct  3 14:04:36 2018
 ##################################################
 
 
@@ -77,7 +77,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         self.osmosdr_source_0.set_if_gain(20, 0)
         self.osmosdr_source_0.set_bb_gain(20, 0)
         self.osmosdr_source_0.set_antenna('', 0)
-        self.osmosdr_source_0.set_bandwidth(4e6, 0)
+        self.osmosdr_source_0.set_bandwidth(200000, 0)
 
         self.digital_gfsk_demod_0 = digital.gfsk_demod(
         	samples_per_symbol=2,
