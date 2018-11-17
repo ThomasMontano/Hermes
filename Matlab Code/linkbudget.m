@@ -1,5 +1,6 @@
 %TITLE: Link Budget Calculator
-%AUTHORS: Austin Macosky, Thomas Montano
+%AUTHOR: Austin Macosky
+%ACKNOWLEDGMENTS: Dr. Julio Cesar Benavides
 
 clear;
 %clears the variable workspace
@@ -11,59 +12,66 @@ format Compact;
 format LongG;
 %formats the output of the command window
 
-%% Link Budget Calculator Inputs
+%% Ground Station Parameters
 
-Transmitter_Power = 2;
+Ground_Station_Transmitter_Power = 25;
+%[Watts] Sets the transmitter power of the ground station transmitter
+
+Ground_Station_Antenna_Gain = 10;
+%[dBi] Sets the ground station antenna gain
+
+Ground_Station_Temperature = 300;
+%[Kelvin] Sets the tempertaure of the ground station receiver
+
+%% Satellite Parameters
+
+Satellite_Transmitter_Power = 5;
 %[Watts] Sets the transmitter power
 
-Transmitter_Gain = 6;
+Satellite_Antenna_Gain = 0.5;
 %[dBi] Sets the transmitter antenna gain
 
-Receiver_Gain = 24;
-%[dBi] Sets the reciever antenna gain
+Satellite_Temperature = 300;
+%[Kelvin] sets the temperature of the satellite receiver
+%% Link Parameters
 
-Distance = 100000;
+Distance = 50;
 %[meters] Defines the distance between the transmitter and the receiver
 
-Frequency = 2400*10^6;
-%[Hz] Defines the communication center frequency in Megahertz
+Frequency = 440*10^6;
+%[Hz] Defines the communication center frequency in Hertz
 
-Receiver_Temperature = 300;
-%[Kelvin] Defines the temperature of the receiver
-
-Receiver_Noise_Figure = 1.5;
-%Defines the receiver noise figure (usually provided in radio
-%documentation)
-
-Receiver_Bandwidth = 100*10^3;
+Bandwidth = 10*10^3;
 %[Hz] Defines the receiver bandwidth 
-%% Conversions and Intermediate Calculations
+%% Link Budget Calculations
 
-Linear_Transmitter_Gain = 10^(Transmitter_Gain/10);
-Linear_Receiver_Gain = 10^(Receiver_Gain/10);
-%converts the logarithmic gains into their equivalent linear
-%representations
+Logarithmic_Ground_Station_Transmitter_Power = 10*log10(Ground_Station_Transmitter_Power);
+Logarithmic_Satellite_Transmitter_Power = 10*log10(Satellite_Transmitter_Power);
+%converts the transmitter powers in watts to logarithmic units
+
+Ground_Station_Noise_Figure = Ground_Station_Antenna_Gain/Ground_Station_Temperature;
+Satellite_Noise_Figure = Satellite_Antenna_Gain/Satellite_Temperature;
+%calculates the noise figures of the satellite and the ground station
+
+k = 10*log10(1.38e-23);
+%converts the linear boltzmann constant to logarithmic units
 
 C = 299792458;
-%defines the speed of light in [m/s]
 Wavelength = C/Frequency;
-%Calculates the exact wavelength of the signal at the specified frequency
+%calculates the wavelength of the carrier frequency
 
-Transmitter_Power_dBm = 10*log10(Transmitter_Power*1000);
-%converts the transmitter power in watts to dBm
+Rb = 10*log10(Bandwidth);
+%converts the bandwidth into logarithmic units
 
-Received_Power_Watts = (Transmitter_Power*Linear_Transmitter_Gain*Linear_Receiver_Gain)/(((4*pi*Distance)/Wavelength)^2)
-%[Watts] Uses the Friis equation to calculate received power
-
-Received_Power_dBm = Transmitter_Power_dBm + Transmitter_Gain + Receiver_Gain + 20*log10(Wavelength/(4*pi*Distance))
-%[dBm] converts the received poower in watts to dBm
-
-Noise_Floor_dBm = 10*log10(1.38*10^-23*Receiver_Temperature*1000)+Receiver_Noise_Figure + 10*log10(Receiver_Bandwidth)
-%[dBm] Calculates the theoretical noise floor of the receiver
-
-Noise_Floor_Watts = 10^(Noise_Floor_dBm/10);
-%[Watts] converts the calculated noise floor of the receiver into watts
-
-Theoretical_SNR = Received_Power_Watts/Noise_Floor_Watts
-%[Unitless] calculates the theoretical best-case-scenario signal to noise
-%ratio at the given parameters
+        C_No_Ground_Station_to_Satellite = Logarithmic_Ground_Station_Transmitter_Power + Ground_Station_Antenna_Gain + Satellite_Noise_Figure - k - 20 * log10(4 * pi * Distance / Wavelength)
+        %[dB]Signal to noise ratio of a signal sent from the ground station to the satellite.
+        
+        C_No_Satellite_to_Ground_Station = Logarithmic_Satellite_Transmitter_Power + Satellite_Antenna_Gain + Ground_Station_Noise_Figure - k - 20 * log10(4 * pi * Distance / Wavelength)
+        %[dB]Signal to noise ratio of a signal sent from the satellite to the ground station.
+        
+        EbNoGsSat = C_No_Ground_Station_to_Satellite - Rb
+        %[dB]Bit energy per noise density of a signal sent from the ground station to the satellite.
+        
+        EbNoSatGs = C_No_Satellite_to_Ground_Station - Rb
+        %[dB]Bit energy per noise density of a signal sent from the satellite to the ground station.
+        
