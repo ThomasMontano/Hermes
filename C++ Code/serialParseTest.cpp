@@ -12,7 +12,7 @@ struct packet
   int time = 0;
   int altitude = 0;
   float temperature = 0.0;
-  short int pressure = 0;
+  int pressure = 0;
   float latitude = 0;
   float longitude = 0;
   float batteryVoltage = 0;
@@ -34,15 +34,19 @@ int main()
 
   dataPacket = parseSerial(fd, dataPacket);
 
-  cout << dataPacket.time << endl;
-  cout << dataPacket.temperature << endl;
-  cout << dataPacket.altitude << endl;
+  cout << "Time: " << dataPacket.time << endl;
+  cout << "Altitude: " << dataPacket.altitude << endl;
+  cout << "Temperature: " << dataPacket.temperature << endl;
+  cout << "Pressure: " << dataPacket.pressure << endl;
+  cout << "Latitude: " << dataPacket.latitude << endl;
+  cout << "Longitude: " << dataPacket.longitude << endl;
+  cout << "Battery Voltage: " << dataPacket.batteryVoltage << endl;
 
 }
 
 string getBuffer(int fd)
 {
-	return "6,0,16.56,0,0,0,0";
+	return "6717,0,16.56,12,13.6,0,0";
 }
 
 struct packet parseSerial(int fd, struct packet dataPacket)
@@ -50,25 +54,21 @@ struct packet parseSerial(int fd, struct packet dataPacket)
   struct packet parsedPacket;
   string serialBuffer = getBuffer(fd);
 
-  for(int nextElement = 0; nextElement < 7; ++ nextElement)
-  {
+  cout << "Original Serial Buffer: " << serialBuffer << endl;
 
-    switch(nextElement)
-    {
-      case 0:
-        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.time);
-        if(serialBuffer.find(parsedPacket.time + ","))
-          serialBuffer = serialBuffer.substr(0,(parsedPacket.time + ",")length())
-      break;
-      case 1:
-        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.altitude);
-      break;
-      case 2:
-        sscanf(serialBuffer.c_str(), "%f,", &parsedPacket.temperature);
-      break;
-    }
+        sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.time);
 
-  }
+        sscanf(serialBuffer.c_str(), "%*d,%d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.altitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%f,%*d,%*f,%*f,%*f", &parsedPacket.temperature);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%d,%*f,%*f,%*f", &parsedPacket.pressure);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%f,%*f,%*f", &parsedPacket.latitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%f,%*f", &parsedPacket.longitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%*f,%f", &parsedPacket.batteryVoltage);
 
   return parsedPacket;
 }

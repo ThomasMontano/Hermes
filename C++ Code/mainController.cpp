@@ -28,7 +28,7 @@ struct packet
 string getBuffer(int fd);
 
 //Function to parse serial data and return a structure
-struct packet parseSerial(int fd, struct packet dataPacket);
+struct packet parseSerial(int fd);
 
 int main()
 {
@@ -76,7 +76,7 @@ int main()
   {
 
   //Read in the serial buffer from the Arduino
-  serialBuffer = getBuffer(fd);
+  dataPacket = parseSerial(fd);
 
   //If the serial buffer is not empty
   if(serialBuffer.length()>1)
@@ -136,28 +136,26 @@ string getBuffer(int fd)
 	return dataString;
 }
 
-struct packet parseSerial(int fd, struct packet dataPacket)
+struct packet parseSerial(int fd)
 {
   struct packet parsedPacket;
   string serialBuffer = getBuffer(fd);
 
-  for(int nextElement = 0; nextElement < 7; ++ nextElement)
-  {
+  cout << "Original Serial Buffer: " << serialBuffer << endl;
 
-    switch(nextElement)
-    {
-      case 0:
-        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.time);
-      break;
-      case 1:
-        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.altitude);
-      break;
-      case 2:
-        sscanf(serialBuffer.c_str(), "%f,", &parsedPacket.temperature);
-      break;
-    }
+        sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.time);
 
-  }
+        sscanf(serialBuffer.c_str(), "%*d,%d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.altitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%f,%*d,%*f,%*f,%*f", &parsedPacket.temperature);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%d,%*f,%*f,%*f", &parsedPacket.pressure);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%f,%*f,%*f", &parsedPacket.latitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%f,%*f", &parsedPacket.longitude);
+
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%*f,%f", &parsedPacket.batteryVoltage);
 
   return parsedPacket;
 }
