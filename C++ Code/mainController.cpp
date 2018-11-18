@@ -81,8 +81,6 @@ int main()
   //If the serial buffer is not empty
   if(serialBuffer.length()>1)
   {
-    //Print for debugging purposes
-    cout << "Serial Buffer: " << serialBuffer << endl;
 
     //Seperate CSV string and populate struct values
     dataPacket.time = time(NULL);
@@ -140,8 +138,6 @@ struct packet parseSerial(int fd)
 {
   struct packet parsedPacket;
   string serialBuffer = getBuffer(fd);
-
-  cout << "Original Serial Buffer: " << serialBuffer << endl;
 
         sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.time);
 
