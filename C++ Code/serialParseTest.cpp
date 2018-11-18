@@ -10,7 +10,8 @@ using namespace std;
 struct packet
 {
 
-  int time = 0;
+  const unsigned char header = 0xaa;
+  int time = 6701;
   int altitude = 0;
   float temperature = 0.0;
   int pressure = 0;
@@ -49,8 +50,9 @@ int main()
   //Open binary packet file
   packet.open("packet", ios::binary | ios::out);
 
+  packet.write((char*)&dataPacket.header,1);
   packet.write((char*)&dataPacket.time, 2);
-  packet.write((char*)&dataPacket.altitude, 3);
+  packet.write((char*)&dataPacket.altitude, 4);
   packet.write((char*)&dataPacket.temperature, 4);
   packet.write((char*)&dataPacket.pressure, 1);
   packet.write((char*)&dataPacket.latitude, 4);
@@ -63,7 +65,7 @@ int main()
 
 string getBuffer(int fd)
 {
-	return "6717,107341,16.56,12,13.6,127.34,7.1";
+	return "107341,16.56,12,13.6,127.34,7.1";
 }
 
 void parseSerial(int fd, struct packet *dataPacket)
@@ -71,18 +73,18 @@ void parseSerial(int fd, struct packet *dataPacket)
 
   string serialBuffer = getBuffer(fd);
 
-        sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &dataPacket->time);
+  //%*d,%*f,%*d,%*f,%*f,%*f
 
-        sscanf(serialBuffer.c_str(), "%*d,%d,%*f,%*d,%*f,%*f,%*f", &dataPacket->altitude);
+        sscanf(serialBuffer.c_str(), "%d,%*f,%*d,%*f,%*f,%*f", &dataPacket->altitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%f,%*d,%*f,%*f,%*f", &dataPacket->temperature);
+        sscanf(serialBuffer.c_str(), "%*d,%f,%*d,%*f,%*f,%*f", &dataPacket->temperature);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%d,%*f,%*f,%*f", &dataPacket->pressure);
+        sscanf(serialBuffer.c_str(), "%*d,%*f,%d,%*f,%*f,%*f", &dataPacket->pressure);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%f,%*f,%*f", &dataPacket->latitude);
+        sscanf(serialBuffer.c_str(), "%*d,%*f,%*d,%f,%*f,%*f", &dataPacket->latitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%f,%*f", &dataPacket->longitude);
+        sscanf(serialBuffer.c_str(), "%*d,%*f,%*d,%*f,%f,%*f", &dataPacket->longitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%*f,%f", &dataPacket->batteryVoltage);
+        sscanf(serialBuffer.c_str(), "%*d,%*f,%*d,%*f,%*f,%f", &dataPacket->batteryVoltage);
 
 }
