@@ -94,13 +94,13 @@ int main()
     packet.open("./datafiles/packet", ios::binary | ios::out);
 
     //Write the packet as a binary stream
-    packet.write((char*)&dataPacket.time, sizeof(dataPacket.time));
-    packet.write((char*)&dataPacket.altitude, sizeof(dataPacket.altitude));
-    packet.write((char*)&dataPacket.temperature, sizeof(dataPacket.temperature));
-    packet.write((char*)&dataPacket.pressure, sizeof(dataPacket.pressure));
-    packet.write((char*)&dataPacket.latitude, sizeof(dataPacket.latitude));
-    packet.write((char*)&dataPacket.longitude, sizeof(dataPacket.longitude));
-    packet.write((char*)&dataPacket.batteryVoltage, sizeof(dataPacket.batteryVoltage));
+    packet.write((char*)&dataPacket.time, 2);
+    packet.write((char*)&dataPacket.altitude, 3);
+    packet.write((char*)&dataPacket.temperature, 4);
+    packet.write((char*)&dataPacket.pressure, 1);
+    packet.write((char*)&dataPacket.latitude, 4);
+    packet.write((char*)&dataPacket.longitude, 4);
+    packet.write((char*)&dataPacket.batteryVoltage, 4);
 
     packet.close();
 

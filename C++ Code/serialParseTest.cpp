@@ -50,7 +50,14 @@ int main()
   packet.open("packet", ios::binary | ios::out);
 
   packet.write((char*)&dataPacket.time, 2);
+  packet.write((char*)&dataPacket.altitude, 3);
   packet.write((char*)&dataPacket.temperature, 4);
+  packet.write((char*)&dataPacket.pressure, 1);
+  packet.write((char*)&dataPacket.latitude, 4);
+  packet.write((char*)&dataPacket.longitude, 4);
+  packet.write((char*)&dataPacket.batteryVoltage, 4);
+
+  packet.close();
 
 }
 
