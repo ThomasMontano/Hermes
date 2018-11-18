@@ -11,3 +11,6 @@ GNURadioFiles:
 
 Documentation:
   All the documentation for the project including packet plans and "How-To's"
+  
+Matlab Code:
+  Matlab scripts for running project characteristics calculations
