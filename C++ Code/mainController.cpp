@@ -17,7 +17,7 @@ struct packet
   int time = 0;
   float temperature = 0.0;
   int altitude = 0;
-  short int pressure = 0;
+  int pressure = 0;
   float latitude = 0;
   float longitude = 0;
   float batteryVoltage = 0;
@@ -28,7 +28,7 @@ struct packet
 string getBuffer(int fd);
 
 //Function to parse serial data and return a structure
-struct packet parseSerial(int fd);
+void parseSerial(int fd, struct packet *dataPacket);
 
 int main()
 {
@@ -76,7 +76,7 @@ int main()
   {
 
   //Read in the serial buffer from the Arduino
-  dataPacket = parseSerial(fd);
+  dataPacket = parseSerial(fd, &dataPacket);
 
   //If the serial buffer is not empty
   if(serialBuffer.length()>1)
@@ -134,24 +134,23 @@ string getBuffer(int fd)
 	return dataString;
 }
 
-struct packet parseSerial(int fd)
+void parseSerial(int fd, struct packet *dataPacket)
 {
-  struct packet parsedPacket;
+
   string serialBuffer = getBuffer(fd);
 
-        sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.time);
+        sscanf(serialBuffer.c_str(), "%d,%*d,%*f,%*d,%*f,%*f,%*f", &dataPacket->time);
 
-        sscanf(serialBuffer.c_str(), "%*d,%d,%*f,%*d,%*f,%*f,%*f", &parsedPacket.altitude);
+        sscanf(serialBuffer.c_str(), "%*d,%d,%*f,%*d,%*f,%*f,%*f", &dataPacket->altitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%f,%*d,%*f,%*f,%*f", &parsedPacket.temperature);
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%f,%*d,%*f,%*f,%*f", &dataPacket->temperature);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%d,%*f,%*f,%*f", &parsedPacket.pressure);
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%d,%*f,%*f,%*f", &dataPacket->pressure);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%f,%*f,%*f", &parsedPacket.latitude);
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%f,%*f,%*f", &dataPacket->latitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%f,%*f", &parsedPacket.longitude);
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%f,%*f", &dataPacket->longitude);
 
-        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%*f,%f", &parsedPacket.batteryVoltage);
+        sscanf(serialBuffer.c_str(), "%*d,%*d,%*f,%*d,%*f,%*f,%f", &dataPacket->batteryVoltage);
 
-  return parsedPacket;
 }
