@@ -10,8 +10,6 @@
 
 using namespace std;
 
-string getBuffer(int fd);
-
 //Main data packet structure that holds data elements for a packet
 struct packet
 {
@@ -26,27 +24,33 @@ struct packet
 
 };
 
+//Function to retrieve the csv string in the Arduino serial port
+string getBuffer(int fd);
+
+//Function to parse serial data and return a structure
+struct packet parseSerial(int fd, struct packet dataPacket);
+
 int main()
 {
 
   string serialBuffer; //String to hold arduino serial output
   int fd; //File descriptor for serial port
 
-  //Set the system clock to 0 seconds. Time logged is now seconds since startup
-  system("sudo date -s '1970-01-01 00:00:00'");
-
   //Binary packet write file
   ofstream packet;
-
-  //CSV data logging file
-  ofstream dataFile("recordedData.csv", ios_base::app);
 
   //Struct to record individual data elements
   struct packet dataPacket;
 
+  //CSV data logging file
+  ofstream dataFile("recordedData.csv", ios_base::app);
+
   //Headers for the CSV file
   dataFile << "Time(s),Altitude(m),Temperature(C),Pressure(hPa),Latitude,Longitude,Battery Voltage" << endl;
 
+  dataFile.close();
+
+  //Record the file descriptor for the serial port
   fd = open("/dev/ttymxc3", O_RDWR | O_NONBLOCK | O_NDELAY);
 
   //Serial port configuration
@@ -62,6 +66,10 @@ int main()
 
   //Wait to ensure configuration has been applied
   usleep(1000000);
+
+  //Set the system clock to 0 seconds.
+  //Time logged is now seconds since startup
+  system("sudo date -s '1970-01-01 00:00:00'");
 
   //While payload is powered on
   while(1)
@@ -84,12 +92,8 @@ int main()
 	  cout << "Time: " << dataPacket.time << endl;
 	  cout << "Temperature: " << dataPacket.temperature << endl << endl;
 
-    //Open packet file
+    //Open binary packet file
     packet.open("./datafiles/packet", ios::binary | ios::out);
-
-	  //Write the data to the CSV file
-	  dataFile << dataPacket.time << "," << dataPacket.altitude << "," << dataPacket.temperature << "," << dataPacket.pressure
-    << "," << dataPacket.latitude << "," << dataPacket.longitude << "," << dataPacket.batteryVoltage << endl;
 
     //Write the packet as a binary stream
     packet.write((char*)&dataPacket.time, sizeof(dataPacket.time));
@@ -101,6 +105,15 @@ int main()
     packet.write((char*)&dataPacket.batteryVoltage, sizeof(dataPacket.batteryVoltage));
 
     packet.close();
+
+    //Open CSV file and append the new data to the end
+    dataFile.open("recordedData.csv", ios_base::app);
+
+    //Write the data to the CSV file
+    dataFile << dataPacket.time << "," << dataPacket.altitude << "," << dataPacket.temperature << "," << dataPacket.pressure
+    << "," << dataPacket.latitude << "," << dataPacket.longitude << "," << dataPacket.batteryVoltage << endl;
+
+    dataFile.close();
 
   }
 
@@ -121,4 +134,30 @@ string getBuffer(int fd)
 		string dataString(buffer);
 
 	return dataString;
+}
+
+struct packet parseSerial(int fd, struct packet dataPacket)
+{
+  struct packet parsedPacket;
+  string serialBuffer = getBuffer(fd);
+
+  for(int nextElement = 0; nextElement < 7; ++ nextElement)
+  {
+
+    switch(nextElement)
+    {
+      case 0:
+        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.time);
+      break;
+      case 1:
+        sscanf(serialBuffer.c_str(), "%d,", &parsedPacket.altitude);
+      break;
+      case 2:
+        sscanf(serialBuffer.c_str(), "%f,", &parsedPacket.temperature);
+      break;
+    }
+
+  }
+
+  return parsedPacket;
 }
