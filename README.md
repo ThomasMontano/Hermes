@@ -14,3 +14,6 @@ Documentation:
   
 Matlab Code:
   Matlab scripts for running project characteristics calculations
+
+Flight Data:
+  Raw CSV files containing flight data
