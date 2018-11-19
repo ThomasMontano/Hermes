@@ -30,7 +30,7 @@ struct packet
 string getBuffer(int fd);
 
 //Function to parse serial data and return a structure
-void parseSerial(int fd, struct packet *dataPacket);
+string parseSerial(int fd, struct packet *dataPacket);
 
 int main()
 {
