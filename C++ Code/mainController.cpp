@@ -78,7 +78,7 @@ int main()
   {
 
   //Read in the serial buffer from the Arduino
-  dataPacket = parseSerial(fd, &dataPacket);
+  serialBuffer = parseSerial(fd, &dataPacket);
 
   //If the serial buffer is not empty
   if(serialBuffer.length()>1)
@@ -132,7 +132,7 @@ string getBuffer(int fd)
 	return dataString;
 }
 
-void parseSerial(int fd, struct packet *dataPacket)
+string parseSerial(int fd, struct packet *dataPacket)
 {
 
   string serialBuffer = getBuffer(fd);
@@ -150,5 +150,7 @@ void parseSerial(int fd, struct packet *dataPacket)
         sscanf(serialBuffer.c_str(), "%*d,%*f,%*d,%*f,%f,%*f", &dataPacket->longitude);
 
         sscanf(serialBuffer.c_str(), "%*d,%*f,%*d,%*f,%*f,%f", &dataPacket->batteryVoltage);
+
+        return serialBuffer;
 
 }
