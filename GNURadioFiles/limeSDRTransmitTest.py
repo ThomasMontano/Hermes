@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Limesdrtransmittest
-# Generated: Sun Feb  3 16:19:26 2019
+# Generated: Sun Feb  3 16:20:56 2019
 ##################################################
 
 
@@ -50,7 +50,7 @@ class limeSDRTransmitTest(gr.top_block):
         	verbose=False,
         	log=False,
         )
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '', True)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, './packet', True)
         self.blks2_packet_encoder_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
         		samples_per_symbol=2,
         		bits_per_symbol=1,
