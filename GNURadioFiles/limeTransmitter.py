@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Limetransmitter
-# Generated: Sun Feb  3 16:36:56 2019
+# Generated: Sun Feb  3 16:42:45 2019
 ##################################################
 
 
@@ -50,7 +50,7 @@ class limeTransmitter(gr.top_block):
         	verbose=False,
         	log=False,
         )
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/eaglesat/Hermes/GNURadioFiles/packet', True)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/alarm/packet', True)
         self.blks2_packet_encoder_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
         		samples_per_symbol=2,
         		bits_per_symbol=1,
