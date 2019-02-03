@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: bladereceiver
-# Generated: Fri Nov  9 17:14:47 2018
+# Generated: Sun Feb  3 16:08:50 2019
 ##################################################
 
 
@@ -17,6 +17,8 @@ if __name__ == '__main__':
         except:
             print "Warning: failed to XInitThreads()"
 
+from gnuradio import blocks
+from gnuradio import digital
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio import wxgui
@@ -24,6 +26,7 @@ from gnuradio.eng_option import eng_option
 from gnuradio.fft import window
 from gnuradio.filter import firdes
 from gnuradio.wxgui import fftsink2
+from grc_gnuradio import blks2 as grc_blks2
 from grc_gnuradio import wxgui as grc_wxgui
 from optparse import OptionParser
 import osmosdr
@@ -42,7 +45,7 @@ class bladereceiver(grc_wxgui.top_block_gui):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 2e6
-        self.freq = freq = 1200e6
+        self.freq = freq = 2400e6
 
         ##################################################
         # Blocks
@@ -76,10 +79,31 @@ class bladereceiver(grc_wxgui.top_block_gui):
         self.osmosdr_source_1.set_antenna('', 0)
         self.osmosdr_source_1.set_bandwidth(5000000, 0)
 
+        self.digital_gfsk_demod_0 = digital.gfsk_demod(
+        	samples_per_symbol=2,
+        	sensitivity=1.0,
+        	gain_mu=0.175,
+        	mu=0.5,
+        	omega_relative_limit=0.005,
+        	freq_error=0.0,
+        	verbose=False,
+        	log=False,
+        )
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/thomas/Documents/ASCEND/dataout.txt', False)
+        self.blocks_file_sink_0.set_unbuffered(False)
+        self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
+        		access_code='',
+        		threshold=-1,
+        		callback=lambda ok, payload: self.blks2_packet_decoder_0.recv_pkt(ok, payload),
+        	),
+        )
 
         ##################################################
         # Connections
         ##################################################
+        self.connect((self.blks2_packet_decoder_0, 0), (self.blocks_file_sink_0, 0))
+        self.connect((self.digital_gfsk_demod_0, 0), (self.blks2_packet_decoder_0, 0))
+        self.connect((self.osmosdr_source_1, 0), (self.digital_gfsk_demod_0, 0))
         self.connect((self.osmosdr_source_1, 0), (self.wxgui_fftsink2_0, 0))
 
     def get_samp_rate(self):
