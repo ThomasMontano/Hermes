@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##################################################
 # GNU Radio Python Flow Graph
-# Title: bladereceiver
-# Generated: Sun Feb  3 16:19:57 2019
+# Title: limeReceiver
+# Generated: Sun Feb  3 16:37:07 2019
 ##################################################
 
 
@@ -37,7 +37,7 @@ import wx
 class bladereceiver(grc_wxgui.top_block_gui):
 
     def __init__(self):
-        grc_wxgui.top_block_gui.__init__(self, title="bladereceiver")
+        grc_wxgui.top_block_gui.__init__(self, title="limeReceiver")
         _icon_path = "/usr/share/icons/hicolor/32x32/apps/gnuradio-grc.png"
         self.SetIcon(wx.Icon(_icon_path, wx.BITMAP_TYPE_ANY))
 
@@ -89,8 +89,8 @@ class bladereceiver(grc_wxgui.top_block_gui):
         	verbose=False,
         	log=False,
         )
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/thomas/Documents/ASCEND/dataout.txt', False)
-        self.blocks_file_sink_0.set_unbuffered(False)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/alarm/dataout.txt', True)
+        self.blocks_file_sink_0.set_unbuffered(True)
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
         		access_code='',
         		threshold=-1,

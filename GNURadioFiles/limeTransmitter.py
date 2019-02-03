@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##################################################
 # GNU Radio Python Flow Graph
-# Title: Limesdrtransmittest
-# Generated: Sun Feb  3 16:34:35 2019
+# Title: Limetransmitter
+# Generated: Sun Feb  3 16:36:56 2019
 ##################################################
 
 
@@ -19,10 +19,10 @@ import osmosdr
 import time
 
 
-class limeSDRTransmitTest(gr.top_block):
+class limeTransmitter(gr.top_block):
 
     def __init__(self):
-        gr.top_block.__init__(self, "Limesdrtransmittest")
+        gr.top_block.__init__(self, "Limetransmitter")
 
         ##################################################
         # Variables
@@ -83,7 +83,7 @@ class limeSDRTransmitTest(gr.top_block):
         self.osmosdr_sink_0.set_center_freq(self.freq, 0)
 
 
-def main(top_block_cls=limeSDRTransmitTest, options=None):
+def main(top_block_cls=limeTransmitter, options=None):
 
     tb = top_block_cls()
     tb.start()
