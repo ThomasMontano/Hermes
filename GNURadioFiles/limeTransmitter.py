@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Limetransmitter
-# Generated: Sun Feb  3 16:42:45 2019
+# Generated: Sun Feb  3 18:05:26 2019
 ##################################################
 
 
@@ -27,8 +27,8 @@ class limeTransmitter(gr.top_block):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 2e6
-        self.freq = freq = 2400e6
+        self.samp_rate = samp_rate = 5e5
+        self.freq = freq = 2350e6
 
         ##################################################
         # Blocks
@@ -40,23 +40,23 @@ class limeTransmitter(gr.top_block):
         self.osmosdr_sink_0.set_gain(30, 0)
         self.osmosdr_sink_0.set_if_gain(20, 0)
         self.osmosdr_sink_0.set_bb_gain(20, 0)
-        self.osmosdr_sink_0.set_antenna('BAND2', 0)
+        self.osmosdr_sink_0.set_antenna('BAND1', 0)
         self.osmosdr_sink_0.set_bandwidth(5000000, 0)
 
         self.digital_gfsk_mod_0 = digital.gfsk_mod(
-        	samples_per_symbol=2,
+        	samples_per_symbol=8,
         	sensitivity=1.0,
-        	bt=0.35,
-        	verbose=False,
+        	bt=0.5,
+        	verbose=True,
         	log=False,
         )
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/alarm/packet', True)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/eaglesat/Hermes/GNURadioFiles/packet.txt', True)
         self.blks2_packet_encoder_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
-        		samples_per_symbol=2,
-        		bits_per_symbol=1,
+        		samples_per_symbol=10,
+        		bits_per_symbol=8,
         		preamble='',
         		access_code='',
-        		pad_for_usrp=True,
+        		pad_for_usrp=False,
         	),
         	payload_length=0,
         )

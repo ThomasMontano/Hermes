@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: limeReceiver
-# Generated: Sun Feb  3 16:40:49 2019
+# Generated: Sun Feb  3 17:30:27 2019
 ##################################################
 
 
@@ -45,7 +45,7 @@ class limeReceiver(grc_wxgui.top_block_gui):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 2e6
-        self.freq = freq = 2400e6
+        self.freq = freq = 144.35e6
 
         ##################################################
         # Blocks
@@ -76,7 +76,7 @@ class limeReceiver(grc_wxgui.top_block_gui):
         self.osmosdr_source_1.set_gain(10, 0)
         self.osmosdr_source_1.set_if_gain(20, 0)
         self.osmosdr_source_1.set_bb_gain(20, 0)
-        self.osmosdr_source_1.set_antenna('', 0)
+        self.osmosdr_source_1.set_antenna('LNAW', 0)
         self.osmosdr_source_1.set_bandwidth(5000000, 0)
 
         self.digital_gfsk_demod_0 = digital.gfsk_demod(
@@ -89,7 +89,7 @@ class limeReceiver(grc_wxgui.top_block_gui):
         	verbose=False,
         	log=False,
         )
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/alarm/dataout.txt', True)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/eaglesat/dataout.txt', True)
         self.blocks_file_sink_0.set_unbuffered(True)
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
         		access_code='',
