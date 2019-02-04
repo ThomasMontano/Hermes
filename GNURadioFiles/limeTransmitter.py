@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Limetransmitter
-# Generated: Sun Feb  3 19:20:59 2019
+# Generated: Sun Feb  3 19:55:08 2019
 ##################################################
 
 
@@ -27,7 +27,7 @@ class limeTransmitter(gr.top_block):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 5e5
+        self.samp_rate = samp_rate = 1e6
         self.freq = freq = 2350e6
 
         ##################################################
@@ -43,31 +43,30 @@ class limeTransmitter(gr.top_block):
         self.osmosdr_sink_0.set_antenna('BAND1', 0)
         self.osmosdr_sink_0.set_bandwidth(5000000, 0)
 
-        self.digital_gmsk_mod_0 = digital.gmsk_mod(
-        	samples_per_symbol=2,
+        self.digital_gfsk_mod_0 = digital.gfsk_mod(
+        	samples_per_symbol=4,
+        	sensitivity=1.0,
         	bt=0.35,
         	verbose=False,
         	log=False,
         )
-        self.blocks_multiply_const_vxx_0 = blocks.multiply_const_vcc((1, ))
         self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/eaglesat/Hermes/GNURadioFiles/packet.txt', True)
         self.blks2_packet_encoder_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
-        		samples_per_symbol=3,
+        		samples_per_symbol=4,
         		bits_per_symbol=1,
         		preamble='',
         		access_code='',
         		pad_for_usrp=False,
         	),
-        	payload_length=0,
+        	payload_length=16,
         )
 
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blks2_packet_encoder_0, 0), (self.digital_gmsk_mod_0, 0))
+        self.connect((self.blks2_packet_encoder_0, 0), (self.digital_gfsk_mod_0, 0))
         self.connect((self.blocks_file_source_0, 0), (self.blks2_packet_encoder_0, 0))
-        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.osmosdr_sink_0, 0))
-        self.connect((self.digital_gmsk_mod_0, 0), (self.blocks_multiply_const_vxx_0, 0))
+        self.connect((self.digital_gfsk_mod_0, 0), (self.osmosdr_sink_0, 0))
 
     def get_samp_rate(self):
         return self.samp_rate

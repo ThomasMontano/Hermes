@@ -132,7 +132,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>5e5</value>
+      <value>1e6</value>
     </param>
   </block>
   <block>
@@ -191,7 +191,7 @@
     </param>
     <param>
       <key>payload_length</key>
-      <value>0</value>
+      <value>16</value>
     </param>
     <param>
       <key>preamble</key>
@@ -199,7 +199,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>3</value>
+      <value>4</value>
     </param>
   </block>
   <block>
@@ -258,58 +258,7 @@
     </param>
   </block>
   <block>
-    <key>blocks_multiply_const_vxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>const</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(848, 284)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_const_vxx_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>digital_gmsk_mod</key>
+    <key>digital_gfsk_mod</key>
     <param>
       <key>bt</key>
       <value>0.35</value>
@@ -332,7 +281,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(648, 276)</value>
+      <value>(640, 268)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -340,7 +289,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>digital_gmsk_mod_0</value>
+      <value>digital_gfsk_mod_0</value>
     </param>
     <param>
       <key>log</key>
@@ -356,7 +305,11 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>2</value>
+      <value>4</value>
+    </param>
+    <param>
+      <key>sensitivity</key>
+      <value>1.0</value>
     </param>
     <param>
       <key>verbose</key>
@@ -1283,7 +1236,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1040, 220)</value>
+      <value>(944, 220)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1380,7 +1333,7 @@
   </block>
   <connection>
     <source_block_id>blks2_packet_encoder_0</source_block_id>
-    <sink_block_id>digital_gmsk_mod_0</sink_block_id>
+    <sink_block_id>digital_gfsk_mod_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1391,14 +1344,8 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_multiply_const_vxx_0</source_block_id>
+    <source_block_id>digital_gfsk_mod_0</source_block_id>
     <sink_block_id>osmosdr_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_gmsk_mod_0</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
