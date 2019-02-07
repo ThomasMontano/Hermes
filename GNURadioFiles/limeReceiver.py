@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: limeReceiver
-# Generated: Sun Feb  3 19:55:06 2019
+# Generated: Wed Feb  6 19:31:24 2019
 ##################################################
 
 
@@ -44,7 +44,7 @@ class limeReceiver(grc_wxgui.top_block_gui):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 1e6
+        self.samp_rate = samp_rate = 2e6
         self.freq = freq = 2350e6
 
         ##################################################
