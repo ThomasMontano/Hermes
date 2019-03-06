@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Limetransmitter
-# Generated: Tue Feb  5 21:29:41 2019
+# Generated: Tue Mar  5 17:01:34 2019
 ##################################################
 
 from distutils.version import StrictVersion
@@ -71,7 +71,7 @@ class limeTransmitter(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.limesdr_sink_0 = limesdr.sink('1D424C05F07E81',
+        self.limesdr_sink_0 = limesdr.sink('1D424BDA12AF19',
         		       1,
         		       1,
         		       0,

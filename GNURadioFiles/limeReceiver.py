@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: limeReceiver
-# Generated: Wed Feb  6 19:31:24 2019
+# Generated: Tue Feb  5 21:29:22 2019
 ##################################################
 
 
@@ -29,8 +29,7 @@ from gnuradio.wxgui import fftsink2
 from grc_gnuradio import blks2 as grc_blks2
 from grc_gnuradio import wxgui as grc_wxgui
 from optparse import OptionParser
-import osmosdr
-import time
+import limesdr
 import wx
 
 
@@ -66,31 +65,48 @@ class limeReceiver(grc_wxgui.top_block_gui):
         	peak_hold=True,
         )
         self.Add(self.wxgui_fftsink2_0.win)
-        self.osmosdr_source_1 = osmosdr.source( args="numchan=" + str(1) + " " + 'soapy=0,driver=lime' )
-        self.osmosdr_source_1.set_sample_rate(samp_rate)
-        self.osmosdr_source_1.set_center_freq(freq, 0)
-        self.osmosdr_source_1.set_freq_corr(0, 0)
-        self.osmosdr_source_1.set_dc_offset_mode(2, 0)
-        self.osmosdr_source_1.set_iq_balance_mode(0, 0)
-        self.osmosdr_source_1.set_gain_mode(False, 0)
-        self.osmosdr_source_1.set_gain(10, 0)
-        self.osmosdr_source_1.set_if_gain(20, 0)
-        self.osmosdr_source_1.set_bb_gain(20, 0)
-        self.osmosdr_source_1.set_antenna('LNAW', 0)
-        self.osmosdr_source_1.set_bandwidth(5000000, 0)
-
+        self.limesdr_source_0 = limesdr.source('1D424BDA12AF19',
+        			 1,
+        			 1,
+        			 0,
+        			 0,
+        			 '',
+        			 freq,
+        			 samp_rate,
+        			 0,
+        			 0,
+        			 10e6,
+        			 0,
+        			 10e6,
+        			 3,
+        			 2,
+        			 2,
+        			 1,
+        			 5e6,
+        			 1,
+        			 5e6,
+        			 0,
+        			 0,
+        			 0,
+        			 0,
+        			 60,
+        			 30,
+        			 0,
+        			 0,
+        			 0,
+        			 0)
         self.digital_gfsk_demod_0 = digital.gfsk_demod(
         	samples_per_symbol=4,
-        	sensitivity=1.0,
-        	gain_mu=0.175,
-        	mu=0.5,
-        	omega_relative_limit=0.005,
+        	sensitivity=1.012,
+        	gain_mu=0,
+        	mu=0,
+        	omega_relative_limit=0,
         	freq_error=0.0,
         	verbose=False,
         	log=False,
         )
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/thomas/Documents/Hermes/GNURadioFiles/packet.txt', False)
-        self.blocks_file_sink_0.set_unbuffered(True)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/eaglesat/dataout.txt', False)
+        self.blocks_file_sink_0.set_unbuffered(False)
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
         		access_code='',
         		threshold=-1,
@@ -103,8 +119,8 @@ class limeReceiver(grc_wxgui.top_block_gui):
         ##################################################
         self.connect((self.blks2_packet_decoder_0, 0), (self.blocks_file_sink_0, 0))
         self.connect((self.digital_gfsk_demod_0, 0), (self.blks2_packet_decoder_0, 0))
-        self.connect((self.osmosdr_source_1, 0), (self.digital_gfsk_demod_0, 0))
-        self.connect((self.osmosdr_source_1, 0), (self.wxgui_fftsink2_0, 0))
+        self.connect((self.limesdr_source_0, 0), (self.digital_gfsk_demod_0, 0))
+        self.connect((self.limesdr_source_0, 0), (self.wxgui_fftsink2_0, 0))
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -112,7 +128,6 @@ class limeReceiver(grc_wxgui.top_block_gui):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.wxgui_fftsink2_0.set_sample_rate(self.samp_rate)
-        self.osmosdr_source_1.set_sample_rate(self.samp_rate)
 
     def get_freq(self):
         return self.freq
@@ -120,7 +135,7 @@ class limeReceiver(grc_wxgui.top_block_gui):
     def set_freq(self, freq):
         self.freq = freq
         self.wxgui_fftsink2_0.set_baseband_freq(self.freq)
-        self.osmosdr_source_1.set_center_freq(self.freq, 0)
+        self.limesdr_source_0.set_rf_freq(self.freq)
 
 
 def main(top_block_cls=limeReceiver, options=None):
