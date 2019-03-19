@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1annotator__alltoall" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::annotator_alltoall</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="annotator__alltoall_8h" local="no">annotator_alltoall.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1annotator__alltoall_1ab706ca60c854de3bdc8f5a99799fa7e2" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1annotator__alltoall" kindref="compound">annotator_alltoall</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;annotator_alltoall&gt; gr::blocks::annotator_alltoall::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1annotator__alltoall_1a0f40d691858cf916dde3e045987bf93a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1annotator__alltoall_1ab706ca60c854de3bdc8f5a99799fa7e2" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::annotator_alltoall::make</definition>
+        <argsstring>(int when, size_t sizeof_stream_item)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>when</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1annotator__alltoall_1a0339bf6c703382114f182edad98d9419" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; tag_t &gt;</type>
+        <definition>virtual std::vector&lt;tag_t&gt; gr::blocks::annotator_alltoall::data</definition>
+        <argsstring>() const =0</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All-to-all stream annotator testing block. FOR TESTING PURPOSES ONLY. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block creates tags to be sent downstream every 10,000 items it sees. The tags contain the name and ID of the instantiated block, use &quot;seq&quot; as a key, and have a counter that increments by 1 for every tag produced that is used as the tag&apos;s value. The tags are propagated using the all-to-all policy.</para><para>It also stores a copy of all tags it sees flow past it. These tags can be recalled externally with the <ref refid="classgr_1_1blocks_1_1annotator__alltoall_1a0339bf6c703382114f182edad98d9419" kindref="member">data()</ref> member.</para><para>This block is only meant for testing and showing how to use the tags. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="97">
+        <label>sync_block</label>
+      </node>
+      <node id="96">
+        <label>gr::blocks::annotator_alltoall</label>
+        <link refid="classgr_1_1blocks_1_1annotator__alltoall"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="99">
+        <label>sync_block</label>
+      </node>
+      <node id="98">
+        <label>gr::blocks::annotator_alltoall</label>
+        <link refid="classgr_1_1blocks_1_1annotator__alltoall"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_alltoall.h" bodystart="49" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1annotator__alltoall_1a0339bf6c703382114f182edad98d9419" prot="public" virt="pure-virtual"><scope>gr::blocks::annotator_alltoall</scope><name>data</name></member>
+      <member refid="classgr_1_1blocks_1_1annotator__alltoall_1a0f40d691858cf916dde3e045987bf93a" prot="public" virt="non-virtual"><scope>gr::blocks::annotator_alltoall</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1annotator__alltoall_1ab706ca60c854de3bdc8f5a99799fa7e2" prot="public" virt="non-virtual"><scope>gr::blocks::annotator_alltoall</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

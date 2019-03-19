@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1endian__swap" kind="class" prot="public">
+    <compoundname>gr::blocks::endian_swap</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="endian__swap_8h" local="no">endian_swap.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1endian__swap_1adff5c78330234774d3d36e5e6b768fc7" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1endian__swap" kindref="compound">endian_swap</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;endian_swap&gt; gr::blocks::endian_swap::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/endian_swap.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/endian_swap.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1endian__swap_1a1e6529ead9f8682b24d7d8437f6d3069" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1endian__swap_1adff5c78330234774d3d36e5e6b768fc7" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::endian_swap::make</definition>
+        <argsstring>(size_t item_size_bytes=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>item_size_bytes</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make an endian swap block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item_size_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes per item, 1=no-op, 2=uint16_t, 4=uint32_t, 8=uint64_t </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/endian_swap.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert stream of items into their byte swapped version. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="232">
+        <label>sync_block</label>
+      </node>
+      <node id="231">
+        <label>gr::blocks::endian_swap</label>
+        <link refid="classgr_1_1blocks_1_1endian__swap"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="234">
+        <label>sync_block</label>
+      </node>
+      <node id="233">
+        <label>gr::blocks::endian_swap</label>
+        <link refid="classgr_1_1blocks_1_1endian__swap"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/endian_swap.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/endian_swap.h" bodystart="36" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1endian__swap_1a1e6529ead9f8682b24d7d8437f6d3069" prot="public" virt="non-virtual"><scope>gr::blocks::endian_swap</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1endian__swap_1adff5c78330234774d3d36e5e6b768fc7" prot="public" virt="non-virtual"><scope>gr::blocks::endian_swap</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

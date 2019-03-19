@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="fft__filter_8h" kind="file">
+    <compoundname>fft_filter.h</compoundname>
+    <includes refid="gr-filter_2include_2gnuradio_2filter_2api_8h" local="no">gnuradio/filter/api.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="gr__complex_8h" local="no">gnuradio/gr_complex.h</includes>
+    <includes refid="fft_8h" local="no">gnuradio/fft/fft.h</includes>
+    <includedby refid="polyphase__filterbank_8h" local="no">polyphase_filterbank.h</includedby>
+    <incdepgraph>
+      <node id="11710">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="11716">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="11714">
+        <label>gnuradio/fft/fft.h</label>
+        <link refid="fft_8h"/>
+        <childnode refid="11715" relation="include">
+        </childnode>
+        <childnode refid="11712" relation="include">
+        </childnode>
+        <childnode refid="11716" relation="include">
+        </childnode>
+      </node>
+      <node id="11711">
+        <label>vector</label>
+      </node>
+      <node id="11715">
+        <label>gnuradio/fft/api.h</label>
+        <link refid="gr-fft_2include_2gnuradio_2fft_2api_8h"/>
+        <childnode refid="11710" relation="include">
+        </childnode>
+      </node>
+      <node id="11709">
+        <label>gnuradio/filter/api.h</label>
+        <link refid="gr-filter_2include_2gnuradio_2filter_2api_8h"/>
+        <childnode refid="11710" relation="include">
+        </childnode>
+      </node>
+      <node id="11708">
+        <label>fft_filter.h</label>
+        <link refid="fft_filter.h"/>
+        <childnode refid="11709" relation="include">
+        </childnode>
+        <childnode refid="11711" relation="include">
+        </childnode>
+        <childnode refid="11712" relation="include">
+        </childnode>
+        <childnode refid="11714" relation="include">
+        </childnode>
+      </node>
+      <node id="11712">
+        <label>gnuradio/gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="11713" relation="include">
+        </childnode>
+      </node>
+      <node id="11713">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11718">
+        <label>polyphase_filterbank.h</label>
+        <link refid="polyphase__filterbank_8h"/>
+      </node>
+      <node id="11717">
+        <label>fft_filter.h</label>
+        <link refid="fft_filter.h"/>
+        <childnode refid="11718" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1filter_1_1kernel_1_1fft__filter__fff" prot="public">gr::filter::kernel::fft_filter_fff</innerclass>
+    <innerclass refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccc" prot="public">gr::filter::kernel::fft_filter_ccc</innerclass>
+    <innerclass refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf" prot="public">gr::filter::kernel::fft_filter_ccf</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1filter">gr::filter</innernamespace>
+    <innernamespace refid="namespacegr_1_1filter_1_1kernel">gr::filter::kernel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1message__strobe__random" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::message_strobe_random</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="message__strobe__random_8h" local="no">message_strobe_random.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1message__strobe__random_1a98e902de7ec7f3772b1bee9921d1ab9f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1message__strobe__random" kindref="compound">message_strobe_random</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;message_strobe_random&gt; gr::blocks::message_strobe_random::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="56" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1ad6891de3e32e38734dd3785edfb404e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__strobe__random_1a98e902de7ec7f3772b1bee9921d1ab9f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_strobe_random::make</definition>
+        <argsstring>(pmt::pmt_t msg, message_strobe_random_distribution_t dist, float mean_ms, float std_ms)</argsstring>
+        <name>make</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1blocks_1a490c2cae201320eaa480f5ec66bf376f" kindref="member">message_strobe_random_distribution_t</ref></type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>mean_ms</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>std_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a message stobe block to sends message <computeroutput>msg</computeroutput> at random intervals defined by the distribution <computeroutput>dist</computeroutput> with mean <computeroutput>mean_ms</computeroutput> and standard deviation <computeroutput>std_ms</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send as a PMT. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The random distribution from which to draw events. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mean_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mean of the distribution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standard deviation of the distribution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a0ff74a298e0cf409dabe63b14b99adba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::message_strobe_random::set_msg</definition>
+        <argsstring>(pmt::pmt_t msg)=0</argsstring>
+        <name>set_msg</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the message being sent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send as a PMT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a47905700f470730a23158c17b931b5d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>pmt::pmt_t</type>
+        <definition>virtual pmt::pmt_t gr::blocks::message_strobe_random::msg</definition>
+        <argsstring>() const =0</argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of the message being sent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a03e9ff3fee4153c259418fc51f7a77ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::message_strobe_random::set_dist</definition>
+        <argsstring>(message_strobe_random_distribution_t dist)=0</argsstring>
+        <name>set_dist</name>
+        <param>
+          <type><ref refid="namespacegr_1_1blocks_1a490c2cae201320eaa480f5ec66bf376f" kindref="member">message_strobe_random_distribution_t</ref></type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new distribution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1aa10c6a56f444fa1ba1d8434140be3c9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacegr_1_1blocks_1a490c2cae201320eaa480f5ec66bf376f" kindref="member">message_strobe_random_distribution_t</ref></type>
+        <definition>virtual message_strobe_random_distribution_t gr::blocks::message_strobe_random::dist</definition>
+        <argsstring>() const =0</argsstring>
+        <name>dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the current distribution. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a8d620e016c071695cfdfe7100538d356" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::message_strobe_random::set_mean</definition>
+        <argsstring>(float mean)=0</argsstring>
+        <name>set_mean</name>
+        <param>
+          <type>float</type>
+          <declname>mean</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the sending interval. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay in milliseconds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a8d36830440eb54c30ff53a7e6edd754a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::message_strobe_random::mean</definition>
+        <argsstring>() const =0</argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the time interval of the strobe_random. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a49b867cc19d1a877094d395f8ff94e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::message_strobe_random::set_std</definition>
+        <argsstring>(float std)=0</argsstring>
+        <name>set_std</name>
+        <param>
+          <type>float</type>
+          <declname>std</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the sending interval. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay in milliseconds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__strobe__random_1a1ebba96a71084ad407335791677f6066" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::message_strobe_random::std</definition>
+        <argsstring>() const =0</argsstring>
+        <name>std</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the std of strobe_random. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="111" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Send message at defined interval. </para>    </briefdescription>
+    <detaileddescription>
+<para>Takes a PMT message and sends it out every at random intervals. The interval is basedon a random distribution, <computeroutput>dist</computeroutput>, with specified mean (<computeroutput>mean_ms</computeroutput>) and variance (<computeroutput>std_ms</computeroutput>). Useful for testing/debugging the message system. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="376">
+        <label>gr::blocks::message_strobe_random</label>
+        <link refid="classgr_1_1blocks_1_1message__strobe__random"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="378">
+        <label>gr::blocks::message_strobe_random</label>
+        <link refid="classgr_1_1blocks_1_1message__strobe__random"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_strobe_random.h" bodystart="52" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1aa10c6a56f444fa1ba1d8434140be3c9f" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>dist</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1ad6891de3e32e38734dd3785edfb404e0" prot="public" virt="non-virtual"><scope>gr::blocks::message_strobe_random</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a8d36830440eb54c30ff53a7e6edd754a" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>mean</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a47905700f470730a23158c17b931b5d9" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>msg</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a03e9ff3fee4153c259418fc51f7a77ba" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>set_dist</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a8d620e016c071695cfdfe7100538d356" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>set_mean</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a0ff74a298e0cf409dabe63b14b99adba" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>set_msg</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a49b867cc19d1a877094d395f8ff94e7d" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>set_std</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a98e902de7ec7f3772b1bee9921d1ab9f" prot="public" virt="non-virtual"><scope>gr::blocks::message_strobe_random</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1message__strobe__random_1a1ebba96a71084ad407335791677f6066" prot="public" virt="pure-virtual"><scope>gr::blocks::message_strobe_random</scope><name>std</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

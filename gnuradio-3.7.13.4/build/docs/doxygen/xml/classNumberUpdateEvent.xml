@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classNumberUpdateEvent" kind="class" prot="public">
+    <compoundname>NumberUpdateEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QEvent</basecompoundref>
+    <includes refid="spectrumUpdateEvents_8h" local="no">gnuradio/qtgui/spectrumUpdateEvents.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNumberUpdateEvent_1a75a27072787249ee20f06c29e25e05a5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t NumberUpdateEvent::_nplots</definition>
+        <argsstring></argsstring>
+        <name>_nplots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="378" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNumberUpdateEvent_1a29b5dad908632f9d87328c3e4beb59ed" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; NumberUpdateEvent::_samples</definition>
+        <argsstring></argsstring>
+        <name>_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="379" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNumberUpdateEvent_1aac58afc9e76f526fb348deb3792c764a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NumberUpdateEvent::NumberUpdateEvent</definition>
+        <argsstring>(const std::vector&lt; float &gt; samples)</argsstring>
+        <name>NumberUpdateEvent</name>
+        <param>
+          <type>const std::vector&lt; float &gt;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classNumberUpdateEvent_1af60b64c80cd06705a3209cc1428e9ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NumberUpdateEvent::~NumberUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~NumberUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classNumberUpdateEvent_1a91b1d04d1c0cc8ec1289a62c0036ac32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NumberUpdateEvent::which</definition>
+        <argsstring>() const </argsstring>
+        <name>which</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="369" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classNumberUpdateEvent_1aea92acd307bde1ed317fe1d322eed977" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; float &gt;</type>
+        <definition>const std::vector&lt;float&gt; NumberUpdateEvent::getSamples</definition>
+        <argsstring>() const </argsstring>
+        <name>getSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="370" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classNumberUpdateEvent_1a7748a08084eb55af3b06c6793b3c0457" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QEvent::Type</type>
+        <definition>static QEvent::Type NumberUpdateEvent::Type</definition>
+        <argsstring>()</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="372" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="372" bodyend="373"/>
+        <references refid="spectrumUpdateEvents_8h_1abae995316b74a1f7a2b9d456566576db" compoundref="spectrumUpdateEvents_8h" startline="35">SpectrumUpdateEventType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7653">
+        <label>QEvent</label>
+      </node>
+      <node id="7652">
+        <label>NumberUpdateEvent</label>
+        <link refid="classNumberUpdateEvent"/>
+        <childnode refid="7653" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7655">
+        <label>QEvent</label>
+      </node>
+      <node id="7654">
+        <label>NumberUpdateEvent</label>
+        <link refid="classNumberUpdateEvent"/>
+        <childnode refid="7655" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="364" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="363" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classNumberUpdateEvent_1a75a27072787249ee20f06c29e25e05a5" prot="private" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>_nplots</name></member>
+      <member refid="classNumberUpdateEvent_1a29b5dad908632f9d87328c3e4beb59ed" prot="private" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>_samples</name></member>
+      <member refid="classNumberUpdateEvent_1aea92acd307bde1ed317fe1d322eed977" prot="public" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>getSamples</name></member>
+      <member refid="classNumberUpdateEvent_1aac58afc9e76f526fb348deb3792c764a" prot="public" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>NumberUpdateEvent</name></member>
+      <member refid="classNumberUpdateEvent_1a7748a08084eb55af3b06c6793b3c0457" prot="public" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>Type</name></member>
+      <member refid="classNumberUpdateEvent_1a91b1d04d1c0cc8ec1289a62c0036ac32" prot="public" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>which</name></member>
+      <member refid="classNumberUpdateEvent_1af60b64c80cd06705a3209cc1428e9ced" prot="public" virt="non-virtual"><scope>NumberUpdateEvent</scope><name>~NumberUpdateEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

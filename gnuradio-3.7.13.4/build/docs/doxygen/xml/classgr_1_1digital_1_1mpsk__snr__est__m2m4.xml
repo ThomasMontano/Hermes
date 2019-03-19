@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1mpsk__snr__est__m2m4" kind="class" prot="public">
+    <compoundname>gr::digital::mpsk_snr_est_m2m4</compoundname>
+    <basecompoundref refid="classgr_1_1digital_1_1mpsk__snr__est" prot="public" virt="non-virtual">gr::digital::mpsk_snr_est</basecompoundref>
+    <includes refid="mpsk__snr__est_8h" local="no">gnuradio/digital/mpsk_snr_est.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a78eb3f791b8927143ec3d92c7f1628aa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::digital::mpsk_snr_est_m2m4::d_y1</definition>
+        <argsstring></argsstring>
+        <name>d_y1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="180" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a6f1d4717b6189b831ace717d55ffc1de" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::digital::mpsk_snr_est_m2m4::d_y2</definition>
+        <argsstring></argsstring>
+        <name>d_y2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="180" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a910150b990c9be68200c57a7463fc34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::mpsk_snr_est_m2m4::mpsk_snr_est_m2m4</definition>
+        <argsstring>(double alpha)</argsstring>
+        <name>mpsk_snr_est_m2m4</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para><para>Parameters: <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the update rate of internal running average calculations. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1acb8b026a2a20a135248fe00755d3502c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::mpsk_snr_est_m2m4::~mpsk_snr_est_m2m4</definition>
+        <argsstring>()</argsstring>
+        <name>~mpsk_snr_est_m2m4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="190" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1aa5a3c15aa820fdf77dc509f4ac77d631" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gr::digital::mpsk_snr_est_m2m4::update</definition>
+        <argsstring>(int noutput_items, const gr_complex *input)</argsstring>
+        <name>update</name>
+        <reimplements refid="classgr_1_1digital_1_1mpsk__snr__est_1ad75ed30973d99d6e0f59793371ec9ab7">update</reimplements>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Update the current registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a16d5d4698022a824b37dffb7c0535309" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double gr::digital::mpsk_snr_est_m2m4::snr</definition>
+        <argsstring>()</argsstring>
+        <name>snr</name>
+        <reimplements refid="classgr_1_1digital_1_1mpsk__snr__est_1ae7794f68fb9d8421bcd3942e15f59b1c">snr</reimplements>
+        <briefdescription>
+<para>Use the register values to compute a new estimate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="194" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SNR Estimator using 2nd and 4th-order moments. </para>    </briefdescription>
+    <detaileddescription>
+<para>An SNR estimator for M-PSK signals that uses 2nd (M2) and 4th (M4) order moments. This estimator uses knowledge of the kurtosis of the signal ( <formula id="20">$k_a)$</formula> and noise ( <formula id="21">$k_w$</formula>) to make its estimation. We use Beaulieu&apos;s approximations here to M-PSK signals and AWGN channels such that <formula id="22">$k_a=1$</formula> and <formula id="23">$k_w=2$</formula>. These approximations significantly reduce the complexity of the calculations (and computations) required.</para><para>Reference: D. R. Pauluzzi and N. C. Beaulieu, &quot;A comparison of SNR
+estimation techniques for the AWGN channel,&quot; IEEE Trans. Communications, Vol. 48, No. 10, pp. 1681-1691, 2000. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6430">
+        <label>gr::digital::mpsk_snr_est</label>
+        <link refid="classgr_1_1digital_1_1mpsk__snr__est"/>
+      </node>
+      <node id="6429">
+        <label>gr::digital::mpsk_snr_est_m2m4</label>
+        <link refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4"/>
+        <childnode refid="6430" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6432">
+        <label>gr::digital::mpsk_snr_est</label>
+        <link refid="classgr_1_1digital_1_1mpsk__snr__est"/>
+      </node>
+      <node id="6431">
+        <label>gr::digital::mpsk_snr_est_m2m4</label>
+        <link refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4"/>
+        <childnode refid="6432" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="178" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" bodystart="176" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1ae8f9e0f2f89b7f6edaf90c05a1c4b3a2" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>alpha</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1a540305805f127ec967501c924faa9a02" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_alpha</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1aa3efc31b0ad1c16ed3cb07c192a04678" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1af4eb6e888c18548217cee861f9e492e1" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_noise</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1a1ecec8ff9b2f74453caa17bd3c11f93d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_signal</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a78eb3f791b8927143ec3d92c7f1628aa" prot="private" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_y1</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a6f1d4717b6189b831ace717d55ffc1de" prot="private" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>d_y2</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1af5375ee496c18634c5c84687c8014ab4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>mpsk_snr_est</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a910150b990c9be68200c57a7463fc34a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>mpsk_snr_est_m2m4</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1a6a3fdc7ab9844d084822bd26aee28d3a" prot="public" virt="virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>noise</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1a9bde010a328230fdbe6462298a50fe31" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1acdd0b7b430fb4a2ae627325a2f0a80a7" prot="public" virt="virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>signal</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1a16d5d4698022a824b37dffb7c0535309" prot="public" virt="virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>snr</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1aa5a3c15aa820fdf77dc509f4ac77d631" prot="public" virt="virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>update</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est_1a4669d27ece725779dac3d54992d57bcd" prot="public" virt="virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>~mpsk_snr_est</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__snr__est__m2m4_1acb8b026a2a20a135248fe00755d3502c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_snr_est_m2m4</scope><name>~mpsk_snr_est_m2m4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

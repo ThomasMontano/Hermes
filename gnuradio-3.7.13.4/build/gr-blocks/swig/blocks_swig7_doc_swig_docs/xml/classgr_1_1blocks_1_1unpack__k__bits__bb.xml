@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1unpack__k__bits__bb" kind="class" prot="public">
+    <compoundname>gr::blocks::unpack_k_bits_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_interpolator</basecompoundref>
+    <includes refid="unpack__k__bits__bb_8h" local="no">unpack_k_bits_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1unpack__k__bits__bb_1a863a63ece427f4948d10f48f2ef36077" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1unpack__k__bits__bb" kindref="compound">unpack_k_bits_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;unpack_k_bits_bb&gt; gr::blocks::unpack_k_bits_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits_bb.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits_bb.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1unpack__k__bits__bb_1a764e0c0f40500ec99ceba99bafb1c3f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1unpack__k__bits__bb_1a863a63ece427f4948d10f48f2ef36077" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::unpack_k_bits_bb::make</definition>
+        <argsstring>(unsigned k)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Make an unpack_k_bits block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits to unpack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits_bb.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts a byte with k relevant bits to k output bytes with 1 bit in the LSB. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block picks the K least significant bits from a byte, and expands them into K bytes of 0 or 1.</para><para>Example: k = 4 in = [0xf5, 0x08] out = [0,1,0,1, 1,0,0,0] </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="835">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="834">
+        <label>gr::blocks::unpack_k_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1unpack__k__bits__bb"/>
+        <childnode refid="835" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="837">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="836">
+        <label>gr::blocks::unpack_k_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1unpack__k__bits__bb"/>
+        <childnode refid="837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits_bb.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits_bb.h" bodystart="44" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1unpack__k__bits__bb_1a764e0c0f40500ec99ceba99bafb1c3f0" prot="public" virt="non-virtual"><scope>gr::blocks::unpack_k_bits_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1unpack__k__bits__bb_1a863a63ece427f4948d10f48f2ef36077" prot="public" virt="non-virtual"><scope>gr::blocks::unpack_k_bits_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

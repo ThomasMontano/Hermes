@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tag__debug" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::tag_debug</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="tag__debug_8h" local="no">tag_debug.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tag__debug_1a904427a34aa46f698ef6cecee9301884" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tag__debug" kindref="compound">tag_debug</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tag_debug&gt; gr::blocks::tag_debug::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="62" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1a0075581adc59c3331f64c9585d33ff28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tag__debug_1a904427a34aa46f698ef6cecee9301884" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tag_debug::make</definition>
+        <argsstring>(size_t sizeof_stream_item, const std::string &amp;name, const std::string &amp;key_filter=&quot;&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key_filter</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a tag debug block</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the items in the incoming stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to identify which debug sink generated the info. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify a tag&apos;s key value to use as a filter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1a0dc96214db345d80e85b7917f08f4b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; tag_t &gt;</type>
+        <definition>virtual std::vector&lt;tag_t&gt; gr::blocks::tag_debug::current_tags</definition>
+        <argsstring>()=0</argsstring>
+        <name>current_tags</name>
+        <briefdescription>
+<para>Returns a vector of tag_t items as of the last call to work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1adf97717c1cd9b19e049a9afc169753c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::tag_debug::num_tags</definition>
+        <argsstring>()=0</argsstring>
+        <name>num_tags</name>
+        <briefdescription>
+<para>Return the total number of tags in the tag queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1a6f3867f09a1ebc3f19943f4081fd0f68" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tag_debug::set_display</definition>
+        <argsstring>(bool d)=0</argsstring>
+        <name>set_display</name>
+        <param>
+          <type>bool</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Set the display of tags to stdout on/off. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1a58d634fe5b124a3b842078b554fffdfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tag_debug::set_key_filter</definition>
+        <argsstring>(const std::string &amp;key_filter)=0</argsstring>
+        <name>set_key_filter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key_filter</declname>
+        </param>
+        <briefdescription>
+<para>Set a new key to filter with. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__debug_1af51c48edf8536269a5653a8d598100b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string gr::blocks::tag_debug::key_filter</definition>
+        <argsstring>() const =0</argsstring>
+        <name>key_filter</name>
+        <briefdescription>
+<para>Get the current filter key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="99" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bit bucket that prints out any tag received. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block collects all tags sent to it on all input ports and displays them to stdout in a formatted way. The <computeroutput>name</computeroutput> parameter is used to identify which debug sink generated the tag, so when connecting a block to this debug sink, an appropriate name is something that identifies the input block.</para><para>This block otherwise acts as a NULL sink in that items from the input stream are ignored. It is designed to be able to attach to any block and watch all tags streaming out of that block for debugging purposes.</para><para>Specifying a key will allow this block to filter out all other tags and only display tags that match the given key. This can help clean up the output and allow you to focus in on a particular tag of interest.</para><para>The tags from the last call to this work function are stored and can be retrieved using the function &apos;current_tags&apos;. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="740">
+        <label>gr::blocks::tag_debug</label>
+        <link refid="classgr_1_1blocks_1_1tag__debug"/>
+        <childnode refid="741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="742">
+        <label>gr::blocks::tag_debug</label>
+        <link refid="classgr_1_1blocks_1_1tag__debug"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_debug.h" bodystart="58" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1a0dc96214db345d80e85b7917f08f4b64" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_debug</scope><name>current_tags</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1af51c48edf8536269a5653a8d598100b7" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_debug</scope><name>key_filter</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1a0075581adc59c3331f64c9585d33ff28" prot="public" virt="non-virtual"><scope>gr::blocks::tag_debug</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1adf97717c1cd9b19e049a9afc169753c2" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_debug</scope><name>num_tags</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1a6f3867f09a1ebc3f19943f4081fd0f68" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_debug</scope><name>set_display</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1a58d634fe5b124a3b842078b554fffdfc" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_debug</scope><name>set_key_filter</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__debug_1a904427a34aa46f698ef6cecee9301884" prot="public" virt="non-virtual"><scope>gr::blocks::tag_debug</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

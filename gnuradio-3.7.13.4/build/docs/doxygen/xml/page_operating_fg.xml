@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="page_operating_fg" kind="page">
+    <compoundname>page_operating_fg</compoundname>
+    <title>Handling flow graphs</title>
+    <detaileddescription>
+<sect1 id="page_operating_fg_1flowgraph">
+<title>Operating a Flowgraph</title>
+<para>The basic data structure in GNU Radio is the flowgraph, which represents the connections of the blocks through which a continuous stream of samples flows. The concept of a flowgraph is an acyclic directional graph with one or more source blocks (to insert samples into the flowgraph), one or more sink blocks (to terminate or export samples from the flowgraph), and any signal processing blocks in between.</para><para>A program must at least create a GNU Radio &apos;top_block&apos;, which represents the top-most structure of the flowgraph. The top blocks provide the overall control and hold methods such as &apos;start,&apos; &apos;stop,&apos; and &apos;wait&apos;.</para><para>The general construction of a GNU Radio application is to create a gr_top_block, instantiate the blocks, connect the blocks together, and then start the gr_top_block. The following program shows how this is done. A single source and sink are used with a FIR filter between them.</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gr,<sp/>blocks,<sp/>filter,<sp/>analog</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">my_topblock(gr.top_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr.top_block.__init__(self)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>amp<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interpolator__taps_8h_1a30bf032e13c2a9fc4a98e14e390cd65a" kindref="member">taps</ref><sp/>=<sp/>filter.firdes.low_pass(1,<sp/>1,<sp/>0.1,<sp/>0.01)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.src<sp/>=<sp/>analog.noise_source_c(analog.GR_GAUSSIAN,<sp/>amp)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.flt<sp/>=<sp/>filter.fir_filter_ccf(1,<sp/>taps)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.snk<sp/>=<sp/>blocks.null_sink(gr.sizeof_gr_complex)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.src,<sp/>self.flt,<sp/>self.snk)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb<sp/>=<sp/>my_topblock()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.start()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.wait()</highlight></codeline>
+</programlisting></para><para>The &apos;tb.start()&apos; starts the data flowing through the flowgraph while the &apos;tb.wait()&apos; is the equivalent of a thread&apos;s &apos;join&apos; operation and blocks until the gr_top_block is done.</para><para>An alternative to using the &apos;start&apos; and &apos;wait&apos; methods, a &apos;run&apos; method is also provided for convenience that is a blocking start call; equivalent to the above &apos;start&apos; followed by a &apos;wait.&apos;</para><sect2 id="page_operating_fg_1latency">
+<title>Latency and Throughput</title>
+<para>By default, GNU Radio runs a scheduler that attempts to optimize throughput. Using a dynamic scheduler, blocks in a flowgraph pass chunks of items from sources to sinks. The sizes of these chunks will vary depending on the speed of processing. For each block, the number of items it can process is dependent on how much space it has in its output buffer(s) and how many items are available on the input buffer(s).</para><para>The consequence of this is that often a block may be called with a very large number of items to process (several thousand). In terms of speed, this is efficient since now the majority of the processing time is taken up with processing samples. Smaller chunks mean more calls into the scheduler to retrieve more data. The downside to this is that it can lead to large latency while a block is processing a large chunk of data.</para><para>To combat this problem, the gr_top_block can be passed a limit on the number of output items a block will ever receive. A block may get less than this number, but never more, and so it serves as an upper limit to the latency any block will exhibit. By limiting the number of items per call to a block, though, we increase the overhead of the scheduler, and so reduce the overall efficiency of the application.</para><para>To set the maximum number of output items, we pass a value into the &apos;start&apos; or &apos;run&apos; method of the gr_top_block:</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tb.start(1000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tb.wait()</highlight></codeline>
+<codeline><highlight class="normal">or</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tb.run(1000)</highlight></codeline>
+</programlisting></para><para>Using this method, we place a global restriction on the size of items to all blocks. Each block, though, has the ability to overwrite this with its own limit. Using the &apos;set_max_noutput_items(m)&apos; method for an individual block will overwrite the global setting. For example, in the following code, the global setting is 1000 items max, except for the FIR filter, which can receive up to 2000 items.</para><para><programlisting><codeline><highlight class="normal">tb.flt.set_max_noutput_items(2000)</highlight></codeline>
+<codeline><highlight class="normal">tb.run(1000)</highlight></codeline>
+</programlisting></para><para>In some situations, you might actually want to restrict the size of the buffer itself. This can help to prevent a buffer who is blocked for data from just increasing the amount of items in its buffer, which will then cause an increased latency for new samples. You can set the size of an output buffer for each output port for every block.</para><para>WARNING: This is an advanced feature in GNU Radio and should not be used without a full understanding of this concept as explained below.</para><para>To set the output buffer size of a block, you simply call:</para><para><programlisting><codeline><highlight class="normal">tb.blk0.set_max_output_buffer(2000)</highlight></codeline>
+<codeline><highlight class="normal">tb.blk1.set_max_output_buffer(1,<sp/>2000)</highlight></codeline>
+<codeline><highlight class="normal">tb.start()</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacepmt_1acf4beefce8c6c5c70bdce4e246a54886" kindref="member">print</ref><sp/>tb.blk1.max_output_buffer(0)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacepmt_1acf4beefce8c6c5c70bdce4e246a54886" kindref="member">print</ref><sp/>tb.blk1.max_output_buffer(1)</highlight></codeline>
+</programlisting></para><para>In the above example, all ports of blk0 are set to a buffer size of 2000 in <emphasis>items</emphasis> (not bytes), and blk1 only sets the size for output port 1, any and all other ports use the default. The third and fourth lines just print out the buffer sizes for ports 0 and 1 of blk1. This is done after start() is called because the values are updated based on what is actually allocated to the block&apos;s buffers.</para><para>NOTES:</para><para><orderedlist>
+<listitem><para>Buffer length assignment is done once at runtime (i.e., when run() or start() is called). So to set the max buffer lengths, the set_max_output_buffer calls must be done before this.</para></listitem><listitem><para>Once the flowgraph is started, the buffer lengths for a block are set and cannot be dynamically changed, even during a lock()/unlock(). If you need to change the buffer size, you will have to delete the block and rebuild it, and therefore must disconnect and reconnect the blocks.</para></listitem><listitem><para>This can affect throughput. Large buffers are designed to improve the efficiency and speed of the program at the expense of latency. Limiting the size of the buffer may decrease performance.</para></listitem><listitem><para>The real buffer size is actually based on a minimum granularity of the system. Typically, this is a page size, which is typically 4096 bytes. This means that any buffer size that is specified with this command will get rounded up to the nearest granularity (e.g., page size). When calling max_output_buffer(port) after the flowgraph is started, you will get how many items were actually allocated in the buffer, which may be different than what was initially specified.</para></listitem></orderedlist>
+</para></sect2>
+</sect1>
+<sect1 id="page_operating_fg_1reconfigure">
+<title>Reconfiguring Flowgraphs</title>
+<para>It is possible to reconfigure the flowgraph at runtime. The reconfiguration is meant for changes in the flowgraph structure, not individual parameter settings of the blocks. For example, changing the constant in a <ref refid="classgr_1_1blocks_1_1add__const__cc" kindref="compound">gr::blocks::add_const_cc</ref> block can be done while the flowgraph is running using the &apos;set_k(k)&apos; method.</para><para>Reconfiguration is done by locking the flowgraph, which stops it from running and processing data, performing the reconfiguration, and then restarting the graph by unlocking it.</para><para>The following example code shows a graph that first adds two gr::analog::noise_source_c blocks and then replaces the gr::blocks::add_cc block with a gr::blocks::sub_cc block to then subtract the sources.</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gr,<sp/>analog,<sp/>blocks</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">mytb(gr.top_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr.top_block.__init__(self)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.src0<sp/>=<sp/>analog.noise_source_c(analog.GR_GAUSSIAN,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.src1<sp/>=<sp/>analog.noise_source_c(analog.GR_GAUSSIAN,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.add<sp/><sp/>=<sp/>blocks.add_cc()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.sub<sp/><sp/>=<sp/>blocks.sub_cc()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.head<sp/>=<sp/>blocks.head(gr.sizeof_gr_complex,<sp/>1000000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.snk<sp/><sp/>=<sp/>blocks.file_sink(gr.sizeof_gr_complex,<sp/>&quot;output.32fc&quot;)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.src0,<sp/>(self.add,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.src1,<sp/>(self.add,1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.add,<sp/>self.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.head,<sp/>self.snk)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">def<sp/>main():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb<sp/>=<sp/>mytb()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.start()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>time.sleep(0.01)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Stop<sp/>flowgraph<sp/>and<sp/>disconnect<sp/>the<sp/>add<sp/>block</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb.lock()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.add,<sp/>tb.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.src0,<sp/>(tb.add,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.src1,<sp/>(tb.add,1))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Connect<sp/>the<sp/>sub<sp/>block<sp/>and<sp/>restart</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.sub,<sp/>tb.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.src0,<sp/>(tb.sub,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.src1,<sp/>(tb.sub,1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.unlock()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.wait()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>main()</highlight></codeline>
+</programlisting></para><para>During reconfiguration, the maximum noutput_items value can be changed either globally using the &apos;set_max_noutput_items(m)&apos; on the gr_top_block object or locally using the &apos;set_max_noutput_items(m)&apos; on any given block object.</para><para>A block also has a &apos;unset_max_noutput_items()&apos; method that unsets the local max noutput_items value so that block reverts back to using the global value.</para><para>The following example expands the previous example but sets and resets the max noutput_items both locally and globally.</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gr,<sp/>analog,<sp/>blocks</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">mytb(gr.top_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr.top_block.__init__(self)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.src0<sp/>=<sp/>analog.noise_source_c(analog.GR_GAUSSIAN,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.src1<sp/>=<sp/>analog.noise_source_c(analog.GR_GAUSSIAN,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.add<sp/><sp/>=<sp/>blocks.add_cc()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.sub<sp/><sp/>=<sp/>blocks.sub_cc()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.head<sp/>=<sp/>blocks.head(gr.sizeof_gr_complex,<sp/>1000000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.snk<sp/><sp/>=<sp/>blocks.file_sink(gr.sizeof_gr_complex,<sp/>&quot;output.32fc&quot;)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.src0,<sp/>(self.add,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.src1,<sp/>(self.add,1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.add,<sp/>self.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.connect(self.head,<sp/>self.snk)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">def<sp/>main():</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Start<sp/>the<sp/>gr_top_block<sp/>after<sp/>setting<sp/>some<sp/>max<sp/>noutput_items.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb<sp/>=<sp/>mytb()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.src1.set_max_noutput_items(2000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.start(100)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>time.sleep(0.01)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Stop<sp/>flowgraph<sp/>and<sp/>disconnect<sp/>the<sp/>add<sp/>block</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb.lock()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.add,<sp/>tb.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.src0,<sp/>(tb.add,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.disconnect(tb.src1,<sp/>(tb.add,1))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Connect<sp/>the<sp/>sub<sp/>block</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.sub,<sp/>tb.head)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.src0,<sp/>(tb.sub,0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.connect(tb.src1,<sp/>(tb.sub,1))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>Set<sp/>new<sp/>max_noutput_items<sp/>for<sp/>the<sp/>gr_top_block</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>and<sp/>unset<sp/>the<sp/>local<sp/>value<sp/>for<sp/>src1</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tb.set_max_noutput_items(1000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.src1.unset_max_noutput_items()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.unlock()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.wait()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>main()</highlight></codeline>
+</programlisting> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

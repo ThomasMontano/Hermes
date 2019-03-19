@@ -1,0 +1,25 @@
+var classgr_1_1wxgui_1_1oscope__guts =
+[
+    [ "oscope_guts", "classgr_1_1wxgui_1_1oscope__guts.html#a93032a884f94852a2553d46f3cdf3556", null ],
+    [ "~oscope_guts", "classgr_1_1wxgui_1_1oscope__guts.html#abf340aad34d9623be251621c70acb42b", null ],
+    [ "get_decimation_count", "classgr_1_1wxgui_1_1oscope__guts.html#a01dcb5f87575fe7a136313415207ff2f", null ],
+    [ "get_samples_per_output_record", "classgr_1_1wxgui_1_1oscope__guts.html#a08b40a23115d5cc8ae42b2ac2ca92d43", null ],
+    [ "get_trigger_channel", "classgr_1_1wxgui_1_1oscope__guts.html#a3a227353d238043783d288c094b15b4e", null ],
+    [ "get_trigger_level", "classgr_1_1wxgui_1_1oscope__guts.html#a8fdb74abc77c7d512560c1ce84bd9112", null ],
+    [ "get_trigger_mode", "classgr_1_1wxgui_1_1oscope__guts.html#a53a41646e06251dbe45ed988a2d4168d", null ],
+    [ "get_trigger_slope", "classgr_1_1wxgui_1_1oscope__guts.html#a784d3dc214f8b4fd7f3675a368457b85", null ],
+    [ "num_channels", "classgr_1_1wxgui_1_1oscope__guts.html#abbb6e37a9b906a9d02f57c65ccf182d7", null ],
+    [ "process_sample", "classgr_1_1wxgui_1_1oscope__guts.html#a19f87e2f365793b773c4119460c94898", null ],
+    [ "sample_rate", "classgr_1_1wxgui_1_1oscope__guts.html#a66afcf99846240d5d7a927eb93a99e63", null ],
+    [ "set_decimation_count", "classgr_1_1wxgui_1_1oscope__guts.html#aa7375c79fe7d52f47ab0d75e06ccdcd8", null ],
+    [ "set_num_channels", "classgr_1_1wxgui_1_1oscope__guts.html#acda6a47639e40e80f7264b501ea74036", null ],
+    [ "set_sample_rate", "classgr_1_1wxgui_1_1oscope__guts.html#ada242015bfc9ede32857fcc573163b99", null ],
+    [ "set_trigger_channel", "classgr_1_1wxgui_1_1oscope__guts.html#abc0063360896cc315877a35aa41a7dbe", null ],
+    [ "set_trigger_level", "classgr_1_1wxgui_1_1oscope__guts.html#a750d20d353acd180743ef4f2b4368574", null ],
+    [ "set_trigger_level_auto", "classgr_1_1wxgui_1_1oscope__guts.html#a3162ada0f6aac012086348b82b94371b", null ],
+    [ "set_trigger_mode", "classgr_1_1wxgui_1_1oscope__guts.html#a5f74ff60f512a8cfc826bf0e9527a4c4", null ],
+    [ "set_trigger_slope", "classgr_1_1wxgui_1_1oscope__guts.html#adaa7bbca1bf97a986b95a59894fd30e8", null ],
+    [ "set_update_rate", "classgr_1_1wxgui_1_1oscope__guts.html#a1a3c25dc40d2f4622deccd531f9ce19e", null ],
+    [ "update_rate", "classgr_1_1wxgui_1_1oscope__guts.html#a9b7db31bed409a451e73cae7d8a8fb5b", null ],
+    [ "MAX_CHANNELS", "classgr_1_1wxgui_1_1oscope__guts.html#a851ccea9934828bb4f2f99f745661926", null ]
+];

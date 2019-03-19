@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1block__registry" kind="class" prot="public">
+    <compoundname>gr::block_registry</compoundname>
+    <includes refid="block__registry_8h" local="no">block_registry.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classgr_1_1block__registry_1ad97a3839a6fd248bc117362ba48e763f" prot="private" static="no">
+        <type>std::map&lt; long, <ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> * &gt;</type>
+        <definition>typedef std::map&lt; long, basic_block* &gt; gr::block_registry::blocksubmap_t</definition>
+        <argsstring></argsstring>
+        <name>blocksubmap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="57" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1block__registry_1a8cd26eb995da2c76b55993bace9d5cde" prot="private" static="no">
+        <type>std::map&lt; std::string, blocksubmap_t &gt;</type>
+        <definition>typedef std::map&lt; std::string, blocksubmap_t &gt; gr::block_registry::blockmap_t</definition>
+        <argsstring></argsstring>
+        <name>blockmap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1block__registry_1a342bd736a738fefb1d553cd079019d17" prot="private" static="no" mutable="no">
+        <type>blockmap_t</type>
+        <definition>blockmap_t gr::block_registry::d_map</definition>
+        <argsstring></argsstring>
+        <name>d_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block__registry_1a7d1449b03b66d07cdecca60fe1e4b063" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>pmt::pmt_t gr::block_registry::d_ref_map</definition>
+        <argsstring></argsstring>
+        <name>d_ref_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block__registry_1a5040d18a9214d94ad1b04915934e5990" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classgr_1_1block" kindref="compound">block</ref> * &gt;</type>
+        <definition>std::map&lt; std::string, block*&gt; gr::block_registry::primitive_map</definition>
+        <argsstring></argsstring>
+        <name>primitive_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="62" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block__registry_1a654947c2d5a6cd0469d93899afe5f338" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex gr::block_registry::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1block__registry_1a419de4b874ed338df9c3a145a89c43fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::block_registry::block_registry</definition>
+        <argsstring>()</argsstring>
+        <name>block_registry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1a25b766b3888ffd8f653a346415d3ab73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::block_registry::block_register</definition>
+        <argsstring>(basic_block *block)</argsstring>
+        <name>block_register</name>
+        <param>
+          <type><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1ab48ab8f7fbcce4f438dddde88665345b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::block_unregister</definition>
+        <argsstring>(basic_block *block)</argsstring>
+        <name>block_unregister</name>
+        <param>
+          <type><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1a1aca2cad6448b62e4da2b2ab42e8bfc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gr::block_registry::register_symbolic_name</definition>
+        <argsstring>(basic_block *block)</argsstring>
+        <name>register_symbolic_name</name>
+        <param>
+          <type><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1a49710c6219a1f48c9a8b0c4a863d096e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::register_symbolic_name</definition>
+        <argsstring>(basic_block *block, std::string name)</argsstring>
+        <name>register_symbolic_name</name>
+        <param>
+          <type><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1aaa2c5f58511b472fd4110e7bdee9588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::update_symbolic_name</definition>
+        <argsstring>(basic_block *block, std::string name)</argsstring>
+        <name>update_symbolic_name</name>
+        <param>
+          <type><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1a67a83c42e2030bba463c99d51e7a8f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+        <definition>basic_block_sptr gr::block_registry::block_lookup</definition>
+        <argsstring>(pmt::pmt_t symbol)</argsstring>
+        <name>block_lookup</name>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1ae3c2137a08d5da093bb5d7ae94fef2aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::register_primitive</definition>
+        <argsstring>(std::string blk, gr::block *ref)</argsstring>
+        <name>register_primitive</name>
+        <param>
+          <type>std::string</type>
+          <declname>blk</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1block" kindref="compound">gr::block</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1a99cb7fe740cfcaba19a41f5f81aec6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::unregister_primitive</definition>
+        <argsstring>(std::string blk)</argsstring>
+        <name>unregister_primitive</name>
+        <param>
+          <type>std::string</type>
+          <declname>blk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block__registry_1aa316131ee1408e0b495d9cce1aa1205b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block_registry::notify_blk</definition>
+        <argsstring>(std::string blk)</argsstring>
+        <name>notify_blk</name>
+        <param>
+          <type>std::string</type>
+          <declname>blk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_registry.h" bodystart="37" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgr_1_1block__registry_1a67a83c42e2030bba463c99d51e7a8f92" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>block_lookup</name></member>
+      <member refid="classgr_1_1block__registry_1a25b766b3888ffd8f653a346415d3ab73" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>block_register</name></member>
+      <member refid="classgr_1_1block__registry_1a419de4b874ed338df9c3a145a89c43fc" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>block_registry</name></member>
+      <member refid="classgr_1_1block__registry_1ab48ab8f7fbcce4f438dddde88665345b" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>block_unregister</name></member>
+      <member refid="classgr_1_1block__registry_1a8cd26eb995da2c76b55993bace9d5cde" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>blockmap_t</name></member>
+      <member refid="classgr_1_1block__registry_1ad97a3839a6fd248bc117362ba48e763f" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>blocksubmap_t</name></member>
+      <member refid="classgr_1_1block__registry_1a342bd736a738fefb1d553cd079019d17" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>d_map</name></member>
+      <member refid="classgr_1_1block__registry_1a654947c2d5a6cd0469d93899afe5f338" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1block__registry_1a7d1449b03b66d07cdecca60fe1e4b063" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>d_ref_map</name></member>
+      <member refid="classgr_1_1block__registry_1aa316131ee1408e0b495d9cce1aa1205b" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>notify_blk</name></member>
+      <member refid="classgr_1_1block__registry_1a5040d18a9214d94ad1b04915934e5990" prot="private" virt="non-virtual"><scope>gr::block_registry</scope><name>primitive_map</name></member>
+      <member refid="classgr_1_1block__registry_1ae3c2137a08d5da093bb5d7ae94fef2aa" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>register_primitive</name></member>
+      <member refid="classgr_1_1block__registry_1a1aca2cad6448b62e4da2b2ab42e8bfc1" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>register_symbolic_name</name></member>
+      <member refid="classgr_1_1block__registry_1a49710c6219a1f48c9a8b0c4a863d096e" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>register_symbolic_name</name></member>
+      <member refid="classgr_1_1block__registry_1a99cb7fe740cfcaba19a41f5f81aec6a2" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>unregister_primitive</name></member>
+      <member refid="classgr_1_1block__registry_1aaa2c5f58511b472fd4110e7bdee9588d" prot="public" virt="non-virtual"><scope>gr::block_registry</scope><name>update_symbolic_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

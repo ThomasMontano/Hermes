@@ -1,0 +1,1637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1dtv" kind="namespace">
+    <compoundname>gr::dtv</compoundname>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__deinterleaver" prot="public">gr::dtv::atsc_deinterleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__depad" prot="public">gr::dtv::atsc_depad</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__derandomizer" prot="public">gr::dtv::atsc_derandomizer</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__equalizer" prot="public">gr::dtv::atsc_equalizer</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__field__sync__mux" prot="public">gr::dtv::atsc_field_sync_mux</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__fpll" prot="public">gr::dtv::atsc_fpll</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__fs__checker" prot="public">gr::dtv::atsc_fs_checker</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__interleaver" prot="public">gr::dtv::atsc_interleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__pad" prot="public">gr::dtv::atsc_pad</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__randomizer" prot="public">gr::dtv::atsc_randomizer</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__rs__decoder" prot="public">gr::dtv::atsc_rs_decoder</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__rs__encoder" prot="public">gr::dtv::atsc_rs_encoder</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__sync" prot="public">gr::dtv::atsc_sync</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__trellis__encoder" prot="public">gr::dtv::atsc_trellis_encoder</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1atsc__viterbi__decoder" prot="public">gr::dtv::atsc_viterbi_decoder</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1catv__frame__sync__enc__bb" prot="public">gr::dtv::catv_frame_sync_enc_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1catv__randomizer__bb" prot="public">gr::dtv::catv_randomizer_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1catv__reed__solomon__enc__bb" prot="public">gr::dtv::catv_reed_solomon_enc_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1catv__transport__framing__enc__bb" prot="public">gr::dtv::catv_transport_framing_enc_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1catv__trellis__enc__bb" prot="public">gr::dtv::catv_trellis_enc_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvb__bbheader__bb" prot="public">gr::dtv::dvb_bbheader_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvb__bbscrambler__bb" prot="public">gr::dtv::dvb_bbscrambler_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvb__bch__bb" prot="public">gr::dtv::dvb_bch_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvb__ldpc__bb" prot="public">gr::dtv::dvb_ldpc_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbs2__interleaver__bb" prot="public">gr::dtv::dvbs2_interleaver_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbs2__modulator__bc" prot="public">gr::dtv::dvbs2_modulator_bc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbs2__physical__cc" prot="public">gr::dtv::dvbs2_physical_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__cellinterleaver__cc" prot="public">gr::dtv::dvbt2_cellinterleaver_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__framemapper__cc" prot="public">gr::dtv::dvbt2_framemapper_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__freqinterleaver__cc" prot="public">gr::dtv::dvbt2_freqinterleaver_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__interleaver__bb" prot="public">gr::dtv::dvbt2_interleaver_bb</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__miso__cc" prot="public">gr::dtv::dvbt2_miso_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__modulator__bc" prot="public">gr::dtv::dvbt2_modulator_bc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__p1insertion__cc" prot="public">gr::dtv::dvbt2_p1insertion_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__paprtr__cc" prot="public">gr::dtv::dvbt2_paprtr_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt2__pilotgenerator__cc" prot="public">gr::dtv::dvbt2_pilotgenerator_cc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__bit__inner__deinterleaver" prot="public">gr::dtv::dvbt_bit_inner_deinterleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__bit__inner__interleaver" prot="public">gr::dtv::dvbt_bit_inner_interleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__convolutional__deinterleaver" prot="public">gr::dtv::dvbt_convolutional_deinterleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__convolutional__interleaver" prot="public">gr::dtv::dvbt_convolutional_interleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__demap" prot="public">gr::dtv::dvbt_demap</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__demod__reference__signals" prot="public">gr::dtv::dvbt_demod_reference_signals</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__energy__descramble" prot="public">gr::dtv::dvbt_energy_descramble</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__energy__dispersal" prot="public">gr::dtv::dvbt_energy_dispersal</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__inner__coder" prot="public">gr::dtv::dvbt_inner_coder</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__map" prot="public">gr::dtv::dvbt_map</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__ofdm__sym__acquisition" prot="public">gr::dtv::dvbt_ofdm_sym_acquisition</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__reed__solomon__dec" prot="public">gr::dtv::dvbt_reed_solomon_dec</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__reed__solomon__enc" prot="public">gr::dtv::dvbt_reed_solomon_enc</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__reference__signals" prot="public">gr::dtv::dvbt_reference_signals</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__symbol__inner__interleaver" prot="public">gr::dtv::dvbt_symbol_inner_interleaver</innerclass>
+    <innerclass refid="classgr_1_1dtv_1_1dvbt__viterbi__decoder" prot="public">gr::dtv::dvbt_viterbi_decoder</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a9a7a562d2609731f43ea2277736d2808" prot="public" static="no">
+        <name>catv_constellation_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a9a7a562d2609731f43ea2277736d2808a23f080e0ce661e46f4ef911736d5a667" prot="public">
+          <name>CATV_MOD_64QAM</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a9a7a562d2609731f43ea2277736d2808a28a8df36a079ff37b3af4f33b07c120e" prot="public">
+          <name>CATV_MOD_256QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/catv_config.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/catv_config.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a7b0c8806529652b1009e5626008be266" prot="public" static="no">
+        <name>dvb_standard_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a7b0c8806529652b1009e5626008be266ac4ebd2ec5c59d9f87e849a276b60554a" prot="public">
+          <name>STANDARD_DVBS2</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a7b0c8806529652b1009e5626008be266a70692c28534aa923930aab290a1feaac" prot="public">
+          <name>STANDARD_DVBT2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26a" prot="public" static="no">
+        <name>dvb_code_rate_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa0e97135171d8cca6c4acef236af969e7" prot="public">
+          <name>C1_4</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaf62bb384d387f74901695a7ba2785885" prot="public">
+          <name>C1_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa1505669c3e14cf45028491333af21eff" prot="public">
+          <name>C2_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaf847ef10c5db163ceea4f6e51ed2489e" prot="public">
+          <name>C1_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa2fd57200e562c552a8fcf214c492f05d" prot="public">
+          <name>C3_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa03462a6b179e7c94b79885304a423ec1" prot="public">
+          <name>C2_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aabf13968dec5a33cc9ffb10489135860b" prot="public">
+          <name>C3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa6df4df9237ef6fcd5b8404673d57eea7" prot="public">
+          <name>C4_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aac286359957521e079a89fa295a7e1c35" prot="public">
+          <name>C5_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa5cd03bae31e53fb714b24912389e4b75" prot="public">
+          <name>C7_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa7123202ad7ee0e05c2ab0c9a45ade16d" prot="public">
+          <name>C8_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aab0b693c638cf0c8a55b946c3604b0af5" prot="public">
+          <name>C9_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aae6a61a1ed785b087200bfba649a10769" prot="public">
+          <name>C13_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aacad1ed33234628532b67504c89917aa4" prot="public">
+          <name>C9_20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa5347796245c5e85e81096fc51064f881" prot="public">
+          <name>C90_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa68b34c3471df3087ff4ed190f9a14be1" prot="public">
+          <name>C96_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaac85aa79dd390b007f4689362a0eb35a" prot="public">
+          <name>C11_20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaffafff81db61abea217d791562d1d988" prot="public">
+          <name>C100_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aae1940a6fadd735c4171ba1a405c715d0" prot="public">
+          <name>C104_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aad1057dac73e5adae1e9f74da68772b7c" prot="public">
+          <name>C26_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa2fb37e069147368fa85412c5fcb1301f" prot="public">
+          <name>C18_30</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaf3ebbe1ca0a5489cbabc4c48b24e65a7" prot="public">
+          <name>C28_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa18a52f58f0bc7633c6312093cebd8cd1" prot="public">
+          <name>C23_36</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa838ed2698651075529648a4f7df89f7c" prot="public">
+          <name>C116_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aada73b8cb837b8919725e733a802e8beb" prot="public">
+          <name>C20_30</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa19164f70a4fe56b141b319da3e85cef1" prot="public">
+          <name>C124_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aadc3e01106ae6c930f5656de5801b5e32" prot="public">
+          <name>C25_36</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aafc1e98fbe019ad1dd81c52922b88699a" prot="public">
+          <name>C128_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaf0ccbe23a4731469dba42b36ba8a4baa" prot="public">
+          <name>C13_18</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aac4a23a3d1e48e24d08fc8ea766a0d409" prot="public">
+          <name>C132_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa66882acc9a21bceccac3ed6741889125" prot="public">
+          <name>C22_30</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa1fbcd1582fd0322f73bea52914515067" prot="public">
+          <name>C135_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aae0e2230865607e95802b55c0c934aa08" prot="public">
+          <name>C140_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaacad00864ec341ff2dfb67bfc7901cb0" prot="public">
+          <name>C7_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaefc7a59755d2ac2c8e89a6c4a1a8b371" prot="public">
+          <name>C154_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaa52708f6f9e9fb0ade68af00132de7ba" prot="public">
+          <name>C11_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa309ee473cb6a05ac8341f83798f2fd12" prot="public">
+          <name>C4_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa44dc1044cc0e7f953c478f52ea4c9d1f" prot="public">
+          <name>C14_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa3c3cbd1195146ead103ad719b5a77907" prot="public">
+          <name>C7_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aafb87cb5d2fad932879c0cc74e59436f9" prot="public">
+          <name>C8_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aae39c9b467e48f29cbc6e4170458391d2" prot="public">
+          <name>C32_45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaad6855a49ddfd31808c21656486a5fa9" prot="public">
+          <name>C2_9_VLSNR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aae2002ac7bde187425e00e79db3cb1103" prot="public">
+          <name>C1_5_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aac9564df5941957b77ee3ee8bf2df1fa6" prot="public">
+          <name>C11_45_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aafc6823907bca59e4d6e8255aa45eb8d7" prot="public">
+          <name>C1_3_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa55fa3b524526dc43d744fe4982bcf7f4" prot="public">
+          <name>C1_5_VLSNR_SF2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa430b414bc3e833aacc0abcf1ab4551c9" prot="public">
+          <name>C11_45_VLSNR_SF2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaa9eac3e1ee2c9783b69f61d062302b27" prot="public">
+          <name>C1_5_VLSNR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aadb8e28fcecc1d43813af320215bb524d" prot="public">
+          <name>C4_15_VLSNR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aa6c8d27b2a36180c9e2219b25fbc730f5" prot="public">
+          <name>C1_3_VLSNR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a35dea4c78a05851f4beae107d010e26aaf5339d3fffc4a339f8cfbc0f43c67d5f" prot="public">
+          <name>C_OTHER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" line="31" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" bodystart="31" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a5fecdb052159e6098ad712f93d88bd82" prot="public" static="no">
+        <name>dvb_framesize_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a5fecdb052159e6098ad712f93d88bd82adcebfcff1aecbb3f56dda2e1b07a36a7" prot="public">
+          <name>FECFRAME_SHORT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a5fecdb052159e6098ad712f93d88bd82ae50a7d9fa952315ab9ec755ee9d2c9c7" prot="public">
+          <name>FECFRAME_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a5fecdb052159e6098ad712f93d88bd82a74aa099e6654d70f30509549b20d744c" prot="public">
+          <name>FECFRAME_MEDIUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7" prot="public" static="no">
+        <name>dvb_constellation_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7ab480acc283d2876fe3c61d6970c9f6d2" prot="public">
+          <name>MOD_QPSK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a74ac90b08771c9daf4838f158ac5522a" prot="public">
+          <name>MOD_16QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a31e6f4d88346399550c3ec7c3769171a" prot="public">
+          <name>MOD_64QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7af5490a6b7c5a1b2f9b35cf8425d48995" prot="public">
+          <name>MOD_256QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a337f21575a8ed1468ec03e268234b6c3" prot="public">
+          <name>MOD_8PSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7ae2209ae6a7d9cc876587c77a0c71a543" prot="public">
+          <name>MOD_8APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a7e2adc65def85fb929fd4218ea90d7c6" prot="public">
+          <name>MOD_16APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a8f3944902661f3850f49e733a31d1b81" prot="public">
+          <name>MOD_8_8APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a6ae697c3eae317b84a271bae2a1a6a07" prot="public">
+          <name>MOD_32APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7ac9540aea346d244aa83fad450e3bb3f7" prot="public">
+          <name>MOD_4_12_16APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a786121cbf94bb1ffa556a5bd8a122f02" prot="public">
+          <name>MOD_4_8_4_16APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7ac97f51b13c225b05384d4944f7e4b795" prot="public">
+          <name>MOD_64APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a5308cad35663a1b75bdf2f825edca50a" prot="public">
+          <name>MOD_8_16_20_20APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a823fd2e388a6bd42d45ac7ce4f1fa095" prot="public">
+          <name>MOD_4_12_20_28APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a63410a9c6447473458120db1a90897fb" prot="public">
+          <name>MOD_128APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7ad296f7da91a622757292d96a49551653" prot="public">
+          <name>MOD_256APSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a2cc8a55aabc91c6ae12fd90b59c42cba" prot="public">
+          <name>MOD_BPSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7aabe1818843f42872ae8336be5ee5365d" prot="public">
+          <name>MOD_BPSK_SF2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a6178b664baa3b76716b7986184ef332d" prot="public">
+          <name>MOD_8VSB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac88d825306ad853bc0250dcac0b37fb7a366ab769ce0af0dc0e4a1b5274f3115a" prot="public">
+          <name>MOD_OTHER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" line="91" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" bodystart="91" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9" prot="public" static="no">
+        <name>dvb_guardinterval_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9a5feaa8d76a48dbaba67164f0825d990a" prot="public">
+          <name>GI_1_32</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9a735c3f80170d7b7eda1a65b56efafbd8" prot="public">
+          <name>GI_1_16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9a4f7acf65a9338eb7af2066db8cfdce20" prot="public">
+          <name>GI_1_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9afe5c89c9c42884dce30b1eae05579ff9" prot="public">
+          <name>GI_1_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9af0fcb57471c602e93f0c677c9ff074f1" prot="public">
+          <name>GI_1_128</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9a290391f8706d9382dd41a36b3721288c" prot="public">
+          <name>GI_19_128</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a14c5deae167854ad950d1f5fc0d470b9ab1d4e60993c9172743b6440f8639e408" prot="public">
+          <name>GI_19_256</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" line="114" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvb_config.h" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bf" prot="public" static="no">
+        <name>dvbs2_rolloff_factor_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfa110a39ea1d83e9d6191b89878bd575df" prot="public">
+          <name>RO_0_35</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfa2746592ea1b8b36c43089da7b0acb043" prot="public">
+          <name>RO_0_25</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfae6a323becd932077b10564a849631830" prot="public">
+          <name>RO_0_20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfaf6c95844f152be0907be49c035680cce" prot="public">
+          <name>RO_RESERVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfaeb3545d27a5a04d4f64e3e302de00d93" prot="public">
+          <name>RO_0_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfa39a16b71daf82f6763257114de108e94" prot="public">
+          <name>RO_0_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3c9756bb2fbf5354a1530bb5d53d2bfa9a322740668cc12836a9acfeb6d05767" prot="public">
+          <name>RO_0_05</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a1afda18ed3f6f11d1fb8561b731e3f1e" prot="public" static="no">
+        <name>dvbs2_pilots_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a1afda18ed3f6f11d1fb8561b731e3f1ea9386759847d01fe5e1f5c5d06aa792b7" prot="public">
+          <name>PILOTS_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a1afda18ed3f6f11d1fb8561b731e3f1eaf04d335e08686bf2aba039f4db98e744" prot="public">
+          <name>PILOTS_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1acc0432c3aafd727d686cf0909980edc4" prot="public" static="no">
+        <name>dvbs2_interpolation_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1acc0432c3aafd727d686cf0909980edc4a753ce7f9c4306d4833a63d438d38ae36" prot="public">
+          <name>INTERPOLATION_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1acc0432c3aafd727d686cf0909980edc4af64fb042edcb542ef4fb40817e772445" prot="public">
+          <name>INTERPOLATION_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbs2_config.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1ac3f6b9ef15be9a9456ca1a5222d164d0" prot="public" static="no">
+        <name>dvbt2_rotation_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1ac3f6b9ef15be9a9456ca1a5222d164d0ac6878a9228bb4c0321fa2cebe393bfd9" prot="public">
+          <name>ROTATION_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1ac3f6b9ef15be9a9456ca1a5222d164d0a26bfd28098cc0207bddf607a2d96ed01" prot="public">
+          <name>ROTATION_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1aeba2b373fd61d2f1329753e0ef7bdebd" prot="public" static="no">
+        <name>dvbt2_streamtype_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1aeba2b373fd61d2f1329753e0ef7bdebda473c21845999e0bab7e070357136053c" prot="public">
+          <name>STREAMTYPE_TS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1aeba2b373fd61d2f1329753e0ef7bdebda861cf28d0cf75f6cc1e242e050860883" prot="public">
+          <name>STREAMTYPE_GS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1aeba2b373fd61d2f1329753e0ef7bdebda1b70780f1c17689e7ff724b149238bb3" prot="public">
+          <name>STREAMTYPE_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="31" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a4878c5060195417b526945493cd95e3d" prot="public" static="no">
+        <name>dvbt2_inputmode_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a4878c5060195417b526945493cd95e3da67d1a7e19533685c4bee0b0cdfa664bf" prot="public">
+          <name>INPUTMODE_NORMAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a4878c5060195417b526945493cd95e3da5a215dd0f778c7927724442b8254e9cb" prot="public">
+          <name>INPUTMODE_HIEFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a47632975ef8d505f1bd7ddeecccbbb8d" prot="public" static="no">
+        <name>dvbt2_extended_carrier_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a47632975ef8d505f1bd7ddeecccbbb8dade7eb6688e34920cdb436d3c3973d914" prot="public">
+          <name>CARRIERS_NORMAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a47632975ef8d505f1bd7ddeecccbbb8da3fd88bcda93ddb936dd583014a18ec8d" prot="public">
+          <name>CARRIERS_EXTENDED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300a" prot="public" static="no">
+        <name>dvbt2_preamble_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300aa3d90d01f7ca1c5378ef85b64fd9337bb" prot="public">
+          <name>PREAMBLE_T2_SISO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300aa757280aeb78bc98d91d29b5f8aded4f6" prot="public">
+          <name>PREAMBLE_T2_MISO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300aa559499dea1c0161d6ab4e45ab73a0c92" prot="public">
+          <name>PREAMBLE_NON_T2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300aaf14d6d6776ee75da926af4ea0e95e397" prot="public">
+          <name>PREAMBLE_T2_LITE_SISO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6a7633d61ed04d9f2d4629c46553300aa241b8f551be51e0278ac4feedc97bb50" prot="public">
+          <name>PREAMBLE_T2_LITE_MISO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eb" prot="public" static="no">
+        <name>dvbt2_fftsize_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba5504d2c205d9aad32101ec3e53f617ac" prot="public">
+          <name>FFTSIZE_2K</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba474e3bb3ed60649e292a3fef5ad871ff" prot="public">
+          <name>FFTSIZE_8K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859ebafe9f195cced51df6aa3476e004b3d0fc" prot="public">
+          <name>FFTSIZE_4K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859ebaf73225568f5332c5620d9163e65c1b60" prot="public">
+          <name>FFTSIZE_1K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba9409e85a63351b3a42625e53ff83952d" prot="public">
+          <name>FFTSIZE_16K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba7531117d7c1312716de034155c3b8ab5" prot="public">
+          <name>FFTSIZE_32K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba53dca722d3bb5242ad2d8343095f15af" prot="public">
+          <name>FFTSIZE_8K_T2GI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859ebaa8cda20deb2b3996abc99d15cc6d8a86" prot="public">
+          <name>FFTSIZE_32K_T2GI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0c44fd152cd1793fc236a7c9458859eba126f25581d2976dcbf53402ebe213738" prot="public">
+          <name>FFTSIZE_16K_T2GI</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="55" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a8ec118bdcf3fba1efae346c7b2fcb21a" prot="public" static="no">
+        <name>dvbt2_papr_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a8ec118bdcf3fba1efae346c7b2fcb21aafdc0bb6b8762c9f0125efee16b8c7b18" prot="public">
+          <name>PAPR_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a8ec118bdcf3fba1efae346c7b2fcb21aab8ca4c1164d5cfaf04916486cad9e790" prot="public">
+          <name>PAPR_ACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a8ec118bdcf3fba1efae346c7b2fcb21aa1c7cc9200107e9a6519d7f49b1824b8f" prot="public">
+          <name>PAPR_TR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a8ec118bdcf3fba1efae346c7b2fcb21aaeb748e6db3d8f99e82ecf7074ccb8542" prot="public">
+          <name>PAPR_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="67" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a150f6b9308d7d9fcdeed779586cdee02" prot="public" static="no">
+        <name>dvbt2_l1constellation_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a150f6b9308d7d9fcdeed779586cdee02a069adf41990c9ea7611519bdab1f2a29" prot="public">
+          <name>L1_MOD_BPSK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a150f6b9308d7d9fcdeed779586cdee02a7becd0145d18b1a1cf3ceed99eab91f2" prot="public">
+          <name>L1_MOD_QPSK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a150f6b9308d7d9fcdeed779586cdee02aea7f68fa0154b1125726d2a521387b6d" prot="public">
+          <name>L1_MOD_16QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a150f6b9308d7d9fcdeed779586cdee02ad9b59d46038c455096608af1fd60e9ac" prot="public">
+          <name>L1_MOD_64QAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322b" prot="public" static="no">
+        <name>dvbt2_pilotpattern_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322ba431bdd2b5609a79379bdc286228fca53" prot="public">
+          <name>PILOT_PP1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322ba6d4bba1694adbc74faec331eec015025" prot="public">
+          <name>PILOT_PP2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322ba03faa2897a67613fe08f9b9dfdd92b6b" prot="public">
+          <name>PILOT_PP3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322bafcad8f1a5b63c82dcecd84e01e04fbeb" prot="public">
+          <name>PILOT_PP4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322ba0e9a373bd1a4b5517c82b1a3f8c07dc3" prot="public">
+          <name>PILOT_PP5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322bad36bcf54e7e76c4eb9eb34b27a8c9111" prot="public">
+          <name>PILOT_PP6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322bac13cd6dccd9eabb78c4bde19aa251ede" prot="public">
+          <name>PILOT_PP7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a2671c3945b367b0a5eab090dbde6322bab7c6a7b60aede72b4987562379ad8c37" prot="public">
+          <name>PILOT_PP8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="81" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a0e1431d5e526a0db3346bdb95258e35e" prot="public" static="no">
+        <name>dvbt2_version_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a0e1431d5e526a0db3346bdb95258e35eaf5b1fc1a6eb51ac99a25d6012356e7d8" prot="public">
+          <name>VERSION_111</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0e1431d5e526a0db3346bdb95258e35eaaae2c4828eb506fb9445cf3856b74de0" prot="public">
+          <name>VERSION_121</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a0e1431d5e526a0db3346bdb95258e35ea4e05f029358049284b7c5b16de4eca0e" prot="public">
+          <name>VERSION_131</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="92" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a77a1b17be9a5a8b2fe7e1b38a62b7b7f" prot="public" static="no">
+        <name>dvbt2_reservedbiasbits_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a77a1b17be9a5a8b2fe7e1b38a62b7b7fabb62befa48999318a6cfc9b10984bf0b" prot="public">
+          <name>RESERVED_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a77a1b17be9a5a8b2fe7e1b38a62b7b7faed045929b1a537b41a8b12e1a86174ed" prot="public">
+          <name>RESERVED_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="98" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a13e3ac07e44feff3ff6afb2c7d91e6a3" prot="public" static="no">
+        <name>dvbt2_l1scrambled_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a13e3ac07e44feff3ff6afb2c7d91e6a3a9a4f498de88ac027f03b7f9e9cd0d147" prot="public">
+          <name>L1_SCRAMBLED_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a13e3ac07e44feff3ff6afb2c7d91e6a3a801723273547fa61dc99ae075cd28047" prot="public">
+          <name>L1_SCRAMBLED_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a6652a620224d95f39832e548b430c707" prot="public" static="no">
+        <name>dvbt2_misogroup_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a6652a620224d95f39832e548b430c707aa96142ac6857f0926dd93b5620d76c6d" prot="public">
+          <name>MISO_TX1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6652a620224d95f39832e548b430c707a5ee09518c737c6dd8c969dbce3784281" prot="public">
+          <name>MISO_TX2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1aec928ca16faed6e9b75f2c934b02773d" prot="public" static="no">
+        <name>dvbt2_showlevels_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1aec928ca16faed6e9b75f2c934b02773da4a93a926ada2d17030f9918de7bb0485" prot="public">
+          <name>SHOWLEVELS_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1aec928ca16faed6e9b75f2c934b02773da604cad28a1f405b7e73b0e96197adf2a" prot="public">
+          <name>SHOWLEVELS_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="113" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a6d9550fbe8ccbebbaa4fe8a53611084d" prot="public" static="no">
+        <name>dvbt2_inband_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a6d9550fbe8ccbebbaa4fe8a53611084daf0af0418989a773555e25a4704193ebc" prot="public">
+          <name>INBAND_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6d9550fbe8ccbebbaa4fe8a53611084da3505254cb45b61ee4a8feaf958694a8d" prot="public">
+          <name>INBAND_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="118" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a05a1d25d8aa68aad7e9b047cd3ccafa6" prot="public" static="no">
+        <name>dvbt2_equalization_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a05a1d25d8aa68aad7e9b047cd3ccafa6a2f57665c0b83b8a68bc8839039cbf8a9" prot="public">
+          <name>EQUALIZATION_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a05a1d25d8aa68aad7e9b047cd3ccafa6a0dd7d2c9d4f2b26e2197b2b200672387" prot="public">
+          <name>EQUALIZATION_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="123" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887" prot="public" static="no">
+        <name>dvbt2_bandwidth_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887a9b8ff0b22d4c0ed4957218628b61a6b6" prot="public">
+          <name>BANDWIDTH_1_7_MHZ</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887a3e48a04eb74bee59d21d839f9b389a09" prot="public">
+          <name>BANDWIDTH_5_0_MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887ab9ab5c67efdb946b37cfac97b405b913" prot="public">
+          <name>BANDWIDTH_6_0_MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887a531ff1a0d8d59ded467ba6731c2058e9" prot="public">
+          <name>BANDWIDTH_7_0_MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887ad5f4e17dfed9feadc3e52a88f3254b7a" prot="public">
+          <name>BANDWIDTH_8_0_MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a29d28d1a9aa81e37879fdae67c78f887a54b17899c4eaba41486151fffd5f6d4d" prot="public">
+          <name>BANDWIDTH_10_0_MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt2_config.h" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1a6756f8e55d0cb81f6f1d5a0ba7807bc1" prot="public" static="no">
+        <name>dvbt_hierarchy_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1a6756f8e55d0cb81f6f1d5a0ba7807bc1a6b42dfeedde75c99f8786fbec208a2aa" prot="public">
+          <name>NH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6756f8e55d0cb81f6f1d5a0ba7807bc1a2f50f92ff9f2750d6d0358a58f5a48e7" prot="public">
+          <name>ALPHA1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6756f8e55d0cb81f6f1d5a0ba7807bc1a98765d0d627fb1b96cb94b55625798fd" prot="public">
+          <name>ALPHA2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1a6756f8e55d0cb81f6f1d5a0ba7807bc1a97628ceecc460e53a2ed1af58aac5166" prot="public">
+          <name>ALPHA4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt_config.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt_config.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1dtv_1aa692717515abc097c67f602979e38b42" prot="public" static="no">
+        <name>dvbt_transmission_mode_t</name>
+        <enumvalue id="namespacegr_1_1dtv_1aa692717515abc097c67f602979e38b42a267221843a1fb70f1c378173dc20042d" prot="public">
+          <name>T2k</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1dtv_1aa692717515abc097c67f602979e38b42a91e061466fec708eb251d3f9b9a4711b" prot="public">
+          <name>T8k</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt_config.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/dvbt_config.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1a0712704de7c7f5c21f2d7a40e013a618" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::ATSC_MPEG_DATA_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>ATSC_MPEG_DATA_LENGTH</name>
+        <initializer>= 187</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1a4e21018d7e8ef4bc0a945e714a93241b" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::ATSC_MPEG_PKT_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>ATSC_MPEG_PKT_LENGTH</name>
+        <initializer>= 188</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1aaf40f4b0c85a2a6dddf2eebf7c679930" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::ATSC_MPEG_RS_ENCODED_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>ATSC_MPEG_RS_ENCODED_LENGTH</name>
+        <initializer>= 207</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="34" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1af64186d33fb7f639971b405deaeda91a" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::MPEG_SYNC_BYTE</definition>
+        <argsstring></argsstring>
+        <name>MPEG_SYNC_BYTE</name>
+        <initializer>= 0x47</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1a12fe40a571ae7e75af45eeef0f95f267" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::MPEG_TRANSPORT_ERROR_BIT</definition>
+        <argsstring></argsstring>
+        <name>MPEG_TRANSPORT_ERROR_BIT</name>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1a9ebf8a1fc6901734f3d09c3440bccacb" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double gr::dtv::ATSC_SYMBOL_RATE</definition>
+        <argsstring></argsstring>
+        <name>ATSC_SYMBOL_RATE</name>
+        <initializer>= 4.5e6/286*684</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1ab273193d55949fa05d67e5de247d6c41" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double gr::dtv::ATSC_DATA_SEGMENT_RATE</definition>
+        <argsstring></argsstring>
+        <name>ATSC_DATA_SEGMENT_RATE</name>
+        <initializer>= <ref refid="namespacegr_1_1dtv_1a9ebf8a1fc6901734f3d09c3440bccacb" kindref="member">ATSC_SYMBOL_RATE</ref>/832</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1aaae96aa88f141cef4ecc880d3b229d14" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::ATSC_DATA_SEGMENT_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>ATSC_DATA_SEGMENT_LENGTH</name>
+        <initializer>= 832</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1dtv_1a7a704f30c024a515fce5f8bf153ca2e7" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::dtv::ATSC_DSEGS_PER_FIELD</definition>
+        <argsstring></argsstring>
+        <name>ATSC_DSEGS_PER_FIELD</name>
+        <initializer>= 312</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-dtv/include/gnuradio/dtv/atsc_consts.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

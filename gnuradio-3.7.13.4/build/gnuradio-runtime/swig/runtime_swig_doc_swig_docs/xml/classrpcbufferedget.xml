@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbufferedget" kind="class" prot="public">
+    <compoundname>rpcbufferedget</compoundname>
+    <includes refid="rpcbufferedget_8h" local="no">rpcbufferedget.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TdataType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrpcbufferedget_1a05c89a2ebb9ef897b4238bc7c921f6a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rpcbufferedget&lt; TdataType &gt;::d_data_needed</definition>
+        <argsstring></argsstring>
+        <name>d_data_needed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcbufferedget_1a8899718091119650bfc0e047aaa30035" prot="private" static="no" mutable="no">
+        <type>boost::condition_variable</type>
+        <definition>boost::condition_variable rpcbufferedget&lt; TdataType &gt;::d_data_ready</definition>
+        <argsstring></argsstring>
+        <name>d_data_ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcbufferedget_1ad72ed89efe250bb89fbe588cf5290817" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex rpcbufferedget&lt; TdataType &gt;::d_buffer_lock</definition>
+        <argsstring></argsstring>
+        <name>d_buffer_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcbufferedget_1a43ec3fa7822cde6318877e88128b5de6" prot="private" static="no" mutable="no">
+        <type>TdataType</type>
+        <definition>TdataType rpcbufferedget&lt; TdataType &gt;::d_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbufferedget_1af12646e747094e22c253d8036c08a5d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbufferedget&lt; TdataType &gt;::rpcbufferedget</definition>
+        <argsstring>(const unsigned int init_buffer_size=4096)</argsstring>
+        <name>rpcbufferedget</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>init_buffer_size</declname>
+          <defval>4096</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="32" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbufferedget_1a0e09e0b53e26d395cadd74829c7e92cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbufferedget&lt; TdataType &gt;::~rpcbufferedget</definition>
+        <argsstring>()</argsstring>
+        <name>~rpcbufferedget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbufferedget_1abd7ddae67d84979f71f40f950977efb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcbufferedget&lt; TdataType &gt;::offer_data</definition>
+        <argsstring>(const TdataType &amp;data)</argsstring>
+        <name>offer_data</name>
+        <param>
+          <type>const TdataType &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbufferedget_1abdc7f2bb5b8971e60f59abebe6fc0a00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TdataType</type>
+        <definition>TdataType rpcbufferedget&lt; TdataType &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" line="30" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcbufferedget.h" bodystart="30" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classrpcbufferedget_1a43ec3fa7822cde6318877e88128b5de6" prot="private" virt="non-virtual"><scope>rpcbufferedget</scope><name>d_buffer</name></member>
+      <member refid="classrpcbufferedget_1ad72ed89efe250bb89fbe588cf5290817" prot="private" virt="non-virtual"><scope>rpcbufferedget</scope><name>d_buffer_lock</name></member>
+      <member refid="classrpcbufferedget_1a05c89a2ebb9ef897b4238bc7c921f6a5" prot="private" virt="non-virtual"><scope>rpcbufferedget</scope><name>d_data_needed</name></member>
+      <member refid="classrpcbufferedget_1a8899718091119650bfc0e047aaa30035" prot="private" virt="non-virtual"><scope>rpcbufferedget</scope><name>d_data_ready</name></member>
+      <member refid="classrpcbufferedget_1abdc7f2bb5b8971e60f59abebe6fc0a00" prot="public" virt="non-virtual"><scope>rpcbufferedget</scope><name>get</name></member>
+      <member refid="classrpcbufferedget_1abd7ddae67d84979f71f40f950977efb9" prot="public" virt="non-virtual"><scope>rpcbufferedget</scope><name>offer_data</name></member>
+      <member refid="classrpcbufferedget_1af12646e747094e22c253d8036c08a5d5" prot="public" virt="non-virtual"><scope>rpcbufferedget</scope><name>rpcbufferedget</name></member>
+      <member refid="classrpcbufferedget_1a0e09e0b53e26d395cadd74829c7e92cc" prot="public" virt="non-virtual"><scope>rpcbufferedget</scope><name>~rpcbufferedget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1head" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::head</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="head_8h" local="no">head.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1head_1a049d8f222ac799a3daa213981baad747" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1head" kindref="compound">head</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;head&gt; gr::blocks::head::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1head_1a406bf5ec53c62ca4cb76de86e27dc942" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1head_1a049d8f222ac799a3daa213981baad747" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::head::make</definition>
+        <argsstring>(size_t sizeof_stream_item, uint64_t nitems)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1head_1abdd0b2699c7026e83500adc39731de9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::head::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1head_1a03894a817d3b49a2e5bb70d64464bfa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::head::set_length</definition>
+        <argsstring>(uint64_t nitems)=0</argsstring>
+        <name>set_length</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>copies the first N items to the output then signals done </para>    </briefdescription>
+    <detaileddescription>
+<para>Useful for building test cases </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="288">
+        <label>gr::blocks::head</label>
+        <link refid="classgr_1_1blocks_1_1head"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="290">
+        <label>gr::blocks::head</label>
+        <link refid="classgr_1_1blocks_1_1head"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/head.h" bodystart="40" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1head_1a406bf5ec53c62ca4cb76de86e27dc942" prot="public" virt="non-virtual"><scope>gr::blocks::head</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1head_1abdd0b2699c7026e83500adc39731de9e" prot="public" virt="pure-virtual"><scope>gr::blocks::head</scope><name>reset</name></member>
+      <member refid="classgr_1_1blocks_1_1head_1a03894a817d3b49a2e5bb70d64464bfa6" prot="public" virt="pure-virtual"><scope>gr::blocks::head</scope><name>set_length</name></member>
+      <member refid="classgr_1_1blocks_1_1head_1a049d8f222ac799a3daa213981baad747" prot="public" virt="non-virtual"><scope>gr::blocks::head</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

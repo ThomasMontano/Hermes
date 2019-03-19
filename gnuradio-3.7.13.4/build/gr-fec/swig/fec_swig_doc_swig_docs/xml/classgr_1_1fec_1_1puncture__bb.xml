@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1puncture__bb" kind="class" prot="public">
+    <compoundname>gr::fec::puncture_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="puncture__bb_8h" local="no">puncture_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1puncture__bb_1ad34dc84379d2fbe3b6e85a261a81d1de" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1puncture__bb" kindref="compound">puncture_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;puncture_bb&gt; gr::fec::puncture_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/puncture_bb.h" line="93" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/puncture_bb.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1puncture__bb_1a7be43db288d7c5bea886f37e9dcd43a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1puncture__bb_1ad34dc84379d2fbe3b6e85a261a81d1de" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::puncture_bb::make</definition>
+        <argsstring>(int puncsize, int puncpat, int delay=0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>puncsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>puncpat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a puncture block for unpacked bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>puncsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of block of bits to puncture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>puncpat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The puncturing pattern </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delayed the puncturing pattern by shifting it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/puncture_bb.h" line="102" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Puncture a stream of unpacked bits. </para>    </briefdescription>
+    <detaileddescription>
+<para>Puncture a given block of input samples of <computeroutput>puncsize</computeroutput>. The items produced is based on pattern <computeroutput>puncpat</computeroutput>. Basically, if:</para><para><programlisting><codeline><highlight class="normal">k<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>_puncpat[i]<sp/>==<sp/>1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>out[k++]<sp/>=<sp/>input[i]</highlight></codeline>
+</programlisting></para><para>This block is designed for unpacked bits - that is, every input sample is a bit, either a 1 or 0. It&apos;s possible to use packed bits as symbols, but the puncturing will be done on the symbol level, not the bit level.</para><para><computeroutput>puncpat</computeroutput> is specified as a 32-bit integer that we can convert into the vector _puncpat used in the algorithm above:</para><para><programlisting><codeline><highlight class="normal">_puncpat<sp/>=<sp/>[0,...]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>in<sp/>puncsize:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>_puncpat[i]<sp/>=<sp/>puncpat<sp/>&gt;&gt;<sp/>(puncsize-1-i)</highlight></codeline>
+</programlisting></para><para>Example: <programlisting><codeline><highlight class="normal">puncsize<sp/>=<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">puncpat<sp/>=<sp/>0xEF<sp/><sp/>--&gt;<sp/><sp/>[1,1,1,0,1,1,1,1]</highlight></codeline>
+<codeline><highlight class="normal">input<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>d,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+<codeline><highlight class="normal">output<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+</programlisting></para><para>The <ref refid="namespacegr_1_1fec" kindref="compound">gr.fec</ref> Python module provides a read_bitlist function that can turn a string of a puncture pattern into the correct integer form. The pattern of 0xEF could be specified as fec.readbitlist(&quot;11101111&quot;). Also, this allows us to use puncsize=len(&quot;11101111&quot;) to make sure that our sizes are set up correctly for the pattern we want.</para><para>The fec.extended_encoder takes in the puncture pattern directly as a string and uses the readbitlist inside to do the conversion.</para><para>Note that due to the above concept, the default setting in the extended encoder of &apos;11&apos; translates into no puncturing.</para><para>The <computeroutput>delay</computeroutput> parameter delays the application of the puncture pattern. This is equivalent to circularly rotating the <computeroutput>puncpat</computeroutput> by <computeroutput>delay</computeroutput>. Note that because of the circular shift, the delay should be between 0 and <computeroutput>puncsize</computeroutput>, but this is not enforced; the effective delay will simply be <computeroutput>delay</computeroutput> mod <computeroutput>puncsize</computeroutput>. A negative value here is ignored. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="240">
+        <label>gr::fec::puncture_bb</label>
+        <link refid="classgr_1_1fec_1_1puncture__bb"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="242">
+        <label>gr::fec::puncture_bb</label>
+        <link refid="classgr_1_1fec_1_1puncture__bb"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/puncture_bb.h" line="90" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/puncture_bb.h" bodystart="89" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1puncture__bb_1a7be43db288d7c5bea886f37e9dcd43a8" prot="public" virt="non-virtual"><scope>gr::fec::puncture_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1puncture__bb_1ad34dc84379d2fbe3b6e85a261a81d1de" prot="public" virt="non-virtual"><scope>gr::fec::puncture_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

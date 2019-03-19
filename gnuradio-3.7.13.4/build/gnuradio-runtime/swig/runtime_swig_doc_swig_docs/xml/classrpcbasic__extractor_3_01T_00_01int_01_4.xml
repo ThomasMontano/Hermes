@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__extractor_3_01T_00_01int_01_4" kind="class" prot="public">
+    <compoundname>rpcbasic_extractor&lt; T, int &gt;</compoundname>
+    <basecompoundref refid="classrpcextractor__base" prot="public" virt="virtual">rpcextractor_base&lt; T, int &gt;</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__extractor_3_01T_00_01int_01_4_1a3796bfa152122f478f5da47a5e860fec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_extractor&lt; T, int &gt;::rpcbasic_extractor</definition>
+        <argsstring>(T *source, void(T::*func)(int))</argsstring>
+        <name>rpcbasic_extractor</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>void(T::*)(int)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="308" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="308" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__extractor_3_01T_00_01int_01_4_1a530608e91a306ed4782fd29decc67948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void rpcbasic_extractor&lt; T, int &gt;::post</definition>
+        <argsstring>(pmt::pmt_t which_port, pmt::pmt_t msg)</argsstring>
+        <name>post</name>
+        <reimplements refid="classgr_1_1messages_1_1msg__accepter_1a68a933600f38482c4d447ed57d20875a">post</reimplements>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send <computeroutput>msg</computeroutput> to <computeroutput>msg_accepter</computeroutput> on port <computeroutput>which_port</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para>Sending a message is an asynchronous operation. The <computeroutput>post</computeroutput> call will not wait for the message either to arrive at the destination or to be received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="312" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="312" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized extractor class for int data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="381">
+        <label>rpcextractor_base&lt; T, int &gt;</label>
+        <link refid="classrpcextractor__base"/>
+        <childnode refid="382" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>rpcbasic_extractor&lt; T, int &gt;</label>
+        <link refid="classrpcbasic__extractor_3_01T_00_01int_01_4"/>
+        <childnode refid="381" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="386">
+        <label>T</label>
+      </node>
+      <node id="384">
+        <label>rpcextractor_base&lt; T, int &gt;</label>
+        <link refid="classrpcextractor__base"/>
+        <childnode refid="385" relation="public-inheritance">
+        </childnode>
+        <childnode refid="386" relation="usage">
+          <edgelabel>_source</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>rpcbasic_extractor&lt; T, int &gt;</label>
+        <link refid="classrpcbasic__extractor_3_01T_00_01int_01_4"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="306" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="305" bodyend="317"/>
+    <listofallmembers>
+      <member refid="classrpcextractor__base_1a2048bb831963b0312c0093dad50f6c4a" prot="protected" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>_func</name></member>
+      <member refid="classrpcextractor__base_1afb9a96dc63c5144792ca5e086476818f" prot="protected" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>_source</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ad6092d4c7f34d71ceb85d1f0d261184f" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>msg_accepter</name></member>
+      <member refid="classrpcbasic__extractor_3_01T_00_01int_01_4_1a530608e91a306ed4782fd29decc67948" prot="public" virt="virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>post</name></member>
+      <member refid="classrpcbasic__extractor_3_01T_00_01int_01_4_1a3796bfa152122f478f5da47a5e860fec" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>rpcbasic_extractor</name></member>
+      <member refid="classrpcextractor__base_1a85303828dca8aef06ede86c1da67a848" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>rpcextractor_base</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ac2c26834f090b1af422d874be1bb7c54" prot="public" virt="virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>~msg_accepter</name></member>
+      <member refid="classrpcextractor__base_1ab4755c207678a4742f02c7ef0837cdbd" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, int &gt;</scope><name>~rpcextractor_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

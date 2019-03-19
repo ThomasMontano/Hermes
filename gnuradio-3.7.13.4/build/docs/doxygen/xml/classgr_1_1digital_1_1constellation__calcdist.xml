@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1constellation__calcdist" kind="class" prot="public">
+    <compoundname>gr::digital::constellation_calcdist</compoundname>
+    <basecompoundref refid="classgr_1_1digital_1_1constellation" prot="public" virt="non-virtual">gr::digital::constellation</basecompoundref>
+    <includes refid="constellation_8h" local="no">gnuradio/digital/constellation.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1digital_1_1constellation__calcdist_1a9ebe9928af3973db2b656406e1c7a3c4" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1digital_1_1constellation__calcdist" kindref="compound">constellation_calcdist</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;constellation_calcdist&gt; gr::digital::constellation_calcdist::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="246" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__calcdist_1aa240cb8fe38e0fdcc92edadd996d6d2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1digital_1_1constellation__calcdist_1a9ebe9928af3973db2b656406e1c7a3c4" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::digital::constellation_calcdist::make</definition>
+        <argsstring>(std::vector&lt; gr_complex &gt; constell, std::vector&lt; int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int dimensionality)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <declname>constell</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>pre_diff_code</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rotational_symmetry</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>dimensionality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a general constellation object that calculates the Euclidean distance for hard decisions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of constellation points (order of list matches pre_diff_code) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pre_diff_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of alphabet symbols (before applying any differential coding) (order of list matches constell) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotational_symmetry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rotations around unit circle that have the same representation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dimensionality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions to the constellation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__calcdist_1af88b39b4de41e64241c14abb5baa8ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::digital::constellation_calcdist::decision_maker</definition>
+        <argsstring>(const gr_complex *sample)</argsstring>
+        <name>decision_maker</name>
+        <reimplements refid="classgr_1_1digital_1_1constellation_1aecc0c3b7b1042efe9100937988f7902b">decision_maker</reimplements>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+<para>Returns the constellation point that matches best. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="262" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__calcdist_1aa036a13b2028bfc9f05dd097c52a7c46" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::constellation_calcdist::constellation_calcdist</definition>
+        <argsstring>(std::vector&lt; gr_complex &gt; constell, std::vector&lt; int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int dimensionality)</argsstring>
+        <name>constellation_calcdist</name>
+        <param>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <declname>constell</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>pre_diff_code</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rotational_symmetry</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>dimensionality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="268" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Calculate Euclidian distance for any constellation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Constellation which calculates the distance to each point in the constellation for decision making. Inefficient for large constellations. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2772">
+        <label>gr::digital::constellation</label>
+        <link refid="classgr_1_1digital_1_1constellation"/>
+        <childnode refid="2773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2773">
+        <label>boost::enable_shared_from_this&lt; constellation &gt;</label>
+      </node>
+      <node id="2771">
+        <label>gr::digital::constellation_calcdist</label>
+        <link refid="classgr_1_1digital_1_1constellation__calcdist"/>
+        <childnode refid="2772" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2777">
+        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
+        <childnode refid="2778" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2775">
+        <label>gr::digital::constellation</label>
+        <link refid="classgr_1_1digital_1_1constellation"/>
+        <childnode refid="2776" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2777" relation="usage">
+          <edgelabel>d_soft_dec_lut</edgelabel>
+        </childnode>
+        <childnode refid="2779" relation="usage">
+          <edgelabel>d_pre_diff_code</edgelabel>
+        </childnode>
+        <childnode refid="2780" relation="usage">
+          <edgelabel>d_constellation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2778">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="2776">
+        <label>boost::enable_shared_from_this&lt; constellation &gt;</label>
+      </node>
+      <node id="2780">
+        <label>std::vector&lt; gr_complex &gt;</label>
+        <childnode refid="2781" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2774">
+        <label>gr::digital::constellation_calcdist</label>
+        <link refid="classgr_1_1digital_1_1constellation__calcdist"/>
+        <childnode refid="2775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2781">
+        <label>std::complex</label>
+      </node>
+      <node id="2779">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="244" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="242" bodyend="272"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1constellation_1a87690b8ffabf0ebfb8bedced857d5417" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>apply_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a3b622a4a068c98fda6db9f40153af850" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a32d01ed008d3d504708352b854eecb13" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>as_pmt</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a04d4b0e979c23414c06b0965605480d2" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>base</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ae5322f145b0af1fb23010aa3da589e9f" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>bits_per_symbol</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a91d01f94589c9ea4d3a183f455268604" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>calc_arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5bbfb7166739e5ebc7f9b49de59b4062" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>calc_euclidean_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a0842d4f01dfbda896015807f330f646b" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>calc_hard_symbol_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a298ef3c2ae64ce29c42d3a7d8d73c89b" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>calc_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a2f210b179a72d6e60b8d59a0c66e80a1" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>calc_soft_dec</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a8e917e7cf20203dec421725aad34786b" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a20cea65d404f376a4778a6096816307f" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__calcdist_1aa036a13b2028bfc9f05dd097c52a7c46" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>constellation_calcdist</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a07cd1d356814817f2afb208af5c8b6ef" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_apply_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aa9b5934e548e46e4c7706b3cd22d2f69" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a1b5e422bdf7ecbad26e9ed2652956ee9" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a85d49f80821bc8c836588da64c4d9077" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_dimensionality</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a51e8e28141eb4a8e6c18962a2999058f" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_im_max</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aea2610a49f5d0557ed10528a67abb490" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_im_min</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a41dcdc9ef2c25ca07522a4a234b5efbf" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_lut_precision</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad5bd69d3188835883fe11d1a97667d67" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_lut_scale</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a23543df8ec7540e84d9a29f4bf7c8b2d" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a9cfeea23dc49a59975aca5b92b829d37" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_re_max</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a90cfe2d9144a9e2c9e28973cc6ee7cbc" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_re_min</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a6c4d5d1ba5175b419a716a8dca1796a6" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_rotational_symmetry</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad6accef94341a3cea5db2152ec4d174f" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_scalefactor</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1abe43bb5436ccd4ddda306bdddbf7a916" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>d_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__calcdist_1af88b39b4de41e64241c14abb5baa8ef4" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>decision_maker</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a9de9eb2229e907d55058d081df01683e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>decision_maker_pe</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5dcdd705a7d878b88b7acef8da9e845e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>decision_maker_v</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad2b3847821c7a878f24fbb95d9399990" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>dimensionality</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a44e01dd4eff8c625c586a2f236a505ec" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>gen_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aff2ec26a1d06b878b36335d2bde94197" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>get_closest_point</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a446417e19d701280d20874ad718a16ca" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>get_distance</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a1bc7a672bd0e59f6fca46f93ae28c05c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>has_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__calcdist_1aa240cb8fe38e0fdcc92edadd996d6d2b" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>make</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7e12c699256ffb7ff98af6130c257a20" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>map_to_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a76cdc6cba9966b7825ec1dd8b4e33d60" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>map_to_points_v</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1abb8a2cdd79cfc83a9a7ab55cdec6b2fb" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>max_min_axes</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a27ba0660bcd984420d0a095dd0cf2d19" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a12c074528343a796a8b4c79be05bed5e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5d6597a0478e123918b1b8823329a54c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>rotational_symmetry</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a18be70826bbe01f8a8df3656c919ab69" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>s_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7cbd7207225ce02f09f37c15b80f1e2a" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>set_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7b4f20eff157d285470bb11c2a1dccc3" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>set_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a004c4e9f82442bc6ac28920ae43f1a41" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1af40f67a78465490b2766e38c1cc52c2c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>soft_decision_maker</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__calcdist_1a9ebe9928af3973db2b656406e1c7a3c4" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>sptr</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1afe9722fed840a20157c0e2fe301ff7a8" prot="public" virt="non-virtual"><scope>gr::digital::constellation_calcdist</scope><name>v_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1afaee6d698f66f455ddeec92e1c4f563e" prot="public" virt="virtual"><scope>gr::digital::constellation_calcdist</scope><name>~constellation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

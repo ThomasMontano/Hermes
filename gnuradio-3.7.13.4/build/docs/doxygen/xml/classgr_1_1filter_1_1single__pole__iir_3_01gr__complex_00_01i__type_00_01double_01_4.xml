@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4" kind="class" prot="public">
+    <compoundname>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</compoundname>
+    <includes refid="single__pole__iir_8h" local="no">gnuradio/filter/single_pole_iir.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class i_type</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a2717f4afb9a377f25d3038ff830a7f13" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::d_alpha</definition>
+        <argsstring></argsstring>
+        <name>d_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="168" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1ac9d9f680088502623baf7010e5290c3f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::d_one_minus_alpha</definition>
+        <argsstring></argsstring>
+        <name>d_one_minus_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="169" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1ae0067a88b2ebf013418bcf12a7b7dfb6" prot="protected" static="no" mutable="no">
+        <type><ref refid="gr__complex_8h_1a90c065671dd1c4b7aed7e08b265e23f7" kindref="member">gr_complexd</ref></type>
+        <definition>gr_complexd gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::d_prev_output</definition>
+        <argsstring></argsstring>
+        <name>d_prev_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="170" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a8a61fabfa88654680de0c584db5a56da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::single_pole_iir</definition>
+        <argsstring>(double alpha=1.0)</argsstring>
+        <name>single_pole_iir</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>construct new single pole IIR with given alpha </para>        </briefdescription>
+        <detaileddescription>
+<para>computes y(i) = (1-alpha) * y(i-1) + alpha * x(i) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="129" bodyend="133"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1ac3a1d570a4eee0373568c4c9d17ee5da" compoundref="single__pole__iir_8h" startline="86">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_prev_output</references>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1addcc5e4b40b047a852999125d69d5e94" compoundref="single__pole__iir_8h" startline="66" endline="73">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::set_taps</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a900dc78957bf160c9592ea0b615deeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::filter</definition>
+        <argsstring>(const i_type input)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const i_type</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>compute a single output value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the filtered input value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="139" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="175" bodyend="183"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1aae34e9e591019dd8b081eb06a981252d" compoundref="single__pole__iir_8h" startline="84">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_alpha</references>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1aa8d14823d7649449309387443c133615" compoundref="single__pole__iir_8h" startline="85">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_one_minus_alpha</references>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1ac3a1d570a4eee0373568c4c9d17ee5da" compoundref="single__pole__iir_8h" startline="86">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_prev_output</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a16a18c30612337692adc76769323d18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::filterN</definition>
+        <argsstring>(gr_complex output[], const i_type input[], unsigned long n)</argsstring>
+        <name>filterN</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>output</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const i_type</type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute an array of N output values. <computeroutput>input</computeroutput> must have n valid entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="145" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="189" bodyend="195"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1a5f02362d24af0e1cc955d32c3e82adfe" compoundref="single__pole__iir_8h" startline="94" endline="102">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::filter</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1aaa9a126536418a29f6539b0033ae74b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::set_taps</definition>
+        <argsstring>(double alpha)</argsstring>
+        <name>set_taps</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>install <computeroutput>alpha</computeroutput> as the current taps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="150" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="150" bodyend="157"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1aae34e9e591019dd8b081eb06a981252d" compoundref="single__pole__iir_8h" startline="84">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_alpha</references>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1aa8d14823d7649449309387443c133615" compoundref="single__pole__iir_8h" startline="85">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_one_minus_alpha</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a4be9464dd8eaaa41f5b8771da9e3061f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>reset state to zero </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="160" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="160" bodyend="163"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1ac3a1d570a4eee0373568c4c9d17ee5da" compoundref="single__pole__iir_8h" startline="86">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_prev_output</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1aaf8395c899ea97bbc8e00bfca23ac60f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="gr__complex_8h_1a90c065671dd1c4b7aed7e08b265e23f7" kindref="member">gr_complexd</ref></type>
+        <definition>gr_complexd gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;::prev_output</definition>
+        <argsstring>() const </argsstring>
+        <name>prev_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="165" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="165" bodyend="165"/>
+        <references refid="classgr_1_1filter_1_1single__pole__iir_1ac3a1d570a4eee0373568c4c9d17ee5da" compoundref="single__pole__iir_8h" startline="86">gr::filter::single_pole_iir&lt; o_type, i_type, tap_type &gt;::d_prev_output</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9747">
+        <label>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</label>
+        <link refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4"/>
+        <childnode refid="9748" relation="usage">
+          <edgelabel>d_prev_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="9748">
+        <label>std::complex&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" line="122" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/single_pole_iir.h" bodystart="121" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a2717f4afb9a377f25d3038ff830a7f13" prot="protected" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>d_alpha</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1ac9d9f680088502623baf7010e5290c3f" prot="protected" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>d_one_minus_alpha</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1ae0067a88b2ebf013418bcf12a7b7dfb6" prot="protected" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>d_prev_output</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a900dc78957bf160c9592ea0b615deeb7" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a16a18c30612337692adc76769323d18e" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>filterN</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1aaf8395c899ea97bbc8e00bfca23ac60f" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>prev_output</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a4be9464dd8eaaa41f5b8771da9e3061f" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>reset</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1aaa9a126536418a29f6539b0033ae74b6" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>set_taps</name></member>
+      <member refid="classgr_1_1filter_1_1single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a8a61fabfa88654680de0c584db5a56da" prot="public" virt="non-virtual"><scope>gr::filter::single_pole_iir&lt; gr_complex, i_type, double &gt;</scope><name>single_pole_iir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

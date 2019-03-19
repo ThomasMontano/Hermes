@@ -1,0 +1,635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="pycallback__object_8h" kind="file">
+    <compoundname>pycallback_object.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="rpcregisterhelpers_8h" local="no">gnuradio/rpcregisterhelpers.h</includes>
+    <includes local="no">pythread.h</includes>
+    <includes local="no">boost/format.hpp</includes>
+    <incdepgraph>
+      <node id="1060">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1037">
+        <label>pmt/api.h</label>
+        <link refid="pmt_2api_8h"/>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>gnuradio/messages/msg_accepter.h</label>
+        <link refid="messages_2msg__accepter_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="1030">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1051">
+        <label>gnuradio/sptr_magic.h</label>
+        <link refid="sptr__magic_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1054">
+        <label>gnuradio/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1038">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="1031">
+        <label>gnuradio/rpcserver_booter_aggregator.h</label>
+        <link refid="rpcserver__booter__aggregator_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>gnuradio/rpcmanager_base.h</label>
+        <link refid="rpcmanager__base_8h"/>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>gnuradio/io_signature.h</label>
+        <link refid="io__signature_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>stdint.h</label>
+      </node>
+      <node id="1044">
+        <label>pmt/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="1058">
+        <label>gnuradio/thread/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1034">
+        <label>gnuradio/rpccallbackregister_base.h</label>
+        <link refid="rpccallbackregister__base_8h"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>gnuradio/runtime_types.h</label>
+        <link refid="runtime__types_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="1049">
+        <label>gnuradio/block_registry.h</label>
+        <link refid="block__registry_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>stdexcept</label>
+      </node>
+      <node id="1059">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1024">
+        <label>string</label>
+      </node>
+      <node id="1047">
+        <label>gnuradio/rpcserver_selector.h</label>
+        <link refid="rpcserver__selector_8h"/>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>map</label>
+      </node>
+      <node id="1018">
+        <label>pycallback_object.h</label>
+        <link refid="pycallback_object.h"/>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>stddef.h</label>
+      </node>
+      <node id="1065">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1039">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="1061">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="1025">
+        <label>vector</label>
+      </node>
+      <node id="1063">
+        <label>boost/thread/barrier.hpp</label>
+      </node>
+      <node id="1020">
+        <label>gnuradio/rpcregisterhelpers.h</label>
+        <link refid="rpcregisterhelpers_8h"/>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>pythread.h</label>
+      </node>
+      <node id="1045">
+        <label>gnuradio/messages/msg_producer.h</label>
+        <link refid="msg__producer_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>gnuradio/basic_block.h</label>
+        <link refid="basic__block_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>gnuradio/rpcserver_booter_base.h</label>
+        <link refid="rpcserver__booter__base_8h"/>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>sstream</label>
+      </node>
+      <node id="1026">
+        <label>gnuradio/rpcmanager.h</label>
+        <link refid="rpcmanager_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>pmt/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1042">
+        <label>iosfwd</label>
+      </node>
+      <node id="1019">
+        <label>iostream</label>
+      </node>
+      <node id="1032">
+        <label>gnuradio/rpcserver_aggregator.h</label>
+        <link refid="rpcserver__aggregator_8h"/>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+      </node>
+      <node id="1048">
+        <label>gnuradio/config.h</label>
+      </node>
+      <node id="1067">
+        <label>deque</label>
+      </node>
+      <node id="1033">
+        <label>gnuradio/rpcserver_base.h</label>
+        <link refid="rpcserver__base_8h"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>gnuradio/gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="1040" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>gnuradio/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>complex</label>
+      </node>
+      <node id="1021">
+        <label>stdio.h</label>
+      </node>
+      <node id="1046">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classpmt__assist" prot="public">pmt_assist</innerclass>
+    <innerclass refid="classpycallback__object" prot="public">pycallback_object</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4" prot="public" static="no">
+        <name>pyport_t</name>
+        <enumvalue id="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4ad100801d1c0febe3885e5f69c6012131" prot="public">
+          <name>PYPORT_STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4a1dbd06b5c7cc061177cf66309aa5a9ff" prot="public">
+          <name>PYPORT_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/pycallback_object.h" line="28" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/pycallback_object.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="pycallback__object_8h_1aa89a2c2e5f581891a9e8add79f53a855" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pycallback_object_count</definition>
+        <argsstring></argsstring>
+        <name>pycallback_object_count</name>
+        <initializer>= 500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/pycallback_object.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/pycallback_object.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2012<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rpcregisterhelpers_8h" kindref="compound">gnuradio/rpcregisterhelpers.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pythread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4" kindref="member">pyport_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4ad100801d1c0febe3885e5f69c6012131" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4ad100801d1c0febe3885e5f69c6012131" kindref="member">PYPORT_STRING</ref>,</highlight></codeline>
+<codeline lineno="30" refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4a1dbd06b5c7cc061177cf66309aa5a9ff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pycallback__object_8h_1afdcb33acd08539b294ffd13411ab59d4a1dbd06b5c7cc061177cf66309aa5a9ff" kindref="member">PYPORT_FLOAT</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="pycallback__object_8h_1aa89a2c2e5f581891a9e8add79f53a855" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pycallback__object_8h_1aa89a2c2e5f581891a9e8add79f53a855" kindref="member">pycallback_object_count</ref><sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>simple<sp/>to-PMT<sp/>converter<sp/>template<sp/>class-function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classpmt__assist" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>myType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpmt__assist" kindref="compound">pmt_assist</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39" refid="classpmt__assist_1a5d3dd6c6ca889893cc2e9cb4eb361a2b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><ref refid="classpmt__assist_1a5d3dd6c6ca889893cc2e9cb4eb361a2b" kindref="member">make</ref>(myType<sp/>_val)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pmt::mp(_val);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>template<sp/>specializations<sp/>for<sp/>vectors<sp/>that<sp/>can&apos;t<sp/>use<sp/>pmt::mp()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="47" refid="classpmt__assist_1af41096233adff753ca93c7e6d745d76c" refkind="member"><highlight class="normal"><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><ref refid="classpmt__assist" kindref="compound">pmt_assist&lt;std::vector&lt;float&gt;</ref><sp/>&gt;::make(std::vector&lt;float&gt;<sp/>_val)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1a6d63b1c65c7f0160eea30b5774aa5550" kindref="member">pmt::init_f32vector</ref>(_val.size(),<sp/>&amp;_val[0]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="53" refid="classpmt__assist_1a23275d7f3b1526e258b4c487dbb9f1b8" refkind="member"><highlight class="normal"><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><ref refid="classpmt__assist" kindref="compound">pmt_assist&lt;std::vector&lt;gr_complex&gt;</ref><sp/>&gt;::make(std::vector&lt;gr_complex&gt;<sp/>_val)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1a85a76c6ddb29870d7b4fcaeb44b71c41" kindref="member">pmt::init_c32vector</ref>(_val.size(),<sp/>&amp;_val[0]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classpycallback__object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>myType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpycallback__object" kindref="compound">pycallback_object</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61" refid="classpycallback__object_1a351aff6ab3636e29fc6590edd178e031" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classpycallback__object_1a351aff6ab3636e29fc6590edd178e031" kindref="member">pycallback_object</ref>(std::string<sp/>name,<sp/>std::string<sp/>functionbase,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>units,<sp/>std::string<sp/>desc,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myType<sp/>min,<sp/>myType<sp/>max,<sp/>myType<sp/>deflt,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref><sp/>dtype)<sp/>:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>d_callback(NULL),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>d_functionbase(functionbase),<sp/>d_units(units),<sp/>d_desc(desc),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>d_min(min),<sp/>d_max(max),<sp/>d_deflt(deflt),<sp/>d_dtype(dtype),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>d_name(name),<sp/>d_id(<ref refid="pycallback__object_8h_1aa89a2c2e5f581891a9e8add79f53a855" kindref="member">pycallback_object_count</ref>++)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>d_callback<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpycallback__object_1abd016cd9085657e48e5400e7d8a0f626" kindref="member">setup_rpc</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classpycallback__object_1a7ab56d291bd221ce976e18bab7090f01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object_1a7ab56d291bd221ce976e18bab7090f01" kindref="member">add_rpc_variable</ref>(<ref refid="rpcregisterhelpers_8h_1afe15548ba285ca8e75265509ee9ac36f" kindref="member">rpcbasic_sptr</ref><sp/>s)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>d_rpc_vars.push_back(s);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classpycallback__object_1ae6f3a4cb3e22eb620d3781ef6970bdf9" refkind="member"><highlight class="normal"><sp/><sp/>myType<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>myType<sp/>rVal<sp/>=<sp/>d_deflt;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(d_callback<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;WARNING:<sp/>pycallback_object<sp/>get()<sp/>called<sp/>without<sp/>py<sp/>callback<sp/>set!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rVal;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>obtain<sp/><sp/>PyGIL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PyGILState_STATE<sp/>state<sp/>=<sp/>PyGILState_Ensure();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PyObject<sp/>*func;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PyObject<sp/>*arglist;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PyObject<sp/>*result;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>func<sp/>=<sp/>(PyObject<sp/>*)<sp/>d_callback;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Python<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//arglist<sp/>=<sp/>Py_BuildValue(&quot;&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Build<sp/>argument<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>PyEval_CallObject(func,NULL);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>Python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//result<sp/>=<sp/>PyEval_CallObject(func,arglist);<sp/><sp/><sp/><sp/><sp/>//<sp/>Call<sp/>Python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Py_DECREF(arglist);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Trash<sp/>arglist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(result)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>no<sp/>errors,<sp/>return<sp/>double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rVal<sp/>=<sp/>pyCast(result);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Py_XDECREF(result);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>release<sp/><sp/>PyGIL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PyGILState_Release(state);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rVal;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classpycallback__object_1a6283361b51aa02e83db396a5d253ce2e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object_1a6283361b51aa02e83db396a5d253ce2e" kindref="member">set_callback</ref>(PyObject<sp/>*cb)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>d_callback<sp/>=<sp/>cb;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classpycallback__object_1abd016cd9085657e48e5400e7d8a0f626" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object_1abd016cd9085657e48e5400e7d8a0f626" kindref="member">setup_rpc</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GR_CTRLPORT</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpycallback__object_1a7ab56d291bd221ce976e18bab7090f01" kindref="member">add_rpc_variable</ref>(</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpcregisterhelpers_8h_1afe15548ba285ca8e75265509ee9ac36f" kindref="member">rpcbasic_sptr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classrpcbasic__register__get" kindref="compound">rpcbasic_register_get&lt;pycallback_object, myType&gt;</ref>(</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(boost::format(</highlight><highlight class="stringliteral">&quot;%s%d&quot;</highlight><highlight class="normal">)<sp/>%<sp/>d_name<sp/>%<sp/>d_id).str()<sp/>,<sp/>d_functionbase.c_str(),</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classpycallback__object_1ae6f3a4cb3e22eb620d3781ef6970bdf9" kindref="member">pycallback_object::get</ref>,<sp/><ref refid="classpmt__assist_1a5d3dd6c6ca889893cc2e9cb4eb361a2b" kindref="member">pmt_assist&lt;myType&gt;::make</ref>(d_min),</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpmt__assist_1a5d3dd6c6ca889893cc2e9cb4eb361a2b" kindref="member">pmt_assist&lt;myType&gt;::make</ref>(d_max),<sp/><ref refid="classpmt__assist_1a5d3dd6c6ca889893cc2e9cb4eb361a2b" kindref="member">pmt_assist&lt;myType&gt;::make</ref>(d_deflt),</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_units.c_str(),<sp/>d_desc.c_str(),<sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" kindref="member">RPC_PRIVLVL_MIN</ref>,<sp/>d_dtype)));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GR_CTRLPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>PyObject*<sp/>d_callback;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>std::string<sp/>d_functionbase,<sp/>d_units,<sp/>d_desc;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>myType<sp/>d_min,<sp/>d_max,<sp/>d_deflt;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref><sp/>d_dtype;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>a<sp/>fall-through<sp/>converter<sp/>in<sp/>case<sp/>someone<sp/>tries<sp/>to<sp/>call<sp/>pyCast<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/>*<sp/>object<sp/>type<sp/>for<sp/>which<sp/>there<sp/>isn&apos;t<sp/>a<sp/>template<sp/>specialization<sp/>(located<sp/>below</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/>*<sp/>this<sp/>class)<sp/>function.<sp/>This<sp/>function<sp/>should<sp/>never<sp/>get<sp/>called,<sp/>and<sp/>it<sp/>is</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/>*<sp/>unknown<sp/>if<sp/>changing<sp/>the<sp/>return<sp/>type<sp/>from<sp/>myType<sp/>to<sp/>&apos;void&apos;<sp/>will<sp/>break</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/>*<sp/>something.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>myType<sp/>pyCast(PyObject*<sp/>obj)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;TYPE<sp/>NOT<sp/>IMPLEMENTED!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(0);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>following<sp/>is<sp/>to<sp/>make<sp/>compilers<sp/>happy<sp/>only.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>myType<sp/>dummy;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(dummy);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>std::vector&lt;boost::any&gt;<sp/>d_rpc_vars;<sp/></highlight><highlight class="comment">//<sp/>container<sp/>for<sp/>all<sp/>RPC<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>std::string<sp/>d_name;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_id;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//<sp/>template<sp/>specialization<sp/>conversion<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/>get<sp/>data<sp/>out<sp/>of<sp/>the<sp/>PyObject<sp/>and<sp/>into<sp/>the<sp/>real<sp/>world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">std::string<sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;std::string&gt;::pyCast</ref>(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(PyString_AsString(obj));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;double&gt;::pyCast</ref>(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PyFloat_AsDouble(obj);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;float&gt;::pyCast</ref>(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)PyFloat_AsDouble(obj);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;int&gt;::pyCast</ref>(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PyInt_AsLong(obj);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">std::vector&lt;float&gt;<sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;std::vector&lt;float&gt;</ref><sp/>&gt;::pyCast(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>PyObject_Size(obj);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>std::vector&lt;float&gt;<sp/>rval(size);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;size;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>rval[i]<sp/>=<sp/>(float)PyFloat_AsDouble(PyList_GetItem(obj,<sp/>i));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rval;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">std::vector&lt;gr_complex&gt;<sp/><ref refid="classpycallback__object" kindref="compound">pycallback_object&lt;std::vector&lt;gr_complex&gt;</ref><sp/>&gt;::pyCast(PyObject*<sp/>obj)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>PyObject_Size(obj);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>rval(size);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;size;<sp/>i++){<sp/>rval[i]<sp/>=<sp/><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">\</ref></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">      gr_complex</ref>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)PyComplex_RealAsDouble(PyList_GetItem(obj,<sp/>i)),</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)PyComplex_ImagAsDouble(PyList_GetItem(obj,<sp/>i)));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rval;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>add<sp/>more<sp/>template<sp/>specializations<sp/>as<sp/>needed!</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/pycallback_object.h"/>
+  </compounddef>
+</doxygen>

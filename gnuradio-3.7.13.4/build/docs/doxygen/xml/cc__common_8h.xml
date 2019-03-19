@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="cc__common_8h" kind="file">
+    <compoundname>cc_common.h</compoundname>
+    <includedby refid="cc__decoder_8h" local="no">cc_decoder.h</includedby>
+    <includedby refid="cc__encoder_8h" local="no">cc_encoder.h</includedby>
+    <includedby refid="ccsds__encoder_8h" local="no">ccsds_encoder.h</includedby>
+    <invincdepgraph>
+      <node id="5702">
+        <label>cc_encoder.h</label>
+        <link refid="cc__encoder_8h"/>
+      </node>
+      <node id="5703">
+        <label>ccsds_encoder.h</label>
+        <link refid="ccsds__encoder_8h"/>
+      </node>
+      <node id="5701">
+        <label>cc_decoder.h</label>
+        <link refid="cc__decoder_8h"/>
+      </node>
+      <node id="5700">
+        <label>cc_common.h</label>
+        <link refid="cc_common.h"/>
+        <childnode refid="5701" relation="include">
+        </childnode>
+        <childnode refid="5702" relation="include">
+        </childnode>
+        <childnode refid="5703" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="uniondecision__t" prot="public">decision_t</innerclass>
+    <innerclass refid="unionmetric__t" prot="public">metric_t</innerclass>
+    <innerclass refid="structv" prot="public">v</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3a" prot="public" static="no">
+        <name>_cc_mode_t</name>
+        <enumvalue id="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aa0ac392555537d09c7cd3e678cdd97a97" prot="public">
+          <name>CC_STREAMING</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aa982ac754321bc70ca774c401f3ed8d54" prot="public">
+          <name>CC_TERMINATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aaf3820500eda8fd03dcd9e4cdb59b1868" prot="public">
+          <name>CC_TRUNCATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aa73ea2f9eb9c5806dd8cfc502b46b9264" prot="public">
+          <name>CC_TAILBITING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_common.h" line="26" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_common.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cc__common_8h_1a5a5e46642313c7ca087f49650efaca33" prot="public" static="no">
+        <type>enum <ref refid="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3a" kindref="member">_cc_mode_t</ref></type>
+        <definition>typedef enum _cc_mode_t  cc_mode_t</definition>
+        <argsstring></argsstring>
+        <name>cc_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_common.h" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_common.h"/>
+  </compounddef>
+</doxygen>

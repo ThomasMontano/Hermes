@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1throttle" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::throttle</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="throttle_8h" local="no">throttle.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1throttle_1ae584e6819475f8e974bfeea70fa14578" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1throttle" kindref="compound">throttle</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;throttle&gt; gr::blocks::throttle::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1throttle_1ac4e856d5369ab1865e04cee8d94f89b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1throttle_1ae584e6819475f8e974bfeea70fa14578" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::throttle::make</definition>
+        <argsstring>(size_t itemsize, double samples_per_sec, bool ignore_tags=true)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>samples_per_sec</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_tags</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1throttle_1a68bac1f10438f07d5b4dc57d2e52119a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::throttle::set_sample_rate</definition>
+        <argsstring>(double rate)=0</argsstring>
+        <name>set_sample_rate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the sample rate in samples per second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1throttle_1a614abc14100c79deb0b75dfdbf10889d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::blocks::throttle::sample_rate</definition>
+        <argsstring>() const =0</argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+<para>Get the sample rate in samples per second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>throttle flow of samples such that the average rate does not exceed samples_per_sec. </para>    </briefdescription>
+    <detaileddescription>
+<para>input: one stream of itemsize; output: one stream of itemsize</para><para>N.B. this should only be used in GUI apps where there is no other rate limiting block. It is not intended nor effective at precisely controlling the rate of samples. That should be controlled by a source or sink tied to sample clock. E.g., a USRP or audio card. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="789">
+        <label>sync_block</label>
+      </node>
+      <node id="788">
+        <label>gr::blocks::throttle</label>
+        <link refid="classgr_1_1blocks_1_1throttle"/>
+        <childnode refid="789" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="791">
+        <label>sync_block</label>
+      </node>
+      <node id="790">
+        <label>gr::blocks::throttle</label>
+        <link refid="classgr_1_1blocks_1_1throttle"/>
+        <childnode refid="791" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/throttle.h" bodystart="46" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1throttle_1ac4e856d5369ab1865e04cee8d94f89b4" prot="public" virt="non-virtual"><scope>gr::blocks::throttle</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1throttle_1a614abc14100c79deb0b75dfdbf10889d" prot="public" virt="pure-virtual"><scope>gr::blocks::throttle</scope><name>sample_rate</name></member>
+      <member refid="classgr_1_1blocks_1_1throttle_1a68bac1f10438f07d5b4dc57d2e52119a" prot="public" virt="pure-virtual"><scope>gr::blocks::throttle</scope><name>set_sample_rate</name></member>
+      <member refid="classgr_1_1blocks_1_1throttle_1ae584e6819475f8e974bfeea70fa14578" prot="public" virt="non-virtual"><scope>gr::blocks::throttle</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

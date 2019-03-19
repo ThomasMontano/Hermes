@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1keep__m__in__n" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::keep_m_in_n</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="keep__m__in__n_8h" local="no">keep_m_in_n.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1keep__m__in__n_1aa9d2fcf3412740ab2d113c948edab3ae" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1keep__m__in__n" kindref="compound">keep_m_in_n</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;keep_m_in_n&gt; gr::blocks::keep_m_in_n::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1keep__m__in__n_1af246ecd723bef3196240c2bb50fc70e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1keep__m__in__n_1aa9d2fcf3412740ab2d113c948edab3ae" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::keep_m_in_n::make</definition>
+        <argsstring>(size_t itemsize, int m, int n, int offset)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a keep m in n block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream itemsize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of items to take in block of <computeroutput>n</computeroutput> items </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>block size in items </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial item offset into the stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1keep__m__in__n_1a37482876409f64f31d0fb95c1637d882" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::keep_m_in_n::set_m</definition>
+        <argsstring>(int m)=0</argsstring>
+        <name>set_m</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1keep__m__in__n_1ab313f124294bc9889785f251d514bda2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::keep_m_in_n::set_n</definition>
+        <argsstring>(int n)=0</argsstring>
+        <name>set_n</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1keep__m__in__n_1a0dded992cd3884eebfe1e8381247e378" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::keep_m_in_n::set_offset</definition>
+        <argsstring>(int offset)=0</argsstring>
+        <name>set_offset</name>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>decimate a stream, keeping the first <computeroutput>m</computeroutput> items out of every <computeroutput>n</computeroutput> starting after <computeroutput>offset</computeroutput> items. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="325">
+        <label>block</label>
+      </node>
+      <node id="324">
+        <label>gr::blocks::keep_m_in_n</label>
+        <link refid="classgr_1_1blocks_1_1keep__m__in__n"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="327">
+        <label>block</label>
+      </node>
+      <node id="326">
+        <label>gr::blocks::keep_m_in_n</label>
+        <link refid="classgr_1_1blocks_1_1keep__m__in__n"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/keep_m_in_n.h" bodystart="36" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1keep__m__in__n_1af246ecd723bef3196240c2bb50fc70e6" prot="public" virt="non-virtual"><scope>gr::blocks::keep_m_in_n</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1keep__m__in__n_1a37482876409f64f31d0fb95c1637d882" prot="public" virt="pure-virtual"><scope>gr::blocks::keep_m_in_n</scope><name>set_m</name></member>
+      <member refid="classgr_1_1blocks_1_1keep__m__in__n_1ab313f124294bc9889785f251d514bda2" prot="public" virt="pure-virtual"><scope>gr::blocks::keep_m_in_n</scope><name>set_n</name></member>
+      <member refid="classgr_1_1blocks_1_1keep__m__in__n_1a0dded992cd3884eebfe1e8381247e378" prot="public" virt="pure-virtual"><scope>gr::blocks::keep_m_in_n</scope><name>set_offset</name></member>
+      <member refid="classgr_1_1blocks_1_1keep__m__in__n_1aa9d2fcf3412740ab2d113c948edab3ae" prot="public" virt="non-virtual"><scope>gr::blocks::keep_m_in_n</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

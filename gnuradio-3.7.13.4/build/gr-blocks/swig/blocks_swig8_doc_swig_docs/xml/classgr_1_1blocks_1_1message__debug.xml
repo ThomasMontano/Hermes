@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1message__debug" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::message_debug</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="message__debug_8h" local="no">message_debug.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1message__debug_1a92221a4dd3708459fdee5074efde91ff" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1message__debug" kindref="compound">message_debug</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;message_debug&gt; gr::blocks::message_debug::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" line="55" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__debug_1adefa69bd5d8451d3cf642604e956eea2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__debug_1a92221a4dd3708459fdee5074efde91ff" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_debug::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Build the message debug block. It takes no parameters and has three message ports: print, store, and print_pdu. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__debug_1ae3ab0be31d8732968dfc1f804f8871b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::message_debug::num_messages</definition>
+        <argsstring>()=0</argsstring>
+        <name>num_messages</name>
+        <briefdescription>
+<para>Reports the number of messages received by this block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__debug_1ad3cc1e2fa2412307b3cb5b33c14f0c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>pmt::pmt_t</type>
+        <definition>virtual pmt::pmt_t gr::blocks::message_debug::get_message</definition>
+        <argsstring>(int i)=0</argsstring>
+        <name>get_message</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get a message (as a PMT) from the message vector at index <computeroutput>i</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Messages passed to the &apos;store&apos; port will be stored in a vector. This function retrieves those messages by index. They are index in order of when they were received (all messages are just pushed onto the back of a vector). This is mostly useful in debugging message passing graphs and in QA code.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index in the vector for the message to retrieve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a message at index <computeroutput>i</computeroutput> as a pmt_t. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Debug block for the message passing system. </para>    </briefdescription>
+    <detaileddescription>
+<para>The message debug block is used to capture and print or store messages as they are received. Any block that generates a message may connect that message port to one or more of the three message input ports of this debug block. The message ports are:</para><para><itemizedlist>
+<listitem><para>print: prints the message directly to standard out. </para></listitem>
+<listitem><para>store: stores the message in an internal vector. May be access using the get_message function. </para></listitem>
+<listitem><para>print_pdu: specifically designed to handle formatted PDUs (see <ref refid="pdu_8h" kindref="compound">pdu.h</ref>). </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="360">
+        <label>gr::blocks::message_debug</label>
+        <link refid="classgr_1_1blocks_1_1message__debug"/>
+        <childnode refid="361" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="362">
+        <label>gr::blocks::message_debug</label>
+        <link refid="classgr_1_1blocks_1_1message__debug"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_debug.h" bodystart="51" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1message__debug_1ad3cc1e2fa2412307b3cb5b33c14f0c8b" prot="public" virt="pure-virtual"><scope>gr::blocks::message_debug</scope><name>get_message</name></member>
+      <member refid="classgr_1_1blocks_1_1message__debug_1adefa69bd5d8451d3cf642604e956eea2" prot="public" virt="non-virtual"><scope>gr::blocks::message_debug</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__debug_1ae3ab0be31d8732968dfc1f804f8871b2" prot="public" virt="pure-virtual"><scope>gr::blocks::message_debug</scope><name>num_messages</name></member>
+      <member refid="classgr_1_1blocks_1_1message__debug_1a92221a4dd3708459fdee5074efde91ff" prot="public" virt="non-virtual"><scope>gr::blocks::message_debug</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

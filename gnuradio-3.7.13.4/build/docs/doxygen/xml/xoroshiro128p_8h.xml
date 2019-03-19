@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="xoroshiro128p_8h" kind="file">
+    <compoundname>xoroshiro128p.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="34000">
+        <label>stdint.h</label>
+      </node>
+      <node id="33999">
+        <label>xoroshiro128p.h</label>
+        <link refid="xoroshiro128p.h"/>
+        <childnode refid="34000" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="xoroshiro128p_8h_1a616a08c6441f9c1651d475401e245f3d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>static uint64_t rotl</definition>
+        <argsstring>(const uint64_t x, const int k)</argsstring>
+        <name>rotl</name>
+        <param>
+          <type>const uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>rotating left shift helper According to the original authors, this will on most platforms reduce to a single instruction </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" bodystart="39" bodyend="41"/>
+        <referencedby refid="xoroshiro128p_8h_1afd45471c525f2fc6a1d279f018d2bf25" compoundref="xoroshiro128p_8h" startline="47" endline="57">xoroshiro128p_next</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xoroshiro128p_8h_1afd45471c525f2fc6a1d279f018d2bf25" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>static uint64_t xoroshiro128p_next</definition>
+        <argsstring>(uint64_t *state)</argsstring>
+        <name>xoroshiro128p_next</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>generate the next random number and update the state. This is the workhorse, here! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" bodystart="47" bodyend="57"/>
+        <references refid="xoroshiro128p_8h_1a616a08c6441f9c1651d475401e245f3d" compoundref="xoroshiro128p_8h" startline="39" endline="41">rotl</references>
+        <referencedby refid="xoroshiro128p_8h_1a5de6ec358caeb23d9ed84bcae9c1b68e" compoundref="xoroshiro128p_8h" startline="64" endline="81">xoroshiro128p_jump</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xoroshiro128p_8h_1a5de6ec358caeb23d9ed84bcae9c1b68e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void xoroshiro128p_jump</definition>
+        <argsstring>(uint64_t *state)</argsstring>
+        <name>xoroshiro128p_jump</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Advance the internal state by 2^64 steps; useful when coordinating multiple independent RNGs This is the jump function for the generator. It is equivalent to 2^64 calls to next(); it can be used to generate 2^64 non-overlapping subsequences for parallel computations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" bodystart="64" bodyend="81"/>
+        <references refid="xoroshiro128p_8h_1afd45471c525f2fc6a1d279f018d2bf25" compoundref="xoroshiro128p_8h" startline="47" endline="57">xoroshiro128p_next</references>
+        <referencedby refid="xoroshiro128p_8h_1a060de795826a0b35f8d9dceea724d8c1" compoundref="xoroshiro128p_8h" startline="95" endline="99">xoroshiro128p_seed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xoroshiro128p_8h_1a1f29705017628be113d344160ed33063" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>static uint64_t splitmix64_next</definition>
+        <argsstring>(uint64_t *state)</argsstring>
+        <name>splitmix64_next</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>step of the SPLITMIX64 RNG; only used internally for seeding This RNG isn&apos;t as good as XOROSHIRO128+, so it&apos;s only used to initialize a 128 bit state from a seed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" bodystart="86" bodyend="91"/>
+        <referencedby refid="xoroshiro128p_8h_1a060de795826a0b35f8d9dceea724d8c1" compoundref="xoroshiro128p_8h" startline="95" endline="99">xoroshiro128p_seed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xoroshiro128p_8h_1a060de795826a0b35f8d9dceea724d8c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void xoroshiro128p_seed</definition>
+        <argsstring>(uint64_t *state, const uint64_t seed)</argsstring>
+        <name>xoroshiro128p_seed</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Seed the 128 bit state from a 64 bit seed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" line="95" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h" bodystart="95" bodyend="99"/>
+        <references refid="xoroshiro128p_8h_1a1f29705017628be113d344160ed33063" compoundref="xoroshiro128p_8h" startline="86" endline="91">splitmix64_next</references>
+        <references refid="xoroshiro128p_8h_1a5de6ec358caeb23d9ed84bcae9c1b68e" compoundref="xoroshiro128p_8h" startline="64" endline="81">xoroshiro128p_jump</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/xoroshiro128p.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1tagged__decoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::tagged_decoder</compoundname>
+    <basecompoundref prot="public" virt="virtual">tagged_stream_block</basecompoundref>
+    <includes refid="tagged__decoder_8h" local="no">tagged_decoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1tagged__decoder_1a637b3e8ef29e71da848c78d75986505f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1tagged__decoder" kindref="compound">tagged_decoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tagged_decoder&gt; gr::fec::tagged_decoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1tagged__decoder_1a7d2d7e34eb98dfeda9cad1c5e115ad86" prot="public" static="no">
+        <type>boost::shared_array&lt; unsigned char &gt;</type>
+        <definition>typedef boost::shared_array&lt;unsigned char&gt; gr::fec::tagged_decoder::buf_sptr</definition>
+        <argsstring></argsstring>
+        <name>buf_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1tagged__decoder_1a946cb36667e6058b53866e0dd367bf39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1tagged__decoder_1a637b3e8ef29e71da848c78d75986505f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::tagged_decoder::make</definition>
+        <argsstring>(generic_decoder::sptr my_decoder, size_t input_item_size, size_t output_item_size, const std::string &amp;lengthtagname=&quot;packet_len&quot;, int mtu=1500)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" kindref="member">generic_decoder::sptr</ref></type>
+          <declname>my_decoder</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>input_item_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>output_item_size</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>lengthtagname</declname>
+          <defval>&quot;packet_len&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mtu</declname>
+          <defval>1500</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the FEC decoder block by taking in the FECAPI decoder object as well as input and output sizes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An FECAPI decoder object (See <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">gr::fec::generic_decoder</ref>). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_item_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the input items (often the my_decoder object can tell us this). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_item_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the output items (often the my_decoder object can tell us this). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthtagname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name of the tagged stream frame size. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mtu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Maximum Transmission Unit (MTU) of the output frame that the block will be able to process. Specified in bytes and defaults to 1500. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1tagged__decoder_1a4890aff79aa20d6c0915a40cb1cdb81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::tagged_decoder::work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)=0</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tagged__decoder_1ab42f808331718b2e04191159c2112e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::tagged_decoder::calculate_output_stream_length</definition>
+        <argsstring>(const gr_vector_int &amp;ninput_items)=0</argsstring>
+        <name>calculate_output_stream_length</name>
+        <param>
+          <type>const gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="93" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>General FEC decoding block that takes in a decoder variable object (derived from gr::fec::general_decoder) for use in a flowgraph. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block uses a decoder variable object (derived from <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">gr::fec::generic_decoder</ref>) to decode data within a flowgraph. This block interacts with the general FECAPI architecture to handle all passing all input and output data in a flowgraph. The decoder variable takes care of understanding the requirements, data types and sizes, and boundary conditions of the specific FEC decoding algorithm.</para><para>Generally, this block is used within the fec.extended_decoder Python block to handle some input/output formatting issues. In the FECAPI, the decoder variable sets properties like the input and output types and sizes and whether the output is packed or unpacked bytes. The fec.extended_decoder uses this information to set up an gr::hier_block2 structure to make sure the I/O to the variable is handled consistently, such as to make sure all inputs are floats with one soft symbol per item and the outputs are unpacked bytes with the bit in the LSB.</para><para>See <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">gr::fec::generic_decoder</ref> for detail on what information an FECAPI variable object can set if using this block directly and not as part of the fec.extended_decoder. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="260">
+        <label>gr::fec::tagged_decoder</label>
+        <link refid="classgr_1_1fec_1_1tagged__decoder"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>tagged_stream_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="262">
+        <label>gr::fec::tagged_decoder</label>
+        <link refid="classgr_1_1fec_1_1tagged__decoder"/>
+        <childnode refid="263" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>tagged_stream_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tagged_decoder.h" bodystart="65" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1tagged__decoder_1a7d2d7e34eb98dfeda9cad1c5e115ad86" prot="public" virt="non-virtual"><scope>gr::fec::tagged_decoder</scope><name>buf_sptr</name></member>
+      <member refid="classgr_1_1fec_1_1tagged__decoder_1ab42f808331718b2e04191159c2112e8e" prot="public" virt="pure-virtual"><scope>gr::fec::tagged_decoder</scope><name>calculate_output_stream_length</name></member>
+      <member refid="classgr_1_1fec_1_1tagged__decoder_1a946cb36667e6058b53866e0dd367bf39" prot="public" virt="non-virtual"><scope>gr::fec::tagged_decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1tagged__decoder_1a637b3e8ef29e71da848c78d75986505f" prot="public" virt="non-virtual"><scope>gr::fec::tagged_decoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1tagged__decoder_1a4890aff79aa20d6c0915a40cb1cdb81c" prot="public" virt="pure-virtual"><scope>gr::fec::tagged_decoder</scope><name>work</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

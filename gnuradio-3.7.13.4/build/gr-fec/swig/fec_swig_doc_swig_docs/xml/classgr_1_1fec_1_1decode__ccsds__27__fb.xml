@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1decode__ccsds__27__fb" kind="class" prot="public">
+    <compoundname>gr::fec::decode_ccsds_27_fb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <includes refid="decode__ccsds__27__fb_8h" local="no">decode_ccsds_27_fb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1decode__ccsds__27__fb_1a421d4314c32480b88b49c09874121858" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1decode__ccsds__27__fb" kindref="compound">decode_ccsds_27_fb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;decode_ccsds_27_fb&gt; gr::fec::decode_ccsds_27_fb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/decode_ccsds_27_fb.h" line="57" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/decode_ccsds_27_fb.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1decode__ccsds__27__fb_1a38dffec6e454513b7674deb7359574e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1decode__ccsds__27__fb_1a421d4314c32480b88b49c09874121858" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::decode_ccsds_27_fb::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/decode_ccsds_27_fb.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A rate 1/2, k=7 convolutional decoder for the CCSDS standard. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block performs soft-decision convolutional decoding using the Viterbi algorithm.</para><para>The input is a stream of (possibly noise corrupted) floating point values nominally spanning [-1.0, 1.0], representing the encoded channel symbols 0 (-1.0) and 1 (1.0), with erased symbols at 0.0.</para><para>The output is MSB first packed bytes of decoded values.</para><para>As a rate 1/2 code, there will be one output byte for every 16 input symbols.</para><para>This block is designed for continuous data streaming, not packetized data. The first 32 bits out will be zeroes, with the output delayed four bytes from the corresponding inputs. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>sync_decimator</label>
+      </node>
+      <node id="46">
+        <label>gr::fec::decode_ccsds_27_fb</label>
+        <link refid="classgr_1_1fec_1_1decode__ccsds__27__fb"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>sync_decimator</label>
+      </node>
+      <node id="48">
+        <label>gr::fec::decode_ccsds_27_fb</label>
+        <link refid="classgr_1_1fec_1_1decode__ccsds__27__fb"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/decode_ccsds_27_fb.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/decode_ccsds_27_fb.h" bodystart="52" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1decode__ccsds__27__fb_1a38dffec6e454513b7674deb7359574e7" prot="public" virt="non-virtual"><scope>gr::fec::decode_ccsds_27_fb</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1decode__ccsds__27__fb_1a421d4314c32480b88b49c09874121858" prot="public" virt="non-virtual"><scope>gr::fec::decode_ccsds_27_fb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

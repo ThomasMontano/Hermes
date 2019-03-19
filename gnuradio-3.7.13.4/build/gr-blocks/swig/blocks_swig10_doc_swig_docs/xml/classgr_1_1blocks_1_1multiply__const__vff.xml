@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1multiply__const__vff" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::multiply_const_vff</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="multiply__const__vff_8h" local="no">multiply_const_vff.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1multiply__const__vff_1a395f6f790089911f6862326f98b1f42f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1multiply__const__vff" kindref="compound">multiply_const_vff</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;multiply_const_vff&gt; gr::blocks::multiply_const_vff::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__vff_1ab7d04c97ed547ec13741bc4496bb3a88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1multiply__const__vff_1a395f6f790089911f6862326f98b1f42f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::multiply_const_vff::make</definition>
+        <argsstring>(std::vector&lt; float &gt; k)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="classgr_1_1blocks_1_1multiply__const__vff" kindref="compound">multiply_const_vff</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>multiplicative constant vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__vff_1a26e9ba66573c528b12ca7ca6834e224e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>virtual std::vector&lt;float&gt; gr::blocks::multiply_const_vff::k</definition>
+        <argsstring>() const =0</argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>Return multiplicative constant vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__vff_1af269d3ac8a77c7aa64f7ee0004e812d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::multiply_const_vff::set_k</definition>
+        <argsstring>(std::vector&lt; float &gt; k)=0</argsstring>
+        <name>set_k</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Set multiplicative constant vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>output = input * constant vector (element-wise) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="441">
+        <label>sync_block</label>
+      </node>
+      <node id="440">
+        <label>gr::blocks::multiply_const_vff</label>
+        <link refid="classgr_1_1blocks_1_1multiply__const__vff"/>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="443">
+        <label>sync_block</label>
+      </node>
+      <node id="442">
+        <label>gr::blocks::multiply_const_vff</label>
+        <link refid="classgr_1_1blocks_1_1multiply__const__vff"/>
+        <childnode refid="443" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_vff.h" bodystart="36" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1multiply__const__vff_1a26e9ba66573c528b12ca7ca6834e224e" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_const_vff</scope><name>k</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__vff_1ab7d04c97ed547ec13741bc4496bb3a88" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_const_vff</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__vff_1af269d3ac8a77c7aa64f7ee0004e812d6" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_const_vff</scope><name>set_k</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__vff_1a395f6f790089911f6862326f98b1f42f" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_const_vff</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

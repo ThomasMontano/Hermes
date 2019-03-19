@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-runtime
+Description: GNU Radio core runtime infrastructure
+Requires:
+Version: 3.7.13.4
+Libs: -L${libdir} -lgnuradio-runtime -lgnuradio-pmt 
+Cflags: -I${includedir}

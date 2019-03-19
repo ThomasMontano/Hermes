@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1wxgui_1_1oscope__guts" kind="class" prot="public">
+    <compoundname>gr::wxgui::oscope_guts</compoundname>
+    <includes refid="oscope__guts_8h" local="no">gnuradio/wxgui/oscope_guts.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36" prot="private" static="no">
+        <name>scope_state</name>
+        <enumvalue id="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a8ff196eac65f8aa91fa7934d6acc3651" prot="private">
+          <name>HOLD_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a5f8004effcad217ebcb7918a1c6d17ec" prot="private">
+          <name>LOOK_FOR_TRIGGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a9197a672d98d0e1ec11f0a97ceceed49" prot="private">
+          <name>POST_TRIGGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="54" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a851ccea9934828bb4f2f99f745661926" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::wxgui::oscope_guts::MAX_CHANNELS</definition>
+        <argsstring></argsstring>
+        <name>MAX_CHANNELS</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1af2300031cf7e8114d71a6d8d7a55c70d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_nchannels</definition>
+        <argsstring></argsstring>
+        <name>d_nchannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="56" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a1e3d22f8469ac33443faf78f3b46e696" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" kindref="member">msg_queue::sptr</ref></type>
+        <definition>msg_queue::sptr gr::wxgui::oscope_guts::d_msgq</definition>
+        <argsstring></argsstring>
+        <name>d_msgq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="57" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a0d2f5f131874ede4de248f0b3b0af08e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1wxgui_1afeef145cef6f91e0f805ae25acf490ee" kindref="member">trigger_mode</ref></type>
+        <definition>trigger_mode gr::wxgui::oscope_guts::d_trigger_mode</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a7e45e121234a6ead5a3496a5e9683141" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1wxgui_1a10fee9bb7841b8826b643f7bfff1495a" kindref="member">trigger_slope</ref></type>
+        <definition>trigger_slope gr::wxgui::oscope_guts::d_trigger_slope</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_slope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1ad77133132053a0f06eb6cc9985ab62e9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_trigger_channel</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a0561d06507ede302c989886ee99ee27e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::d_sample_rate</definition>
+        <argsstring></argsstring>
+        <name>d_sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a3daf1484a9aac21045d0fc26b553eeac" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::d_update_rate</definition>
+        <argsstring></argsstring>
+        <name>d_update_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="62" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a2b412d3129f99759b6ca4020d0dc5efb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::d_trigger_level</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a65a67cae96cadc3da9db1cdae08b1d8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_obi</definition>
+        <argsstring></argsstring>
+        <name>d_obi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="65" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a1ead6ba6c5c2e4b1421cc3e28f28aab1" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* gr::wxgui::oscope_guts::d_buffer[MAX_CHANNELS]</definition>
+        <argsstring>[MAX_CHANNELS]</argsstring>
+        <name>d_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a9ceb1b3e038e11b41cafad16ddab7f98" prot="private" static="no" mutable="no">
+        <type>scope_state</type>
+        <definition>scope_state gr::wxgui::oscope_guts::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a972a591c73a7edaa0bb520f0e0750b2c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_decimator_count</definition>
+        <argsstring></argsstring>
+        <name>d_decimator_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a3f1170a01e0c134ebe4ffb9a82552f38" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_decimator_count_init</definition>
+        <argsstring></argsstring>
+        <name>d_decimator_count_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a54737797c7a10a250d84779845cb9d9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_hold_off_count</definition>
+        <argsstring></argsstring>
+        <name>d_hold_off_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1ab537e98be495e56aa043394cb1d2b540" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_hold_off_count_init</definition>
+        <argsstring></argsstring>
+        <name>d_hold_off_count_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="72" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1ac37faeecac6d665a4b8c780bed9f7a21" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_pre_trigger_count</definition>
+        <argsstring></argsstring>
+        <name>d_pre_trigger_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1a6a51a12f75aed10ca8cff25c6194be37" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_post_trigger_count</definition>
+        <argsstring></argsstring>
+        <name>d_post_trigger_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1ac345021655575b4312b042c42d173465" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::d_post_trigger_count_init</definition>
+        <argsstring></argsstring>
+        <name>d_post_trigger_count_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="75" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1wxgui_1_1oscope__guts_1ab6a651c915b4624754daec34827f0ade" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::wxgui::oscope_guts::d_trigger_off</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a73a15e7d4dc2f5ae16e90ac64ae399a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::wxgui::oscope_guts::oscope_guts</definition>
+        <argsstring>(const oscope_guts &amp;rhs)</argsstring>
+        <name>oscope_guts</name>
+        <param>
+          <type>const <ref refid="classgr_1_1wxgui_1_1oscope__guts" kindref="compound">oscope_guts</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1afef57bc8e78cde9b6419354125de4a80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1wxgui_1_1oscope__guts" kindref="compound">oscope_guts</ref> &amp;</type>
+        <definition>oscope_guts&amp; gr::wxgui::oscope_guts::operator=</definition>
+        <argsstring>(const oscope_guts &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgr_1_1wxgui_1_1oscope__guts" kindref="compound">oscope_guts</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a2db670deeaeedb275a4c64ea964f8c2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::trigger_changed</definition>
+        <argsstring>()</argsstring>
+        <name>trigger_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1ae413179ee4c93d3e96b600c5d92bdef6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::update_rate_or_decimation_changed</definition>
+        <argsstring>()</argsstring>
+        <name>update_rate_or_decimation_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a1af9165cd4b2e31611b88f8cde52e584" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::found_trigger</definition>
+        <argsstring>()</argsstring>
+        <name>found_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a1a66706e1af9400d40a15504b1615eaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::write_output_records</definition>
+        <argsstring>()</argsstring>
+        <name>write_output_records</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1ab7257b2b6640c6d0866fad14696ef191" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::enter_hold_off</definition>
+        <argsstring>()</argsstring>
+        <name>enter_hold_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a1a3263e4855a1b8abe4b857c6bcae58a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::enter_look_for_trigger</definition>
+        <argsstring>()</argsstring>
+        <name>enter_look_for_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1af7f3a658db48ae7a5b98b0bdc1c96aaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::enter_post_trigger</definition>
+        <argsstring>()</argsstring>
+        <name>enter_post_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a93032a884f94852a2553d46f3cdf3556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::wxgui::oscope_guts::oscope_guts</definition>
+        <argsstring>(double sample_rate, msg_queue::sptr msgq)</argsstring>
+        <name>oscope_guts</name>
+        <param>
+          <type>double</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" kindref="member">msg_queue::sptr</ref></type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1abf340aad34d9623be251621c70acb42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::wxgui::oscope_guts::~oscope_guts</definition>
+        <argsstring>()</argsstring>
+        <name>~oscope_guts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a19f87e2f365793b773c4119460c94898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::wxgui::oscope_guts::process_sample</definition>
+        <argsstring>(const float *channel_data)</argsstring>
+        <name>process_sample</name>
+        <param>
+          <type>const float *</type>
+          <declname>channel_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to nchannels float values. These are the values for each channel at this sample time. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a1a3c25dc40d2f4622deccd531f9ce19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_update_rate</definition>
+        <argsstring>(double update_rate)</argsstring>
+        <name>set_update_rate</name>
+        <param>
+          <type>double</type>
+          <declname>update_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1aa7375c79fe7d52f47ab0d75e06ccdcd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_decimation_count</definition>
+        <argsstring>(int decimation_count)</argsstring>
+        <name>set_decimation_count</name>
+        <param>
+          <type>int</type>
+          <declname>decimation_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1abc0063360896cc315877a35aa41a7dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_trigger_channel</definition>
+        <argsstring>(int channel)</argsstring>
+        <name>set_trigger_channel</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a5f74ff60f512a8cfc826bf0e9527a4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_trigger_mode</definition>
+        <argsstring>(trigger_mode mode)</argsstring>
+        <name>set_trigger_mode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1wxgui_1afeef145cef6f91e0f805ae25acf490ee" kindref="member">trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1adaa7bbca1bf97a986b95a59894fd30e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_trigger_slope</definition>
+        <argsstring>(trigger_slope slope)</argsstring>
+        <name>set_trigger_slope</name>
+        <param>
+          <type><ref refid="namespacegr_1_1wxgui_1a10fee9bb7841b8826b643f7bfff1495a" kindref="member">trigger_slope</ref></type>
+          <declname>slope</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a750d20d353acd180743ef4f2b4368574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_trigger_level</definition>
+        <argsstring>(double trigger_level)</argsstring>
+        <name>set_trigger_level</name>
+        <param>
+          <type>double</type>
+          <declname>trigger_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a3162ada0f6aac012086348b82b94371b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_trigger_level_auto</definition>
+        <argsstring>()</argsstring>
+        <name>set_trigger_level_auto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1ada242015bfc9ede32857fcc573163b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_sample_rate</definition>
+        <argsstring>(double sample_rate)</argsstring>
+        <name>set_sample_rate</name>
+        <param>
+          <type>double</type>
+          <declname>sample_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1acda6a47639e40e80f7264b501ea74036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::wxgui::oscope_guts::set_num_channels</definition>
+        <argsstring>(int nchannels)</argsstring>
+        <name>set_num_channels</name>
+        <param>
+          <type>int</type>
+          <declname>nchannels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1abbb6e37a9b906a9d02f57c65ccf182d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::num_channels</definition>
+        <argsstring>() const </argsstring>
+        <name>num_channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a66afcf99846240d5d7a927eb93a99e63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::sample_rate</definition>
+        <argsstring>() const </argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a9b7db31bed409a451e73cae7d8a8fb5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::update_rate</definition>
+        <argsstring>() const </argsstring>
+        <name>update_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a01dcb5f87575fe7a136313415207ff2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::get_decimation_count</definition>
+        <argsstring>() const </argsstring>
+        <name>get_decimation_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a3a227353d238043783d288c094b15b4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::get_trigger_channel</definition>
+        <argsstring>() const </argsstring>
+        <name>get_trigger_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a53a41646e06251dbe45ed988a2d4168d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1wxgui_1afeef145cef6f91e0f805ae25acf490ee" kindref="member">trigger_mode</ref></type>
+        <definition>trigger_mode gr::wxgui::oscope_guts::get_trigger_mode</definition>
+        <argsstring>() const </argsstring>
+        <name>get_trigger_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a784d3dc214f8b4fd7f3675a368457b85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1wxgui_1a10fee9bb7841b8826b643f7bfff1495a" kindref="member">trigger_slope</ref></type>
+        <definition>trigger_slope gr::wxgui::oscope_guts::get_trigger_slope</definition>
+        <argsstring>() const </argsstring>
+        <name>get_trigger_slope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a8fdb74abc77c7d512560c1ce84bd9112" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gr::wxgui::oscope_guts::get_trigger_level</definition>
+        <argsstring>() const </argsstring>
+        <name>get_trigger_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1wxgui_1_1oscope__guts_1a08b40a23115d5cc8ae42b2ac2ca92d43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::wxgui::oscope_guts::get_samples_per_output_record</definition>
+        <argsstring>() const </argsstring>
+        <name>get_samples_per_output_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>guts of oscilloscope trigger and buffer module </para>    </briefdescription>
+    <detaileddescription>
+<para>This module processes sets of samples provided the <computeroutput>process_sample</computeroutput> method. When appropriate given the updateRate, sampleRate and trigger conditions, process_sample will periodically write output records of captured data to output_fd. For each trigger event, nchannels records will be written. Each record consists of get_samples_per_output_record binary floats. The trigger instant occurs at the 1/2 way point in the buffer. Thus, output records consist of 50% pre-trigger data and 50% post-trigger data. </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-wxgui/include/gnuradio/wxgui/oscope_guts.h" bodystart="48" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1ead6ba6c5c2e4b1421cc3e28f28aab1" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_buffer</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a972a591c73a7edaa0bb520f0e0750b2c" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_decimator_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a3f1170a01e0c134ebe4ffb9a82552f38" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_decimator_count_init</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a54737797c7a10a250d84779845cb9d9b" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_hold_off_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ab537e98be495e56aa043394cb1d2b540" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_hold_off_count_init</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1e3d22f8469ac33443faf78f3b46e696" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_msgq</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af2300031cf7e8114d71a6d8d7a55c70d" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_nchannels</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a65a67cae96cadc3da9db1cdae08b1d8e" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_obi</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a6a51a12f75aed10ca8cff25c6194be37" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_post_trigger_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ac345021655575b4312b042c42d173465" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_post_trigger_count_init</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ac37faeecac6d665a4b8c780bed9f7a21" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_pre_trigger_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a0561d06507ede302c989886ee99ee27e" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_sample_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a9ceb1b3e038e11b41cafad16ddab7f98" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_state</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ad77133132053a0f06eb6cc9985ab62e9" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_trigger_channel</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a2b412d3129f99759b6ca4020d0dc5efb" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_trigger_level</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a0d2f5f131874ede4de248f0b3b0af08e" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_trigger_mode</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ab6a651c915b4624754daec34827f0ade" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_trigger_off</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a7e45e121234a6ead5a3496a5e9683141" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_trigger_slope</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a3daf1484a9aac21045d0fc26b553eeac" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>d_update_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ab7257b2b6640c6d0866fad14696ef191" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>enter_hold_off</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1a3263e4855a1b8abe4b857c6bcae58a" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>enter_look_for_trigger</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af7f3a658db48ae7a5b98b0bdc1c96aaa" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>enter_post_trigger</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1af9165cd4b2e31611b88f8cde52e584" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>found_trigger</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a01dcb5f87575fe7a136313415207ff2f" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_decimation_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a08b40a23115d5cc8ae42b2ac2ca92d43" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_samples_per_output_record</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a3a227353d238043783d288c094b15b4e" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_trigger_channel</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a8fdb74abc77c7d512560c1ce84bd9112" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_trigger_level</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a53a41646e06251dbe45ed988a2d4168d" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_trigger_mode</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a784d3dc214f8b4fd7f3675a368457b85" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>get_trigger_slope</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a8ff196eac65f8aa91fa7934d6acc3651" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>HOLD_OFF</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a5f8004effcad217ebcb7918a1c6d17ec" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>LOOK_FOR_TRIGGER</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a851ccea9934828bb4f2f99f745661926" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>MAX_CHANNELS</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1abbb6e37a9b906a9d02f57c65ccf182d7" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>num_channels</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1afef57bc8e78cde9b6419354125de4a80" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>operator=</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a73a15e7d4dc2f5ae16e90ac64ae399a8" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>oscope_guts</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a93032a884f94852a2553d46f3cdf3556" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>oscope_guts</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36a9197a672d98d0e1ec11f0a97ceceed49" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>POST_TRIGGER</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a19f87e2f365793b773c4119460c94898" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>process_sample</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a66afcf99846240d5d7a927eb93a99e63" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>sample_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1af7811f0c8112bb7eec2ed23249895a36" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>scope_state</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1aa7375c79fe7d52f47ab0d75e06ccdcd8" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_decimation_count</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1acda6a47639e40e80f7264b501ea74036" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_num_channels</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ada242015bfc9ede32857fcc573163b99" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_sample_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1abc0063360896cc315877a35aa41a7dbe" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_trigger_channel</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a750d20d353acd180743ef4f2b4368574" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_trigger_level</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a3162ada0f6aac012086348b82b94371b" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_trigger_level_auto</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a5f74ff60f512a8cfc826bf0e9527a4c4" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_trigger_mode</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1adaa7bbca1bf97a986b95a59894fd30e8" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_trigger_slope</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1a3c25dc40d2f4622deccd531f9ce19e" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>set_update_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a2db670deeaeedb275a4c64ea964f8c2c" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>trigger_changed</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a9b7db31bed409a451e73cae7d8a8fb5b" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>update_rate</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1ae413179ee4c93d3e96b600c5d92bdef6" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>update_rate_or_decimation_changed</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1a1a66706e1af9400d40a15504b1615eaf" prot="private" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>write_output_records</name></member>
+      <member refid="classgr_1_1wxgui_1_1oscope__guts_1abf340aad34d9623be251621c70acb42b" prot="public" virt="non-virtual"><scope>gr::wxgui::oscope_guts</scope><name>~oscope_guts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

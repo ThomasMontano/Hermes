@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1vector__sink__f" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::vector_sink_f</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="vector__sink__f_8h" local="no">vector_sink_f.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1vector__sink__f_1ad0afc291d5505607be4fffe46f67db4c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1vector__sink__f" kindref="compound">vector_sink_f</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vector_sink_f&gt; gr::blocks::vector_sink_f::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__sink__f_1a32f318a54ea559c1cbba08cf5ecd67f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1vector__sink__f_1ad0afc291d5505607be4fffe46f67db4c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::vector_sink_f::make</definition>
+        <argsstring>(const int vlen=1, const int reserve_items=1024)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const int</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>reserve_items</declname>
+          <defval>1024</defval>
+        </param>
+        <briefdescription>
+<para>Make a new instance of the vector source, and return a shared pointer to it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of vector items </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reserve_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reserve space in the internal storage for this many items; the internal storage will still grow to accommodate more item if necessary, but setting this to a realistic value can avoid memory allocations during runtime, especially if you know a priori how many items you&apos;re going to store. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__sink__f_1aa9be3f5c766ee49031df8cd23849bdf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::vector_sink_f::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Clear the data and tags containers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__sink__f_1abc463f8a105d301b2ecc1db2154f1c6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>virtual std::vector&lt;float&gt; gr::blocks::vector_sink_f::data</definition>
+        <argsstring>() const =0</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__sink__f_1a60916af1dff271924c22d84fab9655bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; tag_t &gt;</type>
+        <definition>virtual std::vector&lt;tag_t&gt; gr::blocks::vector_sink_f::tags</definition>
+        <argsstring>() const =0</argsstring>
+        <name>tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>float sink that writes to a vector </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="890">
+        <label>gr::blocks::vector_sink_f</label>
+        <link refid="classgr_1_1blocks_1_1vector__sink__f"/>
+        <childnode refid="891" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="892">
+        <label>gr::blocks::vector_sink_f</label>
+        <link refid="classgr_1_1blocks_1_1vector__sink__f"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="893">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_sink_f.h" bodystart="38" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1vector__sink__f_1abc463f8a105d301b2ecc1db2154f1c6e" prot="public" virt="pure-virtual"><scope>gr::blocks::vector_sink_f</scope><name>data</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__sink__f_1a32f318a54ea559c1cbba08cf5ecd67f8" prot="public" virt="non-virtual"><scope>gr::blocks::vector_sink_f</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__sink__f_1aa9be3f5c766ee49031df8cd23849bdf0" prot="public" virt="pure-virtual"><scope>gr::blocks::vector_sink_f</scope><name>reset</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__sink__f_1ad0afc291d5505607be4fffe46f67db4c" prot="public" virt="non-virtual"><scope>gr::blocks::vector_sink_f</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__sink__f_1a60916af1dff271924c22d84fab9655bf" prot="public" virt="pure-virtual"><scope>gr::blocks::vector_sink_f</scope><name>tags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

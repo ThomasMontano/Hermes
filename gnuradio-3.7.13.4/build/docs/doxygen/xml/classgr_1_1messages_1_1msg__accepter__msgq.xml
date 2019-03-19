@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1messages_1_1msg__accepter__msgq" kind="class" prot="public">
+    <compoundname>gr::messages::msg_accepter_msgq</compoundname>
+    <basecompoundref refid="classgr_1_1messages_1_1msg__accepter" prot="public" virt="non-virtual">gr::messages::msg_accepter</basecompoundref>
+    <includes refid="msg__accepter__msgq_8h" local="no">gnuradio/messages/msg_accepter_msgq.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1messages_1_1msg__accepter__msgq_1ad18ac48a176d2c1899ea487b4275cab4" prot="protected" static="no" mutable="no">
+        <type>msg_queue_sptr</type>
+        <definition>msg_queue_sptr gr::messages::msg_accepter_msgq::d_msg_queue</definition>
+        <argsstring></argsstring>
+        <name>d_msg_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1messages_1_1msg__accepter__msgq_1a595a1fbedd5268499a8512240fe709c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::messages::msg_accepter_msgq::msg_accepter_msgq</definition>
+        <argsstring>(msg_queue_sptr msgq)</argsstring>
+        <name>msg_accepter_msgq</name>
+        <param>
+          <type>msg_queue_sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1messages_1_1msg__accepter__msgq_1a768a058818d236afc6a13d6645f47fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::messages::msg_accepter_msgq::~msg_accepter_msgq</definition>
+        <argsstring>()</argsstring>
+        <name>~msg_accepter_msgq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1messages_1_1msg__accepter__msgq_1a2fbb7c62f116e2850f9f484da79b24b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::messages::msg_accepter_msgq::post</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1messages_1_1msg__accepter__msgq_1acd158089dc75ec17ed21ad6d43f9134b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>msg_queue_sptr</type>
+        <definition>msg_queue_sptr gr::messages::msg_accepter_msgq::msg_queue</definition>
+        <argsstring>() const </argsstring>
+        <name>msg_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Concrete class that accepts messages and inserts them into a message queue. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7308">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="7307">
+        <label>gr::messages::msg_accepter_msgq</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter__msgq"/>
+        <childnode refid="7308" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7310">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="7309">
+        <label>gr::messages::msg_accepter_msgq</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter__msgq"/>
+        <childnode refid="7310" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter_msgq.h" bodystart="36" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1messages_1_1msg__accepter__msgq_1ad18ac48a176d2c1899ea487b4275cab4" prot="protected" virt="non-virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>d_msg_queue</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ad6092d4c7f34d71ceb85d1f0d261184f" prot="public" virt="non-virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>msg_accepter</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter__msgq_1a595a1fbedd5268499a8512240fe709c4" prot="public" virt="non-virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>msg_accepter_msgq</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter__msgq_1acd158089dc75ec17ed21ad6d43f9134b" prot="public" virt="non-virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>msg_queue</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter__msgq_1a2fbb7c62f116e2850f9f484da79b24b4" prot="public" virt="virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>post</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1a68a933600f38482c4d447ed57d20875a" prot="public" virt="pure-virtual" ambiguityscope="gr::messages::msg_accepter::"><scope>gr::messages::msg_accepter_msgq</scope><name>post</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ac2c26834f090b1af422d874be1bb7c54" prot="public" virt="virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>~msg_accepter</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter__msgq_1a768a058818d236afc6a13d6645f47fbe" prot="public" virt="non-virtual"><scope>gr::messages::msg_accepter_msgq</scope><name>~msg_accepter_msgq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

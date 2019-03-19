@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1kernel_1_1iir__filter" kind="class" prot="public">
+    <compoundname>gr::filter::kernel::iir_filter</compoundname>
+    <includes refid="iir__filter_8h" local="no">gnuradio/filter/iir_filter.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>i_type</declname>
+        <defname>i_type</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>o_type</declname>
+        <defname>o_type</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>tap_type</declname>
+        <defname>tap_type</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>acc_type</declname>
+        <defname>acc_type</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1af58c880389f9f7064419a476571399ab" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_oldstyle</definition>
+        <argsstring></argsstring>
+        <name>d_oldstyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="184" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1ac9d315cada76af12d8f370d4591b7f3f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; tap_type &gt;</type>
+        <definition>std::vector&lt;tap_type&gt; gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_fftaps</definition>
+        <argsstring></argsstring>
+        <name>d_fftaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="185" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a72da1f3a4f5a16bd8e63ddc4ca4b5699" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; tap_type &gt;</type>
+        <definition>std::vector&lt;tap_type&gt; gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_fbtaps</definition>
+        <argsstring></argsstring>
+        <name>d_fbtaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="186" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa385487f2d068791a0d44f740db73b17" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_latest_n</definition>
+        <argsstring></argsstring>
+        <name>d_latest_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="187" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1ae3bd52e05acd62e95205e7f635f4a8b4" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_latest_m</definition>
+        <argsstring></argsstring>
+        <name>d_latest_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="188" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a7d1fddd3cca9bd105a00d24bf1fa851f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; acc_type &gt;</type>
+        <definition>std::vector&lt;acc_type&gt; gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_prev_output</definition>
+        <argsstring></argsstring>
+        <name>d_prev_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="189" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a6e61f162679e3d5998cf7de687207d5b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; i_type &gt;</type>
+        <definition>std::vector&lt;i_type&gt; gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::d_prev_input</definition>
+        <argsstring></argsstring>
+        <name>d_prev_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="190" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a6f152fa406b4243391e073600077bd39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::iir_filter</definition>
+        <argsstring>(const std::vector&lt; tap_type &gt; &amp;fftaps, const std::vector&lt; tap_type &gt; &amp;fbtaps, bool oldstyle=true)</argsstring>
+        <name>iir_filter</name>
+        <param>
+          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <declname>fftaps</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <declname>fbtaps</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>oldstyle</declname>
+          <defval>true</defval>
+        </param>
+        <exceptions> throw (std::invalid_argument)</exceptions>
+        <briefdescription>
+<para>Construct an IIR with the given taps. </para>        </briefdescription>
+        <detaileddescription>
+<para>This filter uses the Direct Form I implementation, where <computeroutput>fftaps</computeroutput> contains the feed-forward taps, and <computeroutput>fbtaps</computeroutput> the feedback ones.</para><para><computeroutput>oldstyle:</computeroutput> The old style of the IIR filter uses feedback taps that are negative of what most definitions use (scipy and Matlab among them). This parameter keeps using the old GNU Radio style and is set to TRUE by default. When taps generated from scipy, Matlab, or gr_filter_design, use the new style by setting this to FALSE.</para><para>When <computeroutput>oldstyle</computeroutput> is set FALSE, the input and output satisfy a difference equation of the form</para><para><formula id="37">\[ y[n] + \sum_{k=1}^{M} a_k y[n-k] = \sum_{k=0}^{N} b_k x[n-k] \]</formula></para><para>with the corresponding rational system function</para><para><formula id="38">\[ H(z) = \frac{\sum_{k=0}^{N} b_k z^{-k}}{1 + \sum_{k=1}^{M} a_k z^{-k}} \]</formula> where: <formula id="9">$x$</formula> - input signal, <formula id="39">$y$</formula> - output signal, <formula id="40">$a_k$</formula> - k-th feedback tap, <formula id="41">$b_k$</formula> - k-th feed-forward tap, <formula id="42">$M$</formula> - <computeroutput>len(fbtaps)-1</computeroutput>, <formula id="43">$N$</formula> - <computeroutput>len(fftaps)-1</computeroutput>.</para><para><formula id="44">$a_0$</formula>, that is <computeroutput>fbtaps</computeroutput>[0], is ignored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="120" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa859c40115cb1ba8a9fe1e7e6818ea8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::iir_filter</definition>
+        <argsstring>()</argsstring>
+        <name>iir_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a2002abc2cb0cfb646c4e8ea9660ca177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::~iir_filter</definition>
+        <argsstring>()</argsstring>
+        <name>~iir_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="131" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a69bb474129a8028bc6685ad1ebcb1519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>o_type</type>
+        <definition>o_type gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::filter</definition>
+        <argsstring>(const i_type input)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const i_type</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>compute a single output value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the filtered input value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="137" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="198" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1adc64d5f3cad2c737589da0d91676f38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::filter_n</definition>
+        <argsstring>(o_type output[], const i_type input[], long n)</argsstring>
+        <name>filter_n</name>
+        <param>
+          <type>o_type</type>
+          <declname>output</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const i_type</type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>compute an array of N output values. <computeroutput>input</computeroutput> must have N valid entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="143" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="237" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1ad74bfe42aab1b7db63be21fc8faabcbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::ntaps_ff</definition>
+        <argsstring>() const </argsstring>
+        <name>ntaps_ff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of taps in filter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="148" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a664cb29a9de9a288a2781583fb72d97b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::ntaps_fb</definition>
+        <argsstring>() const </argsstring>
+        <name>ntaps_fb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="149" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1aab840f98c9ead93ff0739ffa36a95075" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;::set_taps</definition>
+        <argsstring>(const std::vector&lt; tap_type &gt; &amp;fftaps, const std::vector&lt; tap_type &gt; &amp;fbtaps)</argsstring>
+        <name>set_taps</name>
+        <param>
+          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <declname>fftaps</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <declname>fbtaps</declname>
+        </param>
+        <exceptions> throw (std::invalid_argument)</exceptions>
+        <briefdescription>
+<para>install new taps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="154" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="154" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1a1023525f010413e65fb2f4e3b1b3f83f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::filter::kernel::iir_filter&lt; gr_complex, gr_complex, float, gr_complex &gt;::filter</definition>
+        <argsstring>(const gr_complex input)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1aded7d239ae657e98177d3f8602145566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::filter::kernel::iir_filter&lt; gr_complex, gr_complex, double, gr_complexd &gt;::filter</definition>
+        <argsstring>(const gr_complex input)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa98659d893b6903abfd2085fe26faf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::filter::kernel::iir_filter&lt; gr_complex, gr_complex, gr_complexd, gr_complexd &gt;::filter</definition>
+        <argsstring>(const gr_complex input)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="255" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class template for Infinite Impulse Response filter (IIR) </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides a templated kernel for IIR filters. These iir_filters can be instantiated with a set of feed-forward and feed-back taps in the constructor. We then call the <ref refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a69bb474129a8028bc6685ad1ebcb1519" kindref="member">iir_filter::filter</ref> function to add a new sample to the filter, or <ref refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1adc64d5f3cad2c737589da0d91676f38f" kindref="member">iir_filter::filter_n</ref> to add a vector of samples to be filtered.</para><para>Instantiating a filter means defining the templates for the data types being processed by the filter. There are four templates:</para><para><itemizedlist>
+<listitem><para>i_type the data type of the input data (i.e., float). </para></listitem>
+<listitem><para>o_type the data type of the output data (i.e., float). </para></listitem>
+<listitem><para>tap_type the data type of the filter taps (i.e., double). </para></listitem>
+<listitem><para>acc_type the data type of the internal accumulator (i.e., double).</para></listitem>
+</itemizedlist>
+The acc_type is specified to control how data is handled internally in the filter. This should always be the highest precision data type of any of the first three. Often, IIR filters require double-precision values in the taps for stability, and so the internal accumulator should also be double precision.</para><para>Example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgr_1_1filter_1_1kernel_1_1iir__filter" kindref="compound">gr::filter::kernel::iir_filter&lt;float,float,double,double&gt;</ref><sp/>iir_filt(fftaps,<sp/>fbtaps);</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>y<sp/>=<sp/>iir_filt.filter(x);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">&lt;or&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">iir_filt.filter(y,<sp/>x,<sp/>N);<sp/></highlight><highlight class="comment">//<sp/>y<sp/>and<sp/>x<sp/>are<sp/>float<sp/>arrays</highlight></codeline>
+</programlisting></para><para>Another example for handling complex samples with double-precision taps (see <ref refid="classgr_1_1filter_1_1iir__filter__ccz" kindref="compound">filter::iir_filter_ccz</ref>):</para><para><programlisting><codeline><highlight class="normal">gr:;filter::kernel::iir_filter&lt;gr_complex,<sp/>gr_complex,<sp/>gr_complexd,<sp/>gr_complexd&gt;<sp/>iir_filt(fftaps,<sp/>fbtaps);</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5826">
+        <label>gr::filter::kernel::iir_filter&lt; i_type, o_type, tap_type, acc_type &gt;</label>
+        <link refid="classgr_1_1filter_1_1kernel_1_1iir__filter"/>
+        <childnode refid="5827" relation="usage">
+          <edgelabel>d_prev_output</edgelabel>
+        </childnode>
+        <childnode refid="5828" relation="usage">
+          <edgelabel>d_fftaps</edgelabel>
+          <edgelabel>d_fbtaps</edgelabel>
+        </childnode>
+        <childnode refid="5829" relation="usage">
+          <edgelabel>d_prev_input</edgelabel>
+        </childnode>
+      </node>
+      <node id="5827">
+        <label>std::vector&lt; acc_type &gt;</label>
+      </node>
+      <node id="5828">
+        <label>std::vector&lt; tap_type &gt;</label>
+      </node>
+      <node id="5829">
+        <label>std::vector&lt; i_type &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" line="83" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/iir_filter.h" bodystart="82" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a72da1f3a4f5a16bd8e63ddc4ca4b5699" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_fbtaps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1ac9d315cada76af12d8f370d4591b7f3f" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_fftaps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1ae3bd52e05acd62e95205e7f635f4a8b4" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_latest_m</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa385487f2d068791a0d44f740db73b17" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_latest_n</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1af58c880389f9f7064419a476571399ab" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_oldstyle</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a6e61f162679e3d5998cf7de687207d5b" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_prev_input</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a7d1fddd3cca9bd105a00d24bf1fa851f" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>d_prev_output</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a69bb474129a8028bc6685ad1ebcb1519" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a1023525f010413e65fb2f4e3b1b3f83f" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1aded7d239ae657e98177d3f8602145566" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa98659d893b6903abfd2085fe26faf65" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1adc64d5f3cad2c737589da0d91676f38f" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>filter_n</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a6f152fa406b4243391e073600077bd39" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>iir_filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1aa859c40115cb1ba8a9fe1e7e6818ea8e" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>iir_filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a664cb29a9de9a288a2781583fb72d97b" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>ntaps_fb</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1ad74bfe42aab1b7db63be21fc8faabcbe" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>ntaps_ff</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1aab840f98c9ead93ff0739ffa36a95075" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>set_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1iir__filter_1a2002abc2cb0cfb646c4e8ea9660ca177" prot="public" virt="non-virtual"><scope>gr::filter::kernel::iir_filter</scope><name>~iir_filter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="basic__block_8h" kind="file">
+    <compoundname>basic_block.h</compoundname>
+    <includes refid="gnuradio_2api_8h" local="no">gnuradio/api.h</includes>
+    <includes refid="sptr__magic_8h" local="no">gnuradio/sptr_magic.h</includes>
+    <includes refid="msg__accepter_8h" local="no">gnuradio/msg_accepter.h</includes>
+    <includes refid="runtime__types_8h" local="no">gnuradio/runtime_types.h</includes>
+    <includes refid="io__signature_8h" local="no">gnuradio/io_signature.h</includes>
+    <includes refid="thread_8h" local="no">gnuradio/thread/thread.h</includes>
+    <includes local="no">boost/enable_shared_from_this.hpp</includes>
+    <includes local="no">boost/function.hpp</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <includes local="no">boost/thread/condition_variable.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">map</includes>
+    <includedby refid="block_8h" local="no">block.h</includedby>
+    <includedby refid="block__registry_8h" local="no">block_registry.h</includedby>
+    <includedby refid="flowgraph_8h" local="no">flowgraph.h</includedby>
+    <includedby refid="hier__block2_8h" local="no">hier_block2.h</includedby>
+    <incdepgraph>
+      <node id="202">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="185">
+        <label>pmt/api.h</label>
+        <link refid="pmt_2api_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>gnuradio/messages/msg_accepter.h</label>
+        <link refid="messages_2msg__accepter_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="181">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="180">
+        <label>gnuradio/sptr_magic.h</label>
+        <link refid="sptr__magic_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="196">
+        <label>gnuradio/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="199">
+        <label>gnuradio/io_signature.h</label>
+        <link refid="io__signature_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>stdint.h</label>
+      </node>
+      <node id="194">
+        <label>pmt/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="200">
+        <label>gnuradio/thread/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>gnuradio/runtime_types.h</label>
+        <link refid="runtime__types_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>stdexcept</label>
+      </node>
+      <node id="201">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="189">
+        <label>string</label>
+      </node>
+      <node id="211">
+        <label>map</label>
+      </node>
+      <node id="197">
+        <label>stddef.h</label>
+      </node>
+      <node id="207">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="187">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="203">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="193">
+        <label>vector</label>
+      </node>
+      <node id="205">
+        <label>boost/thread/barrier.hpp</label>
+      </node>
+      <node id="178">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>basic_block.h</label>
+        <link refid="basic_block.h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>pmt/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="191">
+        <label>iosfwd</label>
+      </node>
+      <node id="209">
+        <label>iostream</label>
+      </node>
+      <node id="210">
+        <label>deque</label>
+      </node>
+      <node id="198">
+        <label>gnuradio/gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>gnuradio/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="216">
+        <label>sync_decimator.h</label>
+        <link refid="sync__decimator_8h"/>
+      </node>
+      <node id="219">
+        <label>block_registry.h</label>
+        <link refid="block__registry_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>hier_block2.h</label>
+        <link refid="hier__block2_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>block_gateway.h</label>
+        <link refid="block__gateway_8h"/>
+      </node>
+      <node id="221">
+        <label>pycallback_object.h</label>
+        <link refid="pycallback__object_8h"/>
+      </node>
+      <node id="213">
+        <label>block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>rpcregisterhelpers.h</label>
+        <link refid="rpcregisterhelpers_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>basic_block.h</label>
+        <link refid="basic_block.h"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>flowgraph.h</label>
+        <link refid="flowgraph_8h"/>
+      </node>
+      <node id="217">
+        <label>sync_interpolator.h</label>
+        <link refid="sync__interpolator_8h"/>
+      </node>
+      <node id="224">
+        <label>top_block.h</label>
+        <link refid="top__block_8h"/>
+      </node>
+      <node id="215">
+        <label>sync_block.h</label>
+        <link refid="sync__block_8h"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>tagged_stream_block.h</label>
+        <link refid="tagged__stream__block_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1basic__block" prot="public">gr::basic_block</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2006,2008,2009,2011,2013<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_GR_BASIC_BLOCK_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_GR_BASIC_BLOCK_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnuradio_2api_8h" kindref="compound">gnuradio/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sptr__magic_8h" kindref="compound">gnuradio/sptr_magic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="msg__accepter_8h" kindref="compound">gnuradio/msg_accepter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="runtime__types_8h" kindref="compound">gnuradio/runtime_types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="io__signature_8h" kindref="compound">gnuradio/io_signature.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="thread_8h" kindref="compound">gnuradio/thread/thread.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/enable_shared_from_this.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/function.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/condition_variable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GR_CTRLPORT</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rpcregisterhelpers_8h" kindref="compound">gnuradio/rpcregisterhelpers.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="namespacegr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gr<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classgr_1_1basic__block" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1msg__accepter" kindref="compound">msg_accepter</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::enable_shared_from_this&lt;basic_block&gt;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void(pmt::pmt_t)&gt;<sp/>msg_handler_t;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;pmt::pmt_t<sp/>,<sp/>msg_handler_t,<sp/>pmt::comparator&gt;<sp/>d_msg_handlers_t;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>d_msg_handlers_t<sp/>d_msg_handlers;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::deque&lt;pmt::pmt_t&gt;<sp/>msg_queue_t;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;pmt::pmt_t,<sp/>msg_queue_t,<sp/>pmt::comparator&gt;<sp/>msg_queue_map_t;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;pmt::pmt_t,<sp/>msg_queue_t,<sp/>pmt::comparator&gt;::iterator<sp/>msg_queue_map_itr;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;pmt::pmt_t,<sp/>boost::shared_ptr&lt;boost::condition_variable&gt;,<sp/><ref refid="classpmt_1_1comparator" kindref="compound">pmt::comparator</ref>&gt;<sp/>msg_queue_ready;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref><sp/><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">mutex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>protects<sp/>all<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="classgr_1_1basic__block_1abcf3312d781e62b42e3e83dea790d079" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr_1_1flowgraph" kindref="compound">flowgraph</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classgr_1_1basic__block_1a868fcdb2f03ac8ae160c81f35622f31d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">flat_flowgraph;<sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>will<sp/>be<sp/>redundant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classgr_1_1basic__block_1a0056afdd5ad0a70ed40f7717b4a9993f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">tpb_thread_body;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa42ae6a0efeb1be877a188c7ad4778f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" kindref="member">vcolor</ref><sp/>{<sp/><ref refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa42ae6a0efeb1be877a188c7ad4778f50" kindref="member">WHITE</ref>,<sp/>GREY,<sp/>BLACK<sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classgr_1_1basic__block_1ad7da20e98a288f84597882e047df63f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1ad7da20e98a288f84597882e047df63f4" kindref="member">d_name</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classgr_1_1basic__block_1a84d6b200bb5e268424e9e4630cb22e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/><ref refid="classgr_1_1basic__block_1a84d6b200bb5e268424e9e4630cb22e5a" kindref="member">d_input_signature</ref>;</highlight></codeline>
+<codeline lineno="83" refid="classgr_1_1basic__block_1a84c091a90172b2eb6d617f6346bbce3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/><ref refid="classgr_1_1basic__block_1a84c091a90172b2eb6d617f6346bbce3f" kindref="member">d_output_signature</ref>;</highlight></codeline>
+<codeline lineno="84" refid="classgr_1_1basic__block_1a8afb0c354fb5fc2141fc7580361c2f00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1a8afb0c354fb5fc2141fc7580361c2f00" kindref="member">d_unique_id</ref>;</highlight></codeline>
+<codeline lineno="85" refid="classgr_1_1basic__block_1a7073674b5876118ae50cd7cc5646ad80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1a7073674b5876118ae50cd7cc5646ad80" kindref="member">d_symbolic_id</ref>;</highlight></codeline>
+<codeline lineno="86" refid="classgr_1_1basic__block_1af6b5f158f329834b12d9b204cf62a10e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1af6b5f158f329834b12d9b204cf62a10e" kindref="member">d_symbol_name</ref>;</highlight></codeline>
+<codeline lineno="87" refid="classgr_1_1basic__block_1a2de4ae58aaf6af63fe57ecf0e64dcbe0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1a2de4ae58aaf6af63fe57ecf0e64dcbe0" kindref="member">d_symbol_alias</ref>;</highlight></codeline>
+<codeline lineno="88" refid="classgr_1_1basic__block_1afc7a00e9e0ff69ceb903d3d6ff506473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" kindref="member">vcolor</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1afc7a00e9e0ff69ceb903d3d6ff506473" kindref="member">d_color</ref>;</highlight></codeline>
+<codeline lineno="89" refid="classgr_1_1basic__block_1a8d54f7ea6ebf134e68e028294488354d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1a8d54f7ea6ebf134e68e028294488354d" kindref="member">d_rpc_set</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classgr_1_1basic__block_1a68e92e54cda7a02697074705b9a7c08d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>msg_queue_map_t<sp/><ref refid="classgr_1_1basic__block_1a68e92e54cda7a02697074705b9a7c08d" kindref="member">msg_queue</ref>;</highlight></codeline>
+<codeline lineno="92" refid="classgr_1_1basic__block_1a4956e5631a93b2ef667a28564e71195b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;boost::any&gt;<sp/><ref refid="classgr_1_1basic__block_1a4956e5631a93b2ef667a28564e71195b" kindref="member">d_rpc_vars</ref>;<sp/></highlight><highlight class="comment">//<sp/>container<sp/>for<sp/>all<sp/>RPC<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classgr_1_1basic__block_1a6cc897729213ab4d2e3ade44c6942100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1a6cc897729213ab4d2e3ade44c6942100" kindref="member">basic_block</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}<sp/></highlight><highlight class="comment">//<sp/>allows<sp/>pure<sp/>virtual<sp/>interface<sp/>sub-classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/>input_signature,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/>output_signature);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classgr_1_1basic__block_1a3f3f8f70bd0f0f2925b09bb75725c2b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a3f3f8f70bd0f0f2925b09bb75725c2b6" kindref="member">set_input_signature</ref>(<ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/>iosig)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_input_signature<sp/>=<sp/>iosig;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classgr_1_1basic__block_1a7933b6bc4ad512774bbb40616cc31b4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a7933b6bc4ad512774bbb40616cc31b4d" kindref="member">set_output_signature</ref>(<ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/>iosig)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_output_signature<sp/>=<sp/>iosig;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classgr_1_1basic__block_1a2c4a58849217d8b76ba2d25c0dfd8bd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a2c4a58849217d8b76ba2d25c0dfd8bd0" kindref="member">set_color</ref>(<ref refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" kindref="member">vcolor</ref><sp/>color)<sp/>{<sp/>d_color<sp/>=<sp/>color;<sp/>}</highlight></codeline>
+<codeline lineno="115" refid="classgr_1_1basic__block_1a6d7621bc17d7bd50b8b36d905487adcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" kindref="member">vcolor</ref><sp/><ref refid="classgr_1_1basic__block_1a6d7621bc17d7bd50b8b36d905487adcf" kindref="member">color</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_color;<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classgr_1_1basic__block_1ac8bf058b47b635100945e20f3cc5d0b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1ac8bf058b47b635100945e20f3cc5d0b0" kindref="member">has_msg_handler</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(d_msg_handlers.find(which_port)<sp/>!=<sp/>d_msg_handlers.end());</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>called<sp/>by<sp/>the<sp/>runtime<sp/>system<sp/>to<sp/>dispatch<sp/>messages.</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>thread-safety<sp/>guarantees<sp/>mentioned<sp/>in<sp/>set_msg_handler<sp/>are</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>implemented<sp/>by<sp/>the<sp/>callers<sp/>of<sp/>this<sp/>method.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classgr_1_1basic__block_1aa0c8bc1d82de984c872fbaefc0ff954b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1aa0c8bc1d82de984c872fbaefc0ff954b" kindref="member">dispatch_msg</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>msg)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AA<sp/>Update<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(has_msg_handler(which_port))<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>Is<sp/>there<sp/>a<sp/>handler?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_msg_handlers[which_port](msg);<sp/></highlight><highlight class="comment">//<sp/>Yes,<sp/>invoke<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Message<sp/>passing<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classgr_1_1basic__block_1aefa8ebb27b9d86bef179e30e37f0dfc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><ref refid="classgr_1_1basic__block_1aefa8ebb27b9d86bef179e30e37f0dfc3" kindref="member">d_message_subscribers</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>message_subscribers(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref>();</highlight></codeline>
+<codeline lineno="144" refid="classgr_1_1basic__block_1a6e85f514a6c99d39593f0d250e787d2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a6e85f514a6c99d39593f0d250e787d2b" kindref="member">unique_id</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_unique_id;<sp/>}</highlight></codeline>
+<codeline lineno="145" refid="classgr_1_1basic__block_1a0436f10fd13ce2a80be2aeae345e903a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a0436f10fd13ce2a80be2aeae345e903a" kindref="member">symbolic_id</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_symbolic_id;<sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classgr_1_1basic__block_1a676337e5495c9ac73c0a551971181477" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classgr_1_1basic__block_1a676337e5495c9ac73c0a551971181477" kindref="member">name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_name;<sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classgr_1_1basic__block_1ab5199f528de1872b055e632aedabef4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classgr_1_1basic__block_1ab5199f528de1872b055e632aedabef4e" kindref="member">symbol_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_symbol_name;<sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classgr_1_1basic__block_1adddacbed1278d56e03fa1d5b93b1d542" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/><ref refid="classgr_1_1basic__block_1adddacbed1278d56e03fa1d5b93b1d542" kindref="member">input_signature</ref>()</highlight><highlight class="keyword"><sp/>const<sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_input_signature;<sp/>}</highlight></codeline>
+<codeline lineno="158" refid="classgr_1_1basic__block_1a348d5801eeff564e75f508aba22766bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref><sp/><ref refid="classgr_1_1basic__block_1a348d5801eeff564e75f508aba22766bd" kindref="member">output_signature</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_output_signature;<sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref><sp/>to_basic_block();<sp/></highlight><highlight class="comment">//<sp/>Needed<sp/>for<sp/>Python<sp/>type<sp/>coercion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classgr_1_1basic__block_1aad58e9944ff205539855cd6116b03c55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1aad58e9944ff205539855cd6116b03c55" kindref="member">alias_set</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!d_symbol_alias.empty();<sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classgr_1_1basic__block_1a42d65e902f4886602ff3d5b124a71ef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classgr_1_1basic__block_1a42d65e902f4886602ff3d5b124a71ef3" kindref="member">alias</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>alias_set()?d_symbol_alias:symbol_name();<sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classgr_1_1basic__block_1a817f3a7595c32fbce00983977d0dd91e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><ref refid="classgr_1_1basic__block_1a817f3a7595c32fbce00983977d0dd91e" kindref="member">alias_pmt</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1a2a19d2e56f6fbb5645ad17a5937b5f2f" kindref="member">pmt::intern</ref>(alias());<sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_block_alias(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>**<sp/>Message<sp/>passing<sp/>interface<sp/>**</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_port_register_in(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_port_register_out(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_port_pub(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>msg);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_port_sub(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>target);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_port_unsub(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>target);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classgr_1_1basic__block_1a8780d41bb2091c00a9637e15e872a7ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a8780d41bb2091c00a9637e15e872a7ce" kindref="member">message_port_is_hier</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id)<sp/>{<sp/>(void)<sp/>port_id;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="191" refid="classgr_1_1basic__block_1a5cc9ea399d0940de8440e028b7352ed7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a5cc9ea399d0940de8440e028b7352ed7" kindref="member">message_port_is_hier_in</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id)<sp/>{<sp/>(void)<sp/>port_id;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="192" refid="classgr_1_1basic__block_1a218a3ea133d838c8344fb3914c54ba3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a218a3ea133d838c8344fb3914c54ba3a" kindref="member">message_port_is_hier_out</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>port_id)<sp/>{<sp/>(void)<sp/>port_id;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>message_ports_in();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>message_ports_out();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_post(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>msg);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="classgr_1_1basic__block_1aea4958dfb6cc37d60db6afaba91f6e6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1aea4958dfb6cc37d60db6afaba91f6e6e" kindref="member">empty_p</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.find(which_port)<sp/>==<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.end())</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;port<sp/>does<sp/>not<sp/>exist!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>[which_port].empty();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221" refid="classgr_1_1basic__block_1aecb5d318b3d3689e6f7f448d29a03032" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1aecb5d318b3d3689e6f7f448d29a03032" kindref="member">empty_p</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rv<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_FOREACH(msg_queue_map_t::value_type<sp/>&amp;i,<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>&amp;=<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>[i.first].empty();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rv;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classgr_1_1basic__block_1a0ea70146bf5ce65a8c20c0b7234063d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a0ea70146bf5ce65a8c20c0b7234063d9" kindref="member">empty_handled_p</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port){</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(empty_p(which_port)<sp/>||<sp/>!has_msg_handler(which_port));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233" refid="classgr_1_1basic__block_1a75b7c42c06430e9f5330f7462a5350a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a75b7c42c06430e9f5330f7462a5350a1" kindref="member">empty_handled_p</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rv<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_FOREACH(msg_queue_map_t::value_type<sp/>&amp;i,<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>&amp;=<sp/>empty_handled_p(i.first);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rv;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="classgr_1_1basic__block_1a4e3baf2d69f2a00871c89993e28b50ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a4e3baf2d69f2a00871c89993e28b50ea" kindref="member">nmsgs</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.find(which_port)<sp/>==<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.end())</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;port<sp/>does<sp/>not<sp/>exist!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>[which_port].size();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//|<sp/>Acquires<sp/>and<sp/>release<sp/>the<sp/>mutex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insert_tail(<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>msg);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>delete_head_nowait(<sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>delete_head_blocking(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>millisec<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="classgr_1_1basic__block_1a33724cc678371b3713e13ed29217963e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>msg_queue_t::iterator<sp/><ref refid="classgr_1_1basic__block_1a33724cc678371b3713e13ed29217963e" kindref="member">get_iterator</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>[which_port].begin();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="classgr_1_1basic__block_1acffa27c6be8af72ae44773185687d49c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1acffa27c6be8af72ae44773185687d49c" kindref="member">erase_msg</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/>msg_queue_t::iterator<sp/>it)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>[which_port].erase(it);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="classgr_1_1basic__block_1a8cdeb25c366bedbadf918b7f106dbf85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a8cdeb25c366bedbadf918b7f106dbf85" kindref="member">has_msg_port</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.find(which_port)<sp/>!=<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespacepmt_1a04b50148b5db6420f968694f093189a1" kindref="member">pmt::dict_has_key</ref>(d_message_subscribers,<sp/>which_port))<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="classgr_1_1basic__block_1ac2b4a15fdf99bfebc20cbafea7c2fcf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>msg_queue_map_t&amp;<sp/><ref refid="classgr_1_1basic__block_1ac2b4a15fdf99bfebc20cbafea7c2fcf4" kindref="member">get_msg_map</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GR_CTRLPORT</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_rpc_variable(<ref refid="rpcregisterhelpers_8h_1afe15548ba285ca8e75265509ee9ac36f" kindref="member">rpcbasic_sptr</ref><sp/>s)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_rpc_vars.push_back(s);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GR_CTRLPORT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="311" refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" kindref="member">setup_rpc</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="classgr_1_1basic__block_1a10bd994a51158fd3803377960d688795" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a10bd994a51158fd3803377960d688795" kindref="member">is_rpc_set</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_rpc_set;<sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="classgr_1_1basic__block_1ac349eee015757c75f8486b36ee08b106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1ac349eee015757c75f8486b36ee08b106" kindref="member">rpc_set</ref>()<sp/>{<sp/>d_rpc_set<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="classgr_1_1basic__block_1aca13d6f083397aada5b44d0f349ce151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1aca13d6f083397aada5b44d0f349ce151" kindref="member">check_topology</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ninputs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutputs)<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(void)ninputs;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(void)noutputs;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="classgr_1_1basic__block_1a7fed11ec01538bfea999fb37687b43b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a7fed11ec01538bfea999fb37687b43b4" kindref="member">set_msg_handler</ref>(<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>which_port,<sp/>T<sp/><ref refid="classgr_1_1msg__handler" kindref="compound">msg_handler</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.find(which_port)<sp/>==<sp/><ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;attempt<sp/>to<sp/>set_msg_handler()<sp/>on<sp/>bad<sp/>input<sp/>message<sp/>port!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_msg_handlers[which_port]<sp/>=<sp/>msg_handler_t(msg_handler);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="classgr_1_1basic__block_1a6103f97c0499b94a02a0465a6e206787" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1a6103f97c0499b94a02a0465a6e206787" kindref="member">set_processor_affinity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;mask)</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;set_processor_affinity<sp/>not<sp/>overloaded<sp/>in<sp/>child<sp/>class.&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382" refid="classgr_1_1basic__block_1ace23eacc1d5f513034d175bc8e9493cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1basic__block_1ace23eacc1d5f513034d175bc8e9493cb" kindref="member">unset_processor_affinity</ref>()</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;unset_processor_affinity<sp/>not<sp/>overloaded<sp/>in<sp/>child<sp/>class.&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="classgr_1_1basic__block_1a8974c5c3982715c9adaca4d217f0906b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/><ref refid="classgr_1_1basic__block_1a8974c5c3982715c9adaca4d217f0906b" kindref="member">processor_affinity</ref>()</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;processor_affinity<sp/>not<sp/>overloaded<sp/>in<sp/>child<sp/>class.&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="namespacegr_1a770c4f4388aa767e82909c75d4500dfd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1a770c4f4388aa767e82909c75d4500dfd" kindref="member">operator&lt;</ref>(<ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref><sp/>lhs,<sp/><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref><sp/>rhs)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs-&gt;unique_id()<sp/>&lt;<sp/>rhs-&gt;unique_id();</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394" refid="namespacegr_1a1ef8a411aaabe1984139cf5a9bedde17" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;basic_block_sptr&gt;<sp/><ref refid="namespacegr_1a1ef8a411aaabe1984139cf5a9bedde17" kindref="member">basic_block_vector_t</ref>;</highlight></codeline>
+<codeline lineno="395" refid="namespacegr_1af6aeb62a5f668b95b033ec3a689f9aef" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;basic_block_sptr&gt;::iterator<sp/><ref refid="namespacegr_1af6aeb62a5f668b95b033ec3a689f9aef" kindref="member">basic_block_viter_t</ref>;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1af9583c03d1dadfa39d20c875c854537e" kindref="member">basic_block_ncurrently_allocated</ref>();</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399" refid="namespacegr_1afad17e5f962bc764e6d7032727ebb6c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<ref refid="namespacegr_1afad17e5f962bc764e6d7032727ebb6c5" kindref="member">operator &lt;&lt; </ref>(std::ostream<sp/>&amp;os,<sp/><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref><sp/><ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref>)</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>basic_block-&gt;name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>basic_block-&gt;unique_id()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>gr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_BASIC_BLOCK_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h"/>
+  </compounddef>
+</doxygen>

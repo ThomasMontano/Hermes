@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1stream__to__streams" kind="class" prot="public">
+    <compoundname>gr::blocks::stream_to_streams</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <includes refid="stream__to__streams_8h" local="no">stream_to_streams.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1stream__to__streams_1a11ee32080bdaae798a550b07b628c61c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1stream__to__streams" kindref="compound">stream_to_streams</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;stream_to_streams&gt; gr::blocks::stream_to_streams::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_streams.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_streams.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1stream__to__streams_1a0cf79f8888bad8661393d1f14cef679a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1stream__to__streams_1a11ee32080bdaae798a550b07b628c61c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::stream_to_streams::make</definition>
+        <argsstring>(size_t itemsize, size_t nstreams)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nstreams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a stream-to-streams block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the item size of the stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nstreams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of streams to split input into </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_streams.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>convert a stream of items into a N streams of items </para>    </briefdescription>
+    <detaileddescription>
+<para>Converts a stream of N items into N streams of 1 item. Repeat ad infinitum. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="701">
+        <label>sync_decimator</label>
+      </node>
+      <node id="700">
+        <label>gr::blocks::stream_to_streams</label>
+        <link refid="classgr_1_1blocks_1_1stream__to__streams"/>
+        <childnode refid="701" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="703">
+        <label>sync_decimator</label>
+      </node>
+      <node id="702">
+        <label>gr::blocks::stream_to_streams</label>
+        <link refid="classgr_1_1blocks_1_1stream__to__streams"/>
+        <childnode refid="703" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_streams.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_streams.h" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1stream__to__streams_1a0cf79f8888bad8661393d1f14cef679a" prot="public" virt="non-virtual"><scope>gr::blocks::stream_to_streams</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1stream__to__streams_1a11ee32080bdaae798a550b07b628c61c" prot="public" virt="non-virtual"><scope>gr::blocks::stream_to_streams</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

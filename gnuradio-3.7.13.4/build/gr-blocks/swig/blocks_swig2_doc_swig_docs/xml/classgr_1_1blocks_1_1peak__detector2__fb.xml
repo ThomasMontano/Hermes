@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1peak__detector2__fb" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::peak_detector2_fb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="peak__detector2__fb_8h" local="no">peak_detector2_fb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1peak__detector2__fb_1a32395b21afba15a568bf1cdde8358e9f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1peak__detector2__fb" kindref="compound">peak_detector2_fb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;peak_detector2_fb&gt; gr::blocks::peak_detector2_fb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a23da224e47997990fcf7855e7caf2d63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1peak__detector2__fb_1a32395b21afba15a568bf1cdde8358e9f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::peak_detector2_fb::make</definition>
+        <argsstring>(float threshold_factor_rise=7, int look_ahead=1000, float alpha=0.001)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>threshold_factor_rise</declname>
+          <defval>7</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>look_ahead</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>0.001</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a peak detector block with float in, byte out.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold_factor_rise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The threshold factor determines when a peak is present. An average of the input signal is calculated (through a single-pole autoregressive filter) and when the value of the input signal goes over threshold_factor_rise*average, we assume we are in the neighborhood of a peak. The block will then find the position of the maximum within a window of look_ahead samples starting at the point where the threshold was crossed upwards. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>look_ahead</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The look-ahead value is used when the threshold is crossed upwards to locate the peak within this range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One minus the pole of a single-pole autoregressive filter that evaluates the average of the input signal. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="66" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1aef0f59adaaccade1af5ae75c383e9d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::peak_detector2_fb::set_threshold_factor_rise</definition>
+        <argsstring>(float thr)=0</argsstring>
+        <name>set_threshold_factor_rise</name>
+        <param>
+          <type>float</type>
+          <declname>thr</declname>
+        </param>
+        <briefdescription>
+<para>Set the threshold factor value for the rise time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new threshold factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a098634990328c59377d2e955de83c7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::peak_detector2_fb::set_look_ahead</definition>
+        <argsstring>(int look)=0</argsstring>
+        <name>set_look_ahead</name>
+        <param>
+          <type>int</type>
+          <declname>look</declname>
+        </param>
+        <briefdescription>
+<para>Set the look-ahead factor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>look</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new look-ahead factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a4af0ffb9360d30d4d152fa248c8943c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::peak_detector2_fb::set_alpha</definition>
+        <argsstring>(float alpha)=0</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Set the running average alpha. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new alpha for running average </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a2d73b8767ca5212f8223e218f315bc6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::peak_detector2_fb::threshold_factor_rise</definition>
+        <argsstring>()=0</argsstring>
+        <name>threshold_factor_rise</name>
+        <briefdescription>
+<para>Get the threshold factor value for the rise time. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>threshold factor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a802cb9e115e1660c6829053093e0ea95" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::peak_detector2_fb::look_ahead</definition>
+        <argsstring>()=0</argsstring>
+        <name>look_ahead</name>
+        <briefdescription>
+<para>Get the look-ahead factor value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>look-ahead factor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1peak__detector2__fb_1a7ec2464e915b68edb0a2d3a6a6e98f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::peak_detector2_fb::alpha</definition>
+        <argsstring>()=0</argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>Get the alpha value of the running average. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>alpha </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Detect the peak of a signal. </para>    </briefdescription>
+    <detaileddescription>
+<para>If a peak is detected, this block outputs a 1, or it outputs 0&apos;s. A separate debug output may be connected, to view the internal estimated mean described below. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="570">
+        <label>gr::blocks::peak_detector2_fb</label>
+        <link refid="classgr_1_1blocks_1_1peak__detector2__fb"/>
+        <childnode refid="571" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="572">
+        <label>gr::blocks::peak_detector2_fb</label>
+        <link refid="classgr_1_1blocks_1_1peak__detector2__fb"/>
+        <childnode refid="573" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/peak_detector2_fb.h" bodystart="41" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a7ec2464e915b68edb0a2d3a6a6e98f49" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a802cb9e115e1660c6829053093e0ea95" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>look_ahead</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a23da224e47997990fcf7855e7caf2d63" prot="public" virt="non-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a4af0ffb9360d30d4d152fa248c8943c7" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a098634990328c59377d2e955de83c7d0" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>set_look_ahead</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1aef0f59adaaccade1af5ae75c383e9d1c" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>set_threshold_factor_rise</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a32395b21afba15a568bf1cdde8358e9f" prot="public" virt="non-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1peak__detector2__fb_1a2d73b8767ca5212f8223e218f315bc6d" prot="public" virt="pure-virtual"><scope>gr::blocks::peak_detector2_fb</scope><name>threshold_factor_rise</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

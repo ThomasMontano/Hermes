@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classthrift__application__base" kind="class" prot="public" abstract="yes">
+    <compoundname>thrift_application_base</compoundname>
+    <includes refid="thrift__application__base_8h" local="no">gnuradio/thrift_application_base.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TserverBase</declname>
+        <defname>TserverBase</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>TserverClass</declname>
+        <defname>TserverClass</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classthrift__application__base_1a7db27b47101ea80a62322cf059fe2ca9" prot="protected" static="yes" mutable="no">
+        <type>TserverClass *</type>
+        <definition>TserverClass * thrift_application_base&lt; TserverBase, TserverClass &gt;::d_application</definition>
+        <argsstring></argsstring>
+        <name>d_application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the fully derived application instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="117" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classthrift__application__base_1a4aebecfb692db9aa1c34c06061924085" compoundref="thrift__application__base_8h" startline="194" endline="200">thrift_application_base&lt; TserverBase, TserverClass &gt;::thrift_application_base</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1adca0f1db8d1b1520bc36a1abb4dfc12e" prot="protected" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int thrift_application_base&lt; TserverBase, TserverClass &gt;::d_default_max_init_attempts</definition>
+        <argsstring></argsstring>
+        <name>d_default_max_init_attempts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max number of attempts when checking the Thrift runtime for Initialization before giving up. Set in the Thrift config file (see <ref refid="page_ctrlport_1ctrlport_thrift_prefs" kindref="member">Configuration</ref>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1a99999e960247f0a4c1ade086725a7941" prot="protected" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int thrift_application_base&lt; TserverBase, TserverClass &gt;::d_default_thrift_port</definition>
+        <argsstring></argsstring>
+        <name>d_default_thrift_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default port for the runtime to listen on, if a static port is not specified. Set in the Thrift config file (see <ref refid="page_ctrlport_1ctrlport_thrift_prefs" kindref="member">Configuration</ref>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="136" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1a773a2d8d901c7e2fb119e7605b7fcaec" prot="protected" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int thrift_application_base&lt; TserverBase, TserverClass &gt;::d_default_num_thrift_threads</definition>
+        <argsstring></argsstring>
+        <name>d_default_num_thrift_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of threads to create when serving multiple rpc clients. Set in the Thrift config file (see <ref refid="page_ctrlport_1ctrlport_thrift_prefs" kindref="member">Configuration</ref>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="143" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1a293a04e73b000f12bd21dbe2ad785ce6" prot="protected" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int thrift_application_base&lt; TserverBase, TserverClass &gt;::d_default_thrift_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>d_default_thrift_buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default packet size for the IP payload of thrift packets. Set in the Thrift config file (see <ref refid="page_ctrlport_1ctrlport_thrift_prefs" kindref="member">Configuration</ref>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="149" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classthrift__application__base_1a4de8eb912da08d68ab4ceb9e646059d7" prot="protected" static="no" mutable="no">
+        <type>boost::scoped_ptr&lt; apache::thrift::server::TServer &gt;</type>
+        <definition>boost::scoped_ptr&lt;apache::thrift::server::TServer&gt; thrift_application_base&lt; TserverBase, TserverClass &gt;::d_thriftserver</definition>
+        <argsstring></argsstring>
+        <name>d_thriftserver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the Thrift runtime. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="122" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1a3bfa963bb6257549c426e15102aebe63" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacegr_1a22e664a7b67862256cde054f5b4f530d" kindref="member">gr::logger_ptr</ref></type>
+        <definition>gr::logger_ptr thrift_application_base&lt; TserverBase, TserverClass &gt;::d_logger</definition>
+        <argsstring></argsstring>
+        <name>d_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="page_logger" kindref="compound">Logging</ref> instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="154" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classthrift__application__base_1a4aebecfb692db9aa1c34c06061924085" compoundref="thrift__application__base_8h" startline="194" endline="200">thrift_application_base&lt; TserverBase, TserverClass &gt;::thrift_application_base</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1af6c9648b13dd7f585bec64ba6a559fe4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacegr_1a22e664a7b67862256cde054f5b4f530d" kindref="member">gr::logger_ptr</ref></type>
+        <definition>gr::logger_ptr thrift_application_base&lt; TserverBase, TserverClass &gt;::d_debug_logger</definition>
+        <argsstring></argsstring>
+        <name>d_debug_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="154" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classthrift__application__base_1a4aebecfb692db9aa1c34c06061924085" compoundref="thrift__application__base_8h" startline="194" endline="200">thrift_application_base&lt; TserverBase, TserverClass &gt;::thrift_application_base</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classthrift__application__base_1a9e592426c975df349a448c28e0d5c440" prot="private" static="yes" mutable="no">
+        <type>boost::scoped_ptr&lt; <ref refid="classthrift__application__base__impl" kindref="compound">thrift_application_base_impl</ref> &gt;</type>
+        <definition>boost::scoped_ptr&lt;thrift_application_base_impl &gt; thrift_application_base&lt; TserverBase, TserverClass &gt;::p_impl</definition>
+        <argsstring></argsstring>
+        <name>p_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="179" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classthrift__application__base_1a82faff3bf2f0d06115936d51ee83c921" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex thrift_application_base&lt; TserverBase, TserverClass &gt;::d_lock</definition>
+        <argsstring></argsstring>
+        <name>d_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="182" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classthrift__application__base_1adb82c594df341a64bacbf68fa796e20e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool thrift_application_base&lt; TserverBase, TserverClass &gt;::d_thirft_is_running</definition>
+        <argsstring></argsstring>
+        <name>d_thirft_is_running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="187" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classthrift__application__base_1a4aebecfb692db9aa1c34c06061924085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>thrift_application_base&lt; TserverBase, TserverClass &gt;::thrift_application_base</definition>
+        <argsstring>(TserverClass *_app)</argsstring>
+        <name>thrift_application_base</name>
+        <param>
+          <type>TserverClass *</type>
+          <declname>_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="194" bodyend="200"/>
+        <references refid="namespacegr_1a376ed000bb7a2dd0704231d67250b358">gr::configure_default_loggers</references>
+        <references refid="classthrift__application__base_1a7db27b47101ea80a62322cf059fe2ca9" compoundref="thrift__application__base_8h" startline="117">thrift_application_base&lt; TserverBase, TserverClass &gt;::d_application</references>
+        <references refid="classthrift__application__base_1af6c9648b13dd7f585bec64ba6a559fe4" compoundref="thrift__application__base_8h" startline="154">thrift_application_base&lt; TserverBase, TserverClass &gt;::d_debug_logger</references>
+        <references refid="classthrift__application__base_1a3bfa963bb6257549c426e15102aebe63" compoundref="thrift__application__base_8h" startline="154">thrift_application_base&lt; TserverBase, TserverClass &gt;::d_logger</references>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__application__base_1ae19fcfda1a22cbba07a02107adeef819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>thrift_application_base&lt; TserverBase, TserverClass &gt;::~thrift_application_base</definition>
+        <argsstring>()</argsstring>
+        <name>~thrift_application_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor for the application. Since shutdown and cleanup of the runtime is typically custom to a particular booter implementation, this must be implemented as a specialized function for a particular booter. Thus a template implementation is not provided here. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classthrift__application__base_1aeb08717e9b96969a4947b448cffabe18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TserverBase *</type>
+        <definition>TserverBase * thrift_application_base&lt; TserverBase, TserverClass &gt;::i</definition>
+        <argsstring>()</argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The application singleton instance function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="96" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="244" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__application__base_1a78e720629b8057634bc21aeb49b59a05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt; std::string &gt; thrift_application_base&lt; TserverBase, TserverClass &gt;::endpoints</definition>
+        <argsstring>()</argsstring>
+        <name>endpoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the endpoint string of this application. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="229" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classthrift__application__base_1a759295c4c8f3642275bc6f20d3c4b838" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void thrift_application_base&lt; TserverBase, TserverClass &gt;::set_endpoint</definition>
+        <argsstring>(const std::string &amp;endpoint)</argsstring>
+        <name>set_endpoint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows this application&apos;s booter to set the endpoint string after the Thrift runtime has initialized.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The endpoint string reported by this class. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="110" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="237" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__application__base_1a1c709b1232507658430bbe3344093e6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>TserverBase *</type>
+        <definition>virtual TserverBase* thrift_application_base&lt; TserverBase, TserverClass &gt;::i_impl</definition>
+        <argsstring>()=0</argsstring>
+        <name>i_impl</name>
+        <reimplementedby refid="classthrift__server__template_1a1a5753c0d401837dd090fad5631383ce">i_impl</reimplementedby>
+        <reimplementedby refid="classthrift__server__template_1a1a5753c0d401837dd090fad5631383ce">i_impl</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classthrift__application__base_1a07d5477aca576ffdf50eeefa3c64ba88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void thrift_application_base&lt; TserverBase, TserverClass &gt;::start_thrift</definition>
+        <argsstring>()</argsstring>
+        <name>start_thrift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__application__base_1a6b937444790cf8ffd4544acb381528fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool thrift_application_base&lt; TserverBase, TserverClass &gt;::application_started</definition>
+        <argsstring>()</argsstring>
+        <name>application_started</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="169" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classthrift__application__base_1a6b8f71190ca12945d9c048494742ba40" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void thrift_application_base&lt; TserverBase, TserverClass &gt;::start_application</definition>
+        <argsstring>()</argsstring>
+        <name>start_application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="175" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="203" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for a Thrift application with a singleton with instance function <ref refid="classthrift__application__base_1aeb08717e9b96969a4947b448cffabe18" kindref="member">thrift_application_base::i()</ref>. Lazy initialization is used to start the Thrift runtime, therefore the Thrift runtime is not started unless <ref refid="classthrift__application__base_1aeb08717e9b96969a4947b448cffabe18" kindref="member">thrift_application_base::i()</ref> is called at least once. This typically means that at least one rpc variable must be registered by a block before the runtime will start. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TserverBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template parameter naming the type of the server base, which is typically rpcserverbase. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TserverClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template parameter naming the eventual type of the fully derived application. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the fully derived application instance to be returned by <ref refid="classthrift__application__base_1aeb08717e9b96969a4947b448cffabe18" kindref="member">thrift_application_base::i()</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="11094">
+        <label>TserverClass</label>
+      </node>
+      <node id="11093">
+        <label>thrift_application_base&lt; TserverBase, TserverClass &gt;</label>
+        <link refid="classthrift__application__base"/>
+        <childnode refid="11094" relation="usage">
+          <edgelabel>d_application</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_application_base.h" bodystart="79" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classthrift__application__base_1a6b937444790cf8ffd4544acb381528fa" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>application_started</name></member>
+      <member refid="classthrift__application__base_1a7db27b47101ea80a62322cf059fe2ca9" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_application</name></member>
+      <member refid="classthrift__application__base_1af6c9648b13dd7f585bec64ba6a559fe4" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_debug_logger</name></member>
+      <member refid="classthrift__application__base_1adca0f1db8d1b1520bc36a1abb4dfc12e" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_default_max_init_attempts</name></member>
+      <member refid="classthrift__application__base_1a773a2d8d901c7e2fb119e7605b7fcaec" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_default_num_thrift_threads</name></member>
+      <member refid="classthrift__application__base_1a293a04e73b000f12bd21dbe2ad785ce6" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_default_thrift_buffer_size</name></member>
+      <member refid="classthrift__application__base_1a99999e960247f0a4c1ade086725a7941" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_default_thrift_port</name></member>
+      <member refid="classthrift__application__base_1a82faff3bf2f0d06115936d51ee83c921" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>d_lock</name></member>
+      <member refid="classthrift__application__base_1a3bfa963bb6257549c426e15102aebe63" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_logger</name></member>
+      <member refid="classthrift__application__base_1adb82c594df341a64bacbf68fa796e20e" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>d_thirft_is_running</name></member>
+      <member refid="classthrift__application__base_1a4de8eb912da08d68ab4ceb9e646059d7" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>d_thriftserver</name></member>
+      <member refid="classthrift__application__base_1a78e720629b8057634bc21aeb49b59a05" prot="public" virt="non-virtual"><scope>thrift_application_base</scope><name>endpoints</name></member>
+      <member refid="classthrift__application__base_1aeb08717e9b96969a4947b448cffabe18" prot="public" virt="non-virtual"><scope>thrift_application_base</scope><name>i</name></member>
+      <member refid="classthrift__application__base_1a1c709b1232507658430bbe3344093e6d" prot="protected" virt="pure-virtual"><scope>thrift_application_base</scope><name>i_impl</name></member>
+      <member refid="classthrift__application__base_1a9e592426c975df349a448c28e0d5c440" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>p_impl</name></member>
+      <member refid="classthrift__application__base_1a759295c4c8f3642275bc6f20d3c4b838" prot="protected" virt="non-virtual"><scope>thrift_application_base</scope><name>set_endpoint</name></member>
+      <member refid="classthrift__application__base_1a6b8f71190ca12945d9c048494742ba40" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>start_application</name></member>
+      <member refid="classthrift__application__base_1a07d5477aca576ffdf50eeefa3c64ba88" prot="private" virt="non-virtual"><scope>thrift_application_base</scope><name>start_thrift</name></member>
+      <member refid="classthrift__application__base_1a4aebecfb692db9aa1c34c06061924085" prot="public" virt="non-virtual"><scope>thrift_application_base</scope><name>thrift_application_base</name></member>
+      <member refid="classthrift__application__base_1ae19fcfda1a22cbba07a02107adeef819" prot="public" virt="non-virtual"><scope>thrift_application_base</scope><name>~thrift_application_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

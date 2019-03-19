@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1logger" kind="class" prot="public">
+    <compoundname>gr::logger</compoundname>
+    <includes refid="logger_8h" local="no">gnuradio/logger.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1logger_1aacaac1292a40292ac0a82774d75d5259" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1a22e664a7b67862256cde054f5b4f530d" kindref="member">logger_ptr</ref></type>
+        <definition>logger_ptr gr::logger::d_logger</definition>
+        <argsstring></argsstring>
+        <name>d_logger</name>
+        <briefdescription>
+<para>logger pointer to logger associated wiith this wrapper class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="766" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1logger_1af5b125a22f5d36abccaacc0e55101cda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::logger::logger</definition>
+        <argsstring>(std::string logger_name)</argsstring>
+        <name>logger</name>
+        <param>
+          <type>std::string</type>
+          <declname>logger_name</declname>
+        </param>
+        <briefdescription>
+<para>constructor Provide name of logger to associate with this class </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of logger associated with class </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="772" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="772" bodyend="774"/>
+        <references refid="logger_8h_1ae521fe1efad3668fce0818355d578a99" compoundref="logger_8h" startline="700">GR_LOG_ASSIGN_LOGPTR</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a866ba6be68653c746e39291836cd2b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::logger::~logger</definition>
+        <argsstring>()</argsstring>
+        <name>~logger</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="777" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="777" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a31c88700236155c0089a951a0cd7846b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::set_level</definition>
+        <argsstring>(std::string level)</argsstring>
+        <name>set_level</name>
+        <param>
+          <type>std::string</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper to set the logger level </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="781" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="781" bodyend="781"/>
+        <references refid="logger_8h_1a5d629409e0fcdf7df490481dfdcc77d5" compoundref="logger_8h" startline="705">GR_LOG_SET_LEVEL</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a06e12417d5d0a1a7c970dca4a503fd75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::get_level</definition>
+        <argsstring>(std::string &amp;level)</argsstring>
+        <name>get_level</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper to get the logger level </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="784" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="784" bodyend="784"/>
+        <references refid="logger_8h_1af68f74d7f5187d2b2b707d5dd10935a8" compoundref="logger_8h" startline="707">GR_LOG_GET_LEVEL</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a42fab91282b92c9b28b534896b2cdabb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::debug</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_DEBUG for DEBUG message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="787" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="787" bodyend="787"/>
+        <references refid="logger_8h_1a21e1b97de163a4c6e70cc7fcf26b1781" compoundref="logger_8h" startline="735">GR_LOG_DEBUG</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a26a9911393a88243d6f318c501e8ef49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::info</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>info</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_INFO for INFO message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="790" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="790" bodyend="790"/>
+        <references refid="logger_8h_1a8b4504f1b71b4b8a19d5975523a02346" compoundref="logger_8h" startline="736">GR_LOG_INFO</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a1dea18ab846ceefa93e5873e9d8a144b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::notice</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>notice</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for NOTICE message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="793" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="793" bodyend="793"/>
+        <references refid="logger_8h_1a832c4caca58e2a66f3df84ad37d90c94" compoundref="logger_8h" startline="737">GR_LOG_NOTICE</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a9e5abda330defa8eded90e339da617de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::warn</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>warn</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_WARN for WARN message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="796" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="796" bodyend="796"/>
+        <references refid="logger_8h_1a53c1d7a98404dafa09997f01e4466937" compoundref="logger_8h" startline="738">GR_LOG_WARN</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1ae07979fa0d6873f0aaa298d3cbf3c8a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::error</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>error</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_ERROR for ERROR message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="799" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="799" bodyend="799"/>
+        <references refid="logger_8h_1aaa3d8bc1310cd3c011bec37b8982623e" compoundref="logger_8h" startline="739">GR_LOG_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a8de90f9793171a86715d9405fdd5e6e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::crit</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>crit</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for NOTICE message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="802" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="802" bodyend="802"/>
+        <references refid="logger_8h_1aaa6224cee0a35f87bf1d8206dfabc473" compoundref="logger_8h" startline="741">GR_LOG_CRIT</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1ae96e5107ef58f615bd2502905540969f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::alert</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>alert</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for ALERT message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="805" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="805" bodyend="805"/>
+        <references refid="logger_8h_1a6042723ff8a2a2bb627c9b6e8fc13fe8" compoundref="logger_8h" startline="740">GR_LOG_ALERT</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a2aadb535ba1366ab0db2eda44604a8fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::fatal</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>fatal</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for FATAL message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="808" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="808" bodyend="808"/>
+        <references refid="logger_8h_1abe9535e4cf0435d85339ca13692bd976" compoundref="logger_8h" startline="742">GR_LOG_FATAL</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1ab044e6a798f08fb3f965991abbd696a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::emerg</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>emerg</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for EMERG message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="811" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="811" bodyend="811"/>
+        <references refid="logger_8h_1acb19d24588ca9efa3cfd9c839d90c2cb" compoundref="logger_8h" startline="743">GR_LOG_EMERG</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a2d10593b0d7d531b84377fb9169922fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::errorIF</definition>
+        <argsstring>(bool cond, std::string msg)</argsstring>
+        <name>errorIF</name>
+        <param>
+          <type>bool</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_ASSERT for conditional ERROR message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="814" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="814" bodyend="814"/>
+        <references refid="logger_8h_1ac28f3ad77922ba5821eb4390347287c4" compoundref="logger_8h" startline="744">GR_LOG_ERRORIF</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a2c4d4a862b73d8219e0913c38de8b9d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::log_assert</definition>
+        <argsstring>(bool cond, std::string msg)</argsstring>
+        <name>log_assert</name>
+        <param>
+          <type>bool</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>inline function, wrapper for LOG4CPP_ASSERT for conditional ERROR message </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="817" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="817" bodyend="817"/>
+        <references refid="logger_8h_1a85f169e080825fb40ce982c34997b4bc" compoundref="logger_8h" startline="745">GR_LOG_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a16dfd5acfb5d389bc6a59346501f59af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::add_appender</definition>
+        <argsstring>(std::string appender)</argsstring>
+        <name>add_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>appender</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to add appender to logger by name (define appender in conf file) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="821" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="821" bodyend="823"/>
+        <references refid="logger_8h_1aa8387f96fe8eac54a817712d14e535f9" compoundref="logger_8h" startline="709">GR_LOG_ADD_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1af958f7b59fe529586971b21ae6e37434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::set_appender</definition>
+        <argsstring>(std::string appender)</argsstring>
+        <name>set_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>appender</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to set an appender to logger by name (define appender in conf file) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="827" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="827" bodyend="829"/>
+        <references refid="logger_8h_1add65fbd84b093443d0dae90cc3b8ca99" compoundref="logger_8h" startline="711">GR_LOG_SET_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1adaa25d66de282d361900535186c74939" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::add_console_appender</definition>
+        <argsstring>(std::string target, std::string pattern)</argsstring>
+        <name>add_console_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to add console appender to logger </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="832" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="832" bodyend="834"/>
+        <references refid="logger_8h_1a029ba823414537a0ce3bef10a0cfd6e5" compoundref="logger_8h" startline="713">GR_LOG_ADD_CONSOLE_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1ae664c9d76f4a9117fba74f31b901fd43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::set_console_appender</definition>
+        <argsstring>(std::string target, std::string pattern)</argsstring>
+        <name>set_console_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to set a console appender to logger </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="837" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="837" bodyend="839"/>
+        <references refid="logger_8h_1a5f5d622883cb8b53a1e2818791253a33" compoundref="logger_8h" startline="715">GR_LOG_SET_CONSOLE_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a59623c0e5e128b2d86c59b93240ba034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::add_file_appender</definition>
+        <argsstring>(std::string filename, bool append, std::string pattern)</argsstring>
+        <name>add_file_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to add file appender to logger </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="842" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="842" bodyend="844"/>
+        <references refid="logger_8h_1afb7f4beeeeaed4160c84095e9f69c984" compoundref="logger_8h" startline="717">GR_LOG_ADD_FILE_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1a16b8d38bb169ead3cbed597d6da97f65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::set_file_appender</definition>
+        <argsstring>(std::string filename, bool append, std::string pattern)</argsstring>
+        <name>set_file_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to set a file appender to logger </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="847" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="847" bodyend="849"/>
+        <references refid="logger_8h_1a765db0d2416ab2d7f3c65deb8d8c267d" compoundref="logger_8h" startline="719">GR_LOG_SET_FILE_APPENDER</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1logger_1ac42731c36f9c93a57dc9970be0e30ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::logger::add_rollingfile_appender</definition>
+        <argsstring>(std::string filename, size_t filesize, int bkup_index, bool append, mode_t mode, std::string pattern)</argsstring>
+        <name>add_rollingfile_appender</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>filesize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bkup_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+        </param>
+        <param>
+          <type>mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>inline function, Method to add rolling file appender to logger </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="852" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="852" bodyend="857"/>
+        <references refid="logger_8h_1aaa73c8b0b2cb4d95d7b77a4015f3ac56" compoundref="logger_8h" startline="721">GR_LOG_ADD_ROLLINGFILE_APPENDER</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logger class for referencing loggers in python. Not needed in C++ (use macros) Wraps and manipulates loggers for python as python has no macros. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" line="763" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gnuradio-runtime/include/gnuradio/logger.h" bodystart="762" bodyend="858"/>
+    <listofallmembers>
+      <member refid="classgr_1_1logger_1a16dfd5acfb5d389bc6a59346501f59af" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>add_appender</name></member>
+      <member refid="classgr_1_1logger_1adaa25d66de282d361900535186c74939" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>add_console_appender</name></member>
+      <member refid="classgr_1_1logger_1a59623c0e5e128b2d86c59b93240ba034" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>add_file_appender</name></member>
+      <member refid="classgr_1_1logger_1ac42731c36f9c93a57dc9970be0e30ffa" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>add_rollingfile_appender</name></member>
+      <member refid="classgr_1_1logger_1ae96e5107ef58f615bd2502905540969f" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>alert</name></member>
+      <member refid="classgr_1_1logger_1a8de90f9793171a86715d9405fdd5e6e2" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>crit</name></member>
+      <member refid="classgr_1_1logger_1aacaac1292a40292ac0a82774d75d5259" prot="private" virt="non-virtual"><scope>gr::logger</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1logger_1a42fab91282b92c9b28b534896b2cdabb" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>debug</name></member>
+      <member refid="classgr_1_1logger_1ab044e6a798f08fb3f965991abbd696a8" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>emerg</name></member>
+      <member refid="classgr_1_1logger_1ae07979fa0d6873f0aaa298d3cbf3c8a1" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>error</name></member>
+      <member refid="classgr_1_1logger_1a2d10593b0d7d531b84377fb9169922fb" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>errorIF</name></member>
+      <member refid="classgr_1_1logger_1a2aadb535ba1366ab0db2eda44604a8fa" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>fatal</name></member>
+      <member refid="classgr_1_1logger_1a06e12417d5d0a1a7c970dca4a503fd75" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>get_level</name></member>
+      <member refid="classgr_1_1logger_1a26a9911393a88243d6f318c501e8ef49" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>info</name></member>
+      <member refid="classgr_1_1logger_1a2c4d4a862b73d8219e0913c38de8b9d1" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>log_assert</name></member>
+      <member refid="classgr_1_1logger_1af5b125a22f5d36abccaacc0e55101cda" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>logger</name></member>
+      <member refid="classgr_1_1logger_1a1dea18ab846ceefa93e5873e9d8a144b" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>notice</name></member>
+      <member refid="classgr_1_1logger_1af958f7b59fe529586971b21ae6e37434" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>set_appender</name></member>
+      <member refid="classgr_1_1logger_1ae664c9d76f4a9117fba74f31b901fd43" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>set_console_appender</name></member>
+      <member refid="classgr_1_1logger_1a16b8d38bb169ead3cbed597d6da97f65" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>set_file_appender</name></member>
+      <member refid="classgr_1_1logger_1a31c88700236155c0089a951a0cd7846b" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>set_level</name></member>
+      <member refid="classgr_1_1logger_1a9e5abda330defa8eded90e339da617de" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>warn</name></member>
+      <member refid="classgr_1_1logger_1a866ba6be68653c746e39291836cd2b71" prot="public" virt="non-virtual"><scope>gr::logger</scope><name>~logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

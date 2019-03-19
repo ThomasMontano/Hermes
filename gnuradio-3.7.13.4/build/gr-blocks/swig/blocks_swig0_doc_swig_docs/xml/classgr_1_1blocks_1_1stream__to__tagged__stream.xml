@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1stream__to__tagged__stream" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::stream_to_tagged_stream</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="stream__to__tagged__stream_8h" local="no">stream_to_tagged_stream.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1stream__to__tagged__stream_1a88a7dd2a89ce80c3e409be57f8f7c8a7" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1stream__to__tagged__stream" kindref="compound">stream_to_tagged_stream</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;stream_to_tagged_stream&gt; gr::blocks::stream_to_tagged_stream::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1stream__to__tagged__stream_1a80a72d5a4b8b7821f7cdcfbeb255d62a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1stream__to__tagged__stream_1a88a7dd2a89ce80c3e409be57f8f7c8a7" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::stream_to_tagged_stream::make</definition>
+        <argsstring>(size_t itemsize, int vlen, unsigned packet_len, const std::string &amp;len_tag_key)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vlen</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>packet_len</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>len_tag_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector length of the input items. Note that one vector is one item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>packet_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of items per tagged stream packet. One tag is written every <computeroutput>packet_len</computeroutput> items. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the length tag. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1stream__to__tagged__stream_1a88f1ac0bdeb8400ec9a208a75a5089c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::stream_to_tagged_stream::set_packet_len</definition>
+        <argsstring>(unsigned packet_len)=0</argsstring>
+        <name>set_packet_len</name>
+        <param>
+          <type>unsigned</type>
+          <declname>packet_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1stream__to__tagged__stream_1a03d32337f3d7a2e6ea5b838bfcf69757" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::stream_to_tagged_stream::set_packet_len_pmt</definition>
+        <argsstring>(unsigned packet_len)=0</argsstring>
+        <name>set_packet_len_pmt</name>
+        <param>
+          <type>unsigned</type>
+          <declname>packet_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts a regular stream into a tagged stream.</para><para>All this block does is add length tags in regular intervals. It can be used to connect a regular stream to a gr::tagged_stream_block. </para>    </briefdescription>
+    <detaileddescription>
+<para><bold>Careful:</bold> This block is meant to be connected directly to a tagged stream block. If there are blocks between this block and a tagged stream block, make sure they either don&apos;t change the rate, or modify the tag value to make sure the length tags actually represent the packet length. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="704">
+        <label>gr::blocks::stream_to_tagged_stream</label>
+        <link refid="classgr_1_1blocks_1_1stream__to__tagged__stream"/>
+        <childnode refid="705" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="706">
+        <label>gr::blocks::stream_to_tagged_stream</label>
+        <link refid="classgr_1_1blocks_1_1stream__to__tagged__stream"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/stream_to_tagged_stream.h" bodystart="45" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1stream__to__tagged__stream_1a80a72d5a4b8b7821f7cdcfbeb255d62a" prot="public" virt="non-virtual"><scope>gr::blocks::stream_to_tagged_stream</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1stream__to__tagged__stream_1a88f1ac0bdeb8400ec9a208a75a5089c3" prot="public" virt="pure-virtual"><scope>gr::blocks::stream_to_tagged_stream</scope><name>set_packet_len</name></member>
+      <member refid="classgr_1_1blocks_1_1stream__to__tagged__stream_1a03d32337f3d7a2e6ea5b838bfcf69757" prot="public" virt="pure-virtual"><scope>gr::blocks::stream_to_tagged_stream</scope><name>set_packet_len_pmt</name></member>
+      <member refid="classgr_1_1blocks_1_1stream__to__tagged__stream_1a88a7dd2a89ce80c3e409be57f8f7c8a7" prot="public" virt="non-virtual"><scope>gr::blocks::stream_to_tagged_stream</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

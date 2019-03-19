@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1analog_1_1cpm" kind="class" prot="public">
+    <compoundname>gr::analog::cpm</compoundname>
+    <includes refid="cpm_8h" local="no">gnuradio/analog/cpm.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38" prot="public" static="no">
+        <name>cpm_type</name>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38ac5ca61746b33c3e27f7e04e5e7b24df9" prot="public">
+          <name>LRC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38ad0e09af8123958da4797f0488612a6b2" prot="public">
+          <name>LSRC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a1e24cfa68934ab47d120961480539410" prot="public">
+          <name>LREC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a02321658c7bc8bdba2a818c7818b49ef" prot="public">
+          <name>TFM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38afc44a3e25514e98db75f72cec5dc3aee" prot="public">
+          <name>GAUSSIAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a9559efccf59d1ba077034bddc4f362e8" prot="public">
+          <name>GENERIC</name>
+          <initializer>= 999</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/cpm.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/cpm.h" bodystart="37" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1analog_1_1cpm_1ab9e2018801fc5c8a82c02226a9cadceb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::analog::cpm::phase_response</definition>
+        <argsstring>(cpm_type type, unsigned samples_per_sym, unsigned L, double beta=0.3)</argsstring>
+        <name>phase_response</name>
+        <param>
+          <type><ref refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38" kindref="member">cpm_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>samples_per_sym</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>0.3</defval>
+        </param>
+        <briefdescription>
+<para>Return the taps for an interpolating FIR filter (gr::filter::interp_fir_filter_fff). </para>        </briefdescription>
+        <detaileddescription>
+<para>These taps represent the phase response <formula id="1">$g(k)$</formula> for use in a CPM modulator, see also gr_cpmmod_bc.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CPM type (Rectangular, Raised Cosine, Spectral Raised Cosine, Tamed FM or Gaussian). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>samples_per_sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Samples per symbol. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the phase response in symbols. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For Spectral Raised Cosine, this is the rolloff factor. For Gaussian phase responses, this the 3dB-time-bandwidth product. For all other cases, it is ignored.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Output: returns a vector of length <emphasis>K</emphasis> = <computeroutput>samples_per_sym</computeroutput> x <computeroutput>L</computeroutput>. This can be used directly in an interpolating FIR filter such as gr_interp_fir_filter_fff with interpolation factor <computeroutput>samples_per_sym</computeroutput>.</para><para>All phase responses are normalised s.t. <formula id="2">$ \sum_{k=0}^{K-1} g(k) = 1$</formula>; this will cause a maximum phase change of <formula id="3">$ h \cdot \pi$</formula> between two symbols, where <emphasis>h</emphasis> is the modulation index.</para><para>The following phase responses can be generated:<itemizedlist>
+<listitem><para>LREC: Rectangular phase response.</para></listitem><listitem><para>LRC: Raised cosine phase response, looks like 1 - cos(x).</para></listitem><listitem><para>LSRC: Spectral raised cosine. This requires a rolloff factor beta. The phase response is the Fourier transform of raised cosine function.</para></listitem><listitem><para>TFM: Tamed frequency modulation. This scheme minimizes phase change for rapidly varying input symbols.</para></listitem><listitem><para>GAUSSIAN: A Gaussian phase response. For a modulation index h = 1/2, this results in GMSK.</para></listitem></itemizedlist>
+</para><para>A short description of all these phase responses can be found in [1].</para><para>[1]: Anderson, Aulin and Sundberg; Digital Phase Modulation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/cpm.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Return the taps for an interpolating FIR filter (gr::filter::interp_fir_filter_fff). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/cpm.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/cpm.h" bodystart="34" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>cpm_type</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38afc44a3e25514e98db75f72cec5dc3aee" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>GAUSSIAN</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a9559efccf59d1ba077034bddc4f362e8" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>GENERIC</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38ac5ca61746b33c3e27f7e04e5e7b24df9" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>LRC</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a1e24cfa68934ab47d120961480539410" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>LREC</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38ad0e09af8123958da4797f0488612a6b2" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>LSRC</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1ab9e2018801fc5c8a82c02226a9cadceb" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>phase_response</name></member>
+      <member refid="classgr_1_1analog_1_1cpm_1af223e9af9b0ec5566152a6ae85024a38a02321658c7bc8bdba2a818c7818b49ef" prot="public" virt="non-virtual"><scope>gr::analog::cpm</scope><name>TFM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

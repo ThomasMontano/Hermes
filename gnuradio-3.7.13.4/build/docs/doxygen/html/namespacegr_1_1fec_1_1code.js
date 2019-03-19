@@ -1,0 +1,26 @@
+var namespacegr_1_1fec_1_1code =
+[
+    [ "polar", "namespacegr_1_1fec_1_1code_1_1polar.html", null ],
+    [ "cc_decoder", "classgr_1_1fec_1_1code_1_1cc__decoder.html", "classgr_1_1fec_1_1code_1_1cc__decoder" ],
+    [ "cc_encoder", "classgr_1_1fec_1_1code_1_1cc__encoder.html", "classgr_1_1fec_1_1code_1_1cc__encoder" ],
+    [ "ccsds_encoder", "classgr_1_1fec_1_1code_1_1ccsds__encoder.html", "classgr_1_1fec_1_1code_1_1ccsds__encoder" ],
+    [ "dummy_decoder", "classgr_1_1fec_1_1code_1_1dummy__decoder.html", "classgr_1_1fec_1_1code_1_1dummy__decoder" ],
+    [ "dummy_encoder", "classgr_1_1fec_1_1code_1_1dummy__encoder.html", "classgr_1_1fec_1_1code_1_1dummy__encoder" ],
+    [ "block_data", "structgr_1_1fec_1_1code_1_1block__data.html", "structgr_1_1fec_1_1code_1_1block__data" ],
+    [ "matrix", "structgr_1_1fec_1_1code_1_1matrix.html", "structgr_1_1fec_1_1code_1_1matrix" ],
+    [ "fec_mtrx", "classgr_1_1fec_1_1code_1_1fec__mtrx.html", "classgr_1_1fec_1_1code_1_1fec__mtrx" ],
+    [ "ldpc_bit_flip_decoder", "classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder.html", "classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder" ],
+    [ "ldpc_G_matrix", "classgr_1_1fec_1_1code_1_1ldpc__G__matrix.html", "classgr_1_1fec_1_1code_1_1ldpc__G__matrix" ],
+    [ "ldpc_gen_mtrx_encoder", "classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder.html", "classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder" ],
+    [ "ldpc_H_matrix", "classgr_1_1fec_1_1code_1_1ldpc__H__matrix.html", "classgr_1_1fec_1_1code_1_1ldpc__H__matrix" ],
+    [ "ldpc_par_mtrx_encoder", "classgr_1_1fec_1_1code_1_1ldpc__par__mtrx__encoder.html", "classgr_1_1fec_1_1code_1_1ldpc__par__mtrx__encoder" ],
+    [ "polar_common", "classgr_1_1fec_1_1code_1_1polar__common.html", "classgr_1_1fec_1_1code_1_1polar__common" ],
+    [ "polar_decoder_common", "classgr_1_1fec_1_1code_1_1polar__decoder__common.html", "classgr_1_1fec_1_1code_1_1polar__decoder__common" ],
+    [ "polar_decoder_sc", "classgr_1_1fec_1_1code_1_1polar__decoder__sc.html", "classgr_1_1fec_1_1code_1_1polar__decoder__sc" ],
+    [ "polar_decoder_sc_list", "classgr_1_1fec_1_1code_1_1polar__decoder__sc__list.html", "classgr_1_1fec_1_1code_1_1polar__decoder__sc__list" ],
+    [ "polar_decoder_sc_systematic", "classgr_1_1fec_1_1code_1_1polar__decoder__sc__systematic.html", "classgr_1_1fec_1_1code_1_1polar__decoder__sc__systematic" ],
+    [ "polar_encoder", "classgr_1_1fec_1_1code_1_1polar__encoder.html", "classgr_1_1fec_1_1code_1_1polar__encoder" ],
+    [ "polar_encoder_systematic", "classgr_1_1fec_1_1code_1_1polar__encoder__systematic.html", "classgr_1_1fec_1_1code_1_1polar__encoder__systematic" ],
+    [ "repetition_decoder", "classgr_1_1fec_1_1code_1_1repetition__decoder.html", "classgr_1_1fec_1_1code_1_1repetition__decoder" ],
+    [ "repetition_encoder", "classgr_1_1fec_1_1code_1_1repetition__encoder.html", "classgr_1_1fec_1_1code_1_1repetition__encoder" ]
+];

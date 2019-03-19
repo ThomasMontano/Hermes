@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fft_1_1ctrlport__probe__psd" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fft::ctrlport_probe_psd</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="ctrlport__probe__psd_8h" local="no">ctrlport_probe_psd.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fft_1_1ctrlport__probe__psd_1a5f119bc51f78dfa1edd7f56fed892370" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fft_1_1ctrlport__probe__psd" kindref="compound">ctrlport_probe_psd</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ctrlport_probe_psd&gt; gr::fft::ctrlport_probe_psd::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fft_1_1ctrlport__probe__psd_1a760f15e336ec9ec08b717a4f74f7679a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fft_1_1ctrlport__probe__psd_1a5f119bc51f78dfa1edd7f56fed892370" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fft::ctrlport_probe_psd::make</definition>
+        <argsstring>(const std::string &amp;id, const std::string &amp;desc, int len)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Make a ControlPort probe block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string ID to name the probe over ControlPort. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string describing the probe. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of samples to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fft_1_1ctrlport__probe__psd_1aafe756420e98d597a9d4cdb0398ebaa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>virtual std::vector&lt;gr_complex&gt; gr::fft::ctrlport_probe_psd::get</definition>
+        <argsstring>()=0</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fft_1_1ctrlport__probe__psd_1a9a8aa80481e5ecb41a9f48773fbb53cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fft::ctrlport_probe_psd::set_length</definition>
+        <argsstring>(int len)=0</argsstring>
+        <name>set_length</name>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fft_1_1ctrlport__probe__psd_1a10d6192a6076b6eb0f0bb99818f3d835" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fft::ctrlport_probe_psd::length</definition>
+        <argsstring>() const =0</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A ControlPort probe to export vectors of signals. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block acts as a sink in the flowgraph but also exports vectors of complex samples over ControlPort. This block holds the latest <computeroutput>len</computeroutput> number of complex samples so that every query by a ControlPort client will get the same length vector. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="0">
+        <label>gr::fft::ctrlport_probe_psd</label>
+        <link refid="classgr_1_1fft_1_1ctrlport__probe__psd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::fft::ctrlport_probe_psd</label>
+        <link refid="classgr_1_1fft_1_1ctrlport__probe__psd"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fft/include/gnuradio/fft/ctrlport_probe_psd.h" bodystart="43" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fft_1_1ctrlport__probe__psd_1aafe756420e98d597a9d4cdb0398ebaa7" prot="public" virt="pure-virtual"><scope>gr::fft::ctrlport_probe_psd</scope><name>get</name></member>
+      <member refid="classgr_1_1fft_1_1ctrlport__probe__psd_1a10d6192a6076b6eb0f0bb99818f3d835" prot="public" virt="pure-virtual"><scope>gr::fft::ctrlport_probe_psd</scope><name>length</name></member>
+      <member refid="classgr_1_1fft_1_1ctrlport__probe__psd_1a760f15e336ec9ec08b717a4f74f7679a" prot="public" virt="non-virtual"><scope>gr::fft::ctrlport_probe_psd</scope><name>make</name></member>
+      <member refid="classgr_1_1fft_1_1ctrlport__probe__psd_1a9a8aa80481e5ecb41a9f48773fbb53cd" prot="public" virt="pure-virtual"><scope>gr::fft::ctrlport_probe_psd</scope><name>set_length</name></member>
+      <member refid="classgr_1_1fft_1_1ctrlport__probe__psd_1a5f119bc51f78dfa1edd7f56fed892370" prot="public" virt="non-virtual"><scope>gr::fft::ctrlport_probe_psd</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

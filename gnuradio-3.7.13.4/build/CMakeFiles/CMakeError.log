@@ -1,0 +1,499 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10627/fast 
+/usr/bin/make -f CMakeFiles/cmTC_10627.dir/build.make CMakeFiles/cmTC_10627.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10627.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_10627.dir/CheckSymbolExists.c.o   -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_10627
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10627.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized     -rdynamic CMakeFiles/cmTC_10627.dir/CheckSymbolExists.c.o  -o cmTC_10627 
+CMakeFiles/cmTC_10627.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0xe): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_10627] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_10627/fast] Error 2
+
+File /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4cc08/fast 
+/usr/bin/make -f CMakeFiles/cmTC_4cc08.dir/build.make CMakeFiles/cmTC_4cc08.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4cc08.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4cc08.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4cc08
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cc08.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4cc08.dir/CheckFunctionExists.c.o  -o cmTC_4cc08 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_4cc08] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4cc08/fast] Error 2
+
+
+Determining if the include file cpuid.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3964f/fast 
+/usr/bin/make -f CMakeFiles/cmTC_3964f.dir/build.make CMakeFiles/cmTC_3964f.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3964f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall    -o CMakeFiles/cmTC_3964f.dir/CheckIncludeFile.c.o   -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: cpuid.h: No such file or directory
+ #include <cpuid.h>
+                   ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3964f.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3964f/fast] Error 2
+
+
+Determining if the include file intrin.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ce638/fast 
+/usr/bin/make -f CMakeFiles/cmTC_ce638.dir/build.make CMakeFiles/cmTC_ce638.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce638.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall    -o CMakeFiles/cmTC_ce638.dir/CheckIncludeFile.c.o   -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: intrin.h: No such file or directory
+ #include <intrin.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ce638.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_ce638/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_WERROR_UNUSED_CMD_LINE_ARG failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1dcd6/fast 
+/usr/bin/make -f CMakeFiles/cmTC_1dcd6.dir/build.make CMakeFiles/cmTC_1dcd6.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1dcd6.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -DHAVE_WERROR_UNUSED_CMD_LINE_ARG   -Werror=unused-command-line-argument -o CMakeFiles/cmTC_1dcd6.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: -Werror=unused-command-line-argument: no option -Wunused-command-line-argument
+make[1]: *** [CMakeFiles/cmTC_1dcd6.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_1dcd6/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mfloat_abi_softfp failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59bb5/fast 
+/usr/bin/make -f CMakeFiles/cmTC_59bb5.dir/build.make CMakeFiles/cmTC_59bb5.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59bb5.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mfloat_abi_softfp   -mfloat-abi=softfp -o CMakeFiles/cmTC_59bb5.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_59bb5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59bb5.dir/link.txt --verbose=1
+/usr/bin/c++   -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mfloat_abi_softfp    -rdynamic CMakeFiles/cmTC_59bb5.dir/src.cxx.o  -o cmTC_59bb5 
+/usr/bin/ld: error: cmTC_59bb5 uses VFP register arguments, CMakeFiles/cmTC_59bb5.dir/src.cxx.o does not
+/usr/bin/ld: failed to merge target specific data of file CMakeFiles/cmTC_59bb5.dir/src.cxx.o
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_59bb5] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_59bb5/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_m32 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d75fe/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d75fe.dir/build.make CMakeFiles/cmTC_d75fe.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d75fe.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_m32   -m32 -o CMakeFiles/cmTC_d75fe.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-m32'
+make[1]: *** [CMakeFiles/cmTC_d75fe.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d75fe/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_m64 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7a4a/fast 
+/usr/bin/make -f CMakeFiles/cmTC_a7a4a.dir/build.make CMakeFiles/cmTC_a7a4a.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7a4a.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_m64   -m64 -o CMakeFiles/cmTC_a7a4a.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-m64'
+make[1]: *** [CMakeFiles/cmTC_a7a4a.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a7a4a/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_m3dnow failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e7851/fast 
+/usr/bin/make -f CMakeFiles/cmTC_e7851.dir/build.make CMakeFiles/cmTC_e7851.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e7851.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_m3dnow   -m3dnow -o CMakeFiles/cmTC_e7851.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-m3dnow'
+make[1]: *** [CMakeFiles/cmTC_e7851.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e7851/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse4_2 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_40f71/fast 
+/usr/bin/make -f CMakeFiles/cmTC_40f71.dir/build.make CMakeFiles/cmTC_40f71.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40f71.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse4_2   -msse4.2 -o CMakeFiles/cmTC_40f71.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse4.2'
+make[1]: *** [CMakeFiles/cmTC_40f71.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_40f71/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mpopcnt failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23bd3/fast 
+/usr/bin/make -f CMakeFiles/cmTC_23bd3.dir/build.make CMakeFiles/cmTC_23bd3.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_23bd3.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mpopcnt   -mpopcnt -o CMakeFiles/cmTC_23bd3.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mpopcnt'
+make[1]: *** [CMakeFiles/cmTC_23bd3.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_23bd3/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mmmx failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85f51/fast 
+/usr/bin/make -f CMakeFiles/cmTC_85f51.dir/build.make CMakeFiles/cmTC_85f51.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_85f51.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mmmx   -mmmx -o CMakeFiles/cmTC_85f51.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mmmx'
+make[1]: *** [CMakeFiles/cmTC_85f51.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_85f51/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mfma failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a9368/fast 
+/usr/bin/make -f CMakeFiles/cmTC_a9368.dir/build.make CMakeFiles/cmTC_a9368.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9368.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mfma   -mfma -o CMakeFiles/cmTC_a9368.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mfma'
+make[1]: *** [CMakeFiles/cmTC_a9368.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a9368/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d7727/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d7727.dir/build.make CMakeFiles/cmTC_d7727.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7727.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse   -msse -o CMakeFiles/cmTC_d7727.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse'
+make[1]: *** [CMakeFiles/cmTC_d7727.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d7727/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse2 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2446/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d2446.dir/build.make CMakeFiles/cmTC_d2446.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d2446.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse2   -msse2 -o CMakeFiles/cmTC_d2446.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse2'
+make[1]: *** [CMakeFiles/cmTC_d2446.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d2446/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse3 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd202/fast 
+/usr/bin/make -f CMakeFiles/cmTC_bd202.dir/build.make CMakeFiles/cmTC_bd202.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd202.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse3   -msse3 -o CMakeFiles/cmTC_bd202.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse3'
+make[1]: *** [CMakeFiles/cmTC_bd202.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_bd202/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mssse3 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82b3c/fast 
+/usr/bin/make -f CMakeFiles/cmTC_82b3c.dir/build.make CMakeFiles/cmTC_82b3c.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82b3c.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mssse3   -mssse3 -o CMakeFiles/cmTC_82b3c.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mssse3'
+make[1]: *** [CMakeFiles/cmTC_82b3c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_82b3c/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse4a failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8a39d/fast 
+/usr/bin/make -f CMakeFiles/cmTC_8a39d.dir/build.make CMakeFiles/cmTC_8a39d.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8a39d.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse4a   -msse4a -o CMakeFiles/cmTC_8a39d.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse4a'
+make[1]: *** [CMakeFiles/cmTC_8a39d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8a39d/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_msse4_1 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aaf8d/fast 
+/usr/bin/make -f CMakeFiles/cmTC_aaf8d.dir/build.make CMakeFiles/cmTC_aaf8d.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aaf8d.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_msse4_1   -msse4.1 -o CMakeFiles/cmTC_aaf8d.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-msse4.1'
+make[1]: *** [CMakeFiles/cmTC_aaf8d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_aaf8d/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mavx failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c7e5/fast 
+/usr/bin/make -f CMakeFiles/cmTC_2c7e5.dir/build.make CMakeFiles/cmTC_2c7e5.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c7e5.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mavx   -mavx -o CMakeFiles/cmTC_2c7e5.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mavx'
+make[1]: *** [CMakeFiles/cmTC_2c7e5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2c7e5/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test have_mavx2 failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_26db2/fast 
+/usr/bin/make -f CMakeFiles/cmTC_26db2.dir/build.make CMakeFiles/cmTC_26db2.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_26db2.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -Wall -Dhave_mavx2   -mavx2 -o CMakeFiles/cmTC_26db2.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-mavx2'
+make[1]: *** [CMakeFiles/cmTC_26db2.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_26db2/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1b7f2/fast 
+/usr/bin/make -f CMakeFiles/cmTC_1b7f2.dir/build.make CMakeFiles/cmTC_1b7f2.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1b7f2.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_1b7f2.dir/CheckIncludeFile.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1b7f2.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_1b7f2/fast] Error 2
+
+
+Determining if the include file dev/ppbus/ppi.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dcbe2/fast 
+/usr/bin/make -f CMakeFiles/cmTC_dcbe2.dir/build.make CMakeFiles/cmTC_dcbe2.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dcbe2.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_dcbe2.dir/CheckIncludeFile.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:27: fatal error: dev/ppbus/ppi.h: No such file or directory
+ #include <dev/ppbus/ppi.h>
+                           ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_dcbe2.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_dcbe2/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SSLEEP failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8e3b3/fast 
+/usr/bin/make -f CMakeFiles/cmTC_8e3b3.dir/build.make CMakeFiles/cmTC_8e3b3.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8e3b3.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -DHAVE_SSLEEP   -o CMakeFiles/cmTC_8e3b3.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx:2:25: fatal error: Winbase.h: No such file or directory
+     #include <Winbase.h>
+                         ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_8e3b3.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8e3b3/fast] Error 2
+
+Source file was:
+
+    #include <Winbase.h>
+    int main(){Sleep(0); return 0;}
+    
+Performing C++ SOURCE FILE Test HAVE_CREATEFILEMAPPING failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_33ada/fast 
+/usr/bin/make -f CMakeFiles/cmTC_33ada.dir/build.make CMakeFiles/cmTC_33ada.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_33ada.dir/src.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -DHAVE_CREATEFILEMAPPING   -o CMakeFiles/cmTC_33ada.dir/src.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.cxx:2:25: fatal error: windows.h: No such file or directory
+     #include <windows.h>
+                         ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_33ada.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_33ada/fast] Error 2
+
+Source file was:
+
+    #include <windows.h>
+    int main(){
+        HANDLE handle;
+        int size;
+        LPCTSTR lpName;
+        handle = CreateFileMapping(
+                         INVALID_HANDLE_VALUE,    // use paging file
+                         NULL,                    // default security
+                         PAGE_READWRITE,          // read/write access
+                         0,                       // max. object size
+                         size,                    // buffer size
+                         lpName);                 // name of mapping object
+        return 0;
+    } 
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81c48/fast 
+/usr/bin/make -f CMakeFiles/cmTC_81c48.dir/build.make CMakeFiles/cmTC_81c48.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81c48.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_81c48.dir/CheckIncludeFile.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:21: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+                     ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_81c48.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_81c48/fast] Error 2
+
+
+Performing C SOURCE FILE Test SSE2_SUPPORTED failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_06871/fast 
+/usr/bin/make -f CMakeFiles/cmTC_06871.dir/build.make CMakeFiles/cmTC_06871.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06871.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized -DSSE2_SUPPORTED   -msse2 -o CMakeFiles/cmTC_06871.dir/src.c.o   -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-msse2'
+make[1]: *** [CMakeFiles/cmTC_06871.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_06871/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file AudioUnit/AudioUnit.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_422f3/fast 
+/usr/bin/make -f CMakeFiles/cmTC_422f3.dir/build.make CMakeFiles/cmTC_422f3.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_422f3.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_422f3.dir/CheckIncludeFile.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:33: fatal error: AudioUnit/AudioUnit.h: No such file or directory
+ #include <AudioUnit/AudioUnit.h>
+                                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_422f3.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_422f3/fast] Error 2
+
+
+Determining if the include file AudioToolbox/AudioToolbox.h exists failed with the following output:
+Change Dir: /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f7213/fast 
+/usr/bin/make -f CMakeFiles/cmTC_f7213.dir/build.make CMakeFiles/cmTC_f7213.dir/build
+make[1]: Entering directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7213.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fvisibility=hidden -Wsign-compare -Wall -Wno-uninitialized    -o CMakeFiles/cmTC_f7213.dir/CheckIncludeFile.cxx.o -c /home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:39: fatal error: AudioToolbox/AudioToolbox.h: No such file or directory
+ #include <AudioToolbox/AudioToolbox.h>
+                                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f7213.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/udooer/Downloads/gnuradio-3.7.13.4/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_f7213/fast] Error 2
+
+

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1argmax__fs" kind="class" prot="public">
+    <compoundname>gr::blocks::argmax_fs</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="argmax__fs_8h" local="no">argmax_fs.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1argmax__fs_1a7150cf2cb11dbcbf59712d9424ab3b13" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1argmax__fs" kindref="compound">argmax_fs</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;argmax_fs&gt; gr::blocks::argmax_fs::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/argmax_fs.h" line="55" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/argmax_fs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1argmax__fs_1aaa797a537d940e04da65815c1aec4b03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1argmax__fs_1a7150cf2cb11dbcbf59712d9424ab3b13" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::argmax_fs::make</definition>
+        <argsstring>(size_t vlen)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/argmax_fs.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compares vectors from multiple streams and determines the index in the vector and stream number where the maximum value occurred. </para>    </briefdescription>
+    <detaileddescription>
+<para>Data is passed in as a vector of length <computeroutput>vlen</computeroutput> from multiple input sources. It will look through these streams of <computeroutput>vlen</computeroutput> data items and output two streams:</para><para><itemizedlist>
+<listitem><para>Stream 0 will contain the index value in the vector where the maximum value occurred.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>Stream 1 will contain the number of the input stream that held the maximum value. </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="105">
+        <label>sync_block</label>
+      </node>
+      <node id="104">
+        <label>gr::blocks::argmax_fs</label>
+        <link refid="classgr_1_1blocks_1_1argmax__fs"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="107">
+        <label>sync_block</label>
+      </node>
+      <node id="106">
+        <label>gr::blocks::argmax_fs</label>
+        <link refid="classgr_1_1blocks_1_1argmax__fs"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/argmax_fs.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/argmax_fs.h" bodystart="51" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1argmax__fs_1aaa797a537d940e04da65815c1aec4b03" prot="public" virt="non-virtual"><scope>gr::blocks::argmax_fs</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1argmax__fs_1a7150cf2cb11dbcbf59712d9424ab3b13" prot="public" virt="non-virtual"><scope>gr::blocks::argmax_fs</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

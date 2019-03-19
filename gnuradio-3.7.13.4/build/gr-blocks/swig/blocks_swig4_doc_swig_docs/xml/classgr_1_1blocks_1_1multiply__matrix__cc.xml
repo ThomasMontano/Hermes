@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1multiply__matrix__cc" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::multiply_matrix_cc</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="multiply__matrix__cc_8h" local="no">multiply_matrix_cc.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1multiply__matrix__cc_1ad61ab04543fc8cfe51ef982edd9d15bc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1multiply__matrix__cc" kindref="compound">multiply_matrix_cc</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;multiply_matrix_cc&gt; gr::blocks::multiply_matrix_cc::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1blocks_1_1multiply__matrix__cc_1a9af8107d172152f10c40ca3a6d8a0694" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string gr::blocks::multiply_matrix_cc::MSG_PORT_NAME_SET_A</definition>
+        <argsstring></argsstring>
+        <name>MSG_PORT_NAME_SET_A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="91" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__matrix__cc_1a4fdd7c3115919abdf10638402e14d562" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1multiply__matrix__cc_1ad61ab04543fc8cfe51ef982edd9d15bc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::multiply_matrix_cc::make</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; gr_complex &gt; &gt; A, gr::block::tag_propagation_policy_t tag_propagation_policy=gr::block::TPP_ALL_TO_ALL)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; gr_complex &gt; &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>gr::block::tag_propagation_policy_t</type>
+          <declname>tag_propagation_policy</declname>
+          <defval>gr::block::TPP_ALL_TO_ALL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag_propagation_policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag propagation policy. Note this can be any gr::block::tag_propagation_policy_t value. In case of TPP_CUSTOM, tags are only transferred from input <formula id="7">$k$</formula> to output <formula id="11">$l \iff (A)_{l,k} \neq 0$</formula>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__matrix__cc_1a14299a8a6b32754a7a33be030a7de329" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;std::vector&lt;gr_complex&gt; &gt;&amp; gr::blocks::multiply_matrix_cc::get_A</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_A</name>
+        <briefdescription>
+<para>Returns the current matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__matrix__cc_1af5b5b8d8346873a9c5ce449e57599234" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::multiply_matrix_cc::set_A</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;new_A)=0</argsstring>
+        <name>set_A</name>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>new_A</declname>
+        </param>
+        <briefdescription>
+<para>Sets the matrix to a new value <computeroutput>new_A</computeroutput>. Returns true if the new matrix was valid and could be changed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Matrix multiplexer/multiplier: y(k) = A x(k)</para><para>This block is similar to <ref refid="classgr_1_1blocks_1_1multiply__const__ff" kindref="compound">gr::blocks::multiply_const_ff</ref>, the difference being it can handle several inputs and outputs, and the input-to-output relation can be described by the following mathematical equation: <formula id="4">\[ \mathbf{y}(k) = \mathbf{A} \mathbf{x}(k) \, , \, y \in \mathbb{R}^N, \mathbf{x} \in \mathbb{R}^M, A \in \mathbb{R}^{N \times M} \]</formula> <formula id="5">$\mathbf{y}(k)$</formula> and <formula id="6">$\mathbf{x}(i)$</formula> are column-vectors describing the elements on the input port at time step <formula id="7">$k$</formula> (this is a sync block with no memory). </para>    </briefdescription>
+    <detaileddescription>
+<para>Examples for where to use this block include:<itemizedlist>
+<listitem><para>Switch matrices (i.e. switch which ports go where), assuming all ports run on the same rate</para></listitem><listitem><para>Simulation of static MIMO-Channels (in that case, <formula id="8">$\mathbf{A}$</formula> is the channel matrix)</para></listitem><listitem><para>Summing up streams with variable coefficients</para></listitem></itemizedlist>
+</para><para>This block features a special tag propagation mode: When setting the tag propagation policy to gr::block::TPP_CUSTOM, a tag is propagated from input <formula id="7">$k$</formula> to output <formula id="9">$l$</formula>, if <formula id="10">$(A)_{l,k} \neq 0$</formula>.</para><sect1 id="classgr_1_1blocks_1_1multiply__matrix__cc_1blocks_matrixmult_msgports_multiply_matrix_cc">
+<title>Message Ports</title>
+<para>This block as one input message port (<computeroutput>set_A</computeroutput>). A message sent to this port will be converted to a std::vector&lt;std::vector&lt;gr_complex&gt; &gt;, and then passed on to <ref refid="classgr_1_1blocks_1_1multiply__matrix__cc_1af5b5b8d8346873a9c5ce449e57599234" kindref="member">set_A()</ref>. If no conversion is possible, a warning is issued via the logging interface, and A remains unchanged.</para><para><emphasis>Note</emphasis>: It is not possible to change the dimension of the matrix after initialization, as this affects the I/O signature! If a matrix of invalid size is passed to the block, an alert is raised via the logging interface, and A remains unchanged. </para></sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="461">
+        <label>sync_block</label>
+      </node>
+      <node id="460">
+        <label>gr::blocks::multiply_matrix_cc</label>
+        <link refid="classgr_1_1blocks_1_1multiply__matrix__cc"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="465">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="463">
+        <label>sync_block</label>
+      </node>
+      <node id="462">
+        <label>gr::blocks::multiply_matrix_cc</label>
+        <link refid="classgr_1_1blocks_1_1multiply__matrix__cc"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>MSG_PORT_NAME_SET_A</edgelabel>
+        </childnode>
+      </node>
+      <node id="464">
+        <label>std::string</label>
+        <childnode refid="465" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/multiply_matrix_cc.h" bodystart="67" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1multiply__matrix__cc_1a14299a8a6b32754a7a33be030a7de329" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_matrix_cc</scope><name>get_A</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__matrix__cc_1a4fdd7c3115919abdf10638402e14d562" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_matrix_cc</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__matrix__cc_1a9af8107d172152f10c40ca3a6d8a0694" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_matrix_cc</scope><name>MSG_PORT_NAME_SET_A</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__matrix__cc_1af5b5b8d8346873a9c5ce449e57599234" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_matrix_cc</scope><name>set_A</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__matrix__cc_1ad61ab04543fc8cfe51ef982edd9d15bc" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_matrix_cc</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

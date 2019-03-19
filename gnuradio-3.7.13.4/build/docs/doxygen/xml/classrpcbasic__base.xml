@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__base" kind="class" prot="public">
+    <compoundname>rpcbasic_base</compoundname>
+    <derivedcompoundref refid="classrpcbasic__register__get" prot="public" virt="non-virtual">rpcbasic_register_get&lt; T, Tfrom &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrpcbasic__register__get" prot="public" virt="non-virtual">rpcbasic_register_get&lt; rpcbasic_register_variable&lt; Tfrom &gt;, Tfrom &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrpcbasic__register__handler" prot="public" virt="non-virtual">rpcbasic_register_handler&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structrpcbasic__register__set" prot="public" virt="non-virtual">rpcbasic_register_set&lt; T, Tto &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structrpcbasic__register__set" prot="public" virt="non-virtual">rpcbasic_register_set&lt; rpcbasic_register_variable_rw&lt; Tfrom &gt;, Tfrom &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structrpcbasic__register__trigger" prot="public" virt="non-virtual">rpcbasic_register_trigger&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrpcbasic__register__variable" prot="public" virt="non-virtual">rpcbasic_register_variable&lt; Tfrom &gt;</derivedcompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">gnuradio/rpcregisterhelpers.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__base_1ab0f3d0bf323958aa51750ccea26cefdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_base::rpcbasic_base</definition>
+        <argsstring>()</argsstring>
+        <name>rpcbasic_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="631" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="631" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__base_1ae3f50018ff739652e1a5420acc1503c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual rpcbasic_base::~rpcbasic_base</definition>
+        <argsstring>()</argsstring>
+        <name>~rpcbasic_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="632" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="632" bodyend="632"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class to inherit from and create universal shared pointers. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9319">
+        <label>rpcbasic_register_handler&lt; T &gt;</label>
+        <link refid="classrpcbasic__register__handler"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9316">
+        <label>rpcbasic_base</label>
+        <link refid="classrpcbasic__base"/>
+      </node>
+      <node id="9317">
+        <label>rpcbasic_register_get&lt; T, Tfrom &gt;</label>
+        <link refid="classrpcbasic__register__get"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9322">
+        <label>rpcbasic_register_trigger&lt; T &gt;</label>
+        <link refid="structrpcbasic__register__trigger"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9320">
+        <label>rpcbasic_register_set&lt; T, Tto &gt;</label>
+        <link refid="structrpcbasic__register__set"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9321">
+        <label>rpcbasic_register_set&lt; rpcbasic_register_variable_rw&lt; Tfrom &gt;, Tfrom &gt;</label>
+        <link refid="structrpcbasic__register__set"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9324">
+        <label>rpcbasic_register_variable_rw&lt; Tfrom &gt;</label>
+        <link refid="classrpcbasic__register__variable__rw"/>
+        <childnode refid="9323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9318">
+        <label>rpcbasic_register_get&lt; rpcbasic_register_variable&lt; Tfrom &gt;, Tfrom &gt;</label>
+        <link refid="classrpcbasic__register__get"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9323">
+        <label>rpcbasic_register_variable&lt; Tfrom &gt;</label>
+        <link refid="classrpcbasic__register__variable"/>
+        <childnode refid="9316" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="629" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="628" bodyend="633"/>
+    <listofallmembers>
+      <member refid="classrpcbasic__base_1ab0f3d0bf323958aa51750ccea26cefdb" prot="public" virt="non-virtual"><scope>rpcbasic_base</scope><name>rpcbasic_base</name></member>
+      <member refid="classrpcbasic__base_1ae3f50018ff739652e1a5420acc1503c3" prot="public" virt="virtual"><scope>rpcbasic_base</scope><name>~rpcbasic_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

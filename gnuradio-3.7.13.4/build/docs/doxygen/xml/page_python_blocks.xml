@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="page_python_blocks" kind="page">
+    <compoundname>page_python_blocks</compoundname>
+    <title>Python Blocks</title>
+    <detaileddescription>
+<para>How to create blocks in Python</para><sect1 id="page_python_blocks_1pyblocks_streaming">
+<title>Streaming Data Blocks</title>
+<para>We create blocks in Python very much like we would in C++, just with more Python. Figure out which type of block you want to create:</para><para><itemizedlist>
+<listitem><para>general block (<ref refid="classgr_1_1basic__block" kindref="compound">gr.basic_block</ref>) </para></listitem>
+<listitem><para>synchronous block (<ref refid="classgr_1_1sync__block" kindref="compound">gr.sync_block</ref>) </para></listitem>
+<listitem><para>decimator (<ref refid="classgr_1_1sync__decimator" kindref="compound">gr.sync_decimator</ref>) </para></listitem>
+<listitem><para>interpolator (<ref refid="classgr_1_1sync__interpolator" kindref="compound">gr.sync_interpolator</ref>)</para></listitem>
+</itemizedlist>
+The block class inherits from one of these base classes, and then in defining the parent class, we set the I/O signature. However, unlike in C++ where we use the <ref refid="classgr_1_1io__signature" kindref="compound">gr::io_signature</ref> class, here we can just create a Python list of the I/O data sizes using numpy data types:</para><para><itemizedlist>
+<listitem><para>numpy.int8 </para></listitem>
+<listitem><para>numpy.int16 </para></listitem>
+<listitem><para>numpy.int32 </para></listitem>
+<listitem><para>numpy.float32 </para></listitem>
+<listitem><para>numpy.float64</para></listitem>
+</itemizedlist>
+Like a normal C++ version of the block, we then create and initialize any variables in the constructor, define any setters and getters, and create the work function. The prototype for the work function is quite simple:</para><para><programlisting><codeline><highlight class="normal">def<sp/>work(</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>input_items,<sp/>output_items)</highlight></codeline>
+</programlisting></para><para>The input_items and output_items are lists of lists. The input_items contains a vector of input samples for every input stream, and the output_items is a vector for each output stream where we can place items. Then length of output_items[0] is equivalent to the noutput_items concept we are so familiar with from the C++ blocks.</para><para>Following is an example Python block that adds two input streams together. This block is used in the qa_block_gateway.py test code.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">add_2_f32_1_f32(gr.sync_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr.sync_block.__init__(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;add<sp/>2<sp/>f32&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_sig<sp/>=<sp/>[numpy.float32,<sp/>numpy.float32],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_sig<sp/>=<sp/>[numpy.float32],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>work(self,<sp/>input_items,<sp/>output_items):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output_items[0][:]<sp/>=<sp/>input_items[0]<sp/>+<sp/>input_items[1]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>len(output_items[0])</highlight></codeline>
+</programlisting></para><para>The block defines two input floating point streams by setting in_sig to &quot;[numpy.float32, numpy.float32]&quot; and a single output float stream in out_sig of &quot;[numpy.float32].&quot;</para><para>The work function then just adds the two input streams together. The streams are input_items[0] and input_items[1]. The block still returns the concept of noutput_items like we use in C++, only we get it here by getting len(output_items[0]). Because this is a sync_block, we also know that the size of the input_items for both streams is the same as the size of the output_items vector.</para></sect1>
+<sect1 id="page_python_blocks_1pyblocks_tags">
+<title>Using Stream Tags</title>
+<para>Python blocks have access to the stream tag system like their C++ counterparts. The interface is almost identical except they behave just a bit more like we would expect in Python.</para><para>To add tags to the data stream, we use the add_item_tag function:</para><para><programlisting><codeline><highlight class="normal">def<sp/>work(</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>input_items,<sp/>output_items):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>....</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>add_item_tag(which_output,<sp/>abs_offset,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>key,<sp/>value,<sp/>srcid)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>....</highlight></codeline>
+</programlisting></para><para>The abs_offset is an integer of the sample that the tag is attached to, and key and value are both PMTs to set the key:value pair of the tag information, and the srcid is an optional PMT to define the source of the block that generate the tag.</para><para>We then can get tags using either the get_tags_in_range or get_tags_in_window. Again, like their C++ counter parts, the get_tags_in_range uses the absolute item offset numbering (using nitems_read) while the get_tags_in_window uses relative offsets within the current window of items available to the work function. The main difference from the C++ function is that instead of having the first argument be a vector where the tags are stored, the Python version just returns a list of tags. We would use it like this:</para><para><programlisting><codeline><highlight class="normal">def<sp/>work(</highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>input_items,<sp/>output_items):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>....</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tags<sp/>=<sp/>get_tags_in_window(which_input,<sp/>rel_start,<sp/>rel_end)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>....</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="page_python_blocks_1pyblocks_msgs">
+<title>Using Message Passing</title>
+<para>Again, like their C++ counterparts, Python blocks can use the asynchronous message passing interface. We define output message handlers using:</para><para><programlisting><codeline><highlight class="keyword">self</highlight><highlight class="normal">.message_port_register_out(pmt.intern(</highlight><highlight class="stringliteral">&quot;&lt;port<sp/>name&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+</programlisting></para><para>We can then post messages to this using the message_port_pub function:</para><para><programlisting><codeline><highlight class="keyword">self</highlight><highlight class="normal">.message_port_pub(pmt.intern(</highlight><highlight class="stringliteral">&quot;&lt;port<sp/>name&gt;&quot;</highlight><highlight class="normal">),<sp/>&lt;pmt<sp/>message&gt;)</highlight></codeline>
+</programlisting></para><para>We then register input messages and handlers in similar ways:</para><para><programlisting><codeline><highlight class="keyword">self</highlight><highlight class="normal">.message_port_register_in(pmt.intern(</highlight><highlight class="stringliteral">&quot;&lt;port<sp/>name&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">self</highlight><highlight class="normal">.set_msg_handler(pmt.intern(</highlight><highlight class="stringliteral">&quot;&lt;port<sp/>name&gt;&quot;</highlight><highlight class="normal">),<sp/>&lt;msg<sp/>handler<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">&gt;)</highlight></codeline>
+</programlisting></para><para>Putting this together below is a very simple example:</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">msg_block(gr.basic_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr.basic_block.__init__(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=&quot;msg_block&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_sig=None,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_sig=None)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.message_port_register_out(pmt.intern(&apos;msg_out&apos;))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.message_port_register_in(pmt.intern(&apos;msg_in&apos;))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.set_msg_handler(pmt.intern(&apos;msg_in&apos;),<sp/>self.handle_msg)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>handle_msg(self,<sp/>msg):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.message_port_pub(pmt.intern(&apos;msg_out&apos;),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pmt.intern(&apos;message<sp/>received!&apos;))</highlight></codeline>
+</programlisting> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

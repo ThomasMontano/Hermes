@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list" kind="class" prot="public">
+    <compoundname>gr::fec::code::polar_decoder_sc_list</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1code_1_1polar__decoder__common" prot="public" virt="non-virtual">gr::fec::code::polar_decoder_common</basecompoundref>
+    <includes refid="polar__decoder__sc__list_8h" local="no">polar_decoder_sc_list.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a52a6c77baa6f1c6e2d429d12b2d1c335" prot="private" static="no" mutable="no">
+        <type>polar::scl_list *</type>
+        <definition>polar::scl_list* gr::fec::code::polar_decoder_sc_list::d_scl</definition>
+        <argsstring></argsstring>
+        <name>d_scl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a99b059557eeee263c425cc3a1df6f591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" kindref="member">generic_decoder::sptr</ref></type>
+        <definition>static generic_decoder::sptr gr::fec::code::polar_decoder_sc_list::make</definition>
+        <argsstring>(int max_list_size, int block_size, int num_info_bits, std::vector&lt; int &gt; frozen_bit_positions, std::vector&lt; char &gt; frozen_bit_values)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>max_list_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_info_bits</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>frozen_bit_positions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; char &gt;</type>
+          <declname>frozen_bit_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_list_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>caps number of followed decoding paths. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codeword size. MUST be a power of 2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_info_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>represents the number of information bits in a block. Also called frame_size. &lt;= block_size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_bit_positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an integer vector which defines the position of all frozen bits in a block. Its size MUST be equal to block_size - num_info_bits. Also it must be sorted and every position must only occur once. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_bit_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>holds an unpacked byte for every frozen bit position. It defines if a frozen bit is fixed to &apos;0&apos; or &apos;1&apos;. Defaults to all ZERO. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ae40632528c5128956b378b67ad58ba63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::code::polar_decoder_sc_list::~polar_decoder_sc_list</definition>
+        <argsstring>()</argsstring>
+        <name>~polar_decoder_sc_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1aa06c439c4a777cfcb34a1e7f743034f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_decoder_sc_list::generic_work</definition>
+        <argsstring>(void *in_buffer, void *out_buffer)</argsstring>
+        <name>generic_work</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__decoder_1aeef6c573d354a4fe0c1ff5d78bafd485">generic_work</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>out_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ad41bb8b9ac0b0dc905913a0f4e43330e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::code::polar_decoder_sc_list::polar_decoder_sc_list</definition>
+        <argsstring>(int max_list_size, int block_size, int num_info_bits, std::vector&lt; int &gt; frozen_bit_positions, std::vector&lt; char &gt; frozen_bit_values)</argsstring>
+        <name>polar_decoder_sc_list</name>
+        <param>
+          <type>int</type>
+          <declname>max_list_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_info_bits</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>frozen_bit_positions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; char &gt;</type>
+          <declname>frozen_bit_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a13c466841e915b37739753c5fe8a0ed6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_decoder_sc_list::initialize_list</definition>
+        <argsstring>(const float *in_buf)</argsstring>
+        <name>initialize_list</name>
+        <param>
+          <type>const float *</type>
+          <declname>in_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a9645b055e7c56544607a770447b60f6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* gr::fec::code::polar_decoder_sc_list::decode_list</definition>
+        <argsstring>()</argsstring>
+        <name>decode_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ac61618abf76f4e10dfee21be11b5f43b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_decoder_sc_list::decode_bit</definition>
+        <argsstring>(const int u_num)</argsstring>
+        <name>decode_bit</name>
+        <param>
+          <type>const int</type>
+          <declname>u_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1aea3eb1b76928b2bce97ddbc72ba612c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_decoder_sc_list::calculate_llrs_for_list</definition>
+        <argsstring>(const int u_num)</argsstring>
+        <name>calculate_llrs_for_list</name>
+        <param>
+          <type>const int</type>
+          <declname>u_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a9eadae79be800fb5990f4f3e57c88207" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_decoder_sc_list::set_bit_in_list</definition>
+        <argsstring>(const int u_num)</argsstring>
+        <name>set_bit_in_list</name>
+        <param>
+          <type>const int</type>
+          <declname>u_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="87" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Successive cancellation list (SCL) decoder for polar codes. </para>    </briefdescription>
+    <detaileddescription>
+<para>Decoder is based on Tal, Vardy &quot;List Decoding of Polar Codes&quot;, 2012 LLR version: Balatsoukas-Stimming, Parizi, Burg &quot;LLR-based
+Successive Cancellation List Decoding of Polar Codes&quot;, 2015.</para><para>Block expects float input with bits mapped 1 <ndash/>&gt; 1, 0 <ndash/>&gt; -1 Or: f = 2.0 * bit - 1.0 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="197">
+        <label>gr::fec::code::polar_decoder_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__common"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>gr::fec::code::polar_decoder_sc_list</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+      </node>
+      <node id="199">
+        <label>gr::fec::code::polar_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__common"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="206">
+        <label>std::vector&lt; char &gt;</label>
+      </node>
+      <node id="204">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="201">
+        <label>gr::fec::code::polar_decoder_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__common"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>gr::fec::code::polar_decoder_sc_list</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list"/>
+        <childnode refid="201" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+        <childnode refid="203" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="205">
+        <label>gr::fec::code::polar_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__common"/>
+        <childnode refid="206" relation="usage">
+          <edgelabel>d_frozen_bit_values</edgelabel>
+        </childnode>
+        <childnode refid="207" relation="usage">
+          <edgelabel>d_info_bit_positions</edgelabel>
+          <edgelabel>d_frozen_bit_positions</edgelabel>
+          <edgelabel>d_info_bit_positions_reversed</edgelabel>
+        </childnode>
+      </node>
+      <node id="207">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="203">
+        <label>std::string</label>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_decoder_sc_list.h" bodystart="51" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9a6cbe6022c593cded3c00b929873855" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a09d4e84d633630b77a47b80398c209ad" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a15b98e632515bbb78374d72b3dfa3e3a" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>bit_reverse</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a5d3701369c61cf33d5800cf9bfab7411" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>block_power</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a1cebbcc6e861f44bf754e0f07e9d687c" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>block_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1aa33bcd0cfeb48d135884ff1333702db7" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>butterfly</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1aaeb08aef8e16ebe0d08045cab3a69055" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>butterfly_generic</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1acff899cbe0a56c888e5223eb7f89a511" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>butterfly_volk</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1aea3eb1b76928b2bce97ddbc72ba612c3" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>calculate_llrs_for_list</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1afbe538964d898927cf27dbec77f3bfea" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_frozen_bit_positions</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a729b68cb8ae99eb2b2b8f6a556ba8452" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_frozen_bit_values</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1adbc8d66432f0aa009d426a3ea643a480" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_info_bit_positions</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ae7596a59436f7f2001dd151443c6c4c1" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_info_bit_positions_reversed</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a29d043afec8a523972c67e17bf8f3f78" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a96ed2f7bb7465e0df29a13b127ad9fd4" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a52a6c77baa6f1c6e2d429d12b2d1c335" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_scl</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a6509b4ff15434282aea0d0595fdb7b95" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_volk_frozen_bit_mask</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a30839795c87aa652d2dc34d198484e97" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_volk_frozen_bits</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aa3a8d96ac1ae55b5d0e6f6887808eb68" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>d_volk_temp</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ac61618abf76f4e10dfee21be11b5f43b" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>decode_bit</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a9645b055e7c56544607a770447b60f6e" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>decode_list</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1aa3914a3f109289cfb74873bc51c7c6f1" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>even_u_values</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a944b4842fc15467dbf86a4eaf7398d42" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>extract_info_bits</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a699ddfa2fc51343b3193149646bab208" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ab32bf0b94adb801b523001de32ee7dfc" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1aa06c439c4a777cfcb34a1e7f743034f5" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9037426d33b865dda50055380f9b85c8" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_history</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1afaead9faf05cdb871e4c21f5f4dae90c" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_input_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1ae396bb39bb858fb4ce623c24584d2d67" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a75ffb122f2891ee457be1874e198e836" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_iterations</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ae9a6334b499359f97368569f9b50fbaf" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a558263fff172b7867ed96afccb93078f" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_output_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a108dc0297656c62f2b3ddcb975b2f6d4" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7c46fd20d994c05ece2aa93dc8d3a926" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>get_shift</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a2e296c5aa7e0a66a63383ebc5f7abd4f" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>initialize_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a13c466841e915b37739753c5fe8a0ed6" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>initialize_list</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1ab495bb772427aafdd2e9af0f33d39593" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>is_frozen_bit</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1ac5f1df7e6f9a4fa68c5d84be46391649" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>llr_bit_decision</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a731b0b32bb14cf729069aeb9f15e97c9" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>llr_even</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a267ba4f9bd88d8ca6d6957f3088a084e" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>llr_odd</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a99b059557eeee263c425cc3a1df6f591" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a2ea0d9d63a13ef1bd22e6517a856b340" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1adb730b12471a7b9ada9eb24a3b57627a" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>next_frozen_bit</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a41365b16260ce4ac0117d079803e9023" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>num_info_bits</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1adf496ec00f054890cc357c4241295c75" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>odd_xor_even_values</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1add22e2355a7d6f5b806b5ae23d3f9ee7" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>polar_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a23f298619d51528db38e1ce3907e187e" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>polar_decoder_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ad41bb8b9ac0b0dc905913a0f4e43330e" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>polar_decoder_sc_list</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a410d33ccb406282392b51a501f1fb902" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>print_packed_bit_array</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a1ed029525af9b9f8ab9d9abe7856ec4f" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>print_pretty_llr_vector</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aaae9ead24f0f30d1add2c9fe29ae410c" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>print_unpacked_bit_array</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a6bcd35c6c481e99b0aa1298f43bfbec5" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1a9eadae79be800fb5990f4f3e57c88207" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>set_bit_in_list</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a0d01e3a5e91ed55d58ea7f7526cca7e9" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ac45c9ce21fe410adc8fd273394c319c7" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>setup_info_bit_positions_reversed</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ad2fe1805bba3d4cb737784bbf6aaf60d" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>setup_volk_vectors</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7480b06afbc530f4a524905deab8f70b" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1adcb9476e3f437f427d763814381bee0b" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>volk_encode</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aaecd58101069b3d5a6084bde1efc7882" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>volk_encode_block</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a36a7aeb512d578e53d6f984bfd380667" prot="public" virt="virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>~generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ae84e16eddb487c7e6946397859cac5c2" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>~polar_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a2fc129d81ef607dcd2e743607270f5da" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>~polar_decoder_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1ae40632528c5128956b378b67ad58ba63" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_decoder_sc_list</scope><name>~polar_decoder_sc_list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

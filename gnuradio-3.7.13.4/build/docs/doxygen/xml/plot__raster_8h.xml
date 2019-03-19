@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="plot__raster_8h" kind="file">
+    <compoundname>plot_raster.h</compoundname>
+    <includes local="no">qglobal.h</includes>
+    <includes refid="timeRasterGlobalData_8h" local="no">gnuradio/qtgui/timeRasterGlobalData.h</includes>
+    <includes local="no">qwt_plot_rasteritem.h</includes>
+    <includedby refid="TimeRasterDisplayPlot_8h" local="no">TimeRasterDisplayPlot.h</includedby>
+    <incdepgraph>
+      <node id="22323">
+        <label>qglobal.h</label>
+      </node>
+      <node id="22327">
+        <label>qwt_plot_rasteritem.h</label>
+      </node>
+      <node id="22325">
+        <label>qwt_raster_data.h</label>
+      </node>
+      <node id="22324">
+        <label>gnuradio/qtgui/timeRasterGlobalData.h</label>
+        <link refid="timeRasterGlobalData_8h"/>
+        <childnode refid="22325" relation="include">
+        </childnode>
+        <childnode refid="22326" relation="include">
+        </childnode>
+      </node>
+      <node id="22322">
+        <label>plot_raster.h</label>
+        <link refid="plot_raster.h"/>
+        <childnode refid="22323" relation="include">
+        </childnode>
+        <childnode refid="22324" relation="include">
+        </childnode>
+        <childnode refid="22327" relation="include">
+        </childnode>
+      </node>
+      <node id="22326">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="22330">
+        <label>timerasterdisplayform.h</label>
+        <link refid="timerasterdisplayform_8h"/>
+      </node>
+      <node id="22329">
+        <label>TimeRasterDisplayPlot.h</label>
+        <link refid="TimeRasterDisplayPlot_8h"/>
+        <childnode refid="22330" relation="include">
+        </childnode>
+      </node>
+      <node id="22328">
+        <label>plot_raster.h</label>
+        <link refid="plot_raster.h"/>
+        <childnode refid="22329" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPlotTimeRaster" prot="public">PlotTimeRaster</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/plot_raster.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf" kind="class" prot="public">
+    <compoundname>gr::filter::kernel::fft_filter_ccf</compoundname>
+    <includes refid="fft__filter_8h" local="no">gnuradio/filter/fft_filter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1aa3df87e773c8344e3a85ae9e116f94e2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::d_ntaps</definition>
+        <argsstring></argsstring>
+        <name>d_ntaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="281" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a07c605d26bfdf5ef7e30a51305e0130b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::d_nsamples</definition>
+        <argsstring></argsstring>
+        <name>d_nsamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="282" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a58ff7f8298796ccab20a0e8446012dcc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::d_fftsize</definition>
+        <argsstring></argsstring>
+        <name>d_fftsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="283" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1ad807869626b35fcce2127c24c3fbdceb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::d_decimation</definition>
+        <argsstring></argsstring>
+        <name>d_decimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="284" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a73f2e12218ccc61f6f15c62c605a5cbf" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1fft_1_1fft__complex" kindref="compound">fft::fft_complex</ref> *</type>
+        <definition>fft::fft_complex* gr::filter::kernel::fft_filter_ccf::d_fwdfft</definition>
+        <argsstring></argsstring>
+        <name>d_fwdfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="285" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1af545561b0aff2b522860b96ea6053526" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1fft_1_1fft__complex" kindref="compound">fft::fft_complex</ref> *</type>
+        <definition>fft::fft_complex* gr::filter::kernel::fft_filter_ccf::d_invfft</definition>
+        <argsstring></argsstring>
+        <name>d_invfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="286" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a696a1d743df08a1c1991ed086e40aad2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::d_nthreads</definition>
+        <argsstring></argsstring>
+        <name>d_nthreads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="287" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a58947c18ff44221195069c98a50e0ab0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::filter::kernel::fft_filter_ccf::d_tail</definition>
+        <argsstring></argsstring>
+        <name>d_tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="288" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1adba2faa7115cc5c4e0e16588b26d45ee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::filter::kernel::fft_filter_ccf::d_taps</definition>
+        <argsstring></argsstring>
+        <name>d_taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="289" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a37f4026422d27df3518d8bd8755b90fd" prot="private" static="no" mutable="no">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+        <definition>gr_complex* gr::filter::kernel::fft_filter_ccf::d_xformed_taps</definition>
+        <argsstring></argsstring>
+        <name>d_xformed_taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="290" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a0b59798148c8b08ce410bdc342e23646" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::kernel::fft_filter_ccf::compute_sizes</definition>
+        <argsstring>(int ntaps)</argsstring>
+        <name>compute_sizes</name>
+        <param>
+          <type>int</type>
+          <declname>ntaps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a7dbb0941aa79cf242fef1ebbcff310e4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::tailsize</definition>
+        <argsstring>() const </argsstring>
+        <name>tailsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="293" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="293" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a8ae536230f6ddfe4737015f3c76180f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::fft_filter_ccf::fft_filter_ccf</definition>
+        <argsstring>(int decimation, const std::vector&lt; float &gt; &amp;taps, int nthreads=1)</argsstring>
+        <name>fft_filter_ccf</name>
+        <param>
+          <type>int</type>
+          <declname>decimation</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>taps</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nthreads</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Construct an FFT filter for complex vectors with the given taps and decimation rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the basic implementation for performing FFT filter for fast convolution in other blocks (e.g., <ref refid="classgr_1_1filter_1_1fft__filter__ccf" kindref="compound">gr::filter::fft_filter_ccf</ref>).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decimation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decimation rate of the filter (int) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter taps (float) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nthreads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of threads for the FFT to use (int) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1adcb367e5a21a2c9ae244846c393c3063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::fft_filter_ccf::~fft_filter_ccf</definition>
+        <argsstring>()</argsstring>
+        <name>~fft_filter_ccf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a5afb35d67e093f975e187585d8562fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::set_taps</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
+        <name>set_taps</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>taps</declname>
+        </param>
+        <briefdescription>
+<para>Set new taps for the filter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets new taps and resets the class properties to handle different sizes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter taps (complex) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4cf80696857a58560b3b96acebbd57ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::kernel::fft_filter_ccf::set_nthreads</definition>
+        <argsstring>(int n)</argsstring>
+        <name>set_nthreads</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Set number of threads to use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4b47967b25b8394dbe58ec91a89535b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::filter::kernel::fft_filter_ccf::taps</definition>
+        <argsstring>() const </argsstring>
+        <name>taps</name>
+        <briefdescription>
+<para>Returns the taps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a23c7284ec2bc27d46bc0f338c814659c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::filter::kernel::fft_filter_ccf::ntaps</definition>
+        <argsstring>() const </argsstring>
+        <name>ntaps</name>
+        <briefdescription>
+<para>Returns the number of taps in the filter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="333" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a8f4ca253ced5918636d8e1b36103d62a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::filter::kernel::fft_filter_ccf::filtersize</definition>
+        <argsstring>() const </argsstring>
+        <name>filtersize</name>
+        <briefdescription>
+<para>Returns the actual size of the filter. </para>        </briefdescription>
+        <detaileddescription>
+<para>This value could be equal to ntaps, but we ofter build a longer filter to allow us to calculate a more efficient FFT. This value is the actual size of the filters used in the calculation of the overlap-and-save operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1abed5ec60cbdc419e247196203c1f799e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::nthreads</definition>
+        <argsstring>() const </argsstring>
+        <name>nthreads</name>
+        <briefdescription>
+<para>Get number of threads being used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4d83ce1ca81a16196511cf25224239f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::filter::kernel::fft_filter_ccf::filter</definition>
+        <argsstring>(int nitems, const gr_complex *input, gr_complex *output)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Perform the filter operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of items to produce </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input vector to be filtered </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result of the filter operation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="357" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fast FFT filter with gr_complex input, gr_complex output and float taps. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block performs fast convolution using the overlap-and-save algorithm. The filtering is performand in the frequency domain instead of the time domain (see <ref refid="classgr_1_1filter_1_1kernel_1_1fir__filter__ccf" kindref="compound">gr::filter::kernel::fir_filter_ccf</ref>). For an input signal x and filter coefficients (taps) t, we compute y as:</para><para><programlisting><codeline><highlight class="normal">y<sp/>=<sp/>ifft(fft(x)*fft(t))</highlight></codeline>
+</programlisting></para><para>This kernel computes the FFT of the taps when they are set to only perform this operation once. The FFT of the input signal x is done every time.</para><para>Because this is designed as a very low-level kernel operation, it is designed for speed and avoids certain checks in the <ref refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4d83ce1ca81a16196511cf25224239f6" kindref="member">filter()</ref> function itself. The filter function expects that the input signal is a multiple of d_nsamples in the class that&apos;s computed internally to be as fast as possible. The function set_taps will return the value of nsamples that can be used externally to check this boundary. Notice that all implementations of the fft_filter GNU Radio blocks (e.g., <ref refid="classgr_1_1filter_1_1fft__filter__ccf" kindref="compound">gr::filter::fft_filter_ccf</ref>) use this value of nsamples to compute the value to call <ref refid="classgr_1_1block_1a63d67fd758b70c6f2d7b7d4edcec53b3" kindref="member">gr::block::set_output_multiple</ref> that ensures the scheduler always passes this block the right number of samples. </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" line="279" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/fft_filter.h" bodystart="278" bodyend="358"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a0b59798148c8b08ce410bdc342e23646" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>compute_sizes</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1ad807869626b35fcce2127c24c3fbdceb" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_decimation</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a58ff7f8298796ccab20a0e8446012dcc" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_fftsize</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a73f2e12218ccc61f6f15c62c605a5cbf" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_fwdfft</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1af545561b0aff2b522860b96ea6053526" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_invfft</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a07c605d26bfdf5ef7e30a51305e0130b" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_nsamples</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1aa3df87e773c8344e3a85ae9e116f94e2" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_ntaps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a696a1d743df08a1c1991ed086e40aad2" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_nthreads</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a58947c18ff44221195069c98a50e0ab0" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_tail</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1adba2faa7115cc5c4e0e16588b26d45ee" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a37f4026422d27df3518d8bd8755b90fd" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>d_xformed_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a8ae536230f6ddfe4737015f3c76180f1" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>fft_filter_ccf</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4d83ce1ca81a16196511cf25224239f6" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a8f4ca253ced5918636d8e1b36103d62a" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>filtersize</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a23c7284ec2bc27d46bc0f338c814659c" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>ntaps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1abed5ec60cbdc419e247196203c1f799e" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>nthreads</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4cf80696857a58560b3b96acebbd57ae" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>set_nthreads</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a5afb35d67e093f975e187585d8562fe8" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>set_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a7dbb0941aa79cf242fef1ebbcff310e4" prot="private" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>tailsize</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1a4b47967b25b8394dbe58ec91a89535b9" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf_1adcb367e5a21a2c9ae244846c393c3063" prot="public" virt="non-virtual"><scope>gr::filter::kernel::fft_filter_ccf</scope><name>~fft_filter_ccf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

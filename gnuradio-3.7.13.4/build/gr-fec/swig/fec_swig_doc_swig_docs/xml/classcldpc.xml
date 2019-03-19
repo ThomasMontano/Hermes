@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcldpc" kind="class" prot="public">
+    <compoundname>cldpc</compoundname>
+    <includes refid="cldpc_8h" local="no">cldpc.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcldpc_1a6f71dd7a44015323af051e6dcedf5a4a" prot="private" static="no" mutable="no">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat cldpc::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+<para>The parity check matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="94" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1ac33767b358b683ecfd82f4c7eebfecc3" prot="private" static="no" mutable="no">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat cldpc::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+<para>An equivalent matrix obtained from H used for encoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="97" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1a2692643665e14d7941aeb6198d84ac2b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; cldpc::permute</definition>
+        <argsstring></argsstring>
+        <name>permute</name>
+        <briefdescription>
+<para>Stores the column permutation in obtaining G from H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="100" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1adee30a5b1bf098ddef6ef95a67ddfcbb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cldpc::rank_H</definition>
+        <argsstring></argsstring>
+        <name>rank_H</name>
+        <briefdescription>
+<para>Rank of the H matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1a0a4d9f49ef04332b73ddb85fb6bb7da1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cldpc::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+<para>The number of check nodes in the Tanner-graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1a31ae7cc5255b4e80bea4ddedfabca617" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cldpc::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+<para>The number of variable nodes in the Tanner-graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcldpc_1a1cd16de406bcf08fe45a78ad58fb52d5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cldpc::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+<para>The dimension of the code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="112" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcldpc_1a40e8e1d008e2a73ccad553d5abef9b61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cldpc::cldpc</definition>
+        <argsstring>()</argsstring>
+        <name>cldpc</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a02676fcaae8207d447b238bc85ad73b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cldpc::cldpc</definition>
+        <argsstring>(const GF2Mat X)</argsstring>
+        <name>cldpc</name>
+        <param>
+          <type>const <ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the LDPC class from given GF2mat X. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a8a42e4a8431acf42a73f18357838e490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cldpc::cldpc</definition>
+        <argsstring>(const alist _list)</argsstring>
+        <name>cldpc</name>
+        <param>
+          <type>const <ref refid="classalist" kindref="compound">alist</ref></type>
+          <declname>_list</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the class from the given alist _list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1acf19ad1ab1dca496bf3017e7ba6c331d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cldpc::print_permute</definition>
+        <argsstring>()</argsstring>
+        <name>print_permute</name>
+        <briefdescription>
+<para>Prints the variable permute. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a8b3d46ee27c5bffa7b513c1a1e5920db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; cldpc::encode</definition>
+        <argsstring>(std::vector&lt; char &gt; dataword)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>std::vector&lt; char &gt;</type>
+          <declname>dataword</declname>
+        </param>
+        <briefdescription>
+<para>Encode the given vector dataword. </para>        </briefdescription>
+        <detaileddescription>
+<para>dataword is of length K where K is the dimension of the code. The function returns a vector of length N where N is the block-length of the code.</para><para>For encoding a G matrix in the form [I P] is obtained from the parity matrix H, by (a) Column permutations, (b) Row additions and (c) Row permutations. Details of encoding is given in section A.1 of the reference given below.<itemizedlist>
+<listitem><para>&quot;Modern Coding Theory&quot;, T Richardson and R Urbanke. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1ad8414a43f73151c9d37619b13e29b44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cldpc::dimension</definition>
+        <argsstring>()</argsstring>
+        <name>dimension</name>
+        <briefdescription>
+<para>Returns the dimension of the code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1ab285d998d090da29658dfc49edd48ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat cldpc::get_H</definition>
+        <argsstring>()</argsstring>
+        <name>get_H</name>
+        <briefdescription>
+<para>Returns the parity check matrix H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a48ca4ce1611f0305041841c4ef88a2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat cldpc::get_G</definition>
+        <argsstring>()</argsstring>
+        <name>get_G</name>
+        <briefdescription>
+<para>Returns the matrix G used in encoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a961e784494e6d4541b83c95dc71f4c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cldpc::get_M</definition>
+        <argsstring>()</argsstring>
+        <name>get_M</name>
+        <briefdescription>
+<para>Returns the variable M. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1ae859c491dbbc55a3d66b24a16d22e174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cldpc::get_N</definition>
+        <argsstring>()</argsstring>
+        <name>get_N</name>
+        <briefdescription>
+<para>Returns the variable N. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a7c7534c864a048311fe0b14dd2b63b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; cldpc::syndrome</definition>
+        <argsstring>(const std::vector&lt; char &gt; in)</argsstring>
+        <name>syndrome</name>
+        <param>
+          <type>const std::vector&lt; char &gt;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Returns the syndrome for a given vector &quot;in&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a2638d3872b7080cf4e003d8be8dba201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cldpc::is_codeword</definition>
+        <argsstring>(const std::vector&lt; char &gt; in)</argsstring>
+        <name>is_codeword</name>
+        <param>
+          <type>const std::vector&lt; char &gt;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if &quot;in&quot; is a codeword, else false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1a39d9106bf0b07fcc4b3251cf194c12b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cldpc::set_alist</definition>
+        <argsstring>(const alist _list)</argsstring>
+        <name>set_alist</name>
+        <param>
+          <type>const <ref refid="classalist" kindref="compound">alist</ref></type>
+          <declname>_list</declname>
+        </param>
+        <briefdescription>
+<para>Set the variable _list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcldpc_1ac630733f16c91d27b1fb02ecbf1cffd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; cldpc::get_systematic_bits</definition>
+        <argsstring>(std::vector&lt; char &gt; in)</argsstring>
+        <name>get_systematic_bits</name>
+        <param>
+          <type>std::vector&lt; char &gt;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Obtain systematic bits from &quot;in&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cldpc.h" bodystart="35" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classcldpc_1a40e8e1d008e2a73ccad553d5abef9b61" prot="public" virt="non-virtual"><scope>cldpc</scope><name>cldpc</name></member>
+      <member refid="classcldpc_1a02676fcaae8207d447b238bc85ad73b3" prot="public" virt="non-virtual"><scope>cldpc</scope><name>cldpc</name></member>
+      <member refid="classcldpc_1a8a42e4a8431acf42a73f18357838e490" prot="public" virt="non-virtual"><scope>cldpc</scope><name>cldpc</name></member>
+      <member refid="classcldpc_1ad8414a43f73151c9d37619b13e29b44d" prot="public" virt="non-virtual"><scope>cldpc</scope><name>dimension</name></member>
+      <member refid="classcldpc_1a8b3d46ee27c5bffa7b513c1a1e5920db" prot="public" virt="non-virtual"><scope>cldpc</scope><name>encode</name></member>
+      <member refid="classcldpc_1ac33767b358b683ecfd82f4c7eebfecc3" prot="private" virt="non-virtual"><scope>cldpc</scope><name>G</name></member>
+      <member refid="classcldpc_1a48ca4ce1611f0305041841c4ef88a2d5" prot="public" virt="non-virtual"><scope>cldpc</scope><name>get_G</name></member>
+      <member refid="classcldpc_1ab285d998d090da29658dfc49edd48ec5" prot="public" virt="non-virtual"><scope>cldpc</scope><name>get_H</name></member>
+      <member refid="classcldpc_1a961e784494e6d4541b83c95dc71f4c28" prot="public" virt="non-virtual"><scope>cldpc</scope><name>get_M</name></member>
+      <member refid="classcldpc_1ae859c491dbbc55a3d66b24a16d22e174" prot="public" virt="non-virtual"><scope>cldpc</scope><name>get_N</name></member>
+      <member refid="classcldpc_1ac630733f16c91d27b1fb02ecbf1cffd7" prot="public" virt="non-virtual"><scope>cldpc</scope><name>get_systematic_bits</name></member>
+      <member refid="classcldpc_1a6f71dd7a44015323af051e6dcedf5a4a" prot="private" virt="non-virtual"><scope>cldpc</scope><name>H</name></member>
+      <member refid="classcldpc_1a2638d3872b7080cf4e003d8be8dba201" prot="public" virt="non-virtual"><scope>cldpc</scope><name>is_codeword</name></member>
+      <member refid="classcldpc_1a1cd16de406bcf08fe45a78ad58fb52d5" prot="private" virt="non-virtual"><scope>cldpc</scope><name>K</name></member>
+      <member refid="classcldpc_1a0a4d9f49ef04332b73ddb85fb6bb7da1" prot="private" virt="non-virtual"><scope>cldpc</scope><name>M</name></member>
+      <member refid="classcldpc_1a31ae7cc5255b4e80bea4ddedfabca617" prot="private" virt="non-virtual"><scope>cldpc</scope><name>N</name></member>
+      <member refid="classcldpc_1a2692643665e14d7941aeb6198d84ac2b" prot="private" virt="non-virtual"><scope>cldpc</scope><name>permute</name></member>
+      <member refid="classcldpc_1acf19ad1ab1dca496bf3017e7ba6c331d" prot="public" virt="non-virtual"><scope>cldpc</scope><name>print_permute</name></member>
+      <member refid="classcldpc_1adee30a5b1bf098ddef6ef95a67ddfcbb" prot="private" virt="non-virtual"><scope>cldpc</scope><name>rank_H</name></member>
+      <member refid="classcldpc_1a39d9106bf0b07fcc4b3251cf194c12b9" prot="public" virt="non-virtual"><scope>cldpc</scope><name>set_alist</name></member>
+      <member refid="classcldpc_1a7c7534c864a048311fe0b14dd2b63b78" prot="public" virt="non-virtual"><scope>cldpc</scope><name>syndrome</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

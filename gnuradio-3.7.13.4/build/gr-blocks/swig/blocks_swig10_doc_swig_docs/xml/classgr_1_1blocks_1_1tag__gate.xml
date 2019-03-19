@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tag__gate" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::tag_gate</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="tag__gate_8h" local="no">tag_gate.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tag__gate_1a7885171f631db1b5ee7056e240a1a1b1" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tag__gate" kindref="compound">tag_gate</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tag_gate&gt; gr::blocks::tag_gate::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__gate_1a613355eb5c23fb81aed0fcd735f650fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tag_gate::set_propagation</definition>
+        <argsstring>(bool propagate_tags)=0</argsstring>
+        <name>set_propagation</name>
+        <param>
+          <type>bool</type>
+          <declname>propagate_tags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__gate_1aaaf2e5abb923f8d49616be9b4326459f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tag_gate::set_single_key</definition>
+        <argsstring>(const std::string &amp;single_key)=0</argsstring>
+        <name>set_single_key</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>single_key</declname>
+        </param>
+        <briefdescription>
+<para>Only gate stream tags with one specific key instead of all keys. </para>        </briefdescription>
+        <detaileddescription>
+<para>If set to &quot;&quot;, all tags will be affected by the gate. If set to &quot;foo&quot;, all tags with key different from &quot;foo&quot; will pass through. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__gate_1aa8ad52191fe0f9385bc77ccfcb87098b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string gr::blocks::tag_gate::single_key</definition>
+        <argsstring>() const =0</argsstring>
+        <name>single_key</name>
+        <briefdescription>
+<para>Get the current single key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__gate_1a7250d2243e1dd1da72f6f9245ab64480" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tag__gate_1a7885171f631db1b5ee7056e240a1a1b1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tag_gate::make</definition>
+        <argsstring>(size_t item_size, bool propagate_tags=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>item_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>propagate_tags</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>propagate_tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set this to true to allow tags to pass through this block. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Control tag propagation.</para><para>Use this block to stop tags from propagating. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="744">
+        <label>gr::blocks::tag_gate</label>
+        <link refid="classgr_1_1blocks_1_1tag__gate"/>
+        <childnode refid="745" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="746">
+        <label>gr::blocks::tag_gate</label>
+        <link refid="classgr_1_1blocks_1_1tag__gate"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_gate.h" bodystart="38" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tag__gate_1a7250d2243e1dd1da72f6f9245ab64480" prot="public" virt="non-virtual"><scope>gr::blocks::tag_gate</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__gate_1a613355eb5c23fb81aed0fcd735f650fb" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_gate</scope><name>set_propagation</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__gate_1aaaf2e5abb923f8d49616be9b4326459f" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_gate</scope><name>set_single_key</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__gate_1aa8ad52191fe0f9385bc77ccfcb87098b" prot="public" virt="pure-virtual"><scope>gr::blocks::tag_gate</scope><name>single_key</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__gate_1a7885171f631db1b5ee7056e240a1a1b1" prot="public" virt="non-virtual"><scope>gr::blocks::tag_gate</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank" kind="class" prot="public">
+    <compoundname>gr::filter::kernel::polyphase_filterbank</compoundname>
+    <includes refid="polyphase__filterbank_8h" local="no">gnuradio/filter/polyphase_filterbank.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a7d74ff39379214e92ffb373ced1d8caf" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::filter::kernel::polyphase_filterbank::d_nfilts</definition>
+        <argsstring></argsstring>
+        <name>d_nfilts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="104" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a279d297b91f679fdd0c9bc910f84a6ea" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1filter_1_1kernel_1_1fir__filter__ccf" kindref="compound">kernel::fir_filter_ccf</ref> * &gt;</type>
+        <definition>std::vector&lt;kernel::fir_filter_ccf*&gt; gr::filter::kernel::polyphase_filterbank::d_fir_filters</definition>
+        <argsstring></argsstring>
+        <name>d_fir_filters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="105" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a69a379a92e6e0569e7f962134bc35687" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1filter_1_1kernel_1_1fft__filter__ccf" kindref="compound">kernel::fft_filter_ccf</ref> * &gt;</type>
+        <definition>std::vector&lt;kernel::fft_filter_ccf*&gt; gr::filter::kernel::polyphase_filterbank::d_fft_filters</definition>
+        <argsstring></argsstring>
+        <name>d_fft_filters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a470784358e37b5d16f8cb89e21e3cc26" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;float&gt; &gt; gr::filter::kernel::polyphase_filterbank::d_taps</definition>
+        <argsstring></argsstring>
+        <name>d_taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="107" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1afd7549b40f5a8174320c418c2413279f" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::filter::kernel::polyphase_filterbank::d_taps_per_filter</definition>
+        <argsstring></argsstring>
+        <name>d_taps_per_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a589f47b6cce2f1ab44ec1ef6769022bb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgr_1_1fft_1_1fft__complex" kindref="compound">fft::fft_complex</ref> *</type>
+        <definition>fft::fft_complex* gr::filter::kernel::polyphase_filterbank::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a669ab183ddc9c2189dc64330153d1652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::polyphase_filterbank::polyphase_filterbank</definition>
+        <argsstring>(unsigned int nfilts, const std::vector&lt; float &gt; &amp;taps, bool fft_forward=false)</argsstring>
+        <name>polyphase_filterbank</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>nfilts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>taps</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fft_forward</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build the polyphase filterbank decimator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nfilts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(unsigned integer) Specifies the number of channels <emphasis>M</emphasis> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(vector/list of floats) The prototype filter to populate the filterbank. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fft_forward</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(bool) use a forward or inverse FFT (default=false). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a1b0f4e86549acb0d94ddb89b3ec401c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::kernel::polyphase_filterbank::~polyphase_filterbank</definition>
+        <argsstring>()</argsstring>
+        <name>~polyphase_filterbank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a3e4ffc4c8892b33bc6cd54c5d3490fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::filter::kernel::polyphase_filterbank::set_taps</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
+        <name>set_taps</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>taps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the filterbank&apos;s filter taps from a prototype filter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(vector/list of floats) The prototype filter to populate the filterbank. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1abe0715ff530f696f131a4c6340d77f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::filter::kernel::polyphase_filterbank::print_taps</definition>
+        <argsstring>()</argsstring>
+        <name>print_taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print all of the filterbank taps to screen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a8c0ee07a7f6a9b29ea15304818f4d6c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;float&gt; &gt; gr::filter::kernel::polyphase_filterbank::taps</definition>
+        <argsstring>() const </argsstring>
+        <name>taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a vector&lt;vector&lt;&gt;&gt; of the filterbank taps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Polyphase filterbank parent class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block takes in complex inputs and channelizes it to <emphasis>M</emphasis> channels of equal bandwidth. Each of the resulting channels is decimated to the new rate that is the input sampling rate <emphasis>fs</emphasis> divided by the number of channels, <emphasis>M</emphasis>.</para><para>The PFB channelizer code takes the taps generated above and builds a set of filters. The set contains <emphasis>M</emphasis> filters and each filter contains ceil(taps.size()/decim) taps. Each tap from the filter prototype is sequentially inserted into the next filter. When all of the input taps are used, the remaining filters in the filterbank are filled out with 0&apos;s to make sure each filter has the same number of taps.</para><para>Each filter operates using the gr::filter::fir_filter_XXX class of GNU Radio, which takes the input stream at <emphasis>i</emphasis> and performs the inner product calculation to <emphasis>i+(n-1)</emphasis> where <emphasis>n</emphasis> is the number of filter taps. To efficiently handle this in the GNU Radio structure, each filter input must come from its own input stream. So the channelizer must be provided with <emphasis>M</emphasis> streams where the input stream has been deinterleaved. This is most easily done using the <ref refid="classgr_1_1blocks_1_1stream__to__streams" kindref="compound">gr::blocks::stream_to_streams</ref> block.</para><para>The output is then produced as a vector, where index <emphasis>i</emphasis> in the vector is the next sample from the <emphasis>i</emphasis>th channel. This is most easily handled by sending the output to a <ref refid="classgr_1_1blocks_1_1vector__to__streams" kindref="compound">gr::blocks::vector_to_streams</ref> block to handle the conversion and passing <emphasis>M</emphasis> streams out.</para><para>The input and output formatting is done using a <ref refid="classgr_1_1hier__block2" kindref="compound">hier_block2</ref> called <ref refid="classgr_1_1filter_1_1pfb__channelizer__ccf" kindref="compound">pfb_channelizer_ccf</ref>. This can take in a single stream and outputs <emphasis>M</emphasis> streams based on the behavior described above.</para><para>The filter&apos;s taps should be based on the input sampling rate.</para><para>For example, using the GNU Radio&apos;s firdes utility to building filters, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, <emphasis>ATT</emphasis>, and the filter window function (a Blackman-harris window in this case). The first input is the gain of the filter, which we specify here as unity.</para><para><bold><emphasis>self._taps = <ref refid="classgr_1_1filter_1_1firdes_1a57c2a9eb8dc61d3740d9eb0e02ebb880" kindref="member">filter.firdes.low_pass_2</ref>(1, fs, BW, TB, attenuation_dB=ATT, window=<ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ac79ce2faa8899fdc01091c3791c5e0d8" kindref="member">filter.firdes.WIN_BLACKMAN_hARRIS</ref>)</emphasis></bold></para><para>More on the theory of polyphase filterbanks can be found in the following book:</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for
+      Communication Systems,&quot; Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="8604">
+        <label>gr::filter::kernel::polyphase_filterbank</label>
+        <link refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank"/>
+        <childnode refid="8605" relation="usage">
+          <edgelabel>d_fft_filters</edgelabel>
+        </childnode>
+        <childnode refid="8606" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+        <childnode refid="8608" relation="usage">
+          <edgelabel>d_fir_filters</edgelabel>
+        </childnode>
+        <childnode refid="8609" relation="usage">
+          <edgelabel>d_fft</edgelabel>
+        </childnode>
+      </node>
+      <node id="8606">
+        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
+        <childnode refid="8607" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8607">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="8609">
+        <label>gr::fft::fft_complex</label>
+        <link refid="classgr_1_1fft_1_1fft__complex"/>
+      </node>
+      <node id="8608">
+        <label>std::vector&lt; kernel::gr::filter::kernel::fir_filter_ccf * &gt;</label>
+      </node>
+      <node id="8605">
+        <label>std::vector&lt; kernel::gr::filter::kernel::fft_filter_ccf * &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" line="102" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/polyphase_filterbank.h" bodystart="101" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a589f47b6cce2f1ab44ec1ef6769022bb" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a69a379a92e6e0569e7f962134bc35687" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_fft_filters</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a279d297b91f679fdd0c9bc910f84a6ea" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_fir_filters</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a7d74ff39379214e92ffb373ced1d8caf" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_nfilts</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a470784358e37b5d16f8cb89e21e3cc26" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1afd7549b40f5a8174320c418c2413279f" prot="protected" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>d_taps_per_filter</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a669ab183ddc9c2189dc64330153d1652" prot="public" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>polyphase_filterbank</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1abe0715ff530f696f131a4c6340d77f9b" prot="public" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>print_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a3e4ffc4c8892b33bc6cd54c5d3490fd1" prot="public" virt="virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>set_taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a8c0ee07a7f6a9b29ea15304818f4d6c2" prot="public" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>taps</name></member>
+      <member refid="classgr_1_1filter_1_1kernel_1_1polyphase__filterbank_1a1b0f4e86549acb0d94ddb89b3ec401c5" prot="public" virt="non-virtual"><scope>gr::filter::kernel::polyphase_filterbank</scope><name>~polyphase_filterbank</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,963 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classWaterfallDisplayForm" kind="class" prot="public">
+    <compoundname>WaterfallDisplayForm</compoundname>
+    <basecompoundref refid="classDisplayForm" prot="public" virt="non-virtual">DisplayForm</basecompoundref>
+    <includes refid="waterfalldisplayform_8h" local="no">gnuradio/qtgui/waterfalldisplayform.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a19a44dd0e7045a94c7c74d6f8fe191ec" prot="private" static="no" mutable="no">
+        <type>QIntValidator *</type>
+        <definition>QIntValidator* WaterfallDisplayForm::d_int_validator</definition>
+        <argsstring></argsstring>
+        <name>d_int_validator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1adab26a2dfa6893b58d59b27c864a142f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_samp_rate</definition>
+        <argsstring></argsstring>
+        <name>d_samp_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a3e2bbb10e4d56b11e79eeb0eb4515ac6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_center_freq</definition>
+        <argsstring></argsstring>
+        <name>d_center_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a0d975a1f71cf39f14ac309d6457eea71" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaterfallDisplayForm::d_fftsize</definition>
+        <argsstring></argsstring>
+        <name>d_fftsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="102" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1ad2e05580d1bd009baee3f098ea4bea05" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_time_per_fft</definition>
+        <argsstring></argsstring>
+        <name>d_time_per_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1ad4c5c8f39f3dbf52e138c6fa48e9cf83" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float WaterfallDisplayForm::d_fftavg</definition>
+        <argsstring></argsstring>
+        <name>d_fftavg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="104" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a732503ba1323f5d43d77b915448a56b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+        <definition>gr::filter::firdes::win_type WaterfallDisplayForm::d_fftwintype</definition>
+        <argsstring></argsstring>
+        <name>d_fftwintype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="105" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1abe4e6dd7e9260951c99eafed6b0cf50e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_units</definition>
+        <argsstring></argsstring>
+        <name>d_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a47abe8d4d16acb9d52146edf7f4c3b53" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WaterfallDisplayForm::d_clicked</definition>
+        <argsstring></argsstring>
+        <name>d_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a50756c8d09e9dac419b6e4928f567158" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_clicked_freq</definition>
+        <argsstring></argsstring>
+        <name>d_clicked_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a910f9812c7cfacd7ec32d7629d5d95f6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_min_val</definition>
+        <argsstring></argsstring>
+        <name>d_min_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="111" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a14606f74bee6c4536d5a995e0626d2ff" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_cur_min_val</definition>
+        <argsstring></argsstring>
+        <name>d_cur_min_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="111" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a54df83131ffe77fcf5c85308acb15154" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_max_val</definition>
+        <argsstring></argsstring>
+        <name>d_max_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="112" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a66a9ca700c2905c0ab97dbdfc9d89f36" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::d_cur_max_val</definition>
+        <argsstring></argsstring>
+        <name>d_cur_max_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="112" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1aa894d673942558bbff0a8e348d6c7721" prot="private" static="no" mutable="no">
+        <type><ref refid="classFFTSizeMenu" kindref="compound">FFTSizeMenu</ref> *</type>
+        <definition>FFTSizeMenu* WaterfallDisplayForm::d_sizemenu</definition>
+        <argsstring></argsstring>
+        <name>d_sizemenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="114" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1a86063af396c17025da96c00c43a69a28" prot="private" static="no" mutable="no">
+        <type><ref refid="classFFTAverageMenu" kindref="compound">FFTAverageMenu</ref> *</type>
+        <definition>FFTAverageMenu* WaterfallDisplayForm::d_avgmenu</definition>
+        <argsstring></argsstring>
+        <name>d_avgmenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="115" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallDisplayForm_1ac3722d93db9937d74f47d0bd3a51b8f2" prot="private" static="no" mutable="no">
+        <type><ref refid="classFFTWindowMenu" kindref="compound">FFTWindowMenu</ref> *</type>
+        <definition>FFTWindowMenu* WaterfallDisplayForm::d_winmenu</definition>
+        <argsstring></argsstring>
+        <name>d_winmenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="116" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWaterfallDisplayForm_1ad93a891e28a8771aa7235d41252e9277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaterfallDisplayForm::WaterfallDisplayForm</definition>
+        <argsstring>(int nplots=1, QWidget *parent=0)</argsstring>
+        <name>WaterfallDisplayForm</name>
+        <param>
+          <type>int</type>
+          <declname>nplots</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a12086969e9eb174619ebbf1b917f9fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaterfallDisplayForm::~WaterfallDisplayForm</definition>
+        <argsstring>()</argsstring>
+        <name>~WaterfallDisplayForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a375195289c202ec47b018dc0fba87c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classWaterfallDisplayPlot" kindref="compound">WaterfallDisplayPlot</ref> *</type>
+        <definition>WaterfallDisplayPlot* WaterfallDisplayForm::getPlot</definition>
+        <argsstring>()</argsstring>
+        <name>getPlot</name>
+        <reimplements refid="classDisplayForm_1acaaf27a04b3cff3d6468261b66b8e216">getPlot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a7bdaf6dab2850a7f84c6078922abfee3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaterfallDisplayForm::getFFTSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getFFTSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1ae72022d4181eaaedcfcb35f203efe888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::getTimePerFFT</definition>
+        <argsstring>()</argsstring>
+        <name>getTimePerFFT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a34ee283d9573a355b3b8692345846c5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float WaterfallDisplayForm::getFFTAverage</definition>
+        <argsstring>() const </argsstring>
+        <name>getFFTAverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a239fbea38717d42af95ade79e989901b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+        <definition>gr::filter::firdes::win_type WaterfallDisplayForm::getFFTWindowType</definition>
+        <argsstring>() const </argsstring>
+        <name>getFFTWindowType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1acf4ca751fa1d6b1b3f4a74fbc4f97137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaterfallDisplayForm::getColorMap</definition>
+        <argsstring>(int which)</argsstring>
+        <name>getColorMap</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a6c5b5511674d8c13460d5c6a3a02bf3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaterfallDisplayForm::getAlpha</definition>
+        <argsstring>(int which)</argsstring>
+        <name>getAlpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a43ed7a14e40970f9ce2d6f817ea68d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::getMinIntensity</definition>
+        <argsstring>(int which)</argsstring>
+        <name>getMinIntensity</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1ad817a8b66e07fa5a725944dda9fdf838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WaterfallDisplayForm::getMaxIntensity</definition>
+        <argsstring>(int which)</argsstring>
+        <name>getMaxIntensity</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a5a58e11d213187b68d7bdf66890bfa72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::clearData</definition>
+        <argsstring>()</argsstring>
+        <name>clearData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1a2d6a87a34f5c6918ed46df6d762d14e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float WaterfallDisplayForm::getClickedFreq</definition>
+        <argsstring>() const </argsstring>
+        <name>getClickedFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallDisplayForm_1adfc1314a0b20f484d46c89b9765045f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WaterfallDisplayForm::checkClicked</definition>
+        <argsstring>()</argsstring>
+        <name>checkClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a953bf974bb8c20cf7886dc08f125a336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::customEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>customEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a93e9a3770d0b12506ff22ed5c29e0791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setTimeTitle</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>setTimeTitle</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a317fb7fa70d5bd93c44027a00555f253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setSampleRate</definition>
+        <argsstring>(const QString &amp;samprate)</argsstring>
+        <name>setSampleRate</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>samprate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a47c4f3972a54f8a5c714e1b520b1d246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setFFTSize</definition>
+        <argsstring>(const int)</argsstring>
+        <name>setFFTSize</name>
+        <param>
+          <type>const int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a1b841a50f6c513bdba172bf09efaaa20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setFFTAverage</definition>
+        <argsstring>(const float)</argsstring>
+        <name>setFFTAverage</name>
+        <param>
+          <type>const float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a771eba29a4cc75aa3a64581800ad4fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setFFTWindowType</definition>
+        <argsstring>(const gr::filter::firdes::win_type)</argsstring>
+        <name>setFFTWindowType</name>
+        <param>
+          <type>const <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a5a29fe5debf25481a2d49ca0d1be374e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setFrequencyRange</definition>
+        <argsstring>(const double centerfreq, const double bandwidth)</argsstring>
+        <name>setFrequencyRange</name>
+        <param>
+          <type>const double</type>
+          <declname>centerfreq</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>bandwidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a8ad1f8a7b79439d21dfea6087682d011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setIntensityRange</definition>
+        <argsstring>(const double minIntensity, const double maxIntensity)</argsstring>
+        <name>setIntensityRange</name>
+        <param>
+          <type>const double</type>
+          <declname>minIntensity</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>maxIntensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1ade16d003096bc32bccfd2a0f53522d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setMaxIntensity</definition>
+        <argsstring>(const QString &amp;m)</argsstring>
+        <name>setMaxIntensity</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a8f8c4b8b198bff342b7679233f41413c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setMinIntensity</definition>
+        <argsstring>(const QString &amp;m)</argsstring>
+        <name>setMinIntensity</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a14d5ee177eabe92a64f535696cd5a7cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setAlpha</definition>
+        <argsstring>(int which, int alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a84cfbf12a27ddc67a4b0dac67ebb2dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setColorMap</definition>
+        <argsstring>(int which, const int newType, const QColor lowColor=QColor(&quot;white&quot;), const QColor highColor=QColor(&quot;white&quot;))</argsstring>
+        <name>setColorMap</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>newType</declname>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>lowColor</declname>
+          <defval>QColor(&quot;white&quot;)</defval>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>highColor</declname>
+          <defval>QColor(&quot;white&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a5288da2e91b98868476ba8a693b8ae08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::autoScale</definition>
+        <argsstring>(bool en=false)</argsstring>
+        <name>autoScale</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a444354d6e0558b836803050a0932bf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setPlotPosHalf</definition>
+        <argsstring>(bool half)</argsstring>
+        <name>setPlotPosHalf</name>
+        <param>
+          <type>bool</type>
+          <declname>half</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1a17efbad1a88119320f3d1e6b8671f39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setTimePerFFT</definition>
+        <argsstring>(double t)</argsstring>
+        <name>setTimePerFFT</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1ad50756c21096170fb0ada70fd0e6cb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::setUpdateTime</definition>
+        <argsstring>(double t)</argsstring>
+        <name>setUpdateTime</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1aac45ca1387b1488daa0de4f8d9e49efc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::newData</definition>
+        <argsstring>(const QEvent *updateEvent)</argsstring>
+        <name>newData</name>
+        <param>
+          <type>const QEvent *</type>
+          <declname>updateEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classWaterfallDisplayForm_1acae82fbad00e6c99b4da8d83f702a511" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaterfallDisplayForm::onPlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onPlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classDisplayForm" kindref="compound">DisplayForm</ref> child for managing waterfall (spectrogram) plots. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11837">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="11838" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11838">
+        <label>QWidget</label>
+      </node>
+      <node id="11836">
+        <label>WaterfallDisplayForm</label>
+        <link refid="classWaterfallDisplayForm"/>
+        <childnode refid="11837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11844">
+        <label>QwtDblClickPlotPicker</label>
+        <link refid="classQwtDblClickPlotPicker"/>
+        <childnode refid="11845" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11847">
+        <label>PopupMenu</label>
+        <link refid="classPopupMenu"/>
+        <childnode refid="11848" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11846">
+        <label>std::vector&lt; QwtPlotCurve * &gt;</label>
+      </node>
+      <node id="11842">
+        <label>DisplayPlot</label>
+        <link refid="classDisplayPlot"/>
+        <childnode refid="11843" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11844" relation="usage">
+          <edgelabel>d_picker</edgelabel>
+        </childnode>
+        <childnode refid="11846" relation="usage">
+          <edgelabel>d_plot_curve</edgelabel>
+        </childnode>
+      </node>
+      <node id="11843">
+        <label>QwtPlot</label>
+      </node>
+      <node id="11848">
+        <label>QAction</label>
+      </node>
+      <node id="11840">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="11841" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11842" relation="usage">
+          <edgelabel>d_display_plot</edgelabel>
+        </childnode>
+        <childnode refid="11847" relation="usage">
+          <edgelabel>d_samp_rate_act</edgelabel>
+        </childnode>
+      </node>
+      <node id="11841">
+        <label>QWidget</label>
+      </node>
+      <node id="11845">
+        <label>QwtPlotPicker</label>
+      </node>
+      <node id="11839">
+        <label>WaterfallDisplayForm</label>
+        <link refid="classWaterfallDisplayForm"/>
+        <childnode refid="11840" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/waterfalldisplayform.h" bodystart="38" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classWaterfallDisplayForm_1a5288da2e91b98868476ba8a693b8ae08" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>autoScale</name></member>
+      <member refid="classWaterfallDisplayForm_1adfc1314a0b20f484d46c89b9765045f5" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>checkClicked</name></member>
+      <member refid="classWaterfallDisplayForm_1a5a58e11d213187b68d7bdf66890bfa72" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>clearData</name></member>
+      <member refid="classDisplayForm_1aece261d88375aa024514d4c92fd619f7" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>closeEvent</name></member>
+      <member refid="classWaterfallDisplayForm_1a953bf974bb8c20cf7886dc08f125a336" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>customEvent</name></member>
+      <member refid="classDisplayForm_1ae36ede62dffc74715cffa99f6aa28f5f" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_autoscale_act</name></member>
+      <member refid="classDisplayForm_1ac23376477584508d866551390f013c17" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_autoscale_state</name></member>
+      <member refid="classWaterfallDisplayForm_1a86063af396c17025da96c00c43a69a28" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_avgmenu</name></member>
+      <member refid="classDisplayForm_1a71dae5185f9232a48428d6ebaf4293bd" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_axislabels</name></member>
+      <member refid="classDisplayForm_1a887d3b132808904d8e402b3df02b534e" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_axislabelsmenu</name></member>
+      <member refid="classWaterfallDisplayForm_1a3e2bbb10e4d56b11e79eeb0eb4515ac6" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_center_freq</name></member>
+      <member refid="classWaterfallDisplayForm_1a47abe8d4d16acb9d52146edf7f4c3b53" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_clicked</name></member>
+      <member refid="classWaterfallDisplayForm_1a50756c8d09e9dac419b6e4928f567158" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_clicked_freq</name></member>
+      <member refid="classWaterfallDisplayForm_1a66a9ca700c2905c0ab97dbdfc9d89f36" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_cur_max_val</name></member>
+      <member refid="classWaterfallDisplayForm_1a14606f74bee6c4536d5a995e0626d2ff" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_cur_min_val</name></member>
+      <member refid="classDisplayForm_1abf56656f007715e8354032a56fc49f41" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_display_plot</name></member>
+      <member refid="classWaterfallDisplayForm_1ad4c5c8f39f3dbf52e138c6fa48e9cf83" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_fftavg</name></member>
+      <member refid="classWaterfallDisplayForm_1a0d975a1f71cf39f14ac309d6457eea71" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_fftsize</name></member>
+      <member refid="classWaterfallDisplayForm_1a732503ba1323f5d43d77b915448a56b8" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_fftwintype</name></member>
+      <member refid="classDisplayForm_1a4ab89221d1cde5366304ced19d9208f6" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_grid</name></member>
+      <member refid="classDisplayForm_1a460b2f299c13a007e4c6e939d0eb5fc3" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_grid_act</name></member>
+      <member refid="classDisplayForm_1ab418baae769e7a68ff2f4316f9e61958" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_grid_state</name></member>
+      <member refid="classWaterfallDisplayForm_1a19a44dd0e7045a94c7c74d6f8fe191ec" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_int_validator</name></member>
+      <member refid="classDisplayForm_1a86fa5017055e168c3fae5eb3d7f283e4" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_isclosed</name></member>
+      <member refid="classDisplayForm_1af4724f85139232095726995f1d508d09" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_layout</name></member>
+      <member refid="classDisplayForm_1a963be27302e6faa66fbaa2ec645a4e01" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_line_color_menu</name></member>
+      <member refid="classDisplayForm_1a79bb29017981f0b0b371cb4ee1806a2b" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_line_marker_menu</name></member>
+      <member refid="classDisplayForm_1a1ba22ad5eace01f96e394a4371bc7188" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_line_style_menu</name></member>
+      <member refid="classDisplayForm_1a26a480db0df904b524b582ed1d6c3766" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_line_title_act</name></member>
+      <member refid="classDisplayForm_1aecefe402773c3d59ce01ccb9901385c6" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_line_width_menu</name></member>
+      <member refid="classDisplayForm_1ac847b6a5bdffa39f574df4fb9db73710" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_lines_menu</name></member>
+      <member refid="classDisplayForm_1a5a5f51423ea405e6583b546eefa8c993" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_marker_alpha_menu</name></member>
+      <member refid="classWaterfallDisplayForm_1a54df83131ffe77fcf5c85308acb15154" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_max_val</name></member>
+      <member refid="classDisplayForm_1a976646250b72d68a98761b50a6710c0a" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_menu</name></member>
+      <member refid="classDisplayForm_1a04d4af916fe658e6f777fb8af948c20a" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_menu_on</name></member>
+      <member refid="classWaterfallDisplayForm_1a910f9812c7cfacd7ec32d7629d5d95f6" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_min_val</name></member>
+      <member refid="classDisplayForm_1aade6348750af73481cfff8216efbb43b" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_nplots</name></member>
+      <member refid="classWaterfallDisplayForm_1adab26a2dfa6893b58d59b27c864a142f" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_samp_rate</name></member>
+      <member refid="classDisplayForm_1ad63ccb34b3ac71147803a7734f6c5f97" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_samp_rate_act</name></member>
+      <member refid="classDisplayForm_1a9e25ea8d1a8ea805d94358729dae6374" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_save_act</name></member>
+      <member refid="classWaterfallDisplayForm_1aa894d673942558bbff0a8e348d6c7721" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_sizemenu</name></member>
+      <member refid="classDisplayForm_1a0906b399bc7ff7e6527c7ae6ed26d7e1" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_stop_act</name></member>
+      <member refid="classDisplayForm_1a2bc28fe769680467ffb04ecba1bad265" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_stop_state</name></member>
+      <member refid="classDisplayForm_1adc8286416dfdf5f5cda5481fccec353f" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_system_specified_flag</name></member>
+      <member refid="classWaterfallDisplayForm_1ad2e05580d1bd009baee3f098ea4bea05" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_time_per_fft</name></member>
+      <member refid="classWaterfallDisplayForm_1abe4e6dd7e9260951c99eafed6b0cf50e" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_units</name></member>
+      <member refid="classDisplayForm_1a6ca9c4c3bcee3a80bc7c1e3ce45b5050" prot="protected" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_update_time</name></member>
+      <member refid="classWaterfallDisplayForm_1ac3722d93db9937d74f47d0bd3a51b8f2" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>d_winmenu</name></member>
+      <member refid="classDisplayForm_1a4bdd9b8da5a984d8de55a555d57a0079" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>disableLegend</name></member>
+      <member refid="classDisplayForm_1acd08a4b55f598bf32c512cab875cc495" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>DisplayForm</name></member>
+      <member refid="classDisplayForm_1a142738daf223e86a02b0c3f2bddd1ec0" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>enableMenu</name></member>
+      <member refid="classWaterfallDisplayForm_1a6c5b5511674d8c13460d5c6a3a02bf3f" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getAlpha</name></member>
+      <member refid="classWaterfallDisplayForm_1a2d6a87a34f5c6918ed46df6d762d14e4" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getClickedFreq</name></member>
+      <member refid="classWaterfallDisplayForm_1acf4ca751fa1d6b1b3f4a74fbc4f97137" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getColorMap</name></member>
+      <member refid="classWaterfallDisplayForm_1a34ee283d9573a355b3b8692345846c5d" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getFFTAverage</name></member>
+      <member refid="classWaterfallDisplayForm_1a7bdaf6dab2850a7f84c6078922abfee3" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getFFTSize</name></member>
+      <member refid="classWaterfallDisplayForm_1a239fbea38717d42af95ade79e989901b" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getFFTWindowType</name></member>
+      <member refid="classWaterfallDisplayForm_1ad817a8b66e07fa5a725944dda9fdf838" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getMaxIntensity</name></member>
+      <member refid="classWaterfallDisplayForm_1a43ed7a14e40970f9ce2d6f817ea68d2b" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getMinIntensity</name></member>
+      <member refid="classWaterfallDisplayForm_1a375195289c202ec47b018dc0fba87c78" prot="public" virt="virtual"><scope>WaterfallDisplayForm</scope><name>getPlot</name></member>
+      <member refid="classWaterfallDisplayForm_1ae72022d4181eaaedcfcb35f203efe888" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>getTimePerFFT</name></member>
+      <member refid="classDisplayForm_1a02e408c32dda9acfc21041eb38e14c54" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>isClosed</name></member>
+      <member refid="classDisplayForm_1a744476d411e3af740d8a56414d0eee92" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>lineColor</name></member>
+      <member refid="classDisplayForm_1a72bba06bf752f41f49932bbb1586be1a" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>lineLabel</name></member>
+      <member refid="classDisplayForm_1a898cbfcde446f08f33d0353e7dd259fc" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>lineMarker</name></member>
+      <member refid="classDisplayForm_1a5eff7ed419615113bbf47c38989b433f" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>lineStyle</name></member>
+      <member refid="classDisplayForm_1a8c422137ec84eeb9a5429ee9388e5c3a" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>lineWidth</name></member>
+      <member refid="classDisplayForm_1ac8f5869c0a23c688bc8ab6fcd8580dff" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>markerAlpha</name></member>
+      <member refid="classDisplayForm_1a7bcddea0a0ae0ae93f59092106adc080" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>mousePressEvent</name></member>
+      <member refid="classWaterfallDisplayForm_1aac45ca1387b1488daa0de4f8d9e49efc" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>newData</name></member>
+      <member refid="classWaterfallDisplayForm_1acae82fbad00e6c99b4da8d83f702a511" prot="private" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>onPlotPointSelected</name></member>
+      <member refid="classDisplayForm_1acdb320a036906674fc03e0893d96b83d" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>plotPointSelected</name></member>
+      <member refid="classDisplayForm_1aba1733c7c006623010c969309cfb896b" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>Reset</name></member>
+      <member refid="classDisplayForm_1a75f73ce5982efb23f5aab31d03434008" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>resizeEvent</name></member>
+      <member refid="classDisplayForm_1a9dd4a30560338046cb2422e7d7b6e74e" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>saveFigure</name></member>
+      <member refid="classWaterfallDisplayForm_1a14d5ee177eabe92a64f535696cd5a7cd" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setAlpha</name></member>
+      <member refid="classDisplayForm_1a0663ae45ff29e34110a2b3f304e7df2e" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setAxisLabels</name></member>
+      <member refid="classWaterfallDisplayForm_1a84cfbf12a27ddc67a4b0dac67ebb2dcc" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setColorMap</name></member>
+      <member refid="classWaterfallDisplayForm_1a1b841a50f6c513bdba172bf09efaaa20" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setFFTAverage</name></member>
+      <member refid="classWaterfallDisplayForm_1a47c4f3972a54f8a5c714e1b520b1d246" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setFFTSize</name></member>
+      <member refid="classWaterfallDisplayForm_1a771eba29a4cc75aa3a64581800ad4fa5" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setFFTWindowType</name></member>
+      <member refid="classWaterfallDisplayForm_1a5a29fe5debf25481a2d49ca0d1be374e" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setFrequencyRange</name></member>
+      <member refid="classDisplayForm_1a4ae615547f894f0baa9e17528c847e92" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setGrid</name></member>
+      <member refid="classWaterfallDisplayForm_1a8ad1f8a7b79439d21dfea6087682d011" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setIntensityRange</name></member>
+      <member refid="classDisplayForm_1acf34fd28a90afc9f8984906b7b7a43cc" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setLineColor</name></member>
+      <member refid="classDisplayForm_1aa168e747c0ff6048f4ed6b431b2779e3" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setLineLabel</name></member>
+      <member refid="classDisplayForm_1ac1a48e6c13d6f956792c27e00b1fa221" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setLineMarker</name></member>
+      <member refid="classDisplayForm_1acf77ce9f2008eee21b71b8597e6b47df" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setLineStyle</name></member>
+      <member refid="classDisplayForm_1a10039325d5ad93f891896d686be9d50f" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setLineWidth</name></member>
+      <member refid="classDisplayForm_1ada5564bdeca98b8fb2f251b21dc04531" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setMarkerAlpha</name></member>
+      <member refid="classWaterfallDisplayForm_1ade16d003096bc32bccfd2a0f53522d05" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setMaxIntensity</name></member>
+      <member refid="classWaterfallDisplayForm_1a8f8c4b8b198bff342b7679233f41413c" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setMinIntensity</name></member>
+      <member refid="classWaterfallDisplayForm_1a444354d6e0558b836803050a0932bf3d" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setPlotPosHalf</name></member>
+      <member refid="classWaterfallDisplayForm_1a317fb7fa70d5bd93c44027a00555f253" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setSampleRate</name></member>
+      <member refid="classDisplayForm_1a663a66d4eaa1b57c94a99be616d27d1f" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setStop</name></member>
+      <member refid="classDisplayForm_1ae925081aa3c271f367d302d89f2cd0d9" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setStop</name></member>
+      <member refid="classWaterfallDisplayForm_1a17efbad1a88119320f3d1e6b8671f39d" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setTimePerFFT</name></member>
+      <member refid="classWaterfallDisplayForm_1a93e9a3770d0b12506ff22ed5c29e0791" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setTimeTitle</name></member>
+      <member refid="classDisplayForm_1a3f7a0d7e58eb601876b244104c159fe1" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setTitle</name></member>
+      <member refid="classWaterfallDisplayForm_1ad50756c21096170fb0ada70fd0e6cb2a" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>setUpdateTime</name></member>
+      <member refid="classDisplayForm_1a6d360b7520c52f8eaa3b94f6132e8fd5" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>title</name></member>
+      <member refid="classDisplayForm_1aaeca8cf8d2ff7298e3e4d6a8a80849cf" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>toggleGrid</name></member>
+      <member refid="classWaterfallDisplayForm_1ad93a891e28a8771aa7235d41252e9277" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>WaterfallDisplayForm</name></member>
+      <member refid="classDisplayForm_1af9c50320f79cc75feffa0538da2e28a2" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>~DisplayForm</name></member>
+      <member refid="classWaterfallDisplayForm_1a12086969e9eb174619ebbf1b917f9fe1" prot="public" virt="non-virtual"><scope>WaterfallDisplayForm</scope><name>~WaterfallDisplayForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

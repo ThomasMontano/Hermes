@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1complex__to__mag" kind="class" prot="public">
+    <compoundname>gr::blocks::complex_to_mag</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="complex__to__mag_8h" local="no">complex_to_mag.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1complex__to__mag_1a0646226f6f62d4a0379f8fa118220c03" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1complex__to__mag" kindref="compound">complex_to_mag</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;complex_to_mag&gt; gr::blocks::complex_to_mag::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_mag.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_mag.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1complex__to__mag_1ac030c2a77db97cac9041bd7158f64b7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1complex__to__mag_1a0646226f6f62d4a0379f8fa118220c03" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::complex_to_mag::make</definition>
+        <argsstring>(size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a complex to magnitude block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector len (default 1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_mag.h" line="60" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>complex in, magnitude out (float) </para>    </briefdescription>
+    <detaileddescription>
+<para>Calculates the magnitude of the complex samples:</para><para><itemizedlist>
+<listitem><para>output[0][m] = |input[0][m]|</para></listitem>
+</itemizedlist>
+Or: <itemizedlist>
+<listitem><para>output[0][m] = sqrt(Re{input[0][m]}^2 + Im{input[0][m]}^2)</para></listitem>
+</itemizedlist>
+The input stream can be a vector of length <computeroutput>vlen</computeroutput>, and for each vector, each item is converted using the above function. So above, m is from 0 to noutput_items*vlen for each call to work. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="158">
+        <label>sync_block</label>
+      </node>
+      <node id="157">
+        <label>gr::blocks::complex_to_mag</label>
+        <link refid="classgr_1_1blocks_1_1complex__to__mag"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="160">
+        <label>sync_block</label>
+      </node>
+      <node id="159">
+        <label>gr::blocks::complex_to_mag</label>
+        <link refid="classgr_1_1blocks_1_1complex__to__mag"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_mag.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_mag.h" bodystart="49" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1complex__to__mag_1ac030c2a77db97cac9041bd7158f64b7f" prot="public" virt="non-virtual"><scope>gr::blocks::complex_to_mag</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1complex__to__mag_1a0646226f6f62d4a0379f8fa118220c03" prot="public" virt="non-virtual"><scope>gr::blocks::complex_to_mag</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

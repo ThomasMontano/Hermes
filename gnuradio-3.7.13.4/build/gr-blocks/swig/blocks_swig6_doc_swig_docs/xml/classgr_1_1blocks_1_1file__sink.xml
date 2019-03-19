@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1file__sink" kind="class" prot="public">
+    <compoundname>gr::blocks::file_sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <basecompoundref refid="classgr_1_1blocks_1_1file__sink__base" prot="public" virt="virtual">gr::blocks::file_sink_base</basecompoundref>
+    <includes refid="file__sink_8h" local="no">file_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1file__sink_1a6c10516b2062a065287ea6d4938c7b71" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1file__sink" kindref="compound">file_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;file_sink&gt; gr::blocks::file_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_sink.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_sink.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__sink_1a587c96ba95415e7183481f5ded8947a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1file__sink_1a6c10516b2062a065287ea6d4938c7b71" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::file_sink::make</definition>
+        <argsstring>(size_t itemsize, const char *filename, bool append=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Make a file sink. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the input data items. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to open and write output to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>append</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, data is appended to the file instead of overwriting the initial content. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_sink.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Write stream to file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="257">
+        <label>gr::blocks::file_sink_base</label>
+        <link refid="classgr_1_1blocks_1_1file__sink__base"/>
+      </node>
+      <node id="256">
+        <label>sync_block</label>
+      </node>
+      <node id="255">
+        <label>gr::blocks::file_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__sink"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="260">
+        <label>gr::blocks::file_sink_base</label>
+        <link refid="classgr_1_1blocks_1_1file__sink__base"/>
+      </node>
+      <node id="259">
+        <label>sync_block</label>
+      </node>
+      <node id="258">
+        <label>gr::blocks::file_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__sink"/>
+        <childnode refid="259" relation="public-inheritance">
+        </childnode>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_sink.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_sink.h" bodystart="37" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a560bd9e4cd7f1a447c17fbee084bfd77" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>close</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1aa7c04034840634d70c1630b71a65f5b9" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_append</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a6952eee1a23fdee7e506ca95971239c6" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_fp</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a6ac59d45f1d8249d2ca6721117583950" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_is_binary</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a963b7913003a18188dcc11d5b1298d0a" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a9cfc5538f1f490f98aa4e9d9538a6574" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_new_fp</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a6a7802b4b725d3df959fa837aebc70e0" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_unbuffered</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a0c96d9ed38f24b63205a64d85cd50aa8" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>d_updated</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1aac03f72b2b45bc0d5293a84190ea195e" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>do_update</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a98043cf8fc0176033593ff24dd52dd63" prot="protected" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>file_sink_base</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a7a9f86425691d0c296a2494ac4c55f6c" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>file_sink_base</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink_1a587c96ba95415e7183481f5ded8947a9" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a3ddfc7626e7943852d1f85ee408960ac" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>open</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a58d614209715f5140c5cc55aac3df115" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>set_unbuffered</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink_1a6c10516b2062a065287ea6d4938c7b71" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1file__sink__base_1a84985dbe35c5e07c343b1d4341e785fe" prot="public" virt="non-virtual"><scope>gr::blocks::file_sink</scope><name>~file_sink_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

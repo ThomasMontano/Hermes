@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1interleaved__short__to__complex" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::interleaved_short_to_complex</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <includes refid="interleaved__short__to__complex_8h" local="no">interleaved_short_to_complex.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1interleaved__short__to__complex_1ab769618726f03a83d328133516717bef" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1interleaved__short__to__complex" kindref="compound">interleaved_short_to_complex</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;interleaved_short_to_complex&gt; gr::blocks::interleaved_short_to_complex::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1interleaved__short__to__complex_1a72a2d9027a7ecfb29c657296a732831e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1interleaved__short__to__complex_1ab769618726f03a83d328133516717bef" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::interleaved_short_to_complex::make</definition>
+        <argsstring>(bool vector_input=false, bool swap=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>vector_input</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>swap</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build an interleaved short to complex block. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1interleaved__short__to__complex_1a105b818034909961cd8e6ad3ef65ecac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::interleaved_short_to_complex::set_swap</definition>
+        <argsstring>(bool swap)=0</argsstring>
+        <name>set_swap</name>
+        <param>
+          <type>bool</type>
+          <declname>swap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert stream of interleaved shorts to a stream of complex. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="321">
+        <label>sync_decimator</label>
+      </node>
+      <node id="320">
+        <label>gr::blocks::interleaved_short_to_complex</label>
+        <link refid="classgr_1_1blocks_1_1interleaved__short__to__complex"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="323">
+        <label>sync_decimator</label>
+      </node>
+      <node id="322">
+        <label>gr::blocks::interleaved_short_to_complex</label>
+        <link refid="classgr_1_1blocks_1_1interleaved__short__to__complex"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleaved_short_to_complex.h" bodystart="36" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1interleaved__short__to__complex_1a72a2d9027a7ecfb29c657296a732831e" prot="public" virt="non-virtual"><scope>gr::blocks::interleaved_short_to_complex</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1interleaved__short__to__complex_1a105b818034909961cd8e6ad3ef65ecac" prot="public" virt="pure-virtual"><scope>gr::blocks::interleaved_short_to_complex</scope><name>set_swap</name></member>
+      <member refid="classgr_1_1blocks_1_1interleaved__short__to__complex_1ab769618726f03a83d328133516717bef" prot="public" virt="non-virtual"><scope>gr::blocks::interleaved_short_to_complex</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

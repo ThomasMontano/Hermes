@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1unpacked__to__packed__ss" kind="class" prot="public">
+    <compoundname>gr::blocks::unpacked_to_packed_ss</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="unpacked__to__packed__ss_8h" local="no">unpacked_to_packed_ss.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1unpacked__to__packed__ss_1a21d9a4afe8970fc40fa8dc9078b87c2e" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1unpacked__to__packed__ss" kindref="compound">unpacked_to_packed_ss</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;unpacked_to_packed_ss&gt; gr::blocks::unpacked_to_packed_ss::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/unpacked_to_packed_ss.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/unpacked_to_packed_ss.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1unpacked__to__packed__ss_1ab1c2a19462f6ea6c8a90d70b9b7c4a50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1unpacked__to__packed__ss_1a21d9a4afe8970fc40fa8dc9078b87c2e" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::unpacked_to_packed_ss::make</definition>
+        <argsstring>(unsigned int bits_per_chunk, endianness_t endianness)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>bits_per_chunk</declname>
+        </param>
+        <param>
+          <type>endianness_t</type>
+          <declname>endianness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/unpacked_to_packed_ss.h" line="66" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert a stream of unpacked bytes or shorts into a stream of packed bytes or shorts. </para>    </briefdescription>
+    <detaileddescription>
+<para>input: stream of short; output: stream of short</para><para>This is the inverse of gr::blocks::packed_to_unpacked_XX.</para><para>The low <computeroutput>bits_per_chunk</computeroutput> bits are extracted from each input byte or short. These bits are then packed densely into the output bytes or shorts, such that all 8 or 16 bits of the output bytes or shorts are filled with valid input bits. The right thing is done if bits_per_chunk is not a power of two.</para><para>The combination of gr::blocks::packed_to_unpacked_XX followed by gr_chunks_to_symbols_Xf or gr_chunks_to_symbols_Xc handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para><ref refid="classgr_1_1blocks_1_1packed__to__unpacked__bb" kindref="compound">gr::blocks::packed_to_unpacked_bb</ref>, <ref refid="classgr_1_1blocks_1_1unpacked__to__packed__bb" kindref="compound">gr::blocks::unpacked_to_packed_bb</ref>, </para><simplesectsep/><para><ref refid="classgr_1_1blocks_1_1packed__to__unpacked__ss" kindref="compound">gr::blocks::packed_to_unpacked_ss</ref>, <ref refid="classgr_1_1blocks_1_1unpacked__to__packed__ss" kindref="compound">gr::blocks::unpacked_to_packed_ss</ref>, </para><simplesectsep/><para>gr::blocks::chunks_to_symbols_bf, gr::blocks::chunks_to_symbols_bc. </para><simplesectsep/><para>gr::blocks::chunks_to_symbols_sf, gr::blocks::chunks_to_symbols_sc. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="847">
+        <label>block</label>
+      </node>
+      <node id="846">
+        <label>gr::blocks::unpacked_to_packed_ss</label>
+        <link refid="classgr_1_1blocks_1_1unpacked__to__packed__ss"/>
+        <childnode refid="847" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="849">
+        <label>block</label>
+      </node>
+      <node id="848">
+        <label>gr::blocks::unpacked_to_packed_ss</label>
+        <link refid="classgr_1_1blocks_1_1unpacked__to__packed__ss"/>
+        <childnode refid="849" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/unpacked_to_packed_ss.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/unpacked_to_packed_ss.h" bodystart="60" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1unpacked__to__packed__ss_1ab1c2a19462f6ea6c8a90d70b9b7c4a50" prot="public" virt="non-virtual"><scope>gr::blocks::unpacked_to_packed_ss</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1unpacked__to__packed__ss_1a21d9a4afe8970fc40fa8dc9078b87c2e" prot="public" virt="non-virtual"><scope>gr::blocks::unpacked_to_packed_ss</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

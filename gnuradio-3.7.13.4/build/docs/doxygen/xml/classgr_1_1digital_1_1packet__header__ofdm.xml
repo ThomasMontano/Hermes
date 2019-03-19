@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1packet__header__ofdm" kind="class" prot="public">
+    <compoundname>gr::digital::packet_header_ofdm</compoundname>
+    <basecompoundref refid="classgr_1_1digital_1_1packet__header__default" prot="public" virt="non-virtual">gr::digital::packet_header_default</basecompoundref>
+    <includes refid="packet__header__ofdm_8h" local="no">gnuradio/digital/packet_header_ofdm.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1digital_1_1packet__header__ofdm_1ad5287aea767ea8b09036a3778fee2a2f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1digital_1_1packet__header__ofdm" kindref="compound">packet_header_ofdm</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;packet_header_ofdm&gt; gr::digital::packet_header_ofdm::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1packet__header__ofdm_1a537c644b3534481ff344073d9953a8b5" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>pmt::pmt_t gr::digital::packet_header_ofdm::d_frame_len_tag_key</definition>
+        <argsstring></argsstring>
+        <name>d_frame_len_tag_key</name>
+        <briefdescription>
+<para>Tag key of the additional frame length tag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="110" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1packet__header__ofdm_1a471fee00fc35c939e66d6fceb3b514e8" prot="protected" static="no" mutable="no">
+        <type>const std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>const std::vector&lt;std::vector&lt;int&gt; &gt; gr::digital::packet_header_ofdm::d_occupied_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_occupied_carriers</name>
+        <briefdescription>
+<para>Which carriers/symbols carry data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="111" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1packet__header__ofdm_1a06de73d572db9f85e16dde3be4620a24" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::digital::packet_header_ofdm::d_bits_per_payload_sym</definition>
+        <argsstring></argsstring>
+        <name>d_bits_per_payload_sym</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="112" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1packet__header__ofdm_1aa84844d8c6b091d21ea5483d315d4367" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::digital::packet_header_ofdm::d_scramble_mask</definition>
+        <argsstring></argsstring>
+        <name>d_scramble_mask</name>
+        <briefdescription>
+<para>Bits are xor&apos;d with this before tx&apos;ing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="113" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1packet__header__ofdm_1a978c7a525295a941aa1cfcd67654f723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::packet_header_ofdm::packet_header_ofdm</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;occupied_carriers, int n_syms, const std::string &amp;len_tag_key, const std::string &amp;frame_len_tag_key, const std::string &amp;num_tag_key, int bits_per_header_sym, int bits_per_payload_sym, bool scramble_header)</argsstring>
+        <name>packet_header_ofdm</name>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>occupied_carriers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_syms</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>len_tag_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_len_tag_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>num_tag_key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_header_sym</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_payload_sym</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scramble_header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1packet__header__ofdm_1ad36c100f0b68a71b09698b9c82c36f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::packet_header_ofdm::~packet_header_ofdm</definition>
+        <argsstring>()</argsstring>
+        <name>~packet_header_ofdm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1packet__header__ofdm_1aea244ac480082bd9423544b591a045f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gr::digital::packet_header_ofdm::header_formatter</definition>
+        <argsstring>(long packet_len, unsigned char *out, const std::vector&lt; tag_t &gt; &amp;tags)</argsstring>
+        <name>header_formatter</name>
+        <reimplements refid="classgr_1_1digital_1_1packet__header__default_1abd3e27c3d3cda13324a78bdcf60af8ce">header_formatter</reimplements>
+        <param>
+          <type>long</type>
+          <declname>packet_len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+<para>Header formatter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does the same as <ref refid="classgr_1_1digital_1_1packet__header__default_1abd3e27c3d3cda13324a78bdcf60af8ce" kindref="member">packet_header_default::header_formatter()</ref>, but optionally scrambles the bits (this is more important for OFDM to avoid PAPR spikes). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1packet__header__ofdm_1a2926bd23b7067207f3a0609494b55c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gr::digital::packet_header_ofdm::header_parser</definition>
+        <argsstring>(const unsigned char *header, std::vector&lt; tag_t &gt; &amp;tags)</argsstring>
+        <name>header_parser</name>
+        <reimplements refid="classgr_1_1digital_1_1packet__header__default_1a3c1041ae6f1656869e0a867864c6c3ef">header_parser</reimplements>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+<para>Inverse function to <ref refid="classgr_1_1digital_1_1packet__header__ofdm_1aea244ac480082bd9423544b591a045f2" kindref="member">header_formatter()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does the same as <ref refid="classgr_1_1digital_1_1packet__header__default_1a3c1041ae6f1656869e0a867864c6c3ef" kindref="member">packet_header_default::header_parser()</ref>, but adds another tag that stores the number of OFDM symbols in the packet. Note that there is usually no linear connection between the number of OFDM symbols and the packet length because a packet might finish mid-OFDM-symbol. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1packet__header__ofdm_1a6396cf7f8dcf21acd53b2e8ba1bdd673" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1digital_1_1packet__header__default_1af87201913a5b4716160b09c6ce1a3f56" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::digital::packet_header_ofdm::make</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;occupied_carriers, int n_syms, const std::string &amp;len_tag_key=&quot;packet_len&quot;, const std::string &amp;frame_len_tag_key=&quot;frame_len&quot;, const std::string &amp;num_tag_key=&quot;packet_num&quot;, int bits_per_header_sym=1, int bits_per_payload_sym=1, bool scramble_header=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>occupied_carriers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_syms</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>len_tag_key</declname>
+          <defval>&quot;packet_len&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_len_tag_key</declname>
+          <defval>&quot;frame_len&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>num_tag_key</declname>
+          <defval>&quot;packet_num&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_header_sym</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_payload_sym</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scramble_header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupied_carriers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See carrier allocator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_syms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of OFDM symbols the header should be (usually 1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key used for the packet length (number of bytes) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_len_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key used for the frame length (number of OFDM symbols, this is the tag key required for the frame equalizer etc.) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key used for packet numbering. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits_per_header_sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bits per complex symbol in the header, e.g. 1 if the header is BPSK modulated, 2 if it&apos;s QPSK modulated etc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits_per_payload_sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bits per complex symbol in the payload. This is required to figure out how many OFDM symbols are necessary to encode the given number of bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scramble_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set this to true to scramble the bits. This is highly recommended, as it reduces PAPR spikes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header utility for OFDM signals. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8004">
+        <label>gr::digital::packet_header_default</label>
+        <link refid="classgr_1_1digital_1_1packet__header__default"/>
+        <childnode refid="8005" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8003">
+        <label>gr::digital::packet_header_ofdm</label>
+        <link refid="classgr_1_1digital_1_1packet__header__ofdm"/>
+        <childnode refid="8004" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8005">
+        <label>boost::enable_shared_from_this&lt; gr::digital::packet_header_default &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8007">
+        <label>gr::digital::packet_header_default</label>
+        <link refid="classgr_1_1digital_1_1packet__header__default"/>
+        <childnode refid="8008" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8009">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="8010" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8006">
+        <label>gr::digital::packet_header_ofdm</label>
+        <link refid="classgr_1_1digital_1_1packet__header__ofdm"/>
+        <childnode refid="8007" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8009" relation="usage">
+          <edgelabel>d_occupied_carriers</edgelabel>
+        </childnode>
+        <childnode refid="8011" relation="usage">
+          <edgelabel>d_scramble_mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="8011">
+        <label>std::vector&lt; unsigned char &gt;</label>
+      </node>
+      <node id="8008">
+        <label>boost::enable_shared_from_this&lt; gr::digital::packet_header_default &gt;</label>
+      </node>
+      <node id="8010">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/packet_header_ofdm.h" bodystart="36" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1ab2ab53ec99f054f6dd904650fd86aaff" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>base</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1af5550ca8014d295dbd0fa1b911e1a116" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_bits_per_byte</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a06de73d572db9f85e16dde3be4620a24" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_bits_per_payload_sym</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1ab26861c832740e449d3466e54758803a" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_crc_impl</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a537c644b3534481ff344073d9953a8b5" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_frame_len_tag_key</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a8c56cb94d6d1a0a8c53c6692d871afc5" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_header_len</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1ad56b1d639e70cad9c0cb3226f2aeb665" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_header_number</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a1f78ae4e4dc91b301af5b8fe76d610e8" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_len_tag_key</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1ac2e3b9705dbe3b7ab46fdd7053a2623a" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_mask</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a17d2eef344c75b1bc1d2c29fcfa641f6" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_num_tag_key</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a471fee00fc35c939e66d6fceb3b514e8" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_occupied_carriers</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1aa84844d8c6b091d21ea5483d315d4367" prot="protected" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>d_scramble_mask</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1aae101b96788fde108d1ea326033ab8bf" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>formatter</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1aea244ac480082bd9423544b591a045f2" prot="public" virt="virtual"><scope>gr::digital::packet_header_ofdm</scope><name>header_formatter</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a03c70a37ad9f4792b69af5b767133825" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>header_len</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a2926bd23b7067207f3a0609494b55c70" prot="public" virt="virtual"><scope>gr::digital::packet_header_ofdm</scope><name>header_parser</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a61bc7db42c3f80deeda4a67c8626980d" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>len_tag_key</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a6396cf7f8dcf21acd53b2e8ba1bdd673" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>make</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a823f69d3f6144e885fa7b7fb5f5a8fb2" prot="public" virt="non-virtual" ambiguityscope="gr::digital::packet_header_default::"><scope>gr::digital::packet_header_ofdm</scope><name>make</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a80d65ccdf96f9cebf729199476a11700" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>packet_header_default</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1a978c7a525295a941aa1cfcd67654f723" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>packet_header_ofdm</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1a3e2a9c03e2f299064df142a633947f99" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>set_header_num</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1ad5287aea767ea8b09036a3778fee2a2f" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>sptr</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__default_1ab05d47e0af0b53a488c0f1877d08be59" prot="public" virt="virtual"><scope>gr::digital::packet_header_ofdm</scope><name>~packet_header_default</name></member>
+      <member refid="classgr_1_1digital_1_1packet__header__ofdm_1ad36c100f0b68a71b09698b9c82c36f1f" prot="public" virt="non-virtual"><scope>gr::digital::packet_header_ofdm</scope><name>~packet_header_ofdm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

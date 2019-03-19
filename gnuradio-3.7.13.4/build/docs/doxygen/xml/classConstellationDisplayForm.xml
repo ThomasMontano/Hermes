@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classConstellationDisplayForm" kind="class" prot="public">
+    <compoundname>ConstellationDisplayForm</compoundname>
+    <basecompoundref refid="classDisplayForm" prot="public" virt="non-virtual">DisplayForm</basecompoundref>
+    <includes refid="constellationdisplayform_8h" local="no">gnuradio/qtgui/constellationdisplayform.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a227008397d4dfe480cbb0635b0e7e434" prot="private" static="no" mutable="no">
+        <type>QIntValidator *</type>
+        <definition>QIntValidator* ConstellationDisplayForm::d_int_validator</definition>
+        <argsstring></argsstring>
+        <name>d_int_validator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a3b21315f90e74740edb6c06e65f24e62" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConstellationDisplayForm::d_npoints</definition>
+        <argsstring></argsstring>
+        <name>d_npoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a6d7b70cf56942a88cb34e9918baa06ac" prot="private" static="no" mutable="no">
+        <type><ref refid="classNPointsMenu" kindref="compound">NPointsMenu</ref> *</type>
+        <definition>NPointsMenu* ConstellationDisplayForm::d_nptsmenu</definition>
+        <argsstring></argsstring>
+        <name>d_nptsmenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1ad031a5acc56e81cd69ffbd7202ee682d" prot="private" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* ConstellationDisplayForm::d_triggermenu</definition>
+        <argsstring></argsstring>
+        <name>d_triggermenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a8b1206cdb6f0ffad63e75e230d22e526" prot="private" static="no" mutable="no">
+        <type><ref refid="classTriggerModeMenu" kindref="compound">TriggerModeMenu</ref> *</type>
+        <definition>TriggerModeMenu* ConstellationDisplayForm::d_tr_mode_menu</definition>
+        <argsstring></argsstring>
+        <name>d_tr_mode_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="83" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1ac71d925489e485f8f88396249003b65d" prot="private" static="no" mutable="no">
+        <type><ref refid="classTriggerSlopeMenu" kindref="compound">TriggerSlopeMenu</ref> *</type>
+        <definition>TriggerSlopeMenu* ConstellationDisplayForm::d_tr_slope_menu</definition>
+        <argsstring></argsstring>
+        <name>d_tr_slope_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a7f6c3763fb6e280f3b4ad80e96d0ed85" prot="private" static="no" mutable="no">
+        <type><ref refid="classPopupMenu" kindref="compound">PopupMenu</ref> *</type>
+        <definition>PopupMenu* ConstellationDisplayForm::d_tr_level_act</definition>
+        <argsstring></argsstring>
+        <name>d_tr_level_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1aa72f6e0f4b6c990fa10b1600a348fd01" prot="private" static="no" mutable="no">
+        <type><ref refid="classTriggerChannelMenu" kindref="compound">TriggerChannelMenu</ref> *</type>
+        <definition>TriggerChannelMenu* ConstellationDisplayForm::d_tr_channel_menu</definition>
+        <argsstring></argsstring>
+        <name>d_tr_channel_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1ab6c921effacb65f03d916808331ba7b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classPopupMenu" kindref="compound">PopupMenu</ref> *</type>
+        <definition>PopupMenu* ConstellationDisplayForm::d_tr_tag_key_act</definition>
+        <argsstring></argsstring>
+        <name>d_tr_tag_key_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1ad5929253daecece162d45a60ebbc0caf" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+        <definition>gr::qtgui::trigger_mode ConstellationDisplayForm::d_trig_mode</definition>
+        <argsstring></argsstring>
+        <name>d_trig_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="89" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a452c6d56c0878a8bbbed8c7a75dad6a6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1qtgui_1ad9b40f0b7d2d567bd8002fb3b9b0fd10" kindref="member">gr::qtgui::trigger_slope</ref></type>
+        <definition>gr::qtgui::trigger_slope ConstellationDisplayForm::d_trig_slope</definition>
+        <argsstring></argsstring>
+        <name>d_trig_slope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="90" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1ae2ab12c2451dea3d171fa531dbba1476" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ConstellationDisplayForm::d_trig_level</definition>
+        <argsstring></argsstring>
+        <name>d_trig_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="91" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a822aeab53030b8fba15bb049766d7634" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConstellationDisplayForm::d_trig_channel</definition>
+        <argsstring></argsstring>
+        <name>d_trig_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="92" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConstellationDisplayForm_1a7a832a12157a32e5c34216ec125f9fb6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ConstellationDisplayForm::d_trig_tag_key</definition>
+        <argsstring></argsstring>
+        <name>d_trig_tag_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="93" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConstellationDisplayForm_1a78d01a385b0d1e8694568a3532392542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConstellationDisplayForm::ConstellationDisplayForm</definition>
+        <argsstring>(int nplots=1, QWidget *parent=0)</argsstring>
+        <name>ConstellationDisplayForm</name>
+        <param>
+          <type>int</type>
+          <declname>nplots</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1acc9c2bf20c36c656595767f8c1058455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConstellationDisplayForm::~ConstellationDisplayForm</definition>
+        <argsstring>()</argsstring>
+        <name>~ConstellationDisplayForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1a1e1f6d38501b7c7ba25c1d479f9f9004" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classConstellationDisplayPlot" kindref="compound">ConstellationDisplayPlot</ref> *</type>
+        <definition>ConstellationDisplayPlot* ConstellationDisplayForm::getPlot</definition>
+        <argsstring>()</argsstring>
+        <name>getPlot</name>
+        <reimplements refid="classDisplayForm_1acaaf27a04b3cff3d6468261b66b8e216">getPlot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1a77ae68ed627615c4bf6416aed9cbc3d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConstellationDisplayForm::getNPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1a4e008b559bced3d2f547dfb6c0ce0fad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+        <definition>gr::qtgui::trigger_mode ConstellationDisplayForm::getTriggerMode</definition>
+        <argsstring>() const </argsstring>
+        <name>getTriggerMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1ac2f1df714c36d2954ddcc1f395d2fb5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1qtgui_1ad9b40f0b7d2d567bd8002fb3b9b0fd10" kindref="member">gr::qtgui::trigger_slope</ref></type>
+        <definition>gr::qtgui::trigger_slope ConstellationDisplayForm::getTriggerSlope</definition>
+        <argsstring>() const </argsstring>
+        <name>getTriggerSlope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1ac4a4533f02b77b7b3bce4b7b0d10bfbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ConstellationDisplayForm::getTriggerLevel</definition>
+        <argsstring>() const </argsstring>
+        <name>getTriggerLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1aa0d754db4fb507edf46452909fb47591" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConstellationDisplayForm::getTriggerChannel</definition>
+        <argsstring>() const </argsstring>
+        <name>getTriggerChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConstellationDisplayForm_1aa510c377a1834203e2776ecc064ddb9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ConstellationDisplayForm::getTriggerTagKey</definition>
+        <argsstring>() const </argsstring>
+        <name>getTriggerTagKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classConstellationDisplayForm_1af752ab903da8e5612b283af9b2596b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::customEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>customEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1aba5339db4f78932ff9c2e9a0d7f1aad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setNPoints</definition>
+        <argsstring>(const int)</argsstring>
+        <name>setNPoints</name>
+        <param>
+          <type>const int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a80f529d0c6f4e074a5e81cd58fbd653e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setSampleRate</definition>
+        <argsstring>(const QString &amp;samprate)</argsstring>
+        <name>setSampleRate</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>samprate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1aee324ffb7631cc514cdd64f77fee8ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setYaxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setYaxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a1d7eaf0692c8436aea00d5a3dbcb8b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setXaxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setXaxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a7e8506bf215fdd22af1e5a6dbc8b1d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::autoScale</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>autoScale</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a810611627066dafce7be52ef08647bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::updateTrigger</definition>
+        <argsstring>(gr::qtgui::trigger_mode mode)</argsstring>
+        <name>updateTrigger</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1ab488778bdf66acd3dcd50dd2f4d89c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerMode</definition>
+        <argsstring>(gr::qtgui::trigger_mode mode)</argsstring>
+        <name>setTriggerMode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a25fc616d940d8309b16160e6ab9a16fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerSlope</definition>
+        <argsstring>(gr::qtgui::trigger_slope slope)</argsstring>
+        <name>setTriggerSlope</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1ad9b40f0b7d2d567bd8002fb3b9b0fd10" kindref="member">gr::qtgui::trigger_slope</ref></type>
+          <declname>slope</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1ae32788f5e3b90528393b82d938f5b119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerLevel</definition>
+        <argsstring>(QString s)</argsstring>
+        <name>setTriggerLevel</name>
+        <param>
+          <type>QString</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1ae00131fae2757a3939f537142bd89302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerLevel</definition>
+        <argsstring>(float level)</argsstring>
+        <name>setTriggerLevel</name>
+        <param>
+          <type>float</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a640da75bbbf6a13da23fbddad2793c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerChannel</definition>
+        <argsstring>(int chan)</argsstring>
+        <name>setTriggerChannel</name>
+        <param>
+          <type>int</type>
+          <declname>chan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1ad26bfb6c57aaba4b25e3c9b5373fade1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerTagKey</definition>
+        <argsstring>(QString s)</argsstring>
+        <name>setTriggerTagKey</name>
+        <param>
+          <type>QString</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a9702c0269465cec43edbf5f1073f5787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::setTriggerTagKey</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>setTriggerTagKey</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classConstellationDisplayForm_1a76347231bd9fe2a5f4e2b1d06f3cb85f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConstellationDisplayForm::newData</definition>
+        <argsstring>(const QEvent *)</argsstring>
+        <name>newData</name>
+        <param>
+          <type>const QEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classDisplayForm" kindref="compound">DisplayForm</ref> child for managing constellaton (I&amp;Q) plots. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2938">
+        <label>ConstellationDisplayForm</label>
+        <link refid="classConstellationDisplayForm"/>
+        <childnode refid="2939" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2939">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="2940" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2940">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2946">
+        <label>QwtDblClickPlotPicker</label>
+        <link refid="classQwtDblClickPlotPicker"/>
+        <childnode refid="2947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2949">
+        <label>PopupMenu</label>
+        <link refid="classPopupMenu"/>
+        <childnode refid="2950" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2948">
+        <label>std::vector&lt; QwtPlotCurve * &gt;</label>
+      </node>
+      <node id="2941">
+        <label>ConstellationDisplayForm</label>
+        <link refid="classConstellationDisplayForm"/>
+        <childnode refid="2942" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2944">
+        <label>DisplayPlot</label>
+        <link refid="classDisplayPlot"/>
+        <childnode refid="2945" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2946" relation="usage">
+          <edgelabel>d_picker</edgelabel>
+        </childnode>
+        <childnode refid="2948" relation="usage">
+          <edgelabel>d_plot_curve</edgelabel>
+        </childnode>
+      </node>
+      <node id="2945">
+        <label>QwtPlot</label>
+      </node>
+      <node id="2950">
+        <label>QAction</label>
+      </node>
+      <node id="2942">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="2943" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2944" relation="usage">
+          <edgelabel>d_display_plot</edgelabel>
+        </childnode>
+        <childnode refid="2949" relation="usage">
+          <edgelabel>d_samp_rate_act</edgelabel>
+        </childnode>
+      </node>
+      <node id="2943">
+        <label>QWidget</label>
+      </node>
+      <node id="2947">
+        <label>QwtPlotPicker</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/constellationdisplayform.h" bodystart="38" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classConstellationDisplayForm_1a7e8506bf215fdd22af1e5a6dbc8b1d7d" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>autoScale</name></member>
+      <member refid="classDisplayForm_1aece261d88375aa024514d4c92fd619f7" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>closeEvent</name></member>
+      <member refid="classConstellationDisplayForm_1a78d01a385b0d1e8694568a3532392542" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>ConstellationDisplayForm</name></member>
+      <member refid="classConstellationDisplayForm_1af752ab903da8e5612b283af9b2596b23" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>customEvent</name></member>
+      <member refid="classDisplayForm_1ae36ede62dffc74715cffa99f6aa28f5f" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_autoscale_act</name></member>
+      <member refid="classDisplayForm_1ac23376477584508d866551390f013c17" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_autoscale_state</name></member>
+      <member refid="classDisplayForm_1a71dae5185f9232a48428d6ebaf4293bd" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_axislabels</name></member>
+      <member refid="classDisplayForm_1a887d3b132808904d8e402b3df02b534e" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_axislabelsmenu</name></member>
+      <member refid="classDisplayForm_1abf56656f007715e8354032a56fc49f41" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_display_plot</name></member>
+      <member refid="classDisplayForm_1a4ab89221d1cde5366304ced19d9208f6" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_grid</name></member>
+      <member refid="classDisplayForm_1a460b2f299c13a007e4c6e939d0eb5fc3" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_grid_act</name></member>
+      <member refid="classDisplayForm_1ab418baae769e7a68ff2f4316f9e61958" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_grid_state</name></member>
+      <member refid="classConstellationDisplayForm_1a227008397d4dfe480cbb0635b0e7e434" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_int_validator</name></member>
+      <member refid="classDisplayForm_1a86fa5017055e168c3fae5eb3d7f283e4" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_isclosed</name></member>
+      <member refid="classDisplayForm_1af4724f85139232095726995f1d508d09" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_layout</name></member>
+      <member refid="classDisplayForm_1a963be27302e6faa66fbaa2ec645a4e01" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_line_color_menu</name></member>
+      <member refid="classDisplayForm_1a79bb29017981f0b0b371cb4ee1806a2b" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_line_marker_menu</name></member>
+      <member refid="classDisplayForm_1a1ba22ad5eace01f96e394a4371bc7188" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_line_style_menu</name></member>
+      <member refid="classDisplayForm_1a26a480db0df904b524b582ed1d6c3766" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_line_title_act</name></member>
+      <member refid="classDisplayForm_1aecefe402773c3d59ce01ccb9901385c6" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_line_width_menu</name></member>
+      <member refid="classDisplayForm_1ac847b6a5bdffa39f574df4fb9db73710" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_lines_menu</name></member>
+      <member refid="classDisplayForm_1a5a5f51423ea405e6583b546eefa8c993" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_marker_alpha_menu</name></member>
+      <member refid="classDisplayForm_1a976646250b72d68a98761b50a6710c0a" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_menu</name></member>
+      <member refid="classDisplayForm_1a04d4af916fe658e6f777fb8af948c20a" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_menu_on</name></member>
+      <member refid="classDisplayForm_1aade6348750af73481cfff8216efbb43b" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_nplots</name></member>
+      <member refid="classConstellationDisplayForm_1a3b21315f90e74740edb6c06e65f24e62" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_npoints</name></member>
+      <member refid="classConstellationDisplayForm_1a6d7b70cf56942a88cb34e9918baa06ac" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_nptsmenu</name></member>
+      <member refid="classDisplayForm_1ad63ccb34b3ac71147803a7734f6c5f97" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_samp_rate_act</name></member>
+      <member refid="classDisplayForm_1a9e25ea8d1a8ea805d94358729dae6374" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_save_act</name></member>
+      <member refid="classDisplayForm_1a0906b399bc7ff7e6527c7ae6ed26d7e1" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_stop_act</name></member>
+      <member refid="classDisplayForm_1a2bc28fe769680467ffb04ecba1bad265" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_stop_state</name></member>
+      <member refid="classDisplayForm_1adc8286416dfdf5f5cda5481fccec353f" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_system_specified_flag</name></member>
+      <member refid="classConstellationDisplayForm_1aa72f6e0f4b6c990fa10b1600a348fd01" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_tr_channel_menu</name></member>
+      <member refid="classConstellationDisplayForm_1a7f6c3763fb6e280f3b4ad80e96d0ed85" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_tr_level_act</name></member>
+      <member refid="classConstellationDisplayForm_1a8b1206cdb6f0ffad63e75e230d22e526" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_tr_mode_menu</name></member>
+      <member refid="classConstellationDisplayForm_1ac71d925489e485f8f88396249003b65d" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_tr_slope_menu</name></member>
+      <member refid="classConstellationDisplayForm_1ab6c921effacb65f03d916808331ba7b8" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_tr_tag_key_act</name></member>
+      <member refid="classConstellationDisplayForm_1a822aeab53030b8fba15bb049766d7634" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_trig_channel</name></member>
+      <member refid="classConstellationDisplayForm_1ae2ab12c2451dea3d171fa531dbba1476" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_trig_level</name></member>
+      <member refid="classConstellationDisplayForm_1ad5929253daecece162d45a60ebbc0caf" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_trig_mode</name></member>
+      <member refid="classConstellationDisplayForm_1a452c6d56c0878a8bbbed8c7a75dad6a6" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_trig_slope</name></member>
+      <member refid="classConstellationDisplayForm_1a7a832a12157a32e5c34216ec125f9fb6" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_trig_tag_key</name></member>
+      <member refid="classConstellationDisplayForm_1ad031a5acc56e81cd69ffbd7202ee682d" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_triggermenu</name></member>
+      <member refid="classDisplayForm_1a6ca9c4c3bcee3a80bc7c1e3ce45b5050" prot="protected" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>d_update_time</name></member>
+      <member refid="classDisplayForm_1a4bdd9b8da5a984d8de55a555d57a0079" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>disableLegend</name></member>
+      <member refid="classDisplayForm_1acd08a4b55f598bf32c512cab875cc495" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>DisplayForm</name></member>
+      <member refid="classDisplayForm_1a142738daf223e86a02b0c3f2bddd1ec0" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>enableMenu</name></member>
+      <member refid="classConstellationDisplayForm_1a77ae68ed627615c4bf6416aed9cbc3d3" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getNPoints</name></member>
+      <member refid="classConstellationDisplayForm_1a1e1f6d38501b7c7ba25c1d479f9f9004" prot="public" virt="virtual"><scope>ConstellationDisplayForm</scope><name>getPlot</name></member>
+      <member refid="classConstellationDisplayForm_1aa0d754db4fb507edf46452909fb47591" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getTriggerChannel</name></member>
+      <member refid="classConstellationDisplayForm_1ac4a4533f02b77b7b3bce4b7b0d10bfbc" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getTriggerLevel</name></member>
+      <member refid="classConstellationDisplayForm_1a4e008b559bced3d2f547dfb6c0ce0fad" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getTriggerMode</name></member>
+      <member refid="classConstellationDisplayForm_1ac2f1df714c36d2954ddcc1f395d2fb5e" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getTriggerSlope</name></member>
+      <member refid="classConstellationDisplayForm_1aa510c377a1834203e2776ecc064ddb9c" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>getTriggerTagKey</name></member>
+      <member refid="classDisplayForm_1a02e408c32dda9acfc21041eb38e14c54" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>isClosed</name></member>
+      <member refid="classDisplayForm_1a744476d411e3af740d8a56414d0eee92" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>lineColor</name></member>
+      <member refid="classDisplayForm_1a72bba06bf752f41f49932bbb1586be1a" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>lineLabel</name></member>
+      <member refid="classDisplayForm_1a898cbfcde446f08f33d0353e7dd259fc" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>lineMarker</name></member>
+      <member refid="classDisplayForm_1a5eff7ed419615113bbf47c38989b433f" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>lineStyle</name></member>
+      <member refid="classDisplayForm_1a8c422137ec84eeb9a5429ee9388e5c3a" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>lineWidth</name></member>
+      <member refid="classDisplayForm_1ac8f5869c0a23c688bc8ab6fcd8580dff" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>markerAlpha</name></member>
+      <member refid="classDisplayForm_1a7bcddea0a0ae0ae93f59092106adc080" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>mousePressEvent</name></member>
+      <member refid="classConstellationDisplayForm_1a76347231bd9fe2a5f4e2b1d06f3cb85f" prot="private" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>newData</name></member>
+      <member refid="classDisplayForm_1acdb320a036906674fc03e0893d96b83d" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>plotPointSelected</name></member>
+      <member refid="classDisplayForm_1aba1733c7c006623010c969309cfb896b" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>Reset</name></member>
+      <member refid="classDisplayForm_1a75f73ce5982efb23f5aab31d03434008" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>resizeEvent</name></member>
+      <member refid="classDisplayForm_1a9dd4a30560338046cb2422e7d7b6e74e" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>saveFigure</name></member>
+      <member refid="classDisplayForm_1a0663ae45ff29e34110a2b3f304e7df2e" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setAxisLabels</name></member>
+      <member refid="classDisplayForm_1a4ae615547f894f0baa9e17528c847e92" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setGrid</name></member>
+      <member refid="classDisplayForm_1acf34fd28a90afc9f8984906b7b7a43cc" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setLineColor</name></member>
+      <member refid="classDisplayForm_1aa168e747c0ff6048f4ed6b431b2779e3" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setLineLabel</name></member>
+      <member refid="classDisplayForm_1ac1a48e6c13d6f956792c27e00b1fa221" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setLineMarker</name></member>
+      <member refid="classDisplayForm_1acf77ce9f2008eee21b71b8597e6b47df" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setLineStyle</name></member>
+      <member refid="classDisplayForm_1a10039325d5ad93f891896d686be9d50f" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setLineWidth</name></member>
+      <member refid="classDisplayForm_1ada5564bdeca98b8fb2f251b21dc04531" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setMarkerAlpha</name></member>
+      <member refid="classConstellationDisplayForm_1aba5339db4f78932ff9c2e9a0d7f1aad6" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setNPoints</name></member>
+      <member refid="classConstellationDisplayForm_1a80f529d0c6f4e074a5e81cd58fbd653e" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setSampleRate</name></member>
+      <member refid="classDisplayForm_1a663a66d4eaa1b57c94a99be616d27d1f" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setStop</name></member>
+      <member refid="classDisplayForm_1ae925081aa3c271f367d302d89f2cd0d9" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setStop</name></member>
+      <member refid="classDisplayForm_1a3f7a0d7e58eb601876b244104c159fe1" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTitle</name></member>
+      <member refid="classConstellationDisplayForm_1a640da75bbbf6a13da23fbddad2793c07" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerChannel</name></member>
+      <member refid="classConstellationDisplayForm_1ae32788f5e3b90528393b82d938f5b119" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerLevel</name></member>
+      <member refid="classConstellationDisplayForm_1ae00131fae2757a3939f537142bd89302" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerLevel</name></member>
+      <member refid="classConstellationDisplayForm_1ab488778bdf66acd3dcd50dd2f4d89c23" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerMode</name></member>
+      <member refid="classConstellationDisplayForm_1a25fc616d940d8309b16160e6ab9a16fc" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerSlope</name></member>
+      <member refid="classConstellationDisplayForm_1ad26bfb6c57aaba4b25e3c9b5373fade1" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerTagKey</name></member>
+      <member refid="classConstellationDisplayForm_1a9702c0269465cec43edbf5f1073f5787" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setTriggerTagKey</name></member>
+      <member refid="classDisplayForm_1a98c2f2c5936db64ef7866a59dbad0331" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setUpdateTime</name></member>
+      <member refid="classConstellationDisplayForm_1a1d7eaf0692c8436aea00d5a3dbcb8b54" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setXaxis</name></member>
+      <member refid="classConstellationDisplayForm_1aee324ffb7631cc514cdd64f77fee8ed1" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>setYaxis</name></member>
+      <member refid="classDisplayForm_1a6d360b7520c52f8eaa3b94f6132e8fd5" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>title</name></member>
+      <member refid="classDisplayForm_1aaeca8cf8d2ff7298e3e4d6a8a80849cf" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>toggleGrid</name></member>
+      <member refid="classConstellationDisplayForm_1a810611627066dafce7be52ef08647bd7" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>updateTrigger</name></member>
+      <member refid="classConstellationDisplayForm_1acc9c2bf20c36c656595767f8c1058455" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>~ConstellationDisplayForm</name></member>
+      <member refid="classDisplayForm_1af9c50320f79cc75feffa0538da2e28a2" prot="public" virt="non-virtual"><scope>ConstellationDisplayForm</scope><name>~DisplayForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

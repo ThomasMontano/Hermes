@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="page_qtgui" kind="page">
+    <compoundname>page_qtgui</compoundname>
+    <title>QT Graphical User Interface</title>
+    <detaileddescription>
+<sect1 id="page_qtgui_1qtgui_introduction">
+<title>Introduction</title>
+<para>This is the gr-qtgui package. It contains various QT-based graphical user interface blocks that add graphical sinks to a GNU Radio flowgraph. The Python namespaces is in gnuradio.qtgui, which would be normally imported as:</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>qtgui</highlight></codeline>
+</programlisting></para><para>See the Doxygen documentation for details about the blocks available in this package. The relevant blocks are listed in the <ref refid="group__qtgui__blk" kindref="compound">QT Graphical Interfaces</ref> group.</para><para>A quick listing of the details can be found in Python after importing by using:</para><para><programlisting><codeline><highlight class="normal">help(qtgui)</highlight></codeline>
+</programlisting></para><sect2 id="page_qtgui_1qtgui_blocks">
+<title>Blocks</title>
+<para>There are a number of available QTGUI blocks for different plotting purposes. These include:</para><para><itemizedlist>
+<listitem><para>Time Domain (<ref refid="classgr_1_1qtgui_1_1time__sink__c" kindref="compound">gr::qtgui::time_sink_c</ref> and <ref refid="classgr_1_1qtgui_1_1time__sink__f" kindref="compound">gr::qtgui::time_sink_f</ref>): x-axis is time, y-axis is amplitude. </para></listitem>
+<listitem><para>Frequency Domain or PSD (<ref refid="classgr_1_1qtgui_1_1freq__sink__c" kindref="compound">gr::qtgui::freq_sink_c</ref> and <ref refid="classgr_1_1qtgui_1_1freq__sink__f" kindref="compound">gr::qtgui::freq_sink_f</ref>): x-axis is frequency, y-axis is magnitude in dB. </para></listitem>
+<listitem><para>Waterfall or spectrogram (<ref refid="classgr_1_1qtgui_1_1waterfall__sink__c" kindref="compound">gr::qtgui::waterfall_sink_c</ref> and <ref refid="classgr_1_1qtgui_1_1waterfall__sink__f" kindref="compound">gr::qtgui::waterfall_sink_f</ref>): x-axis is frequency, y-axis is time,z-axis is intensity related to magnitude in dB. </para></listitem>
+<listitem><para>Constellation (<ref refid="classgr_1_1qtgui_1_1const__sink__c" kindref="compound">gr::qtgui::const_sink_c</ref>): polar plot of real vs. imaginary. </para></listitem>
+<listitem><para>Time Raster (<ref refid="classgr_1_1qtgui_1_1time__raster__sink__f" kindref="compound">gr::qtgui::time_raster_sink_f</ref> and <ref refid="classgr_1_1qtgui_1_1time__raster__sink__b" kindref="compound">gr::qtgui::time_raster_sink_b</ref>): time vs. time with the z-axis being intensity basedon value of the sample. </para></listitem>
+<listitem><para>Histogram (<ref refid="classgr_1_1qtgui_1_1histogram__sink__f" kindref="compound">gr::qtgui::histogram_sink_f</ref>): Displays a histogram of the data stream. </para></listitem>
+<listitem><para>Combined Sink (<ref refid="classgr_1_1qtgui_1_1sink__c" kindref="compound">gr::qtgui::sink_c</ref> and <ref refid="classgr_1_1qtgui_1_1sink__f" kindref="compound">gr::qtgui::sink_f</ref>): combines time, frequency, waterfall, and constellation plots into one widget.</para></listitem>
+</itemizedlist>
+The time domain, frequency domain, and waterfall have both a complex and a floating point block. The constellation plot only makes sense with complex inputs. The time raster plots accept bits and floats.</para><para>Because the time raster plots are designed to show structure over time in a signal, frame, packet, etc., they never drop samples. This is a fairly taxing job and performance can be an issue. Since it is expected that this block will work on a frame or packet structure, we tend to be at the lowest possible rate at this point, so that will help. Expect performance issues at high data rates.</para><para>Note: There seem to be extra performance issues with the raster plotters in QWT version 5 that were fixed with QWT version 6. As such, the time raster plots have incredibly poor performance with QWT5 to the point of almost being unusable. In the future, we may restrict compilation and installation of these plots only if QWT6 or higher is discovered. For now, just be aware of this limitation.</para></sect2>
+</sect1>
+<sect1 id="page_qtgui_1qtgui_menu">
+<title>Drop-Down Menu and Interacting with Plots</title>
+<para>All QTGUI sinks have interactive capabilities.</para><para><itemizedlist>
+<listitem><para>Zooming is done simply by clicking the left mouse button and dragging a rectangle around the area to zoom. </para></listitem>
+<listitem><para>Zooming can be done in multiple steps. </para></listitem>
+<listitem><para>A right mouse click will zoom out one step. </para></listitem>
+<listitem><para>Ctrl+Right mouse click will zoom all the way out. </para></listitem>
+<listitem><para>Ctrl+Middle mouse click and hold can drag the canvas around. </para></listitem>
+<listitem><para>Mouse wheel up/down will zoom out/in on y axis (both axes in constellation plot). </para></listitem>
+<listitem><para>Middle mouse button brings up a context menu.</para></listitem>
+</itemizedlist>
+Each type of graph has a different set of menu items in the context menu. Most have some way to change the appearance of the lines or surfaces, such as changing the line width color, marker, and transparency. Other common features can set the sampling rate, turn a grid on and off, pause and unpause (stop/start) the display update, and save the current figure. Specific features are things like setting the number of points to display, setting the FFT size, FFT window, and any FFT averaging.</para><sect2 id="page_qtgui_1qtgui_menu_trigger">
+<title>Triggering Menu for Time Plots</title>
+<para>The time plots have triggering capabilities. Triggering can happen when the signal of a specific channel crosses (positive or negative slope) a certain level threshold. Or triggering can be done off a specific stream tag such that whenever a tag of a given key is found, the scope will trigger.</para><para>In the signal level mode, the trigger can be either &apos;auto&apos; or &apos;normal&apos; where the latter will only trigger when the event is seen. The &apos;auto&apos; mode will trigger on the event or every so often even if no trigger is found. The &apos;free&apos; mode ignores triggering and continuously plots.</para><para>By default, the triggers plot the triggering event at the x=0 (i.e., the left-most point in the plot). A delay can be set to delay the signal along the x-axis to observe any signal before the triggering event. The delay feature works the same for both level and tag triggers. The delay is set according to time in seconds, not samples. So the delay can be calculated as the number of samples divided by the sample rate given to the block.</para><para>All trigger settings (mode, slope, level, delay, channel, and tag key) are settable in the GRC properties boxes to easily set up a repeatable environment.</para><para>A note on the trigger delay setting. This value is limited by the buffer size and/or the number of points being display. It is capped by the minimum of these two values. The buffer size issue is generally only a problem when plotting a large number of samples. However, if the delay is set large to begin with (in the GRC properties box or before top_block.start() is called), then the buffers are resized accordingly offering more freedom. This should be a problem in a limited number of scenarios, but a log INFO level message is produced when asking for the delay outside of the available range.</para></sect2>
+</sect1>
+<sect1 id="page_qtgui_1qtgui_dependencies">
+<title>Dependencies</title>
+<para>The QT GUI blocks require the following dependencies.</para><para><itemizedlist>
+<listitem><para>QtCore (version &gt;= 4.4) </para></listitem>
+<listitem><para>QtGui (version &gt;= 4.4) </para></listitem>
+<listitem><para>QtOpenGL (version &gt;= 4.4) </para></listitem>
+<listitem><para>PyQt4 for Qt4 (version &gt;= 4.4) </para></listitem>
+<listitem><para>Qwt (version &gt;= 5.2)</para></listitem>
+</itemizedlist>
+</para></sect1>
+<sect1 id="page_qtgui_1qtgui_usage">
+<title>Usage</title>
+<para>To use the QTGUI interface, a bit of boiler-plate lines must be included. First, the sink is defined, then it must be exposed from C++ into Python using the &quot;sip.wrapinstance&quot; command, and finally, the &quot;show&quot; method is run on the new Python object. This sets up the QT environment to show the widget, but the qApplication must also be launched.</para><para>In the &quot;main&quot; function of the code, the qApp is retrieved. Then, after the GNU Radio top block is started (remember that start() is a non-blocking call to launch the main thread of the flowgraph), the qapp&apos;s &quot;exec_()&quot; function is called. This function is a blocking call while the GUI is alive.</para><para><programlisting><codeline><highlight class="normal">from<sp/>PyQt4<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Qt</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>qtgui</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys,<sp/>sip</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">grclass(gr.top_block):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>....</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>self.snk<sp/>=<sp/>qtgui.sink_c(1024,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#fftsize</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>samp_rate,<sp/><sp/><sp/><sp/><sp/><sp/>#bw</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;QT<sp/>GUI<sp/>Plot&quot;)<sp/><sp/>#name</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>self.snk_win<sp/>=<sp/>sip.wrapinstance(self.snk.pyqwidget(),<sp/>Qt.QWidget)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>self.snk_win.show()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">def<sp/>main():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>qapp<sp/>=<sp/>Qt.QApplication(sys.argv)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb<sp/>=<sp/>grclass()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.start()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>qapp.exec_()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tb.stop()</highlight></codeline>
+</programlisting></para><para>There are graphical controls in all but the combined plotting tools. In the margins of the GUIs (that is, not on the canvas showing the signal itself), right-clicking the mouse will pull up a drop-down menu that will allow you to change difference parameters of the plots. These include things like the look of the lines (width, color, style, markers, etc.), the ability to start and stop the display, the ability to save to a file, and other plot-specific controls (FFT size for the frequency and waterfall plots, etc.).</para></sect1>
+<sect1 id="page_qtgui_1qtgui_messages">
+<title>Message Input Support</title>
+<para>All QTGUI sinks can accept and plot messages over their &quot;in&quot; message port. The message types must either be uniform vectors or PDUs. The data type held within the uniform vector or PDU must match the data type of the block itself. For example, a qtgui.time_sink_c will only handle vectors that pass the <ref refid="namespacepmt_1aeb135345903361a969d0e90ddb191272" kindref="member">pmt::is_c32vector</ref> test while a qtgui.time_sink_f will only handle vectors that pass the <ref refid="namespacepmt_1afbdce2e3a9a172fdbdcf9da08cce862a" kindref="member">pmt::is_f32vector</ref> test.</para><para>The sinks must only be used with one type of input model: streaming or messages. You cannot use them both together or unknown behavior will occur.</para><para>In the GNU Radio Companion, the QTGUI sink blocks can be set to message mode by changing the Type field. Most of the QTGUI sinks support multiple data types, even for messages, but GRC only displays the message type as the single gray color. Within the block&apos;s property box, you can set the type to handle the correct message data type (e.g., &apos;Complex Message&apos; or &apos;Float Message&apos;). When using a message type interface, GRC will hide certain parameters that are not usable or settable anymore. For example, when plotting a message in the time sink, the number of points shown in the time sink is determined by the length of the vector in the message. Presetting this in the GUI would have no effect. This behavior in GRC is for convenience and to try and reduce confusion about properties and settings in the message mode. However, all of the API hooks are still there, so it is possible to set all of this programmatically. The results would be harmless, however.</para><para>Here is an example of setting up and using a message passing complex time sink block:</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gr,<sp/>qtgui</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">tsnk<sp/>=<sp/>qtgui.time_sink_c(1024,<sp/>samp_rate,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.set_update_time(0.05)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.set_y_axis(-1.25,<sp/>1.25)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.set_y_label(</highlight><highlight class="stringliteral">&quot;Amp<sp/>(V)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.enable_autoscale(False)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.enable_grid(False)</highlight></codeline>
+<codeline><highlight class="normal">tsnk.enable_control_panel(False)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">tb<sp/>=<sp/>gr.top_block()</highlight></codeline>
+<codeline><highlight class="normal">msg_block<sp/>=<sp/>?<sp/>#<sp/>some<sp/>PDU/message<sp/>generating<sp/>block</highlight></codeline>
+<codeline><highlight class="normal">tb.msg_connect((msg_block,<sp/></highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">),<sp/>(tsnk,<sp/></highlight><highlight class="stringliteral">&apos;in&apos;</highlight><highlight class="normal">))</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="page_qtgui_1qtgui_widgets">
+<title>QTGUI Widgets</title>
+<para>The QTGUI component also includes a number of widgets that can be used to perform live updates of variables through standard QT input widgets. Most of the widgets are implemented directly in Python through PyQT. However, GNU Radio is introducing more widgets, written and therefore available in C++ that also produce messages. The Python-based widgets only act as variables and so as they are changed, any block using those widgets to set parameters has the callback (i.e., set_value()) function&apos;s called.</para><sect2 id="page_qtgui_1qtgui_widgets_python">
+<title>Python widgets:</title>
+<para><itemizedlist>
+<listitem><para>Range: creates a slider and/or combo box to change to set/change the value of a parameter. This widget can set either float or int values. </para></listitem>
+<listitem><para>Entry: An edit box that allows a user to directly set a new value for the parameter. </para></listitem>
+<listitem><para>Chooser: Creates a drop-down menu of pre-set values. </para></listitem>
+<listitem><para>Check Box: Creates a check box. The user sets what the value of the check means when enabled or disabled. </para></listitem>
+<listitem><para>Push Button: Adds a button that changes state when pushed versus released (no sticky). The user sets up what the value is when pressed versus when released. </para></listitem>
+<listitem><para>Label: Adds a Label widget to annotate the GUI. Generally not used as a variable. </para></listitem>
+<listitem><para>Tab Widget: Adds a tab widget that can house other GUI widgets to format the interface. Use the GUI hint of the other QT widgets and instruments to specify if and where they exist in the tab widget using the format &quot;tag widget name@index: row, col, row span, col
+span&quot;. Simply using &quot;tab widget name@index&quot; will put that widget into the specific index (starting at 0) of the tab widget while adding the &quot;row, col, row span, col span&quot; will allow the user to place them in the tab grid.</para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="page_qtgui_1qtgui_widgets_cpp">
+<title>C++ and Message-Passing Widgets</title>
+<para><itemizedlist>
+<listitem><para><ref refid="classgr_1_1qtgui_1_1edit__box__msg" kindref="compound">Message Edit Box</ref>: A QT edit box that emits a message when editing is done (e.g., user presses enter, tabs out of the widget, or mouse-clicks out of the widget). The message type is settable as are the contents. Messages can be sent as key:value pairs when Pair Mode is enabled. When Static Mode is enabled, the data type and the pair key (if in Pair Mode) are set at the start and cannot be changed at runtime.</para></listitem>
+</itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="page_qtgui_1qtgui_configuration">
+<title>Configuration</title>
+<para>There is currently a single configuration option in the preferences files to set the rendering engine of the QTGUI sinks. Located in etc/gnuradio/conf.d/gr-qtgui.conf:</para><para><verbatim>[qtgui]
+style = raster
+</verbatim></para><para>The available styles are:</para><para><itemizedlist>
+<listitem><para>opengl: the fastest but not likely to always work </para></listitem>
+<listitem><para>raster: fast and stable; terrible X forwarding performance </para></listitem>
+<listitem><para>native: most compute intensive; very good over X</para></listitem>
+</itemizedlist>
+We default this setting to raster for the mix of performance and usability. When using QTGUI sinks through an X-forwarding session over SSH, switch to using &apos;native&apos; for a significant speed boost on the remote end.</para><para>We can also set a QT Style Sheet (QSS) file to adjust the look of our plotting tools. Set the &apos;qss&apos; option of the &apos;qtgui&apos; section in our configuration file to a QSS file. An example QSS file is distributed with the QTGUI examples found in share/gnuradio/examples/qt-gui/dark.qss. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

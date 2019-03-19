@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1feval__cc" kind="class" prot="public">
+    <compoundname>gr::feval_cc</compoundname>
+    <derivedcompoundref refid="classgr_1_1py__feval__cc" prot="public" virt="non-virtual">gr::py_feval_cc</derivedcompoundref>
+    <includes refid="feval_8h" local="no">feval.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1feval__cc_1a6e9f778bf2cdaf63c08378ef91a99a78" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>virtual gr_complex gr::feval_cc::eval</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>eval</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>override this to define the function </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1feval__cc_1a3a9bf2d4bab0f14d1c0f1fff3de3f512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::feval_cc::feval_cc</definition>
+        <argsstring>()</argsstring>
+        <name>feval_cc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1feval__cc_1a4b6249b3399fdeaf889c4cab723e6309" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::feval_cc::~feval_cc</definition>
+        <argsstring>()</argsstring>
+        <name>~feval_cc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1feval__cc_1acf782e67372794ce6fa37cf54c03f242" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>virtual gr_complex gr::feval_cc::calleval</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>calleval</name>
+        <reimplementedby refid="classgr_1_1py__feval__cc_1a7beb2c25386628f3ebac687d81b0e3d7">calleval</reimplementedby>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="87" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base class for evaluating a function: complex -&gt; complex</para><para>This class is designed to be subclassed in Python or C++ and is callable from both places. It uses SWIG&apos;s &quot;director&quot; feature to implement the magic. </para>    </briefdescription>
+    <detaileddescription>
+<para>It&apos;s slow. Don&apos;t use it in a performance critical path.</para><para>Override eval to define the behavior. Use calleval to invoke eval (this kludge is required to allow a python specific &quot;shim&quot; to be inserted. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="114">
+        <label>gr::py_feval_cc</label>
+        <link refid="classgr_1_1py__feval__cc"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>gr::feval_cc</label>
+        <link refid="classgr_1_1feval__cc"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" bodystart="75" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classgr_1_1feval__cc_1acf782e67372794ce6fa37cf54c03f242" prot="public" virt="virtual"><scope>gr::feval_cc</scope><name>calleval</name></member>
+      <member refid="classgr_1_1feval__cc_1a6e9f778bf2cdaf63c08378ef91a99a78" prot="protected" virt="virtual"><scope>gr::feval_cc</scope><name>eval</name></member>
+      <member refid="classgr_1_1feval__cc_1a3a9bf2d4bab0f14d1c0f1fff3de3f512" prot="public" virt="non-virtual"><scope>gr::feval_cc</scope><name>feval_cc</name></member>
+      <member refid="classgr_1_1feval__cc_1a4b6249b3399fdeaf889c4cab723e6309" prot="public" virt="virtual"><scope>gr::feval_cc</scope><name>~feval_cc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

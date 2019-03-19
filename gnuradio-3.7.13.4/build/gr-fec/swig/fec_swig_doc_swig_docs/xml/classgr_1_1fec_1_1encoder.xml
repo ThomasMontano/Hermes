@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1encoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::encoder</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="encoder_8h" local="no">encoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1encoder_1ad09c1ab5ffd48baf9af3c6074d84c87b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1encoder" kindref="compound">encoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;encoder&gt; gr::fec::encoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1encoder_1a22f1edba424f8d5ab12f82ed1d9d4f68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1encoder_1ad09c1ab5ffd48baf9af3c6074d84c87b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::encoder::make</definition>
+        <argsstring>(generic_encoder::sptr my_encoder, size_t input_item_size, size_t output_item_size)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" kindref="member">generic_encoder::sptr</ref></type>
+          <declname>my_encoder</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>input_item_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>output_item_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build the FEC encoder block from an FECAPI encoder object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An FECAPI encoder object child of the <ref refid="classgr_1_1fec_1_1generic__encoder" kindref="compound">generic_encoder</ref> class. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_item_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of a block of data for the encoder. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_item_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of a block of data the encoder will produce. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1encoder_1ab934cce7165972abd7f6302302a09cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::encoder::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)=0</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1encoder_1a2c0c246e642e88be68014333aa935f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::encoder::fixed_rate_ninput_to_noutput</definition>
+        <argsstring>(int ninput)=0</argsstring>
+        <name>fixed_rate_ninput_to_noutput</name>
+        <param>
+          <type>int</type>
+          <declname>ninput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1encoder_1a495747d9adb1be4b42e3997c2e7039f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::encoder::fixed_rate_noutput_to_ninput</definition>
+        <argsstring>(int noutput)=0</argsstring>
+        <name>fixed_rate_noutput_to_ninput</name>
+        <param>
+          <type>int</type>
+          <declname>noutput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1encoder_1a58ed0686d9c32b9998ca892198efc427" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fec::encoder::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)=0</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Creates the encoder block for use in GNU Radio flowgraphs from a given FECAPI object derived from the <ref refid="classgr_1_1fec_1_1generic__encoder" kindref="compound">generic_encoder</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Generally, we would use the fec.extended_encoder Python implementation to instantiate this. The extended_encoder wraps up a few more details, like taking care of puncturing as well as the encoder itself. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>block</label>
+      </node>
+      <node id="74">
+        <label>gr::fec::encoder</label>
+        <link refid="classgr_1_1fec_1_1encoder"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>block</label>
+      </node>
+      <node id="76">
+        <label>gr::fec::encoder</label>
+        <link refid="classgr_1_1fec_1_1encoder"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/encoder.h" bodystart="47" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1encoder_1a2c0c246e642e88be68014333aa935f60" prot="public" virt="pure-virtual"><scope>gr::fec::encoder</scope><name>fixed_rate_ninput_to_noutput</name></member>
+      <member refid="classgr_1_1fec_1_1encoder_1a495747d9adb1be4b42e3997c2e7039f6" prot="public" virt="pure-virtual"><scope>gr::fec::encoder</scope><name>fixed_rate_noutput_to_ninput</name></member>
+      <member refid="classgr_1_1fec_1_1encoder_1a58ed0686d9c32b9998ca892198efc427" prot="public" virt="pure-virtual"><scope>gr::fec::encoder</scope><name>forecast</name></member>
+      <member refid="classgr_1_1fec_1_1encoder_1ab934cce7165972abd7f6302302a09cec" prot="public" virt="pure-virtual"><scope>gr::fec::encoder</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fec_1_1encoder_1a22f1edba424f8d5ab12f82ed1d9d4f68" prot="public" virt="non-virtual"><scope>gr::fec::encoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1encoder_1ad09c1ab5ffd48baf9af3c6074d84c87b" prot="public" virt="non-virtual"><scope>gr::fec::encoder</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

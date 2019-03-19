@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::code::ldpc_H_matrix</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1code_1_1fec__mtrx" prot="public" virt="virtual">gr::fec::code::fec_mtrx</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">boost::enable_shared_from_this&lt; ldpc_H_matrix &gt;</basecompoundref>
+    <includes refid="ldpc__H__matrix_8h" local="no">gnuradio/fec/ldpc_H_matrix.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a365312ed0e34ac757b9e3e7651ae3c41" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix" kindref="compound">ldpc_H_matrix</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ldpc_H_matrix&gt; gr::fec::code::ldpc_H_matrix::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a54129f0aab44961532e899b44abc62c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a365312ed0e34ac757b9e3e7651ae3c41" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::code::ldpc_H_matrix::make</definition>
+        <argsstring>(const std::string filename, unsigned int gap)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>gap</declname>
+        </param>
+        <briefdescription>
+<para>Constructor given alist file and gap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of an alist file to use. The alist format is described at: <ulink url="http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html">http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html</ulink> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A property of the matrix being used. For alist files distributed with GNU Radio, this value is specified in the alist filename. The gap is found during the matrix preprocessing algorithm. It is equal to the number of rows in submatrices E, C and D. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a1a76beb29a2879920ebf89c3c4e89006" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fec::code::ldpc_H_matrix::encode</definition>
+        <argsstring>(unsigned char *outbuffer, const unsigned char *inbuffer) const =0</argsstring>
+        <name>encode</name>
+        <reimplements refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a99fc98a3111db62a49de8b25016e9e12">encode</reimplements>
+        <param>
+          <type>unsigned char *</type>
+          <declname>outbuffer</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>inbuffer</declname>
+        </param>
+        <briefdescription>
+<para>Encode <computeroutput>inbuffer</computeroutput> with LDPC H matrix into <computeroutput>outbuffer</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a9341ef6df818d7e3edf81e958385ee99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fec::code::ldpc_H_matrix::decode</definition>
+        <argsstring>(unsigned char *outbuffer, const float *inbuffer, unsigned int frame_size, unsigned int max_iterations) const =0</argsstring>
+        <name>decode</name>
+        <reimplements refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a240a4f0dc662411209b06807ce598307">decode</reimplements>
+        <param>
+          <type>unsigned char *</type>
+          <declname>outbuffer</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>inbuffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_iterations</declname>
+        </param>
+        <briefdescription>
+<para>Decode <computeroutput>inbuffer</computeroutput> with LDPC H matrix into <computeroutput>outbuffer</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a5b9c45d93076dc2ab4599ba04de20e8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int gr::fec::code::ldpc_H_matrix::n</definition>
+        <argsstring>() const =0</argsstring>
+        <name>n</name>
+        <reimplements refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a63c2ca3a14b109dae1b35a9efcb2ae9c">n</reimplements>
+        <briefdescription>
+<para>Get the codeword length n. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a6376a011c71fafcfe10f5620c635dd5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int gr::fec::code::ldpc_H_matrix::k</definition>
+        <argsstring>() const =0</argsstring>
+        <name>k</name>
+        <reimplements refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a4bb4a7dd985b43e43ef35a14628079cc">k</reimplements>
+        <briefdescription>
+<para>Get the information word length k. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parity check matrix in Richardson/Urbanke format. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class stores a matrix for use with the <ref refid="classgr_1_1fec_1_1ldpc__encoder" kindref="compound">ldpc_encoder</ref> class. It must be of the specific format described by Richardson and Urbanke in Appendix A of their book: Modern Coding Theory (ISBN 978-0-521-85229-6). The form is: <formula id="36">\[\left[\begin{array}{ccc} T &amp; A &amp; B\\ E &amp; C &amp; D \end{array}\right]\]</formula> This class can be used with the <ref refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder" kindref="compound">ldpc_bit_flip_decoder</ref>.</para><para>To convert a parity check matrix to this format, use the python functions in: /lib/python2.7/dist-packages/gnuradio/fec/LDPC/Generate_LDPC_matrix.py. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6115">
+        <label>boost::enable_shared_from_this&lt; ldpc_H_matrix &gt;</label>
+      </node>
+      <node id="6113">
+        <label>gr::fec::code::ldpc_H_matrix</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix"/>
+        <childnode refid="6114" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6115" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6114">
+        <label>gr::fec::code::fec_mtrx</label>
+        <link refid="classgr_1_1fec_1_1code_1_1fec__mtrx"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6118">
+        <label>boost::enable_shared_from_this&lt; ldpc_H_matrix &gt;</label>
+      </node>
+      <node id="6116">
+        <label>gr::fec::code::ldpc_H_matrix</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix"/>
+        <childnode refid="6117" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6117">
+        <label>gr::fec::code::fec_mtrx</label>
+        <link refid="classgr_1_1fec_1_1code_1_1fec__mtrx"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_H_matrix.h" bodystart="49" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a9341ef6df818d7e3edf81e958385ee99" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>decode</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a1a76beb29a2879920ebf89c3c4e89006" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>encode</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1abc3f19d9bb1476ddcc0e3dc5ffc3fcf0" prot="protected" virt="non-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>fec_mtrx</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a6376a011c71fafcfe10f5620c635dd5a" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>k</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a54129f0aab44961532e899b44abc62c7" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a5b9c45d93076dc2ab4599ba04de20e8c" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>n</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix_1a365312ed0e34ac757b9e3e7651ae3c41" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a01a322ccbadf31be57fee76ff4c5e0e3" prot="public" virt="virtual"><scope>gr::fec::code::ldpc_H_matrix</scope><name>~fec_mtrx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

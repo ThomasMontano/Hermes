@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1socket__pdu" kind="class" prot="public">
+    <compoundname>gr::blocks::socket_pdu</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="socket__pdu_8h" local="no">socket_pdu.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1socket__pdu_1a0416932d49ee01a04e9aecf98b28a509" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1socket__pdu" kindref="compound">socket_pdu</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;socket_pdu&gt; gr::blocks::socket_pdu::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/socket_pdu.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/socket_pdu.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1socket__pdu_1ace1f1458caaf26d797444e3a44494539" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1socket__pdu_1a0416932d49ee01a04e9aecf98b28a509" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::socket_pdu::make</definition>
+        <argsstring>(std::string type, std::string addr, std::string port, int MTU=10000, bool tcp_no_delay=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>MTU</declname>
+          <defval>10000</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>tcp_no_delay</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct a SOCKET PDU interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;TCP_SERVER&quot;, &quot;TCP_CLIENT&quot;, &quot;UDP_SERVER&quot;, or &quot;UDP_CLIENT&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>network address to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>network port to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MTU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum transmission unit </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tcp_no_delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TCP No Delay option (set to True to disable Nagle algorithm) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/socket_pdu.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Creates socket interface and translates traffic to PDUs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="692">
+        <label>gr::blocks::socket_pdu</label>
+        <link refid="classgr_1_1blocks_1_1socket__pdu"/>
+        <childnode refid="693" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="694">
+        <label>gr::blocks::socket_pdu</label>
+        <link refid="classgr_1_1blocks_1_1socket__pdu"/>
+        <childnode refid="695" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/socket_pdu.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/socket_pdu.h" bodystart="36" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1socket__pdu_1ace1f1458caaf26d797444e3a44494539" prot="public" virt="non-virtual"><scope>gr::blocks::socket_pdu</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1socket__pdu_1a0416932d49ee01a04e9aecf98b28a509" prot="public" virt="non-virtual"><scope>gr::blocks::socket_pdu</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

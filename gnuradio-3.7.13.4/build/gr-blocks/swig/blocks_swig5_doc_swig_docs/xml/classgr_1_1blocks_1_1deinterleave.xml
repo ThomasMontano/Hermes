@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1deinterleave" kind="class" prot="public">
+    <compoundname>gr::blocks::deinterleave</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="deinterleave_8h" local="no">deinterleave.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1deinterleave_1a99c4386e3606e431dd9c388f14476900" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1deinterleave" kindref="compound">deinterleave</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;deinterleave&gt; gr::blocks::deinterleave::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/deinterleave.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/deinterleave.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1deinterleave_1adf23b4adb9bfbf862c576c92387b575f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1deinterleave_1a99c4386e3606e431dd9c388f14476900" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::deinterleave::make</definition>
+        <argsstring>(size_t itemsize, unsigned int blocksize=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>blocksize</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a deinterleave block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream itemsize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blocksize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of block to deinterleave </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/deinterleave.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>deinterleave an input block of samples into N outputs. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block deinterleaves blocks of samples. For each output connection, the input stream will be deinterleaved successively to the output connections. By default, the block deinterleaves a single input to each output unless blocksize is given in the constructor.</para><para><programlisting><codeline><highlight class="normal">blocksize<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">connections<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">input<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>d,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+<codeline><highlight class="normal">output[0]<sp/>=<sp/>[a,<sp/>c,<sp/>e,<sp/>g]</highlight></codeline>
+<codeline><highlight class="normal">output[1]<sp/>=<sp/>[b,<sp/>d,<sp/>f,<sp/>h]</highlight></codeline>
+</programlisting></para><para><programlisting><codeline><highlight class="normal">blocksize<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">connections<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">input<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>d,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+<codeline><highlight class="normal">output[0]<sp/>=<sp/>[a,<sp/>b,<sp/>e,<sp/>f]</highlight></codeline>
+<codeline><highlight class="normal">output[1]<sp/>=<sp/>[c,<sp/>d,<sp/>g,<sp/>h]</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="208">
+        <label>block</label>
+      </node>
+      <node id="207">
+        <label>gr::blocks::deinterleave</label>
+        <link refid="classgr_1_1blocks_1_1deinterleave"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="210">
+        <label>block</label>
+      </node>
+      <node id="209">
+        <label>gr::blocks::deinterleave</label>
+        <link refid="classgr_1_1blocks_1_1deinterleave"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/deinterleave.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/deinterleave.h" bodystart="59" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1deinterleave_1adf23b4adb9bfbf862c576c92387b575f" prot="public" virt="non-virtual"><scope>gr::blocks::deinterleave</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1deinterleave_1a99c4386e3606e431dd9c388f14476900" prot="public" virt="non-virtual"><scope>gr::blocks::deinterleave</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

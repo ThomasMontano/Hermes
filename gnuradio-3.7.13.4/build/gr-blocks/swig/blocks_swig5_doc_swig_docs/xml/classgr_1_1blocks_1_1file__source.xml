@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1file__source" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::file_source</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="file__source_8h" local="no">file_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1file__source_1a21a22625224ef17b78524aea323bab27" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1file__source" kindref="compound">file_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;file_source&gt; gr::blocks::file_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__source_1aa653e46a19963a06a91c7797ce42db9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1file__source_1a21a22625224ef17b78524aea323bab27" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::file_source::make</definition>
+        <argsstring>(size_t itemsize, const char *filename, bool repeat=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create a file source. </para>        </briefdescription>
+        <detaileddescription>
+<para>Opens <computeroutput>filename</computeroutput> as a source of items into a flowgraph. The data is expected to be in binary format, item after item. The <computeroutput>itemsize</computeroutput> of the block determines the conversion from bits to items.</para><para>If <computeroutput>repeat</computeroutput> is turned on, the file will repeat the file after it&apos;s reached the end.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of each item in the file, in bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to source from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat file from start </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__source_1a9c8b91a61a5876a55b400883ae2114f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::file_source::seek</definition>
+        <argsstring>(long seek_point, int whence)=0</argsstring>
+        <name>seek</name>
+        <param>
+          <type>long</type>
+          <declname>seek_point</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+<para>seek file to <computeroutput>seek_point</computeroutput> relative to <computeroutput>whence</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seek_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample offset in file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>whence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of SEEK_SET, SEEK_CUR, SEEK_END (man fseek) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__source_1abe6a167ccf3ddfccf238d0e0e621c91a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_source::open</definition>
+        <argsstring>(const char *filename, bool repeat)=0</argsstring>
+        <name>open</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+<para>Opens a new file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to source from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat file from start </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__source_1a3efcf0d0acb9038eb7e2f242564561a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_source::close</definition>
+        <argsstring>()=0</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Close the file handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__source_1acce9f764f9632a08ce3352a338a478b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_source::set_begin_tag</definition>
+        <argsstring>(pmt::pmt_t val)=0</argsstring>
+        <name>set_begin_tag</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Add a stream tag to the first sample of the file if true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Read stream from file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="264">
+        <label>gr::blocks::file_source</label>
+        <link refid="classgr_1_1blocks_1_1file__source"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="266">
+        <label>gr::blocks::file_source</label>
+        <link refid="classgr_1_1blocks_1_1file__source"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_source.h" bodystart="36" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1file__source_1a3efcf0d0acb9038eb7e2f242564561a6" prot="public" virt="pure-virtual"><scope>gr::blocks::file_source</scope><name>close</name></member>
+      <member refid="classgr_1_1blocks_1_1file__source_1aa653e46a19963a06a91c7797ce42db9b" prot="public" virt="non-virtual"><scope>gr::blocks::file_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1file__source_1abe6a167ccf3ddfccf238d0e0e621c91a" prot="public" virt="pure-virtual"><scope>gr::blocks::file_source</scope><name>open</name></member>
+      <member refid="classgr_1_1blocks_1_1file__source_1a9c8b91a61a5876a55b400883ae2114f3" prot="public" virt="pure-virtual"><scope>gr::blocks::file_source</scope><name>seek</name></member>
+      <member refid="classgr_1_1blocks_1_1file__source_1acce9f764f9632a08ce3352a338a478b0" prot="public" virt="pure-virtual"><scope>gr::blocks::file_source</scope><name>set_begin_tag</name></member>
+      <member refid="classgr_1_1blocks_1_1file__source_1a21a22625224ef17b78524aea323bab27" prot="public" virt="non-virtual"><scope>gr::blocks::file_source</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

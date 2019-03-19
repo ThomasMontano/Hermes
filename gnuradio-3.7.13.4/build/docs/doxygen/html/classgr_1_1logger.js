@@ -1,0 +1,25 @@
+var classgr_1_1logger =
+[
+    [ "logger", "classgr_1_1logger.html#af5b125a22f5d36abccaacc0e55101cda", null ],
+    [ "~logger", "classgr_1_1logger.html#a866ba6be68653c746e39291836cd2b71", null ],
+    [ "add_appender", "classgr_1_1logger.html#a16dfd5acfb5d389bc6a59346501f59af", null ],
+    [ "add_console_appender", "classgr_1_1logger.html#adaa25d66de282d361900535186c74939", null ],
+    [ "add_file_appender", "classgr_1_1logger.html#a59623c0e5e128b2d86c59b93240ba034", null ],
+    [ "add_rollingfile_appender", "classgr_1_1logger.html#ac42731c36f9c93a57dc9970be0e30ffa", null ],
+    [ "alert", "classgr_1_1logger.html#ae96e5107ef58f615bd2502905540969f", null ],
+    [ "crit", "classgr_1_1logger.html#a8de90f9793171a86715d9405fdd5e6e2", null ],
+    [ "debug", "classgr_1_1logger.html#a42fab91282b92c9b28b534896b2cdabb", null ],
+    [ "emerg", "classgr_1_1logger.html#ab044e6a798f08fb3f965991abbd696a8", null ],
+    [ "error", "classgr_1_1logger.html#ae07979fa0d6873f0aaa298d3cbf3c8a1", null ],
+    [ "errorIF", "classgr_1_1logger.html#a2d10593b0d7d531b84377fb9169922fb", null ],
+    [ "fatal", "classgr_1_1logger.html#a2aadb535ba1366ab0db2eda44604a8fa", null ],
+    [ "get_level", "classgr_1_1logger.html#a06e12417d5d0a1a7c970dca4a503fd75", null ],
+    [ "info", "classgr_1_1logger.html#a26a9911393a88243d6f318c501e8ef49", null ],
+    [ "log_assert", "classgr_1_1logger.html#a2c4d4a862b73d8219e0913c38de8b9d1", null ],
+    [ "notice", "classgr_1_1logger.html#a1dea18ab846ceefa93e5873e9d8a144b", null ],
+    [ "set_appender", "classgr_1_1logger.html#af958f7b59fe529586971b21ae6e37434", null ],
+    [ "set_console_appender", "classgr_1_1logger.html#ae664c9d76f4a9117fba74f31b901fd43", null ],
+    [ "set_file_appender", "classgr_1_1logger.html#a16b8d38bb169ead3cbed597d6da97f65", null ],
+    [ "set_level", "classgr_1_1logger.html#a31c88700236155c0089a951a0cd7846b", null ],
+    [ "warn", "classgr_1_1logger.html#a9e5abda330defa8eded90e339da617de", null ]
+];

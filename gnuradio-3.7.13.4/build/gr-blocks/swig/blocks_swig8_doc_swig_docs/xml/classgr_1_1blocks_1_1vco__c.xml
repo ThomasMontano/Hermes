@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1vco__c" kind="class" prot="public">
+    <compoundname>gr::blocks::vco_c</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="vco__c_8h" local="no">vco_c.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1vco__c_1a65c705e1435fbd0dc0c11423834326fd" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1vco__c" kindref="compound">vco_c</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vco_c&gt; gr::blocks::vco_c::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vco_c.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vco_c.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vco__c_1aeff25d4a754f32e061da0fe5ef3a636b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1vco__c_1a65c705e1435fbd0dc0c11423834326fd" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::vco_c::make</definition>
+        <argsstring>(double sampling_rate, double sensitivity, double amplitude)</argsstring>
+        <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sensitivity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>amplitude</declname>
+        </param>
+        <briefdescription>
+<para>VCO - Voltage controlled oscillator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sampling_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling rate (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sensitivity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>units are radians/sec/volt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amplitude</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output amplitude </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vco_c.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VCO - Voltage controlled oscillator. </para>    </briefdescription>
+    <detaileddescription>
+<para>input: float stream of control voltages; output: complex oscillator output </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="850">
+        <label>gr::blocks::vco_c</label>
+        <link refid="classgr_1_1blocks_1_1vco__c"/>
+        <childnode refid="851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="852">
+        <label>gr::blocks::vco_c</label>
+        <link refid="classgr_1_1blocks_1_1vco__c"/>
+        <childnode refid="853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vco_c.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vco_c.h" bodystart="40" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1vco__c_1aeff25d4a754f32e061da0fe5ef3a636b" prot="public" virt="non-virtual"><scope>gr::blocks::vco_c</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1vco__c_1a65c705e1435fbd0dc0c11423834326fd" prot="public" virt="non-virtual"><scope>gr::blocks::vco_c</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

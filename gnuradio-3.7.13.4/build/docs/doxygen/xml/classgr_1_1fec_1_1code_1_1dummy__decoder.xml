@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1dummy__decoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::code::dummy_decoder</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__decoder" prot="public" virt="virtual">gr::fec::generic_decoder</basecompoundref>
+    <includes refid="dummy__decoder_8h" local="no">gnuradio/fec/dummy_decoder.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1dummy__decoder_1a8dae1c553b0d89bcc069f68cad0a81da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" kindref="member">generic_decoder::sptr</ref></type>
+        <definition>static generic_decoder::sptr gr::fec::code::dummy_decoder::make</definition>
+        <argsstring>(int frame_size)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a dummy decoding FEC API object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits per frame. If using in the tagged stream style, this is the maximum allowable number of bits per frame. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/dummy_decoder.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1dummy__decoder_1add9a92091729c05fdce5233f068af101" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::fec::code::dummy_decoder::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)=0</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__decoder_1a6da8f43baf97fab0691e80355f2fbb74">set_frame_size</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the uncoded frame size to <computeroutput>frame_size</computeroutput>. If <computeroutput>frame_size</computeroutput> is greater than the value given to the constructor, the frame size will be capped by that initial value and this function will return false. Otherwise, it returns true. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/dummy_decoder.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1dummy__decoder_1a01612987d75344506d85970b6bb60a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::fec::code::dummy_decoder::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__decoder_1a32869de99deaec078e6b3bdc01444795">rate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the coding rate of this encoder (it will always be 1). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/dummy_decoder.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Dummy Decoding class. </para>    </briefdescription>
+    <detaileddescription>
+<para>A dummy decoder class that simply passes the input to the output. It is meant to allow us to easily use the FEC API encoder and decoder blocks in an application with no coding. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="3723">
+        <label>gr::fec::code::dummy_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1dummy__decoder"/>
+        <childnode refid="3724" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3724">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3725">
+        <label>gr::fec::code::dummy_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1dummy__decoder"/>
+        <childnode refid="3726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3728">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="3726">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+        <childnode refid="3727" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="3727">
+        <label>std::string</label>
+        <childnode refid="3728" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/dummy_decoder.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/dummy_decoder.h" bodystart="44" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9a6cbe6022c593cded3c00b929873855" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a09d4e84d633630b77a47b80398c209ad" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a29d043afec8a523972c67e17bf8f3f78" prot="protected" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a96ed2f7bb7465e0df29a13b127ad9fd4" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a699ddfa2fc51343b3193149646bab208" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ab32bf0b94adb801b523001de32ee7dfc" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1aeef6c573d354a4fe0c1ff5d78bafd485" prot="public" virt="pure-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9037426d33b865dda50055380f9b85c8" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_history</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1afaead9faf05cdb871e4c21f5f4dae90c" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_input_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a68f0c06cc9b57e421d4d755fc7eb60d5" prot="public" virt="pure-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a75ffb122f2891ee457be1874e198e836" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_iterations</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ae9a6334b499359f97368569f9b50fbaf" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a558263fff172b7867ed96afccb93078f" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_output_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a0cad8d8b1977ebb9184b6c36ed73db9a" prot="public" virt="pure-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7c46fd20d994c05ece2aa93dc8d3a926" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>get_shift</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1dummy__decoder_1a8dae1c553b0d89bcc069f68cad0a81da" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a2ea0d9d63a13ef1bd22e6517a856b340" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1dummy__decoder_1a01612987d75344506d85970b6bb60a36" prot="public" virt="pure-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1dummy__decoder_1add9a92091729c05fdce5233f068af101" prot="public" virt="pure-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7480b06afbc530f4a524905deab8f70b" prot="public" virt="non-virtual"><scope>gr::fec::code::dummy_decoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a36a7aeb512d578e53d6f984bfd380667" prot="public" virt="virtual"><scope>gr::fec::code::dummy_decoder</scope><name>~generic_decoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

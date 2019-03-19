@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4" kind="class" prot="public">
+    <compoundname>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</compoundname>
+    <basecompoundref refid="classrpcextractor__base" prot="public" virt="virtual">rpcextractor_base&lt; T, std::complex&lt; double &gt; &gt;</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">gnuradio/rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4_1a7f8c39401ee9833ea1903357432a5017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;::rpcbasic_extractor</definition>
+        <argsstring>(T *source, void(T::*func)(std::complex&lt; double &gt;))</argsstring>
+        <name>rpcbasic_extractor</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>void(T::*)(std::complex&lt; double &gt;)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="365" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="365" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4_1a124eae18698b700c2a7388c197e54f09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;::post</definition>
+        <argsstring>(pmt::pmt_t which_port, pmt::pmt_t msg)</argsstring>
+        <name>post</name>
+        <reimplements refid="classgr_1_1messages_1_1msg__accepter_1a68a933600f38482c4d447ed57d20875a">post</reimplements>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send <computeroutput>msg</computeroutput> to <computeroutput>msg_accepter</computeroutput> on port <computeroutput>which_port</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para>Sending a message is an asynchronous operation. The <computeroutput>post</computeroutput> call will not wait for the message either to arrive at the destination or to be received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="369" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="369" bodyend="373"/>
+        <references refid="classrpcextractor__base_1a2048bb831963b0312c0093dad50f6c4a" compoundref="rpcregisterhelpers_8h" startline="64">rpcextractor_base&lt; T, Tto &gt;::_func</references>
+        <references refid="classrpcextractor__base_1afb9a96dc63c5144792ca5e086476818f" compoundref="rpcregisterhelpers_8h" startline="63">rpcextractor_base&lt; T, Tto &gt;::_source</references>
+        <references refid="namespacepmt_1a7e5395b0328218bbba346e3a764aa5b2">pmt::to_complex</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized extractor class for complex (double) data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9382">
+        <label>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</label>
+        <link refid="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4"/>
+        <childnode refid="9383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9383">
+        <label>rpcextractor_base&lt; T, std::complex&lt; double &gt; &gt;</label>
+        <link refid="classrpcextractor__base"/>
+        <childnode refid="9384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9384">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9385">
+        <label>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</label>
+        <link refid="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4"/>
+        <childnode refid="9386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9388">
+        <label>T</label>
+      </node>
+      <node id="9386">
+        <label>rpcextractor_base&lt; T, std::complex&lt; double &gt; &gt;</label>
+        <link refid="classrpcextractor__base"/>
+        <childnode refid="9387" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9388" relation="usage">
+          <edgelabel>_source</edgelabel>
+        </childnode>
+      </node>
+      <node id="9387">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="363" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="361" bodyend="374"/>
+    <listofallmembers>
+      <member refid="classrpcextractor__base_1a2048bb831963b0312c0093dad50f6c4a" prot="protected" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>_func</name></member>
+      <member refid="classrpcextractor__base_1afb9a96dc63c5144792ca5e086476818f" prot="protected" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>_source</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ad6092d4c7f34d71ceb85d1f0d261184f" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>msg_accepter</name></member>
+      <member refid="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4_1a124eae18698b700c2a7388c197e54f09" prot="public" virt="virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>post</name></member>
+      <member refid="classrpcbasic__extractor_3_01T_00_01std_1_1complex_3_01double_01_4_01_4_1a7f8c39401ee9833ea1903357432a5017" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>rpcbasic_extractor</name></member>
+      <member refid="classrpcextractor__base_1a85303828dca8aef06ede86c1da67a848" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>rpcextractor_base</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ac2c26834f090b1af422d874be1bb7c54" prot="public" virt="virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>~msg_accepter</name></member>
+      <member refid="classrpcextractor__base_1ab4755c207678a4742f02c7ef0837cdbd" prot="public" virt="non-virtual"><scope>rpcbasic_extractor&lt; T, std::complex&lt; double &gt; &gt;</scope><name>~rpcextractor_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

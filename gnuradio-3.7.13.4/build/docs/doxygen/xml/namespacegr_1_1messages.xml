@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1messages" kind="namespace">
+    <compoundname>gr::messages</compoundname>
+    <innerclass refid="classgr_1_1messages_1_1msg__accepter" prot="public">gr::messages::msg_accepter</innerclass>
+    <innerclass refid="classgr_1_1messages_1_1msg__accepter__msgq" prot="public">gr::messages::msg_accepter_msgq</innerclass>
+    <innerclass refid="classgr_1_1messages_1_1msg__producer" prot="public">gr::messages::msg_producer</innerclass>
+    <innerclass refid="classgr_1_1messages_1_1msg__queue" prot="public">gr::messages::msg_queue</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1messages_1a1a25a51f40d92b43ec2f4937a202a43b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>static pmt::pmt_t gr::messages::send</definition>
+        <argsstring>(msg_accepter_sptr accepter, const pmt::pmt_t &amp;which_port, const pmt::pmt_t &amp;msg)</argsstring>
+        <name>send</name>
+        <param>
+          <type>msg_accepter_sptr</type>
+          <declname>accepter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send message to <ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accepter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the target of the send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pmt symbol describing the port by name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the message to send. It&apos;s usually a pmt tuple.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sending a message is an asynchronous operation. The <computeroutput>send</computeroutput> call will not wait for the message either to arrive at the destination or to be received.</para><para><simplesect kind="return"><para>msg </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" bodystart="50" bodyend="55"/>
+        <referencedby refid="namespacegr_1_1messages_1a0b094c138f18c8553bb0a2f254eb0fa1" compoundref="msg__passing_8h" startline="114" endline="118">send</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1messages_1ad7b8b329d1aaee3d4ab5d9f63b7d9741" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>static pmt::pmt_t gr::messages::send</definition>
+        <argsstring>(msg_accepter *accepter, const pmt::pmt_t &amp;which_port, const pmt::pmt_t &amp;msg)</argsstring>
+        <name>send</name>
+        <param>
+          <type><ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> *</type>
+          <declname>accepter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send message to <ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accepter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the target of the send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pmt symbol describing the port by name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the message to send. It&apos;s usually a pmt tuple.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sending a message is an asynchronous operation. The <computeroutput>send</computeroutput> call will not wait for the message either to arrive at the destination or to be received.</para><para><simplesect kind="return"><para>msg </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" bodystart="71" bodyend="76"/>
+        <references refid="classgr_1_1messages_1_1msg__accepter_1a68a933600f38482c4d447ed57d20875a">gr::messages::msg_accepter::post</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1messages_1a108bb18a84232a58c70c20af799f4e6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>static pmt::pmt_t gr::messages::send</definition>
+        <argsstring>(msg_accepter &amp;accepter, const pmt::pmt_t &amp;which_port, const pmt::pmt_t &amp;msg)</argsstring>
+        <name>send</name>
+        <param>
+          <type><ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> &amp;</type>
+          <declname>accepter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send message to <ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accepter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the target of the send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pmt symbol describing the port by name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the message to send. It&apos;s usually a pmt tuple.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sending a message is an asynchronous operation. The <computeroutput>send</computeroutput> call will not wait for the message either to arrive at the destination or to be received.</para><para><simplesect kind="return"><para>msg </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" line="92" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" bodystart="92" bodyend="97"/>
+        <references refid="classgr_1_1messages_1_1msg__accepter_1a68a933600f38482c4d447ed57d20875a">gr::messages::msg_accepter::post</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1messages_1a0b094c138f18c8553bb0a2f254eb0fa1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>static pmt::pmt_t gr::messages::send</definition>
+        <argsstring>(pmt::pmt_t accepter, const pmt::pmt_t &amp;which_port, const pmt::pmt_t &amp;msg)</argsstring>
+        <name>send</name>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>accepter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>which_port</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>send message to <ref refid="classgr_1_1messages_1_1msg__accepter" kindref="compound">msg_accepter</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accepter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the target of the send. aprecond: pmt::is_msg_accepter(accepter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pmt symbol describing the port by name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the message to send. It&apos;s usually a pmt tuple.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sending a message is an asynchronous operation. The <computeroutput>send</computeroutput> call will not wait for the message either to arrive at the destination or to be received.</para><para><simplesect kind="return"><para>msg </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" line="114" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_passing.h" bodystart="114" bodyend="118"/>
+        <references refid="namespacepmt_1aa4ab0fcf957dbd2f0493fab143a2b63a">pmt::msg_accepter_ref</references>
+        <references refid="namespacegr_1_1messages_1a1a25a51f40d92b43ec2f4937a202a43b" compoundref="msg__passing_8h" startline="50" endline="55">send</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1messages_1afbf71676ede64ea8b1ea4861e50d00b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_queue_sptr</type>
+        <definition>msg_queue_sptr gr::messages::make_msg_queue</definition>
+        <argsstring>(unsigned int limit=0)</argsstring>
+        <name>make_msg_queue</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>limit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_queue.h" line="37" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/messages/msg_accepter.h" line="30" column="1"/>
+  </compounddef>
+</doxygen>

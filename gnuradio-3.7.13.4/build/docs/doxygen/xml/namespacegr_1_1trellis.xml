@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1trellis" kind="namespace">
+    <compoundname>gr::trellis</compoundname>
+    <innerclass refid="classgr_1_1trellis_1_1constellation__metrics__cf" prot="public">gr::trellis::constellation_metrics_cf</innerclass>
+    <innerclass refid="classgr_1_1trellis_1_1fsm" prot="public">gr::trellis::fsm</innerclass>
+    <innerclass refid="classgr_1_1trellis_1_1interleaver" prot="public">gr::trellis::interleaver</innerclass>
+    <innerclass refid="classgr_1_1trellis_1_1permutation" prot="public">gr::trellis::permutation</innerclass>
+    <innerclass refid="classgr_1_1trellis_1_1siso__combined__f" prot="public">gr::trellis::siso_combined_f</innerclass>
+    <innerclass refid="classgr_1_1trellis_1_1siso__f" prot="public">gr::trellis::siso_f</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1trellis_1a81bf88f927ae66cf1a73a9d5b1444a8f" prot="public" static="no">
+        <name>siso_type_t</name>
+        <enumvalue id="namespacegr_1_1trellis_1a81bf88f927ae66cf1a73a9d5b1444a8fab539e706dfc3be1040c40fecb0ec358e" prot="public">
+          <name>TRELLIS_MIN_SUM</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1trellis_1a81bf88f927ae66cf1a73a9d5b1444a8fae0e52b1a65c47be1e123d240ca5dc73e" prot="public">
+          <name>TRELLIS_SUM_PRODUCT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/siso_type.h" line="29" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/siso_type.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a368ce403464bb5e681d3a9d2d9a51fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::trellis::dec2base</definition>
+        <argsstring>(unsigned int num, int base, std::vector&lt; int &gt; &amp;s)</argsstring>
+        <name>dec2base</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>change base </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/base.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a2d6d15bfbfbd40a026613e6267fce7fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::trellis::dec2bases</definition>
+        <argsstring>(unsigned int num, const std::vector&lt; int &gt; &amp;bases, std::vector&lt; int &gt; &amp;s)</argsstring>
+        <name>dec2bases</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>bases</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/base.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1afe9e847de03c88f6d3f3a80dbffffa32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::trellis::base2dec</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;s, int base)</argsstring>
+        <name>base2dec</name>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/base.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a633280cf76f335309095d86e9f2e6b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::trellis::bases2dec</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;s, const std::vector&lt; int &gt; &amp;bases)</argsstring>
+        <name>bases2dec</name>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>bases</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/base.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1aeee768ec21fa293deff6863870aeb2e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::calc_metric</definition>
+        <argsstring>(int O, int D, const std::vector&lt; T &gt; &amp;TABLE, const T *input, float *metric, digital::trellis_metric_type_t type)</argsstring>
+        <name>calc_metric</name>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/calc_metric.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a3ba3344ae359b264e10c4e31a593bd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::trellis::calc_metric</definition>
+        <argsstring>(int O, int D, const std::vector&lt; gr_complex &gt; &amp;TABLE, const gr_complex *input, float *metric, digital::trellis_metric_type_t type)</argsstring>
+        <name>calc_metric</name>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/calc_metric.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1aa1d6afaca822df7b2a521046596d3230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::trellis::min</definition>
+        <argsstring>(float a, float b)</argsstring>
+        <name>min</name>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a189698aed5998cbf265f31e5dbde181d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::trellis::min_star</definition>
+        <argsstring>(float a, float b)</argsstring>
+        <name>min_star</name>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a6c2d799cdc916bb31f3bcdc9c631c502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::viterbi_algorithm</definition>
+        <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, const float *in, T *out)</argsstring>
+        <name>viterbi_algorithm</name>
+        <param>
+          <type>int</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>NS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>OS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PI</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SK</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1aac3ff175700850a652cf80fb44b436eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ti</type>
+          </param>
+          <param>
+            <type>class To</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::viterbi_algorithm_combined</definition>
+        <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, int D, const std::vector&lt; Ti &gt; &amp;TABLE, digital::trellis_metric_type_t TYPE, const Ti *in, To *out)</argsstring>
+        <name>viterbi_algorithm_combined</name>
+        <param>
+          <type>int</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>NS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>OS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PI</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SK</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>const Ti *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>To *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a11756484c315daf4bc235ae60c57bfbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::trellis::siso_algorithm</definition>
+        <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, bool POSTI, bool POSTO, float(*p2mymin)(float, float), const float *priori, const float *prioro, float *post)</argsstring>
+        <name>siso_algorithm</name>
+        <param>
+          <type>int</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>NS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>OS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PI</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SK</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>POSTI</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>POSTO</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>priori</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>prioro</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a544bcd162afc0d04a3a2a9bc1ff04b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::siso_algorithm_combined</definition>
+        <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, bool POSTI, bool POSTO, float(*p2mymin)(float, float), int D, const std::vector&lt; T &gt; &amp;TABLE, digital::trellis_metric_type_t TYPE, const float *priori, const T *observations, float *post)</argsstring>
+        <name>siso_algorithm_combined</name>
+        <param>
+          <type>int</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>NS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>OS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PS</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>PI</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>S0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SK</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>POSTI</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>POSTO</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>priori</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1addd866113cad1b7a999e34bff2e6d699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::sccc_decoder</definition>
+        <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), const float *iprioro, T *data)</argsstring>
+        <name>sccc_decoder</name>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSMo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STo0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SToK</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSMi</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STi0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STiK</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1interleaver" kindref="compound">interleaver</ref> &amp;</type>
+          <declname>INTERLEAVER</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blocklength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>iprioro</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a117b91b96313c0bf5faf0f72f4717745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ti</type>
+          </param>
+          <param>
+            <type>class To</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::sccc_decoder_combined</definition>
+        <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), int D, const std::vector&lt; Ti &gt; &amp;TABLE, digital::trellis_metric_type_t METRIC_TYPE, float scaling, const Ti *observations, To *data)</argsstring>
+        <name>sccc_decoder_combined</name>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSMo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STo0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SToK</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSMi</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STi0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>STiK</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1interleaver" kindref="compound">interleaver</ref> &amp;</type>
+          <declname>INTERLEAVER</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blocklength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>METRIC_TYPE</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaling</declname>
+        </param>
+        <param>
+          <type>const Ti *</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>To *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a44c4ddd95a7405f447f6a09e6dade321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::pccc_decoder</definition>
+        <argsstring>(const fsm &amp;FSM1, int ST10, int ST1K, const fsm &amp;FSM2, int ST20, int ST2K, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), const float *cprioro, T *data)</argsstring>
+        <name>pccc_decoder</name>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSM1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST10</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST1K</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSM2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST20</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST2K</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1interleaver" kindref="compound">interleaver</ref> &amp;</type>
+          <declname>INTERLEAVER</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blocklength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>cprioro</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a5bb9ef92152d50b9aeee57db14b52837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ti</type>
+          </param>
+          <param>
+            <type>class To</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::pccc_decoder_combined</definition>
+        <argsstring>(const fsm &amp;FSM1, int ST10, int ST1K, const fsm &amp;FSM2, int ST20, int ST2K, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), int D, const std::vector&lt; Ti &gt; &amp;TABLE, digital::trellis_metric_type_t METRIC_TYPE, float scaling, const Ti *observations, To *data)</argsstring>
+        <name>pccc_decoder_combined</name>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSM1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST10</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST1K</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1fsm" kindref="compound">fsm</ref> &amp;</type>
+          <declname>FSM2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST20</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ST2K</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1trellis_1_1interleaver" kindref="compound">interleaver</ref> &amp;</type>
+          <declname>INTERLEAVER</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blocklength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>float(*)(float, float)</type>
+          <declname>p2mymin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <declname>TABLE</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1digital_1a53f5dbe3f2097d58ae646db19f4be8cc" kindref="member">digital::trellis_metric_type_t</ref></type>
+          <declname>METRIC_TYPE</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaling</declname>
+        </param>
+        <param>
+          <type>const Ti *</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>To *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/core_algorithms.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1aef7adffeb32109434968b7feded25d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::SWAP</definition>
+        <argsstring>(T &amp;a, T &amp;b)</argsstring>
+        <name>SWAP</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/quicksort_index.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1trellis_1a7559d48949a3e65df8a066f881bfc219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::trellis::quicksort_index</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;p, std::vector&lt; int &gt; &amp;index, int left, int right)</argsstring>
+        <name>quicksort_index</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/quicksort_index.h" line="35" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-trellis/include/gnuradio/trellis/base.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

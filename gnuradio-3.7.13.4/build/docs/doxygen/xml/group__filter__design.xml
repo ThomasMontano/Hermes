@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__filter__design" kind="group">
+    <compoundname>filter_design</compoundname>
+    <title>Digital Filter Design</title>
+    <innerclass refid="classgr_1_1filter_1_1firdes" prot="public">gr::filter::firdes</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__filter__design_1gaf13aef1a29a91a0bfc06adeca11dd021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-filter_2include_2gnuradio_2filter_2api_8h_1a7d33c890adb08fbd7c1c524f2c889357" kindref="member">FILTER_API</ref> std::vector&lt; double &gt;</type>
+        <definition>FILTER_API std::vector&lt;double&gt; gr::filter::pm_remez</definition>
+        <argsstring>(int order, const std::vector&lt; double &gt; &amp;bands, const std::vector&lt; double &gt; &amp;ampl, const std::vector&lt; double &gt; &amp;error_weight, const std::string filter_type=&quot;bandpass&quot;, int grid_density=16)</argsstring>
+        <name>pm_remez</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>bands</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>ampl</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>error_weight</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>filter_type</declname>
+          <defval>&quot;bandpass&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>grid_density</declname>
+          <defval>16</defval>
+        </param>
+        <exceptions> throw (std::runtime_error)</exceptions>
+        <briefdescription>
+<para>Parks-McClellan FIR filter design using Remez algorithm. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculates the optimal (in the Chebyshev/minimax sense) FIR filter inpulse response given a set of band edges, the desired response on those bands, and the weight given to the error in those bands.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filter order (number of taps in the returned filter - 1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency at the band edges [ b1 e1 b2 e2 b3 e3 ...] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ampl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>desired amplitude at the band edges [ a(b1) a(e1) a(b2) a(e2) ...] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>weighting applied to each band (usually 1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of &quot;bandpass&quot;, &quot;hilbert&quot; or &quot;differentiator&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grid_density</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determines how accurately the filter will be constructed. \ The minimum value is 16; higher values are slower to compute.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Frequency is in the range [0, 1], with 1 being the Nyquist frequency (Fs/2)</para><para><simplesect kind="return"><para>vector of computed taps</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if args are invalid or calculation fails to converge. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/pm_remez.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

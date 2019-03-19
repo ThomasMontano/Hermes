@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1tpc__encoder" kind="class" prot="public">
+    <compoundname>gr::fec::tpc_encoder</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__encoder" prot="public" virt="non-virtual">gr::fec::generic_encoder</basecompoundref>
+    <includes refid="tpc__encoder_8h" local="no">tpc_encoder.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a2ded814713060b17fe06bc36992478ce" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::fec::tpc_encoder::d_rowpolys</definition>
+        <argsstring></argsstring>
+        <name>d_rowpolys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a551fe2bda2abc3c93f0dec10fb7a1f18" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::fec::tpc_encoder::d_colpolys</definition>
+        <argsstring></argsstring>
+        <name>d_colpolys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a0bcb131a027fdf7d758b32ac3fde9ccc" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::fec::tpc_encoder::d_krow</definition>
+        <argsstring></argsstring>
+        <name>d_krow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1ac84404f55c902ca19d31412450beabaf" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::fec::tpc_encoder::d_kcol</definition>
+        <argsstring></argsstring>
+        <name>d_kcol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a1f9a332b7898e52a9a73a9aa3472515f" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::fec::tpc_encoder::d_bval</definition>
+        <argsstring></argsstring>
+        <name>d_bval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a6cda6a5f12ae9c641d01e65288a1c97c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::fec::tpc_encoder::d_qval</definition>
+        <argsstring></argsstring>
+        <name>d_qval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a6ea4fb1ee7fd9f3db6c07d67a8ba06fa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::rowNumStates</definition>
+        <argsstring></argsstring>
+        <name>rowNumStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="56" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a154a30832312cb816d5b5ddb580f1b0e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; gr::fec::tpc_encoder::rowOutputs</definition>
+        <argsstring></argsstring>
+        <name>rowOutputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="57" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a3b1e72138e0326f8c0be38702ca081f3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; gr::fec::tpc_encoder::rowNextStates</definition>
+        <argsstring></argsstring>
+        <name>rowNextStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a994a0372504f4af069e4b223e18e930f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::colNumStates</definition>
+        <argsstring></argsstring>
+        <name>colNumStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1aa31a4a72f0b7e84f6cc9a9d934dccfbd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; gr::fec::tpc_encoder::colOutputs</definition>
+        <argsstring></argsstring>
+        <name>colOutputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a6d63051d5330971129ccbcf965734238" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; gr::fec::tpc_encoder::colNextStates</definition>
+        <argsstring></argsstring>
+        <name>colNextStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a2e61f3fe76737ad9826672e142dc188a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::fec::tpc_encoder::rowTail</definition>
+        <argsstring></argsstring>
+        <name>rowTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a302d59bda899673ad2b1aec9eb4d9e35" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::fec::tpc_encoder::colTail</definition>
+        <argsstring></argsstring>
+        <name>colTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a5228a4b5e3b8208ff878b68349cf10af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::rowEncoder_K</definition>
+        <argsstring></argsstring>
+        <name>rowEncoder_K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a419f2dc849139055f91775f51f1c0b2d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::fec::tpc_encoder::rowEncoder_n</definition>
+        <argsstring></argsstring>
+        <name>rowEncoder_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="67" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1abc532c50175a1ccc3d64eadafce3996f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::rowEncoder_m</definition>
+        <argsstring></argsstring>
+        <name>rowEncoder_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1af2101985273cf9fa3cc88616a5d566fc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::colEncoder_K</definition>
+        <argsstring></argsstring>
+        <name>colEncoder_K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1ae51b6108226f6ba78a263ed4584e27dd" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::fec::tpc_encoder::colEncoder_n</definition>
+        <argsstring></argsstring>
+        <name>colEncoder_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a95335c7f3f272652463ab1c37225916a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::colEncoder_m</definition>
+        <argsstring></argsstring>
+        <name>colEncoder_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a5bb62f344fc0887cd5a4f83fe06b41b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::outputSize</definition>
+        <argsstring></argsstring>
+        <name>outputSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="72" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1ad13e606e2498c7be89cffe0e577194bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::inputSize</definition>
+        <argsstring></argsstring>
+        <name>inputSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a2f6434980c7996e4e062e9ca4504d2af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::inputSizeWithPad</definition>
+        <argsstring></argsstring>
+        <name>inputSizeWithPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1ac75d437d1f64530ae7cfe58aa2997adb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::fec::tpc_encoder::inputWithPad</definition>
+        <argsstring></argsstring>
+        <name>inputWithPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a531d62c9cfb59d6011177b9889e29845" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; uint8_t &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;uint8_t&gt; &gt; gr::fec::tpc_encoder::rowEncodedBits</definition>
+        <argsstring></argsstring>
+        <name>rowEncodedBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="79" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a06a7c75bfb22f69e907d2b2cac0217a3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::fec::tpc_encoder::rowToEncode</definition>
+        <argsstring></argsstring>
+        <name>rowToEncode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a4df85bd28151855cc6f7c43d0878abb3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::fec::tpc_encoder::numRowsToEncode</definition>
+        <argsstring></argsstring>
+        <name>numRowsToEncode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a0684a3d72ad0548765bbc564a71a577b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::fec::tpc_encoder::rowEncoded_block</definition>
+        <argsstring></argsstring>
+        <name>rowEncoded_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a31f7108af867a9072ec136d42f330552" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; uint8_t &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;uint8_t&gt; &gt; gr::fec::tpc_encoder::colEncodedBits</definition>
+        <argsstring></argsstring>
+        <name>colEncodedBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1acbe376298f6b809e53671c141516df9d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::fec::tpc_encoder::colToEncode</definition>
+        <argsstring></argsstring>
+        <name>colToEncode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a8d8fd75e370cae5c26385c8496165adc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::numColsToEncode</definition>
+        <argsstring></argsstring>
+        <name>numColsToEncode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a6e4111bfc8578b7b74d545a0426c2721" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::fec::tpc_encoder::colEncoded_block</definition>
+        <argsstring></argsstring>
+        <name>colEncoded_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1tpc__encoder_1a6f2f883313afae4818862369f397640a" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* gr::fec::tpc_encoder::fp</definition>
+        <argsstring></argsstring>
+        <name>fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="97" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1ad31daecdbdb78511cc6b98cb262518ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::tpc_encoder::tpc_encoder</definition>
+        <argsstring>(std::vector&lt; int &gt; row_polys, std::vector&lt; int &gt; col_polys, int krow, int kcol, int bval, int qval)</argsstring>
+        <name>tpc_encoder</name>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>row_polys</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>col_polys</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>krow</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kcol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bval</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>qval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1a14a0b22d7cb236442e7c2ab67b820941" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fec::tpc_encoder::generic_work</definition>
+        <argsstring>(void *inBuffer, void *outbuffer)</argsstring>
+        <name>generic_work</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a1409bf4afed09c66fd0ad3c2b4fa0db7">generic_work</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>inBuffer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>outbuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1abe2dc5ef0daffa6007cfac1d6210e4eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::get_output_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1aa72462435284fc66d3b3a2a5b366f4ea">get_output_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the output size in items that the encoder object produces after encoding a full frame. Often, this number is the number of bits in the outputted frame if the input format is unpacked. If the block produces packed bytes, then this value should be the number of bytes (number of bits / 8) per frame produced. This value is generally something like R*get_input_size() for a 1/R rate code.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1afd864bd7a1ff754fb3a026e83e75e553" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gr::fec::tpc_encoder::get_input_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_input_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a95db2880c3e02e52564ea6a04b6ee243">get_input_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the input size in items that the encoder object uses to encode a full frame. Often, this number is the number of bits per frame if the input format is unpacked. If the block expects packed bytes, then this value should be the number of bytes (number of bits / 8) per input frame.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1abf9d4ff94dc376ad78efbc1688ba2c47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::tpc_encoder::block_conv_encode</definition>
+        <argsstring>(std::vector&lt; uint8_t &gt; &amp;output, std::vector&lt; uint8_t &gt; input, std::vector&lt; std::vector&lt; int &gt; &gt; transOutputVec, std::vector&lt; std::vector&lt; int &gt; &gt; transNextStateVec, std::vector&lt; int &gt; tail, size_t KK, size_t nn)</argsstring>
+        <name>block_conv_encode</name>
+        <param>
+          <type>std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint8_t &gt;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+          <declname>transOutputVec</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+          <declname>transNextStateVec</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>tail</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>KK</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1a519fda29ccf834f58a362c76d5c99642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::tpc_encoder::~tpc_encoder</definition>
+        <argsstring>()</argsstring>
+        <name>~tpc_encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1aad5559ae41a1f41ebfbea571895e27ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double gr::fec::tpc_encoder::rate</definition>
+        <argsstring>()</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a0c47f99e01942d4316b5b24619aab58c">rate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the rate of the code. For every 1 input bit, there are r output bits, so the rate is 1/r. Used for setting things like the encoder block&apos;s relative rate.</para><para>This function MUST be reimplemented by the child class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="102" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1a74a95b12fe7639061d6eed0f7e1fd829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool gr::fec::tpc_encoder::set_frame_size</definition>
+        <argsstring>(unsigned int)</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1ac6a41c2f21012253a43cebc7e7b98039">set_frame_size</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the size of the frame to encode.</para><para>The child class MUST implement this function and interpret how the <computeroutput>frame_size</computeroutput> information affects the block&apos;s behavior. It should also provide bounds checks. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1tpc__encoder_1a932dcec25220d02dd14e16e3b61c674b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" kindref="member">generic_encoder::sptr</ref></type>
+        <definition>static generic_encoder::sptr gr::fec::tpc_encoder::make</definition>
+        <argsstring>(std::vector&lt; int &gt; row_poly, std::vector&lt; int &gt; col_poly, int krow, int kcol, int bval, int qval)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>row_poly</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>col_poly</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>krow</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kcol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bval</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>qval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="277">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+      </node>
+      <node id="276">
+        <label>gr::fec::tpc_encoder</label>
+        <link refid="classgr_1_1fec_1_1tpc__encoder"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="281">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="279">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+        <childnode refid="280" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="278">
+        <label>gr::fec::tpc_encoder</label>
+        <link refid="classgr_1_1fec_1_1tpc__encoder"/>
+        <childnode refid="279" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>std::string</label>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/tpc_encoder.h" bodystart="36" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a391cc2f87d40fac87feabdae40dd8f2a" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a5ae67e6fcab66da448cf5a1e97a7f70d" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1abf9d4ff94dc376ad78efbc1688ba2c47" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>block_conv_encode</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a6e4111bfc8578b7b74d545a0426c2721" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colEncoded_block</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a31f7108af867a9072ec136d42f330552" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colEncodedBits</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1af2101985273cf9fa3cc88616a5d566fc" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colEncoder_K</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a95335c7f3f272652463ab1c37225916a" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colEncoder_m</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1ae51b6108226f6ba78a263ed4584e27dd" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colEncoder_n</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a6d63051d5330971129ccbcf965734238" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colNextStates</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a994a0372504f4af069e4b223e18e930f" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colNumStates</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1aa31a4a72f0b7e84f6cc9a9d934dccfbd" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colOutputs</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a302d59bda899673ad2b1aec9eb4d9e35" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colTail</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1acbe376298f6b809e53671c141516df9d" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>colToEncode</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a1f9a332b7898e52a9a73a9aa3472515f" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_bval</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a551fe2bda2abc3c93f0dec10fb7a1f18" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_colpolys</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1ac84404f55c902ca19d31412450beabaf" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_kcol</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a0bcb131a027fdf7d758b32ac3fde9ccc" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_krow</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a2425896d3a9b72896db338d2912ed0b4" prot="protected" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ab82cb684e9d420af266e7cbb13affe48" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a6cda6a5f12ae9c641d01e65288a1c97c" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_qval</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a2ded814713060b17fe06bc36992478ce" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>d_rowpolys</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a6f2f883313afae4818862369f397640a" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>fp</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a756957e732c8e4ee020175874e8ae280" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a80c72ef4103a41368b4f70dc3b008d23" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a14a0b22d7cb236442e7c2ab67b820941" prot="private" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1af6e5db8309dbdeb90133190fdbbc157d" prot="public" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1afd864bd7a1ff754fb3a026e83e75e553" prot="private" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad8e7379baeed9ae5fe5c1e848a0a9fa7" prot="public" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1abe2dc5ef0daffa6007cfac1d6210e4eb" prot="private" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1ad13e606e2498c7be89cffe0e577194bc" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>inputSize</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a2f6434980c7996e4e062e9ca4504d2af" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>inputSizeWithPad</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1ac75d437d1f64530ae7cfe58aa2997adb" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>inputWithPad</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a932dcec25220d02dd14e16e3b61c674b" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1afd01b295f144a57053e5b11a33fff5b6" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a8d8fd75e370cae5c26385c8496165adc" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>numColsToEncode</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a4df85bd28151855cc6f7c43d0878abb3" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>numRowsToEncode</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a5bb62f344fc0887cd5a4f83fe06b41b3" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>outputSize</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1aad5559ae41a1f41ebfbea571895e27ae" prot="public" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a0684a3d72ad0548765bbc564a71a577b" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowEncoded_block</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a531d62c9cfb59d6011177b9889e29845" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowEncodedBits</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a5228a4b5e3b8208ff878b68349cf10af" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowEncoder_K</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1abc532c50175a1ccc3d64eadafce3996f" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowEncoder_m</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a419f2dc849139055f91775f51f1c0b2d" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowEncoder_n</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a3b1e72138e0326f8c0be38702ca081f3" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowNextStates</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a6ea4fb1ee7fd9f3db6c07d67a8ba06fa" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowNumStates</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a154a30832312cb816d5b5ddb580f1b0e" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowOutputs</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a2e61f3fe76737ad9826672e142dc188a" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowTail</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a06a7c75bfb22f69e907d2b2cac0217a3" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>rowToEncode</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a74a95b12fe7639061d6eed0f7e1fd829" prot="public" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1ad31daecdbdb78511cc6b98cb262518ab" prot="private" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>tpc_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1adb02ab6b53b41fa0b0e65a51ca966f3b" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a576c3fc45c1da7e8712272d556be6b23" prot="public" virt="virtual"><scope>gr::fec::tpc_encoder</scope><name>~generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1tpc__encoder_1a519fda29ccf834f58a362c76d5c99642" prot="public" virt="non-virtual"><scope>gr::fec::tpc_encoder</scope><name>~tpc_encoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

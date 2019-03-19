@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1ber__bf" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::ber_bf</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="ber__bf_8h" local="no">ber_bf.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1ber__bf_1a229564f1a840183784743a26a494a63b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1ber__bf" kindref="compound">ber_bf</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ber_bf&gt; gr::fec::ber_bf::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" line="67" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1ber__bf_1aa287b624222c591f1f3c1a34f68365ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gr::fec::ber_bf::total_errors</definition>
+        <argsstring>()=0</argsstring>
+        <name>total_errors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get total number of errors counter value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1ber__bf_1a7ea60248e6e7ce40d81fa98b1ff92a3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1ber__bf_1a229564f1a840183784743a26a494a63b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::ber_bf::make</definition>
+        <argsstring>(bool test_mode=false, int berminerrors=100, float ber_limit=-7.0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>test_mode</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>berminerrors</declname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ber_limit</declname>
+          <defval>-7.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the BER between two streams of data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>test_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>false for normal streaming mode (default); true for test mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>berminerrors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the block needs to observe this many errors before outputting a result. Only valid when test_mode=true. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ber_limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the BER calculation falls below this limit, produce this value and exit. Only valid when test_mode=true. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BER block in FECAPI. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block measures the bit error rate between two streams of packed data. It compares the bits of each streams and counts the number of incorrect bits between them. It outputs the log of the bit error rate, so a value of -X is 10^{-X} bit errors.</para><para>When the <computeroutput>mode</computeroutput> is set to false (default), it is in streaming mode. This means that the output is constantly producing the current value of the BER. In this mode, there is a single output BER calculation per chunk of bytes passed to it, so there is no exact timing between calculations of BER. In this mode, the other two parameters to the constructor are ignored.</para><para>When <computeroutput>mode</computeroutput> is true, the block is in test mode. This mode is used in the ber_curve_gen example and for other offline analysis of BER curves. Here, the block waits until at least <computeroutput>berminerrors</computeroutput> are observed and then produces a BER calculation. The parameter <computeroutput>ber_limit</computeroutput> helps make sure that the simulation is controlled. If the BER calculation drops below the <computeroutput>ber_limit</computeroutput> setting, the block will exit and simply return the set limit; the real BER is therefore some amount lower than this.</para><para>Note that this block takes in data as packed bytes with 8-bits per byte used. It outputs a stream of floats as the log-scale BER. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>block</label>
+      </node>
+      <node id="14">
+        <label>gr::fec::ber_bf</label>
+        <link refid="classgr_1_1fec_1_1ber__bf"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>block</label>
+      </node>
+      <node id="16">
+        <label>gr::fec::ber_bf</label>
+        <link refid="classgr_1_1fec_1_1ber__bf"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ber_bf.h" bodystart="63" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1ber__bf_1a7ea60248e6e7ce40d81fa98b1ff92a3c" prot="public" virt="non-virtual"><scope>gr::fec::ber_bf</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1ber__bf_1a229564f1a840183784743a26a494a63b" prot="public" virt="non-virtual"><scope>gr::fec::ber_bf</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1ber__bf_1aa287b624222c591f1f3c1a34f68365ab" prot="public" virt="pure-virtual"><scope>gr::fec::ber_bf</scope><name>total_errors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

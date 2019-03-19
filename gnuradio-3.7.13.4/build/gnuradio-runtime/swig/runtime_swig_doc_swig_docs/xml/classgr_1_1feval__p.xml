@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1feval__p" kind="class" prot="public">
+    <compoundname>gr::feval_p</compoundname>
+    <derivedcompoundref refid="classgr_1_1py__feval__p" prot="public" virt="non-virtual">gr::py_feval_p</derivedcompoundref>
+    <includes refid="feval_8h" local="no">feval.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1feval__p_1a6d208c13c86b03c34d3971229d869ebe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::feval_p::eval</definition>
+        <argsstring>(pmt::pmt_t x)</argsstring>
+        <name>eval</name>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>override this to define the function </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="168" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1feval__p_1a9566c20811fed40b89d0f2074b64ca02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::feval_p::feval_p</definition>
+        <argsstring>()</argsstring>
+        <name>feval_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="171" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1feval__p_1a3d0a2733c3b36b34b2ab20142318e86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::feval_p::~feval_p</definition>
+        <argsstring>()</argsstring>
+        <name>~feval_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1feval__p_1a0291b904cd29c8b86cd00d90e720b231" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::feval_p::calleval</definition>
+        <argsstring>(pmt::pmt_t x)</argsstring>
+        <name>calleval</name>
+        <reimplementedby refid="classgr_1_1py__feval__p_1aad204ff6b31aa350a8e4abeabd258f6d">calleval</reimplementedby>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="174" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base class for evaluating a function: pmt -&gt; void</para><para>This class is designed to be subclassed in Python or C++ and is callable from both places. It uses SWIG&apos;s &quot;director&quot; feature to implement the magic. </para>    </briefdescription>
+    <detaileddescription>
+<para>It&apos;s slow. Don&apos;t use it in a performance critical path.</para><para>Override eval to define the behavior. Use calleval to invoke eval (this kludge is required to allow a python specific &quot;shim&quot; to be inserted. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>gr::feval_p</label>
+        <link refid="classgr_1_1feval__p"/>
+      </node>
+      <node id="123">
+        <label>gr::py_feval_p</label>
+        <link refid="classgr_1_1py__feval__p"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="163" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" bodystart="162" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classgr_1_1feval__p_1a0291b904cd29c8b86cd00d90e720b231" prot="public" virt="virtual"><scope>gr::feval_p</scope><name>calleval</name></member>
+      <member refid="classgr_1_1feval__p_1a6d208c13c86b03c34d3971229d869ebe" prot="protected" virt="virtual"><scope>gr::feval_p</scope><name>eval</name></member>
+      <member refid="classgr_1_1feval__p_1a9566c20811fed40b89d0f2074b64ca02" prot="public" virt="non-virtual"><scope>gr::feval_p</scope><name>feval_p</name></member>
+      <member refid="classgr_1_1feval__p_1a3d0a2733c3b36b34b2ab20142318e86f" prot="public" virt="virtual"><scope>gr::feval_p</scope><name>~feval_p</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

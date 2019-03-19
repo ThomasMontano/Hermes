@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__handler" kind="class" prot="public">
+    <compoundname>rpcbasic_handler</compoundname>
+    <basecompoundref refid="classrpchandler__base" prot="public" virt="virtual">rpchandler_base&lt; T &gt;</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__handler_1a926961f53fd738d07bcf6a35f6c1da93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_handler&lt; T &gt;::rpcbasic_handler</definition>
+        <argsstring>(T *source, const char *handler)</argsstring>
+        <name>rpcbasic_handler</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="181" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="181" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Templated parent class for registering a ControlPort Extractor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="429">
+        <label>rpchandler_base&lt; T &gt;</label>
+        <link refid="classrpchandler__base"/>
+        <childnode refid="430" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="428">
+        <label>rpcbasic_handler&lt; T &gt;</label>
+        <link refid="classrpcbasic__handler"/>
+        <childnode refid="429" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="432">
+        <label>rpchandler_base&lt; T &gt;</label>
+        <link refid="classrpchandler__base"/>
+        <childnode refid="433" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="431">
+        <label>rpcbasic_handler&lt; T &gt;</label>
+        <link refid="classrpcbasic__handler"/>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="179" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="178" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classrpchandler__base_1af0a69b6d92cf03549c07bbaaa4d63f54" prot="protected" virt="non-virtual"><scope>rpcbasic_handler</scope><name>_handler</name></member>
+      <member refid="classrpchandler__base_1a11f672c527da72f1cd1036d2446cbd34" prot="protected" virt="non-virtual"><scope>rpcbasic_handler</scope><name>_source</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ad6092d4c7f34d71ceb85d1f0d261184f" prot="public" virt="non-virtual"><scope>rpcbasic_handler</scope><name>msg_accepter</name></member>
+      <member refid="classrpchandler__base_1a345f27c8f501f0640c9b4b7c0f168111" prot="public" virt="virtual"><scope>rpcbasic_handler</scope><name>post</name></member>
+      <member refid="classrpcbasic__handler_1a926961f53fd738d07bcf6a35f6c1da93" prot="public" virt="non-virtual"><scope>rpcbasic_handler</scope><name>rpcbasic_handler</name></member>
+      <member refid="classrpchandler__base_1a182bcf39736bf9953992891c57e975df" prot="public" virt="non-virtual"><scope>rpcbasic_handler</scope><name>rpchandler_base</name></member>
+      <member refid="classgr_1_1messages_1_1msg__accepter_1ac2c26834f090b1af422d874be1bb7c54" prot="public" virt="virtual"><scope>rpcbasic_handler</scope><name>~msg_accepter</name></member>
+      <member refid="classrpchandler__base_1add105237358147f5e5f04027bf4e301e" prot="public" virt="non-virtual"><scope>rpcbasic_handler</scope><name>~rpchandler_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

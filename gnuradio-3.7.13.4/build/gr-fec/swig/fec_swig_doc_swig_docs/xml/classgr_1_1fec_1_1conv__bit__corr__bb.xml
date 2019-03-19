@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1conv__bit__corr__bb" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::conv_bit_corr_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="conv__bit__corr__bb_8h" local="no">conv_bit_corr_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1conv__bit__corr__bb_1a5a9f3237ca91230d8dcc7000af3b54b9" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1conv__bit__corr__bb" kindref="compound">conv_bit_corr_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;conv_bit_corr_bb&gt; gr::fec::conv_bit_corr_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1conv__bit__corr__bb_1a35ef8ffd85b2f8354fb24422cffe4919" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1conv__bit__corr__bb_1a5a9f3237ca91230d8dcc7000af3b54b9" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::conv_bit_corr_bb::make</definition>
+        <argsstring>(std::vector&lt; unsigned long long &gt; correlator, int corr_sym, int corr_len, int cut, int flush, float thresh)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; unsigned long long &gt;</type>
+          <declname>correlator</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>corr_sym</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>corr_len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flush</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1conv__bit__corr__bb_1a5764d385292a4e546f7055cf283524dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::fec::conv_bit_corr_bb::data_garble_rate</definition>
+        <argsstring>(int taps, float syn_density)=0</argsstring>
+        <name>data_garble_rate</name>
+        <param>
+          <type>int</type>
+          <declname>taps</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>syn_density</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This subroutine will find the encoded data garble rate corresponding to a syndrome density of `target&apos;, that is created with an annihilating polynomial with &apos;taps&apos; number of taps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Correlate block in FECAPI. </para>    </briefdescription>
+    <detaileddescription>
+<para>What does this block do? </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>block</label>
+      </node>
+      <node id="40">
+        <label>gr::fec::conv_bit_corr_bb</label>
+        <link refid="classgr_1_1fec_1_1conv__bit__corr__bb"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>block</label>
+      </node>
+      <node id="42">
+        <label>gr::fec::conv_bit_corr_bb</label>
+        <link refid="classgr_1_1fec_1_1conv__bit__corr__bb"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/conv_bit_corr_bb.h" bodystart="41" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1conv__bit__corr__bb_1a5764d385292a4e546f7055cf283524dc" prot="public" virt="pure-virtual"><scope>gr::fec::conv_bit_corr_bb</scope><name>data_garble_rate</name></member>
+      <member refid="classgr_1_1fec_1_1conv__bit__corr__bb_1a35ef8ffd85b2f8354fb24422cffe4919" prot="public" virt="non-virtual"><scope>gr::fec::conv_bit_corr_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1conv__bit__corr__bb_1a5a9f3237ca91230d8dcc7000af3b54b9" prot="public" virt="non-virtual"><scope>gr::fec::conv_bit_corr_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1file__descriptor__sink" kind="class" prot="public">
+    <compoundname>gr::blocks::file_descriptor_sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="file__descriptor__sink_8h" local="no">file_descriptor_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1file__descriptor__sink_1af8abcf764f3f683cc05088828f6147e0" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1file__descriptor__sink" kindref="compound">file_descriptor_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;file_descriptor_sink&gt; gr::blocks::file_descriptor_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_sink.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_sink.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__descriptor__sink_1a80ae102963c35b2645b18f41e7c5f853" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1file__descriptor__sink_1af8abcf764f3f683cc05088828f6147e0" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::file_descriptor_sink::make</definition>
+        <argsstring>(size_t itemsize, int fd)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a file descriptor sink block. The provided file descriptor will be closed when the sink is destroyed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item size of the incoming data stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file descriptor (as an integer). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_sink.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Write stream to file descriptor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="239">
+        <label>gr::blocks::file_descriptor_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__descriptor__sink"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="241">
+        <label>gr::blocks::file_descriptor_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__descriptor__sink"/>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_sink.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_sink.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__sink_1a80ae102963c35b2645b18f41e7c5f853" prot="public" virt="non-virtual"><scope>gr::blocks::file_descriptor_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__sink_1af8abcf764f3f683cc05088828f6147e0" prot="public" virt="non-virtual"><scope>gr::blocks::file_descriptor_sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

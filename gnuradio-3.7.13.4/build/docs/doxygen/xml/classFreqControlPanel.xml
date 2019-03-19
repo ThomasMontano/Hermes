@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classFreqControlPanel" kind="class" prot="public">
+    <compoundname>FreqControlPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QVBoxLayout</basecompoundref>
+    <includes refid="freqcontrolpanel_8h" local="no">gnuradio/qtgui/freqcontrolpanel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFreqControlPanel_1ac921e10125375db5222b1b9d654a51a1" prot="private" static="no" mutable="no">
+        <type><ref refid="classFreqDisplayForm" kindref="compound">FreqDisplayForm</ref> *</type>
+        <definition>FreqDisplayForm* FreqControlPanel::d_parent</definition>
+        <argsstring></argsstring>
+        <name>d_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a007ca20bc48199341dfc154d8d571a8b" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* FreqControlPanel::d_trace_box</definition>
+        <argsstring></argsstring>
+        <name>d_trace_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a6dd5c583f42025ffc273788f40d36603" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* FreqControlPanel::d_trace_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trace_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a0e365d1f17bf0d4ef41ddeee7c86a4ab" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* FreqControlPanel::d_maxhold_check</definition>
+        <argsstring></argsstring>
+        <name>d_maxhold_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a9205f78e4729bf1a27048b48037827b0" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* FreqControlPanel::d_minhold_check</definition>
+        <argsstring></argsstring>
+        <name>d_minhold_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ad0dfe1e55c4e236de685aff7451ecaca" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* FreqControlPanel::d_avg_layout</definition>
+        <argsstring></argsstring>
+        <name>d_avg_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1af1d96f60035fe26edcdbd8dbefd2196b" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* FreqControlPanel::d_avg_label</definition>
+        <argsstring></argsstring>
+        <name>d_avg_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a48a343d84d515beda414648a1488cc64" prot="private" static="no" mutable="no">
+        <type>QSlider *</type>
+        <definition>QSlider* FreqControlPanel::d_avg_slider</definition>
+        <argsstring></argsstring>
+        <name>d_avg_slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="75" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1aeb2f8264e0353f41fddf29dc40e561f9" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* FreqControlPanel::d_axes_box</definition>
+        <argsstring></argsstring>
+        <name>d_axes_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a2d797cb7c6db026dade441cd105e00e3" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* FreqControlPanel::d_axes_layout</definition>
+        <argsstring></argsstring>
+        <name>d_axes_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1adc637501d1b902e452b99d211e8bd6f0" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* FreqControlPanel::d_grid_check</definition>
+        <argsstring></argsstring>
+        <name>d_grid_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a251c5ebf91106f740067a8142938a27f" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* FreqControlPanel::d_axislabels_check</definition>
+        <argsstring></argsstring>
+        <name>d_axislabels_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a993f849cc3f92a6316e4b407cd6f4640" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* FreqControlPanel::d_yrange_layout</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a13891eb25f35566ade3eabbecafe6325" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* FreqControlPanel::d_yrange_label</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="83" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1aa19bc0e15bd19d97e4abb6cbb49d4a0a" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_yrange_plus</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a3cd32e0dbcaae5b95e0c5e9de73a8334" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_yrange_minus</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a7dfa5c211b225e01f7c7fb5516a882bf" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* FreqControlPanel::d_ymin_layout</definition>
+        <argsstring></argsstring>
+        <name>d_ymin_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a1b878b4d38e3e72b1d0ccfff4117ac91" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* FreqControlPanel::d_ymin_label</definition>
+        <argsstring></argsstring>
+        <name>d_ymin_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="88" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a9a2af8c01cfb3e7816afebf10607afdd" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_ymin_plus</definition>
+        <argsstring></argsstring>
+        <name>d_ymin_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="89" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ace79c89f323f5984a3c1a03fc3717e8b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_ymin_minus</definition>
+        <argsstring></argsstring>
+        <name>d_ymin_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="90" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a578d8f584ee0cdebfa3febcd9f386308" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_autoscale_button</definition>
+        <argsstring></argsstring>
+        <name>d_autoscale_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="92" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a4d3b4971b53ab2c71876e00bb3a9015b" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* FreqControlPanel::d_fft_box</definition>
+        <argsstring></argsstring>
+        <name>d_fft_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="94" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a102393de4d9c18a63f4f4392bab1ed0b" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* FreqControlPanel::d_fft_layout</definition>
+        <argsstring></argsstring>
+        <name>d_fft_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="95" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a02414a2e65946e2d196f55339f90c6e0" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* FreqControlPanel::d_fft_size_combo</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size_combo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="96" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a091de50757d1d348385352620ca07505" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* FreqControlPanel::d_fft_win_combo</definition>
+        <argsstring></argsstring>
+        <name>d_fft_win_combo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="97" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a35d8909c03ad3231ef22f7b37302822a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FreqControlPanel::d_slider_max</definition>
+        <argsstring></argsstring>
+        <name>d_slider_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a7eadf8fc938161d23c4beae7f482f5cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FreqControlPanel::d_slider_min</definition>
+        <argsstring></argsstring>
+        <name>d_slider_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a9cde6b008fa240b21e52c6aa4f6f429b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FreqControlPanel::d_slider_step</definition>
+        <argsstring></argsstring>
+        <name>d_slider_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a73e5b2ea2759977968d53ef79d29008a" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* FreqControlPanel::d_trigger_box</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ac3b6cc395e5c09642c33e09a95e1ba24" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* FreqControlPanel::d_trigger_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="102" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1aa95564d571013a6aaf3491984070365b" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* FreqControlPanel::d_trigger_level_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ae44bfa580a2297b8910202f3adefeda9" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* FreqControlPanel::d_trigger_level_label</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="104" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a3c5f18ffff42f51e6c0a93468f647271" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* FreqControlPanel::d_trigger_mode_combo</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_mode_combo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="105" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a19b1d7dbdf95024d509a2c67d5b9acbd" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_trigger_level_plus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a1ba080d482cab7d009d20ac81a8a9c6b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * FreqControlPanel::d_trigger_level_minus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1a6db267f9728405f44d7e7a7d7cc2c5cb" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* FreqControlPanel::d_extras_box</definition>
+        <argsstring></argsstring>
+        <name>d_extras_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ab141ab0252e136a7ec2963521f76c403" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* FreqControlPanel::d_extras_layout</definition>
+        <argsstring></argsstring>
+        <name>d_extras_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqControlPanel_1ac8d2c52b4583c67cebcf7b2cea433487" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* FreqControlPanel::d_stop_button</definition>
+        <argsstring></argsstring>
+        <name>d_stop_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="110" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFreqControlPanel_1ad0af98aa76d08ca027987e477506ba92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FreqControlPanel::FreqControlPanel</definition>
+        <argsstring>(FreqDisplayForm *form)</argsstring>
+        <name>FreqControlPanel</name>
+        <param>
+          <type><ref refid="classFreqDisplayForm" kindref="compound">FreqDisplayForm</ref> *</type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqControlPanel_1aa767414e6c1ce7877e403f9de0c3ec1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FreqControlPanel::~FreqControlPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~FreqControlPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classFreqControlPanel_1a08724ab0faf7e00702a2757d79eb2545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::notifyAvgSlider</definition>
+        <argsstring>(int val)</argsstring>
+        <name>notifyAvgSlider</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1a46b19f942e2ea4ac1b3f53aa5315f9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::setFFTAverage</definition>
+        <argsstring>(float val)</argsstring>
+        <name>setFFTAverage</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1ac5d151a08c65046e0846444ef3b8e336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleGrid</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleGrid</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1ac1d4d7a6524442dc3d62f5fb9b466559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleAxisLabels</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleAxisLabels</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1ad5d74f82478b8c8a6b2eb290215a59e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleMaxHold</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleMaxHold</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1a326988cb32a080a4eb534f2dd66dc632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleMinHold</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleMinHold</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1a2b71feeae6af6f52ec7a57de403c0bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleFFTSize</definition>
+        <argsstring>(int val)</argsstring>
+        <name>toggleFFTSize</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1afb44594ac6f28c31b092b4ec5d7c5eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleFFTWindow</definition>
+        <argsstring>(const gr::filter::firdes::win_type win)</argsstring>
+        <name>toggleFFTWindow</name>
+        <param>
+          <type>const <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+          <declname>win</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1a08628e7ac3298b9e14931186c4d0eb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleTriggerMode</definition>
+        <argsstring>(gr::qtgui::trigger_mode mode)</argsstring>
+        <name>toggleTriggerMode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classFreqControlPanel_1a0866dcb71e7fa561afb7c19d27a9a7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::toggleStopButton</definition>
+        <argsstring>()</argsstring>
+        <name>toggleStopButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classFreqControlPanel_1ac899c237b2b5aec93f25e2edc8e7a2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::signalAvgSlider</definition>
+        <argsstring>(float val)</argsstring>
+        <name>signalAvgSlider</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classFreqControlPanel_1a4b1284e28219ee8a5d0b190b95af4ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::signalAvg</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>signalAvg</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classFreqControlPanel_1af817caa48eee0bd58f76b78b3d2137f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FreqControlPanel::signalToggleStopButton</definition>
+        <argsstring>()</argsstring>
+        <name>signalToggleStopButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5189">
+        <label>QVBoxLayout</label>
+      </node>
+      <node id="5188">
+        <label>FreqControlPanel</label>
+        <link refid="classFreqControlPanel"/>
+        <childnode refid="5189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5191">
+        <label>QVBoxLayout</label>
+      </node>
+      <node id="5190">
+        <label>FreqControlPanel</label>
+        <link refid="classFreqControlPanel"/>
+        <childnode refid="5191" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freqcontrolpanel.h" bodystart="37" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classFreqControlPanel_1a578d8f584ee0cdebfa3febcd9f386308" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_autoscale_button</name></member>
+      <member refid="classFreqControlPanel_1af1d96f60035fe26edcdbd8dbefd2196b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_avg_label</name></member>
+      <member refid="classFreqControlPanel_1ad0dfe1e55c4e236de685aff7451ecaca" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_avg_layout</name></member>
+      <member refid="classFreqControlPanel_1a48a343d84d515beda414648a1488cc64" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_avg_slider</name></member>
+      <member refid="classFreqControlPanel_1aeb2f8264e0353f41fddf29dc40e561f9" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_axes_box</name></member>
+      <member refid="classFreqControlPanel_1a2d797cb7c6db026dade441cd105e00e3" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_axes_layout</name></member>
+      <member refid="classFreqControlPanel_1a251c5ebf91106f740067a8142938a27f" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_axislabels_check</name></member>
+      <member refid="classFreqControlPanel_1a6db267f9728405f44d7e7a7d7cc2c5cb" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_extras_box</name></member>
+      <member refid="classFreqControlPanel_1ab141ab0252e136a7ec2963521f76c403" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_extras_layout</name></member>
+      <member refid="classFreqControlPanel_1a4d3b4971b53ab2c71876e00bb3a9015b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_fft_box</name></member>
+      <member refid="classFreqControlPanel_1a102393de4d9c18a63f4f4392bab1ed0b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_fft_layout</name></member>
+      <member refid="classFreqControlPanel_1a02414a2e65946e2d196f55339f90c6e0" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_fft_size_combo</name></member>
+      <member refid="classFreqControlPanel_1a091de50757d1d348385352620ca07505" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_fft_win_combo</name></member>
+      <member refid="classFreqControlPanel_1adc637501d1b902e452b99d211e8bd6f0" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_grid_check</name></member>
+      <member refid="classFreqControlPanel_1a0e365d1f17bf0d4ef41ddeee7c86a4ab" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_maxhold_check</name></member>
+      <member refid="classFreqControlPanel_1a9205f78e4729bf1a27048b48037827b0" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_minhold_check</name></member>
+      <member refid="classFreqControlPanel_1ac921e10125375db5222b1b9d654a51a1" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_parent</name></member>
+      <member refid="classFreqControlPanel_1a35d8909c03ad3231ef22f7b37302822a" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_slider_max</name></member>
+      <member refid="classFreqControlPanel_1a7eadf8fc938161d23c4beae7f482f5cd" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_slider_min</name></member>
+      <member refid="classFreqControlPanel_1a9cde6b008fa240b21e52c6aa4f6f429b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_slider_step</name></member>
+      <member refid="classFreqControlPanel_1ac8d2c52b4583c67cebcf7b2cea433487" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_stop_button</name></member>
+      <member refid="classFreqControlPanel_1a007ca20bc48199341dfc154d8d571a8b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trace_box</name></member>
+      <member refid="classFreqControlPanel_1a6dd5c583f42025ffc273788f40d36603" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trace_layout</name></member>
+      <member refid="classFreqControlPanel_1a73e5b2ea2759977968d53ef79d29008a" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_box</name></member>
+      <member refid="classFreqControlPanel_1ac3b6cc395e5c09642c33e09a95e1ba24" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_layout</name></member>
+      <member refid="classFreqControlPanel_1ae44bfa580a2297b8910202f3adefeda9" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_level_label</name></member>
+      <member refid="classFreqControlPanel_1aa95564d571013a6aaf3491984070365b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_level_layout</name></member>
+      <member refid="classFreqControlPanel_1a1ba080d482cab7d009d20ac81a8a9c6b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_level_minus</name></member>
+      <member refid="classFreqControlPanel_1a19b1d7dbdf95024d509a2c67d5b9acbd" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_level_plus</name></member>
+      <member refid="classFreqControlPanel_1a3c5f18ffff42f51e6c0a93468f647271" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_trigger_mode_combo</name></member>
+      <member refid="classFreqControlPanel_1a1b878b4d38e3e72b1d0ccfff4117ac91" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_ymin_label</name></member>
+      <member refid="classFreqControlPanel_1a7dfa5c211b225e01f7c7fb5516a882bf" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_ymin_layout</name></member>
+      <member refid="classFreqControlPanel_1ace79c89f323f5984a3c1a03fc3717e8b" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_ymin_minus</name></member>
+      <member refid="classFreqControlPanel_1a9a2af8c01cfb3e7816afebf10607afdd" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_ymin_plus</name></member>
+      <member refid="classFreqControlPanel_1a13891eb25f35566ade3eabbecafe6325" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_yrange_label</name></member>
+      <member refid="classFreqControlPanel_1a993f849cc3f92a6316e4b407cd6f4640" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_yrange_layout</name></member>
+      <member refid="classFreqControlPanel_1a3cd32e0dbcaae5b95e0c5e9de73a8334" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_yrange_minus</name></member>
+      <member refid="classFreqControlPanel_1aa19bc0e15bd19d97e4abb6cbb49d4a0a" prot="private" virt="non-virtual"><scope>FreqControlPanel</scope><name>d_yrange_plus</name></member>
+      <member refid="classFreqControlPanel_1ad0af98aa76d08ca027987e477506ba92" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>FreqControlPanel</name></member>
+      <member refid="classFreqControlPanel_1a08724ab0faf7e00702a2757d79eb2545" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>notifyAvgSlider</name></member>
+      <member refid="classFreqControlPanel_1a46b19f942e2ea4ac1b3f53aa5315f9ff" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>setFFTAverage</name></member>
+      <member refid="classFreqControlPanel_1a4b1284e28219ee8a5d0b190b95af4ec4" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>signalAvg</name></member>
+      <member refid="classFreqControlPanel_1ac899c237b2b5aec93f25e2edc8e7a2c1" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>signalAvgSlider</name></member>
+      <member refid="classFreqControlPanel_1af817caa48eee0bd58f76b78b3d2137f4" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>signalToggleStopButton</name></member>
+      <member refid="classFreqControlPanel_1ac1d4d7a6524442dc3d62f5fb9b466559" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleAxisLabels</name></member>
+      <member refid="classFreqControlPanel_1a2b71feeae6af6f52ec7a57de403c0bde" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleFFTSize</name></member>
+      <member refid="classFreqControlPanel_1afb44594ac6f28c31b092b4ec5d7c5eac" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleFFTWindow</name></member>
+      <member refid="classFreqControlPanel_1ac5d151a08c65046e0846444ef3b8e336" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleGrid</name></member>
+      <member refid="classFreqControlPanel_1ad5d74f82478b8c8a6b2eb290215a59e4" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleMaxHold</name></member>
+      <member refid="classFreqControlPanel_1a326988cb32a080a4eb534f2dd66dc632" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleMinHold</name></member>
+      <member refid="classFreqControlPanel_1a0866dcb71e7fa561afb7c19d27a9a7a1" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleStopButton</name></member>
+      <member refid="classFreqControlPanel_1a08628e7ac3298b9e14931186c4d0eb87" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>toggleTriggerMode</name></member>
+      <member refid="classFreqControlPanel_1aa767414e6c1ce7877e403f9de0c3ec1b" prot="public" virt="non-virtual"><scope>FreqControlPanel</scope><name>~FreqControlPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

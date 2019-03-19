@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1analog" kind="namespace">
+    <compoundname>gr::analog</compoundname>
+    <innerclass refid="classgr_1_1analog_1_1agc2__cc" prot="public">gr::analog::agc2_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1agc2__ff" prot="public">gr::analog::agc2_ff</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1agc3__cc" prot="public">gr::analog::agc3_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1agc__cc" prot="public">gr::analog::agc_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1agc__ff" prot="public">gr::analog::agc_ff</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1cpfsk__bc" prot="public">gr::analog::cpfsk_bc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1cpm" prot="public">gr::analog::cpm</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1ctcss__squelch__ff" prot="public">gr::analog::ctcss_squelch_ff</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1dpll__bb" prot="public">gr::analog::dpll_bb</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1feedforward__agc__cc" prot="public">gr::analog::feedforward_agc_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1fmdet__cf" prot="public">gr::analog::fmdet_cf</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1frequency__modulator__fc" prot="public">gr::analog::frequency_modulator_fc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1phase__modulator__fc" prot="public">gr::analog::phase_modulator_fc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1pll__carriertracking__cc" prot="public">gr::analog::pll_carriertracking_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1pll__freqdet__cf" prot="public">gr::analog::pll_freqdet_cf</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1pll__refout__cc" prot="public">gr::analog::pll_refout_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__c" prot="public">gr::analog::probe_avg_mag_sqrd_c</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__cf" prot="public">gr::analog::probe_avg_mag_sqrd_cf</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__f" prot="public">gr::analog::probe_avg_mag_sqrd_f</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1pwr__squelch__cc" prot="public">gr::analog::pwr_squelch_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1pwr__squelch__ff" prot="public">gr::analog::pwr_squelch_ff</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1quadrature__demod__cf" prot="public">gr::analog::quadrature_demod_cf</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1rail__ff" prot="public">gr::analog::rail_ff</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1simple__squelch__cc" prot="public">gr::analog::simple_squelch_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1squelch__base__cc" prot="public">gr::analog::squelch_base_cc</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1squelch__base__ff" prot="public">gr::analog::squelch_base_ff</innerclass>
+    <innernamespace refid="namespacegr_1_1analog_1_1kernel">gr::analog::kernel</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1analog_1a3f859c26017c44658f7468b87fbe6558" prot="public" static="no">
+        <name>noise_type_t</name>
+        <enumvalue id="namespacegr_1_1analog_1a3f859c26017c44658f7468b87fbe6558aba3352cc01cfc51b7a47fe68f4f4a2d6" prot="public">
+          <name>GR_UNIFORM</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1analog_1a3f859c26017c44658f7468b87fbe6558a37b1df9f15d21293d75df9a3d4575f83" prot="public">
+          <name>GR_GAUSSIAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1analog_1a3f859c26017c44658f7468b87fbe6558afa81271d79b0158374efd9c09601e1df" prot="public">
+          <name>GR_LAPLACIAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1analog_1a3f859c26017c44658f7468b87fbe6558a7c46d7567fee8a5bf7628daf64fb4916" prot="public">
+          <name>GR_IMPULSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/noise_type.h" line="29" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/noise_type.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__waveform__generators__blk_1gac97c0f42ffb63f1265decceaaeab9177" prot="public" static="no">
+        <name>gr_waveform_t</name>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177ae498d246944b97c4e6e46dbe72e78710" prot="public">
+          <name>GR_CONST_WAVE</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177a71dd5e4a7046847f12d395f4d0722069" prot="public">
+          <name>GR_SIN_WAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177a3ef7631b8292bb9bea1603241bb91951" prot="public">
+          <name>GR_COS_WAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177ab16cf544b1512511042814e630368705" prot="public">
+          <name>GR_SQR_WAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177a17daa0284adc5ccdd7c6551c5cc3c962" prot="public">
+          <name>GR_TRI_WAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__waveform__generators__blk_1ggac97c0f42ffb63f1265decceaaeab9177a08852de05c21a6ffa08f5fd568f6c4e8" prot="public">
+          <name>GR_SAW_WAVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of signal generator waveforms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/sig_source_waveform.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/sig_source_waveform.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="31" column="1"/>
+  </compounddef>
+</doxygen>

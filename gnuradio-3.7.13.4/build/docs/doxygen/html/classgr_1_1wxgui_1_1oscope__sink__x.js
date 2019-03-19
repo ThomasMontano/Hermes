@@ -1,0 +1,27 @@
+var classgr_1_1wxgui_1_1oscope__sink__x =
+[
+    [ "oscope_sink_x", "classgr_1_1wxgui_1_1oscope__sink__x.html#a3b16399583e6ecdad620c7e2282547af", null ],
+    [ "oscope_sink_x", "classgr_1_1wxgui_1_1oscope__sink__x.html#aeeed7789d6c2adeab8a52bd2c6c0c9e5", null ],
+    [ "~oscope_sink_x", "classgr_1_1wxgui_1_1oscope__sink__x.html#af485f8974282fcce6a64db5511a0023e", null ],
+    [ "get_decimation_count", "classgr_1_1wxgui_1_1oscope__sink__x.html#a81192ba26011afb138a576e0641aa714", null ],
+    [ "get_samples_per_output_record", "classgr_1_1wxgui_1_1oscope__sink__x.html#a5c3f2416a9a6cdefa0cf840c31f06c3d", null ],
+    [ "get_trigger_channel", "classgr_1_1wxgui_1_1oscope__sink__x.html#a81a74e88546755f8b1576076c042c16b", null ],
+    [ "get_trigger_level", "classgr_1_1wxgui_1_1oscope__sink__x.html#a3c0af0f4f95c1343e7bb301e0fa001e8", null ],
+    [ "get_trigger_mode", "classgr_1_1wxgui_1_1oscope__sink__x.html#a8d57f435e6638c79de49486ffb1f5f32", null ],
+    [ "get_trigger_slope", "classgr_1_1wxgui_1_1oscope__sink__x.html#a09de70dd4729bc3834cece5e8bc18ca0", null ],
+    [ "num_channels", "classgr_1_1wxgui_1_1oscope__sink__x.html#aa1c36dcf949031d9cba232f4a0dcf323", null ],
+    [ "sample_rate", "classgr_1_1wxgui_1_1oscope__sink__x.html#a8ec76890416d3482553e48e3fbc0f06b", null ],
+    [ "set_decimation_count", "classgr_1_1wxgui_1_1oscope__sink__x.html#a1c034429d32334400203d1f91630a49f", null ],
+    [ "set_num_channels", "classgr_1_1wxgui_1_1oscope__sink__x.html#a0997417aadf1cb4d8675e0b04c942757", null ],
+    [ "set_sample_rate", "classgr_1_1wxgui_1_1oscope__sink__x.html#ae54f645bb681efa60027a1908df9ab92", null ],
+    [ "set_trigger_channel", "classgr_1_1wxgui_1_1oscope__sink__x.html#abecb6127b075392f3e32bf34574cbe49", null ],
+    [ "set_trigger_level", "classgr_1_1wxgui_1_1oscope__sink__x.html#a920d9be67f53660bbf42afd530711a0e", null ],
+    [ "set_trigger_level_auto", "classgr_1_1wxgui_1_1oscope__sink__x.html#a3accc83c9fdead381e2e7981701667c6", null ],
+    [ "set_trigger_mode", "classgr_1_1wxgui_1_1oscope__sink__x.html#ac8d4b0ed76080f82324ff825e8402cdd", null ],
+    [ "set_trigger_slope", "classgr_1_1wxgui_1_1oscope__sink__x.html#a99403b44759d0558a5df96219564e89c", null ],
+    [ "set_update_rate", "classgr_1_1wxgui_1_1oscope__sink__x.html#a6cbac15068f7c4d33adca693b39d3c39", null ],
+    [ "update_rate", "classgr_1_1wxgui_1_1oscope__sink__x.html#a1c28678ced01c8532593b284ff58ab95", null ],
+    [ "work", "classgr_1_1wxgui_1_1oscope__sink__x.html#aa6b9d3b88e42d492ae866696f2d71c61", null ],
+    [ "d_guts", "classgr_1_1wxgui_1_1oscope__sink__x.html#a114f62265fe7844c4d126ce48ab5ad67", null ],
+    [ "d_sampling_rate", "classgr_1_1wxgui_1_1oscope__sink__x.html#af97545041b3849e46412211ac0c7ab0c", null ]
+];

@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="thread_8h" kind="file">
+    <compoundname>thread.h</compoundname>
+    <includes refid="gnuradio_2api_8h" local="no">gnuradio/api.h</includes>
+    <includes local="no">boost/thread/thread.hpp</includes>
+    <includes local="no">boost/thread/mutex.hpp</includes>
+    <includes local="no">boost/thread/locks.hpp</includes>
+    <includes local="no">boost/thread/condition_variable.hpp</includes>
+    <includes local="no">boost/thread/barrier.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="basic__block_8h" local="no">basic_block.h</includedby>
+    <includedby refid="buffer_8h" local="no">buffer.h</includedby>
+    <includedby refid="messages_2msg__queue_8h" local="no">msg_queue.h</includedby>
+    <includedby refid="msg__queue_8h" local="no">msg_queue.h</includedby>
+    <includedby refid="prefs_8h" local="no">prefs.h</includedby>
+    <includedby refid="thread__body__wrapper_8h" local="no">thread_body_wrapper.h</includedby>
+    <includedby refid="thread__group_8h" local="no">thread_group.h</includedby>
+    <includedby refid="thrift__application__base_8h" local="no">thrift_application_base.h</includedby>
+    <includedby refid="tpb__detail_8h" local="no">tpb_detail.h</includedby>
+    <incdepgraph>
+      <node id="1656">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1658">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="1660">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1654">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1652">
+        <label>thread.h</label>
+        <link refid="thread.h"/>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1659" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1661" relation="include">
+        </childnode>
+      </node>
+      <node id="1655">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1657">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="1661">
+        <label>vector</label>
+      </node>
+      <node id="1659">
+        <label>boost/thread/barrier.hpp</label>
+      </node>
+      <node id="1653">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1685">
+        <label>thread_group.h</label>
+        <link refid="thread__group_8h"/>
+      </node>
+      <node id="1684">
+        <label>thread_body_wrapper.h</label>
+        <link refid="thread__body__wrapper_8h"/>
+      </node>
+      <node id="1678">
+        <label>msg_accepter_msgq.h</label>
+        <link refid="msg__accepter__msgq_8h"/>
+      </node>
+      <node id="1662">
+        <label>thread.h</label>
+        <link refid="thread.h"/>
+        <childnode refid="1663" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>sync_decimator.h</label>
+        <link refid="sync__decimator_8h"/>
+      </node>
+      <node id="1670">
+        <label>block_registry.h</label>
+        <link refid="block__registry_8h"/>
+        <childnode refid="1671" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>hier_block2.h</label>
+        <link refid="hier__block2_8h"/>
+        <childnode refid="1675" relation="include">
+        </childnode>
+      </node>
+      <node id="1665">
+        <label>block_gateway.h</label>
+        <link refid="block__gateway_8h"/>
+      </node>
+      <node id="1686">
+        <label>tpb_detail.h</label>
+        <link refid="tpb__detail_8h"/>
+        <childnode refid="1687" relation="include">
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>thrift_server_template.h</label>
+        <link refid="thrift__server__template_8h"/>
+        <childnode refid="1683" relation="include">
+        </childnode>
+      </node>
+      <node id="1672">
+        <label>pycallback_object.h</label>
+        <link refid="pycallback__object_8h"/>
+      </node>
+      <node id="1683">
+        <label>rpcserver_booter_thrift.h</label>
+        <link refid="rpcserver__booter__thrift_8h"/>
+      </node>
+      <node id="1677">
+        <label>msg_queue.h</label>
+        <link refid="messages_2msg__queue_8h"/>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1671">
+        <label>rpcregisterhelpers.h</label>
+        <link refid="rpcregisterhelpers_8h"/>
+        <childnode refid="1672" relation="include">
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>basic_block.h</label>
+        <link refid="basic__block_8h"/>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1673">
+        <label>flowgraph.h</label>
+        <link refid="flowgraph_8h"/>
+      </node>
+      <node id="1668">
+        <label>sync_interpolator.h</label>
+        <link refid="sync__interpolator_8h"/>
+      </node>
+      <node id="1675">
+        <label>top_block.h</label>
+        <link refid="top__block_8h"/>
+      </node>
+      <node id="1687">
+        <label>block_detail.h</label>
+        <link refid="block__detail_8h"/>
+      </node>
+      <node id="1666">
+        <label>sync_block.h</label>
+        <link refid="sync__block_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+      </node>
+      <node id="1681">
+        <label>thrift_application_base.h</label>
+        <link refid="thrift__application__base_8h"/>
+        <childnode refid="1682" relation="include">
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>msg_queue.h</label>
+        <link refid="msg__queue_8h"/>
+      </node>
+      <node id="1680">
+        <label>prefs.h</label>
+        <link refid="prefs_8h"/>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+      </node>
+      <node id="1676">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+      </node>
+      <node id="1669">
+        <label>tagged_stream_block.h</label>
+        <link refid="tagged__stream__block_8h"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1thread">gr::thread</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2009-2014<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_THREAD_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_THREAD_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnuradio_2api_8h" kindref="compound">gnuradio/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/mutex.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/locks.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/condition_variable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/barrier.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>||<sp/>defined(__WIN32__)<sp/>||<sp/>defined(WIN32)</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gr<sp/>{</highlight></codeline>
+<codeline lineno="45" refid="namespacegr_1_1thread" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">boost::thread</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>;</highlight></codeline>
+<codeline lineno="48" refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">boost::mutex</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">mutex</ref>;</highlight></codeline>
+<codeline lineno="49" refid="namespacegr_1_1thread_1a52544c0aefde22b130e0beabece1683b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::unique_lock&lt;boost::mutex&gt;<sp/><ref refid="namespacegr_1_1thread_1a52544c0aefde22b130e0beabece1683b" kindref="member">scoped_lock</ref>;</highlight></codeline>
+<codeline lineno="50" refid="namespacegr_1_1thread_1ac97ac5b9c82b9ec0cefde945f89b90b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1ac97ac5b9c82b9ec0cefde945f89b90b2" kindref="member">boost::condition_variable</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1ac97ac5b9c82b9ec0cefde945f89b90b2" kindref="member">condition_variable</ref>;</highlight></codeline>
+<codeline lineno="51" refid="namespacegr_1_1thread_1a2207528267c984d64944456ddb325788" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a2207528267c984d64944456ddb325788" kindref="member">boost::barrier</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1a2207528267c984d64944456ddb325788" kindref="member">barrier</ref>;</highlight></codeline>
+<codeline lineno="52" refid="namespacegr_1_1thread_1a1c3e5b4f32a4355374fa62a539cb5dfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;barrier&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1_1thread_1a1c3e5b4f32a4355374fa62a539cb5dfe" kindref="member">barrier_sptr</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>||<sp/>defined(__WIN32__)<sp/>||<sp/>defined(WIN32)</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>HANDLE<sp/><ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(macintosh)<sp/>||<sp/>defined(__APPLE__)<sp/>||<sp/>defined(__APPLE_CC__)</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pthread_t<sp/><ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="61" refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pthread_t<sp/><ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/><ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1af9dc23036fa4f6453bbaa7b3060471e9" kindref="member">get_current_thread_id</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1aab5195edcd94db5c71ecbfef9d578fb7" kindref="member">thread_bind_to_processor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;mask);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1aab5195edcd94db5c71ecbfef9d578fb7" kindref="member">thread_bind_to_processor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1aab5195edcd94db5c71ecbfef9d578fb7" kindref="member">thread_bind_to_processor</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;mask);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1aab5195edcd94db5c71ecbfef9d578fb7" kindref="member">thread_bind_to_processor</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a889aef68ac073f83d081d3bcd891690a" kindref="member">thread_unbind</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a889aef68ac073f83d081d3bcd891690a" kindref="member">thread_unbind</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a64a376b8fa10a566269f9e7a86b97205" kindref="member">thread_priority</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a85100d09be39d5d2370b8b5ae51e8791" kindref="member">set_thread_priority</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>priority);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1thread_1a63869d62882eb2216b0fa8c95ef82854" kindref="member">set_thread_name</ref>(<ref refid="namespacegr_1_1thread_1aa33c619fe30adea573dec1d14ae7ff53" kindref="member">gr_thread_t</ref><sp/><ref refid="namespacegr_1_1thread_1a8db1729ee02223979eb266b92f6cdd64" kindref="member">thread</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>gr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_THREAD_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread.h"/>
+  </compounddef>
+</doxygen>

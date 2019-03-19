@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tsb__vector__sink__b" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::tsb_vector_sink_b</compoundname>
+    <basecompoundref prot="public" virt="virtual">tagged_stream_block</basecompoundref>
+    <includes refid="tsb__vector__sink__b_8h" local="no">tsb_vector_sink_b.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tsb__vector__sink__b_1a14f08f368bca6252a09ff7a9fb97fc70" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tsb__vector__sink__b" kindref="compound">tsb_vector_sink_b</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tsb_vector_sink_b&gt; gr::blocks::tsb_vector_sink_b::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tsb__vector__sink__b_1a713e1d84da59065fd0b6bf5441f6c23b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tsb_vector_sink_b::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tsb__vector__sink__b_1a9cab0c0e69dd3c2d2fae4a88b71d0fab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::vector&lt; unsigned char &gt; &gt;</type>
+        <definition>virtual std::vector&lt;std::vector&lt;unsigned char&gt; &gt; gr::blocks::tsb_vector_sink_b::data</definition>
+        <argsstring>() const =0</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tsb__vector__sink__b_1a5aa22c9a24acb51aedfc9e8b40b2f7d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; tag_t &gt;</type>
+        <definition>virtual std::vector&lt;tag_t&gt; gr::blocks::tsb_vector_sink_b::tags</definition>
+        <argsstring>() const =0</argsstring>
+        <name>tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Doesn&apos;t include the TSB tags. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tsb__vector__sink__b_1ac21aa8efbc22ef4e290e626cd9800a50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1a14f08f368bca6252a09ff7a9fb97fc70" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tsb_vector_sink_b::make</definition>
+        <argsstring>(int vlen=1, const std::string &amp;tsb_key=&quot;ts_last&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tsb_key</declname>
+          <defval>&quot;ts_last&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsb_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tagged Stream Key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A vector sink for tagged streams. </para>    </briefdescription>
+    <detaileddescription>
+<para>Unlike a <ref refid="classgr_1_1blocks_1_1vector__sink__f" kindref="compound">gr::blocks::vector_sink_f</ref>, this only works with tagged streams. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="796">
+        <label>gr::blocks::tsb_vector_sink_b</label>
+        <link refid="classgr_1_1blocks_1_1tsb__vector__sink__b"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>gr::tagged_stream_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="798">
+        <label>gr::blocks::tsb_vector_sink_b</label>
+        <link refid="classgr_1_1blocks_1_1tsb__vector__sink__b"/>
+        <childnode refid="799" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="799">
+        <label>gr::tagged_stream_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/tsb_vector_sink_b.h" bodystart="41" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1a9cab0c0e69dd3c2d2fae4a88b71d0fab" prot="public" virt="pure-virtual"><scope>gr::blocks::tsb_vector_sink_b</scope><name>data</name></member>
+      <member refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1ac21aa8efbc22ef4e290e626cd9800a50" prot="public" virt="non-virtual"><scope>gr::blocks::tsb_vector_sink_b</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1a713e1d84da59065fd0b6bf5441f6c23b" prot="public" virt="pure-virtual"><scope>gr::blocks::tsb_vector_sink_b</scope><name>reset</name></member>
+      <member refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1a14f08f368bca6252a09ff7a9fb97fc70" prot="public" virt="non-virtual"><scope>gr::blocks::tsb_vector_sink_b</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1tsb__vector__sink__b_1a5aa22c9a24acb51aedfc9e8b40b2f7d4" prot="public" virt="pure-virtual"><scope>gr::blocks::tsb_vector_sink_b</scope><name>tags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

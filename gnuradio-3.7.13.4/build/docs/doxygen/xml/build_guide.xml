@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="build_guide" kind="page">
+    <compoundname>build_guide</compoundname>
+    <title>Build Instructions and Information</title>
+    <detaileddescription>
+<sect1 id="build_guide_1dependencies">
+<title>Dependencies</title>
+<para>The list of GNU Radio dependencies and the minimum required versions, if any, to build the various GNU Radio components.</para><para>Most of these components do not need to be individually compiled or installed. Instead, rely on your operating system&apos;s package manager or binary installation process (the <bold>apt-get</bold> or <bold>apt</bold> system in Debian and Ubuntu, <bold>yum</bold> or <bold>dnf</bold> in RedHat and Fedora, etc.). GNU Radio tries to keep an up-to-date build guide for the majority of the supported operating systems on gnuradio.org (<ulink url="https://wiki.gnuradio.org/index.php/BuildGuide">https://wiki.gnuradio.org/index.php/BuildGuide</ulink>).</para><para>Not all dependencies are required for all components, and not all components are required for a given installation. The list of required components is determined by what the user requires from GNU Radio. If, for example, you do not use any Comedi-based hardware, do not worry about building gr-comedi.</para><para>Before trying to build these from source, please try your system&apos;s installation tool (apt-get, pkg_install, YaST, yum, urpmi, etc.) first. Most recent systems have these packages available.</para><sect2 id="build_guide_1dep_global">
+<title>Global Dependencies</title>
+<para><itemizedlist>
+<listitem><para>git <ulink url="http://git-scm.com/downloads">http://git-scm.com/downloads</ulink> </para></listitem>
+<listitem><para>cmake (&gt;= 2.8.12) <ulink url="http://www.cmake.org/cmake/resources/software.html">http://www.cmake.org/cmake/resources/software.html</ulink> </para></listitem>
+<listitem><para>boost (&gt;= 1.48) <ulink url="http://www.boost.org/users/download/">http://www.boost.org/users/download/</ulink> </para></listitem>
+<listitem><para>cppunit (&gt;= 1.12.1) <ulink url="http://freedesktop.org/wiki/Software/cppunit/">http://freedesktop.org/wiki/Software/cppunit/</ulink> </para></listitem>
+<listitem><para>mako (&gt;= 0.4.2) <ulink url="http://www.makotemplates.org/download.html">http://www.makotemplates.org/download.html</ulink> </para></listitem>
+<listitem><para>log4cpp (&gt;= 1.0) <ulink url="http://log4cpp.sourceforge.net/">http://log4cpp.sourceforge.net/</ulink></para></listitem>
+</itemizedlist>
+A C/C++ compiler is also required. These are known to work:</para><para><itemizedlist>
+<listitem><para>gcc/g++ (&gt;= 4.4.0) <ulink url="https://gcc.gnu.org/install/download.html">https://gcc.gnu.org/install/download.html</ulink> </para></listitem>
+<listitem><para>clang/clang++ (&gt;= 3.3.0) <ulink url="http://releases.llvm.org/download.html">http://releases.llvm.org/download.html</ulink></para></listitem>
+</itemizedlist>
+Other compilers may work, but are not supported.</para></sect2>
+<sect2 id="build_guide_1dep_python">
+<title>Python Wrappers</title>
+<para><itemizedlist>
+<listitem><para>python (&gt;= 2.7) <ulink url="http://www.python.org/download/">http://www.python.org/download/</ulink> </para></listitem>
+<listitem><para>swig (&gt;= 2.0.4) <ulink url="http://www.swig.org/download.html">http://www.swig.org/download.html</ulink> </para></listitem>
+<listitem><para>numpy (&gt;= 1.1.0) <ulink url="http://sourceforge.net/projects/numpy/files/NumPy/">http://sourceforge.net/projects/numpy/files/NumPy/</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_docs">
+<title>docs: Building the documentation</title>
+<para><itemizedlist>
+<listitem><para>doxygen (&gt;= 1.5) <ulink url="http://www.stack.nl/~dimitri/doxygen/download.html">http://www.stack.nl/~dimitri/doxygen/download.html</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_grc">
+<title>grc: The GNU Radio Companion</title>
+<para><itemizedlist>
+<listitem><para>Cheetah (&gt;= 2.0) <ulink url="http://www.cheetahtemplate.org/">http://www.cheetahtemplate.org/</ulink> </para></listitem>
+<listitem><para>pygtk (&gt;= 2.10) <ulink url="http://www.pygtk.org/downloads.html">http://www.pygtk.org/downloads.html</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_fft">
+<title>gr-fft: Fast Frequency Transform</title>
+<para><itemizedlist>
+<listitem><para>fftw3f (&gt;= 3.0.1) <ulink url="http://www.fftw.org/download.html">http://www.fftw.org/download.html</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_zeromq">
+<title>gr-zeromq: ZeroMQ Network layer</title>
+<para><itemizedlist>
+<listitem><para>ZeroMQ (&gt;= 3.2.5) <ulink url="http://www.zeromq.org/">http://www.zeromq.org/</ulink> </para></listitem>
+<listitem><para>cppzmq (&gt;= git 6c17af2) <ulink url="https://github.com/zeromq/cppzmq">https://github.com/zeromq/cppzmq</ulink></para></listitem>
+</itemizedlist>
+cppzmq is included (undocumentedly) in the debian and Ubuntu libzmq3-dev packages.</para></sect2>
+<sect2 id="build_guide_1dep_wavelet">
+<title>gr-wavelet: Collection of wavelet blocks</title>
+<para><itemizedlist>
+<listitem><para>gsl (&gt;= 1.10) <ulink url="http://gnuwin32.sourceforge.net/packages/gsl.htm">http://gnuwin32.sourceforge.net/packages/gsl.htm</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_qtgui">
+<title>gr-qtgui: The QT-based Graphical User Interface</title>
+<para><itemizedlist>
+<listitem><para>qt4 (&gt;= 4.4.0) <ulink url="http://qt.nokia.com/downloads/">http://qt.nokia.com/downloads/</ulink> </para></listitem>
+<listitem><para>qwt (&gt;= 5.2.0) <ulink url="http://sourceforge.net/projects/qwt/">http://sourceforge.net/projects/qwt/</ulink> </para></listitem>
+<listitem><para>pyqt (&gt;= 4.10.0) <ulink url="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_wxgui">
+<title>gr-wxgui: The WX-based Graphical User Interface</title>
+<para><itemizedlist>
+<listitem><para>wxpython (&gt;= 2.8) <ulink url="http://www.wxpython.org/">http://www.wxpython.org/</ulink> </para></listitem>
+<listitem><para>python-lxml (&gt;= 1.3.6) <ulink url="http://lxml.de/">http://lxml.de/</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_audio">
+<title>gr-audio: Audio Subsystems (system/OS dependent)</title>
+<para><itemizedlist>
+<listitem><para>audio-alsa (&gt;= 0.9) <ulink url="http://www.alsa-project.org">http://www.alsa-project.org</ulink> </para></listitem>
+<listitem><para>audio-jack (&gt;= 0.8) <ulink url="http://jackaudio.org/">http://jackaudio.org/</ulink> </para></listitem>
+<listitem><para>portaudio (&gt;= 19) <ulink url="http://www.portaudio.com/">http://www.portaudio.com/</ulink> </para></listitem>
+<listitem><para>audio-oss (&gt;= 1.0) <ulink url="http://www.opensound.com/oss.html">http://www.opensound.com/oss.html</ulink> </para></listitem>
+<listitem><para>audio-osx </para></listitem>
+<listitem><para>audio-windows</para></listitem>
+</itemizedlist>
+<bold>Optional</bold></para><para>It is not necessary to satisfy all of these dependencies; just the one(s) that are right for your system. On Linux, don&apos;t expect audio-osx and audio-windows to be either satisfied or built.</para></sect2>
+<sect2 id="build_guide_1dep_uhd">
+<title>uhd: The Ettus USRP Hardware Driver Interface</title>
+<para><itemizedlist>
+<listitem><para>uhd (&gt;= 3.5.5) <ulink url="https://www.ettus.com/downloads">https://www.ettus.com/downloads</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_fdc">
+<title>gr-fcd: The FunCube Dongle hardware interface (only if you want to use one)</title>
+<para><itemizedlist>
+<listitem><para>libUSB(x) (version platform-dependent) <ulink url="http://www.libusb.info/">http://www.libusb.info/</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_video_sdl">
+<title>gr-video-sdl: PAL and NTSC display (rarely used)</title>
+<para><itemizedlist>
+<listitem><para>SDL (&gt;= 1.2.0) <ulink url="http://www.libsdl.org/download-1.2.php">http://www.libsdl.org/download-1.2.php</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+<sect2 id="build_guide_1dep_gr_comedi">
+<title>gr-comedi: Comedi hardware interface (only if you know what this is)</title>
+<para><itemizedlist>
+<listitem><para>comedilib (&gt;= 0.8.1) <ulink url="http://www.comedi.org/">http://www.comedi.org/</ulink></para></listitem>
+</itemizedlist>
+<ref refid="page_ctrlport" kindref="compound">ControlPort</ref> may use various backends to perform the RPC process, and each is its own dependency.</para><para>Currently, ControlPort only supports the Apache Thrift backend.</para><para><itemizedlist>
+<listitem><para>thrift (&gt;= 0.9.2) <ulink url="https://thrift.apache.org/">https://thrift.apache.org/</ulink></para></listitem>
+</itemizedlist>
+To have nice formula formatting in doxygen, you&apos;ll need LaTeX; for python docs, sphinx:</para><para><itemizedlist>
+<listitem><para>latex (&gt;= 2.0) <ulink url="http://www.latex-project.org/">http://www.latex-project.org/</ulink> </para></listitem>
+<listitem><para>sphinx (&gt;= 1.2.2) <ulink url="http://www.sphinx-doc.org/">http://www.sphinx-doc.org/</ulink></para></listitem>
+</itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="build_guide_1build_gr_cmake">
+<title>Building GNU Radio</title>
+<para>GNU Radio is built using the CMake build system (<ulink url="http://www.cmake.org/">http://www.cmake.org/</ulink>). The standard build method is as follows:</para><para><programlisting><codeline><highlight class="normal">$<sp/>mkdir<sp/>$(builddir)</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>cd<sp/>$(builddir)</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>cmake<sp/>[OPTIONS]<sp/>$(srcdir)</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>make</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>make<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>sudo<sp/>make<sp/>install</highlight></codeline>
+</programlisting></para><para>The $(builddir) is the directory in which the code is built. This <bold>cannot</bold> be the same path as where the source code resides. Often, $(builddir) is $(srcdir)/build.</para></sect1>
+<sect1 id="build_guide_1cmake_options">
+<title>CMake Options</title>
+<para>Options can be used to specify where to find various library or include file dependencies that are not automatically being found (-DCMAKE_PREFIX_PATH) or set the install prefix (-DCMAKE_INSTALL_PREFIX=(dir)).</para><para>Components can also be enabled and disabled through the options. For a component named <emphasis>gr-comp</emphasis>, the option to disable would look like: -DENABLE_GR_COMP=off. The &quot;off&quot; could also be &quot;false&quot; or &quot;no&quot;, and cmake is not case sensitive about these options. Similarly, &quot;true&quot;, &quot;on&quot;, or &quot;yes&quot; will turn this component on. All components are enabled by default so long as their dependencies are met.</para><para>An example is -DENABLE_PYTHON=False turns off building any Python or Swigging components. The result will be the GNU Radio libraries and C++ programs/applications/examples. No Python or GRC files will be built or installed.</para><para>The -DENABLE_DEFAULT=False can be used to disable all components. Individual components can then be selectively turned back on. For example, just buidling the VOLK library can be done with this:</para><para><programlisting><codeline><highlight class="normal">cmake<sp/>-DENABLE_DEFAULT=Off<sp/>-DENABLE_VOLK=True<sp/>&lt;srcdir&gt;</highlight></codeline>
+</programlisting></para><para>The build type allows you to specify the build as a debug or release version. Each type sets different flags for different purposes. To set the build type, use:</para><para><programlisting><codeline><highlight class="normal">-DCMAKE_BUILD_TYPE=&lt;type&gt;</highlight></codeline>
+</programlisting></para><para>The available build types and the C/C++ flags they set are:</para><para><itemizedlist>
+<listitem><para>None: No flags; define them yourself </para></listitem>
+<listitem><para>Release: -O3 </para></listitem>
+<listitem><para>Debug: -O2 -g </para></listitem>
+<listitem><para>RelWithDebInfo: -O3 -g </para></listitem>
+<listitem><para>MinSizeRel: -Os </para></listitem>
+<listitem><para>NoOptWithASM: -O0 -g -save-temps </para></listitem>
+<listitem><para>O2WithASM: -O2 -g -save-temps </para></listitem>
+<listitem><para>O3WithASM: -O3 -g -save-temps</para></listitem>
+</itemizedlist>
+If not specified, the &quot;Release&quot; mode is the default.</para><sect2 id="build_guide_1cmake_other">
+<title>Collection of CMake Flags</title>
+<para><itemizedlist>
+<listitem><para>CMAKE_BUILD_TYPE: Build profile type defined above. Default is &quot;release&quot;. </para></listitem>
+<listitem><para>CMAKE_INSTALL_PREFIX: Installation prefix path. Default is &quot;/usr/local&quot;. </para></listitem>
+<listitem><para>ENABLE_PYTHON: Turn Python bindings on/off. Default is True. </para></listitem>
+<listitem><para>ENABLE_GR_&lt;component&gt;: Turn any top-level component on/off. Default is True for all. </para></listitem>
+<listitem><para>ENABLE_GR_CTRLPORT: Turn Building ControlPort. Default is True </para></listitem>
+<listitem><para>ENABLE_PERFORMANCE_COUNTERS: Turn performance counters on/off in runtime. Default is True. </para></listitem>
+<listitem><para>ENABLE_ORC: tells VOLK enable/disable use of Orc. Default is True. </para></listitem>
+<listitem><para>ENABLE_STATIC_LIBS: build static library files. Default is False. </para></listitem>
+<listitem><para>CMAKE_TOOLCHAIN_FILE: A toolchain file to setup the CMake environment for cross-compiling.</para></listitem>
+</itemizedlist>
+Here are some other potentially helpful CMake flags. These are to help you specifically locate certain dependencies. While the CMake scripts themselves should generally find these for us, we can use these to help direct CMake to specific locations if we have installed a different version elsewhere on the system that CMake doesn&apos;t know about.</para><para><itemizedlist>
+<listitem><para>QWT_LIBRARIES: shared library to use for Qwt (in the form &lt;path&gt;/libqwt.so). </para></listitem>
+<listitem><para>QWT_INCLUDE_DIRS: path to Qwt include files (e.g., /usr/include/qwt). </para></listitem>
+<listitem><para>PYTHON_EXECUTABLE: Location of the &apos;python&apos; binary you want to use (e.g., /usr/bin/python2.7). </para></listitem>
+<listitem><para>PYTHON_INCLUDE_PATH: path to Python include files (e.g., /usr/include/python2.7). </para></listitem>
+<listitem><para>PYTHON_LIBRARY: Python&apos;s shared library location (e.g., /usr/lib/python2.7.so.1). </para></listitem>
+<listitem><para>Boost_INCLUDE_DIR: location of the &apos;boost&apos; header file directory (e.g., /usr/include). </para></listitem>
+<listitem><para>Boost_LIBRARY_DIRS: location of the libboost-xxx.so files (e.g., /usr/lib)</para></listitem>
+</itemizedlist>
+Other dependencies will have similar settings like these to properly locate them.</para></sect2>
+<sect2 id="build_guide_1build_gr_cmake_e100">
+<title>Building for the E100</title>
+<para>To build GNU Radio on the Ettus Research E100 embedded platforms, CMake has to know that the processors uses the NEON extensions. Use the</para><para><programlisting><codeline><highlight class="normal">cmake<sp/>-DCMAKE_CXX_FLAGS:<ref refid="namespacegr_1_1qtgui_1a13eab162ccfd0539c51bc63ce28ab3b7aaec9675c063959e4282c0ea8c9614988" kindref="member">STRING</ref>=</highlight><highlight class="stringliteral">&quot;-mcpu=cortex-a8<sp/>-mfpu=neon<sp/>-mfloat-abi=softfp<sp/>-g&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-DCMAKE_C_FLAGS:<ref refid="namespacegr_1_1qtgui_1a13eab162ccfd0539c51bc63ce28ab3b7aaec9675c063959e4282c0ea8c9614988" kindref="member">STRING</ref>=</highlight><highlight class="stringliteral">&quot;-mcpu=cortex-a8<sp/>-mfpu=neon<sp/>-mfloat-abi=softfp<sp/>-g&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;gr_source_dir&gt;</highlight></codeline>
+</programlisting> </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

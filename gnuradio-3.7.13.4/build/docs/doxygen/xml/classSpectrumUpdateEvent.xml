@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classSpectrumUpdateEvent" kind="class" prot="public">
+    <compoundname>SpectrumUpdateEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QEvent</basecompoundref>
+    <includes refid="spectrumUpdateEvents_8h" local="no">gnuradio/qtgui/spectrumUpdateEvents.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1aea10df939a5f27f04edccff93aa29541" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* SpectrumUpdateEvent::_fftPoints</definition>
+        <argsstring></argsstring>
+        <name>_fftPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a56a5b4179e198a398a016777199c4b9e" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumUpdateEvent::_realDataTimeDomainPoints</definition>
+        <argsstring></argsstring>
+        <name>_realDataTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a54a78becb334de748a8946b0f2023263" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumUpdateEvent::_imagDataTimeDomainPoints</definition>
+        <argsstring></argsstring>
+        <name>_imagDataTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="72" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a5779767126b32244e8624e4701efd2ad" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SpectrumUpdateEvent::_numFFTDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numFFTDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a50a035bda0cc76722fb035d5cff1c094" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SpectrumUpdateEvent::_numTimeDomainDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numTimeDomainDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1aec445e409607760c8ccbff92e059d5aa" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumUpdateEvent::_dataTimestamp</definition>
+        <argsstring></argsstring>
+        <name>_dataTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="75" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a15e6118f8c7101f000dcb51a51f5e888" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumUpdateEvent::_repeatDataFlag</definition>
+        <argsstring></argsstring>
+        <name>_repeatDataFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1ac87a7e86907e94d4d4baae79cd5171aa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumUpdateEvent::_lastOfMultipleUpdateFlag</definition>
+        <argsstring></argsstring>
+        <name>_lastOfMultipleUpdateFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a53ab0568b87436ba9abbb07cc437816b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumUpdateEvent::_eventGeneratedTimestamp</definition>
+        <argsstring></argsstring>
+        <name>_eventGeneratedTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumUpdateEvent_1a9a3315d23619b491fb10b4411ef8c7f3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumUpdateEvent::_droppedFFTFrames</definition>
+        <argsstring></argsstring>
+        <name>_droppedFFTFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="79" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a40d5fe61b33bdfce9569bb93d05300e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumUpdateEvent::SpectrumUpdateEvent</definition>
+        <argsstring>(const float *fftPoints, const uint64_t numFFTDataPoints, const double *realTimeDomainPoints, const double *imagTimeDomainPoints, const uint64_t numTimeDomainDataPoints, const gr::high_res_timer_type dataTimestamp, const bool repeatDataFlag, const bool lastOfMultipleUpdateFlag, const gr::high_res_timer_type generatedTimestamp, const int droppedFFTFrames)</argsstring>
+        <name>SpectrumUpdateEvent</name>
+        <param>
+          <type>const float *</type>
+          <declname>fftPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numFFTDataPoints</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>realTimeDomainPoints</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>imagTimeDomainPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numTimeDomainDataPoints</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+          <declname>dataTimestamp</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>repeatDataFlag</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>lastOfMultipleUpdateFlag</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+          <declname>generatedTimestamp</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>droppedFFTFrames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a4ad72cc4954ca8e3e29d3c311307e8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumUpdateEvent::~SpectrumUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~SpectrumUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a1cdfb05bef9d778a7d64be931132f709" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float *</type>
+        <definition>const float* SpectrumUpdateEvent::getFFTPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getFFTPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a22678cd02217ae787400ec0ce0b03c1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double *</type>
+        <definition>const double* SpectrumUpdateEvent::getRealTimeDomainPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getRealTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a92c87c9f47a38ff7c1a57678ee924f97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const double *</type>
+        <definition>const double* SpectrumUpdateEvent::getImagTimeDomainPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getImagTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a2dfd2eab810e5d79440eebe606453629" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t SpectrumUpdateEvent::getNumFFTDataPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumFFTDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a60aa08e0eba981d88ead049b35c337be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t SpectrumUpdateEvent::getNumTimeDomainDataPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumTimeDomainDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a09f58a5c6cccc759c70d63ed723ba151" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumUpdateEvent::getDataTimestamp</definition>
+        <argsstring>() const </argsstring>
+        <name>getDataTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a734b58237eb0fb6ebb237e6018aa5316" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpectrumUpdateEvent::getRepeatDataFlag</definition>
+        <argsstring>() const </argsstring>
+        <name>getRepeatDataFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1a56344d40888b41706d0ad88da46efe5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpectrumUpdateEvent::getLastOfMultipleUpdateFlag</definition>
+        <argsstring>() const </argsstring>
+        <name>getLastOfMultipleUpdateFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1afca048011b9e88589f74d9059b33ff5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumUpdateEvent::getEventGeneratedTimestamp</definition>
+        <argsstring>() const </argsstring>
+        <name>getEventGeneratedTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumUpdateEvent_1aca765f052a32a2754b3f524d27170ff0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpectrumUpdateEvent::getDroppedFFTFrames</definition>
+        <argsstring>() const </argsstring>
+        <name>getDroppedFFTFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10071">
+        <label>QEvent</label>
+      </node>
+      <node id="10070">
+        <label>SpectrumUpdateEvent</label>
+        <link refid="classSpectrumUpdateEvent"/>
+        <childnode refid="10071" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10073">
+        <label>QEvent</label>
+      </node>
+      <node id="10072">
+        <label>SpectrumUpdateEvent</label>
+        <link refid="classSpectrumUpdateEvent"/>
+        <childnode refid="10073" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="40" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classSpectrumUpdateEvent_1aec445e409607760c8ccbff92e059d5aa" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_dataTimestamp</name></member>
+      <member refid="classSpectrumUpdateEvent_1a9a3315d23619b491fb10b4411ef8c7f3" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_droppedFFTFrames</name></member>
+      <member refid="classSpectrumUpdateEvent_1a53ab0568b87436ba9abbb07cc437816b" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_eventGeneratedTimestamp</name></member>
+      <member refid="classSpectrumUpdateEvent_1aea10df939a5f27f04edccff93aa29541" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_fftPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a54a78becb334de748a8946b0f2023263" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_imagDataTimeDomainPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1ac87a7e86907e94d4d4baae79cd5171aa" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_lastOfMultipleUpdateFlag</name></member>
+      <member refid="classSpectrumUpdateEvent_1a5779767126b32244e8624e4701efd2ad" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_numFFTDataPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a50a035bda0cc76722fb035d5cff1c094" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_numTimeDomainDataPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a56a5b4179e198a398a016777199c4b9e" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_realDataTimeDomainPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a15e6118f8c7101f000dcb51a51f5e888" prot="private" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>_repeatDataFlag</name></member>
+      <member refid="classSpectrumUpdateEvent_1a09f58a5c6cccc759c70d63ed723ba151" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getDataTimestamp</name></member>
+      <member refid="classSpectrumUpdateEvent_1aca765f052a32a2754b3f524d27170ff0" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getDroppedFFTFrames</name></member>
+      <member refid="classSpectrumUpdateEvent_1afca048011b9e88589f74d9059b33ff5e" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getEventGeneratedTimestamp</name></member>
+      <member refid="classSpectrumUpdateEvent_1a1cdfb05bef9d778a7d64be931132f709" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getFFTPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a92c87c9f47a38ff7c1a57678ee924f97" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getImagTimeDomainPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a56344d40888b41706d0ad88da46efe5d" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getLastOfMultipleUpdateFlag</name></member>
+      <member refid="classSpectrumUpdateEvent_1a2dfd2eab810e5d79440eebe606453629" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getNumFFTDataPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a60aa08e0eba981d88ead049b35c337be" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getNumTimeDomainDataPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a22678cd02217ae787400ec0ce0b03c1e" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getRealTimeDomainPoints</name></member>
+      <member refid="classSpectrumUpdateEvent_1a734b58237eb0fb6ebb237e6018aa5316" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>getRepeatDataFlag</name></member>
+      <member refid="classSpectrumUpdateEvent_1a40d5fe61b33bdfce9569bb93d05300e2" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>SpectrumUpdateEvent</name></member>
+      <member refid="classSpectrumUpdateEvent_1a4ad72cc4954ca8e3e29d3c311307e8ab" prot="public" virt="non-virtual"><scope>SpectrumUpdateEvent</scope><name>~SpectrumUpdateEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

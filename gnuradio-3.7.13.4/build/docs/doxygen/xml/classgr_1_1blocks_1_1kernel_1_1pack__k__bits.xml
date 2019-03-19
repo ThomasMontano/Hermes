@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits" kind="class" prot="public">
+    <compoundname>gr::blocks::kernel::pack_k_bits</compoundname>
+    <includes refid="pack__k__bits_8h" local="no">gnuradio/blocks/pack_k_bits.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a0b2a5b9ca606e130c505a2544dd903d0" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::blocks::kernel::pack_k_bits::d_k</definition>
+        <argsstring></argsstring>
+        <name>d_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a1629bc1ba1e316b8df21c18780cec30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::blocks::kernel::pack_k_bits::pack_k_bits</definition>
+        <argsstring>(unsigned k)</argsstring>
+        <name>pack_k_bits</name>
+        <param>
+          <type>unsigned</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Make a <ref refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits" kindref="compound">pack_k_bits</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits to be packed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1ac3df3c0d660d73ff3aac69c8b509f909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::blocks::kernel::pack_k_bits::~pack_k_bits</definition>
+        <argsstring>()</argsstring>
+        <name>~pack_k_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a7e2119301fc8c7c2a1300804a1111ce5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::blocks::kernel::pack_k_bits::pack</definition>
+        <argsstring>(unsigned char *bytes, const unsigned char *bits, int nbytes) const </argsstring>
+        <name>pack</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+<para>Perform the packing. </para>        </briefdescription>
+        <detaileddescription>
+<para>This block performs no bounds checking. It assumes that the input, <computeroutput>in</computeroutput>, has of length k*nbytes and that the output vector, <computeroutput>out</computeroutput>, has <computeroutput>nbytes</computeroutput> available for writing.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output vector (k-bits per byte) of the unpacked data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input vector of bits to pack </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of output bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1afb6e3a78a293ccb0546cfd308711365a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::blocks::kernel::pack_k_bits::pack_rev</definition>
+        <argsstring>(unsigned char *bytes, const unsigned char *bits, int nbytes) const </argsstring>
+        <name>pack_rev</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <ref refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a7e2119301fc8c7c2a1300804a1111ce5" kindref="member">pack()</ref> but reverses the bits. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a29e6d119c24a01b1ce3ff8b83d226e03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::blocks::kernel::pack_k_bits::k</definition>
+        <argsstring>() const </argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts a vector of bytes with 1 bit in the LSB to a byte with k relevant bits. </para>    </briefdescription>
+    <detaileddescription>
+<para>Example: k = 4 in = [0,1,0,1, 0x81,0x00,0x00,0x00] out = [0x05, 0x08]</para><para>k = 8 in = [1,1,1,1, 0,1,0,1, 0,0,0,0, 1,0,0,0] out = [0xf5, 0x08] </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits.h" bodystart="47" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a0b2a5b9ca606e130c505a2544dd903d0" prot="private" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>d_k</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a29e6d119c24a01b1ce3ff8b83d226e03" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>k</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a7e2119301fc8c7c2a1300804a1111ce5" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>pack</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1a1629bc1ba1e316b8df21c18780cec30d" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>pack_k_bits</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1afb6e3a78a293ccb0546cfd308711365a" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>pack_rev</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1pack__k__bits_1ac3df3c0d660d73ff3aac69c8b509f909" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::pack_k_bits</scope><name>~pack_k_bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

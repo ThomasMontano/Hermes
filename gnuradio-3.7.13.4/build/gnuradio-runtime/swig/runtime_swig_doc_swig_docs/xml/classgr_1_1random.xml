@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1random" kind="class" prot="public">
+    <compoundname>gr::random</compoundname>
+    <includes refid="random_8h" local="no">random.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1random_1a9e67633f5faa44bf11823441db200750" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long gr::random::d_seed</definition>
+        <argsstring></argsstring>
+        <name>d_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1ad51359b8b534fed826f451a601d56669" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::random::d_gauss_stored</definition>
+        <argsstring></argsstring>
+        <name>d_gauss_stored</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1ac1632a7ea50a75b8cf1065bcc4fa48ba" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::random::d_gauss_value</definition>
+        <argsstring></argsstring>
+        <name>d_gauss_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1a567633725592e4572486ea0c15e769db" prot="protected" static="no" mutable="no">
+        <type>boost::mt19937 *</type>
+        <definition>boost::mt19937* gr::random::d_rng</definition>
+        <argsstring></argsstring>
+        <name>d_rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1adf4ec6bfe1d3eac5f42ce7a180b0f466" prot="protected" static="no" mutable="no">
+        <type>boost::uniform_real&lt; float &gt; *</type>
+        <definition>boost::uniform_real&lt;float&gt;* gr::random::d_uniform</definition>
+        <argsstring></argsstring>
+        <name>d_uniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1a222ec4c0096070571a22bb58b3b98676" prot="protected" static="no" mutable="no">
+        <type>boost::uniform_int *</type>
+        <definition>boost::uniform_int* gr::random::d_integer_dis</definition>
+        <argsstring></argsstring>
+        <name>d_integer_dis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1aecc823e8ca006013a71d82c8f15d42ce" prot="protected" static="no" mutable="no">
+        <type>boost::variate_generator&lt; boost::mt19937 &amp;, boost::uniform_real&lt; float &gt; &gt; *</type>
+        <definition>boost::variate_generator&lt;boost::mt19937&amp;, boost::uniform_real&lt;float&gt; &gt;* gr::random::d_generator</definition>
+        <argsstring></argsstring>
+        <name>d_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1random_1a555e125e89e6d1d1b626c09d875bc2c1" prot="protected" static="no" mutable="no">
+        <type>boost::variate_generator&lt; boost::mt19937 &amp;, boost::uniform_int&lt;&gt; &gt; *</type>
+        <definition>boost::variate_generator&lt;boost::mt19937&amp;, boost::uniform_int&lt;&gt; &gt;* gr::random::d_integer_generator</definition>
+        <argsstring></argsstring>
+        <name>d_integer_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1random_1a04e98b1d458c6dadf47b312980d2c342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::random::random</definition>
+        <argsstring>(unsigned int seed=0, int min_integer=0, int max_integer=2)</argsstring>
+        <name>random</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>seed</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_integer</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_integer</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a77c4297c43a371b87580fae77ac2717c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::random::~random</definition>
+        <argsstring>()</argsstring>
+        <name>~random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a173157073396968c69eb1092d6094062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::random::reseed</definition>
+        <argsstring>(unsigned int seed)</argsstring>
+        <name>reseed</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Change the seed for the initialized number generator. seed = 0 initializes the random number generator with the system time. Note that a fast initialization of various instances can result in the same seed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a1c133baa740d9c8a289f6659179b198e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::random::set_integer_limits</definition>
+        <argsstring>(const int minimum, const int maximum)</argsstring>
+        <name>set_integer_limits</name>
+        <param>
+          <type>const int</type>
+          <declname>minimum</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set minimum and maximum for integer random number generator. Limits are [minimum, maximum) Default: [0, std::numeric_limits&lt; IntType &gt;::max)] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1ad537bc99ace3e630ab6d1272a8f201d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::random::ran_int</definition>
+        <argsstring>()</argsstring>
+        <name>ran_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Uniform random integers in the range set by &apos;set_integer_limits&apos; [min, max). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a60f6cef7165f7f067c91ee7b692e2b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::random::ran1</definition>
+        <argsstring>()</argsstring>
+        <name>ran1</name>
+        <briefdescription>
+<para>Uniform random numbers in the range [0.0, 1.0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1afa6cf9e3e25f320518cfa69f6b0a6752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::random::gasdev</definition>
+        <argsstring>()</argsstring>
+        <name>gasdev</name>
+        <briefdescription>
+<para>Normally distributed random numbers (Gaussian distribution with zero mean and variance 1) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a89cb6c7a1895a13ffac47245a063ec98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::random::laplacian</definition>
+        <argsstring>()</argsstring>
+        <name>laplacian</name>
+        <briefdescription>
+<para>Laplacian distributed random numbers with zero mean and variance 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a0e023537cf9bca1c665dbde67835876c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::random::rayleigh</definition>
+        <argsstring>()</argsstring>
+        <name>rayleigh</name>
+        <briefdescription>
+<para>Rayleigh distributed random numbers (zero mean and variance 1 for the underlying Gaussian distributions) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a53e3a4e8f003d23df06d5be4a7ae2670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::random::impulse</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>impulse</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: add description. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1random_1a806f27be06796e46df420769935c3518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::random::rayleigh_complex</definition>
+        <argsstring>()</argsstring>
+        <name>rayleigh_complex</name>
+        <briefdescription>
+<para>Normally distributed random numbers with zero mean and variance 1 on real and imaginary part. This results in a Rayleigh distribution for the amplitude and an uniform distribution for the phase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>pseudo random number generator </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/random.h" bodystart="39" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgr_1_1random_1ad51359b8b534fed826f451a601d56669" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_gauss_stored</name></member>
+      <member refid="classgr_1_1random_1ac1632a7ea50a75b8cf1065bcc4fa48ba" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_gauss_value</name></member>
+      <member refid="classgr_1_1random_1aecc823e8ca006013a71d82c8f15d42ce" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_generator</name></member>
+      <member refid="classgr_1_1random_1a222ec4c0096070571a22bb58b3b98676" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_integer_dis</name></member>
+      <member refid="classgr_1_1random_1a555e125e89e6d1d1b626c09d875bc2c1" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_integer_generator</name></member>
+      <member refid="classgr_1_1random_1a567633725592e4572486ea0c15e769db" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_rng</name></member>
+      <member refid="classgr_1_1random_1a9e67633f5faa44bf11823441db200750" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_seed</name></member>
+      <member refid="classgr_1_1random_1adf4ec6bfe1d3eac5f42ce7a180b0f466" prot="protected" virt="non-virtual"><scope>gr::random</scope><name>d_uniform</name></member>
+      <member refid="classgr_1_1random_1afa6cf9e3e25f320518cfa69f6b0a6752" prot="public" virt="non-virtual"><scope>gr::random</scope><name>gasdev</name></member>
+      <member refid="classgr_1_1random_1a53e3a4e8f003d23df06d5be4a7ae2670" prot="public" virt="non-virtual"><scope>gr::random</scope><name>impulse</name></member>
+      <member refid="classgr_1_1random_1a89cb6c7a1895a13ffac47245a063ec98" prot="public" virt="non-virtual"><scope>gr::random</scope><name>laplacian</name></member>
+      <member refid="classgr_1_1random_1a60f6cef7165f7f067c91ee7b692e2b48" prot="public" virt="non-virtual"><scope>gr::random</scope><name>ran1</name></member>
+      <member refid="classgr_1_1random_1ad537bc99ace3e630ab6d1272a8f201d0" prot="public" virt="non-virtual"><scope>gr::random</scope><name>ran_int</name></member>
+      <member refid="classgr_1_1random_1a04e98b1d458c6dadf47b312980d2c342" prot="public" virt="non-virtual"><scope>gr::random</scope><name>random</name></member>
+      <member refid="classgr_1_1random_1a0e023537cf9bca1c665dbde67835876c" prot="public" virt="non-virtual"><scope>gr::random</scope><name>rayleigh</name></member>
+      <member refid="classgr_1_1random_1a806f27be06796e46df420769935c3518" prot="public" virt="non-virtual"><scope>gr::random</scope><name>rayleigh_complex</name></member>
+      <member refid="classgr_1_1random_1a173157073396968c69eb1092d6094062" prot="public" virt="non-virtual"><scope>gr::random</scope><name>reseed</name></member>
+      <member refid="classgr_1_1random_1a1c133baa740d9c8a289f6659179b198e" prot="public" virt="non-virtual"><scope>gr::random</scope><name>set_integer_limits</name></member>
+      <member refid="classgr_1_1random_1a77c4297c43a371b87580fae77ac2717c" prot="public" virt="non-virtual"><scope>gr::random</scope><name>~random</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

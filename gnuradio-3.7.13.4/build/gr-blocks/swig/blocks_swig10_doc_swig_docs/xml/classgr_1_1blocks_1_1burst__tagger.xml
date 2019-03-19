@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1burst__tagger" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::burst_tagger</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="burst__tagger_8h" local="no">burst_tagger.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1burst__tagger_1a4d3e0bd2c3ec046f5b15a4e9775f4bb3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1burst__tagger" kindref="compound">burst_tagger</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;burst_tagger&gt; gr::blocks::burst_tagger::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1burst__tagger_1a4908a2d6815e3d9a12b2b7212161dc08" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1burst__tagger_1a4d3e0bd2c3ec046f5b15a4e9775f4bb3" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::burst_tagger::make</definition>
+        <argsstring>(size_t itemsize)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a burst tagger gnuradio/blocks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>itemsize of the signal stream on input 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1burst__tagger_1ab6b752543e52c9fca97343a1cac39d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::burst_tagger::set_true_tag</definition>
+        <argsstring>(const std::string &amp;key, bool value)=0</argsstring>
+        <name>set_true_tag</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For the true burst tag, change the key name to <computeroutput>key</computeroutput> and a new value of <computeroutput>value</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1burst__tagger_1aeab711b3fa1a9cc7faac0f511dd5b63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::burst_tagger::set_false_tag</definition>
+        <argsstring>(const std::string &amp;key, bool value)=0</argsstring>
+        <name>set_false_tag</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For the false burst tag, change the key name to <computeroutput>key</computeroutput> and a new value of <computeroutput>value</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sets a burst on/off tag based on the value of the trigger input. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block takes two inputs, a signal stream on the input stream 0 and a trigger stream of shorts on input stream 1. If the trigger stream goes above 0, a tag with the key &quot;burst&quot; will be transmitted as a pmt::PMT_T. When the trigger signal falls below 0, the &quot;burst&quot; tag will be transmitted as pmt::PMT_F.</para><para>The signal on stream 0 is retransmitted to output stream 0. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>sync_block</label>
+      </node>
+      <node id="121">
+        <label>gr::blocks::burst_tagger</label>
+        <link refid="classgr_1_1blocks_1_1burst__tagger"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="124">
+        <label>sync_block</label>
+      </node>
+      <node id="123">
+        <label>gr::blocks::burst_tagger</label>
+        <link refid="classgr_1_1blocks_1_1burst__tagger"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/burst_tagger.h" bodystart="47" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1burst__tagger_1a4908a2d6815e3d9a12b2b7212161dc08" prot="public" virt="non-virtual"><scope>gr::blocks::burst_tagger</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1burst__tagger_1aeab711b3fa1a9cc7faac0f511dd5b63d" prot="public" virt="pure-virtual"><scope>gr::blocks::burst_tagger</scope><name>set_false_tag</name></member>
+      <member refid="classgr_1_1blocks_1_1burst__tagger_1ab6b752543e52c9fca97343a1cac39d7c" prot="public" virt="pure-virtual"><scope>gr::blocks::burst_tagger</scope><name>set_true_tag</name></member>
+      <member refid="classgr_1_1blocks_1_1burst__tagger_1a4d3e0bd2c3ec046f5b15a4e9775f4bb3" prot="public" virt="non-virtual"><scope>gr::blocks::burst_tagger</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

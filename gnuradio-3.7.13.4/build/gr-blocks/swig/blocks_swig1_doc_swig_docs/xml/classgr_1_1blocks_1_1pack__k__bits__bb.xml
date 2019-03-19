@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1pack__k__bits__bb" kind="class" prot="public">
+    <compoundname>gr::blocks::pack_k_bits_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <includes refid="pack__k__bits__bb_8h" local="no">pack_k_bits_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1pack__k__bits__bb_1a1de808024e19434873747bc127f6d50d" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1pack__k__bits__bb" kindref="compound">pack_k_bits_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;pack_k_bits_bb&gt; gr::blocks::pack_k_bits_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits_bb.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits_bb.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1pack__k__bits__bb_1a162de8333ea77bc79d167378cb59d76a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1pack__k__bits__bb_1a1de808024e19434873747bc127f6d50d" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::pack_k_bits_bb::make</definition>
+        <argsstring>(unsigned k)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Make a pack_k_bits block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits to be packed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits_bb.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts a stream of bytes with 1 bit in the LSB to a byte with k relevant bits. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block takes in K bytes at a time, and uses the least significant bit to form a new byte.</para><para>Example: k = 4 in = [0,1,0,1, 0x81,0x00,0x00,0x00] out = [0x05, 0x08] </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="534">
+        <label>gr::blocks::pack_k_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1pack__k__bits__bb"/>
+        <childnode refid="535" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>sync_decimator</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="536">
+        <label>gr::blocks::pack_k_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1pack__k__bits__bb"/>
+        <childnode refid="537" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>sync_decimator</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits_bb.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pack_k_bits_bb.h" bodystart="46" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1pack__k__bits__bb_1a162de8333ea77bc79d167378cb59d76a" prot="public" virt="non-virtual"><scope>gr::blocks::pack_k_bits_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1pack__k__bits__bb_1a1de808024e19434873747bc127f6d50d" prot="public" virt="non-virtual"><scope>gr::blocks::pack_k_bits_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

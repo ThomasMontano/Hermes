@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-fcd
+Description: Funcube Dongle source block for GNU Radio
+Requires: gnuradio-runtime gnuradio-audio
+Version: 3.7.13.4
+Libs: -L${libdir} -lgnuradio-fcd
+Cflags: -I${includedir}

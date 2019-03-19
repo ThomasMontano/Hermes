@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="page_uhd" kind="page">
+    <compoundname>page_uhd</compoundname>
+    <title>UHD Interface</title>
+    <detaileddescription>
+<sect1 id="page_uhd_1uhd_introduction">
+<title>Introduction</title>
+<para>This is the GNU Radio UHD package. It is the interface to the UHD library to connect to and send and receive data between the Ettus Research, LLC product line. To use the UHD blocks, the Python namespaces is in gnuradio.uhd, which would be normally imported as:</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>uhd</highlight></codeline>
+</programlisting></para><para>The relevant blocks are listed in the <ref refid="group__uhd__blk" kindref="compound">UHD Interface</ref> group. The most important components are the <ref refid="classgr_1_1uhd_1_1usrp__source" kindref="compound">gr::uhd::usrp_source</ref> and <ref refid="classgr_1_1uhd_1_1usrp__sink" kindref="compound">gr::uhd::usrp_sink</ref> blocks, which act as receivers/transmitters. Both are derived from <ref refid="classgr_1_1uhd_1_1usrp__block" kindref="compound">gr::uhd::usrp_block</ref>, which defines many of the shared functions between those blocks.</para></sect1>
+<sect1 id="page_uhd_1uhd_external_docs">
+<title>External Documentation</title>
+<para>Ettus Research maintains the comprehensive documentation to the underlying UHD driver, which can be found at:</para><para><ulink url="http://files.ettus.com/manual/">http://files.ettus.com/manual/</ulink></para><para>The list of classes in the UHD Doxygen is located at:</para><para><ulink url="http://files.ettus.com/manual/annotated.html">http://files.ettus.com/manual/annotated.html</ulink></para></sect1>
+<sect1 id="page_uhd_1uhd_command_syntax">
+<title>Command Syntax</title>
+<para>The UHD sink and source can be controlled by a message port. These message ports take commands, which are PMTs formatted as described in <ref refid="page_msg_passing_1msg_passing_commands" kindref="member">Using messages as commands</ref>.</para><para>There is a legacy format, which will be deprecated in the future, where commands may be tuples, formatted as: <verbatim>(command, value, [channel])
+</verbatim></para><para>See older versions of this manual for documentation on this deprecated command format.</para><para>In general, every command consists of one or more key/value pairs (either stored as a PMT pair, or a dictionary). A full list of keys is listed below.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>command<sp/>=<sp/><ref refid="namespacepmt_1a7ab95721db5cbda1852f13a92eee5362" kindref="member">pmt::cons</ref>(<sp/></highlight><highlight class="comment">//<sp/>Make<sp/>a<sp/>pair</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;freq&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="comment">//<sp/>Key<sp/>is<sp/>&apos;freq&apos;<sp/>=&gt;<sp/>sets<sp/>the<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(1.1e9)<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>frequency<sp/>to<sp/>1.1<sp/>GHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>pass<sp/>&apos;command&apos;<sp/>into<sp/>the<sp/>USRP<sp/>block&apos;s<sp/>command<sp/>port</highlight></codeline>
+</programlisting></para><para>This PMT would set the frequency to 1.1 GHz on all channels. We make use of the <ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp()</ref> function which automatically sets the PMT types. Assume we only want to set the frequency on channel 1 (i.e. the second channel). In this case, we must construct a dictionary: <programlisting><codeline><highlight class="normal"><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>command<sp/>=<sp/><ref refid="namespacepmt_1aba10563e3ab43b8d52f9cb13132047cf" kindref="member">pmt::make_dict</ref>();</highlight></codeline>
+<codeline><highlight class="normal">command<sp/>=<sp/><ref refid="namespacepmt_1a15e351077c14dcba7cb982951bbbd05b" kindref="member">pmt::dict_add</ref>(command,<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;freq&quot;</highlight><highlight class="normal">),<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(1.1e9));<sp/></highlight><highlight class="comment">//<sp/>Specify<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">command<sp/>=<sp/><ref refid="namespacepmt_1a15e351077c14dcba7cb982951bbbd05b" kindref="member">pmt::dict_add</ref>(command,<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;chan&quot;</highlight><highlight class="normal">),<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(1));<sp/></highlight><highlight class="comment">//<sp/>Specify<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>pass<sp/>&apos;command&apos;<sp/>into<sp/>the<sp/>USRP<sp/>block&apos;s<sp/>command<sp/>port</highlight></codeline>
+</programlisting></para><para>This command structure becomes more intuitive when thinking of sending the command PMT as a function call, where the key/value pairs are argument names and values, respectively. In the above example, the behaviour is the same as if calling <programlisting><codeline><highlight class="normal">usrp_source.set_center_freq(freq=1.1e9,<sp/>chan=1)</highlight></codeline>
+</programlisting> The main difference is that we can add more properties to the same command PMT, e.g. as such: <programlisting><codeline><highlight class="comment">//<sp/>&apos;command&apos;<sp/>is<sp/>the<sp/>same<sp/>PMT<sp/>as<sp/>in<sp/>the<sp/>previous<sp/>example</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">command<sp/>=<sp/><ref refid="namespacepmt_1a15e351077c14dcba7cb982951bbbd05b" kindref="member">pmt::dict_add</ref>(command,<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;gain&quot;</highlight><highlight class="normal">),<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(23.0));<sp/></highlight><highlight class="comment">//<sp/>Specify<sp/>gain</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">command<sp/>=<sp/><ref refid="namespacepmt_1a15e351077c14dcba7cb982951bbbd05b" kindref="member">pmt::dict_add</ref>(command,<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;antenna&quot;</highlight><highlight class="normal">),<sp/><ref refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" kindref="member">pmt::mp</ref>(</highlight><highlight class="stringliteral">&quot;TX/RX&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Switch<sp/>antenna</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>pass<sp/>&apos;command&apos;<sp/>into<sp/>the<sp/>USRP<sp/>block&apos;s<sp/>command<sp/>port</highlight></codeline>
+</programlisting> When the USRP block interprets this command PMT, all properties will be set.</para><sect2 id="page_uhd_1uhd_command_syntax_cmds">
+<title>Common command keys</title>
+<para>The following command keys are understood by both UHD Source and Sink:</para><para><table rows="14" cols="3"><row>
+<entry thead="yes"><para>Command name </para></entry><entry thead="yes"><para>Value Type </para></entry><entry thead="yes"><para>Description  </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>chan</computeroutput> </para></entry><entry thead="no"><para>int </para></entry><entry thead="no"><para>Specifies a channel. If this is not given, either all channels are chosen, or channel 0, depending on the action. A value of -1 forces &apos;all channels&apos;, where possible. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>gain</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>Sets the Tx or Rx gain (in dB). Defaults to all channels. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>freq</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>Sets the Tx or Rx frequency. Defaults to all channels. If specified without <computeroutput>lo_offset</computeroutput>, it will set the LO offset to zero. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>lo_offset</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>Sets an LO offset. Defaults to all channels. Note this does not affect the effective center frequency. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>tune</computeroutput> </para></entry><entry thead="no"><para>tune_request </para></entry><entry thead="no"><para>Like freq, but sets a full tune request (i.e. center frequency and DSP offset). Defaults to all channels. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>lo_freq</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>For fully manual tuning: Set the LO frequency (RF frequency). Conflicts with <computeroutput>freq</computeroutput>, <computeroutput>lo_offset</computeroutput>, and <computeroutput>tune</computeroutput>. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>dsp_freq</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>For fully manual tuning: Set the DSP frequency (CORDIC frequency). Conflicts with <computeroutput>freq</computeroutput>, <computeroutput>lo_offset</computeroutput>, and <computeroutput>tune</computeroutput>. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>direction</computeroutput> </para></entry><entry thead="no"><para>string </para></entry><entry thead="no"><para>Used for timed transceiver tuning to ensure tuning order is maintained. Values other than &apos;TX&apos; or &apos;RX&apos; will be ignored. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>rate</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>See usrp_block::set_samp_rate(). <emphasis>Always</emphasis> affects all channels. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>bandwidth</computeroutput> </para></entry><entry thead="no"><para>double </para></entry><entry thead="no"><para>See usrp_block::set_bandwidth(). Defaults to all channels. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>time</computeroutput> </para></entry><entry thead="no"><para>timestamp </para></entry><entry thead="no"><para>Sets a command time. See usrp_block::set_command_time(). A value of PMT_NIL will clear the command time. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>mboard</computeroutput> </para></entry><entry thead="no"><para>int </para></entry><entry thead="no"><para>Specify mboard index, where applicable. </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>antenna</computeroutput> </para></entry><entry thead="no"><para>string </para></entry><entry thead="no"><para>See usrp_block::set_antenna(). Defaults to all channels. </para></entry></row>
+</table>
+Special types:</para><para><itemizedlist>
+<listitem><para>tune_request: Like a uhd::tune_request_t, but always uses POLICY_AUTO. This is a pair, composed of (target_frequency, lo_offset)</para></listitem><listitem><para>timestamp: A pair composed of (long full_secs, double frac_secs). Similar to uhd::time_spec_t</para></listitem></itemizedlist>
+</para><para><bold>Note:</bold> Not all commands are affected by <computeroutput>time</computeroutput>. See the UHD manual for details on timed commands.</para></sect2>
+<sect2 id="page_uhd_1uhd_command_syntax_multi_vs_single">
+<title>Dictionaries vs pairs</title>
+<para>Given the choices, it may be unclear if it&apos;s preferable to send multiple commands to the USRP block with a single key/value pair each, or send a single dict with all the values.</para><para>In general, the dictionary should be preferred. It has some distinct advantages:<itemizedlist>
+<listitem><para>If it carries a timestamp, this timestamp is valid for all key/value pairs it may be applied to.</para></listitem><listitem><para>All settings will be applied at once. With multiple messages, other blocks might be sending interfering messages while the messages are being processed.</para></listitem></itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="page_uhd_1uhd_configuring">
+<title>Configuring a UHD object</title>
+<para>A typical option parser setup for a UHD device looks like</para><para><programlisting><codeline><highlight class="normal">parser<sp/>=<sp/>OptionParser(option_class=eng_option)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;-a&quot;,<sp/>&quot;--args&quot;,<sp/>type=&quot;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&quot;,<sp/>default=&quot;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;UHD<sp/>device<sp/>address<sp/>args<sp/>,<sp/>[default=%default]&quot;)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;&quot;,<sp/>&quot;--spec&quot;,<sp/>type=&quot;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&quot;,<sp/>default=None,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;Subdevice<sp/>of<sp/>UHD<sp/>device<sp/>where<sp/>appropriate&quot;)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;-A&quot;,<sp/>&quot;--antenna&quot;,<sp/>type=&quot;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&quot;,<sp/>default=None,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;select<sp/>Rx<sp/>Antenna<sp/>where<sp/>appropriate&quot;)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;-s&quot;,<sp/>&quot;--samp-rate&quot;,<sp/>type=&quot;eng_float&quot;,<sp/>default=1e6,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;set<sp/>sample<sp/>rate<sp/>(bandwidth)<sp/>[default=%default]&quot;)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;-f&quot;,<sp/>&quot;--freq&quot;,<sp/>type=&quot;eng_float&quot;,<sp/>default=None,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;set<sp/>frequency<sp/>to<sp/>FREQ&quot;,<sp/>metavar=&quot;FREQ&quot;)</highlight></codeline>
+<codeline><highlight class="normal">parser.add_option(&quot;-g&quot;,<sp/>&quot;--gain&quot;,<sp/>type=&quot;eng_float&quot;,<sp/>default=None,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=&quot;set<sp/>gain<sp/>in<sp/>dB<sp/>(default<sp/>is<sp/>midpoint)&quot;)</highlight></codeline>
+</programlisting></para><para>To use these options to create a UHD source object:</para><para><programlisting><codeline><highlight class="keyword">self</highlight><highlight class="normal">.u<sp/>=<sp/>uhd.usrp_source(device_addr=options.args,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>io_type=uhd.io_type.COMPLEX_FLOAT32,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_channels=1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.set_samp_rate(options.samp_rate)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>no<sp/>gain<sp/>was<sp/>specified,<sp/>use<sp/>the<sp/>mid-point<sp/>in<sp/>dB</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>options.gain<sp/>is<sp/>None:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.get_gain_range()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>options.gain<sp/>=<sp/>float(g.start()+g.stop())/2</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.set_gain(options.gain,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>Set<sp/>the<sp/>center<sp/>frequency</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.set_center_freq(options.freq,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>Set<sp/>the<sp/>subdevice<sp/>spec</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(options.spec):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.set_subdev_spec(options.spec,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#<sp/>Set<sp/>the<sp/>antenna</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(options.antenna):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.set_antenna(options.antenna,<sp/>0)</highlight></codeline>
+</programlisting></para><para>Frequently, your application may need a sample rate that is not supported by the UHD device. If you have extra CPU power to spare, you can easily set the sample rate you want, then ask the device what the actual sample rate set was. Then, you can easily create an arbitrary resampler to take care of the difference.</para><para><programlisting><codeline><highlight class="keyword">self</highlight><highlight class="normal">.u.set_samp_rate(options.samp_rate)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">desired_rate<sp/>=<sp/>options.samp_rate</highlight></codeline>
+<codeline><highlight class="normal">actual_rate<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.u.get_samp_rate()</highlight></codeline>
+<codeline><highlight class="normal">resample<sp/>=<sp/>desired_rate<sp/>/<sp/>actual_rate</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>Use<sp/>the<sp/>filter.pfb<sp/>version<sp/>and<sp/>pass<sp/>only<sp/>the<sp/>resample<sp/>factor.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>This<sp/>block<sp/>builds<sp/>a<sp/>half-band<sp/>filter<sp/>for<sp/>you</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">self</highlight><highlight class="normal">.resampler<sp/>=<sp/>filter.pfb.arb_resampler_ccf(resample)</highlight></codeline>
+</programlisting> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

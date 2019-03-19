@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1generic__decoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::generic_decoder</compoundname>
+    <derivedcompoundref refid="classgr_1_1fec_1_1code_1_1cc__decoder" prot="public" virt="virtual">gr::fec::code::cc_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1code_1_1dummy__decoder" prot="public" virt="virtual">gr::fec::code::dummy_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder" prot="public" virt="virtual">gr::fec::code::ldpc_bit_flip_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1code_1_1polar__decoder__common" prot="public" virt="non-virtual">gr::fec::code::polar_decoder_common</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1code_1_1repetition__decoder" prot="public" virt="virtual">gr::fec::code::repetition_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1ldpc__decoder" prot="public" virt="non-virtual">gr::fec::ldpc_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1fec_1_1tpc__decoder" prot="public" virt="non-virtual">gr::fec::tpc_decoder</derivedcompoundref>
+    <includes refid="generic__decoder_8h" local="no">gnuradio/fec/generic_decoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">generic_decoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;generic_decoder&gt; gr::fec::generic_decoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="75" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1generic__decoder_1a29d043afec8a523972c67e17bf8f3f78" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacegr_1a22e664a7b67862256cde054f5b4f530d" kindref="member">gr::logger_ptr</ref></type>
+        <definition>gr::logger_ptr gr::fec::generic_decoder::d_logger</definition>
+        <argsstring></argsstring>
+        <name>d_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgr_1_1fec_1_1generic__decoder_1af38ba3228d4d04d31414fb1739ee7b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1generic__decoder_1a09d4e84d633630b77a47b80398c209ad" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::generic_decoder::base_unique_id</definition>
+        <argsstring></argsstring>
+        <name>base_unique_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1generic__decoder_1a2ea0d9d63a13ef1bd22e6517a856b340" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fec::generic_decoder::my_id</definition>
+        <argsstring></argsstring>
+        <name>my_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fec_1_1generic__decoder_1a96ed2f7bb7465e0df29a13b127ad9fd4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::fec::generic_decoder::d_name</definition>
+        <argsstring></argsstring>
+        <name>d_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1aeef6c573d354a4fe0c1ff5d78bafd485" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fec::generic_decoder::generic_work</definition>
+        <argsstring>(void *inbuffer, void *outbuffer)=0</argsstring>
+        <name>generic_work</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1ac1adca70310d939318267d9177888b88">generic_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1ab003aa96017bd43eb874372ccaaae179">generic_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__systematic_1a60aae340470adaac4fa9e52772ad9f1c">generic_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc_1a27112e8b3e4db97b4635c1fbf47affc0">generic_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list_1aa06c439c4a777cfcb34a1e7f743034f5">generic_work</reimplementedby>
+        <param>
+          <type>void *</type>
+          <declname>inbuffer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>outbuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a7480b06afbc530f4a524905deab8f70b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fec::generic_decoder::unique_id</definition>
+        <argsstring>()</argsstring>
+        <name>unique_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a9a6cbe6022c593cded3c00b929873855" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gr::fec::generic_decoder::alias</definition>
+        <argsstring>()</argsstring>
+        <name>alias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="72" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a699ddfa2fc51343b3193149646bab208" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::generic_decoder::generic_decoder</definition>
+        <argsstring>(void)</argsstring>
+        <name>generic_decoder</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1ab32bf0b94adb801b523001de32ee7dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::generic_decoder::generic_decoder</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>generic_decoder</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a36a7aeb512d578e53d6f984bfd380667" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::fec::generic_decoder::~generic_decoder</definition>
+        <argsstring>()</argsstring>
+        <name>~generic_decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a32869de99deaec078e6b3bdc01444795" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::fec::generic_decoder::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a6bcd35c6c481e99b0aa1298f43bfbec5">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1a785ddb7413ea96a32202f53925644ac2">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1dummy__decoder_1a01612987d75344506d85970b6bb60a36">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1repetition__decoder_1a0be61df48991908ef3975cbe6ceae796">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder_1a15e99b7a45f9b7ecae02a8edf1f01d25">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1cc__decoder_1ada09b6ac06494c0da622c9f208983b8e">rate</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a21f6658915f0e5fc5ee524aa7ff30b7c">rate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the rate of the code. For every r input bits, there is 1 output bit, so the rate is 1/r. Used for setting things like the encoder block&apos;s relative rate.</para><para>This function MUST be reimplemented by the child class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a68f0c06cc9b57e421d4d755fc7eb60d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::generic_decoder::get_input_size</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_input_size</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a24daf2b177f02aa9de9100d69478248d">get_input_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1ae396bb39bb858fb4ce623c24584d2d67">get_input_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1ad0947b6ed7830a218a4166570492b074">get_input_size</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the input size in items that the decoder object uses to decode a full frame. Often, this number is the number of bits per frame if the input format is unpacked. If the block expects packed bytes, then this value should be the number of bytes (number of bits / 8) per input frame.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a0cad8d8b1977ebb9184b6c36ed73db9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::generic_decoder::get_output_size</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_output_size</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1ab02a80e3dbf3b0b46f6ffb055a9c9ea4">get_output_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a108dc0297656c62f2b3ddcb975b2f6d4">get_output_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1a89a4700874fcb071f702f40180c4af7f">get_output_size</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the output size in items that the decoder object produces after decoding a full frame. Often, this number is the number of bits in the outputted frame if the input format is unpacked. If the block produces packed bytes, then this value should be the number of bytes (number of bits / 8) per frame produced. This value is generally something like <ref refid="classgr_1_1fec_1_1generic__decoder_1a68f0c06cc9b57e421d4d755fc7eb60d5" kindref="member">get_input_size()</ref>/R for a 1/R rate code.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a9037426d33b865dda50055380f9b85c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::generic_decoder::get_history</definition>
+        <argsstring>()</argsstring>
+        <name>get_history</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a99a30728eecfeea6007b000f847a50ce">get_history</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1abaa658e1a4772885f52b2a211b675c82">get_history</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up history for the decoder when the decoder is required to look ahead in the data stream in order to finish its processing.</para><para>The child class MAY implement this function. If not reimplemented, it returns 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a7c46fd20d994c05ece2aa93dc8d3a926" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float gr::fec::generic_decoder::get_shift</definition>
+        <argsstring>()</argsstring>
+        <name>get_shift</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a19cf9b5e861bf6c67c0349ee04f4ad96">get_shift</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1a2f0d7c666c26cc43552eceeb02edf5bf">get_shift</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Some decoders require the input items to float around a particular soft value. We can set that floating value by setting this value to return some non-zero number.</para><para>The fec.extended_decoder block will use this to create an add_const_ff block before the decoder block to adjust all input samples appropriately.</para><para>The child class MAY implement this function. If not reimplemented, it returns 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::generic_decoder::get_input_item_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_input_item_size</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a9bde8a9440ae6ece137f3706c9b242b4">get_input_item_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1aa4887c5b001dbb3e2464188ee1040526">get_input_item_size</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the size of an input item, as in the size of a char or float item.</para><para>The child class SHOULD implement this function. If not reimplemented, it returns sizeof(float) as the decoders typically expect floating point input types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a558263fff172b7867ed96afccb93078f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::generic_decoder::get_output_item_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_item_size</name>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a89beea20602a7c159a096f1522e4f033">get_output_item_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1afaeaee6a9ab74dbbf62b2f330d1dcfb8">get_output_item_size</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the size of an output item, as in the size of a char or float item.</para><para>The child class SHOULD implement this function. If not reimplemented, it returns sizeof(char) as the decoders typically expect to produce bits or bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1afaead9faf05cdb871e4c21f5f4dae90c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* gr::fec::generic_decoder::get_input_conversion</definition>
+        <argsstring>()</argsstring>
+        <name>get_input_conversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up a conversion type required to setup the data properly for this decoder. The decoder itself will not implement the conversion and expects an external wrapper (e.g., fec.extended_decoder) to read this value and &quot;do the right
+thing&quot; to format the data.</para><para>The default behavior is &apos;none&apos;, which means no conversion is required. Whatever the <ref refid="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" kindref="member">get_input_item_size()</ref> value returns, the input is expected to conform directly to this.</para><para>This may also return &apos;uchar&apos;, which indicates that the wrapper should convert the standard float samples to unsigned characters, either hard sliced or 8-bit soft symbols. See <ref refid="classgr_1_1fec_1_1code_1_1cc__decoder" kindref="compound">gr::fec::code::cc_decoder</ref> as an example decoder that uses this conversion format.</para><para>If &apos;packed_bits&apos;, the block expects the inputs to be packed hard bits. Each input item is a unsigned char where each of the 8-bits is a hard bit value.</para><para>The child class SHOULD implement this function. If not reimplemented, it returns &quot;none&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1ae9a6334b499359f97368569f9b50fbaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* gr::fec::generic_decoder::get_output_conversion</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_conversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up a conversion type required to understand the output style of this decoder. Generally, follow-on processing expects unpacked bits, so we specify the conversion type here to indicate what the wrapper (e.g., fec.extended_decoder) should do to convert the output samples from the decoder into unpacked bits.</para><para>The default behavior is &apos;none&apos;, which means no conversion is required. This should mean that the output data is produced from this decoder as unpacked bit.</para><para>If &apos;unpack&apos;, the block produces packed bytes that should be unpacked by the wrapper. See gr::fec::code::ccsds_decoder as an example of a decoder that produces packed bytes.</para><para>The child class SHOULD implement this function. If not reimplemented, it returns &quot;none&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a6da8f43baf97fab0691e80355f2fbb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::fec::generic_decoder::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)=0</argsstring>
+        <name>set_frame_size</name>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1polar__decoder__common_1a0d01e3a5e91ed55d58ea7f7526cca7e9">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1dummy__decoder_1add9a92091729c05fdce5233f068af101">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1a212ca2970f2c7fd9f6d33282a9999acc">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1repetition__decoder_1ab3fcdfc4e220e3227fc53270fdfbb6f7">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder_1afffb9552fe63aafdca0f57f26cdee55c">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1code_1_1cc__decoder_1a77602c0d15f0bd2425592bad5f14d0e7">set_frame_size</reimplementedby>
+        <reimplementedby refid="classgr_1_1fec_1_1tpc__decoder_1a3bcd0761442121c670bd1f22a30fb8b5">set_frame_size</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the size of a decoded frame.</para><para>The child class MUST implement this function and interpret how the <computeroutput>frame_size</computeroutput> information affects the block&apos;s behavior. It should also provide bounds checks. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1generic__decoder_1a75ffb122f2891ee457be1874e198e836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float gr::fec::generic_decoder::get_iterations</definition>
+        <argsstring>()</argsstring>
+        <name>get_iterations</name>
+        <reimplementedby refid="classgr_1_1fec_1_1ldpc__decoder_1a60b9785e01d764d844338684a656185b">get_iterations</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get repetitions to decode.</para><para>The child class should implement this function and return the number of iterations required to decode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="221" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parent class for FECAPI objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Parent of a decoder variable class for FECAPI that will fit into the <ref refid="classgr_1_1fec_1_1decoder" kindref="compound">gr::fec::decoder</ref> block to handle FEC decoding. This class provides the basic information required to fit into the FECAPI structure. It provides information about input and output data types, potential data conversions, and a few other parameters useful to establish the decoder&apos;s behavior.</para><para>We create objects from FECAPI-derived classes to go into the actual GNU Radio decoder block. Each object contains its own state and so there should be a one-to-one mapping of an FECAPI object and a GR decoder block. Sharing these objects is not guaranteed to be thread-safe.</para><para>This is a pure virtual class and must be derived from by a child class.</para><para><simplesect kind="see"><para><ref refid="classgr_1_1fec_1_1code_1_1cc__decoder" kindref="compound">gr::fec::code::cc_decoder</ref> </para><simplesectsep/><para>gr::fec::code::ccsds_decoder </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5376">
+        <label>gr::fec::code::cc_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1cc__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5377">
+        <label>gr::fec::code::dummy_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1dummy__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5378">
+        <label>gr::fec::code::ldpc_bit_flip_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5380">
+        <label>gr::fec::code::polar_decoder_sc</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc"/>
+        <childnode refid="5379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5385">
+        <label>gr::fec::tpc_decoder</label>
+        <link refid="classgr_1_1fec_1_1tpc__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5379">
+        <label>gr::fec::code::polar_decoder_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__common"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5382">
+        <label>gr::fec::code::polar_decoder_sc_systematic</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__systematic"/>
+        <childnode refid="5379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5381">
+        <label>gr::fec::code::polar_decoder_sc_list</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list"/>
+        <childnode refid="5379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5384">
+        <label>gr::fec::ldpc_decoder</label>
+        <link refid="classgr_1_1fec_1_1ldpc__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5383">
+        <label>gr::fec::code::repetition_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1repetition__decoder"/>
+        <childnode refid="5375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5375">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5388">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="5386">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+        <childnode refid="5387" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="5387">
+        <label>std::string</label>
+        <childnode refid="5388" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/generic_decoder.h" bodystart="60" bodyend="222"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9a6cbe6022c593cded3c00b929873855" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a09d4e84d633630b77a47b80398c209ad" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a29d043afec8a523972c67e17bf8f3f78" prot="protected" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a96ed2f7bb7465e0df29a13b127ad9fd4" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1af38ba3228d4d04d31414fb1739ee7b34" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a699ddfa2fc51343b3193149646bab208" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ab32bf0b94adb801b523001de32ee7dfc" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1aeef6c573d354a4fe0c1ff5d78bafd485" prot="public" virt="pure-virtual"><scope>gr::fec::generic_decoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9037426d33b865dda50055380f9b85c8" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_history</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1afaead9faf05cdb871e4c21f5f4dae90c" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_input_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a68f0c06cc9b57e421d4d755fc7eb60d5" prot="public" virt="pure-virtual"><scope>gr::fec::generic_decoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a75ffb122f2891ee457be1874e198e836" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_iterations</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ae9a6334b499359f97368569f9b50fbaf" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a558263fff172b7867ed96afccb93078f" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_output_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a0cad8d8b1977ebb9184b6c36ed73db9a" prot="public" virt="pure-virtual"><scope>gr::fec::generic_decoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7c46fd20d994c05ece2aa93dc8d3a926" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>get_shift</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a2ea0d9d63a13ef1bd22e6517a856b340" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a32869de99deaec078e6b3bdc01444795" prot="public" virt="pure-virtual"><scope>gr::fec::generic_decoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a6da8f43baf97fab0691e80355f2fbb74" prot="public" virt="pure-virtual"><scope>gr::fec::generic_decoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7480b06afbc530f4a524905deab8f70b" prot="public" virt="non-virtual"><scope>gr::fec::generic_decoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a36a7aeb512d578e53d6f984bfd380667" prot="public" virt="virtual"><scope>gr::fec::generic_decoder</scope><name>~generic_decoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classGF2Mat" kind="class" prot="public">
+    <compoundname>GF2Mat</compoundname>
+    <includes refid="gf2mat_8h" local="no">gf2mat.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGF2Mat_1a63e734982dc12623f55ba614c458c3e8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector &lt;char&gt; &gt; GF2Mat::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+<para>The matrix H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGF2Mat_1af26d351480d5a0db9c685921daf6cf93" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GF2Mat::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+<para>Number of rows in H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGF2Mat_1a5827d2221af7b1b446fdebe9d47d8999" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GF2Mat::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+<para>Number of columns in H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGF2Mat_1acdbf97268c04656c7daa939e09aee199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GF2Mat::GF2Mat</definition>
+        <argsstring>()</argsstring>
+        <name>GF2Mat</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a640dfa006c4111c9414de025b4ac3301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GF2Mat::GF2Mat</definition>
+        <argsstring>(int m, int n)</argsstring>
+        <name>GF2Mat</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Construct an M x N matrix with all 0 entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a4c51b66c5651b733aaf0751fbe3dd1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GF2Mat::GF2Mat</definition>
+        <argsstring>(alist _list)</argsstring>
+        <name>GF2Mat</name>
+        <param>
+          <type><ref refid="classalist" kindref="compound">alist</ref></type>
+          <declname>_list</declname>
+        </param>
+        <briefdescription>
+<para>Loads the matrix from alist _list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a94dfb09c69d95dae83ed6f668fbb8615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GF2Mat::GF2Mat</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; char &gt; &gt; X)</argsstring>
+        <name>GF2Mat</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; char &gt; &gt;</type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the class from a 2-D vector X. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1adaa2aec0b885a6147b3782098f1628e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GF2Mat::get_M</definition>
+        <argsstring>()</argsstring>
+        <name>get_M</name>
+        <briefdescription>
+<para>Returns the variable M. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1ac1a5026f8b523b7203d77719d29a9a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GF2Mat::get_N</definition>
+        <argsstring>()</argsstring>
+        <name>get_N</name>
+        <briefdescription>
+<para>Returns the variable N. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a2c07bd3bddd8d0798acc8daadbf9aafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::set_element</definition>
+        <argsstring>(int i, int j, char val)</argsstring>
+        <name>set_element</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the element at (i, j) coordinate to val. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a087be2264b95bb9f240d8f9c0108876d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char GF2Mat::get_element</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>get_element</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Returns the element at coordinate (i, j) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a066d44b2a66517f5fb307b59ce07c47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Vec" kindref="compound">GF2Vec</ref></type>
+        <definition>GF2Vec GF2Mat::get_row</definition>
+        <argsstring>(int i)</argsstring>
+        <name>get_row</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ith row. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1af3bbe02b850eaf2a5d1749f79cb0ec38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Vec" kindref="compound">GF2Vec</ref></type>
+        <definition>GF2Vec GF2Mat::get_col</definition>
+        <argsstring>(int i)</argsstring>
+        <name>get_col</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ith column. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1ab6045edd8f68140bbad843b18cceacfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Vec" kindref="compound">GF2Vec</ref></type>
+        <definition>GF2Vec GF2Mat::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ith row. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1af3a80736e0cdf564542e58358163a5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::print_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>print_matrix</name>
+        <briefdescription>
+<para>Prints the matrix H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a4b48b53ff8253bbb3efcae21f629a43a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::set_col</definition>
+        <argsstring>(int i, GF2Vec vec)</argsstring>
+        <name>set_col</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classGF2Vec" kindref="compound">GF2Vec</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ith column with the given vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1aae2d11b924ec6d63606dec4beb7335ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::set_row</definition>
+        <argsstring>(int i, GF2Vec vec)</argsstring>
+        <name>set_row</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classGF2Vec" kindref="compound">GF2Vec</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ith row with the given vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1af29f179123ef7ee95c58801e16dffdc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::swap_cols</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>swap_cols</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Swaps columns i and j. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a27b3dc50ed39771d9089d893314c76d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::add_cols</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>add_cols</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Adds column j to i and replace i with the sum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1a81fb8d6ba12fa665ba238117aad305c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GF2Mat::add_rows</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>add_rows</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Add row j to i and replace j with the sum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1ab5a5ffc04f456a648c5cb39e3d618aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;char&gt; &gt; GF2Mat::get_H</definition>
+        <argsstring>()</argsstring>
+        <name>get_H</name>
+        <briefdescription>
+<para>Returns the variable H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGF2Mat_1ad13396c667510b4e496ba29e86b800bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat GF2Mat::get_G</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;p, int &amp;rank)</argsstring>
+        <name>get_G</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>rank</declname>
+        </param>
+        <briefdescription>
+<para>Obtains an equivalent representation of H for encoding. </para>        </briefdescription>
+        <detaileddescription>
+<para>For encoding a G matrix in the form [I P] obtained from the parity matrix H, by (a) Column permutations, (b) Row additions and (c) Row permutations. Details of encoding is given in section A.1 of the reference:</para><para><itemizedlist>
+<listitem><para>&quot;Modern Coding Theory&quot;, T Richardson and R Urbanke.</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column permutation during this operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rank of the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" line="30" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/gf2mat.h" bodystart="29" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classGF2Mat_1a27b3dc50ed39771d9089d893314c76d5" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>add_cols</name></member>
+      <member refid="classGF2Mat_1a81fb8d6ba12fa665ba238117aad305c8" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>add_rows</name></member>
+      <member refid="classGF2Mat_1af3bbe02b850eaf2a5d1749f79cb0ec38" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_col</name></member>
+      <member refid="classGF2Mat_1a087be2264b95bb9f240d8f9c0108876d" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_element</name></member>
+      <member refid="classGF2Mat_1ad13396c667510b4e496ba29e86b800bb" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_G</name></member>
+      <member refid="classGF2Mat_1ab5a5ffc04f456a648c5cb39e3d618aee" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_H</name></member>
+      <member refid="classGF2Mat_1adaa2aec0b885a6147b3782098f1628e1" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_M</name></member>
+      <member refid="classGF2Mat_1ac1a5026f8b523b7203d77719d29a9a78" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_N</name></member>
+      <member refid="classGF2Mat_1a066d44b2a66517f5fb307b59ce07c47c" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>get_row</name></member>
+      <member refid="classGF2Mat_1acdbf97268c04656c7daa939e09aee199" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>GF2Mat</name></member>
+      <member refid="classGF2Mat_1a640dfa006c4111c9414de025b4ac3301" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>GF2Mat</name></member>
+      <member refid="classGF2Mat_1a4c51b66c5651b733aaf0751fbe3dd1d9" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>GF2Mat</name></member>
+      <member refid="classGF2Mat_1a94dfb09c69d95dae83ed6f668fbb8615" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>GF2Mat</name></member>
+      <member refid="classGF2Mat_1a63e734982dc12623f55ba614c458c3e8" prot="private" virt="non-virtual"><scope>GF2Mat</scope><name>H</name></member>
+      <member refid="classGF2Mat_1af26d351480d5a0db9c685921daf6cf93" prot="private" virt="non-virtual"><scope>GF2Mat</scope><name>M</name></member>
+      <member refid="classGF2Mat_1a5827d2221af7b1b446fdebe9d47d8999" prot="private" virt="non-virtual"><scope>GF2Mat</scope><name>N</name></member>
+      <member refid="classGF2Mat_1ab6045edd8f68140bbad843b18cceacfb" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>operator[]</name></member>
+      <member refid="classGF2Mat_1af3a80736e0cdf564542e58358163a5cc" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>print_matrix</name></member>
+      <member refid="classGF2Mat_1a4b48b53ff8253bbb3efcae21f629a43a" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>set_col</name></member>
+      <member refid="classGF2Mat_1a2c07bd3bddd8d0798acc8daadbf9aafd" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>set_element</name></member>
+      <member refid="classGF2Mat_1aae2d11b924ec6d63606dec4beb7335ce" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>set_row</name></member>
+      <member refid="classGF2Mat_1af29f179123ef7ee95c58801e16dffdc5" prot="public" virt="non-virtual"><scope>GF2Mat</scope><name>swap_cols</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

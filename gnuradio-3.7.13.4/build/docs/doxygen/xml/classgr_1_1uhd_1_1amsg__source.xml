@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1uhd_1_1amsg__source" kind="class" prot="public">
+    <compoundname>gr::uhd::amsg_source</compoundname>
+    <includes refid="amsg__source_8h" local="no">gnuradio/uhd/amsg_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1uhd_1_1amsg__source_1aba355b6d00c4a0824696794ca40fa6e8" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1uhd_1_1amsg__source" kindref="compound">amsg_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;amsg_source&gt; gr::uhd::amsg_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1uhd_1_1amsg__source_1ab0462237cc86d5045c0346a1607394e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gr::uhd::amsg_source::~amsg_source</definition>
+        <argsstring>()</argsstring>
+        <name>~amsg_source</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This must be explicitly defined because there is no block inheritance for this class, and thus no virtual destructor pulled into the class hierarchy for sub-classes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="group__uhd__blk_1gacf4de92d23244606851818761c53d228" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1uhd_1_1amsg__source_1aba355b6d00c4a0824696794ca40fa6e8" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::uhd::amsg_source::make</definition>
+        <argsstring>(const ::uhd::device_addr_t &amp;device_addr, msg_queue::sptr msgq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const ::uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" kindref="member">msg_queue::sptr</ref></type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+<para>Make a new USRP asynchronous message-based source block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1uhd_1_1amsg__source_1aa4794c13cd8d3d879e28ae80cca377dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>::uhd::async_metadata_t</type>
+        <definition>::uhd::async_metadata_t gr::uhd::amsg_source::msg_to_async_metadata_t</definition>
+        <argsstring>(const message::sptr msg)</argsstring>
+        <name>msg_to_async_metadata_t</name>
+        <param>
+          <type>const <ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a raw asynchronous message to an asynchronous metatdata object. <simplesect kind="return"><para>The asynchronous metadata object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" bodystart="35" bodyend="63"/>
+    <listofallmembers>
+      <member refid="group__uhd__blk_1gacf4de92d23244606851818761c53d228" prot="public" virt="non-virtual"><scope>gr::uhd::amsg_source</scope><name>make</name></member>
+      <member refid="classgr_1_1uhd_1_1amsg__source_1aa4794c13cd8d3d879e28ae80cca377dc" prot="public" virt="non-virtual"><scope>gr::uhd::amsg_source</scope><name>msg_to_async_metadata_t</name></member>
+      <member refid="classgr_1_1uhd_1_1amsg__source_1aba355b6d00c4a0824696794ca40fa6e8" prot="public" virt="non-virtual"><scope>gr::uhd::amsg_source</scope><name>sptr</name></member>
+      <member refid="classgr_1_1uhd_1_1amsg__source_1ab0462237cc86d5045c0346a1607394e5" prot="public" virt="virtual"><scope>gr::uhd::amsg_source</scope><name>~amsg_source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

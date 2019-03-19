@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1pdu__set" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::pdu_set</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="pdu__set_8h" local="no">pdu_set.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1pdu__set_1a5d5071ffed4eb7e18e3678e4e78ed55f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1pdu__set" kindref="compound">pdu_set</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;pdu_set&gt; gr::blocks::pdu_set::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1pdu__set_1abd0d458a44ab616f26454612aef761f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1pdu__set_1a5d5071ffed4eb7e18e3678e4e78ed55f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::pdu_set::make</definition>
+        <argsstring>(pmt::pmt_t k, pmt::pmt_t v)</argsstring>
+        <name>make</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Construct a PDU meta set block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1pdu__set_1a964b67367f0cdc6d0cbdd367f623062e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::pdu_set::set_key</definition>
+        <argsstring>(pmt::pmt_t key)=0</argsstring>
+        <name>set_key</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1pdu__set_1acfd842b581bc3a69e42e7ba741742984" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::pdu_set::set_val</definition>
+        <argsstring>(pmt::pmt_t val)=0</argsstring>
+        <name>set_val</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Set k=&gt;v in pdu&apos;s meta field and pass on. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="563">
+        <label>block</label>
+      </node>
+      <node id="562">
+        <label>gr::blocks::pdu_set</label>
+        <link refid="classgr_1_1blocks_1_1pdu__set"/>
+        <childnode refid="563" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="565">
+        <label>block</label>
+      </node>
+      <node id="564">
+        <label>gr::blocks::pdu_set</label>
+        <link refid="classgr_1_1blocks_1_1pdu__set"/>
+        <childnode refid="565" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/pdu_set.h" bodystart="37" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1pdu__set_1abd0d458a44ab616f26454612aef761f1" prot="public" virt="non-virtual"><scope>gr::blocks::pdu_set</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1pdu__set_1a964b67367f0cdc6d0cbdd367f623062e" prot="public" virt="pure-virtual"><scope>gr::blocks::pdu_set</scope><name>set_key</name></member>
+      <member refid="classgr_1_1blocks_1_1pdu__set_1acfd842b581bc3a69e42e7ba741742984" prot="public" virt="pure-virtual"><scope>gr::blocks::pdu_set</scope><name>set_val</name></member>
+      <member refid="classgr_1_1blocks_1_1pdu__set_1a5d5071ffed4eb7e18e3678e4e78ed55f" prot="public" virt="non-virtual"><scope>gr::blocks::pdu_set</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

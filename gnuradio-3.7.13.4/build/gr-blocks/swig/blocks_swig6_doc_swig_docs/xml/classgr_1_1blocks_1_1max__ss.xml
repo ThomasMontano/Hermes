@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1max__ss" kind="class" prot="public">
+    <compoundname>gr::blocks::max_ss</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="max__ss_8h" local="no">max_ss.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1max__ss_1aa09a456e529b00ff75f2dc41712b3d05" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1max__ss" kindref="compound">max_ss</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;max_ss&gt; gr::blocks::max_ss::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/max_ss.h" line="53" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/max_ss.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1max__ss_1a0c392df4bad0c883c95ba1979d6673a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1max__ss_1aa09a456e529b00ff75f2dc41712b3d05" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::max_ss::make</definition>
+        <argsstring>(size_t vlen, size_t vlen_out=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>vlen_out</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/max_ss.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compares vectors from multiple streams and determines the maximum value from each vector over all streams. </para>    </briefdescription>
+    <detaileddescription>
+<para>Data is passed in as a vector of length <computeroutput>vlen</computeroutput> from multiple input sources. If vlen_out == 1 then It will look through these streams of <computeroutput>vlen</computeroutput> data items and the output stream will contain the maximum value in the vector. If vlen_out == vlen and not equal to 1 then output will be a vector with individual items selected from the maximum corresponding input vector items. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="352">
+        <label>gr::blocks::max_ss</label>
+        <link refid="classgr_1_1blocks_1_1max__ss"/>
+        <childnode refid="353" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="354">
+        <label>gr::blocks::max_ss</label>
+        <link refid="classgr_1_1blocks_1_1max__ss"/>
+        <childnode refid="355" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/max_ss.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/max_ss.h" bodystart="49" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1max__ss_1a0c392df4bad0c883c95ba1979d6673a1" prot="public" virt="non-virtual"><scope>gr::blocks::max_ss</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1max__ss_1aa09a456e529b00ff75f2dc41712b3d05" prot="public" virt="non-virtual"><scope>gr::blocks::max_ss</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

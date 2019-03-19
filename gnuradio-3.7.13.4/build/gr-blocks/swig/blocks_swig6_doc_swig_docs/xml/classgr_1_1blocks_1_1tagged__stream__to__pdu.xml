@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tagged__stream__to__pdu" kind="class" prot="public">
+    <compoundname>gr::blocks::tagged_stream_to_pdu</compoundname>
+    <basecompoundref prot="public" virt="virtual">tagged_stream_block</basecompoundref>
+    <includes refid="tagged__stream__to__pdu_8h" local="no">tagged_stream_to_pdu.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tagged__stream__to__pdu_1a2047a5476dd66c275d28734baa21a532" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tagged__stream__to__pdu" kindref="compound">tagged_stream_to_pdu</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tagged_stream_to_pdu&gt; gr::blocks::tagged_stream_to_pdu::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tagged_stream_to_pdu.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tagged_stream_to_pdu.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tagged__stream__to__pdu_1aae9ff1bc736bbf7c5eddaa4bfe1a03f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tagged__stream__to__pdu_1a2047a5476dd66c275d28734baa21a532" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tagged_stream_to_pdu::make</definition>
+        <argsstring>(pdu::vector_type type, const std::string &amp;lengthtagname=&quot;packet_len&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="namespacegr_1_1blocks_1_1pdu_1ae94bef068ae1197c34b37ffb1952e345" kindref="member">pdu::vector_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>lengthtagname</declname>
+          <defval>&quot;packet_len&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classgr_1_1blocks_1_1tagged__stream__to__pdu" kindref="compound">tagged_stream_to_pdu</ref> block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDU type of <ref refid="namespacegr_1_1blocks_1_1pdu_1ae94bef068ae1197c34b37ffb1952e345" kindref="member">pdu::vector_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthtagname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the tag that specifies how long the packet is. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tagged_stream_to_pdu.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Turns received stream data and tags into PDUs and sends them through a message port.</para><para>The sent message is a PMT-pair (created by pmt::cons()). The first element is a dictionary containing all the tags. The second is a vector containing the actual data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="769">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="768">
+        <label>gr::blocks::tagged_stream_to_pdu</label>
+        <link refid="classgr_1_1blocks_1_1tagged__stream__to__pdu"/>
+        <childnode refid="769" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="771">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="770">
+        <label>gr::blocks::tagged_stream_to_pdu</label>
+        <link refid="classgr_1_1blocks_1_1tagged__stream__to__pdu"/>
+        <childnode refid="771" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tagged_stream_to_pdu.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tagged_stream_to_pdu.h" bodystart="42" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tagged__stream__to__pdu_1aae9ff1bc736bbf7c5eddaa4bfe1a03f6" prot="public" virt="non-virtual"><scope>gr::blocks::tagged_stream_to_pdu</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tagged__stream__to__pdu_1a2047a5476dd66c275d28734baa21a532" prot="public" virt="non-virtual"><scope>gr::blocks::tagged_stream_to_pdu</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

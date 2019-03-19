@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1io__signature" kind="class" prot="public">
+    <compoundname>gr::io_signature</compoundname>
+    <includes refid="io__signature_8h" local="no">io_signature.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1io__signature" kindref="compound">io_signature</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;io_signature&gt; gr::io_signature::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1io__signature_1aad035ad0b2077984b0fe49897783b560" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::io_signature::d_min_streams</definition>
+        <argsstring></argsstring>
+        <name>d_min_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1io__signature_1a57bc48871edd5404c3613cc398fe3cfc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::io_signature::d_max_streams</definition>
+        <argsstring></argsstring>
+        <name>d_max_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1io__signature_1ae26a30492a299eea02da00c03383f5b4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::io_signature::d_sizeof_stream_item</definition>
+        <argsstring></argsstring>
+        <name>d_sizeof_stream_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1io__signature_1a1da66e0281c56a646c7444734d2e1e90" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::io_signature::IO_INFINITE</definition>
+        <argsstring></argsstring>
+        <name>IO_INFINITE</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1io__signature_1a1d6cc7de0795ad62bbd83e2e8fcc9bb0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::io_signature::io_signature</definition>
+        <argsstring>(int min_streams, int max_streams, const std::vector&lt; int &gt; &amp;sizeof_stream_items)</argsstring>
+        <name>io_signature</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>sizeof_stream_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1io__signature_1a4b063f3a1b517f3b1c97a896dced1a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::io_signature::~io_signature</definition>
+        <argsstring>()</argsstring>
+        <name>~io_signature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1aa6b47faa32726d7c08ff94a1ee0ddb3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::io_signature::min_streams</definition>
+        <argsstring>() const </argsstring>
+        <name>min_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1a89b2b5820401bdf62e7618149144e9ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::io_signature::max_streams</definition>
+        <argsstring>() const </argsstring>
+        <name>max_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="104" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1ae76f8d48c936028905c31f8c06dde51d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::io_signature::sizeof_stream_item</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>sizeof_stream_item</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1aadab1359fa058981ed2e10cfd40170ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::io_signature::sizeof_stream_items</definition>
+        <argsstring>() const </argsstring>
+        <name>sizeof_stream_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="106" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1io__signature_1a7cc508b027860204e8566afaaa382f1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::io_signature::make</definition>
+        <argsstring>(int min_streams, int max_streams, int sizeof_stream_item)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <briefdescription>
+<para>Create an i/o signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify minimum number of streams (&gt;= 0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify maximum number of streams (&gt;= min_streams or -1 -&gt; infinite) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in each stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1a988c8f0560bb5a73aea3f707ec91e3be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::io_signature::make2</definition>
+        <argsstring>(int min_streams, int max_streams, int sizeof_stream_item1, int sizeof_stream_item2)</argsstring>
+        <name>make2</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item2</declname>
+        </param>
+        <briefdescription>
+<para>Create an i/o signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify minimum number of streams (&gt;= 0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify maximum number of streams (&gt;= min_streams or -1 -&gt; infinite) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the first stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the second and subsequent streams </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1ade27e5e9d051504770219214d6bc1754" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::io_signature::make3</definition>
+        <argsstring>(int min_streams, int max_streams, int sizeof_stream_item1, int sizeof_stream_item2, int sizeof_stream_item3)</argsstring>
+        <name>make3</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item3</declname>
+        </param>
+        <briefdescription>
+<para>Create an i/o signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify minimum number of streams (&gt;= 0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify maximum number of streams (&gt;= min_streams or -1 -&gt; infinite) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the first stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the second stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the third and subsequent streams </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1io__signature_1a99e0f9e8de8e7ce16ed92d9f2655e66c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::io_signature::makev</definition>
+        <argsstring>(int min_streams, int max_streams, const std::vector&lt; int &gt; &amp;sizeof_stream_items)</argsstring>
+        <name>makev</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>sizeof_stream_items</declname>
+        </param>
+        <briefdescription>
+<para>Create an i/o signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify minimum number of streams (&gt;= 0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify maximum number of streams (&gt;= min_streams or -1 -&gt; infinite) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in the streams</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+If there are more streams than there are entries in sizeof_stream_items, the value of the last entry in sizeof_stream_items is used for the missing values. sizeof_stream_items must contain at least 1 entry. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>i/o signature for input and output ports. </para>    </briefdescription>
+    <detaileddescription>
+<para>misc </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" bodystart="35" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classgr_1_1io__signature_1a57bc48871edd5404c3613cc398fe3cfc" prot="private" virt="non-virtual"><scope>gr::io_signature</scope><name>d_max_streams</name></member>
+      <member refid="classgr_1_1io__signature_1aad035ad0b2077984b0fe49897783b560" prot="private" virt="non-virtual"><scope>gr::io_signature</scope><name>d_min_streams</name></member>
+      <member refid="classgr_1_1io__signature_1ae26a30492a299eea02da00c03383f5b4" prot="private" virt="non-virtual"><scope>gr::io_signature</scope><name>d_sizeof_stream_item</name></member>
+      <member refid="classgr_1_1io__signature_1a1da66e0281c56a646c7444734d2e1e90" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>IO_INFINITE</name></member>
+      <member refid="classgr_1_1io__signature_1a1d6cc7de0795ad62bbd83e2e8fcc9bb0" prot="private" virt="non-virtual"><scope>gr::io_signature</scope><name>io_signature</name></member>
+      <member refid="classgr_1_1io__signature_1a7cc508b027860204e8566afaaa382f1b" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>make</name></member>
+      <member refid="classgr_1_1io__signature_1a988c8f0560bb5a73aea3f707ec91e3be" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>make2</name></member>
+      <member refid="classgr_1_1io__signature_1ade27e5e9d051504770219214d6bc1754" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>make3</name></member>
+      <member refid="classgr_1_1io__signature_1a99e0f9e8de8e7ce16ed92d9f2655e66c" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>makev</name></member>
+      <member refid="classgr_1_1io__signature_1a89b2b5820401bdf62e7618149144e9ee" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>max_streams</name></member>
+      <member refid="classgr_1_1io__signature_1aa6b47faa32726d7c08ff94a1ee0ddb3a" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>min_streams</name></member>
+      <member refid="classgr_1_1io__signature_1ae76f8d48c936028905c31f8c06dde51d" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>sizeof_stream_item</name></member>
+      <member refid="classgr_1_1io__signature_1aadab1359fa058981ed2e10cfd40170ea" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>sizeof_stream_items</name></member>
+      <member refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>sptr</name></member>
+      <member refid="classgr_1_1io__signature_1a4b063f3a1b517f3b1c97a896dced1a86" prot="public" virt="non-virtual"><scope>gr::io_signature</scope><name>~io_signature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

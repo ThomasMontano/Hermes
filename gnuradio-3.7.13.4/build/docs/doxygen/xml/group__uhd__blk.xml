@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__uhd__blk" kind="group">
+    <compoundname>uhd_blk</compoundname>
+    <title>UHD Interface</title>
+    <innerclass refid="classgr_1_1uhd_1_1usrp__block" prot="public">gr::uhd::usrp_block</innerclass>
+    <innerclass refid="classgr_1_1uhd_1_1usrp__sink" prot="public">gr::uhd::usrp_sink</innerclass>
+    <innerclass refid="classgr_1_1uhd_1_1usrp__source" prot="public">gr::uhd::usrp_source</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__uhd__blk_1gacf4de92d23244606851818761c53d228" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sptr</type>
+        <definition>static sptr gr::uhd::amsg_source::make</definition>
+        <argsstring>(const ::uhd::device_addr_t &amp;device_addr, msg_queue::sptr msgq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const ::uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type>msg_queue::sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+<para>Make a new USRP asynchronous message-based source block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/amsg_source.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__uhd__blk_1gaed1cf28990e424599f16f2c8a84ca57b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sptr</type>
+        <definition>static sptr gr::uhd::usrp_sink::make</definition>
+        <argsstring>(const ::uhd::device_addr_t &amp;device_addr, const ::uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const ::uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type>const ::uhd::io_type_t &amp;</type>
+          <declname>io_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_channels</declname>
+        </param>
+        <briefdescription>
+<para>DEPRECATED Make a new USRP sink block using the deprecated io_type_t.</para><para>This function will be removed in the future. Please use the other make function, gr::uhd::usrp_sink::make(const ::uhd::device_addr_t, const ::uhd::stream_args_t, const std::string). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/usrp_sink.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__uhd__blk_1gacdac77bf10ba114f6fc3ae264e1c879f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sptr</type>
+        <definition>static sptr gr::uhd::usrp_source::make</definition>
+        <argsstring>(const ::uhd::device_addr_t &amp;device_addr, const ::uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const ::uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type>const ::uhd::io_type_t &amp;</type>
+          <declname>io_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_channels</declname>
+        </param>
+        <briefdescription>
+<para>DEPRECATED Make a new USRP source block using the deprecated io_type_t.</para><para>This function will be removed in the future. Please use the other make function, gr::uhd::make(const ::uhd::device_addr_t, const ::uhd::stream_args_t, const std::string). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-uhd/include/gnuradio/uhd/usrp_source.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

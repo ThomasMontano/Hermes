@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__measurement__tools__blk" kind="group">
+    <compoundname>measurement_tools_blk</compoundname>
+    <title>Measurement Tools</title>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__c" prot="public">gr::analog::probe_avg_mag_sqrd_c</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__cf" prot="public">gr::analog::probe_avg_mag_sqrd_cf</innerclass>
+    <innerclass refid="classgr_1_1analog_1_1probe__avg__mag__sqrd__f" prot="public">gr::analog::probe_avg_mag_sqrd_f</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe2__b" prot="public">gr::blocks::ctrlport_probe2_b</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe2__c" prot="public">gr::blocks::ctrlport_probe2_c</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe2__f" prot="public">gr::blocks::ctrlport_probe2_f</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe2__i" prot="public">gr::blocks::ctrlport_probe2_i</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe2__s" prot="public">gr::blocks::ctrlport_probe2_s</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1ctrlport__probe__c" prot="public">gr::blocks::ctrlport_probe_c</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1message__debug" prot="public">gr::blocks::message_debug</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1probe__rate" prot="public">gr::blocks::probe_rate</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1tag__debug" prot="public">gr::blocks::tag_debug</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff" prot="public">gr::blocks::test_tag_variable_rate_ff</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1mpsk__snr__est__cc" prot="public">gr::digital::mpsk_snr_est_cc</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1probe__density__b" prot="public">gr::digital::probe_density_b</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1probe__mpsk__snr__est__c" prot="public">gr::digital::probe_mpsk_snr_est_c</innerclass>
+    <innerclass refid="classgr_1_1fft_1_1ctrlport__probe__psd" prot="public">gr::fft::ctrlport_probe_psd</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__measurement__tools__blk_1ga56518da55fdaa3723f89e20f2db2ca12" prot="public" static="no">
+        <name>snr_est_type_t</name>
+        <enumvalue id="group__measurement__tools__blk_1gga56518da55fdaa3723f89e20f2db2ca12a204d2b2cfc4aaf860fe56445aff6432f" prot="public">
+          <name>SNR_EST_SIMPLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__measurement__tools__blk_1gga56518da55fdaa3723f89e20f2db2ca12afacbe50e9ca04aa6feb581b71e65152d" prot="public">
+          <name>SNR_EST_SKEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__measurement__tools__blk_1gga56518da55fdaa3723f89e20f2db2ca12a5f20dc2162ef6c3f695caaeb68f559ff" prot="public">
+          <name>SNR_EST_M2M4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__measurement__tools__blk_1gga56518da55fdaa3723f89e20f2db2ca12ad3a7d8318e8262c56142601d9aa34b3e" prot="public">
+          <name>SNR_EST_SVR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A block for computing SNR of a signal. </para>        </briefdescription>
+        <detaileddescription>
+<para>Below are some ROUGH estimates of what values of SNR each of these types of estimators is good for. In general, these offer a trade-off between accuracy and performance.</para><para><itemizedlist>
+<listitem><para>SNR_EST_SIMPLE: Simple estimator (&gt;= 7 dB) </para></listitem>
+<listitem><para>SNR_EST_SKEW: Skewness-base est (&gt;= 5 dB) </para></listitem>
+<listitem><para>SNR_EST_M2M4: 2nd &amp; 4th moment est (&gt;= 1 dB) </para></listitem>
+<listitem><para>SNR_EST_SVR: SVR-based est (&gt;= 0dB) </para></listitem>
+</itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_snr_est.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

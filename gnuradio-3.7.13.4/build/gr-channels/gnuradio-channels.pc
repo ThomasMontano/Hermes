@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-channels
+Description: GNU Radio's channel model blocks
+Requires: gnuradio-runtime gnuradio-filter
+Version: 3.7.13.4
+Libs: -L${libdir} -lgnuradio-channels -lgnuradio-filter
+Cflags: -I${includedir}

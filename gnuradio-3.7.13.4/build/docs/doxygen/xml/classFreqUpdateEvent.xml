@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classFreqUpdateEvent" kind="class" prot="public">
+    <compoundname>FreqUpdateEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QEvent</basecompoundref>
+    <includes refid="spectrumUpdateEvents_8h" local="no">gnuradio/qtgui/spectrumUpdateEvents.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFreqUpdateEvent_1a3c7e7d7d4972e9e991576df1db97b42f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t FreqUpdateEvent::_nplots</definition>
+        <argsstring></argsstring>
+        <name>_nplots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="173" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqUpdateEvent_1a9891d99ae36341228f821604a93bfb02" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double * &gt;</type>
+        <definition>std::vector&lt;double*&gt; FreqUpdateEvent::_dataPoints</definition>
+        <argsstring></argsstring>
+        <name>_dataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="174" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFreqUpdateEvent_1af2604bab978b1d908cebaf3dfdcee357" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t FreqUpdateEvent::_numDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="175" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFreqUpdateEvent_1ae975ae99033fbe49757c1f23b085e633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FreqUpdateEvent::FreqUpdateEvent</definition>
+        <argsstring>(const std::vector&lt; double * &gt; dataPoints, const uint64_t numDataPoints)</argsstring>
+        <name>FreqUpdateEvent</name>
+        <param>
+          <type>const std::vector&lt; double * &gt;</type>
+          <declname>dataPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numDataPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqUpdateEvent_1afffc22c3ccf75605034e1ef7fe524f68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FreqUpdateEvent::~FreqUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~FreqUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqUpdateEvent_1a98589d23359a5163e7a622ace4c2e611" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FreqUpdateEvent::which</definition>
+        <argsstring>() const </argsstring>
+        <name>which</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqUpdateEvent_1a8ec70b03b0979cc97e888e8406a008f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; double * &gt;</type>
+        <definition>const std::vector&lt;double*&gt; FreqUpdateEvent::getPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqUpdateEvent_1a08b7e52dd77743fda799802f31ebbeab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t FreqUpdateEvent::getNumDataPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFreqUpdateEvent_1a7e019797ac7d42742680753e87893d9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FreqUpdateEvent::getRepeatDataFlag</definition>
+        <argsstring>() const </argsstring>
+        <name>getRepeatDataFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="165" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFreqUpdateEvent_1a3275e6a535adeca85e8a6b6b60b34e9b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QEvent::Type</type>
+        <definition>static QEvent::Type FreqUpdateEvent::Type</definition>
+        <argsstring>()</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="167" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="167" bodyend="168"/>
+        <references refid="spectrumUpdateEvents_8h_1abae995316b74a1f7a2b9d456566576db" compoundref="spectrumUpdateEvents_8h" startline="35">SpectrumUpdateEventType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5244">
+        <label>QEvent</label>
+      </node>
+      <node id="5243">
+        <label>FreqUpdateEvent</label>
+        <link refid="classFreqUpdateEvent"/>
+        <childnode refid="5244" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5246">
+        <label>QEvent</label>
+      </node>
+      <node id="5245">
+        <label>FreqUpdateEvent</label>
+        <link refid="classFreqUpdateEvent"/>
+        <childnode refid="5246" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="155" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="154" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classFreqUpdateEvent_1a9891d99ae36341228f821604a93bfb02" prot="private" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>_dataPoints</name></member>
+      <member refid="classFreqUpdateEvent_1a3c7e7d7d4972e9e991576df1db97b42f" prot="private" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>_nplots</name></member>
+      <member refid="classFreqUpdateEvent_1af2604bab978b1d908cebaf3dfdcee357" prot="private" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>_numDataPoints</name></member>
+      <member refid="classFreqUpdateEvent_1ae975ae99033fbe49757c1f23b085e633" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>FreqUpdateEvent</name></member>
+      <member refid="classFreqUpdateEvent_1a08b7e52dd77743fda799802f31ebbeab" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>getNumDataPoints</name></member>
+      <member refid="classFreqUpdateEvent_1a8ec70b03b0979cc97e888e8406a008f4" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>getPoints</name></member>
+      <member refid="classFreqUpdateEvent_1a7e019797ac7d42742680753e87893d9f" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>getRepeatDataFlag</name></member>
+      <member refid="classFreqUpdateEvent_1a3275e6a535adeca85e8a6b6b60b34e9b" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>Type</name></member>
+      <member refid="classFreqUpdateEvent_1a98589d23359a5163e7a622ace4c2e611" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>which</name></member>
+      <member refid="classFreqUpdateEvent_1afffc22c3ccf75605034e1ef7fe524f68" prot="public" virt="non-virtual"><scope>FreqUpdateEvent</scope><name>~FreqUpdateEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

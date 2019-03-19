@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1and__const__bb" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::and_const_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="and__const__bb_8h" local="no">and_const_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1and__const__bb_1a2933369cd9a1c0eaf30dcd00c0a85707" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1and__const__bb" kindref="compound">and_const_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;and_const_bb&gt; gr::blocks::and_const_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1and__const__bb_1a17acec7c6c464f54ed55aa0d1004bbc1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1and__const__bb_1a2933369cd9a1c0eaf30dcd00c0a85707" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::and_const_bb::make</definition>
+        <argsstring>(unsigned char k)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="classgr_1_1blocks_1_1and__const__bb" kindref="compound">and_const_bb</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AND constant </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1and__const__bb_1ac5252ed0395aa43eafe4f4b062a70f35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned char</type>
+        <definition>virtual unsigned char gr::blocks::and_const_bb::k</definition>
+        <argsstring>() const =0</argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>Return AND constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1and__const__bb_1ac3d3ef8306e364b5557285fb733c882e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::and_const_bb::set_k</definition>
+        <argsstring>(unsigned char k)=0</argsstring>
+        <name>set_k</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Set AND constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>output[m] = input[m] &amp; value for all M streams. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bitwise boolean AND of constant <computeroutput>k</computeroutput> with the data stream. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>sync_block</label>
+      </node>
+      <node id="72">
+        <label>gr::blocks::and_const_bb</label>
+        <link refid="classgr_1_1blocks_1_1and__const__bb"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="75">
+        <label>sync_block</label>
+      </node>
+      <node id="74">
+        <label>gr::blocks::and_const_bb</label>
+        <link refid="classgr_1_1blocks_1_1and__const__bb"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/and_const_bb.h" bodystart="41" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1and__const__bb_1ac5252ed0395aa43eafe4f4b062a70f35" prot="public" virt="pure-virtual"><scope>gr::blocks::and_const_bb</scope><name>k</name></member>
+      <member refid="classgr_1_1blocks_1_1and__const__bb_1a17acec7c6c464f54ed55aa0d1004bbc1" prot="public" virt="non-virtual"><scope>gr::blocks::and_const_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1and__const__bb_1ac3d3ef8306e364b5557285fb733c882e" prot="public" virt="pure-virtual"><scope>gr::blocks::and_const_bb</scope><name>set_k</name></member>
+      <member refid="classgr_1_1blocks_1_1and__const__bb_1a2933369cd9a1c0eaf30dcd00c0a85707" prot="public" virt="non-virtual"><scope>gr::blocks::and_const_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

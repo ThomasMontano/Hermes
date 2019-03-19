@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1regenerate__bb" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::regenerate_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="regenerate__bb_8h" local="no">regenerate_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1regenerate__bb_1ac3193628ca2f79b047ed8210ff0f6d6a" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1regenerate__bb" kindref="compound">regenerate_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;regenerate_bb&gt; gr::blocks::regenerate_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1regenerate__bb_1a07edf34b5a296ab03c56a69d68eea4be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1regenerate__bb_1ac3193628ca2f79b047ed8210ff0f6d6a" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::regenerate_bb::make</definition>
+        <argsstring>(int period, unsigned int max_regen=500)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_regen</declname>
+          <defval>500</defval>
+        </param>
+        <briefdescription>
+<para>Make a regenerate block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of samples between regenerations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_regen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of regenerations to perform; if set to ULONG_MAX, it will regenerate continuously. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1regenerate__bb_1ab1c59824ea2ecd2a7c04602e2122d07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::regenerate_bb::set_max_regen</definition>
+        <argsstring>(unsigned int regen)=0</argsstring>
+        <name>set_max_regen</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>regen</declname>
+        </param>
+        <briefdescription>
+<para>Reset the maximum regeneration count; this will reset the current regen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1regenerate__bb_1a83a796386d1211154caeedbae969d7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::regenerate_bb::set_period</definition>
+        <argsstring>(int period)=0</argsstring>
+        <name>set_period</name>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+<para>Reset the period of regenerations; this will reset the current regen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1regenerate__bb_1a631e39890312e07a305adcee50293ee3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int gr::blocks::regenerate_bb::max_regen</definition>
+        <argsstring>() const =0</argsstring>
+        <name>max_regen</name>
+        <briefdescription>
+<para>return the maximum regeneration count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1regenerate__bb_1a7732fd2f25ffccf5b1b2467249ec04d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::regenerate_bb::period</definition>
+        <argsstring>() const =0</argsstring>
+        <name>period</name>
+        <briefdescription>
+<para>return the regeneration period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Detect the peak of a signal and repeat every period samples. </para>    </briefdescription>
+    <detaileddescription>
+<para>If a peak is detected, this block outputs a 1 repeated every period samples until reset by detection of another 1 on the input or stopped after max_regen regenerations have occurred.</para><para>Note that if max_regen=(-1)/ULONG_MAX then the regeneration will run forever. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="638">
+        <label>gr::blocks::regenerate_bb</label>
+        <link refid="classgr_1_1blocks_1_1regenerate__bb"/>
+        <childnode refid="639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="640">
+        <label>gr::blocks::regenerate_bb</label>
+        <link refid="classgr_1_1blocks_1_1regenerate__bb"/>
+        <childnode refid="641" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/regenerate_bb.h" bodystart="44" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1a07edf34b5a296ab03c56a69d68eea4be" prot="public" virt="non-virtual"><scope>gr::blocks::regenerate_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1a631e39890312e07a305adcee50293ee3" prot="public" virt="pure-virtual"><scope>gr::blocks::regenerate_bb</scope><name>max_regen</name></member>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1a7732fd2f25ffccf5b1b2467249ec04d3" prot="public" virt="pure-virtual"><scope>gr::blocks::regenerate_bb</scope><name>period</name></member>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1ab1c59824ea2ecd2a7c04602e2122d07f" prot="public" virt="pure-virtual"><scope>gr::blocks::regenerate_bb</scope><name>set_max_regen</name></member>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1a83a796386d1211154caeedbae969d7a1" prot="public" virt="pure-virtual"><scope>gr::blocks::regenerate_bb</scope><name>set_period</name></member>
+      <member refid="classgr_1_1blocks_1_1regenerate__bb_1ac3193628ca2f79b047ed8210ff0f6d6a" prot="public" virt="non-virtual"><scope>gr::blocks::regenerate_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

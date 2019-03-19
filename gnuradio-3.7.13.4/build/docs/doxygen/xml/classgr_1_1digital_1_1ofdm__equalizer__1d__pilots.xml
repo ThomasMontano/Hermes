@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots" kind="class" prot="public">
+    <compoundname>gr::digital::ofdm_equalizer_1d_pilots</compoundname>
+    <basecompoundref refid="classgr_1_1digital_1_1ofdm__equalizer__base" prot="public" virt="non-virtual">gr::digital::ofdm_equalizer_base</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1digital_1_1ofdm__equalizer__simpledfe" prot="public" virt="non-virtual">gr::digital::ofdm_equalizer_simpledfe</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1digital_1_1ofdm__equalizer__static" prot="public" virt="non-virtual">gr::digital::ofdm_equalizer_static</derivedcompoundref>
+    <includes refid="ofdm__equalizer__base_8h" local="no">gnuradio/digital/ofdm_equalizer_base.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a53f3c1d2149617cd4fbb469056ef9259" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots" kindref="compound">ofdm_equalizer_1d_pilots</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ofdm_equalizer_1d_pilots&gt; gr::digital::ofdm_equalizer_1d_pilots::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="89" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1aa9920fd29d83d341c75ffe70b720317c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; gr::digital::ofdm_equalizer_1d_pilots::d_occupied_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_occupied_carriers</name>
+        <briefdescription>
+<para>If <computeroutput>d_occupied_carriers</computeroutput>[k][l] is true, symbol k, carrier l is carrying data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a55eabce553bf24fda91be20379822621" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; bool &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;bool&gt; &gt; gr::digital::ofdm_equalizer_1d_pilots::d_pilot_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_pilot_carriers</name>
+        <briefdescription>
+<para>If <computeroutput>d_pilot_carriers</computeroutput>[k][l] is true, symbol k, carrier l is carrying data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1ad2a527eaa18811a71dce62fca5cb82ac" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;gr_complex&gt; &gt; gr::digital::ofdm_equalizer_1d_pilots::d_pilot_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_pilot_symbols</name>
+        <briefdescription>
+<para>If <computeroutput>d_pilot_carriers</computeroutput>[k][l] is true, d_pilot_symbols[k][l] is its tx&apos;d value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a17b317a9bd7bb69bfc3385912f58066b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::digital::ofdm_equalizer_1d_pilots::d_symbols_skipped</definition>
+        <argsstring></argsstring>
+        <name>d_symbols_skipped</name>
+        <briefdescription>
+<para>In case the frame doesn&apos;t begin with OFDM symbol 0, this is the index of the first symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a71b85d6d80e9b5d1bfcca65b5239b5ec" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::digital::ofdm_equalizer_1d_pilots::d_pilot_carr_set</definition>
+        <argsstring></argsstring>
+        <name>d_pilot_carr_set</name>
+        <briefdescription>
+<para>The current position in the set of pilot symbols. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a9d991ab82c666e194bee0c01cab257a9" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::digital::ofdm_equalizer_1d_pilots::d_channel_state</definition>
+        <argsstring></argsstring>
+        <name>d_channel_state</name>
+        <briefdescription>
+<para>Vector of length d_fft_len saving the current channel state (on the occupied carriers) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a1f161ee7899e8bbaac61261a557a0f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::ofdm_equalizer_1d_pilots::ofdm_equalizer_1d_pilots</definition>
+        <argsstring>(int fft_len, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;occupied_carriers, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;pilot_carriers, const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;pilot_symbols, int symbols_skipped, bool input_is_shifted)</argsstring>
+        <name>ofdm_equalizer_1d_pilots</name>
+        <param>
+          <type>int</type>
+          <declname>fft_len</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>occupied_carriers</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>pilot_carriers</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &gt; &amp;</type>
+          <declname>pilot_symbols</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>symbols_skipped</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>input_is_shifted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1abdc56d43695d941782d94020abc0aa84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::ofdm_equalizer_1d_pilots::~ofdm_equalizer_1d_pilots</definition>
+        <argsstring>()</argsstring>
+        <name>~ofdm_equalizer_1d_pilots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a8ffd5f50344aaf36bb4ae2544be9c5c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::digital::ofdm_equalizer_1d_pilots::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="classgr_1_1digital_1_1ofdm__equalizer__base_1acecac839fa87f9031d2e2d07f3d30296">reset</reimplements>
+        <briefdescription>
+<para>Reset the channel information state knowledge. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a664f44aa4e447ce38758468fd97ba4dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::digital::ofdm_equalizer_1d_pilots::get_channel_state</definition>
+        <argsstring>(std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
+        <name>get_channel_state</name>
+        <reimplements refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a2a836452416032030ebffd212951979b">get_channel_state</reimplements>
+        <param>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <declname>taps</declname>
+        </param>
+        <briefdescription>
+<para>Return the current channel state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7716">
+        <label>boost::enable_shared_from_this&lt; ofdm_equalizer_base &gt;</label>
+      </node>
+      <node id="7715">
+        <label>gr::digital::ofdm_equalizer_base</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__base"/>
+        <childnode refid="7716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7717">
+        <label>gr::digital::ofdm_equalizer_simpledfe</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__simpledfe"/>
+        <childnode refid="7714" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7718">
+        <label>gr::digital::ofdm_equalizer_static</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__static"/>
+        <childnode refid="7714" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7714">
+        <label>gr::digital::ofdm_equalizer_1d_pilots</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots"/>
+        <childnode refid="7715" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7721">
+        <label>boost::enable_shared_from_this&lt; ofdm_equalizer_base &gt;</label>
+      </node>
+      <node id="7720">
+        <label>gr::digital::ofdm_equalizer_base</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__base"/>
+        <childnode refid="7721" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7724">
+        <label>std::vector&lt; gr_complex &gt;</label>
+        <childnode refid="7725" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7719">
+        <label>gr::digital::ofdm_equalizer_1d_pilots</label>
+        <link refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots"/>
+        <childnode refid="7720" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7722" relation="usage">
+          <edgelabel>d_pilot_carriers</edgelabel>
+        </childnode>
+        <childnode refid="7723" relation="usage">
+          <edgelabel>d_occupied_carriers</edgelabel>
+        </childnode>
+        <childnode refid="7724" relation="usage">
+          <edgelabel>d_channel_state</edgelabel>
+        </childnode>
+        <childnode refid="7726" relation="usage">
+          <edgelabel>d_pilot_symbols</edgelabel>
+        </childnode>
+      </node>
+      <node id="7725">
+        <label>std::complex</label>
+      </node>
+      <node id="7723">
+        <label>std::vector&lt; bool &gt;</label>
+      </node>
+      <node id="7722">
+        <label>std::vector&lt; std::vector&lt; bool &gt; &gt;</label>
+        <childnode refid="7723" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7726">
+        <label>std::vector&lt; std::vector&lt; gr_complex &gt; &gt;</label>
+        <childnode refid="7724" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/ofdm_equalizer_base.h" bodystart="69" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a5581fb5b033e7dddbe28102a31e3c6bf" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>base</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a9d991ab82c666e194bee0c01cab257a9" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_channel_state</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a9896c1fa366a49d118215aee9c1e9d36" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_fft_len</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1aa9920fd29d83d341c75ffe70b720317c" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_occupied_carriers</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a71b85d6d80e9b5d1bfcca65b5239b5ec" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_pilot_carr_set</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a55eabce553bf24fda91be20379822621" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_pilot_carriers</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1ad2a527eaa18811a71dce62fca5cb82ac" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_pilot_symbols</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a17b317a9bd7bb69bfc3385912f58066b" prot="protected" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>d_symbols_skipped</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a0696cb26b6eb760454226d9b835ef5a0" prot="public" virt="pure-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>equalize</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a38cf0a269f79727c7a776649c6a48f27" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>fft_len</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a664f44aa4e447ce38758468fd97ba4dc" prot="public" virt="virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>get_channel_state</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a1f161ee7899e8bbaac61261a557a0f60" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>ofdm_equalizer_1d_pilots</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1ab4af93740aa7b0eb010b6dd6ef72ec99" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>ofdm_equalizer_base</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a8ffd5f50344aaf36bb4ae2544be9c5c9" prot="public" virt="virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>reset</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1a53f3c1d2149617cd4fbb469056ef9259" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>sptr</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__1d__pilots_1abdc56d43695d941782d94020abc0aa84" prot="public" virt="non-virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>~ofdm_equalizer_1d_pilots</name></member>
+      <member refid="classgr_1_1digital_1_1ofdm__equalizer__base_1a9d78815c52d4e2920e1032e7e848d9da" prot="public" virt="virtual"><scope>gr::digital::ofdm_equalizer_1d_pilots</scope><name>~ofdm_equalizer_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

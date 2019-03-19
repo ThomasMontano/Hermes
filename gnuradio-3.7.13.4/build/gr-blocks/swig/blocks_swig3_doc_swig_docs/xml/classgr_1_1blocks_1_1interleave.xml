@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1interleave" kind="class" prot="public">
+    <compoundname>gr::blocks::interleave</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="interleave_8h" local="no">interleave.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1interleave_1af747612775e8fdf6becffa23046c9b73" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1interleave" kindref="compound">interleave</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;interleave&gt; gr::blocks::interleave::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleave.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleave.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1interleave_1ae1267ea36973a53611a3c3824a2f0de8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1interleave_1af747612775e8fdf6becffa23046c9b73" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::interleave::make</definition>
+        <argsstring>(size_t itemsize, unsigned int blocksize=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>blocksize</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a stream interleave block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream itemsize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blocksize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of block of samples to interleave </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleave.h" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>interleave N inputs into a single output </para>    </briefdescription>
+    <detaileddescription>
+<para>This block interleaves blocks of samples. For each input connection, the samples are interleaved successively to the output connection. By default, the block interleaves a single sample from each input to the output unless blocksize is given in the constructor.</para><para><programlisting><codeline><highlight class="normal">blocksize<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">connections<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">input[0]<sp/>=<sp/>[a,<sp/>c,<sp/>e,<sp/>g]</highlight></codeline>
+<codeline><highlight class="normal">input[1]<sp/>=<sp/>[b,<sp/>d,<sp/>f,<sp/>h]</highlight></codeline>
+<codeline><highlight class="normal">output<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>d,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+</programlisting></para><para><programlisting><codeline><highlight class="normal">blocksize<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">connections<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">input[0]<sp/>=<sp/>[a,<sp/>b,<sp/>e,<sp/>f]</highlight></codeline>
+<codeline><highlight class="normal">input[1]<sp/>=<sp/>[c,<sp/>d,<sp/>g,<sp/>h]</highlight></codeline>
+<codeline><highlight class="normal">output<sp/>=<sp/>[a,<sp/>b,<sp/>c,<sp/>d,<sp/>e,<sp/>f,<sp/>g,<sp/>h]</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="312">
+        <label>gr::blocks::interleave</label>
+        <link refid="classgr_1_1blocks_1_1interleave"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="314">
+        <label>gr::blocks::interleave</label>
+        <link refid="classgr_1_1blocks_1_1interleave"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleave.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/interleave.h" bodystart="60" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1interleave_1ae1267ea36973a53611a3c3824a2f0de8" prot="public" virt="non-virtual"><scope>gr::blocks::interleave</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1interleave_1af747612775e8fdf6becffa23046c9b73" prot="public" virt="non-virtual"><scope>gr::blocks::interleave</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

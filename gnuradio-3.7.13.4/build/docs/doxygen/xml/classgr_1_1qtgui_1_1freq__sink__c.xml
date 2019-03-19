@@ -1,0 +1,1211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1qtgui_1_1freq__sink__c" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::qtgui::freq_sink_c</compoundname>
+    <basecompoundref refid="classgr_1_1sync__block" prot="public" virt="virtual">gr::sync_block</basecompoundref>
+    <includes refid="freq__sink__c_8h" local="no">gnuradio/qtgui/freq_sink_c.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1qtgui_1_1freq__sink__c_1a1d3cb134c699bccea6b8c28f3b544fbc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1qtgui_1_1freq__sink__c" kindref="compound">freq_sink_c</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;freq_sink_c&gt; gr::qtgui::freq_sink_c::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1qtgui_1_1freq__sink__c_1abbf187e19773812abb0f16aef4310d00" prot="public" static="no" mutable="no">
+        <type>QApplication *</type>
+        <definition>QApplication* gr::qtgui::freq_sink_c::d_qApplication</definition>
+        <argsstring></argsstring>
+        <name>d_qApplication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="188" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1abff73e2bb8a2b2875aabea3e549d4dfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1qtgui_1_1freq__sink__c_1a1d3cb134c699bccea6b8c28f3b544fbc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::qtgui::freq_sink_c::make</definition>
+        <argsstring>(int fftsize, int wintype, double fc, double bw, const std::string &amp;name, int nconnections=1, QWidget *parent=NULL)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>fftsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wintype</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bw</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nconnections</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Build a complex PSD sink. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fftsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the FFT to compute and display. If using the PDU message port to plot samples, the length of each PDU must be a multiple of the FFT size. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wintype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of window to apply (see <ref refid="classgr_1_1fft_1_1window_1a599d7e9625d6cc77203a8b877c4911e2" kindref="member">gr::fft::window::win_type</ref>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center frequency of signal (use for x-axis labels) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bandwidth of signal (used to set x-axis labels) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>title for the plot </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nconnections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of signals to be connected to the sink. The PDU message port is always available for a connection, and this value must be set to 0 if only the PDU message port is being used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a QWidget parent object, if any </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1aa31730a65ef8727bd0c2a2c58bd8cd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::exec_</definition>
+        <argsstring>()=0</argsstring>
+        <name>exec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1aa9f7519ac3e8cdec171fdb720a1a9a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>QWidget *</type>
+        <definition>virtual QWidget* gr::qtgui::freq_sink_c::qwidget</definition>
+        <argsstring>()=0</argsstring>
+        <name>qwidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a553ca0c02fa2329a7843399be7cb161e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* gr::qtgui::freq_sink_c::pyqwidget</definition>
+        <argsstring>()=0</argsstring>
+        <name>pyqwidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a0e4aae338f64e7a850e27546110f664f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_fft_size</definition>
+        <argsstring>(const int fftsize)=0</argsstring>
+        <name>set_fft_size</name>
+        <param>
+          <type>const int</type>
+          <declname>fftsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1ae2c7d1ab0eeba2212e623f66d4e94a86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::qtgui::freq_sink_c::fft_size</definition>
+        <argsstring>() const =0</argsstring>
+        <name>fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a5dd0d9c8d33e431c26a3140b943893c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_fft_average</definition>
+        <argsstring>(const float fftavg)=0</argsstring>
+        <name>set_fft_average</name>
+        <param>
+          <type>const float</type>
+          <declname>fftavg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1abd4889b4bd3bd8b117b527ef05c8ddda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::qtgui::freq_sink_c::fft_average</definition>
+        <argsstring>() const =0</argsstring>
+        <name>fft_average</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a538e17c977346219abb81f144ae91fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_fft_window</definition>
+        <argsstring>(const gr::filter::firdes::win_type win)=0</argsstring>
+        <name>set_fft_window</name>
+        <param>
+          <type>const <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+          <declname>win</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a357234480114d04a2b75d39d0f5f4488" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">gr::filter::firdes::win_type</ref></type>
+        <definition>virtual gr::filter::firdes::win_type gr::qtgui::freq_sink_c::fft_window</definition>
+        <argsstring>()=0</argsstring>
+        <name>fft_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a9eea1cdb4b18793c32417c64c6f22e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_frequency_range</definition>
+        <argsstring>(const double centerfreq, const double bandwidth)=0</argsstring>
+        <name>set_frequency_range</name>
+        <param>
+          <type>const double</type>
+          <declname>centerfreq</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>bandwidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a9a93bef67e5032b9e89606b0d07e7471" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_y_axis</definition>
+        <argsstring>(double min, double max)=0</argsstring>
+        <name>set_y_axis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a7db666a47684b6c003d8ac858ba24c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_update_time</definition>
+        <argsstring>(double t)=0</argsstring>
+        <name>set_update_time</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a609949d651cb52ad4795830031175f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_title</definition>
+        <argsstring>(const std::string &amp;title)=0</argsstring>
+        <name>set_title</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a3686234e285127c9bd139a1447253ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_y_label</definition>
+        <argsstring>(const std::string &amp;label, const std::string &amp;unit)=0</argsstring>
+        <name>set_y_label</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1aab6210f57f8d48c9e2b4915f6f2fd307" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_label</definition>
+        <argsstring>(int which, const std::string &amp;label)=0</argsstring>
+        <name>set_line_label</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a9d02572bfe4595725a9ace649a455a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_color</definition>
+        <argsstring>(int which, const std::string &amp;color)=0</argsstring>
+        <name>set_line_color</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1aae812f5212df791ed529a8a14a125baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_width</definition>
+        <argsstring>(int which, int width)=0</argsstring>
+        <name>set_line_width</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a40718f4eb944d8110bdbbf1e6201bca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_style</definition>
+        <argsstring>(int which, int style)=0</argsstring>
+        <name>set_line_style</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a4a85c6e31950ba5c886582709b0a6b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_marker</definition>
+        <argsstring>(int which, int marker)=0</argsstring>
+        <name>set_line_marker</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>marker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1adfcddeaab8aa45f333e0363eeba7a1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_line_alpha</definition>
+        <argsstring>(int which, double alpha)=0</argsstring>
+        <name>set_line_alpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a4d1a09fdd91eb438e9cd8bc2662813da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_trigger_mode</definition>
+        <argsstring>(trigger_mode mode, float level, int channel, const std::string &amp;tag_key=&quot;&quot;)=0</argsstring>
+        <name>set_trigger_mode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tag_key</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up a trigger for the sink to know when to start plotting. Useful to isolate events and avoid noise.</para><para>The trigger modes are Free, Auto, Normal, and Tag (see <ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref>). The first three are like a normal trigger function. Free means free running with no trigger, auto will trigger if the trigger event is seen, but will still plot otherwise, and normal will hold until the trigger event is observed. The Tag trigger mode allows us to trigger off a specific stream tag. The tag trigger is based only on the name of the tag, so when a tag of the given name is seen, the trigger is activated.</para><para>In auto and normal mode, we look to see if the magnitude of the any FFT point is over the set level.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trigger_mode: free, auto, normal, or tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The magnitude of the trigger even for auto or normal modes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which input channel to use for the trigger events. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name (as a string) of the tag to trigger off of if using the tag mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a786a1de0e7d99938e65f8516db5cf839" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string gr::qtgui::freq_sink_c::title</definition>
+        <argsstring>()=0</argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1ac946b0c1ef97c8bfcd74377c9fb6f9bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string gr::qtgui::freq_sink_c::line_label</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_label</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a7a558a439f174010a8f096476e2bdf04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string gr::qtgui::freq_sink_c::line_color</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_color</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1ae2d9ce0ebcbfcaefa4246de6ef4044f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::qtgui::freq_sink_c::line_width</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_width</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a57f2e7541a1f93c1918d779bbfa668f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::qtgui::freq_sink_c::line_style</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_style</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1ad2367d214bdbf8f69923ecd3d2168ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::qtgui::freq_sink_c::line_marker</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_marker</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a25d64f8b7c30b1c839143acb997e5923" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::qtgui::freq_sink_c::line_alpha</definition>
+        <argsstring>(int which)=0</argsstring>
+        <name>line_alpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a5bc3b8b3b12c580959108c517dc3495d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::set_size</definition>
+        <argsstring>(int width, int height)=0</argsstring>
+        <name>set_size</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a20e683870f805be33127c87a1c999bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_menu</definition>
+        <argsstring>(bool en=true)=0</argsstring>
+        <name>enable_menu</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a7a2689536aea16fa945fa9e65cb67f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_grid</definition>
+        <argsstring>(bool en=true)=0</argsstring>
+        <name>enable_grid</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1aabd6a43c350741b96dc87c0b9c52b4a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_autoscale</definition>
+        <argsstring>(bool en=true)=0</argsstring>
+        <name>enable_autoscale</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1adea4c54ad174f924211765af6c932182" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_control_panel</definition>
+        <argsstring>(bool en=true)=0</argsstring>
+        <name>enable_control_panel</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a6fd33a77bfe894f9d8678f3688c91f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_max_hold</definition>
+        <argsstring>(bool en)=0</argsstring>
+        <name>enable_max_hold</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a20380e71223f05e22f069fb638280302" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_min_hold</definition>
+        <argsstring>(bool en)=0</argsstring>
+        <name>enable_min_hold</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1adee6150d0fac4aa5c910c18841444f5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::clear_max_hold</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear_max_hold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a97e0c24636678cdcbd1979b9ddca86ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::clear_min_hold</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear_min_hold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a44be2488bef1d84eab1f8fdfd6d5c9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::disable_legend</definition>
+        <argsstring>()=0</argsstring>
+        <name>disable_legend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1a63539e05c1a86ec4f9568f07a8d7d07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1qtgui_1_1freq__sink__c_1ada55646875afe57f9724d303a164642b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::qtgui::freq_sink_c::enable_axis_labels</definition>
+        <argsstring>(bool en=true)=0</argsstring>
+        <name>enable_axis_labels</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="186" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A graphical sink to display multiple signals in frequency. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is a QT-based graphical sink the takes set of a complex streams and plots the PSD. Each signal is plotted with a different color, and the <emphasis>set_title</emphasis> and <emphasis>set_color</emphasis> functions can be used to change the lable and color for a given input number.</para><para>The sink supports plotting streaming complex data or messages. The message port is named &quot;in&quot;. The two modes cannot be used simultaneously, and <computeroutput>nconnections</computeroutput> should be set to 0 when using the message mode. GRC handles this issue by providing the &quot;Complex Message&quot; type that removes the streaming port(s).</para><para>This sink can plot messages that contain either uniform vectors of complex 32 values (<ref refid="namespacepmt_1aeb135345903361a969d0e90ddb191272" kindref="member">pmt::is_c32vector</ref>) or PDUs where the data is a uniform vector of complex 32 values.</para><para>Message Ports:</para><para><itemizedlist>
+<listitem><para>freq (input): Receives a PMT pair: (intern(&quot;freq&quot;), double(frequency). This is used to retune the center frequency of the display&apos;s x-axis.</para></listitem><listitem><para>freq (output): Produces a PMT pair with (intern(&quot;freq&quot;), double(frequency). When a user double-clicks on the display, the block produces and emits a message containing the frequency of where on the x-axis the user clicked. This value can be used by other blocks to update their frequency setting.</para><para>To perform click-to-tune behavior, this output &apos;freq&apos; port can be redirected to this block&apos;s input &apos;freq&apos; port to catch the message and update the center frequency of the display. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5152">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="5153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5148">
+        <label>gr::qtgui::freq_sink_c</label>
+        <link refid="classgr_1_1qtgui_1_1freq__sink__c"/>
+        <childnode refid="5149" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5149">
+        <label>gr::sync_block</label>
+        <link refid="classgr_1_1sync__block"/>
+        <childnode refid="5150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5151">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="5152" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5153">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="5150">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="5151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5154">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5159">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="5160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5163">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="5155">
+        <label>gr::qtgui::freq_sink_c</label>
+        <link refid="classgr_1_1qtgui_1_1freq__sink__c"/>
+        <childnode refid="5156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5156">
+        <label>gr::sync_block</label>
+        <link refid="classgr_1_1sync__block"/>
+        <childnode refid="5157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5158">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="5159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5161" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5162" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+        <childnode refid="5164" relation="usage">
+          <edgelabel>d_symbol_alias</edgelabel>
+          <edgelabel>d_name</edgelabel>
+          <edgelabel>d_symbol_name</edgelabel>
+        </childnode>
+        <childnode refid="5166" relation="usage">
+          <edgelabel>d_rpc_vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="5165">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="5162">
+        <label>std::map&lt; pmt::pmt_t, msg_queue_t, pmt::comparator &gt;</label>
+        <childnode refid="5163" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5166">
+        <label>std::vector&lt; boost::any &gt;</label>
+      </node>
+      <node id="5160">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="5167">
+        <label>std::vector&lt; long &gt;</label>
+      </node>
+      <node id="5157">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="5158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5167" relation="usage">
+          <edgelabel>d_min_output_buffer</edgelabel>
+          <edgelabel>d_max_output_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5161">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+      <node id="5164">
+        <label>std::string</label>
+        <childnode refid="5165" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/freq_sink_c.h" bodystart="81" bodyend="189"/>
+    <listofallmembers>
+      <member refid="classgr_1_1basic__block_1ab82376fe13f515cb904c0d2e9fec87b6" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>_post</name></member>
+      <member refid="classgr_1_1block_1a099f578878243499d63846bbee61979a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>active_thread_priority</name></member>
+      <member refid="classgr_1_1block_1a8b7cc51b9d289124d6843bb392f564fc" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1block_1a8f0ee37749a77d3f40a5bb04233f6028" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1basic__block_1a42d65e902f4886602ff3d5b124a71ef3" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>alias</name></member>
+      <member refid="classgr_1_1basic__block_1a817f3a7595c32fbce00983977d0dd91e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>alias_pmt</name></member>
+      <member refid="classgr_1_1basic__block_1aad58e9944ff205539855cd6116b03c55" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>alias_set</name></member>
+      <member refid="classgr_1_1block_1a75313b29c3e68574bddf52ad7ab8c99a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>alignment</name></member>
+      <member refid="classgr_1_1basic__block_1a6cc897729213ab4d2e3ade44c6942100" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1a451b45483aec67682289f4cf94e53f74" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaab729ab9b0c860fece10ea1eddab6ce52" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>BLACK</name></member>
+      <member refid="classgr_1_1block_1a624c3e070c3df38e5d11e4acd0f59b46" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>block</name></member>
+      <member refid="classgr_1_1block_1aebbc2ed68daafc4de5ee0f5df21efe6e" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>block</name></member>
+      <member refid="classgr_1_1basic__block_1aca13d6f083397aada5b44d0f349ce151" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>check_topology</name></member>
+      <member refid="classgr_1_1block_1af19867ade7536783777a5c5e91b69972" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>clear_finished</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1adee6150d0fac4aa5c910c18841444f5e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>clear_max_hold</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a97e0c24636678cdcbd1979b9ddca86ca" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>clear_min_hold</name></member>
+      <member refid="classgr_1_1basic__block_1a6d7621bc17d7bd50b8b36d905487adcf" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>color</name></member>
+      <member refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>consume</name></member>
+      <member refid="classgr_1_1block_1a12ea5eba701e22a3d023d0ba7c6ee07c" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>consume_each</name></member>
+      <member refid="classgr_1_1basic__block_1afc7a00e9e0ff69ceb903d3d6ff506473" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_color</name></member>
+      <member refid="classgr_1_1block_1a41a376b09fb8bfc8f692edb5f733aaaa" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_debug_logger</name></member>
+      <member refid="classgr_1_1basic__block_1a84d6b200bb5e268424e9e4630cb22e5a" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_input_signature</name></member>
+      <member refid="classgr_1_1block_1a7061aa0e90b8cb1750b790f65549e0ae" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1block_1ab740ebd7e5e88ab5ed7039db9f054db1" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1aefa8ebb27b9d86bef179e30e37f0dfc3" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_message_subscribers</name></member>
+      <member refid="classgr_1_1block_1a4c393a6daebc82ddf6844a62f1c5e8ae" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_min_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1ad7da20e98a288f84597882e047df63f4" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_name</name></member>
+      <member refid="classgr_1_1basic__block_1a84c091a90172b2eb6d617f6346bbce3f" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_output_signature</name></member>
+      <member refid="classgr_1_1block_1ad72091916b86278b58b6d106876b3e8c" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_pmt_done</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1abbf187e19773812abb0f16aef4310d00" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_qApplication</name></member>
+      <member refid="classgr_1_1basic__block_1a8d54f7ea6ebf134e68e028294488354d" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a4956e5631a93b2ef667a28564e71195b" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_rpc_vars</name></member>
+      <member refid="classgr_1_1block_1aaf5b8dd7bba021af7bd93f39453f7482" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_setlock</name></member>
+      <member refid="classgr_1_1basic__block_1a2de4ae58aaf6af63fe57ecf0e64dcbe0" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_symbol_alias</name></member>
+      <member refid="classgr_1_1basic__block_1af6b5f158f329834b12d9b204cf62a10e" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a7073674b5876118ae50cd7cc5646ad80" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_symbolic_id</name></member>
+      <member refid="classgr_1_1block_1a2460fc9ff6df7f38a51dadba06b94904" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_system_port</name></member>
+      <member refid="classgr_1_1basic__block_1a8afb0c354fb5fc2141fc7580361c2f00" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>d_unique_id</name></member>
+      <member refid="classgr_1_1block_1acad5d6e62ea885cb77d19f72451581c2" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1block_1aa7df9d4ebb09530cd3be2ad78da411b4" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1basic__block_1accb52d0722546dbfda92e4ee699d8276" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>delete_head_blocking</name></member>
+      <member refid="classgr_1_1basic__block_1af9e69c810222df1bccbd159d660eda06" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>delete_head_nowait</name></member>
+      <member refid="classgr_1_1block_1a816ec687bdd384a6cf8493fd54019054" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>detail</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a44be2488bef1d84eab1f8fdfd6d5c9d7" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>disable_legend</name></member>
+      <member refid="classgr_1_1basic__block_1aa0c8bc1d82de984c872fbaefc0ff954b" prot="protected" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>dispatch_msg</name></member>
+      <member refid="classgr_1_1basic__block_1a0ea70146bf5ce65a8c20c0b7234063d9" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1a75b7c42c06430e9f5330f7462a5350a1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1aea4958dfb6cc37d60db6afaba91f6e6e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1basic__block_1aecb5d318b3d3689e6f7f448d29a03032" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1aabd6a43c350741b96dc87c0b9c52b4a9" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_autoscale</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1ada55646875afe57f9724d303a164642b" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_axis_labels</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1adea4c54ad174f924211765af6c932182" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_control_panel</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a7a2689536aea16fa945fa9e65cb67f9e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_grid</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a6fd33a77bfe894f9d8678f3688c91f08" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_max_hold</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a20e683870f805be33127c87a1c999bb2" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_menu</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a20380e71223f05e22f069fb638280302" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_min_hold</name></member>
+      <member refid="classgr_1_1block_1a71d3cc9f05edecef8b7bda7f16580848" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>enable_update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1acffa27c6be8af72ae44773185687d49c" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>erase_msg</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1aa31730a65ef8727bd0c2a2c58bd8cd8c" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>exec_</name></member>
+      <member refid="classgr_1_1block_1a9bbf96f6a81d5c289934a68ef44dd1b4" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>expand_minmax_buffer</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1abd4889b4bd3bd8b117b527ef05c8ddda" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fft_average</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1ae2c7d1ab0eeba2212e623f66d4e94a86" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fft_size</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a357234480114d04a2b75d39d0f5f4488" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fft_window</name></member>
+      <member refid="classgr_1_1block_1a89242cb1ac9d2bf5e75f923745baa576" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>finished</name></member>
+      <member refid="classgr_1_1block_1a13de80e93b11535dfa2d6168610b5f6a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fixed_rate</name></member>
+      <member refid="classgr_1_1sync__block_1a7e1560c84046771bf410d1f643f058af" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fixed_rate_ninput_to_noutput</name></member>
+      <member refid="classgr_1_1sync__block_1a67ecf7935b8a1c70a95ad22574eddeab" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>fixed_rate_noutput_to_ninput</name></member>
+      <member refid="classgr_1_1sync__block_1a33b5a4849acaa3663ee14581a7b45186" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>forecast</name></member>
+      <member refid="classgr_1_1sync__block_1a85ad1182f040814c0df45f985fa4dd69" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>general_work</name></member>
+      <member refid="classgr_1_1basic__block_1a33724cc678371b3713e13ed29217963e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_iterator</name></member>
+      <member refid="classgr_1_1basic__block_1ac2b4a15fdf99bfebc20cbafea7c2fcf4" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_msg_map</name></member>
+      <member refid="classgr_1_1block_1aa0272555827fe26a1878e53ce4be092c" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1a83143d92b16b5bf93bf43a66a46bb60e" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1abf2cc497d68c4650be55765d0fe12291" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1block_1a451b95d244e27e815eb3f9e56ea6ac32" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa229412131f1cac62bf1cb3c63b12a19d" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>GREY</name></member>
+      <member refid="classgr_1_1basic__block_1ac8bf058b47b635100945e20f3cc5d0b0" prot="protected" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>has_msg_handler</name></member>
+      <member refid="classgr_1_1basic__block_1a8cdeb25c366bedbadf918b7f106dbf85" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>has_msg_port</name></member>
+      <member refid="classgr_1_1block_1a71548fe7804c9b932f9bb9d770931af1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>history</name></member>
+      <member refid="classgr_1_1basic__block_1adddacbed1278d56e03fa1d5b93b1d542" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>input_signature</name></member>
+      <member refid="classgr_1_1basic__block_1acbf0d8127f9b1da8dcb327b29391812a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>insert_tail</name></member>
+      <member refid="classgr_1_1block_1aac70128820e047e05993e4ec52b27c2a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>is_pc_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a10bd994a51158fd3803377960d688795" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>is_rpc_set</name></member>
+      <member refid="classgr_1_1block_1a4f67d984bc126aa4d254e62464525b79" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>is_set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ae0ed1517975b23c556b71486ffb972de" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>is_unaligned</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a25d64f8b7c30b1c839143acb997e5923" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_alpha</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a7a558a439f174010a8f096476e2bdf04" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_color</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1ac946b0c1ef97c8bfcd74377c9fb6f9bf" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_label</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1ad2367d214bdbf8f69923ecd3d2168ab3" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_marker</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a57f2e7541a1f93c1918d779bbfa668f7" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_style</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1ae2d9ce0ebcbfcaefa4246de6ef4044f2" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>line_width</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1abff73e2bb8a2b2875aabea3e549d4dfc" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>make</name></member>
+      <member refid="classgr_1_1block_1af710a90819f19705f2d2ba1aa49d0172" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a5faeaab35423014dc59749d63cfe4cf1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1a8780d41bb2091c00a9637e15e872a7ce" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_is_hier</name></member>
+      <member refid="classgr_1_1basic__block_1a5cc9ea399d0940de8440e028b7352ed7" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_is_hier_in</name></member>
+      <member refid="classgr_1_1basic__block_1a218a3ea133d838c8344fb3914c54ba3a" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_is_hier_out</name></member>
+      <member refid="classgr_1_1basic__block_1a485fa8f9fa04a1abcfe3f111d22e8e5f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_pub</name></member>
+      <member refid="classgr_1_1basic__block_1a362b6de38292cca9c1d56439a6efad04" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_register_in</name></member>
+      <member refid="classgr_1_1basic__block_1ac3047921885668943a13dabd35d5eda4" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_register_out</name></member>
+      <member refid="classgr_1_1basic__block_1adddd339f229f55bd96229d7a7dd5cc8f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_sub</name></member>
+      <member refid="classgr_1_1basic__block_1ad5496693b3c7c8be32529d695f83db1c" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_port_unsub</name></member>
+      <member refid="classgr_1_1basic__block_1ae92faa0b6775de0100f6d202140403a2" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_ports_in</name></member>
+      <member refid="classgr_1_1basic__block_1ad6351658056b5381f3803233cb75c928" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_ports_out</name></member>
+      <member refid="classgr_1_1basic__block_1a15300c27e1a332bc7dcff6438ec6c080" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>message_subscribers</name></member>
+      <member refid="classgr_1_1block_1a1da7d9e876b5ff5fde12492ce55e9a81" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac28e42e36ef843b999cca3702981ccd7" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>min_output_buffer</name></member>
+      <member refid="classgr_1_1msg__accepter_1ae25bb0b46019f4dbe2bdcecdf50dc755" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>msg_accepter</name></member>
+      <member refid="classgr_1_1basic__block_1a68e92e54cda7a02697074705b9a7c08d" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>msg_queue</name></member>
+      <member refid="classgr_1_1basic__block_1a676337e5495c9ac73c0a551971181477" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>name</name></member>
+      <member refid="classgr_1_1block_1a2279d1eb421203bc5b0f100a6d5dc263" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>nitems_read</name></member>
+      <member refid="classgr_1_1block_1a742128a481fcb9e43a3e0cd535a57f9e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>nitems_written</name></member>
+      <member refid="classgr_1_1basic__block_1a4e3baf2d69f2a00871c89993e28b50ea" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>nmsgs</name></member>
+      <member refid="classgr_1_1block_1a74745ea741b0aae938b003854f6043e0" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>no_pc_rpc</name></member>
+      <member refid="classgr_1_1block_1adf235647d7ec77995751de89d94a22a6" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>notify_msg_neighbors</name></member>
+      <member refid="classgr_1_1block_1a247e034ce4d624c1fee847f7779e90e1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>output_multiple</name></member>
+      <member refid="classgr_1_1block_1a4ff8a6d59b8bd64817aebfbd28d78326" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>output_multiple_set</name></member>
+      <member refid="classgr_1_1basic__block_1a348d5801eeff564e75f508aba22766bd" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>output_signature</name></member>
+      <member refid="classgr_1_1block_1a4989096e4edf5e8171b65e3ce663af1e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a2dba88af74ee077751ebf5c11f470cbc" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a08e5deef4ebd0e6c2e11b839eaeadd9f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1aa4118c626e74926918a9bfd464b728cf" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a00723a35c6e095da35608c8438e16cdf" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a2c211a608a7d4dc40ad63886d1944798" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1af4a03de0d6609ca0e03b875250b7650c" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a3beb47de467a4a117b0c096f8511d3af" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_noutput_items_avg</name></member>
+      <member refid="classgr_1_1block_1ae0725cd4ff4f5040a513c2a61355d434" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_noutput_items_var</name></member>
+      <member refid="classgr_1_1block_1a84ef5905d40b507a2230c996d8857289" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_nproduced</name></member>
+      <member refid="classgr_1_1block_1ad0b4960e100a088caefa99fb39f99a02" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_nproduced_avg</name></member>
+      <member refid="classgr_1_1block_1a1a506f34b8b8c3f968dc0a8cb9da0650" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_nproduced_var</name></member>
+      <member refid="classgr_1_1block_1ab125047ee56cf687e3475674a28d267f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a6ec7670b2a8d6d30113ab82683133b40" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a0ed8f2224fe1d0b27e17cd66723452a8" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a0ddfee47fbd0d83826b8584ea7019b84" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a2ad2a99ea794d44956d2878471e5976d" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1affe32b7ec0d84efa56f5cc94723eb36f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a78a27917edcd3b32f10b2166f3362a68" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_throughput_avg</name></member>
+      <member refid="classgr_1_1block_1ae8b89079d24a3216eb1b17d75ec5b8d8" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_work_time</name></member>
+      <member refid="classgr_1_1block_1a2df6452cef2999e1b32458a5e542f948" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_work_time_avg</name></member>
+      <member refid="classgr_1_1block_1a2c9fdd36be297e4b503ccd6290663367" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_work_time_total</name></member>
+      <member refid="classgr_1_1block_1a4918e75c4d11a0b7222c9ba250313ebc" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pc_work_time_var</name></member>
+      <member refid="classgr_1_1msg__accepter_1a03b0afcc820d3454d29f0ada3b89e2fc" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>post</name></member>
+      <member refid="classgr_1_1block_1a3b37bd70477161aa97d1e868ff2b20d9" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>produce</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a553ca0c02fa2329a7843399be7cb161e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>pyqwidget</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1aa9f7519ac3e8cdec171fdb720a1a9a71" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>qwidget</name></member>
+      <member refid="classgr_1_1block_1aa14aceb3623b74b66d235fbb237cec88" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>relative_rate</name></member>
+      <member refid="classgr_1_1block_1a461f6cc92174e83b10c3ec5336036768" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1block_1a94906298cd5995a94172c53dbfbc77dd" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a63539e05c1a86ec4f9568f07a8d7d07d" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>reset</name></member>
+      <member refid="classgr_1_1block_1adb2d3602fe818cef1978090923667009" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>reset_perf_counters</name></member>
+      <member refid="classgr_1_1basic__block_1ac349eee015757c75f8486b36ee08b106" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>rpc_set</name></member>
+      <member refid="classgr_1_1block_1a8bdbb506d7253d841277292c712c1a28" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>sample_delay</name></member>
+      <member refid="classgr_1_1block_1a49b49c097bffefe79f9d730539330edf" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_alignment</name></member>
+      <member refid="classgr_1_1basic__block_1ad5251b68da76a9ce6bef105ef8136547" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_block_alias</name></member>
+      <member refid="classgr_1_1basic__block_1a2c4a58849217d8b76ba2d25c0dfd8bd0" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_color</name></member>
+      <member refid="classgr_1_1block_1a776fbf15f5280bf8da74929b4ea8bb39" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_detail</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a5dd0d9c8d33e431c26a3140b943893c4" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_fft_average</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a0e4aae338f64e7a850e27546110f664f" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_fft_size</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a538e17c977346219abb81f144ae91fa5" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_fft_window</name></member>
+      <member refid="classgr_1_1block_1aa927cd4d5b8993122cf60dd556ffe62d" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_fixed_rate</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a9eea1cdb4b18793c32417c64c6f22e59" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_frequency_range</name></member>
+      <member refid="classgr_1_1block_1ac2dac90e45498ad53a19544c01114136" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_history</name></member>
+      <member refid="classgr_1_1basic__block_1a3f3f8f70bd0f0f2925b09bb75725c2b6" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_input_signature</name></member>
+      <member refid="classgr_1_1block_1a0d33c4cc8b0131b9b8df41e3b46784b1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_is_unaligned</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1adfcddeaab8aa45f333e0363eeba7a1ba" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_alpha</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a9d02572bfe4595725a9ace649a455a70" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_color</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1aab6210f57f8d48c9e2b4915f6f2fd307" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_label</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a4a85c6e31950ba5c886582709b0a6b0e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_marker</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a40718f4eb944d8110bdbbf1e6201bca3" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_style</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1aae812f5212df791ed529a8a14a125baf" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_line_width</name></member>
+      <member refid="classgr_1_1block_1ae2405dc2f6c84bb8e59aab56e4ce9d84" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a711fb69e35fb871e9a5e41d6a1f2afb1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a96d021628c08db3b138d3ee7c572ad90" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a65cfc579150dc4d10c6180d3365aa9a8" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a9d10e3f6747f91b215abe81b60a003d5" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a46a03397c78096a2f1c7f1b59f225f5b" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1a7fed11ec01538bfea999fb37687b43b4" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_msg_handler</name></member>
+      <member refid="classgr_1_1block_1a63d67fd758b70c6f2d7b7d4edcec53b3" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_output_multiple</name></member>
+      <member refid="classgr_1_1basic__block_1a7933b6bc4ad512774bbb40616cc31b4d" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_output_signature</name></member>
+      <member refid="classgr_1_1block_1a05ad2ae50b0f7c922add44e74d9603b8" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aff3003eea3517dd3e8d9a5297c1196b1" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_relative_rate</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a5bc3b8b3b12c580959108c517dc3495d" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_size</name></member>
+      <member refid="classgr_1_1block_1a476e218927e426ac88c26431cbf086cd" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1a83e0fd5c4db199e6e6f2fc75cdfb5dfa" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_thread_priority</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a609949d651cb52ad4795830031175f3e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_title</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a4d1a09fdd91eb438e9cd8bc2662813da" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_trigger_mode</name></member>
+      <member refid="classgr_1_1block_1a4d914fbc7814a682e25f5b2a40140d47" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_unaligned</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a7db666a47684b6c003d8ac858ba24c8e" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_update_time</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a9a93bef67e5032b9e89606b0d07e7471" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_y_axis</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a3686234e285127c9bd139a1447253ab0" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>set_y_label</name></member>
+      <member refid="classgr_1_1block_1a9425064fac92607770042f472e140d7e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>setup_pc_rpc</name></member>
+      <member refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>setup_rpc</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a1d3cb134c699bccea6b8c28f3b544fbc" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>sptr</name></member>
+      <member refid="classgr_1_1block_1a7f58745d1374b30a7b866406dc97850f" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>start</name></member>
+      <member refid="classgr_1_1block_1a0863bc16f7c84adf4cddf5d53124450e" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>stop</name></member>
+      <member refid="classgr_1_1basic__block_1ab5199f528de1872b055e632aedabef4e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a0436f10fd13ce2a80be2aeae345e903a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>symbolic_id</name></member>
+      <member refid="classgr_1_1sync__block_1a205473e9112aaffd3f92fcdcfa212ff4" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>sync_block</name></member>
+      <member refid="classgr_1_1sync__block_1a1372aea30148feba7e744c58a88782e4" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>sync_block</name></member>
+      <member refid="classgr_1_1block_1a4070b0462cce39d66b0c7c90ef2153d8" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>system_handler</name></member>
+      <member refid="classgr_1_1block_1a4892196a19ef044a0eedeaa6566893c8" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>tag_propagation_policy_t</name></member>
+      <member refid="classgr_1_1block_1a585b831aea5775730931d7fb9e6e8253" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>thread_priority</name></member>
+      <member refid="classgr_1_1qtgui_1_1freq__sink__c_1a786a1de0e7d99938e65f8516db5cf839" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>title</name></member>
+      <member refid="classgr_1_1basic__block_1a84bf6924dfa0bb724caca46575669557" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>to_basic_block</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea5b3fd823d5f918e588008c0bc876e574" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>TPP_ALL_TO_ALL</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4eaadf6e1b257eee0590cc2b26161d08cdc" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>TPP_CUSTOM</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea2e3b11eb10000e0efab110c31a83e502" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>TPP_DONT</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea747127b6fb520f34be8ae3f951fdc53c" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>TPP_ONE_TO_ONE</name></member>
+      <member refid="classgr_1_1block_1a53a85f2cd9f8ccef49eafad408069557" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>unaligned</name></member>
+      <member refid="classgr_1_1basic__block_1a6e85f514a6c99d39593f0d250e787d2b" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1block_1a460e8e5f15a4c5418ce3fc167c20a973" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>unset_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac077773948a5f55b826dd638e1ed3863" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>unset_processor_affinity</name></member>
+      <member refid="classgr_1_1block_1af32c62fff6b1285bf346bfda65e6fc3a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>vcolor</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa42ae6a0efeb1be877a188c7ad4778f50" prot="protected" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>WHITE</name></member>
+      <member refid="classgr_1_1sync__block_1a38942c5d8bee5232404ab71ada9a3956" prot="public" virt="pure-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>work</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca8cac307593cf1087803f28eee28ff45a" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>WORK_CALLED_PRODUCE</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca3e2d37c41af566875030fa1376c4203f" prot="public" virt="non-virtual"><scope>gr::qtgui::freq_sink_c</scope><name>WORK_DONE</name></member>
+      <member refid="classgr_1_1basic__block_1aa2006a298a9d9c60ea52c6a33e003b96" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>~basic_block</name></member>
+      <member refid="classgr_1_1block_1a1db946ecc4ab437c609802d991e545cc" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>~block</name></member>
+      <member refid="classgr_1_1msg__accepter_1a4a566e988c3b4ba11d568b340499e307" prot="public" virt="virtual"><scope>gr::qtgui::freq_sink_c</scope><name>~msg_accepter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

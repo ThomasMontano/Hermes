@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1file__meta__sink" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::file_meta_sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="file__meta__sink_8h" local="no">file_meta_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1file__meta__sink_1aa37b12bb43434add196d7de9bd8f9b4b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1file__meta__sink" kindref="compound">file_meta_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;file_meta_sink&gt; gr::blocks::file_meta_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__meta__sink_1a1f36217443da13ff4bfacc68ca89e00a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1file__meta__sink_1aa37b12bb43434add196d7de9bd8f9b4b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::file_meta_sink::make</definition>
+        <argsstring>(size_t itemsize, const std::string &amp;filename, double samp_rate=1, double relative_rate=1, gr_file_types type=GR_FILE_FLOAT, bool complex=true, size_t max_segment_size=1000000, const std::string &amp;extra_dict=&quot;&quot;, bool detached_header=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>samp_rate</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>relative_rate</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1blocks_1aaf04a89b376fbc06cb75effeb40111b6" kindref="member">gr_file_types</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacegr_1_1blocks_1aaf04a89b376fbc06cb75effeb40111b6acc39a9c09fab2b114ddb5ac6ec3a63f9" kindref="member">GR_FILE_FLOAT</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>complex</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_segment_size</declname>
+          <defval>1000000</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>extra_dict</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>detached_header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create a meta-data file sink. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t): Size of data type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(string): Name of file to write data to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>samp_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double): Sample rate of data. If sample rate will be set by a tag, such as rx_tag from a UHD source, this is basically ignored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>relative_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double): Rate chance from source of sample rate tag to sink. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(gr_file_types): Data type (int, float, etc.) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>complex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(bool): If data stream is complex </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_segment_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t): Length of a single segment before the header is repeated (in items). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extra_dict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(string): a serialized PMT dictionary of extra information. Currently not supported. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>detached_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(bool): Set to true to store the header info in a separate file (named filename.hdr) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="95" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__meta__sink_1afa25abd64731de3234495e31c59123c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::file_meta_sink::open</definition>
+        <argsstring>(const std::string &amp;filename)=0</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__meta__sink_1a3fead78c1a575098b25e00176691c2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_meta_sink::close</definition>
+        <argsstring>()=0</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__meta__sink_1a9a22c93f7dffd9a0651170717c1c9d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_meta_sink::do_update</definition>
+        <argsstring>()=0</argsstring>
+        <name>do_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__meta__sink_1a8123cc32868ce2c1b04a38865aa59cb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_meta_sink::set_unbuffered</definition>
+        <argsstring>(bool unbuffered)=0</argsstring>
+        <name>set_unbuffered</name>
+        <param>
+          <type>bool</type>
+          <declname>unbuffered</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="106" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Write stream to file with meta-data headers. </para>    </briefdescription>
+    <detaileddescription>
+<para>These files represent data as binary information in between meta-data headers. The headers contain information about the type of data and properties of the data in the next segment of samples. The information includes:</para><para><itemizedlist>
+<listitem><para>rx_rate (double): sample rate of data. </para></listitem>
+<listitem><para>rx_time (uint64_t, double): time stamp of first sample in segment. </para></listitem>
+<listitem><para>size (uint32_t): item size in bytes. </para></listitem>
+<listitem><para>type (<ref refid="namespacegr_1_1blocks_1aaf04a89b376fbc06cb75effeb40111b6" kindref="member">gr_file_types</ref> as int32_t): data type. </para></listitem>
+<listitem><para>cplx (bool): Is data complex? </para></listitem>
+<listitem><para>strt (uint64_t): Starting byte of data in this segment. </para></listitem>
+<listitem><para>bytes (uint64_t): Size in bytes of data in this segment.</para></listitem>
+</itemizedlist>
+Tags can be sent to the file to update the information, which will create a new header. Headers are found by searching from the first header (at position 0 in the file) and reading where the data segment starts plus the data segment size. Following will either be a new header or EOF. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="248">
+        <label>sync_block</label>
+      </node>
+      <node id="247">
+        <label>gr::blocks::file_meta_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__meta__sink"/>
+        <childnode refid="248" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="250">
+        <label>sync_block</label>
+      </node>
+      <node id="249">
+        <label>gr::blocks::file_meta_sink</label>
+        <link refid="classgr_1_1blocks_1_1file__meta__sink"/>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_meta_sink.h" bodystart="70" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1a3fead78c1a575098b25e00176691c2c2" prot="public" virt="pure-virtual"><scope>gr::blocks::file_meta_sink</scope><name>close</name></member>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1a9a22c93f7dffd9a0651170717c1c9d14" prot="public" virt="pure-virtual"><scope>gr::blocks::file_meta_sink</scope><name>do_update</name></member>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1a1f36217443da13ff4bfacc68ca89e00a" prot="public" virt="non-virtual"><scope>gr::blocks::file_meta_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1afa25abd64731de3234495e31c59123c2" prot="public" virt="pure-virtual"><scope>gr::blocks::file_meta_sink</scope><name>open</name></member>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1a8123cc32868ce2c1b04a38865aa59cb2" prot="public" virt="pure-virtual"><scope>gr::blocks::file_meta_sink</scope><name>set_unbuffered</name></member>
+      <member refid="classgr_1_1blocks_1_1file__meta__sink_1aa37b12bb43434add196d7de9bd8f9b4b" prot="public" virt="non-virtual"><scope>gr::blocks::file_meta_sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

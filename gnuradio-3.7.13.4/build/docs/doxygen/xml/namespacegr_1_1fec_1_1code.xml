@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1fec_1_1code" kind="namespace">
+    <compoundname>gr::fec::code</compoundname>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1cc__decoder" prot="public">gr::fec::code::cc_decoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1cc__encoder" prot="public">gr::fec::code::cc_encoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ccsds__encoder" prot="public">gr::fec::code::ccsds_encoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1dummy__decoder" prot="public">gr::fec::code::dummy_decoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1dummy__encoder" prot="public">gr::fec::code::dummy_encoder</innerclass>
+    <innerclass refid="structgr_1_1fec_1_1code_1_1block__data" prot="public">gr::fec::code::block_data</innerclass>
+    <innerclass refid="structgr_1_1fec_1_1code_1_1matrix" prot="public">gr::fec::code::matrix</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1fec__mtrx" prot="public">gr::fec::code::fec_mtrx</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ldpc__bit__flip__decoder" prot="public">gr::fec::code::ldpc_bit_flip_decoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ldpc__G__matrix" prot="public">gr::fec::code::ldpc_G_matrix</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder" prot="public">gr::fec::code::ldpc_gen_mtrx_encoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ldpc__H__matrix" prot="public">gr::fec::code::ldpc_H_matrix</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1ldpc__par__mtrx__encoder" prot="public">gr::fec::code::ldpc_par_mtrx_encoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__common" prot="public">gr::fec::code::polar_common</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__decoder__common" prot="public">gr::fec::code::polar_decoder_common</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc" prot="public">gr::fec::code::polar_decoder_sc</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__list" prot="public">gr::fec::code::polar_decoder_sc_list</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__decoder__sc__systematic" prot="public">gr::fec::code::polar_decoder_sc_systematic</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__encoder" prot="public">gr::fec::code::polar_encoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic" prot="public">gr::fec::code::polar_encoder_systematic</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1repetition__decoder" prot="public">gr::fec::code::repetition_decoder</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1repetition__encoder" prot="public">gr::fec::code::repetition_encoder</innerclass>
+    <innernamespace refid="namespacegr_1_1fec_1_1code_1_1polar">gr::fec::code::polar</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacegr_1_1fec_1_1code_1aa579aae261f5f18951a9a78dd4c7cad2" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* gr::fec::code::conv_kernel)(unsigned char *Y, unsigned char *X, unsigned char *syms, unsigned char *dec, unsigned int framebits, unsigned int excess, unsigned char *Branchtab)</definition>
+        <argsstring>)(unsigned char *Y, unsigned char *X, unsigned char *syms, unsigned char *dec, unsigned int framebits, unsigned int excess, unsigned char *Branchtab)</argsstring>
+        <name>conv_kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1ad35e2f7585af2eb24ee58edc71b67cd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void gr::fec::code::matrix_free</definition>
+        <argsstring>(matrix *x)</argsstring>
+        <name>matrix_free</name>
+        <param>
+          <type><ref refid="structgr_1_1fec_1_1code_1_1matrix" kindref="compound">matrix</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1ac3b5af188e4dedbb7688894914273843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> matrix_sptr</type>
+        <definition>FEC_API matrix_sptr gr::fec::code::read_matrix_from_file</definition>
+        <argsstring>(const std::string filename)</argsstring>
+        <name>read_matrix_from_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Read in an alist file and produce the matrix object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Takes in a an alist file (the file name as a string) and creates the corresponding matrix. The format of alist files is described at: <ulink url="http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html">http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html</ulink></para><para>The result is returned as a matrix shared pointer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of an alist file to use. The alist format is described at: <ulink url="http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html">http://www.inference.phy.cam.ac.uk/mackay/codes/alist.html</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1a7d9ded1b8f85567ba5b3e0131bb19fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void gr::fec::code::write_matrix_to_file</definition>
+        <argsstring>(const std::string filename, matrix_sptr M)</argsstring>
+        <name>write_matrix_to_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>matrix_sptr</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1ad0b270c0b040a56dc434b3a1c32328e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> matrix_sptr</type>
+        <definition>FEC_API matrix_sptr gr::fec::code::generate_G_transpose</definition>
+        <argsstring>(matrix_sptr H_obj)</argsstring>
+        <name>generate_G_transpose</name>
+        <param>
+          <type>matrix_sptr</type>
+          <declname>H_obj</declname>
+        </param>
+        <briefdescription>
+<para>Takes a parity check matrix (H) and returns the transpose of the generator matrix (G). </para>        </briefdescription>
+        <detaileddescription>
+<para>The result is returned as a matrix shared pointer. The form of this matrix is [I_k | P]^T, where P is the parity check matrix. It is a n x k matrix where k is the information length and n is the codeword length.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>H_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A parity check matrix; generally derived from using read_matrix_from_file with a given alist file format. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1af35d32c2ab4a59f115cea3cfcaa66e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> matrix_sptr</type>
+        <definition>FEC_API matrix_sptr gr::fec::code::generate_G</definition>
+        <argsstring>(matrix_sptr H_obj)</argsstring>
+        <name>generate_G</name>
+        <param>
+          <type>matrix_sptr</type>
+          <declname>H_obj</declname>
+        </param>
+        <briefdescription>
+<para>Takes a parity check matrix (H) and returns the generator matrix (G). </para>        </briefdescription>
+        <detaileddescription>
+<para>The result is returned as a matrix shared pointer. The form of this matrix is [I_k | P], where P is the parity check matrix. It is a k x n matrix where k is the information length and n is the codeword length.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>H_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A parity check matrix; generally derived from using read_matrix_from_file with a given alist file format. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1a1e0aba80cfae77c3aa7c9208cd6c3e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> matrix_sptr</type>
+        <definition>FEC_API matrix_sptr gr::fec::code::generate_H</definition>
+        <argsstring>(matrix_sptr G_obj)</argsstring>
+        <name>generate_H</name>
+        <param>
+          <type>matrix_sptr</type>
+          <declname>G_obj</declname>
+        </param>
+        <briefdescription>
+<para>Takes a generator matrix (G) and returns the parity check matrix (H). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>G_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A parity check matrix; generally derived from using read_matrix_from_file with a given alist file format. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1fec_1_1code_1a38adc2c894fc49f276d42f08bad0351a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-fec_2include_2gnuradio_2fec_2api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void gr::fec::code::print_matrix</definition>
+        <argsstring>(const matrix_sptr M, bool numpy=false)</argsstring>
+        <name>print_matrix</name>
+        <param>
+          <type>const matrix_sptr</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>numpy</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Takes a matrix and prints it to screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a matrix_sptr; generally a G or H matrix for LDPC codes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numpy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will output in a format that can be copy-and-pasted directly into a numpy.matrix(~) call in Python. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h" line="120" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="34" column="1"/>
+  </compounddef>
+</doxygen>

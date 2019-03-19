@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1impl" kind="namespace">
+    <compoundname>gr::impl</compoundname>
+    <innerclass refid="structgr_1_1impl_1_1rt__sched__param" prot="public">gr::impl::rt_sched_param</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1impl_1af9d3e75007e131f79f2f363b186d0697" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::impl::rt_priority_min</definition>
+        <argsstring>()</argsstring>
+        <name>rt_priority_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1impl_1aa841b86f8dc5b5dd0d504f927f676978" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::impl::rt_priority_max</definition>
+        <argsstring>()</argsstring>
+        <name>rt_priority_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1impl_1a66780ebc3d58fa0521d0523e87c31474" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::impl::rt_priority_default</definition>
+        <argsstring>()</argsstring>
+        <name>rt_priority_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="60" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1impl_1a0d191190f323e3e30ac8ee0f5667ff25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" kindref="member">rt_status_t</ref></type>
+        <definition>GR_RUNTIME_API rt_status_t gr::impl::enable_realtime_scheduling</definition>
+        <argsstring>(rt_sched_param=rt_sched_param())</argsstring>
+        <name>enable_realtime_scheduling</name>
+        <param>
+          <type><ref refid="structgr_1_1impl_1_1rt__sched__param" kindref="compound">rt_sched_param</ref></type>
+          <defval><ref refid="structgr_1_1impl_1_1rt__sched__param" kindref="compound">rt_sched_param</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>If possible, enable &quot;realtime&quot; scheduling.</para><para>In general, this means that the code will be scheduled before any non-realtime (normal) processes. Note that if your code contains an non-blocking infinite loop and you enable realtime scheduling, it&apos;s possible to hang the system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="48" column="1"/>
+  </compounddef>
+</doxygen>

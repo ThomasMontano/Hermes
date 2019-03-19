@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1vector__insert__f" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::vector_insert_f</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="vector__insert__f_8h" local="no">vector_insert_f.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1vector__insert__f_1ad5243995ddfb6f79d3c392403bfcf16b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1vector__insert__f" kindref="compound">vector_insert_f</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vector_insert_f&gt; gr::blocks::vector_insert_f::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__insert__f_1a17befcc4cb07a588b7b81f3a838c7f02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1vector__insert__f_1ad5243995ddfb6f79d3c392403bfcf16b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::vector_insert_f::make</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;data, int periodicity, int offset=0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>periodicity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make vector insert block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of data to insert </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>periodicity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples between when to send <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial item offset of first insert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__insert__f_1a02d8eb1cb7134c037d1bd0228abea9b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::vector_insert_f::rewind</definition>
+        <argsstring>()=0</argsstring>
+        <name>rewind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__insert__f_1a3092f59b196b47cb91d1c091c12c7935" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::vector_insert_f::set_data</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;data)=0</argsstring>
+        <name>set_data</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>source of float&apos;s that gets its data from a vector </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="867">
+        <label>block</label>
+      </node>
+      <node id="866">
+        <label>gr::blocks::vector_insert_f</label>
+        <link refid="classgr_1_1blocks_1_1vector__insert__f"/>
+        <childnode refid="867" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="869">
+        <label>block</label>
+      </node>
+      <node id="868">
+        <label>gr::blocks::vector_insert_f</label>
+        <link refid="classgr_1_1blocks_1_1vector__insert__f"/>
+        <childnode refid="869" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/vector_insert_f.h" bodystart="38" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1vector__insert__f_1a17befcc4cb07a588b7b81f3a838c7f02" prot="public" virt="non-virtual"><scope>gr::blocks::vector_insert_f</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__insert__f_1a02d8eb1cb7134c037d1bd0228abea9b7" prot="public" virt="pure-virtual"><scope>gr::blocks::vector_insert_f</scope><name>rewind</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__insert__f_1a3092f59b196b47cb91d1c091c12c7935" prot="public" virt="pure-virtual"><scope>gr::blocks::vector_insert_f</scope><name>set_data</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__insert__f_1ad5243995ddfb6f79d3c392403bfcf16b" prot="public" virt="non-virtual"><scope>gr::blocks::vector_insert_f</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

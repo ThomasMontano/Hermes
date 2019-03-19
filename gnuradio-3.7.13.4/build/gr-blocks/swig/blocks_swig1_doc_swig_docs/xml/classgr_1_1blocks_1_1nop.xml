@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1nop" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::nop</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="nop_8h" local="no">nop.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1nop_1a1baf54610822e18a0a99e4b9deb260a6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1nop" kindref="compound">nop</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;nop&gt; gr::blocks::nop::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1nop_1a76625c7e811fbc35c8db51a229b24c34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1nop_1a1baf54610822e18a0a99e4b9deb260a6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::nop::make</definition>
+        <argsstring>(size_t sizeof_stream_item)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a nop block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the stream items in bytes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1nop_1a06e324a9a98dfa5548405559c87031f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::nop::nmsgs_received</definition>
+        <argsstring>() const =0</argsstring>
+        <name>nmsgs_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1nop_1a0effd648208ec8577be6182b2b4e63e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::nop::ctrlport_test</definition>
+        <argsstring>() const =0</argsstring>
+        <name>ctrlport_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1nop_1aa0dacef11b871d928ad155294c486232" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::nop::set_ctrlport_test</definition>
+        <argsstring>(int x)=0</argsstring>
+        <name>set_ctrlport_test</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Does nothing. Used for testing only. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="496">
+        <label>gr::blocks::nop</label>
+        <link refid="classgr_1_1blocks_1_1nop"/>
+        <childnode refid="497" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="498">
+        <label>gr::blocks::nop</label>
+        <link refid="classgr_1_1blocks_1_1nop"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/nop.h" bodystart="37" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1nop_1a0effd648208ec8577be6182b2b4e63e7" prot="public" virt="pure-virtual"><scope>gr::blocks::nop</scope><name>ctrlport_test</name></member>
+      <member refid="classgr_1_1blocks_1_1nop_1a76625c7e811fbc35c8db51a229b24c34" prot="public" virt="non-virtual"><scope>gr::blocks::nop</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1nop_1a06e324a9a98dfa5548405559c87031f2" prot="public" virt="pure-virtual"><scope>gr::blocks::nop</scope><name>nmsgs_received</name></member>
+      <member refid="classgr_1_1blocks_1_1nop_1aa0dacef11b871d928ad155294c486232" prot="public" virt="pure-virtual"><scope>gr::blocks::nop</scope><name>set_ctrlport_test</name></member>
+      <member refid="classgr_1_1blocks_1_1nop_1a1baf54610822e18a0a99e4b9deb260a6" prot="public" virt="non-virtual"><scope>gr::blocks::nop</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

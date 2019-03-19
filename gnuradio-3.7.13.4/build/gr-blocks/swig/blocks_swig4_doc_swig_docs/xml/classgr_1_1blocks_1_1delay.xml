@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1delay" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::delay</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="delay_8h" local="no">delay.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1delay_1a459e4162535c2c3616ec39089d4fd7db" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1delay" kindref="compound">delay</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;delay&gt; gr::blocks::delay::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1delay_1afb3f9733fb6b7f4f9c69dd397f1dcad5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1delay_1a459e4162535c2c3616ec39089d4fd7db" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::delay::make</definition>
+        <argsstring>(size_t itemsize, int delay)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Make a delay block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the data items. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to delay stream (&gt;= 0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1delay_1ac5f0f9cf44b84f2f6c77b1dbc8fc2ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::delay::dly</definition>
+        <argsstring>() const =0</argsstring>
+        <name>dly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1delay_1ad4c08709073a3f5e2f1729bc5c168c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::delay::set_dly</definition>
+        <argsstring>(int d)=0</argsstring>
+        <name>set_dly</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Reset the delay. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>change the delay value. This can be a positive or negative value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>delay the input by a certain number of samples</para><para>Positive delays insert zero items at the beginning of the stream. Negative delays discard items from the stream. </para>    </briefdescription>
+    <detaileddescription>
+<para>You cannot initialize this block with a negative delay, however. That leads to a causality issue with the buffers when they are initialized. If you need to negetively delay one path, then put the positive delay on the other path instead. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="211">
+        <label>gr::blocks::delay</label>
+        <link refid="classgr_1_1blocks_1_1delay"/>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="213">
+        <label>gr::blocks::delay</label>
+        <link refid="classgr_1_1blocks_1_1delay"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/delay.h" bodystart="44" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1delay_1ac5f0f9cf44b84f2f6c77b1dbc8fc2ccf" prot="public" virt="pure-virtual"><scope>gr::blocks::delay</scope><name>dly</name></member>
+      <member refid="classgr_1_1blocks_1_1delay_1afb3f9733fb6b7f4f9c69dd397f1dcad5" prot="public" virt="non-virtual"><scope>gr::blocks::delay</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1delay_1ad4c08709073a3f5e2f1729bc5c168c58" prot="public" virt="pure-virtual"><scope>gr::blocks::delay</scope><name>set_dly</name></member>
+      <member refid="classgr_1_1blocks_1_1delay_1a459e4162535c2c3616ec39089d4fd7db" prot="public" virt="non-virtual"><scope>gr::blocks::delay</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

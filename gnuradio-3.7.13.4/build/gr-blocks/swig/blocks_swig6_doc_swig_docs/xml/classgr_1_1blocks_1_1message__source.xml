@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1message__source" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::message_source</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="message__source_8h" local="no">message_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1message__source_1a159e1f8a46b42bc860b1935111e6bd8f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1message__source" kindref="compound">message_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;message_source&gt; gr::blocks::message_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__source_1a19915ac5d0756ce3c1b938036e592aac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__source_1a159e1f8a46b42bc860b1935111e6bd8f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_source::make</definition>
+        <argsstring>(size_t itemsize, int msgq_limit=0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>msgq_limit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__source_1a10d32f8f205779c701dba49f8c69f7e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__source_1a159e1f8a46b42bc860b1935111e6bd8f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_source::make</definition>
+        <argsstring>(size_t itemsize, gr::msg_queue::sptr msgq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__source_1a5775eedda35bd29bcc90678cb58c3332" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__source_1a159e1f8a46b42bc860b1935111e6bd8f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_source::make</definition>
+        <argsstring>(size_t itemsize, gr::msg_queue::sptr msgq, const std::string &amp;lengthtagname)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>lengthtagname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__source_1a14b4f31c14abf9de535984603392dd76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>gr::msg_queue::sptr</type>
+        <definition>virtual gr::msg_queue::sptr gr::blocks::message_source::msgq</definition>
+        <argsstring>() const =0</argsstring>
+        <name>msgq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Turn received messages into a stream. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="369">
+        <label>sync_block</label>
+      </node>
+      <node id="368">
+        <label>gr::blocks::message_source</label>
+        <link refid="classgr_1_1blocks_1_1message__source"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="371">
+        <label>sync_block</label>
+      </node>
+      <node id="370">
+        <label>gr::blocks::message_source</label>
+        <link refid="classgr_1_1blocks_1_1message__source"/>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_source.h" bodystart="37" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1message__source_1a19915ac5d0756ce3c1b938036e592aac" prot="public" virt="non-virtual"><scope>gr::blocks::message_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__source_1a10d32f8f205779c701dba49f8c69f7e1" prot="public" virt="non-virtual"><scope>gr::blocks::message_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__source_1a5775eedda35bd29bcc90678cb58c3332" prot="public" virt="non-virtual"><scope>gr::blocks::message_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__source_1a14b4f31c14abf9de535984603392dd76" prot="public" virt="pure-virtual"><scope>gr::blocks::message_source</scope><name>msgq</name></member>
+      <member refid="classgr_1_1blocks_1_1message__source_1a159e1f8a46b42bc860b1935111e6bd8f" prot="public" virt="non-virtual"><scope>gr::blocks::message_source</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

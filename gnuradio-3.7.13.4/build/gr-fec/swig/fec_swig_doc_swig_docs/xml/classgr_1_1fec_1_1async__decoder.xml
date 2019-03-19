@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1async__decoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::async_decoder</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="async__decoder_8h" local="no">async_decoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fec_1_1async__decoder_1a904f62d801959acce5b4c0aff9611656" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fec_1_1async__decoder" kindref="compound">async_decoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;async_decoder&gt; gr::fec::async_decoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1async__decoder_1abd7930769957cd896994219d5ce40b30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1async__decoder_1a904f62d801959acce5b4c0aff9611656" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fec::async_decoder::make</definition>
+        <argsstring>(generic_decoder::sptr my_decoder, bool packed=false, bool rev_pack=true, int mtu=1500)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" kindref="member">generic_decoder::sptr</ref></type>
+          <declname>my_decoder</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>packed</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev_pack</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mtu</declname>
+          <defval>1500</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build the PDU-based FEC decoder block from an FECAPI decoder object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my_decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An FECAPI decoder object child of the <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">generic_decoder</ref> class. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>packed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets output to packed bytes if true; otherwise, 1 bit per byte. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rev_pack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If packing bits, should they be reversed? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mtu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Maximum Transmission Unit (MTU) of the output frame that the block will be able to process. Specified in bytes and defaults to 1500. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1async__decoder_1a209134d66ed072abc06f6c052ecc4f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::fec::async_decoder::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)=0</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" line="98" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Creates the decoder block for use in GNU Radio flowgraphs from a given FEC API object derived from the <ref refid="classgr_1_1fec_1_1generic__decoder" kindref="compound">generic_decoder</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Decodes frames received as async messages over a message port. This decoder deployment expects messages of soft decision symbols in and can produce either packed, PDU messages (<computeroutput>packed</computeroutput> = True) or messages full of unpacked bits (<computeroutput>packed</computeroutput> = False).</para><para>This decoder works off a full message as one frame or block to decode. The message length is used to calculate the frame length. To support this, the decoder variable used will have had its frame_size set. This block treats that initial frame_size value as the maximum transmission unit (MTU) and will not process frames larger than that after being decoded.</para><para>The packed PDU form of this deployment is designed to work well with other PDU-based blocks to operate within the processing flow of data packets or frames.</para><para>Due to differences in how data is packed and processed, this block also offers the ability to change the direction of how bits are packed. All inputs messages are one soft decision per item. By default, the <computeroutput>rev_pack</computeroutput> mode is set to True. Using this setup allows the async block to behave with PDUs in the same operation and format as the tagged stream decoders. That is, putting the same data into both the tagged stream decoder deployment and this with the default setting should produce the same data.</para><para>Because the block handles data as a full frame per message, this decoder deployment cannot work with any decoders that require history. For example, the <ref refid="classgr_1_1fec_1_1code_1_1cc__decoder" kindref="compound">gr::fec::code::cc_decoder</ref> decoder in streaming mode requires an extra rate*(K-1) bits to complete the decoding, so it would have to wait for the next message to come in and finish processing. Therefore, the streaming mode of the CC decoder is not allowed. The other three modes will work with this deployment since the frame is self-contained for decoding. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>gr::fec::async_decoder</label>
+        <link refid="classgr_1_1fec_1_1async__decoder"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>gr::fec::async_decoder</label>
+        <link refid="classgr_1_1fec_1_1async__decoder"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/async_decoder.h" bodystart="79" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1async__decoder_1a209134d66ed072abc06f6c052ecc4f17" prot="public" virt="pure-virtual"><scope>gr::fec::async_decoder</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fec_1_1async__decoder_1abd7930769957cd896994219d5ce40b30" prot="public" virt="non-virtual"><scope>gr::fec::async_decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1async__decoder_1a904f62d801959acce5b4c0aff9611656" prot="public" virt="non-virtual"><scope>gr::fec::async_decoder</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::code::ldpc_gen_mtrx_encoder</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__encoder" prot="public" virt="virtual">gr::fec::generic_encoder</basecompoundref>
+    <includes refid="ldpc__gen__mtrx__encoder_8h" local="no">ldpc_gen_mtrx_encoder.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a5c762cb799fc1f0f800d77b18e01be60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" kindref="member">generic_encoder::sptr</ref></type>
+        <definition>static generic_encoder::sptr gr::fec::code::ldpc_gen_mtrx_encoder::make</definition>
+        <argsstring>(const code::ldpc_G_matrix::sptr G_obj)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const <ref refid="classgr_1_1fec_1_1code_1_1ldpc__G__matrix_1a8e1ccf7fe38af663cd2488497ca778b7" kindref="member">code::ldpc_G_matrix::sptr</ref></type>
+          <declname>G_obj</declname>
+        </param>
+        <briefdescription>
+<para>Build an encoding FEC API object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>G_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classgr_1_1fec_1_1code_1_1ldpc__G__matrix" kindref="compound">ldpc_G_matrix</ref> object to use for encoding. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_gen_mtrx_encoder.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a40e1eec3d18e313173d283e6bfd2b558" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::fec::code::ldpc_gen_mtrx_encoder::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)=0</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1ac6a41c2f21012253a43cebc7e7b98039">set_frame_size</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+<para>Sets the uncoded frame size to <computeroutput>frame_size</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the uncoded frame size to <computeroutput>frame_size</computeroutput>. If <computeroutput>frame_size</computeroutput> is greater than the value given to the constructor, the frame size will be capped by that initial value and this function will return false. Otherwise, it returns true. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_gen_mtrx_encoder.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a538cbd83177f3361a3ede9e556c650c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::fec::code::ldpc_gen_mtrx_encoder::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a0c47f99e01942d4316b5b24619aab58c">rate</reimplements>
+        <briefdescription>
+<para>Returns the coding rate of this encoder. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_gen_mtrx_encoder.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LDPC generator matrix encoder. </para>    </briefdescription>
+    <detaileddescription>
+<para>A standard encoder class. This method is discussed in many textbooks; one is: Turbo Coding for Satellite and Wireless Communications by Soleymani, Gao, and Vilaipornsawai. Given a generator matrix in systematic form, <formula id="2">$\mathbf{G}=\left[\mathbf{I}_{k}|\mathbf{P}\right]$</formula>, where <formula id="3">$\mathbf{I}_{k}$</formula> is the identity matrix and <formula id="4">$\mathbf{P}$</formula> is the parity submatrix, the information word <formula id="5">$\bar{s}$</formula> is encoded into a codeword <formula id="0">$\overline{x}$</formula> via: <formula id="6">\[\overline{x}=\mathbf{G}^{T}\bar{s}\]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="138">
+        <label>gr::fec::code::ldpc_gen_mtrx_encoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="140">
+        <label>gr::fec::code::ldpc_gen_mtrx_encoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="141">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+        <childnode refid="142" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="142">
+        <label>std::string</label>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_gen_mtrx_encoder.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ldpc_gen_mtrx_encoder.h" bodystart="48" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a391cc2f87d40fac87feabdae40dd8f2a" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a5ae67e6fcab66da448cf5a1e97a7f70d" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a2425896d3a9b72896db338d2912ed0b4" prot="protected" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ab82cb684e9d420af266e7cbb13affe48" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a756957e732c8e4ee020175874e8ae280" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a80c72ef4103a41368b4f70dc3b008d23" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a1409bf4afed09c66fd0ad3c2b4fa0db7" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1af6e5db8309dbdeb90133190fdbbc157d" prot="public" virt="virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a95db2880c3e02e52564ea6a04b6ee243" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad8e7379baeed9ae5fe5c1e848a0a9fa7" prot="public" virt="virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1aa72462435284fc66d3b3a2a5b366f4ea" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a5c762cb799fc1f0f800d77b18e01be60" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1afd01b295f144a57053e5b11a33fff5b6" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a538cbd83177f3361a3ede9e556c650c2" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ldpc__gen__mtrx__encoder_1a40e1eec3d18e313173d283e6bfd2b558" prot="public" virt="pure-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1adb02ab6b53b41fa0b0e65a51ca966f3b" prot="public" virt="non-virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a576c3fc45c1da7e8712272d556be6b23" prot="public" virt="virtual"><scope>gr::fec::code::ldpc_gen_mtrx_encoder</scope><name>~generic_encoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

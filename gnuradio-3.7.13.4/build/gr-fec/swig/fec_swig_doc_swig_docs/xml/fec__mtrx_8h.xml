@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="fec__mtrx_8h" kind="file">
+    <compoundname>fec_mtrx.h</compoundname>
+    <includes refid="api_8h" local="no">gnuradio/fec/api.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includedby refid="ldpc__bit__flip__decoder_8h" local="no">ldpc_bit_flip_decoder.h</includedby>
+    <includedby refid="ldpc__G__matrix_8h" local="no">ldpc_G_matrix.h</includedby>
+    <includedby refid="ldpc__H__matrix_8h" local="no">ldpc_H_matrix.h</includedby>
+    <includedby refid="ldpc__par__mtrx__encoder_8h" local="no">ldpc_par_mtrx_encoder.h</includedby>
+    <incdepgraph>
+      <node id="219">
+        <label>fec_mtrx.h</label>
+        <link refid="fec_mtrx.h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="220">
+        <label>gnuradio/fec/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="222">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="224">
+        <label>fec_mtrx.h</label>
+        <link refid="fec_mtrx.h"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>ldpc_G_matrix.h</label>
+        <link refid="ldpc__G__matrix_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>ldpc_H_matrix.h</label>
+        <link refid="ldpc__H__matrix_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>ldpc_par_mtrx_encoder.h</label>
+        <link refid="ldpc__par__mtrx__encoder_8h"/>
+      </node>
+      <node id="227">
+        <label>ldpc_gen_mtrx_encoder.h</label>
+        <link refid="ldpc__gen__mtrx__encoder_8h"/>
+      </node>
+      <node id="225">
+        <label>ldpc_bit_flip_decoder.h</label>
+        <link refid="ldpc__bit__flip__decoder_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgr_1_1fec_1_1code_1_1block__data" prot="public">gr::fec::code::block_data</innerclass>
+    <innerclass refid="structgr_1_1fec_1_1code_1_1matrix" prot="public">gr::fec::code::matrix</innerclass>
+    <innerclass refid="classgr_1_1fec_1_1code_1_1fec__mtrx" prot="public">gr::fec::code::fec_mtrx</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fec">gr::fec</innernamespace>
+    <innernamespace refid="namespacegr_1_1fec_1_1code">gr::fec::code</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2015<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>software;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_fec_mtrx_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_fec_mtrx_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">gnuradio/fec/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gr<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">fec<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">code<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structgr_1_1fec_1_1code_1_1block__data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="structgr_1_1fec_1_1code_1_1block__data_1a14acf66aa4dda9de7eae9c6209c4a279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1fec_1_1code_1_1block__data_1a14acf66aa4dda9de7eae9c6209c4a279" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structgr_1_1fec_1_1code_1_1block__data_1a7658036fa5bb2592e43391d63719a117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structgr_1_1fec_1_1code_1_1block__data_1a7658036fa5bb2592e43391d63719a117" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="structgr_1_1fec_1_1code_1_1block__data" kindref="compound">block_data</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structgr_1_1fec_1_1code_1_1matrix" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="structgr_1_1fec_1_1code_1_1matrix_1a2410d2766a36a370bfb7af955554430d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1a2410d2766a36a370bfb7af955554430d" kindref="member">size1</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structgr_1_1fec_1_1code_1_1matrix_1a9560c7923ddd12d8b5294d017b090ace" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1a9560c7923ddd12d8b5294d017b090ace" kindref="member">size2</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structgr_1_1fec_1_1code_1_1matrix_1a63bb42f0a988f8c48daa486523be17f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1a63bb42f0a988f8c48daa486523be17f6" kindref="member">tda</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structgr_1_1fec_1_1code_1_1matrix_1a52d68c4a19802938e2c8c7ecffb757e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1a52d68c4a19802938e2c8c7ecffb757e0" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structgr_1_1fec_1_1code_1_1matrix_1aab576c476758b74a8d781fc4414817b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgr_1_1fec_1_1code_1_1block__data" kindref="compound">block_data</ref><sp/>*<sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1aab576c476758b74a8d781fc4414817b5" kindref="member">block</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structgr_1_1fec_1_1code_1_1matrix_1a81f669814fe4cccb62feb3e3e3a3d131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix_1a81f669814fe4cccb62feb3e3e3a3d131" kindref="member">owner</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="structgr_1_1fec_1_1code_1_1matrix" kindref="compound">matrix</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1fec_1_1code_1ad35e2f7585af2eb24ee58edc71b67cd3" kindref="member">matrix_free</ref>(<ref refid="structgr_1_1fec_1_1code_1_1matrix" kindref="compound">matrix</ref><sp/>*x);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;matrix&gt;<sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespacegr_1_1fec_1_1code_1ac16940b942767989a60bdda908bdbd71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr_1_1fec_1_1code_1_1fec__mtrx" kindref="compound">fec_mtrx</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;fec_mtrx&gt;<sp/><ref refid="namespacegr_1_1fec_1_1code_1ac16940b942767989a60bdda908bdbd71" kindref="member">fec_mtrx_sptr</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1ac3b5af188e4dedbb7688894914273843" kindref="member">read_matrix_from_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1fec_1_1code_1a7d9ded1b8f85567ba5b3e0131bb19fe9" kindref="member">write_matrix_to_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename,<sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/>M);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1ad0b270c0b040a56dc434b3a1c32328e5" kindref="member">generate_G_transpose</ref>(<ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/>H_obj);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1af35d32c2ab4a59f115cea3cfcaa66e16" kindref="member">generate_G</ref>(<ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/>H_obj);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/><ref refid="namespacegr_1_1fec_1_1code_1a1e0aba80cfae77c3aa7c9208cd6c3e67" kindref="member">generate_H</ref>(<ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/>G_obj);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1fec_1_1code_1a38adc2c894fc49f276d42f08bad0351a" kindref="member">print_matrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1fec_1_1code_1a27eb7ded646540c6a2c26c1eec99f89e" kindref="member">matrix_sptr</ref><sp/>M,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>numpy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classgr_1_1fec_1_1code_1_1fec__mtrx" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/><ref refid="classgr_1_1fec_1_1code_1_1fec__mtrx" kindref="compound">fec_mtrx</ref></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139" refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1abc3f19d9bb1476ddcc0e3dc5ffc3fcf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1abc3f19d9bb1476ddcc0e3dc5ffc3fcf0" kindref="member">fec_mtrx</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}<sp/></highlight><highlight class="comment">//<sp/>allows<sp/>pure<sp/>virtual<sp/>interface<sp/>sub-classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142" refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a01a322ccbadf31be57fee76ff4c5e0e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1fec_1_1code_1_1fec__mtrx_1a01a322ccbadf31be57fee76ff4c5e0e3" kindref="member">~fec_mtrx</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="viterbi_8h_1a61b212e377c949ca7281d68daec32ddd" kindref="member">encode</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*outbuffer,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*inbuffer)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decode(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*outbuffer,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*inbuffer,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_size,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iterations)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>fec<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>gr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_fec_mtrx_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/fec_mtrx.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1header__buffer" kind="class" prot="public">
+    <compoundname>gr::digital::header_buffer</compoundname>
+    <includes refid="header__buffer_8h" local="no">gnuradio/digital/header_buffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1header__buffer_1a266fe26318e35eca36674c895d5c6231" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::digital::header_buffer::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="170" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1header__buffer_1aa674684c623f423c652adc78623ba1b3" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* gr::digital::header_buffer::d_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="171" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1header__buffer_1a38916d1ffdddb22a800049403501a608" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; gr::digital::header_buffer::d_input</definition>
+        <argsstring></argsstring>
+        <name>d_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="173" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a97dc6589ea2b38e8d095e596fe47b57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::header_buffer::header_buffer</definition>
+        <argsstring>(uint8_t *buffer=NULL)</argsstring>
+        <name>header_buffer</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a header buffer object with a pre-allocated buffer, <computeroutput>buffer</computeroutput>, to hold the formatted header data.</para><para>If <computeroutput>buffer</computeroutput> is set to NULL, then this object is in receive mode meant to receive bits from an incoming data stream and provide the ability to extract fields. In this mode, calls to add_field are invalid and will be nops. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1acd5b0a87ce62846446625bb9312b08a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::header_buffer::~header_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~header_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1af519c5fa14b0e36f22ae2e84ae456d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the header.</para><para>In transmit mode, this resets the current offset so new add_field functions start adding data to the start of the buffer.</para><para>In receive mode, this clears the buffer that we have inserted bits in to. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a97912193dbfc04a41f74a269adbe5ee8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gr::digital::header_buffer::length</definition>
+        <argsstring>() const </argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In transmit mode, this returns the length of the data in the buffer (not the allocated buffer length).</para><para>In receiving mode, this returns the current length in bits of the received header. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1ad6555edbb0a92a1caa982fbd23451715" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* gr::digital::header_buffer::header</definition>
+        <argsstring>() const </argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a constant pointer to the buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a1077d48c4fcc9e933febdfccb42a074c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::add_field8</definition>
+        <argsstring>(uint8_t data, int len=8, bool bs=false)</argsstring>
+        <name>add_field8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an 8-bit field to the header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 8-bit data item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length (in bits) of <computeroutput>data</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a6cf9f89abfdd3dcace2f3b2996fdb6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::add_field16</definition>
+        <argsstring>(uint16_t data, int len=16, bool bs=false)</argsstring>
+        <name>add_field16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>16</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an 16-bit field to the header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16-bit data item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length (in bits) of <computeroutput>data</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a86782016d8dca53a86e15c7da050d274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::add_field32</definition>
+        <argsstring>(uint32_t data, int len=32, bool bs=false)</argsstring>
+        <name>add_field32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>32</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an 32-bit field to the header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit data item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length (in bits) of <computeroutput>data</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a54be38061f8ef8930082e0269572cad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::add_field64</definition>
+        <argsstring>(uint64_t data, int len=64, bool bs=false)</argsstring>
+        <name>add_field64</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>64</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an 64-bit field to the header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 64-bit data item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length (in bits) of <computeroutput>data</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a07abe8c006a763599e618389aed5a8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::header_buffer::insert_bit</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>insert_bit</name>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a new bit on the back of the input buffer. This function is used in receive mode to add new bits as they are received for later use of the extract_field functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New bit to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a790a99b9ba623fc93ad3e434aa786e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::digital::header_buffer::extract_field8</definition>
+        <argsstring>(int pos, int len=8, bool bs=false)</argsstring>
+        <name>extract_field8</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns up to an 8-bit field in the packet header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position of the start of the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits in the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a64fde79f75a6559b250c3e8e5e56342c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::digital::header_buffer::extract_field16</definition>
+        <argsstring>(int pos, int len=16, bool bs=false)</argsstring>
+        <name>extract_field16</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>16</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns up to a 16-bit field in the packet header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position of the start of the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits in the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1a254103c5b6e478efa1966d6cdac23960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::digital::header_buffer::extract_field32</definition>
+        <argsstring>(int pos, int len=32, bool bs=false)</argsstring>
+        <name>extract_field32</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>32</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns up to a 32-bit field in the packet header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position of the start of the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits in the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="295" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1header__buffer_1ac4b49676678d786e9c9b378962464d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::digital::header_buffer::extract_field64</definition>
+        <argsstring>(int pos, int len=64, bool bs=false)</argsstring>
+        <name>extract_field64</name>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+          <defval>64</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns up to a 64-bit field in the packet header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position of the start of the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits in the field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to &apos;true&apos; to byte swap the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="304" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class for handling payload headers. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is used by the header format blocks (e.g., <ref refid="classgr_1_1digital_1_1header__format__default" kindref="compound">digital::header_format_default</ref>) to make it easier to deal with payload headers. This class functions in two different ways depending on if it is used in a transmitter or receiver. When used in a transmitter, this class helps us build headers out of the fields of the protocol. When used in a receiver, this class helps us parse the received bits into the protocol&apos;s fields.</para><para>This page describes how to work with the different modes, transmit or receive. The class is instructed as to which mode it is in by how the constructor is called. If the constructor is passed a valid array (non NULL), then it is in transmit mode and will pack this buffer with the header fields. If that buffer is NULL, the object is in receive mode.</para><sect1 id="classgr_1_1digital_1_1header__buffer_1header_buffer_tx">
+<title>Transmit Mode</title>
+<para>When passed a valid buffer in the constructor, this object is in transmit mode. We can then use the add_field[N] functions to add new fields to this header. The buffer MUST be large enough to hold the full header. As this class is meant to work mostly with the <ref refid="classgr_1_1digital_1_1header__format__default" kindref="compound">digital::header_format_default</ref> and child classes, the header length can be read from <ref refid="classgr_1_1digital_1_1header__format__base_1a62bfba430c097b94db6d9a55e581b04b" kindref="member">digital::header_format_default::header_nbytes()</ref>.</para><para>Each field is a specific length of 8, 16, 32, or 64 bits that are to be transmitted in network byte order. We can adjust the direction of the bytes by setting the byte-swap flag, <computeroutput>bs</computeroutput>, to true or false.</para><para>The length argument (<computeroutput>len</computeroutput>) for all add_field[N] calls is the number of bytes actually accounted for in the data structure. Often, we would use the full size of the field, which is sizeof(dtype), and the add_field[N] call defaults to len=N. Occasionally, we may need to use fewer bytes than actually represented by the data type. An example would be the access code used in the <ref refid="classgr_1_1digital_1_1header__format__default" kindref="compound">header_format_default</ref>, which is a uint64_t type but may have fewer bytes used in the actual access code.</para><para>The function that calls this class is expected to handle the memory handling of the buffer <ndash/> both allocating and deallocating.</para><para>As simple example of using this class in transmit mode:</para><para><verbatim>uint8_t* buffer = (uint8_t*)volk_malloc(header_nbytes(),
+                                        volk_get_alignment());
+
+header_buffer hdr(buffer);
+hdr.add_field64(sync_word, sync_word_len);
+hdr.add_field16(payload_length);
+hdr.add_field8(header_flags);
+hdr.add_field8(header_options);
+
+// Do something with the header
+
+volk_free(buffer);
+</verbatim></para><para>In this example, the header contains four fields:</para><para><verbatim>  |0                           15|16          23|24          31|
+  |                          sync word                         |
+  |                                                            |
+  |           length             |     flags    |   options    |</verbatim></para><para>The sync word can be up to 64-bits, but the add_field64 is also passed the number of actual bytes in the sync word and so could be fewer.</para></sect1>
+<sect1 id="classgr_1_1digital_1_1header__buffer_1header_buffer_rx">
+<title>Receive Mode</title>
+<para>In receive mode, we build up the header as bits are received by inserting them with insert_bit. We can find out how long the current header is, in bits, using the call to <ref refid="classgr_1_1digital_1_1header__buffer_1a97912193dbfc04a41f74a269adbe5ee8" kindref="member">length()</ref>. If the header is of the appropriate length, we can then start extracting the fields from it. When we are done with the current header, call <ref refid="classgr_1_1digital_1_1header__buffer_1af519c5fa14b0e36f22ae2e84ae456d96" kindref="member">clear()</ref> to reset the internal buffer to empty, which will mean that <ref refid="classgr_1_1digital_1_1header__buffer_1a97912193dbfc04a41f74a269adbe5ee8" kindref="member">length()</ref> returns 0.</para><para>The header fields are extracted using the extract_field[N] functions. Like the add_field[N] functions, we specify the size (in bits) of the field we are extracting. We pass this function the bit-position of the expected field in the received header buffer. The extract_field[N] assumes that the number of bits for the field is N, but we can tell the function to use fewer bits if we want. Setting the length parameter of these functions greater than N is illegal, and it will throw an error.</para><para>For example, given a header of | length | seq. num. | where the length is 16 bits and the sequence number is 32 bits, we would use:</para><para><verbatim>     uint16_t len = d_hdr_reg.extract_field16(0);
+     uint32_t seq = d_hdr_reg.extract_field32(16);</verbatim></para><para>The extract_field functions are specific to data types of the field and the number of bits for each field is inferred by the data type. So extract_field16 assumes we want all 16 bits in the field represented.</para><para>Some headers have fields that are not standard sizes of integers, like a 1 bit, 4 bit, or even 12 bit fields. We can ask for fewer bits for each field. say:</para><para><verbatim>  |0          15|16     19|20          31|
+  |     len     |  flags  |   options    |</verbatim></para><para>We would use the following extraction functions:</para><para><verbatim>     uint16_t len   = d_hdr_reg.extract_field16(0);
+     uint8_t  flags = d_hdr_reg.extract_field8(16, 4);
+     uint16_t opts  = d_hdr_reg.extract_field16(20, 12);</verbatim></para><para><simplesect kind="see"><para><ref refid="classgr_1_1digital_1_1header__format__default" kindref="compound">header_format_default</ref> </para><simplesectsep/><para><ref refid="classgr_1_1digital_1_1header__format__counter" kindref="compound">header_format_counter</ref> </para><simplesectsep/><para><ref refid="classgr_1_1digital_1_1header__format__crc" kindref="compound">header_format_crc</ref> </para></simplesect>
+</para></sect1>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" line="168" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/header_buffer.h" bodystart="167" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a6cf9f89abfdd3dcace2f3b2996fdb6ca" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>add_field16</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a86782016d8dca53a86e15c7da050d274" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>add_field32</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a54be38061f8ef8930082e0269572cad1" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>add_field64</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a1077d48c4fcc9e933febdfccb42a074c" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>add_field8</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1af519c5fa14b0e36f22ae2e84ae456d96" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>clear</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1aa674684c623f423c652adc78623ba1b3" prot="private" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>d_buffer</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a38916d1ffdddb22a800049403501a608" prot="private" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>d_input</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a266fe26318e35eca36674c895d5c6231" prot="private" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a64fde79f75a6559b250c3e8e5e56342c" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>extract_field16</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a254103c5b6e478efa1966d6cdac23960" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>extract_field32</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1ac4b49676678d786e9c9b378962464d5a" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>extract_field64</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a790a99b9ba623fc93ad3e434aa786e64" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>extract_field8</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1ad6555edbb0a92a1caa982fbd23451715" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>header</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a97dc6589ea2b38e8d095e596fe47b57d" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>header_buffer</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a07abe8c006a763599e618389aed5a8e4" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>insert_bit</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1a97912193dbfc04a41f74a269adbe5ee8" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>length</name></member>
+      <member refid="classgr_1_1digital_1_1header__buffer_1acd5b0a87ce62846446625bb9312b08a6" prot="public" virt="non-virtual"><scope>gr::digital::header_buffer</scope><name>~header_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

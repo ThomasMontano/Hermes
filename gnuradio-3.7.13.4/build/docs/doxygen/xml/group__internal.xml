@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__internal" kind="group">
+    <compoundname>internal</compoundname>
+    <title>Implementation Details</title>
+    <innerclass refid="classgr_1_1basic__block" prot="public">gr::basic_block</innerclass>
+    <innerclass refid="classgr_1_1block__detail" prot="public">gr::block_detail</innerclass>
+    <innerclass refid="classgr_1_1buffer" prot="public">gr::buffer</innerclass>
+    <innerclass refid="classgr_1_1buffer__reader" prot="public">gr::buffer_reader</innerclass>
+    <innerclass refid="classgr_1_1endpoint" prot="public">gr::endpoint</innerclass>
+    <innerclass refid="classgr_1_1flowgraph" prot="public">gr::flowgraph</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__internal_1ga7cc508b027860204e8566afaaa382f1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sptr</type>
+        <definition>static sptr gr::io_signature::make</definition>
+        <argsstring>(int min_streams, int max_streams, int sizeof_stream_item)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>min_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_streams</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <briefdescription>
+<para>Create an i/o signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify minimum number of streams (&gt;= 0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify maximum number of streams (&gt;= min_streams or -1 -&gt; infinite) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify the size of the items in each stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/io_signature.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

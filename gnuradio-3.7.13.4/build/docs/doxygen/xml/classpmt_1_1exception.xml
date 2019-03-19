@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classpmt_1_1exception" kind="class" prot="public">
+    <compoundname>pmt::exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::logic_error</basecompoundref>
+    <derivedcompoundref refid="classpmt_1_1notimplemented" prot="public" virt="non-virtual">pmt::notimplemented</derivedcompoundref>
+    <derivedcompoundref refid="classpmt_1_1out__of__range" prot="public" virt="non-virtual">pmt::out_of_range</derivedcompoundref>
+    <derivedcompoundref refid="classpmt_1_1wrong__type" prot="public" virt="non-virtual">pmt::wrong_type</derivedcompoundref>
+    <includes refid="pmt_8h" local="no">pmt/pmt.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpmt_1_1exception_1a2a6a94779183dab0160fe8d725aa821d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pmt::exception::exception</definition>
+        <argsstring>(const std::string &amp;msg, pmt_t obj)</argsstring>
+        <name>exception</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/pmt/pmt.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4427">
+        <label>std::logic_error</label>
+        <childnode refid="4428" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4430">
+        <label>pmt::out_of_range</label>
+        <link refid="classpmt_1_1out__of__range"/>
+        <childnode refid="4426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4431">
+        <label>pmt::wrong_type</label>
+        <link refid="classpmt_1_1wrong__type"/>
+        <childnode refid="4426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4426">
+        <label>pmt::exception</label>
+        <link refid="classpmt_1_1exception"/>
+        <childnode refid="4427" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4429">
+        <label>pmt::notimplemented</label>
+        <link refid="classpmt_1_1notimplemented"/>
+        <childnode refid="4426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4428">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4433">
+        <label>std::logic_error</label>
+        <childnode refid="4434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4432">
+        <label>pmt::exception</label>
+        <link refid="classpmt_1_1exception"/>
+        <childnode refid="4433" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4434">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/pmt/pmt.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/pmt/pmt.h" bodystart="67" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classpmt_1_1exception_1a2a6a94779183dab0160fe8d725aa821d" prot="public" virt="non-virtual"><scope>pmt::exception</scope><name>exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

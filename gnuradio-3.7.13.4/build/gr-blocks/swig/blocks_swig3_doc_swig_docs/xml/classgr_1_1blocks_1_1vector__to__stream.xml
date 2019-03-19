@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1vector__to__stream" kind="class" prot="public">
+    <compoundname>gr::blocks::vector_to_stream</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_interpolator</basecompoundref>
+    <includes refid="vector__to__stream_8h" local="no">vector_to_stream.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1vector__to__stream_1acc93274becd558153e179019f12c4a37" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1vector__to__stream" kindref="compound">vector_to_stream</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vector_to_stream&gt; gr::blocks::vector_to_stream::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vector_to_stream.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vector_to_stream.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1vector__to__stream_1a3e081aa64e60b246f5b7352f77fc27a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1vector__to__stream_1acc93274becd558153e179019f12c4a37" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::vector_to_stream::make</definition>
+        <argsstring>(size_t itemsize, size_t nitems_per_block)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nitems_per_block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make vector-to-stream block</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the item size of the stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nitems_per_block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of items per vector (vector size) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vector_to_stream.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>convert a stream of gnuradio/blocks of nitems_per_block items into a stream of items </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="923">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="922">
+        <label>gr::blocks::vector_to_stream</label>
+        <link refid="classgr_1_1blocks_1_1vector__to__stream"/>
+        <childnode refid="923" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="925">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="924">
+        <label>gr::blocks::vector_to_stream</label>
+        <link refid="classgr_1_1blocks_1_1vector__to__stream"/>
+        <childnode refid="925" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vector_to_stream.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/vector_to_stream.h" bodystart="36" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1vector__to__stream_1a3e081aa64e60b246f5b7352f77fc27a7" prot="public" virt="non-virtual"><scope>gr::blocks::vector_to_stream</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1vector__to__stream_1acc93274becd558153e179019f12c4a37" prot="public" virt="non-virtual"><scope>gr::blocks::vector_to_stream</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

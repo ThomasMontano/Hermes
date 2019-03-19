@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcserver__thrift" kind="class" prot="public">
+    <compoundname>rpcserver_thrift</compoundname>
+    <basecompoundref refid="classrpcserver__base" prot="public" virt="virtual">rpcserver_base</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ControlPortIf</basecompoundref>
+    <includes refid="rpcserver__thrift_8h" local="no">gnuradio/rpcserver_thrift.h</includes>
+    <innerclass refid="structrpcserver__thrift_1_1get__all__f" prot="private">rpcserver_thrift::get_all_f</innerclass>
+    <innerclass refid="structrpcserver__thrift_1_1get__f" prot="private">rpcserver_thrift::get_f</innerclass>
+    <innerclass refid="structrpcserver__thrift_1_1properties__all__f" prot="private">rpcserver_thrift::properties_all_f</innerclass>
+    <innerclass refid="structrpcserver__thrift_1_1properties__f" prot="private">rpcserver_thrift::properties_f</innerclass>
+    <innerclass refid="structrpcserver__thrift_1_1set__f" prot="private">rpcserver_thrift::set_f</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classrpcserver__thrift_1a009e9f881bba1e7129aded006955696b" prot="private" static="no">
+        <type>std::map&lt; std::string, <ref refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" kindref="member">configureCallback_t</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, configureCallback_t&gt; rpcserver_thrift::ConfigureCallbackMap_t</definition>
+        <argsstring></argsstring>
+        <name>ConfigureCallbackMap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="102" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classrpcserver__thrift_1a8397bdc5193436e4cc033942bfb7f101" prot="private" static="no">
+        <type>std::map&lt; std::string, <ref refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" kindref="member">queryCallback_t</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, queryCallback_t&gt; rpcserver_thrift::QueryCallbackMap_t</definition>
+        <argsstring></argsstring>
+        <name>QueryCallbackMap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="105" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classrpcserver__thrift_1a5ee4e35b3cf11a6a97469111acf94c70" prot="private" static="no">
+        <type>std::map&lt; std::string, <ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, handlerCallback_t&gt; rpcserver_thrift::HandlerCallbackMap_t</definition>
+        <argsstring></argsstring>
+        <name>HandlerCallbackMap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrpcserver__thrift_1abf46ba443a10e2a7f09d3adcff542f70" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex rpcserver_thrift::d_callback_map_lock</definition>
+        <argsstring></argsstring>
+        <name>d_callback_map_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="100" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcserver__thrift_1a006ea4d30180cca4996cc34fbf7d14b1" prot="private" static="no" mutable="no">
+        <type>ConfigureCallbackMap_t</type>
+        <definition>ConfigureCallbackMap_t rpcserver_thrift::d_setcallbackmap</definition>
+        <argsstring></argsstring>
+        <name>d_setcallbackmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcserver__thrift_1a648f8b748a1a827e96f8d518487c9ca2" prot="private" static="no" mutable="no">
+        <type>QueryCallbackMap_t</type>
+        <definition>QueryCallbackMap_t rpcserver_thrift::d_getcallbackmap</definition>
+        <argsstring></argsstring>
+        <name>d_getcallbackmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrpcserver__thrift_1a94323983dbce91f71446e39683a0303f" prot="private" static="no" mutable="no">
+        <type>HandlerCallbackMap_t</type>
+        <definition>HandlerCallbackMap_t rpcserver_thrift::d_handlercallbackmap</definition>
+        <argsstring></argsstring>
+        <name>d_handlercallbackmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcserver__thrift_1ab1b5450e51da220615b5fa36adcb95db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rpcserver_thrift::rpcserver_thrift</definition>
+        <argsstring>()</argsstring>
+        <name>rpcserver_thrift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a45c79008dbb58c5c5e073ccc21e6f7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rpcserver_thrift::~rpcserver_thrift</definition>
+        <argsstring>()</argsstring>
+        <name>~rpcserver_thrift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a1917b1eaf2e874745a609da121b14a57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::registerConfigureCallback</definition>
+        <argsstring>(const std::string &amp;id, const configureCallback_t callback)</argsstring>
+        <name>registerConfigureCallback</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" kindref="member">configureCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1aee8e18dfd4e2bc180706b97a6a0445b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::unregisterConfigureCallback</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>unregisterConfigureCallback</name>
+        <reimplements refid="classrpcserver__base_1aa46ef83c3bc01bf297fb02487d2b6a62">unregisterConfigureCallback</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a9cf43035abfe64138074d42eb9e57ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::registerQueryCallback</definition>
+        <argsstring>(const std::string &amp;id, const queryCallback_t callback)</argsstring>
+        <name>registerQueryCallback</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" kindref="member">queryCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a051fd62e542584013a6d149b1b315e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::unregisterQueryCallback</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>unregisterQueryCallback</name>
+        <reimplements refid="classrpcserver__base_1a390b7472ad2fa8add90199b5957360e6">unregisterQueryCallback</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1aee57799a54b121e6b6062257d20af5a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::registerHandlerCallback</definition>
+        <argsstring>(const std::string &amp;id, const handlerCallback_t callback)</argsstring>
+        <name>registerHandlerCallback</name>
+        <reimplements refid="classrpcserver__base_1a97563a53bad9afcbf8a4f7fba8840be7">registerHandlerCallback</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1adfcc93ca73bd5b0b06583ac4b816e90e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::unregisterHandlerCallback</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>unregisterHandlerCallback</name>
+        <reimplements refid="classrpcserver__base_1a7f0289279ec39bd6096b3964a822f4d0">unregisterHandlerCallback</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a53cbc06340e4d58b5d98f8256e4af712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::setKnobs</definition>
+        <argsstring>(const GNURadio::KnobMap &amp;)</argsstring>
+        <name>setKnobs</name>
+        <param>
+          <type>const GNURadio::KnobMap &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a8b09c78bc523942a33c9f14e5707eeeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::getKnobs</definition>
+        <argsstring>(GNURadio::KnobMap &amp;, const GNURadio::KnobIDList &amp;)</argsstring>
+        <name>getKnobs</name>
+        <param>
+          <type>GNURadio::KnobMap &amp;</type>
+        </param>
+        <param>
+          <type>const GNURadio::KnobIDList &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a4ff9ac0a695388248a1d335d112809ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::getRe</definition>
+        <argsstring>(GNURadio::KnobMap &amp;, const GNURadio::KnobIDList &amp;)</argsstring>
+        <name>getRe</name>
+        <param>
+          <type>GNURadio::KnobMap &amp;</type>
+        </param>
+        <param>
+          <type>const GNURadio::KnobIDList &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1a5667621d6d87abe3f6c40c18cd77be6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::properties</definition>
+        <argsstring>(GNURadio::KnobPropMap &amp;, const GNURadio::KnobIDList &amp;knobs)</argsstring>
+        <name>properties</name>
+        <param>
+          <type>GNURadio::KnobPropMap &amp;</type>
+        </param>
+        <param>
+          <type>const GNURadio::KnobIDList &amp;</type>
+          <declname>knobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1ac1ca97231f335b4def4a73c349c7c410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::postMessage</definition>
+        <argsstring>(const std::string &amp;alias, const std::string &amp;port, const std::string &amp;msg)</argsstring>
+        <name>postMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Call this to post a message to the <computeroutput>port</computeroutput> for the block identified by <computeroutput>alias</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The message, <computeroutput>msg</computeroutput>, is passed as a serialized PMT that is then passed to the message handler function identified by <computeroutput>port</computeroutput> to the block identified by <computeroutput>alias</computeroutput>. The <computeroutput>alias</computeroutput> and <computeroutput>port</computeroutput> values are passed as serialized PMT symbols (see <ref refid="namespacepmt_1a2a19d2e56f6fbb5645ad17a5937b5f2f" kindref="member">pmt::intern</ref>). The message is whatever PMT format is appropriate for the message handler function.</para><para>To use this function, the message handler function must have been registered (most likely in setup_rpc) in the block during construction using <ref refid="classrpcbasic__register__handler" kindref="compound">rpcbasic_register_handler</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alias of the block, which is used to map to the real block through the global_block_registry. Passed in as a serialized PMT symbol. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the message port. Passed in as a serialized PMT symbol. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The actual message to pass to <computeroutput>port</computeroutput>. This is a serialized PMT where the PMT is whatever form appropriate for the message handler function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__thrift_1aaa24c82fbde43c297de6686f137406e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_thrift::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrpcserver__thrift_1a7f319c6e6c096e6174584d3632a135ed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcserver_thrift::set_h</definition>
+        <argsstring>(const handlerCallback_t &amp;_handlerCallback, const priv_lvl_t &amp;_cur_priv, pmt::pmt_t port, pmt::pmt_t msg)</argsstring>
+        <name>set_h</name>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref> &amp;</type>
+          <declname>_handlerCallback</declname>
+        </param>
+        <param>
+          <type>const <ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref> &amp;</type>
+          <declname>_cur_priv</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Manages calling the callback function for a message handler posting. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="115" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="115" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9587">
+        <label>rpcserver_base</label>
+        <link refid="classrpcserver__base"/>
+        <childnode refid="9588" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9589">
+        <label>GNURadio::ControlPortIf</label>
+      </node>
+      <node id="9588">
+        <label>callbackregister_base</label>
+        <link refid="structcallbackregister__base"/>
+      </node>
+      <node id="9586">
+        <label>rpcserver_thrift</label>
+        <link refid="classrpcserver__thrift"/>
+        <childnode refid="9587" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9589" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9591">
+        <label>rpcserver_base</label>
+        <link refid="classrpcserver__base"/>
+        <childnode refid="9592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9593">
+        <label>GNURadio::ControlPortIf</label>
+      </node>
+      <node id="9592">
+        <label>callbackregister_base</label>
+        <link refid="structcallbackregister__base"/>
+      </node>
+      <node id="9590">
+        <label>rpcserver_thrift</label>
+        <link refid="classrpcserver__thrift"/>
+        <childnode refid="9591" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9593" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_thrift.h" bodystart="41" bodyend="288"/>
+    <listofallmembers>
+      <member refid="structcallbackregister__base_1a4c05d278727594bdf05d222c567b38bf" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>callbackregister_base</name></member>
+      <member refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>configureCallback_t</name></member>
+      <member refid="classrpcserver__thrift_1a009e9f881bba1e7129aded006955696b" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>ConfigureCallbackMap_t</name></member>
+      <member refid="classrpcserver__base_1a005153760b2d2452945b3fdcfd57eb9a" prot="protected" virt="non-virtual"><scope>rpcserver_thrift</scope><name>cur_priv</name></member>
+      <member refid="classrpcserver__thrift_1abf46ba443a10e2a7f09d3adcff542f70" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>d_callback_map_lock</name></member>
+      <member refid="classrpcserver__thrift_1a648f8b748a1a827e96f8d518487c9ca2" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>d_getcallbackmap</name></member>
+      <member refid="classrpcserver__thrift_1a94323983dbce91f71446e39683a0303f" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>d_handlercallbackmap</name></member>
+      <member refid="classrpcserver__thrift_1a006ea4d30180cca4996cc34fbf7d14b1" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>d_setcallbackmap</name></member>
+      <member refid="classrpcserver__thrift_1a8b09c78bc523942a33c9f14e5707eeeb" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>getKnobs</name></member>
+      <member refid="classrpcserver__thrift_1a4ff9ac0a695388248a1d335d112809ad" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>getRe</name></member>
+      <member refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>handlerCallback_t</name></member>
+      <member refid="classrpcserver__thrift_1a5ee4e35b3cf11a6a97469111acf94c70" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>HandlerCallbackMap_t</name></member>
+      <member refid="classrpcserver__thrift_1ac1ca97231f335b4def4a73c349c7c410" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>postMessage</name></member>
+      <member refid="classrpcserver__thrift_1a5667621d6d87abe3f6c40c18cd77be6b" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>properties</name></member>
+      <member refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>queryCallback_t</name></member>
+      <member refid="classrpcserver__thrift_1a8397bdc5193436e4cc033942bfb7f101" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>QueryCallbackMap_t</name></member>
+      <member refid="classrpcserver__thrift_1a1917b1eaf2e874745a609da121b14a57" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>registerConfigureCallback</name></member>
+      <member refid="classrpcserver__base_1a07ca2bf9c26f30cb9d63df1d8cc19f8a" prot="public" virt="pure-virtual" ambiguityscope="rpcserver_base::"><scope>rpcserver_thrift</scope><name>registerConfigureCallback</name></member>
+      <member refid="classrpcserver__thrift_1aee57799a54b121e6b6062257d20af5a3" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>registerHandlerCallback</name></member>
+      <member refid="classrpcserver__thrift_1a9cf43035abfe64138074d42eb9e57ede" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>registerQueryCallback</name></member>
+      <member refid="classrpcserver__base_1aaf6f4bda26c5b56965f919899deea6e6" prot="public" virt="pure-virtual" ambiguityscope="rpcserver_base::"><scope>rpcserver_thrift</scope><name>registerQueryCallback</name></member>
+      <member refid="classrpcserver__base_1aae87aac17fa3dcdf3f2afce28708e352" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>rpcserver_base</name></member>
+      <member refid="classrpcserver__thrift_1ab1b5450e51da220615b5fa36adcb95db" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>rpcserver_thrift</name></member>
+      <member refid="classrpcserver__thrift_1a7f319c6e6c096e6174584d3632a135ed" prot="private" virt="non-virtual"><scope>rpcserver_thrift</scope><name>set_h</name></member>
+      <member refid="classrpcserver__base_1ad65d23a4b1e9bfec36bdb3a17df14d22" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>setCurPrivLevel</name></member>
+      <member refid="classrpcserver__thrift_1a53cbc06340e4d58b5d98f8256e4af712" prot="public" virt="non-virtual"><scope>rpcserver_thrift</scope><name>setKnobs</name></member>
+      <member refid="classrpcserver__thrift_1aaa24c82fbde43c297de6686f137406e6" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>shutdown</name></member>
+      <member refid="classrpcserver__thrift_1aee8e18dfd4e2bc180706b97a6a0445b3" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>unregisterConfigureCallback</name></member>
+      <member refid="classrpcserver__thrift_1adfcc93ca73bd5b0b06583ac4b816e90e" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>unregisterHandlerCallback</name></member>
+      <member refid="classrpcserver__thrift_1a051fd62e542584013a6d149b1b315e10" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>unregisterQueryCallback</name></member>
+      <member refid="structcallbackregister__base_1a574cc1d427024846ee5db738be7a0262" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>~callbackregister_base</name></member>
+      <member refid="classrpcserver__base_1a539c3e3b45b794a8c072fbab20a2c2b7" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>~rpcserver_base</name></member>
+      <member refid="classrpcserver__thrift_1a45c79008dbb58c5c5e073ccc21e6f7e4" prot="public" virt="virtual"><scope>rpcserver_thrift</scope><name>~rpcserver_thrift</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

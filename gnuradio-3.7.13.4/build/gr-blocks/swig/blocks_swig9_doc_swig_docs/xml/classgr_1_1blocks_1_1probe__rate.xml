@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1probe__rate" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::probe_rate</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="probe__rate_8h" local="no">probe_rate.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1probe__rate_1acf5468b2fce665181c8ed606411f92b6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1probe__rate" kindref="compound">probe_rate</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;probe_rate&gt; gr::blocks::probe_rate::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1probe__rate_1a1bd4cd2bab61ae7b1c81d9b2e3bc901f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1probe__rate_1acf5468b2fce665181c8ed606411f92b6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::probe_rate::make</definition>
+        <argsstring>(size_t itemsize, double update_rate_ms=500.0, double alpha=0.0001)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>update_rate_ms</declname>
+          <defval>500.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defval>0.0001</defval>
+        </param>
+        <briefdescription>
+<para>Make a throughput measurement block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of each stream item </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update_rate_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum update time in milliseconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gain for running average filter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1probe__rate_1aa46fd328346f0e3a545638c4efed14d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::probe_rate::set_alpha</definition>
+        <argsstring>(double alpha)=0</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1probe__rate_1a33812ff85437630b576f0780cba39549" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::blocks::probe_rate::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1probe__rate_1abe6593d8b1da99e33f6138af5e58085c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::probe_rate::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1probe__rate_1a7432386448ecdf727266cf845bdcafd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::probe_rate::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>throughput measurement </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="590">
+        <label>gr::blocks::probe_rate</label>
+        <link refid="classgr_1_1blocks_1_1probe__rate"/>
+        <childnode refid="591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="592">
+        <label>gr::blocks::probe_rate</label>
+        <link refid="classgr_1_1blocks_1_1probe__rate"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/probe_rate.h" bodystart="36" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1a1bd4cd2bab61ae7b1c81d9b2e3bc901f" prot="public" virt="non-virtual"><scope>gr::blocks::probe_rate</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1a33812ff85437630b576f0780cba39549" prot="public" virt="pure-virtual"><scope>gr::blocks::probe_rate</scope><name>rate</name></member>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1aa46fd328346f0e3a545638c4efed14d3" prot="public" virt="pure-virtual"><scope>gr::blocks::probe_rate</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1acf5468b2fce665181c8ed606411f92b6" prot="public" virt="non-virtual"><scope>gr::blocks::probe_rate</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1abe6593d8b1da99e33f6138af5e58085c" prot="public" virt="pure-virtual"><scope>gr::blocks::probe_rate</scope><name>start</name></member>
+      <member refid="classgr_1_1blocks_1_1probe__rate_1a7432386448ecdf727266cf845bdcafd7" prot="public" virt="pure-virtual"><scope>gr::blocks::probe_rate</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

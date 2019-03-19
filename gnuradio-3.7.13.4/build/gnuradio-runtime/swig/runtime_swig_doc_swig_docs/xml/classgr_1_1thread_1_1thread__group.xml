@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1thread_1_1thread__group" kind="class" prot="public">
+    <compoundname>gr::thread::thread_group</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">noncopyable</basecompoundref>
+    <includes refid="thread__group_8h" local="no">thread_group.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1thread_1_1thread__group_1ac825566ff61fd67cf77c3da6d796c672" prot="private" static="no" mutable="no">
+        <type>std::list&lt; boost::thread * &gt;</type>
+        <definition>std::list&lt;boost::thread*&gt; gr::thread::thread_group::m_threads</definition>
+        <argsstring></argsstring>
+        <name>m_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1thread_1_1thread__group_1a710625f483e13a099b63a0c7169b630c" prot="private" static="no" mutable="yes">
+        <type>boost::shared_mutex</type>
+        <definition>boost::shared_mutex gr::thread::thread_group::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a556f5ff51514de53b4f2662fec438ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::thread::thread_group::thread_group</definition>
+        <argsstring>()</argsstring>
+        <name>thread_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a412da7bb5e8afbac66cda5a3651d837d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::thread::thread_group::~thread_group</definition>
+        <argsstring>()</argsstring>
+        <name>~thread_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a608ff846d4860796f24d65f238086b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boost::thread *</type>
+        <definition>boost::thread* gr::thread::thread_group::create_thread</definition>
+        <argsstring>(const boost::function0&lt; void &gt; &amp;threadfunc)</argsstring>
+        <name>create_thread</name>
+        <param>
+          <type>const boost::function0&lt; void &gt; &amp;</type>
+          <declname>threadfunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a8c25f1ce87ba73c11c025e43fc1e0314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::thread::thread_group::add_thread</definition>
+        <argsstring>(boost::thread *thrd)</argsstring>
+        <name>add_thread</name>
+        <param>
+          <type>boost::thread *</type>
+          <declname>thrd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a4fd6faf4308a6fdd194e0c0e363e2999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::thread::thread_group::remove_thread</definition>
+        <argsstring>(boost::thread *thrd)</argsstring>
+        <name>remove_thread</name>
+        <param>
+          <type>boost::thread *</type>
+          <declname>thrd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a0de75a732ff9252e96b499ed5f9c635e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::thread::thread_group::join_all</definition>
+        <argsstring>()</argsstring>
+        <name>join_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1a5aa16c535c4c8bf06214ae8400dd72bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::thread::thread_group::interrupt_all</definition>
+        <argsstring>()</argsstring>
+        <name>interrupt_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1thread_1_1thread__group_1aa227a13e911ce511b9046cde9f4a1e09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gr::thread::thread_group::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="713">
+        <label>noncopyable</label>
+      </node>
+      <node id="712">
+        <label>gr::thread::thread_group</label>
+        <link refid="classgr_1_1thread_1_1thread__group"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="715">
+        <label>noncopyable</label>
+      </node>
+      <node id="714">
+        <label>gr::thread::thread_group</label>
+        <link refid="classgr_1_1thread_1_1thread__group"/>
+        <childnode refid="715" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" line="28" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thread/thread_group.h" bodystart="27" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classgr_1_1thread_1_1thread__group_1a8c25f1ce87ba73c11c025e43fc1e0314" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>add_thread</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a608ff846d4860796f24d65f238086b1e" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>create_thread</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a5aa16c535c4c8bf06214ae8400dd72bf" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>interrupt_all</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a0de75a732ff9252e96b499ed5f9c635e" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>join_all</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a710625f483e13a099b63a0c7169b630c" prot="private" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>m_mutex</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1ac825566ff61fd67cf77c3da6d796c672" prot="private" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>m_threads</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a4fd6faf4308a6fdd194e0c0e363e2999" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>remove_thread</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1aa227a13e911ce511b9046cde9f4a1e09" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>size</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a556f5ff51514de53b4f2662fec438ca2" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>thread_group</name></member>
+      <member refid="classgr_1_1thread_1_1thread__group_1a412da7bb5e8afbac66cda5a3651d837d" prot="public" virt="non-virtual"><scope>gr::thread::thread_group</scope><name>~thread_group</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

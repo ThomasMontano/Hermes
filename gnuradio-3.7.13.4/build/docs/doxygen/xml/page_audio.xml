@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="page_audio" kind="page">
+    <compoundname>page_audio</compoundname>
+    <title>Audio Interface</title>
+    <detaileddescription>
+<sect1 id="page_audio_1audio_introduction">
+<title>Introduction</title>
+<para>The gnuradio audio component provides <ref refid="classgr_1_1audio_1_1source" kindref="compound">gr::audio::source</ref> and <ref refid="classgr_1_1audio_1_1sink" kindref="compound">gr::audio::sink</ref> blocks. The audio blocks stream floating point samples to and from audio hardware.</para><para>The gr-audio component will be built automatically when gnuradio-runtime is enabled. Support for underlying audio architectures depends on OS and installed libraries. At the time of writing, gr-audio supports OSS, ALSA, Jack, Portaudio, Audiounit, and Winmm.</para><para>At runtime, gr-audio will automatically select from the available architectures. The user can override the selection via configuration file by setting &quot;audio_module&quot; to one of the following strings:</para><para><itemizedlist>
+<listitem><para>oss </para></listitem>
+<listitem><para>alsa </para></listitem>
+<listitem><para>jack </para></listitem>
+<listitem><para>portaudio </para></listitem>
+<listitem><para>osx </para></listitem>
+<listitem><para>windows</para></listitem>
+</itemizedlist>
+See gr-audio.conf for an example.</para><para>Import this package with:</para><para><programlisting><codeline><highlight class="normal">from<sp/>gnuradio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>audio</highlight></codeline>
+</programlisting></para><para>See the Doxygen documentation for details about the blocks available in this package. A quick listing of the details can be found in Python after importing by using:</para><para><programlisting><codeline><highlight class="normal">help(audio)</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="page_audio_1audio_usage">
+<title>Usage</title>
+<para>For an audio source, a typical OptionParser option and it&apos;s use looks like:</para><para><programlisting><codeline><highlight class="normal">parser.add_option(</highlight><highlight class="stringliteral">&quot;-O&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;--audio-output&quot;</highlight><highlight class="normal">,<sp/>type=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=</highlight><highlight class="stringliteral">&quot;pcm<sp/>device<sp/>name.<sp/><sp/>E.g.,<sp/>hw:0,0<sp/>or<sp/>surround51<sp/>or<sp/>/dev/dsp&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">audio_rate<sp/>=<sp/>32e3</highlight></codeline>
+<codeline><highlight class="normal">audio_sink<sp/>=<sp/>audio.sink<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(audio_rate),<sp/>options.audio_output)</highlight></codeline>
+</programlisting></para><para>Similarly, an audio sink would have a typical OptionParser option and its use would look like:</para><para><programlisting><codeline><highlight class="normal">parser.add_option(</highlight><highlight class="stringliteral">&quot;-I&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;--audio-input&quot;</highlight><highlight class="normal">,<sp/>type=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>help=</highlight><highlight class="stringliteral">&quot;pcm<sp/>input<sp/>device<sp/>name.<sp/><sp/>E.g.,<sp/>hw:0,0<sp/>or<sp/>/dev/dsp&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">audio_rate<sp/>=<sp/>32e3</highlight></codeline>
+<codeline><highlight class="normal">audio_source<sp/>=<sp/>audio.source(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(audio_rate),<sp/>audio_input)</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="page_audio_1audio_adding">
+<title>Adding a New Audio Machine</title>
+<para>There may come a time when we need to define a new audio machine type besides those currently supported. To do this, we have to follow a simple pattern to add it to the list of potential machines GNU Radio can use.</para><para><orderedlist>
+<listitem><para>Add a new directory in gr-audio/lib for the new machine name, like the alsa, oss, etc. that are already there.</para></listitem><listitem><para>Follow the pattern of the other machines to create the class structure for both a source and sink implementation for the machine.</para></listitem><listitem><para>Make sure to add the factory function for both the new source and sink classes. Like in the ALSA sink case, we have:</para></listitem></orderedlist>
+</para><para><programlisting><codeline><highlight class="normal">sink::sptr</highlight></codeline>
+<codeline><highlight class="normal">alsa_sink_fcn(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampling_rate,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;device_name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok_to_block)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sink::sptr</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>alsa_sink(sampling_rate,<sp/>device_name,<sp/>ok_to_block));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><orderedlist>
+<listitem><para>Add the new source and sink factory functions to the audio registration list in gr-audio/lib/audio_registry.cc and audio_registry.h files. Select the appropriate registry priority, HIGH if you want this to be the default when using &apos;auto&apos;. For Linux audio systems, we generally want to default to ALSA, fall back on OSS, but have other machine interfaces defined as MED priority. For example, in the .cc file for ALSA, OSS, and PortAudio:</para></listitem></orderedlist>
+</para><para><programlisting><codeline><highlight class="preprocessor">#ifdef<sp/>ALSA_FOUND</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_registry.push_back(register_source(REG_PRIO_HIGH,<sp/></highlight><highlight class="stringliteral">&quot;alsa&quot;</highlight><highlight class="normal">,<sp/>alsa_source_fcn));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ALSA_FOUND<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OSS_FOUND</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_registry.push_back(register_source(REG_PRIO_LOW,<sp/></highlight><highlight class="stringliteral">&quot;oss&quot;</highlight><highlight class="normal">,<sp/>oss_source_fcn));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>OSS_FOUND<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PORTAUDIO_FOUND</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_registry.push_back(register_source(REG_PRIO_MED,<sp/></highlight><highlight class="stringliteral">&quot;portaudio&quot;</highlight><highlight class="normal">,<sp/>portaudio_source_fcn));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PORTAUDIO_FOUND<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting></para><para><orderedlist>
+<listitem><para>Follow the examples in the gr-audio/lib/CMakeLists.txt file for the different machine types to add the new one, including the add_definitions to provide the new YOURMACH_FOUND used in the audio_registry files. </para></listitem></orderedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4" kind="class" prot="public">
+    <compoundname>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</compoundname>
+    <basecompoundref refid="classrpcinserter__base" prot="public" virt="virtual">rpcinserter_base&lt; T, std::vector&lt; float &gt; &gt;</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1ab36ca03370b2fd496ad9be64215a9f9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;::rpcbasic_inserter</definition>
+        <argsstring>(T *source, std::vector&lt; float &gt;(T::*func)() const)</argsstring>
+        <name>rpcbasic_inserter</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt;(T::*)() const</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="530" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="530" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1a05b35e157fce51a04e584207c962f128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;::rpcbasic_inserter</definition>
+        <argsstring>(T *source, std::vector&lt; float &gt;(T::*func)())</argsstring>
+        <name>rpcbasic_inserter</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt;(T::*)()</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="534" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="534" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1a2fa24c85291058b811533f88e925b1bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>pmt::pmt_t rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;::retrieve</definition>
+        <argsstring>()</argsstring>
+        <name>retrieve</name>
+        <reimplements refid="classgr_1_1messages_1_1msg__producer_1a3e4471e76c488d5dfb4a7d2ffdc766cf">retrieve</reimplements>
+        <briefdescription>
+<para>send <computeroutput>msg</computeroutput> to <computeroutput>msg_producer</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="538" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="538" bodyend="543"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized inserter class for vectors of float data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="460">
+        <label>gr::messages::msg_producer</label>
+        <link refid="classgr_1_1messages_1_1msg__producer"/>
+      </node>
+      <node id="458">
+        <label>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</label>
+        <link refid="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>rpcinserter_base&lt; T, std::vector&lt; float &gt; &gt;</label>
+        <link refid="classrpcinserter__base"/>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="465">
+        <label>T</label>
+      </node>
+      <node id="463">
+        <label>gr::messages::msg_producer</label>
+        <link refid="classgr_1_1messages_1_1msg__producer"/>
+      </node>
+      <node id="464">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="461">
+        <label>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</label>
+        <link refid="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4"/>
+        <childnode refid="462" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>rpcinserter_base&lt; T, std::vector&lt; float &gt; &gt;</label>
+        <link refid="classrpcinserter__base"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>_source</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="528" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="526" bodyend="544"/>
+    <listofallmembers>
+      <member refid="classrpcinserter__base_1aab175e82b4c48407c865f3aaff71a8e2" prot="protected" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>_func</name></member>
+      <member refid="classrpcinserter__base_1a8f89af5214a3c15b93dad9ba4e76b88e" prot="protected" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>_source</name></member>
+      <member refid="classgr_1_1messages_1_1msg__producer_1aecc9d396bc43ecd459b88dac2f9ae3de" prot="public" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>msg_producer</name></member>
+      <member refid="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1a2fa24c85291058b811533f88e925b1bf" prot="public" virt="virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>retrieve</name></member>
+      <member refid="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1ab36ca03370b2fd496ad9be64215a9f9e" prot="public" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>rpcbasic_inserter</name></member>
+      <member refid="classrpcbasic__inserter_3_01T_00_01std_1_1vector_3_01float_01_4_01_4_1a05b35e157fce51a04e584207c962f128" prot="public" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>rpcbasic_inserter</name></member>
+      <member refid="classrpcinserter__base_1ad0a669031de1cca36cf612f7d4f74b05" prot="public" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>rpcinserter_base</name></member>
+      <member refid="classrpcinserter__base_1a64dc370d338f128215fa33e237166a18" prot="public" virt="non-virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>rpcinserter_base</name></member>
+      <member refid="classgr_1_1messages_1_1msg__producer_1ae2911393628f0a7e7e24d2336f14a9b3" prot="public" virt="virtual"><scope>rpcbasic_inserter&lt; T, std::vector&lt; float &gt; &gt;</scope><name>~msg_producer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

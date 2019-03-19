@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1complex__to__float" kind="class" prot="public">
+    <compoundname>gr::blocks::complex_to_float</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="complex__to__float_8h" local="no">complex_to_float.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1complex__to__float_1a8caf38b5f8e361c2a40cd5fd92c02b41" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1complex__to__float" kindref="compound">complex_to_float</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;complex_to_float&gt; gr::blocks::complex_to_float::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_float.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_float.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1complex__to__float_1a778a6b92d3af1010ccd5d0e4aaaf5bf4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1complex__to__float_1a8caf38b5f8e361c2a40cd5fd92c02b41" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::complex_to_float::make</definition>
+        <argsstring>(size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a complex to float block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector len (default 1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_float.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert a stream of gr_complex to 1 or 2 streams of float. </para>    </briefdescription>
+    <detaileddescription>
+<para>If a single output stream is attached, this will output the real part of the input complex samples. If a second output stream is connected, output[0] is the real part and output[1] is the imaginary part. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>gr::blocks::complex_to_float</label>
+        <link refid="classgr_1_1blocks_1_1complex__to__float"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="143">
+        <label>gr::blocks::complex_to_float</label>
+        <link refid="classgr_1_1blocks_1_1complex__to__float"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_float.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/complex_to_float.h" bodystart="42" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1complex__to__float_1a778a6b92d3af1010ccd5d0e4aaaf5bf4" prot="public" virt="non-virtual"><scope>gr::blocks::complex_to_float</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1complex__to__float_1a8caf38b5f8e361c2a40cd5fd92c02b41" prot="public" virt="non-virtual"><scope>gr::blocks::complex_to_float</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

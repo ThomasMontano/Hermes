@@ -1,0 +1,2735 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1block" kind="class" prot="public">
+    <compoundname>gr::block</compoundname>
+    <basecompoundref refid="classgr_1_1basic__block" prot="public" virt="non-virtual">gr::basic_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1block__gateway" prot="public" virt="virtual">gr::block_gateway</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1sync__block" prot="public" virt="non-virtual">gr::sync_block</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1tagged__stream__block" prot="public" virt="non-virtual">gr::tagged_stream_block</derivedcompoundref>
+    <includes refid="block_8h" local="no">block.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1block_1a944affae11431e5064252da6c3eae1fc" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca8cac307593cf1087803f28eee28ff45a" prot="public">
+          <name>WORK_CALLED_PRODUCE</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca3e2d37c41af566875030fa1376c4203f" prot="public">
+          <name>WORK_DONE</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Magic return values from general_work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" prot="public" static="no">
+        <name>tag_propagation_policy_t</name>
+        <enumvalue id="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea2e3b11eb10000e0efab110c31a83e502" prot="public">
+          <name>TPP_DONT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scheduler doesn&apos;t propagate tags from in- to output. The block itself is free to insert tags as it wants. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea5b3fd823d5f918e588008c0bc876e574" prot="public">
+          <name>TPP_ALL_TO_ALL</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate tags from all in- to all outputs. The scheduler takes care of that. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea747127b6fb520f34be8ae3f951fdc53c" prot="public">
+          <name>TPP_ONE_TO_ONE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate tags from n. input to n. output. Requires same number of in- and outputs </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4eaadf6e1b257eee0590cc2b26161d08cdc" prot="public">
+          <name>TPP_CUSTOM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Like TPP_DONT, but signals the block it should implement application-specific forwarding behaviour. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>enum to represent different tag propagation policies. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1block_1abe90e7e56b42dc79835c36771b995b6f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::block::d_output_multiple</definition>
+        <argsstring></argsstring>
+        <name>d_output_multiple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="668" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a07ad019449c88119586d593ed76fce00" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_output_multiple_set</definition>
+        <argsstring></argsstring>
+        <name>d_output_multiple_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="669" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ae8c44545f878f76cc25a7878a0dcf5b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::block::d_unaligned</definition>
+        <argsstring></argsstring>
+        <name>d_unaligned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="670" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ada22e77e8d1f6fac42bfa10d92383694" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_is_unaligned</definition>
+        <argsstring></argsstring>
+        <name>d_is_unaligned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="671" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ad5785a3b18a12e690877907c9ebbcee4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::block::d_relative_rate</definition>
+        <argsstring></argsstring>
+        <name>d_relative_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="672" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a088bf35e3d9d9118f79a1a4c5009eab5" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1aaa005f291300aafaf243756f151ef65a" kindref="member">block_detail_sptr</ref></type>
+        <definition>block_detail_sptr gr::block::d_detail</definition>
+        <argsstring></argsstring>
+        <name>d_detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="673" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a6e615caf6cd517f6fec9bc5b98c5714f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::block::d_history</definition>
+        <argsstring></argsstring>
+        <name>d_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="674" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a639d059cef36c7222001e049b95fa489" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::block::d_attr_delay</definition>
+        <argsstring></argsstring>
+        <name>d_attr_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="675" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a4a63bd54f9c1654a0a3b3bc64a2d2d88" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_fixed_rate</definition>
+        <argsstring></argsstring>
+        <name>d_fixed_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="676" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a9a467bd824153e9f6a1b7af265a7b822" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_max_noutput_items_set</definition>
+        <argsstring></argsstring>
+        <name>d_max_noutput_items_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="677" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ac2bfd15596cae1390f06b4fdd22c2b55" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::block::d_max_noutput_items</definition>
+        <argsstring></argsstring>
+        <name>d_max_noutput_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="678" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1adcca5e555f45cca243fcbafaccd7e0c4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::block::d_min_noutput_items</definition>
+        <argsstring></argsstring>
+        <name>d_min_noutput_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="679" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a6555dc78dcc51097ab278df28ee4a0fb" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" kindref="member">tag_propagation_policy_t</ref></type>
+        <definition>tag_propagation_policy_t gr::block::d_tag_propagation_policy</definition>
+        <argsstring></argsstring>
+        <name>d_tag_propagation_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="680" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a3240541ae98fd30db00432d8630367ef" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::block::d_affinity</definition>
+        <argsstring></argsstring>
+        <name>d_affinity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="681" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a7c8d4cce92aec447d41dd90db254086b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::block::d_priority</definition>
+        <argsstring></argsstring>
+        <name>d_priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="682" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1af3a3169fed130c6449a45af7fe797eef" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_pc_rpc_set</definition>
+        <argsstring></argsstring>
+        <name>d_pc_rpc_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="683" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a0f146512be7b9400931ae1800d058015" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_update_rate</definition>
+        <argsstring></argsstring>
+        <name>d_update_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="684" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ad0887dd450ebebef2c30f0b82e97a7a7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::block::d_finished</definition>
+        <argsstring></argsstring>
+        <name>d_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="685" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1block_1ab740ebd7e5e88ab5ed7039db9f054db1" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; gr::block::d_max_output_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_max_output_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="846" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a4c393a6daebc82ddf6844a62f1c5e8ae" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; gr::block::d_min_output_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_min_output_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="847" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1aaf5b8dd7bba021af7bd93f39453f7482" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex gr::block::d_setlock</definition>
+        <argsstring></argsstring>
+        <name>d_setlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by block&apos;s setters and work functions to make setting/resetting of parameters thread-safe.</para><para>Used by calling <ref refid="namespacegr_1_1thread_1a52544c0aefde22b130e0beabece1683b" kindref="member">gr::thread::scoped_lock</ref> l(d_setlock); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="854" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a7061aa0e90b8cb1750b790f65549e0ae" prot="protected" static="no" mutable="no">
+        <type>gr::logger_ptr</type>
+        <definition>gr::logger_ptr gr::block::d_logger</definition>
+        <argsstring></argsstring>
+        <name>d_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by blocks to access the logger system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="858" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a41a376b09fb8bfc8f692edb5f733aaaa" prot="protected" static="no" mutable="no">
+        <type>gr::logger_ptr</type>
+        <definition>gr::logger_ptr gr::block::d_debug_logger</definition>
+        <argsstring></argsstring>
+        <name>d_debug_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="859" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1ad72091916b86278b58b6d106876b3e8c" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>const pmt::pmt_t gr::block::d_pmt_done</definition>
+        <argsstring></argsstring>
+        <name>d_pmt_done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PMT Symbol for &quot;hey, we&apos;re done here&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="866" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1block_1a2460fc9ff6df7f38a51dadba06b94904" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>const pmt::pmt_t gr::block::d_system_port</definition>
+        <argsstring></argsstring>
+        <name>d_system_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PMT Symbol of the system port, <computeroutput>pmt::mp(&quot;system&quot;)</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="870" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1block_1a1db946ecc4ab437c609802d991e545cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::block::~block</definition>
+        <argsstring>()</argsstring>
+        <name>~block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a71548fe7804c9b932f9bb9d770931af1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::block::history</definition>
+        <argsstring>() const </argsstring>
+        <name>history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assume block computes y_i = f(x_i, x_i-1, x_i-2, x_i-3...) History is the number of x_i&apos;s that are examined to produce one y_i. This comes in handy for FIR filters, where we use history to ensure that our input contains the appropriate &quot;history&quot; for the filter. History should be equal to the number of filter taps. First history samples (when there are no previous samples) are initialized with zeroes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ac2dac90e45498ad53a19544c01114136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_history</definition>
+        <argsstring>(unsigned history)</argsstring>
+        <name>set_history</name>
+        <param>
+          <type>unsigned</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1acad5d6e62ea885cb77d19f72451581c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::declare_sample_delay</definition>
+        <argsstring>(int which, unsigned delay)</argsstring>
+        <name>declare_sample_delay</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Declares the block&apos;s delay in samples. Since the delay of blocks like filters is derived from the taps and not the block itself, we cannot automatically calculate this value and so leave it as a user-defined property. It defaults to 0 is not set.</para><para>This does not actively set the delay; it just tells the scheduler what the delay is.</para><para>This delay is mostly used to adjust the placement of the tags and is not currently used for any signal processing. When a tag is passed through a block with internal delay, its location should be moved based on the delay of the block. This interface allows us to tell the scheduler this value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer on which to set the delay. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample delay of the data stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa7df9d4ebb09530cd3be2ad78da411b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::declare_sample_delay</definition>
+        <argsstring>(unsigned delay)</argsstring>
+        <name>declare_sample_delay</name>
+        <param>
+          <type>unsigned</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience wrapper to gr::block::declare_delay(int which, unsigned delay) to set all ports to the same delay. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a8bdbb506d7253d841277292c712c1a28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::block::sample_delay</definition>
+        <argsstring>(int which) const </argsstring>
+        <name>sample_delay</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the delay of the block. Since the delay of blocks like filters is derived from the taps and not the block itself, we cannot automatically calculate this value and so leave it as a user-defined property. It defaults to 0 is not set.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which port from which to get the sample delay. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a13de80e93b11535dfa2d6168610b5f6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::fixed_rate</definition>
+        <argsstring>() const </argsstring>
+        <name>fixed_rate</name>
+        <briefdescription>
+<para>Return true if this block has a fixed input to output rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>If true, then fixed_rate_in_to_out and fixed_rate_out_to_in may be called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="141" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a5bc118d94944d2ff71e378f807fb8d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::block::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <reimplementedby refid="classgr_1_1sync__block_1a33b5a4849acaa3663ee14581a7b45186">forecast</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__decimator_1aa9eb67bc66a542ff7aa69324bbd48e9d">forecast</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__interpolator_1a8f0ac361a9edc7a38cc1ad504c226b71">forecast</reimplementedby>
+        <reimplementedby refid="classgr_1_1tagged__stream__block_1aa406bdb8376f8ad84c24b1e12a9bc13f">forecast</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+<para>Estimate input requirements given output request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of output items to produce </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ninput_items_required</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of input items required on each input stream</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Given a request to product <computeroutput>noutput_items</computeroutput>, estimate the number of data items required on each input stream. The estimate doesn&apos;t have to be exact, but should be close. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::block::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <reimplementedby refid="classgr_1_1sync__block_1a85ad1182f040814c0df45f985fa4dd69">general_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__decimator_1a6c4716049115cdcd40db1076b69f73d9">general_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__interpolator_1a7a4b30822cea0b24dccc1ff2df257987">general_work</reimplementedby>
+        <reimplementedby refid="classgr_1_1tagged__stream__block_1ae1759ea54b3b9f2962b7000714001adf">general_work</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+<para>compute output items from input items </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of output items to write on each output stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ninput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of input items available on each input stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of pointers to the input items, one entry per input stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of pointers to the output items, one entry per output stream</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of items actually written to each output stream or WORK_CALLED_PRODUCE or WORK_DONE. It is OK to return a value less than noutput_items.</para></simplesect>
+WORK_CALLED_PRODUCE is used where not all outputs produce the same number of items. general_work must call <ref refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" kindref="member">produce()</ref> for each output to indicate the numer of items actually produced.</para><para>WORK_DONE indicates that no more data will be produced by this block.</para><para>general_work must call consume or consume_each to indicate how many items were consumed on each input stream. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a7f58745d1374b30a7b866406dc97850f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::block::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>Called to enable drivers, etc for i/o devices. </para>        </briefdescription>
+        <detaileddescription>
+<para>This allows a block to enable an associated driver to begin transferring data just before we start to execute the scheduler. The end result is that this reduces latency in the pipeline when dealing with audio devices, usrps, etc. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a0863bc16f7c84adf4cddf5d53124450e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::block::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>Called to disable drivers, etc for i/o devices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a63d67fd758b70c6f2d7b7d4edcec53b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_output_multiple</definition>
+        <argsstring>(int multiple)</argsstring>
+        <name>set_output_multiple</name>
+        <param>
+          <type>int</type>
+          <declname>multiple</declname>
+        </param>
+        <briefdescription>
+<para>Constrain the noutput_items argument passed to forecast and general_work. </para>        </briefdescription>
+        <detaileddescription>
+<para>set_output_multiple causes the scheduler to ensure that the noutput_items argument passed to forecast and general_work will be an integer multiple of <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The default value of output multiple is 1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a247e034ce4d624c1fee847f7779e90e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::output_multiple</definition>
+        <argsstring>() const </argsstring>
+        <name>output_multiple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="212" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4ff8a6d59b8bd64817aebfbd28d78326" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::output_multiple_set</definition>
+        <argsstring>() const </argsstring>
+        <name>output_multiple_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="213" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a49b49c097bffefe79f9d730539330edf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_alignment</definition>
+        <argsstring>(int multiple)</argsstring>
+        <name>set_alignment</name>
+        <param>
+          <type>int</type>
+          <declname>multiple</declname>
+        </param>
+        <briefdescription>
+<para>Constrains buffers to work on a set item alignment (for SIMD) </para>        </briefdescription>
+        <detaileddescription>
+<para>set_alignment_multiple causes the scheduler to ensure that the noutput_items argument passed to forecast and general_work will be an integer multiple of <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The default value is 1.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This control is similar to the output_multiple setting, except that if the number of items passed to the block is less than the output_multiple, this value is ignored and the block can produce like normal. The d_unaligned value is set to the number of items the block is off by. In the next call to general_work, the noutput_items is set to d_unaligned or less until d_unaligned==0. The buffers are now aligned again and the aligned calls can be performed again. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a75313b29c3e68574bddf52ad7ab8c99a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::alignment</definition>
+        <argsstring>() const </argsstring>
+        <name>alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="233" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4d914fbc7814a682e25f5b2a40140d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_unaligned</definition>
+        <argsstring>(int na)</argsstring>
+        <name>set_unaligned</name>
+        <param>
+          <type>int</type>
+          <declname>na</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a53a85f2cd9f8ccef49eafad408069557" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::unaligned</definition>
+        <argsstring>() const </argsstring>
+        <name>unaligned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="236" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="236" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a0d33c4cc8b0131b9b8df41e3b46784b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_is_unaligned</definition>
+        <argsstring>(bool u)</argsstring>
+        <name>set_is_unaligned</name>
+        <param>
+          <type>bool</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ae0ed1517975b23c556b71486ffb972de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::is_unaligned</definition>
+        <argsstring>() const </argsstring>
+        <name>is_unaligned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="238" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="238" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::consume</definition>
+        <argsstring>(int which_input, int how_many_items)</argsstring>
+        <name>consume</name>
+        <param>
+          <type>int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>how_many_items</declname>
+        </param>
+        <briefdescription>
+<para>Tell the scheduler <computeroutput>how_many_items</computeroutput> of input stream <computeroutput>which_input</computeroutput> were consumed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function should be used in <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref> to tell the scheduler the number of input items processed. Calling <ref refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" kindref="member">consume()</ref> multiple times in the same <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref> call is safe. Every invocation of <ref refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" kindref="member">consume()</ref> updates the values returned by <ref refid="classgr_1_1block_1a2279d1eb421203bc5b0f100a6d5dc263" kindref="member">nitems_read()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a12ea5eba701e22a3d023d0ba7c6ee07c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::consume_each</definition>
+        <argsstring>(int how_many_items)</argsstring>
+        <name>consume_each</name>
+        <param>
+          <type>int</type>
+          <declname>how_many_items</declname>
+        </param>
+        <briefdescription>
+<para>Tell the scheduler <computeroutput>how_many_items</computeroutput> were consumed on each input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Also see notes on <ref refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" kindref="member">consume()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::produce</definition>
+        <argsstring>(int which_output, int how_many_items)</argsstring>
+        <name>produce</name>
+        <param>
+          <type>int</type>
+          <declname>which_output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>how_many_items</declname>
+        </param>
+        <briefdescription>
+<para>Tell the scheduler <computeroutput>how_many_items</computeroutput> were produced on output stream <computeroutput>which_output</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function should be used in <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref> to tell the scheduler the number of output items produced. If <ref refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" kindref="member">produce()</ref> is called in <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref>, <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref> must return <computeroutput>WORK_CALLED_PRODUCE</computeroutput>. Calling <ref refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" kindref="member">produce()</ref> multiple times in the same <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref> call is safe. Every invocation of <ref refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" kindref="member">produce()</ref> updates the values returned by <ref refid="classgr_1_1block_1a742128a481fcb9e43a3e0cd535a57f9e" kindref="member">nitems_written()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aff3003eea3517dd3e8d9a5297c1196b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_relative_rate</definition>
+        <argsstring>(double relative_rate)</argsstring>
+        <name>set_relative_rate</name>
+        <param>
+          <type>double</type>
+          <declname>relative_rate</declname>
+        </param>
+        <briefdescription>
+<para>Set the approximate output rate / input rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>Provide a hint to the buffer allocator and scheduler. The default relative_rate is 1.0</para><para>decimators have relative_rates &lt; 1.0 interpolators have relative_rates &gt; 1.0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa14aceb3623b74b66d235fbb237cec88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double gr::block::relative_rate</definition>
+        <argsstring>() const </argsstring>
+        <name>relative_rate</name>
+        <briefdescription>
+<para>return the approximate output rate / input rate </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="286" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="286" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a95e37b19dd73c24113ca9b848db00d16" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::block::fixed_rate_ninput_to_noutput</definition>
+        <argsstring>(int ninput)</argsstring>
+        <name>fixed_rate_ninput_to_noutput</name>
+        <reimplementedby refid="classgr_1_1sync__block_1a7e1560c84046771bf410d1f643f058af">fixed_rate_ninput_to_noutput</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__decimator_1ae1b55b058473c15e390be25afef1399d">fixed_rate_ninput_to_noutput</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__interpolator_1ad36ae8b5a3f505f8700c85191fd3c3f8">fixed_rate_ninput_to_noutput</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>ninput</declname>
+        </param>
+        <briefdescription>
+<para>Given ninput samples, return number of output samples that will be produced. N.B. this is only defined if fixed_rate returns true. Generally speaking, you don&apos;t need to override this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1abe37ff91774ef438bdfcddd0a47ec1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int gr::block::fixed_rate_noutput_to_ninput</definition>
+        <argsstring>(int noutput)</argsstring>
+        <name>fixed_rate_noutput_to_ninput</name>
+        <reimplementedby refid="classgr_1_1sync__block_1a67ecf7935b8a1c70a95ad22574eddeab">fixed_rate_noutput_to_ninput</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__decimator_1a231275211fbc21b4fb2682832cfe86fc">fixed_rate_noutput_to_ninput</reimplementedby>
+        <reimplementedby refid="classgr_1_1sync__interpolator_1a449d9a2e9df393a58a3923f821492d38">fixed_rate_noutput_to_ninput</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>noutput</declname>
+        </param>
+        <briefdescription>
+<para>Given noutput samples, return number of input samples required to produce noutput. N.B. this is only defined if fixed_rate returns true. Generally speaking, you don&apos;t need to override this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2279d1eb421203bc5b0f100a6d5dc263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::block::nitems_read</definition>
+        <argsstring>(unsigned int which_input)</argsstring>
+        <name>nitems_read</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <briefdescription>
+<para>Return the number of items read on input stream which_input. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a742128a481fcb9e43a3e0cd535a57f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::block::nitems_written</definition>
+        <argsstring>(unsigned int which_output)</argsstring>
+        <name>nitems_written</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_output</declname>
+        </param>
+        <briefdescription>
+<para>Return the number of items written on output stream which_output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4892196a19ef044a0eedeaa6566893c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" kindref="member">tag_propagation_policy_t</ref></type>
+        <definition>tag_propagation_policy_t gr::block::tag_propagation_policy</definition>
+        <argsstring>()</argsstring>
+        <name>tag_propagation_policy</name>
+        <briefdescription>
+<para>Asks for the policy used by the scheduler to moved tags downstream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a476e218927e426ac88c26431cbf086cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_tag_propagation_policy</definition>
+        <argsstring>(tag_propagation_policy_t p)</argsstring>
+        <name>set_tag_propagation_policy</name>
+        <param>
+          <type><ref refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" kindref="member">tag_propagation_policy_t</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Set the policy by the scheduler to determine how tags are moved downstream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a1da7d9e876b5ff5fde12492ce55e9a81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::min_noutput_items</definition>
+        <argsstring>() const </argsstring>
+        <name>min_noutput_items</name>
+        <briefdescription>
+<para>Return the minimum number of output items this block can produce during a call to work. </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be 0 for most blocks. Useful if we&apos;re dealing with packets and the block produces one packet per call to work. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="336" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="336" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a65cfc579150dc4d10c6180d3365aa9a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_min_noutput_items</definition>
+        <argsstring>(int m)</argsstring>
+        <name>set_min_noutput_items</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum number of output items this block can produce during a call to work. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum noutput_items this block can produce. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="344" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="344" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1af710a90819f19705f2d2ba1aa49d0172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::max_noutput_items</definition>
+        <argsstring>()</argsstring>
+        <name>max_noutput_items</name>
+        <briefdescription>
+<para>Return the maximum number of output items this block will handle during a call to work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ae2405dc2f6c84bb8e59aab56e4ce9d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_max_noutput_items</definition>
+        <argsstring>(int m)</argsstring>
+        <name>set_max_noutput_items</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum number of output items this block will handle during a call to work. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum noutput_items this block will handle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a460e8e5f15a4c5418ce3fc167c20a973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::unset_max_noutput_items</definition>
+        <argsstring>()</argsstring>
+        <name>unset_max_noutput_items</name>
+        <briefdescription>
+<para>Clear the switch for using the max_noutput_items value of this block. </para>        </briefdescription>
+        <detaileddescription>
+<para>When <ref refid="classgr_1_1block_1a4f67d984bc126aa4d254e62464525b79" kindref="member">is_set_max_noutput_items()</ref> returns &apos;true&apos;, the scheduler will use the value returned by <ref refid="classgr_1_1block_1af710a90819f19705f2d2ba1aa49d0172" kindref="member">max_noutput_items()</ref> to limit the size of the number of items possible for this block&apos;s work function. If is_set_max_notput_items() returns &apos;false&apos;, then the scheduler ignores the internal value and uses the value set globally in the <ref refid="classgr_1_1top__block" kindref="compound">top_block</ref>.</para><para>Use this value to clear the &apos;is_set&apos; flag so the scheduler will ignore this. Use the set_max_noutput_items(m) call to both set a new value for max_noutput_items and to re-enable its use in the scheduler. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4f67d984bc126aa4d254e62464525b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::is_set_max_noutput_items</definition>
+        <argsstring>()</argsstring>
+        <name>is_set_max_noutput_items</name>
+        <briefdescription>
+<para>Ask the block if the flag is or is not set to use the internal value of max_noutput_items during a call to work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a9bbf96f6a81d5c289934a68ef44dd1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::expand_minmax_buffer</definition>
+        <argsstring>(int port)</argsstring>
+        <name>expand_minmax_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a5faeaab35423014dc59749d63cfe4cf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::block::max_output_buffer</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>max_output_buffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns max buffer size on output port <computeroutput>i</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a711fb69e35fb871e9a5e41d6a1f2afb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_max_output_buffer</definition>
+        <argsstring>(long max_output_buffer)</argsstring>
+        <name>set_max_output_buffer</name>
+        <param>
+          <type>long</type>
+          <declname>max_output_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Request limit on max buffer size on all output ports. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is an advanced feature. Calling this can affect some fundamental assumptions about the system behavior and performance.</para><para>The actual buffer size is determined by a number of other factors from the block and system. This function only provides a requested maximum. The buffers will always be a multiple of the system page size, which may be larger than the value asked for here.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_output_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested maximum output size in items. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a96d021628c08db3b138d3ee7c572ad90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_max_output_buffer</definition>
+        <argsstring>(int port, long max_output_buffer)</argsstring>
+        <name>set_max_output_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>max_output_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Request limit on max buffer size on output port <computeroutput>port</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is an advanced feature. Calling this can affect some fundamental assumptions about the system behavior and performance.</para><para>The actual buffer size is determined by a number of other factors from the block and system. This function only provides a requested maximum. The buffers will always be a multiple of the system page size, which may be larger than the value asked for here.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output port the request applies to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_output_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested maximum output size in items. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ac28e42e36ef843b999cca3702981ccd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::block::min_output_buffer</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>min_output_buffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns min buffer size on output port <computeroutput>i</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a9d10e3f6747f91b215abe81b60a003d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_min_output_buffer</definition>
+        <argsstring>(long min_output_buffer)</argsstring>
+        <name>set_min_output_buffer</name>
+        <param>
+          <type>long</type>
+          <declname>min_output_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Request limit on the minimum buffer size on all output ports. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is an advanced feature. Calling this can affect some fundamental assumptions about the system behavior and performance.</para><para>The actual buffer size is determined by a number of other factors from the block and system. This function only provides a requested minimum. The buffers will always be a multiple of the system page size, which may be larger than the value asked for here.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_output_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested minimum output size in items. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a46a03397c78096a2f1c7f1b59f225f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_min_output_buffer</definition>
+        <argsstring>(int port, long min_output_buffer)</argsstring>
+        <name>set_min_output_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>min_output_buffer</declname>
+        </param>
+        <briefdescription>
+<para>Request limit on min buffer size on output port <computeroutput>port</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is an advanced feature. Calling this can affect some fundamental assumptions about the system behavior and performance.</para><para>The actual buffer size is determined by a number of other factors from the block and system. This function only provides a requested minimum. The buffers will always be a multiple of the system page size, which may be larger than the value asked for here.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output port the request applies to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_output_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested minimum output size in items. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="475" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1af4a03de0d6609ca0e03b875250b7650c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_noutput_items</definition>
+        <argsstring>()</argsstring>
+        <name>pc_noutput_items</name>
+        <briefdescription>
+<para>Gets instantaneous noutput_items performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="482" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a3beb47de467a4a117b0c096f8511d3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_noutput_items_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_noutput_items_avg</name>
+        <briefdescription>
+<para>Gets average noutput_items performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="487" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ae0725cd4ff4f5040a513c2a61355d434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_noutput_items_var</definition>
+        <argsstring>()</argsstring>
+        <name>pc_noutput_items_var</name>
+        <briefdescription>
+<para>Gets variance of noutput_items performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="492" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a84ef5905d40b507a2230c996d8857289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_nproduced</definition>
+        <argsstring>()</argsstring>
+        <name>pc_nproduced</name>
+        <briefdescription>
+<para>Gets instantaneous num items produced performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="497" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ad0b4960e100a088caefa99fb39f99a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_nproduced_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_nproduced_avg</name>
+        <briefdescription>
+<para>Gets average num items produced performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="502" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a1a506f34b8b8c3f968dc0a8cb9da0650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_nproduced_var</definition>
+        <argsstring>()</argsstring>
+        <name>pc_nproduced_var</name>
+        <briefdescription>
+<para>Gets variance of num items produced performance counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="507" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4989096e4edf5e8171b65e3ce663af1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_input_buffers_full</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_input_buffers_full</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets instantaneous fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a08e5deef4ebd0e6c2e11b839eaeadd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_input_buffers_full_avg</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_input_buffers_full_avg</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets average fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="517" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a00723a35c6e095da35608c8438e16cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_input_buffers_full_var</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_input_buffers_full_var</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets variance of fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="522" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2dba88af74ee077751ebf5c11f470cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_input_buffers_full</definition>
+        <argsstring>()</argsstring>
+        <name>pc_input_buffers_full</name>
+        <briefdescription>
+<para>Gets instantaneous fullness of all input buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="527" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa4118c626e74926918a9bfd464b728cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_input_buffers_full_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_input_buffers_full_avg</name>
+        <briefdescription>
+<para>Gets average fullness of all input buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2c211a608a7d4dc40ad63886d1944798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_input_buffers_full_var</definition>
+        <argsstring>()</argsstring>
+        <name>pc_input_buffers_full_var</name>
+        <briefdescription>
+<para>Gets variance of fullness of all input buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="537" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ab125047ee56cf687e3475674a28d267f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_output_buffers_full</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_output_buffers_full</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets instantaneous fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="542" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a0ed8f2224fe1d0b27e17cd66723452a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_output_buffers_full_avg</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_output_buffers_full_avg</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets average fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="547" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2ad2a99ea794d44956d2878471e5976d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_output_buffers_full_var</definition>
+        <argsstring>(int which)</argsstring>
+        <name>pc_output_buffers_full_var</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Gets variance of fullness of <computeroutput>which</computeroutput> input buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="552" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a6ec7670b2a8d6d30113ab82683133b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_output_buffers_full</definition>
+        <argsstring>()</argsstring>
+        <name>pc_output_buffers_full</name>
+        <briefdescription>
+<para>Gets instantaneous fullness of all output buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="557" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a0ddfee47fbd0d83826b8584ea7019b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_output_buffers_full_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_output_buffers_full_avg</name>
+        <briefdescription>
+<para>Gets average fullness of all output buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="562" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1affe32b7ec0d84efa56f5cc94723eb36f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::block::pc_output_buffers_full_var</definition>
+        <argsstring>()</argsstring>
+        <name>pc_output_buffers_full_var</name>
+        <briefdescription>
+<para>Gets variance of fullness of all output buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="567" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ae8b89079d24a3216eb1b17d75ec5b8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_work_time</definition>
+        <argsstring>()</argsstring>
+        <name>pc_work_time</name>
+        <briefdescription>
+<para>Gets instantaneous clock cycles spent in work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="572" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2df6452cef2999e1b32458a5e542f948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_work_time_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_work_time_avg</name>
+        <briefdescription>
+<para>Gets average clock cycles spent in work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="577" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4918e75c4d11a0b7222c9ba250313ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_work_time_var</definition>
+        <argsstring>()</argsstring>
+        <name>pc_work_time_var</name>
+        <briefdescription>
+<para>Gets average clock cycles spent in work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="582" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a2c9fdd36be297e4b503ccd6290663367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_work_time_total</definition>
+        <argsstring>()</argsstring>
+        <name>pc_work_time_total</name>
+        <briefdescription>
+<para>Gets total clock cycles spent in work. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="587" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a78a27917edcd3b32f10b2166f3362a68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::block::pc_throughput_avg</definition>
+        <argsstring>()</argsstring>
+        <name>pc_throughput_avg</name>
+        <briefdescription>
+<para>Gets average throughput. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="592" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1adb2d3602fe818cef1978090923667009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::reset_perf_counters</definition>
+        <argsstring>()</argsstring>
+        <name>reset_perf_counters</name>
+        <briefdescription>
+<para>Resets the performance counters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="597" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a9425064fac92607770042f472e140d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::setup_pc_rpc</definition>
+        <argsstring>()</argsstring>
+        <name>setup_pc_rpc</name>
+        <briefdescription>
+<para>Sets up export of perf. counters to ControlPort. Only called by the scheduler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="603" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aac70128820e047e05993e4ec52b27c2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::is_pc_rpc_set</definition>
+        <argsstring>()</argsstring>
+        <name>is_pc_rpc_set</name>
+        <briefdescription>
+<para>Checks if this block is already exporting perf. counters to ControlPort. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="609" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="609" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a74745ea741b0aae938b003854f6043e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::no_pc_rpc</definition>
+        <argsstring>()</argsstring>
+        <name>no_pc_rpc</name>
+        <briefdescription>
+<para>If the block calls this in its constructor, it&apos;s perf. counters will not be exported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="615" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="615" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a05ad2ae50b0f7c922add44e74d9603b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::block::set_processor_affinity</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;mask)</argsstring>
+        <name>set_processor_affinity</name>
+        <reimplements refid="classgr_1_1basic__block_1a6103f97c0499b94a02a0465a6e206787">set_processor_affinity</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Set the thread&apos;s affinity to processor core <computeroutput>n</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of ints of the core numbers available to this block. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="626" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1ac077773948a5f55b826dd638e1ed3863" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::block::unset_processor_affinity</definition>
+        <argsstring>()</argsstring>
+        <name>unset_processor_affinity</name>
+        <reimplements refid="classgr_1_1basic__block_1ace23eacc1d5f513034d175bc8e9493cb">unset_processor_affinity</reimplements>
+        <briefdescription>
+<para>Remove processor affinity to a specific core. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="631" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a3b37bd70477161aa97d1e868ff2b20d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::block::processor_affinity</definition>
+        <argsstring>()</argsstring>
+        <name>processor_affinity</name>
+        <reimplements refid="classgr_1_1basic__block_1a8974c5c3982715c9adaca4d217f0906b">processor_affinity</reimplements>
+        <briefdescription>
+<para>Get the current processor affinity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="636" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="636" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a099f578878243499d63846bbee61979a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::active_thread_priority</definition>
+        <argsstring>()</argsstring>
+        <name>active_thread_priority</name>
+        <briefdescription>
+<para>Get the current thread priority in use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="641" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a585b831aea5775730931d7fb9e6e8253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::thread_priority</definition>
+        <argsstring>()</argsstring>
+        <name>thread_priority</name>
+        <briefdescription>
+<para>Get the current thread priority stored. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="646" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a83e0fd5c4db199e6e6f2fc75cdfb5dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::block::set_thread_priority</definition>
+        <argsstring>(int priority)</argsstring>
+        <name>set_thread_priority</name>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set the current thread priority. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="651" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1af32c62fff6b1285bf346bfda65e6fc3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::update_rate</definition>
+        <argsstring>() const </argsstring>
+        <name>update_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="653" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a4070b0462cce39d66b0c7c90ef2153d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::system_handler</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>system_handler</name>
+        <param>
+          <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>the system message handler </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="660" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a89242cb1ac9d2bf5e75f923745baa576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::block::finished</definition>
+        <argsstring>()</argsstring>
+        <name>finished</name>
+        <briefdescription>
+<para>returns true when execution has completed due to a message connection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="665" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a816ec687bdd384a6cf8493fd54019054" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1aaa005f291300aafaf243756f151ef65a" kindref="member">block_detail_sptr</ref></type>
+        <definition>block_detail_sptr gr::block::detail</definition>
+        <argsstring>() const </argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="873" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="873" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a776fbf15f5280bf8da74929b4ea8bb39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_detail</definition>
+        <argsstring>(block_detail_sptr detail)</argsstring>
+        <name>set_detail</name>
+        <param>
+          <type><ref refid="namespacegr_1aaa005f291300aafaf243756f151ef65a" kindref="member">block_detail_sptr</ref></type>
+          <declname>detail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="874" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="874" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1adf235647d7ec77995751de89d94a22a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::notify_msg_neighbors</definition>
+        <argsstring>()</argsstring>
+        <name>notify_msg_neighbors</name>
+        <briefdescription>
+<para>Tell msg neighbors we are finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="878" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1af19867ade7536783777a5c5e91b69972" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::clear_finished</definition>
+        <argsstring>()</argsstring>
+        <name>clear_finished</name>
+        <briefdescription>
+<para>Make sure we don&apos;t think we are finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="882" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="882" bodyend="882"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1block_1a624c3e070c3df38e5d11e4acd0f59b46" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::block::block</definition>
+        <argsstring>(void)</argsstring>
+        <name>block</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="688" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="688" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aebbc2ed68daafc4de5ee0f5df21efe6e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::block::block</definition>
+        <argsstring>(const std::string &amp;name, gr::io_signature::sptr input_signature, gr::io_signature::sptr output_signature)</argsstring>
+        <name>block</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref></type>
+          <declname>input_signature</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref></type>
+          <declname>output_signature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="689" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa927cd4d5b8993122cf60dd556ffe62d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::set_fixed_rate</definition>
+        <argsstring>(bool fixed_rate)</argsstring>
+        <name>set_fixed_rate</name>
+        <param>
+          <type>bool</type>
+          <declname>fixed_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="693" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="693" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a8b7cc51b9d289124d6843bb392f564fc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::add_item_tag</definition>
+        <argsstring>(unsigned int which_output, uint64_t abs_offset, const pmt::pmt_t &amp;key, const pmt::pmt_t &amp;value, const pmt::pmt_t &amp;srcid=pmt::PMT_F)</argsstring>
+        <name>add_item_tag</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_output</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>srcid</declname>
+          <defval><ref refid="pmt_8h_1a14555f1d3794ee65b982b9fb74adca9e" kindref="member">pmt::PMT_F</ref></defval>
+        </param>
+        <briefdescription>
+<para>Adds a new tag onto the given output buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which output stream to attach the tag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 number of the absolute item number assicated with the tag. Can get from nitems_written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tag key as a PMT symbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any PMT holding any value for the given key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional source ID specifier; defaults to PMT_F </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="705" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="705" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a8f0ee37749a77d3f40a5bb04233f6028" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::add_item_tag</definition>
+        <argsstring>(unsigned int which_output, const tag_t &amp;tag)</argsstring>
+        <name>add_item_tag</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_output</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new tag onto the given output buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which output stream to attach the tag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tag object to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="725" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a461f6cc92174e83b10c3ec5336036768" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::remove_item_tag</definition>
+        <argsstring>(unsigned int which_input, uint64_t abs_offset, const pmt::pmt_t &amp;key, const pmt::pmt_t &amp;value, const pmt::pmt_t &amp;srcid=pmt::PMT_F)</argsstring>
+        <name>remove_item_tag</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>srcid</declname>
+          <defval><ref refid="pmt_8h_1a14555f1d3794ee65b982b9fb74adca9e" kindref="member">pmt::PMT_F</ref></defval>
+        </param>
+        <briefdescription>
+<para>DEPRECATED. Will be removed in 3.8. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to remove the tag from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 number of the absolute item number assicated with the tag. Can get from nitems_written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tag key as a PMT symbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any PMT holding any value for the given key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional source ID specifier; defaults to PMT_F</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+If no such tag is found, does nothing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="739" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="739" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a94906298cd5995a94172c53dbfbc77dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::remove_item_tag</definition>
+        <argsstring>(unsigned int which_input, const tag_t &amp;tag)</argsstring>
+        <name>remove_item_tag</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>DEPRECATED. Will be removed in 3.8. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to remove the tag from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tag object to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="759" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1aa0272555827fe26a1878e53ce4be092c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::get_tags_in_range</definition>
+        <argsstring>(std::vector&lt; tag_t &gt; &amp;v, unsigned int which_input, uint64_t abs_start, uint64_t abs_end)</argsstring>
+        <name>get_tags_in_range</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_start</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_end</declname>
+        </param>
+        <briefdescription>
+<para>Given a [start,end), returns a vector of all tags in the range. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range of counts is from start to end-1.</para><para>Tags are tuples of: (item count, source id, key, value)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector reference to return tags into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to pull from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the start of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the end of the range of interest </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a83143d92b16b5bf93bf43a66a46bb60e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::get_tags_in_range</definition>
+        <argsstring>(std::vector&lt; tag_t &gt; &amp;v, unsigned int which_input, uint64_t abs_start, uint64_t abs_end, const pmt::pmt_t &amp;key)</argsstring>
+        <name>get_tags_in_range</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_start</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>abs_end</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Given a [start,end), returns a vector of all tags in the range with a given key. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range of counts is from start to end-1.</para><para>Tags are tuples of: (item count, source id, key, value)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector reference to return tags into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to pull from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the start of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>abs_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the end of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a PMT symbol key to filter only tags of this key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="794" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1abf2cc497d68c4650be55765d0fe12291" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::get_tags_in_window</definition>
+        <argsstring>(std::vector&lt; tag_t &gt; &amp;v, unsigned int which_input, uint64_t rel_start, uint64_t rel_end)</argsstring>
+        <name>get_tags_in_window</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>rel_start</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>rel_end</declname>
+        </param>
+        <briefdescription>
+<para>Gets all tags within the relative window of the current call to work. </para>        </briefdescription>
+        <detaileddescription>
+<para>This opperates much like get_tags_in_range but allows us to work within the current window of items. Item range is therefore within the possible range of 0 to ninput_items[whic_input].</para><para>Range of items counts from <computeroutput>rel_start</computeroutput> to <computeroutput>rel_end-1</computeroutput> within current window.</para><para>Tags are tuples of: (item count, source id, key, value)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector reference to return tags into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to pull from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rel_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the start of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rel_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the end of the range of interest </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="821" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a451b95d244e27e815eb3f9e56ea6ac32" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::get_tags_in_window</definition>
+        <argsstring>(std::vector&lt; tag_t &gt; &amp;v, unsigned int which_input, uint64_t rel_start, uint64_t rel_end, const pmt::pmt_t &amp;key)</argsstring>
+        <name>get_tags_in_window</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>which_input</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>rel_start</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>rel_end</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Operates like <ref refid="classgr_1_1block_1abf2cc497d68c4650be55765d0fe12291" kindref="member">gr::block::get_tags_in_window</ref> with the ability to only return tags with the specified <computeroutput>key</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector reference to return tags into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer of which input stream to pull from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rel_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the start of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rel_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a uint64 count of the end of the range of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a PMT symbol key to filter only tags of this key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="838" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1block_1a71d3cc9f05edecef8b7bda7f16580848" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::block::enable_update_rate</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>enable_update_rate</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="844" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract base class for all &apos;terminal&apos; processing blocks.</para><para>A signal processing flow is constructed by creating a tree of hierarchical blocks, which at any level may also contain terminal nodes that actually implement signal processing functions. This is the base class for all such leaf nodes. </para>    </briefdescription>
+    <detaileddescription>
+<para>Blocks have a set of input streams and output streams. The input_signature and output_signature define the number of input streams and output streams respectively, and the type of the data items in each stream.</para><para>Blocks report the number of items consumed on each input in <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref>, using <ref refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" kindref="member">consume()</ref> or <ref refid="classgr_1_1block_1a12ea5eba701e22a3d023d0ba7c6ee07c" kindref="member">consume_each()</ref>.</para><para>If the same number of items is produced on each output, the block returns that number from <ref refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" kindref="member">general_work()</ref>. Otherwise, the block calls <ref refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" kindref="member">produce()</ref> for each output, then returns WORK_CALLED_PRODUCE. The input and output rates are not required to be related.</para><para>User derived blocks override two methods, forecast and general_work, to implement their signal processing behavior. forecast is called by the system scheduler to determine how many items are required on each input stream in order to produce a given number of output items.</para><para>general_work is called to perform the signal processing in the block. It reads the input items and writes the output items. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gr::sync_decimator</label>
+        <link refid="classgr_1_1sync__decimator"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gr::sync_block</label>
+        <link refid="classgr_1_1sync__block"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gr::sync_interpolator</label>
+        <link refid="classgr_1_1sync__interpolator"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gr::tagged_stream_block</label>
+        <link refid="classgr_1_1tagged__stream__block"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="21">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+      <node id="26">
+        <label>gr::block_gateway</label>
+        <link refid="classgr_1_1block__gateway"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="32">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>d_symbol_alias</edgelabel>
+          <edgelabel>d_name</edgelabel>
+          <edgelabel>d_symbol_name</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>d_rpc_vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="36">
+        <label>std::map&lt; pmt::pmt_t, msg_queue_t, pmt::comparator &gt;</label>
+        <childnode refid="37" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>std::vector&lt; boost::any &gt;</label>
+      </node>
+      <node id="34">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="41">
+        <label>std::vector&lt; long &gt;</label>
+      </node>
+      <node id="31">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>d_min_output_buffer</edgelabel>
+          <edgelabel>d_max_output_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+      <node id="38">
+        <label>std::string</label>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="65" bodyend="884"/>
+    <listofallmembers>
+      <member refid="classgr_1_1basic__block_1ab82376fe13f515cb904c0d2e9fec87b6" prot="public" virt="non-virtual"><scope>gr::block</scope><name>_post</name></member>
+      <member refid="classgr_1_1block_1a099f578878243499d63846bbee61979a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>active_thread_priority</name></member>
+      <member refid="classgr_1_1block_1a8b7cc51b9d289124d6843bb392f564fc" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1block_1a8f0ee37749a77d3f40a5bb04233f6028" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1basic__block_1a42d65e902f4886602ff3d5b124a71ef3" prot="public" virt="non-virtual"><scope>gr::block</scope><name>alias</name></member>
+      <member refid="classgr_1_1basic__block_1a817f3a7595c32fbce00983977d0dd91e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>alias_pmt</name></member>
+      <member refid="classgr_1_1basic__block_1aad58e9944ff205539855cd6116b03c55" prot="public" virt="non-virtual"><scope>gr::block</scope><name>alias_set</name></member>
+      <member refid="classgr_1_1block_1a75313b29c3e68574bddf52ad7ab8c99a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>alignment</name></member>
+      <member refid="classgr_1_1basic__block_1a6cc897729213ab4d2e3ade44c6942100" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1a451b45483aec67682289f4cf94e53f74" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaab729ab9b0c860fece10ea1eddab6ce52" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>BLACK</name></member>
+      <member refid="classgr_1_1block_1a624c3e070c3df38e5d11e4acd0f59b46" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>block</name></member>
+      <member refid="classgr_1_1block_1aebbc2ed68daafc4de5ee0f5df21efe6e" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>block</name></member>
+      <member refid="classgr_1_1basic__block_1aca13d6f083397aada5b44d0f349ce151" prot="public" virt="virtual"><scope>gr::block</scope><name>check_topology</name></member>
+      <member refid="classgr_1_1block_1af19867ade7536783777a5c5e91b69972" prot="public" virt="non-virtual"><scope>gr::block</scope><name>clear_finished</name></member>
+      <member refid="classgr_1_1basic__block_1a6d7621bc17d7bd50b8b36d905487adcf" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>color</name></member>
+      <member refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" prot="public" virt="non-virtual"><scope>gr::block</scope><name>consume</name></member>
+      <member refid="classgr_1_1block_1a12ea5eba701e22a3d023d0ba7c6ee07c" prot="public" virt="non-virtual"><scope>gr::block</scope><name>consume_each</name></member>
+      <member refid="classgr_1_1block_1a3240541ae98fd30db00432d8630367ef" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_affinity</name></member>
+      <member refid="classgr_1_1block_1a639d059cef36c7222001e049b95fa489" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_attr_delay</name></member>
+      <member refid="classgr_1_1basic__block_1afc7a00e9e0ff69ceb903d3d6ff506473" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_color</name></member>
+      <member refid="classgr_1_1block_1a41a376b09fb8bfc8f692edb5f733aaaa" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_debug_logger</name></member>
+      <member refid="classgr_1_1block_1a088bf35e3d9d9118f79a1a4c5009eab5" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_detail</name></member>
+      <member refid="classgr_1_1block_1ad0887dd450ebebef2c30f0b82e97a7a7" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_finished</name></member>
+      <member refid="classgr_1_1block_1a4a63bd54f9c1654a0a3b3bc64a2d2d88" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_fixed_rate</name></member>
+      <member refid="classgr_1_1block_1a6e615caf6cd517f6fec9bc5b98c5714f" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_history</name></member>
+      <member refid="classgr_1_1basic__block_1a84d6b200bb5e268424e9e4630cb22e5a" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_input_signature</name></member>
+      <member refid="classgr_1_1block_1ada22e77e8d1f6fac42bfa10d92383694" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_is_unaligned</name></member>
+      <member refid="classgr_1_1block_1a7061aa0e90b8cb1750b790f65549e0ae" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1block_1ac2bfd15596cae1390f06b4fdd22c2b55" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a9a467bd824153e9f6a1b7af265a7b822" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_max_noutput_items_set</name></member>
+      <member refid="classgr_1_1block_1ab740ebd7e5e88ab5ed7039db9f054db1" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1aefa8ebb27b9d86bef179e30e37f0dfc3" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_message_subscribers</name></member>
+      <member refid="classgr_1_1block_1adcca5e555f45cca243fcbafaccd7e0c4" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a4c393a6daebc82ddf6844a62f1c5e8ae" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_min_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1ad7da20e98a288f84597882e047df63f4" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_name</name></member>
+      <member refid="classgr_1_1block_1abe90e7e56b42dc79835c36771b995b6f" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_output_multiple</name></member>
+      <member refid="classgr_1_1block_1a07ad019449c88119586d593ed76fce00" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_output_multiple_set</name></member>
+      <member refid="classgr_1_1basic__block_1a84c091a90172b2eb6d617f6346bbce3f" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_output_signature</name></member>
+      <member refid="classgr_1_1block_1af3a3169fed130c6449a45af7fe797eef" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_pc_rpc_set</name></member>
+      <member refid="classgr_1_1block_1ad72091916b86278b58b6d106876b3e8c" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_pmt_done</name></member>
+      <member refid="classgr_1_1block_1a7c8d4cce92aec447d41dd90db254086b" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_priority</name></member>
+      <member refid="classgr_1_1block_1ad5785a3b18a12e690877907c9ebbcee4" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_relative_rate</name></member>
+      <member refid="classgr_1_1basic__block_1a8d54f7ea6ebf134e68e028294488354d" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a4956e5631a93b2ef667a28564e71195b" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_rpc_vars</name></member>
+      <member refid="classgr_1_1block_1aaf5b8dd7bba021af7bd93f39453f7482" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_setlock</name></member>
+      <member refid="classgr_1_1basic__block_1a2de4ae58aaf6af63fe57ecf0e64dcbe0" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_symbol_alias</name></member>
+      <member refid="classgr_1_1basic__block_1af6b5f158f329834b12d9b204cf62a10e" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a7073674b5876118ae50cd7cc5646ad80" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_symbolic_id</name></member>
+      <member refid="classgr_1_1block_1a2460fc9ff6df7f38a51dadba06b94904" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_system_port</name></member>
+      <member refid="classgr_1_1block_1a6555dc78dcc51097ab278df28ee4a0fb" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1ae8c44545f878f76cc25a7878a0dcf5b0" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_unaligned</name></member>
+      <member refid="classgr_1_1basic__block_1a8afb0c354fb5fc2141fc7580361c2f00" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>d_unique_id</name></member>
+      <member refid="classgr_1_1block_1a0f146512be7b9400931ae1800d058015" prot="private" virt="non-virtual"><scope>gr::block</scope><name>d_update_rate</name></member>
+      <member refid="classgr_1_1block_1acad5d6e62ea885cb77d19f72451581c2" prot="public" virt="non-virtual"><scope>gr::block</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1block_1aa7df9d4ebb09530cd3be2ad78da411b4" prot="public" virt="non-virtual"><scope>gr::block</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1basic__block_1accb52d0722546dbfda92e4ee699d8276" prot="public" virt="non-virtual"><scope>gr::block</scope><name>delete_head_blocking</name></member>
+      <member refid="classgr_1_1basic__block_1af9e69c810222df1bccbd159d660eda06" prot="public" virt="non-virtual"><scope>gr::block</scope><name>delete_head_nowait</name></member>
+      <member refid="classgr_1_1block_1a816ec687bdd384a6cf8493fd54019054" prot="public" virt="non-virtual"><scope>gr::block</scope><name>detail</name></member>
+      <member refid="classgr_1_1basic__block_1aa0c8bc1d82de984c872fbaefc0ff954b" prot="protected" virt="virtual"><scope>gr::block</scope><name>dispatch_msg</name></member>
+      <member refid="classgr_1_1basic__block_1a0ea70146bf5ce65a8c20c0b7234063d9" prot="public" virt="non-virtual"><scope>gr::block</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1a75b7c42c06430e9f5330f7462a5350a1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1aea4958dfb6cc37d60db6afaba91f6e6e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1basic__block_1aecb5d318b3d3689e6f7f448d29a03032" prot="public" virt="non-virtual"><scope>gr::block</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1block_1a71d3cc9f05edecef8b7bda7f16580848" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>enable_update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1acffa27c6be8af72ae44773185687d49c" prot="public" virt="non-virtual"><scope>gr::block</scope><name>erase_msg</name></member>
+      <member refid="classgr_1_1block_1a9bbf96f6a81d5c289934a68ef44dd1b4" prot="public" virt="non-virtual"><scope>gr::block</scope><name>expand_minmax_buffer</name></member>
+      <member refid="classgr_1_1block_1a89242cb1ac9d2bf5e75f923745baa576" prot="public" virt="non-virtual"><scope>gr::block</scope><name>finished</name></member>
+      <member refid="classgr_1_1block_1a13de80e93b11535dfa2d6168610b5f6a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>fixed_rate</name></member>
+      <member refid="classgr_1_1block_1a95e37b19dd73c24113ca9b848db00d16" prot="public" virt="virtual"><scope>gr::block</scope><name>fixed_rate_ninput_to_noutput</name></member>
+      <member refid="classgr_1_1block_1abe37ff91774ef438bdfcddd0a47ec1a6" prot="public" virt="virtual"><scope>gr::block</scope><name>fixed_rate_noutput_to_ninput</name></member>
+      <member refid="classgr_1_1block_1a5bc118d94944d2ff71e378f807fb8d28" prot="public" virt="virtual"><scope>gr::block</scope><name>forecast</name></member>
+      <member refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" prot="public" virt="virtual"><scope>gr::block</scope><name>general_work</name></member>
+      <member refid="classgr_1_1basic__block_1a33724cc678371b3713e13ed29217963e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>get_iterator</name></member>
+      <member refid="classgr_1_1basic__block_1ac2b4a15fdf99bfebc20cbafea7c2fcf4" prot="public" virt="non-virtual"><scope>gr::block</scope><name>get_msg_map</name></member>
+      <member refid="classgr_1_1block_1aa0272555827fe26a1878e53ce4be092c" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1a83143d92b16b5bf93bf43a66a46bb60e" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1abf2cc497d68c4650be55765d0fe12291" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1block_1a451b95d244e27e815eb3f9e56ea6ac32" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa229412131f1cac62bf1cb3c63b12a19d" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>GREY</name></member>
+      <member refid="classgr_1_1basic__block_1ac8bf058b47b635100945e20f3cc5d0b0" prot="protected" virt="virtual"><scope>gr::block</scope><name>has_msg_handler</name></member>
+      <member refid="classgr_1_1basic__block_1a8cdeb25c366bedbadf918b7f106dbf85" prot="public" virt="virtual"><scope>gr::block</scope><name>has_msg_port</name></member>
+      <member refid="classgr_1_1block_1a71548fe7804c9b932f9bb9d770931af1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>history</name></member>
+      <member refid="classgr_1_1basic__block_1adddacbed1278d56e03fa1d5b93b1d542" prot="public" virt="non-virtual"><scope>gr::block</scope><name>input_signature</name></member>
+      <member refid="classgr_1_1basic__block_1acbf0d8127f9b1da8dcb327b29391812a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>insert_tail</name></member>
+      <member refid="classgr_1_1block_1aac70128820e047e05993e4ec52b27c2a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>is_pc_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a10bd994a51158fd3803377960d688795" prot="public" virt="non-virtual"><scope>gr::block</scope><name>is_rpc_set</name></member>
+      <member refid="classgr_1_1block_1a4f67d984bc126aa4d254e62464525b79" prot="public" virt="non-virtual"><scope>gr::block</scope><name>is_set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ae0ed1517975b23c556b71486ffb972de" prot="public" virt="non-virtual"><scope>gr::block</scope><name>is_unaligned</name></member>
+      <member refid="classgr_1_1block_1af710a90819f19705f2d2ba1aa49d0172" prot="public" virt="non-virtual"><scope>gr::block</scope><name>max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a5faeaab35423014dc59749d63cfe4cf1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1a8780d41bb2091c00a9637e15e872a7ce" prot="public" virt="virtual"><scope>gr::block</scope><name>message_port_is_hier</name></member>
+      <member refid="classgr_1_1basic__block_1a5cc9ea399d0940de8440e028b7352ed7" prot="public" virt="virtual"><scope>gr::block</scope><name>message_port_is_hier_in</name></member>
+      <member refid="classgr_1_1basic__block_1a218a3ea133d838c8344fb3914c54ba3a" prot="public" virt="virtual"><scope>gr::block</scope><name>message_port_is_hier_out</name></member>
+      <member refid="classgr_1_1basic__block_1a485fa8f9fa04a1abcfe3f111d22e8e5f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_port_pub</name></member>
+      <member refid="classgr_1_1basic__block_1a362b6de38292cca9c1d56439a6efad04" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_port_register_in</name></member>
+      <member refid="classgr_1_1basic__block_1ac3047921885668943a13dabd35d5eda4" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_port_register_out</name></member>
+      <member refid="classgr_1_1basic__block_1adddd339f229f55bd96229d7a7dd5cc8f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_port_sub</name></member>
+      <member refid="classgr_1_1basic__block_1ad5496693b3c7c8be32529d695f83db1c" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_port_unsub</name></member>
+      <member refid="classgr_1_1basic__block_1ae92faa0b6775de0100f6d202140403a2" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_ports_in</name></member>
+      <member refid="classgr_1_1basic__block_1ad6351658056b5381f3803233cb75c928" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_ports_out</name></member>
+      <member refid="classgr_1_1basic__block_1a15300c27e1a332bc7dcff6438ec6c080" prot="public" virt="non-virtual"><scope>gr::block</scope><name>message_subscribers</name></member>
+      <member refid="classgr_1_1block_1a1da7d9e876b5ff5fde12492ce55e9a81" prot="public" virt="non-virtual"><scope>gr::block</scope><name>min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac28e42e36ef843b999cca3702981ccd7" prot="public" virt="non-virtual"><scope>gr::block</scope><name>min_output_buffer</name></member>
+      <member refid="classgr_1_1msg__accepter_1ae25bb0b46019f4dbe2bdcecdf50dc755" prot="public" virt="non-virtual"><scope>gr::block</scope><name>msg_accepter</name></member>
+      <member refid="classgr_1_1basic__block_1a68e92e54cda7a02697074705b9a7c08d" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>msg_queue</name></member>
+      <member refid="classgr_1_1basic__block_1a676337e5495c9ac73c0a551971181477" prot="public" virt="non-virtual"><scope>gr::block</scope><name>name</name></member>
+      <member refid="classgr_1_1block_1a2279d1eb421203bc5b0f100a6d5dc263" prot="public" virt="non-virtual"><scope>gr::block</scope><name>nitems_read</name></member>
+      <member refid="classgr_1_1block_1a742128a481fcb9e43a3e0cd535a57f9e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>nitems_written</name></member>
+      <member refid="classgr_1_1basic__block_1a4e3baf2d69f2a00871c89993e28b50ea" prot="public" virt="non-virtual"><scope>gr::block</scope><name>nmsgs</name></member>
+      <member refid="classgr_1_1block_1a74745ea741b0aae938b003854f6043e0" prot="public" virt="non-virtual"><scope>gr::block</scope><name>no_pc_rpc</name></member>
+      <member refid="classgr_1_1block_1adf235647d7ec77995751de89d94a22a6" prot="public" virt="non-virtual"><scope>gr::block</scope><name>notify_msg_neighbors</name></member>
+      <member refid="classgr_1_1block_1a247e034ce4d624c1fee847f7779e90e1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>output_multiple</name></member>
+      <member refid="classgr_1_1block_1a4ff8a6d59b8bd64817aebfbd28d78326" prot="public" virt="non-virtual"><scope>gr::block</scope><name>output_multiple_set</name></member>
+      <member refid="classgr_1_1basic__block_1a348d5801eeff564e75f508aba22766bd" prot="public" virt="non-virtual"><scope>gr::block</scope><name>output_signature</name></member>
+      <member refid="classgr_1_1block_1a4989096e4edf5e8171b65e3ce663af1e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a2dba88af74ee077751ebf5c11f470cbc" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a08e5deef4ebd0e6c2e11b839eaeadd9f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1aa4118c626e74926918a9bfd464b728cf" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a00723a35c6e095da35608c8438e16cdf" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a2c211a608a7d4dc40ad63886d1944798" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1af4a03de0d6609ca0e03b875250b7650c" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a3beb47de467a4a117b0c096f8511d3af" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_noutput_items_avg</name></member>
+      <member refid="classgr_1_1block_1ae0725cd4ff4f5040a513c2a61355d434" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_noutput_items_var</name></member>
+      <member refid="classgr_1_1block_1a84ef5905d40b507a2230c996d8857289" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_nproduced</name></member>
+      <member refid="classgr_1_1block_1ad0b4960e100a088caefa99fb39f99a02" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_nproduced_avg</name></member>
+      <member refid="classgr_1_1block_1a1a506f34b8b8c3f968dc0a8cb9da0650" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_nproduced_var</name></member>
+      <member refid="classgr_1_1block_1ab125047ee56cf687e3475674a28d267f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a6ec7670b2a8d6d30113ab82683133b40" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a0ed8f2224fe1d0b27e17cd66723452a8" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a0ddfee47fbd0d83826b8584ea7019b84" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a2ad2a99ea794d44956d2878471e5976d" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1affe32b7ec0d84efa56f5cc94723eb36f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a78a27917edcd3b32f10b2166f3362a68" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_throughput_avg</name></member>
+      <member refid="classgr_1_1block_1ae8b89079d24a3216eb1b17d75ec5b8d8" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_work_time</name></member>
+      <member refid="classgr_1_1block_1a2df6452cef2999e1b32458a5e542f948" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_work_time_avg</name></member>
+      <member refid="classgr_1_1block_1a2c9fdd36be297e4b503ccd6290663367" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_work_time_total</name></member>
+      <member refid="classgr_1_1block_1a4918e75c4d11a0b7222c9ba250313ebc" prot="public" virt="non-virtual"><scope>gr::block</scope><name>pc_work_time_var</name></member>
+      <member refid="classgr_1_1msg__accepter_1a03b0afcc820d3454d29f0ada3b89e2fc" prot="public" virt="virtual"><scope>gr::block</scope><name>post</name></member>
+      <member refid="classgr_1_1block_1a3b37bd70477161aa97d1e868ff2b20d9" prot="public" virt="virtual"><scope>gr::block</scope><name>processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" prot="public" virt="non-virtual"><scope>gr::block</scope><name>produce</name></member>
+      <member refid="classgr_1_1block_1aa14aceb3623b74b66d235fbb237cec88" prot="public" virt="non-virtual"><scope>gr::block</scope><name>relative_rate</name></member>
+      <member refid="classgr_1_1block_1a461f6cc92174e83b10c3ec5336036768" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1block_1a94906298cd5995a94172c53dbfbc77dd" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1block_1adb2d3602fe818cef1978090923667009" prot="public" virt="non-virtual"><scope>gr::block</scope><name>reset_perf_counters</name></member>
+      <member refid="classgr_1_1basic__block_1ac349eee015757c75f8486b36ee08b106" prot="public" virt="non-virtual"><scope>gr::block</scope><name>rpc_set</name></member>
+      <member refid="classgr_1_1block_1a8bdbb506d7253d841277292c712c1a28" prot="public" virt="non-virtual"><scope>gr::block</scope><name>sample_delay</name></member>
+      <member refid="classgr_1_1block_1a49b49c097bffefe79f9d730539330edf" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_alignment</name></member>
+      <member refid="classgr_1_1basic__block_1ad5251b68da76a9ce6bef105ef8136547" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_block_alias</name></member>
+      <member refid="classgr_1_1basic__block_1a2c4a58849217d8b76ba2d25c0dfd8bd0" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>set_color</name></member>
+      <member refid="classgr_1_1block_1a776fbf15f5280bf8da74929b4ea8bb39" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_detail</name></member>
+      <member refid="classgr_1_1block_1aa927cd4d5b8993122cf60dd556ffe62d" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>set_fixed_rate</name></member>
+      <member refid="classgr_1_1block_1ac2dac90e45498ad53a19544c01114136" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_history</name></member>
+      <member refid="classgr_1_1basic__block_1a3f3f8f70bd0f0f2925b09bb75725c2b6" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>set_input_signature</name></member>
+      <member refid="classgr_1_1block_1a0d33c4cc8b0131b9b8df41e3b46784b1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_is_unaligned</name></member>
+      <member refid="classgr_1_1block_1ae2405dc2f6c84bb8e59aab56e4ce9d84" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a711fb69e35fb871e9a5e41d6a1f2afb1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a96d021628c08db3b138d3ee7c572ad90" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a65cfc579150dc4d10c6180d3365aa9a8" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a9d10e3f6747f91b215abe81b60a003d5" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a46a03397c78096a2f1c7f1b59f225f5b" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1a7fed11ec01538bfea999fb37687b43b4" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_msg_handler</name></member>
+      <member refid="classgr_1_1block_1a63d67fd758b70c6f2d7b7d4edcec53b3" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_output_multiple</name></member>
+      <member refid="classgr_1_1basic__block_1a7933b6bc4ad512774bbb40616cc31b4d" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>set_output_signature</name></member>
+      <member refid="classgr_1_1block_1a05ad2ae50b0f7c922add44e74d9603b8" prot="public" virt="virtual"><scope>gr::block</scope><name>set_processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aff3003eea3517dd3e8d9a5297c1196b1" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_relative_rate</name></member>
+      <member refid="classgr_1_1block_1a476e218927e426ac88c26431cbf086cd" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1a83e0fd5c4db199e6e6f2fc75cdfb5dfa" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_thread_priority</name></member>
+      <member refid="classgr_1_1block_1a4d914fbc7814a682e25f5b2a40140d47" prot="public" virt="non-virtual"><scope>gr::block</scope><name>set_unaligned</name></member>
+      <member refid="classgr_1_1block_1a9425064fac92607770042f472e140d7e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>setup_pc_rpc</name></member>
+      <member refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" prot="public" virt="virtual"><scope>gr::block</scope><name>setup_rpc</name></member>
+      <member refid="classgr_1_1block_1a7f58745d1374b30a7b866406dc97850f" prot="public" virt="virtual"><scope>gr::block</scope><name>start</name></member>
+      <member refid="classgr_1_1block_1a0863bc16f7c84adf4cddf5d53124450e" prot="public" virt="virtual"><scope>gr::block</scope><name>stop</name></member>
+      <member refid="classgr_1_1basic__block_1ab5199f528de1872b055e632aedabef4e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a0436f10fd13ce2a80be2aeae345e903a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>symbolic_id</name></member>
+      <member refid="classgr_1_1block_1a4070b0462cce39d66b0c7c90ef2153d8" prot="public" virt="non-virtual"><scope>gr::block</scope><name>system_handler</name></member>
+      <member refid="classgr_1_1block_1a4892196a19ef044a0eedeaa6566893c8" prot="public" virt="non-virtual"><scope>gr::block</scope><name>tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" prot="public" virt="non-virtual"><scope>gr::block</scope><name>tag_propagation_policy_t</name></member>
+      <member refid="classgr_1_1block_1a585b831aea5775730931d7fb9e6e8253" prot="public" virt="non-virtual"><scope>gr::block</scope><name>thread_priority</name></member>
+      <member refid="classgr_1_1basic__block_1a84bf6924dfa0bb724caca46575669557" prot="public" virt="non-virtual"><scope>gr::block</scope><name>to_basic_block</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea5b3fd823d5f918e588008c0bc876e574" prot="public" virt="non-virtual"><scope>gr::block</scope><name>TPP_ALL_TO_ALL</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4eaadf6e1b257eee0590cc2b26161d08cdc" prot="public" virt="non-virtual"><scope>gr::block</scope><name>TPP_CUSTOM</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea2e3b11eb10000e0efab110c31a83e502" prot="public" virt="non-virtual"><scope>gr::block</scope><name>TPP_DONT</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea747127b6fb520f34be8ae3f951fdc53c" prot="public" virt="non-virtual"><scope>gr::block</scope><name>TPP_ONE_TO_ONE</name></member>
+      <member refid="classgr_1_1block_1a53a85f2cd9f8ccef49eafad408069557" prot="public" virt="non-virtual"><scope>gr::block</scope><name>unaligned</name></member>
+      <member refid="classgr_1_1basic__block_1a6e85f514a6c99d39593f0d250e787d2b" prot="public" virt="non-virtual"><scope>gr::block</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1block_1a460e8e5f15a4c5418ce3fc167c20a973" prot="public" virt="non-virtual"><scope>gr::block</scope><name>unset_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac077773948a5f55b826dd638e1ed3863" prot="public" virt="virtual"><scope>gr::block</scope><name>unset_processor_affinity</name></member>
+      <member refid="classgr_1_1block_1af32c62fff6b1285bf346bfda65e6fc3a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>vcolor</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa42ae6a0efeb1be877a188c7ad4778f50" prot="protected" virt="non-virtual"><scope>gr::block</scope><name>WHITE</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca8cac307593cf1087803f28eee28ff45a" prot="public" virt="non-virtual"><scope>gr::block</scope><name>WORK_CALLED_PRODUCE</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca3e2d37c41af566875030fa1376c4203f" prot="public" virt="non-virtual"><scope>gr::block</scope><name>WORK_DONE</name></member>
+      <member refid="classgr_1_1basic__block_1aa2006a298a9d9c60ea52c6a33e003b96" prot="public" virt="virtual"><scope>gr::block</scope><name>~basic_block</name></member>
+      <member refid="classgr_1_1block_1a1db946ecc4ab437c609802d991e545cc" prot="public" virt="virtual"><scope>gr::block</scope><name>~block</name></member>
+      <member refid="classgr_1_1msg__accepter_1a4a566e988c3b4ba11d568b340499e307" prot="public" virt="virtual"><scope>gr::block</scope><name>~msg_accepter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

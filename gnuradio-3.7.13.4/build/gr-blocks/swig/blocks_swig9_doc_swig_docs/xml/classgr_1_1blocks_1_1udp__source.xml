@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1udp__source" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::udp_source</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="udp__source_8h" local="no">udp_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1udp__source_1ad309e9160b82d42d538f6f54b65e32dc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1udp__source" kindref="compound">udp_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;udp_source&gt; gr::blocks::udp_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1udp__source_1a567fb5860bd538f0fda7a0aeef1b02d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1udp__source_1ad309e9160b82d42d538f6f54b65e32dc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::udp_source::make</definition>
+        <argsstring>(size_t itemsize, const std::string &amp;host, int port, int payload_size=1472, bool eof=true)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>payload_size</declname>
+          <defval>1472</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>eof</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>UDP Source Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size (in bytes) of the item datatype </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name or IP address of the transmitting host; can be NULL, None, or &quot;0.0.0.0&quot; to allow reading from any interface on the host </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port number on which to receive data; use 0 to have the system assign an unused port number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDP payload size by default set to 1472 = (1500 MTU - (8 byte UDP header) - (20 byte IP header)) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eof</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interpret zero-length packet as EOF (default: true) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1udp__source_1a217a2d257c08fbab30dbeb56470d44b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::udp_source::connect</definition>
+        <argsstring>(const std::string &amp;host, int port)=0</argsstring>
+        <name>connect</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Change the connection to a new destination. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name or IP address of the receiving host; use NULL or None to break the connection without closing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination port to connect to on receiving host</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Calls <ref refid="classgr_1_1blocks_1_1udp__source_1a9288dd5d000f2d663f4c8c9b070c865b" kindref="member">disconnect()</ref> to terminate any current connection first. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1udp__source_1a9288dd5d000f2d663f4c8c9b070c865b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::udp_source::disconnect</definition>
+        <argsstring>()=0</argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+<para>Cut the connection if we have one set up. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1udp__source_1a5b1c7445c2703ecd11f7c5d5a8708680" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::udp_source::payload_size</definition>
+        <argsstring>()=0</argsstring>
+        <name>payload_size</name>
+        <briefdescription>
+<para>return the PAYLOAD_SIZE of the socket </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1udp__source_1a486308050c6ff086a4078909af6c3fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::udp_source::get_port</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_port</name>
+        <briefdescription>
+<para>return the port number of the socket </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Read stream from an UDP socket. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="828">
+        <label>gr::blocks::udp_source</label>
+        <link refid="classgr_1_1blocks_1_1udp__source"/>
+        <childnode refid="829" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="830">
+        <label>gr::blocks::udp_source</label>
+        <link refid="classgr_1_1blocks_1_1udp__source"/>
+        <childnode refid="831" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="831">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/udp_source.h" bodystart="36" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1udp__source_1a217a2d257c08fbab30dbeb56470d44b7" prot="public" virt="pure-virtual"><scope>gr::blocks::udp_source</scope><name>connect</name></member>
+      <member refid="classgr_1_1blocks_1_1udp__source_1a9288dd5d000f2d663f4c8c9b070c865b" prot="public" virt="pure-virtual"><scope>gr::blocks::udp_source</scope><name>disconnect</name></member>
+      <member refid="classgr_1_1blocks_1_1udp__source_1a486308050c6ff086a4078909af6c3fe0" prot="public" virt="pure-virtual"><scope>gr::blocks::udp_source</scope><name>get_port</name></member>
+      <member refid="classgr_1_1blocks_1_1udp__source_1a567fb5860bd538f0fda7a0aeef1b02d0" prot="public" virt="non-virtual"><scope>gr::blocks::udp_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1udp__source_1a5b1c7445c2703ecd11f7c5d5a8708680" prot="public" virt="pure-virtual"><scope>gr::blocks::udp_source</scope><name>payload_size</name></member>
+      <member refid="classgr_1_1blocks_1_1udp__source_1ad309e9160b82d42d538f6f54b65e32dc" prot="public" virt="non-virtual"><scope>gr::blocks::udp_source</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tags__strobe" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::tags_strobe</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="tags__strobe_8h" local="no">tags_strobe.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tags__strobe_1a6f160e7d34ada076650973a8e85ee1fe" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tags__strobe" kindref="compound">tags_strobe</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tags_strobe&gt; gr::blocks::tags_strobe::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1a2431ea856e158b3b7d557c8dc042b6db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tags__strobe_1a6f160e7d34ada076650973a8e85ee1fe" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tags_strobe::make</definition>
+        <argsstring>(size_t sizeof_stream_item, pmt::pmt_t value, uint64_t nsamps, pmt::pmt_t key=pmt::intern(&quot;strobe&quot;))</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>nsamps</declname>
+        </param>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>key</declname>
+          <defval>pmt::intern(&quot;strobe&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a tags stobe block to send tags with value <computeroutput>value</computeroutput> every <computeroutput>nsamps</computeroutput> number of samples.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizeof_stream_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the stream items in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the tags to send, as a PMT. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nsamps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of samples between each tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key to sent </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1aef465630c8464c202bf681af34dcfc42" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tags_strobe::set_value</definition>
+        <argsstring>(pmt::pmt_t value)=0</argsstring>
+        <name>set_value</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the value of the tags being sent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the tags to send as a PMT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1acd7be2f73b032908c52bef5298706bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tags_strobe::set_key</definition>
+        <argsstring>(pmt::pmt_t key)=0</argsstring>
+        <name>set_key</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the tag key we are sending </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1a9bf039fa3bf1c2b0ad50a830c4d2228d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>pmt::pmt_t</type>
+        <definition>virtual pmt::pmt_t gr::blocks::tags_strobe::value</definition>
+        <argsstring>() const =0</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of the tags being sent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1a2968e6df5a54e52e840089fb4a658820" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>pmt::pmt_t</type>
+        <definition>virtual pmt::pmt_t gr::blocks::tags_strobe::key</definition>
+        <argsstring>() const =0</argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the key of the tags being sent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1a47e93bdc4e6cdd7e7598f8c37a23f130" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::tags_strobe::set_nsamps</definition>
+        <argsstring>(uint64_t nsamps)=0</argsstring>
+        <name>set_nsamps</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>nsamps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the sending interval. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nsamps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of samples between each tag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tags__strobe_1a956f754b1eaf5ffebc46285029b13ab2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t gr::blocks::tags_strobe::nsamps</definition>
+        <argsstring>() const =0</argsstring>
+        <name>nsamps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of samples between the tag strobe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Send tags at defined interval. </para>    </briefdescription>
+    <detaileddescription>
+<para>Sends a tag with key &apos;strobe&apos; and a user-defined value (as a PMT) every <computeroutput>nsamps</computeroutput> number of samples. Useful for testing/debugging the tags system.</para><para>Because tags are sent with a data stream, this is a source block that acts identical to a <ref refid="classgr_1_1blocks_1_1null__source" kindref="compound">null_source</ref> block. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="772">
+        <label>gr::blocks::tags_strobe</label>
+        <link refid="classgr_1_1blocks_1_1tags__strobe"/>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="774">
+        <label>gr::blocks::tags_strobe</label>
+        <link refid="classgr_1_1blocks_1_1tags__strobe"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tags_strobe.h" bodystart="44" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a2968e6df5a54e52e840089fb4a658820" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>key</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a2431ea856e158b3b7d557c8dc042b6db" prot="public" virt="non-virtual"><scope>gr::blocks::tags_strobe</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a956f754b1eaf5ffebc46285029b13ab2" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>nsamps</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1acd7be2f73b032908c52bef5298706bdd" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>set_key</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a47e93bdc4e6cdd7e7598f8c37a23f130" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>set_nsamps</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1aef465630c8464c202bf681af34dcfc42" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>set_value</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a6f160e7d34ada076650973a8e85ee1fe" prot="public" virt="non-virtual"><scope>gr::blocks::tags_strobe</scope><name>sptr</name></member>
+      <member refid="classgr_1_1blocks_1_1tags__strobe_1a9bf039fa3bf1c2b0ad50a830c4d2228d" prot="public" virt="pure-virtual"><scope>gr::blocks::tags_strobe</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

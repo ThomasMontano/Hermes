@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classTimeRasterUpdateEvent" kind="class" prot="public">
+    <compoundname>TimeRasterUpdateEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QEvent</basecompoundref>
+    <includes refid="spectrumUpdateEvents_8h" local="no">gnuradio/qtgui/spectrumUpdateEvents.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTimeRasterUpdateEvent_1a3b859ccc3f5df891d235f09130419d77" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t TimeRasterUpdateEvent::_nplots</definition>
+        <argsstring></argsstring>
+        <name>_nplots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="278" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeRasterUpdateEvent_1aa2bcf523b6fed9a59d2480fb872b7202" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double * &gt;</type>
+        <definition>std::vector&lt;double*&gt; TimeRasterUpdateEvent::_dataPoints</definition>
+        <argsstring></argsstring>
+        <name>_dataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="279" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeRasterUpdateEvent_1adcf57c5e8da714dc98ac89eb9668043c" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t TimeRasterUpdateEvent::_numDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="280" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a0fc387f80be3f8fd4f9365a165ff6b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeRasterUpdateEvent::TimeRasterUpdateEvent</definition>
+        <argsstring>(const std::vector&lt; double * &gt; dataPoints, const uint64_t numDataPoints)</argsstring>
+        <name>TimeRasterUpdateEvent</name>
+        <param>
+          <type>const std::vector&lt; double * &gt;</type>
+          <declname>dataPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numDataPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a8605aa959eec0d9b49e49d9a04382423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeRasterUpdateEvent::~TimeRasterUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~TimeRasterUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a160ca7caee27961b75b3add6415605c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TimeRasterUpdateEvent::which</definition>
+        <argsstring>() const </argsstring>
+        <name>which</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a2e2c9d9e9ea9141ffff1f90bc8503f98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; double * &gt;</type>
+        <definition>const std::vector&lt;double*&gt; TimeRasterUpdateEvent::getPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1afe5c120836dc4b3aefef0f5f99f36725" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t TimeRasterUpdateEvent::getNumDataPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a43a870e99dea122c0ad0074a0d01ce00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TimeRasterUpdateEvent::getRepeatDataFlag</definition>
+        <argsstring>() const </argsstring>
+        <name>getRepeatDataFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="270" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classTimeRasterUpdateEvent_1a329661ca1481b050c2759f061088c0cf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QEvent::Type</type>
+        <definition>static QEvent::Type TimeRasterUpdateEvent::Type</definition>
+        <argsstring>()</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="272" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="272" bodyend="273"/>
+        <references refid="spectrumUpdateEvents_8h_1abae995316b74a1f7a2b9d456566576db" compoundref="spectrumUpdateEvents_8h" startline="35">SpectrumUpdateEventType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11259">
+        <label>TimeRasterUpdateEvent</label>
+        <link refid="classTimeRasterUpdateEvent"/>
+        <childnode refid="11260" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11260">
+        <label>QEvent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11261">
+        <label>TimeRasterUpdateEvent</label>
+        <link refid="classTimeRasterUpdateEvent"/>
+        <childnode refid="11262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11262">
+        <label>QEvent</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="261" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="260" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classTimeRasterUpdateEvent_1aa2bcf523b6fed9a59d2480fb872b7202" prot="private" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>_dataPoints</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a3b859ccc3f5df891d235f09130419d77" prot="private" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>_nplots</name></member>
+      <member refid="classTimeRasterUpdateEvent_1adcf57c5e8da714dc98ac89eb9668043c" prot="private" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>_numDataPoints</name></member>
+      <member refid="classTimeRasterUpdateEvent_1afe5c120836dc4b3aefef0f5f99f36725" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>getNumDataPoints</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a2e2c9d9e9ea9141ffff1f90bc8503f98" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>getPoints</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a43a870e99dea122c0ad0074a0d01ce00" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>getRepeatDataFlag</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a0fc387f80be3f8fd4f9365a165ff6b7b" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>TimeRasterUpdateEvent</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a329661ca1481b050c2759f061088c0cf" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>Type</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a160ca7caee27961b75b3add6415605c2" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>which</name></member>
+      <member refid="classTimeRasterUpdateEvent_1a8605aa959eec0d9b49e49d9a04382423" prot="public" virt="non-virtual"><scope>TimeRasterUpdateEvent</scope><name>~TimeRasterUpdateEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

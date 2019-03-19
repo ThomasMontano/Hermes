@@ -1,0 +1,1915 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr" kind="namespace">
+    <compoundname>gr</compoundname>
+    <innerclass refid="classgr_1_1basic__block" prot="public">gr::basic_block</innerclass>
+    <innerclass refid="classgr_1_1block" prot="public">gr::block</innerclass>
+    <innerclass refid="classgr_1_1block__detail" prot="public">gr::block_detail</innerclass>
+    <innerclass refid="structgr_1_1block__gw__message__type" prot="public">gr::block_gw_message_type</innerclass>
+    <innerclass refid="classgr_1_1block__gateway" prot="public">gr::block_gateway</innerclass>
+    <innerclass refid="classgr_1_1block__registry" prot="public">gr::block_registry</innerclass>
+    <innerclass refid="classgr_1_1buffer" prot="public">gr::buffer</innerclass>
+    <innerclass refid="classgr_1_1buffer__reader" prot="public">gr::buffer_reader</innerclass>
+    <innerclass refid="classgr_1_1feval__dd" prot="public">gr::feval_dd</innerclass>
+    <innerclass refid="classgr_1_1feval__cc" prot="public">gr::feval_cc</innerclass>
+    <innerclass refid="classgr_1_1feval__ll" prot="public">gr::feval_ll</innerclass>
+    <innerclass refid="classgr_1_1feval" prot="public">gr::feval</innerclass>
+    <innerclass refid="classgr_1_1feval__p" prot="public">gr::feval_p</innerclass>
+    <innerclass refid="classgr_1_1endpoint" prot="public">gr::endpoint</innerclass>
+    <innerclass refid="classgr_1_1msg__endpoint" prot="public">gr::msg_endpoint</innerclass>
+    <innerclass refid="classgr_1_1edge" prot="public">gr::edge</innerclass>
+    <innerclass refid="classgr_1_1msg__edge" prot="public">gr::msg_edge</innerclass>
+    <innerclass refid="classgr_1_1flowgraph" prot="public">gr::flowgraph</innerclass>
+    <innerclass refid="classgr_1_1fxpt" prot="public">gr::fxpt</innerclass>
+    <innerclass refid="classgr_1_1fxpt__nco" prot="public">gr::fxpt_nco</innerclass>
+    <innerclass refid="classgr_1_1fxpt__vco" prot="public">gr::fxpt_vco</innerclass>
+    <innerclass refid="classgr_1_1hier__block2" prot="public">gr::hier_block2</innerclass>
+    <innerclass refid="classgr_1_1io__signature" prot="public">gr::io_signature</innerclass>
+    <innerclass refid="classgr_1_1message" prot="public">gr::message</innerclass>
+    <innerclass refid="classgr_1_1msg__accepter" prot="public">gr::msg_accepter</innerclass>
+    <innerclass refid="classgr_1_1msg__handler" prot="public">gr::msg_handler</innerclass>
+    <innerclass refid="classgr_1_1msg__queue" prot="public">gr::msg_queue</innerclass>
+    <innerclass refid="classgr_1_1nco" prot="public">gr::nco</innerclass>
+    <innerclass refid="classgr_1_1prefs" prot="public">gr::prefs</innerclass>
+    <innerclass refid="classgr_1_1py__feval__dd" prot="public">gr::py_feval_dd</innerclass>
+    <innerclass refid="classgr_1_1py__feval__cc" prot="public">gr::py_feval_cc</innerclass>
+    <innerclass refid="classgr_1_1py__feval__ll" prot="public">gr::py_feval_ll</innerclass>
+    <innerclass refid="classgr_1_1py__feval" prot="public">gr::py_feval</innerclass>
+    <innerclass refid="classgr_1_1py__feval__p" prot="public">gr::py_feval_p</innerclass>
+    <innerclass refid="classgr_1_1random" prot="public">gr::random</innerclass>
+    <innerclass refid="classgr_1_1sync__block" prot="public">gr::sync_block</innerclass>
+    <innerclass refid="classgr_1_1sync__decimator" prot="public">gr::sync_decimator</innerclass>
+    <innerclass refid="classgr_1_1sync__interpolator" prot="public">gr::sync_interpolator</innerclass>
+    <innerclass refid="structgr_1_1sys__pri" prot="public">gr::sys_pri</innerclass>
+    <innerclass refid="classgr_1_1tag__checker" prot="public">gr::tag_checker</innerclass>
+    <innerclass refid="classgr_1_1tagged__stream__block" prot="public">gr::tagged_stream_block</innerclass>
+    <innerclass refid="structgr_1_1tag__t" prot="public">gr::tag_t</innerclass>
+    <innerclass refid="classgr_1_1top__block" prot="public">gr::top_block</innerclass>
+    <innerclass refid="structgr_1_1tpb__detail" prot="public">gr::tpb_detail</innerclass>
+    <innernamespace refid="namespacegr_1_1impl">gr::impl</innernamespace>
+    <innernamespace refid="namespacegr_1_1messages">gr::messages</innernamespace>
+    <innernamespace refid="namespacegr_1_1thread">gr::thread</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1adf188e9aef075f2a0d6046b3cf8b62d3" prot="public" static="no">
+        <name>block_gw_work_type</name>
+        <enumvalue id="namespacegr_1adf188e9aef075f2a0d6046b3cf8b62d3a4e002bd0a5332673fc86e95b3ef26f35" prot="public">
+          <name>GR_BLOCK_GW_WORK_GENERAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1adf188e9aef075f2a0d6046b3cf8b62d3ac4f00b3e93854728aa28e780a1b750a0" prot="public">
+          <name>GR_BLOCK_GW_WORK_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1adf188e9aef075f2a0d6046b3cf8b62d3a182371b702b95f29e6b3a4015d359644" prot="public">
+          <name>GR_BLOCK_GW_WORK_DECIM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1adf188e9aef075f2a0d6046b3cf8b62d3a466a574cb92c20085c2e62e9549d0f45" prot="public">
+          <name>GR_BLOCK_GW_WORK_INTERP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The work type enum tells the gateway what kind of block to implement. The choices are familiar gnuradio block overloads (sync, decim, interp). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1ad60d1571299a8d7bfe62722c0c79c465" prot="public" static="no">
+        <name>block_gw_work_return_type</name>
+        <enumvalue id="namespacegr_1ad60d1571299a8d7bfe62722c0c79c465a5d80c3ba3f48c67cb1a00ee33fe8a14d" prot="public">
+          <name>WORK_CALLED_PRODUCE</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1ad60d1571299a8d7bfe62722c0c79c465a848c0ca2ac39f8ebdefc4fbbf9307d7d" prot="public">
+          <name>WORK_DONE</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Magic return values from general_work, <ref refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca8cac307593cf1087803f28eee28ff45a" kindref="member">gr::block::WORK_CALLED_PRODUCE</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1a103e36c388d20ee8c7312cb6d52bdf81" prot="public" static="no">
+        <name>tag_propagation_policy_t</name>
+        <enumvalue id="namespacegr_1a103e36c388d20ee8c7312cb6d52bdf81a70a7dd711fe157d47fc9fb50cf3e2b35" prot="public">
+          <name>TPP_DONT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a103e36c388d20ee8c7312cb6d52bdf81ad8139a1f1f64320175b4245f5da04f9a" prot="public">
+          <name>TPP_ALL_TO_ALL</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a103e36c388d20ee8c7312cb6d52bdf81a8af86fbe712abde4e37ae344f00bd858" prot="public">
+          <name>TPP_ONE_TO_ONE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a103e36c388d20ee8c7312cb6d52bdf81ac753b65eaca8b775d50a1573051b878b" prot="public">
+          <name>TPP_CUSTOM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_gateway.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1a08ed041372f52b3024ce3a80330983da" prot="public" static="no">
+        <name>endianness_t</name>
+        <enumvalue id="namespacegr_1a08ed041372f52b3024ce3a80330983daa7395da63785f94ba0360184e5c8278e0" prot="public">
+          <name>GR_MSB_FIRST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a08ed041372f52b3024ce3a80330983daac43e997d44bc5d9b352d7d203113c0fc" prot="public">
+          <name>GR_LSB_FIRST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/endianness.h" line="28" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/endianness.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" prot="public" static="no">
+        <name>rt_status_t</name>
+        <enumvalue id="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415a5782c718bf523997b63b57858399ae04" prot="public">
+          <name>RT_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ae9743afa7588625297e5f4b4bc1fffca" prot="public">
+          <name>RT_NOT_IMPLEMENTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab910c0a53288bf85fa33230beecd39e5" prot="public">
+          <name>RT_NO_PRIVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab74c3993e18991892f0eabf0e5d218a0" prot="public">
+          <name>RT_OTHER_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579" prot="public" static="no">
+        <name>rt_sched_policy</name>
+        <enumvalue id="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31" prot="public">
+          <name>RT_SCHED_RR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579a2dda8e8efa8715f466d2d62f5d4377e3" prot="public">
+          <name>RT_SCHED_FIFO</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacegr_1a1ef8a411aaabe1984139cf5a9bedde17" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref> &gt;</type>
+        <definition>typedef std::vector&lt;basic_block_sptr&gt; gr::basic_block_vector_t</definition>
+        <argsstring></argsstring>
+        <name>basic_block_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="394" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1af6aeb62a5f668b95b033ec3a689f9aef" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref> &gt;::iterator</type>
+        <definition>typedef std::vector&lt;basic_block_sptr&gt;::iterator gr::basic_block_viter_t</definition>
+        <argsstring></argsstring>
+        <name>basic_block_viter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="395" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a80cdceecd14dfccf06763b646f6054fc" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref> &gt;</type>
+        <definition>typedef std::vector&lt;block_sptr&gt; gr::block_vector_t</definition>
+        <argsstring></argsstring>
+        <name>block_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="886" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a4812df667c263948731b25a7063b427d" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref> &gt;::iterator</type>
+        <definition>typedef std::vector&lt;block_sptr&gt;::iterator gr::block_viter_t</definition>
+        <argsstring></argsstring>
+        <name>block_viter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="887" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a73eda10e79fd7fdfad2b48fc06fbd968" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1endpoint" kindref="compound">endpoint</ref> &gt;</type>
+        <definition>typedef std::vector&lt;endpoint&gt; gr::endpoint_vector_t</definition>
+        <argsstring></argsstring>
+        <name>endpoint_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1aad8f6def2b16f0863d64f5fdd73861be" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1endpoint" kindref="compound">endpoint</ref> &gt;::iterator</type>
+        <definition>typedef std::vector&lt;endpoint&gt;::iterator gr::endpoint_viter_t</definition>
+        <argsstring></argsstring>
+        <name>endpoint_viter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a6a3c8e8cfd28af59ea0f30161f60bb05" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1edge" kindref="compound">edge</ref> &gt;</type>
+        <definition>typedef std::vector&lt;edge&gt; gr::edge_vector_t</definition>
+        <argsstring></argsstring>
+        <name>edge_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a0fec23a569b2a39266348185e84e8ca8" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1edge" kindref="compound">edge</ref> &gt;::iterator</type>
+        <definition>typedef std::vector&lt;edge&gt;::iterator gr::edge_viter_t</definition>
+        <argsstring></argsstring>
+        <name>edge_viter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="110" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a440575a806af43c9fbe72d905a907778" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1msg__edge" kindref="compound">msg_edge</ref> &gt;</type>
+        <definition>typedef std::vector&lt;msg_edge&gt; gr::msg_edge_vector_t</definition>
+        <argsstring></argsstring>
+        <name>msg_edge_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="133" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a01adc7b9b30c28bb5cf43d03e21ffebb" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1msg__edge" kindref="compound">msg_edge</ref> &gt;::iterator</type>
+        <definition>typedef std::vector&lt;msg_edge&gt;::iterator gr::msg_edge_viter_t</definition>
+        <argsstring></argsstring>
+        <name>msg_edge_viter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="134" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" prot="public" static="no">
+        <type>signed long long</type>
+        <definition>typedef signed long long gr::high_res_timer_type</definition>
+        <argsstring></argsstring>
+        <name>high_res_timer_type</name>
+        <briefdescription>
+<para>Typedef for the timer tick count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1aeebdb06af46daee52ad842a9fb235ff3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1msg__handler" kindref="compound">msg_handler</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;msg_handler&gt; gr::msg_handler_sptr</definition>
+        <argsstring></argsstring>
+        <name>msg_handler_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_handler.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_handler.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1aa70f231a69b2f1353b11726cf605ebe1" prot="public" static="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, std::string &gt; &gt;</type>
+        <definition>typedef std::map&lt; std::string, std::map&lt;std::string, std::string&gt; &gt; gr::config_map_t</definition>
+        <argsstring></argsstring>
+        <name>config_map_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1acf7a7ee3719bc2151ad1a2616a7c47a2" prot="public" static="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, std::string &gt; &gt;::iterator</type>
+        <definition>typedef std::map&lt; std::string, std::map&lt;std::string, std::string&gt; &gt;::iterator gr::config_map_itr</definition>
+        <argsstring></argsstring>
+        <name>config_map_itr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="34" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1ab361855bfa8d5d033c1ff8472545abfa" prot="public" static="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::string&gt; gr::config_map_elem_t</definition>
+        <argsstring></argsstring>
+        <name>config_map_elem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a8beb46c9438ad803e06949cb755245d4" prot="public" static="no">
+        <type>std::map&lt; std::string, std::string &gt;::iterator</type>
+        <definition>typedef std::map&lt;std::string, std::string&gt;::iterator gr::config_map_elem_itr</definition>
+        <argsstring></argsstring>
+        <name>config_map_elem_itr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1basic__block" kindref="compound">basic_block</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;basic_block&gt; gr::basic_block_sptr</definition>
+        <argsstring></argsstring>
+        <name>basic_block_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1block" kindref="compound">block</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;block&gt; gr::block_sptr</definition>
+        <argsstring></argsstring>
+        <name>block_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1aaa005f291300aafaf243756f151ef65a" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1block__detail" kindref="compound">block_detail</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;block_detail&gt; gr::block_detail_sptr</definition>
+        <argsstring></argsstring>
+        <name>block_detail_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1aee8990ae0b072c732eb7f07d47796a33" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1buffer" kindref="compound">buffer</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;buffer&gt; gr::buffer_sptr</definition>
+        <argsstring></argsstring>
+        <name>buffer_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a93714a2d6de43676c34b07af3493830d" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1buffer__reader" kindref="compound">buffer_reader</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;buffer_reader&gt; gr::buffer_reader_sptr</definition>
+        <argsstring></argsstring>
+        <name>buffer_reader_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1af6a8fb2c23cf7c113bb1b5b4249ef105" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1hier__block2" kindref="compound">hier_block2</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;hier_block2&gt; gr::hier_block2_sptr</definition>
+        <argsstring></argsstring>
+        <name>hier_block2_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1ac66176f3c6164480a4956303752a3df9" prot="public" static="no">
+        <type>boost::shared_ptr&lt; flat_flowgraph &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;flat_flowgraph&gt; gr::flat_flowgraph_sptr</definition>
+        <argsstring></argsstring>
+        <name>flat_flowgraph_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a099dd4c6787dfc0ecd2d1ee3b893980c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1flowgraph" kindref="compound">flowgraph</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;flowgraph&gt; gr::flowgraph_sptr</definition>
+        <argsstring></argsstring>
+        <name>flowgraph_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacegr_1a525140fe1b24f760ace21667f234a314" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1top__block" kindref="compound">top_block</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;top_block&gt; gr::top_block_sptr</definition>
+        <argsstring></argsstring>
+        <name>top_block_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/runtime_types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1a770c4f4388aa767e82909c75d4500dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::operator&lt;</definition>
+        <argsstring>(basic_block_sptr lhs, basic_block_sptr rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="389" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" bodystart="389" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1af9583c03d1dadfa39d20c875c854537e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::basic_block_ncurrently_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>basic_block_ncurrently_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="397" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1afad17e5f962bc764e6d7032727ebb6c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, basic_block_sptr basic_block)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>basic_block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="399" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" bodystart="399" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a643bec1ce0b29daee7fefc2ac4682da9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+        <definition>block_sptr gr::cast_to_block_sptr</definition>
+        <argsstring>(basic_block_sptr p)</argsstring>
+        <name>cast_to_block_sptr</name>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="889" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" bodystart="889" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1abc947ebdf00d25e27f4085da178a90ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> std::ostream &amp;</type>
+        <definition>GR_RUNTIME_API std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const block *m)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1block" kindref="compound">block</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block.h" line="894" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a29b23b9fc21b9d16a5dce44350aa70e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1aaa005f291300aafaf243756f151ef65a" kindref="member">block_detail_sptr</ref></type>
+        <definition>GR_RUNTIME_API block_detail_sptr gr::make_block_detail</definition>
+        <argsstring>(unsigned int ninputs, unsigned int noutputs)</argsstring>
+        <name>make_block_detail</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ninputs</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>noutputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_detail.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ad8b2ed1168d521c7d3b76ab47b0361a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::block_detail_ncurrently_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>block_detail_ncurrently_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/block_detail.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1af8227c84f0950cb5014e12cf35bb216a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1aee8990ae0b072c732eb7f07d47796a33" kindref="member">buffer_sptr</ref></type>
+        <definition>GR_RUNTIME_API buffer_sptr gr::make_buffer</definition>
+        <argsstring>(int nitems, size_t sizeof_item, block_sptr link=block_sptr())</argsstring>
+        <name>make_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_item</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+          <declname>link</declname>
+          <defval><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Allocate a buffer that holds at least <computeroutput>nitems</computeroutput> of size <computeroutput>sizeof_item</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The total size of the buffer will be rounded up to a system dependent boundary. This is typically the system page size, but under MS windows is 64KB.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the minimum number of items the buffer will hold. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the size of an item in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the block that writes to this buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a79e630221e954699fcb8d3c277669dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a93714a2d6de43676c34b07af3493830d" kindref="member">buffer_reader_sptr</ref></type>
+        <definition>GR_RUNTIME_API buffer_reader_sptr gr::buffer_add_reader</definition>
+        <argsstring>(buffer_sptr buf, int nzero_preload, block_sptr link=block_sptr(), int delay=0)</argsstring>
+        <name>buffer_add_reader</name>
+        <param>
+          <type><ref refid="namespacegr_1aee8990ae0b072c732eb7f07d47796a33" kindref="member">buffer_sptr</ref></type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nzero_preload</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+          <declname>link</declname>
+          <defval><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref>()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref> and attach it to buffer <computeroutput>buf</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the buffer the <computeroutput><ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref></computeroutput> reads from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nzero_preload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> number of zero items to &quot;preload&quot; into buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the block that reads from the buffer using this <ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional setting to declare the buffer&apos;s sample delay. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1af507594d5762a3647057fc3db75e0364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::buffer_ncurrently_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>buffer_ncurrently_allocated</name>
+        <briefdescription>
+<para>returns # of buffers currently allocated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a748a048047518f56ba7933e4a3f7b8f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::buffer_reader_ncurrently_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>buffer_reader_ncurrently_allocated</name>
+        <briefdescription>
+<para>returns # of buffer_readers currently allocated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a5d7bbb6cb2cc00fff38b4e87ea3b23cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::prefix</definition>
+        <argsstring>()</argsstring>
+        <name>prefix</name>
+        <briefdescription>
+<para>return SYSCONFDIR. Typically ${CMAKE_INSTALL_PREFIX}/etc or /etc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a1f8807471b012b59096121a4801291e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::sysconfdir</definition>
+        <argsstring>()</argsstring>
+        <name>sysconfdir</name>
+        <briefdescription>
+<para>return SYSCONFDIR. Typically ${CMAKE_INSTALL_PREFIX}/etc or /etc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a55fdd52957939ca469189edb7e410e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::prefsdir</definition>
+        <argsstring>()</argsstring>
+        <name>prefsdir</name>
+        <briefdescription>
+<para>return preferences file directory. Typically ${SYSCONFDIR}/etc/conf.d </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ac11abab63b17c2c3671b31607395a628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::build_date</definition>
+        <argsstring>()</argsstring>
+        <name>build_date</name>
+        <briefdescription>
+<para>return date/time of build, as set when &apos;cmake&apos; is run </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a8342b24244398a8cbe005cc8320b2a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::version</definition>
+        <argsstring>()</argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>return version string defined by cmake (GrVersion.cmake) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a63d71d30b9f5678ea860850a5f9591d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::major_version</definition>
+        <argsstring>()</argsstring>
+        <name>major_version</name>
+        <briefdescription>
+<para>return just the major version defined by cmake </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a3f208b3f972e98f5d564dae5e26592f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::api_version</definition>
+        <argsstring>()</argsstring>
+        <name>api_version</name>
+        <briefdescription>
+<para>return just the api version defined by cmake </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a2ac1a2adc3f50b27ae22b3aa28e3a62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::minor_version</definition>
+        <argsstring>()</argsstring>
+        <name>minor_version</name>
+        <briefdescription>
+<para>returnjust the minor version defined by cmake </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a411d091fb28920faaa3c607cc76fc7da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::c_compiler</definition>
+        <argsstring>()</argsstring>
+        <name>c_compiler</name>
+        <briefdescription>
+<para>return C compiler used to build this version of GNU Radio </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1acfbe53d42f09720f348d307bc861153e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::cxx_compiler</definition>
+        <argsstring>()</argsstring>
+        <name>cxx_compiler</name>
+        <briefdescription>
+<para>return C++ compiler used to build this version of GNU Radio </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a162f4208f7e97fa8ed4658b081c53101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::compiler_flags</definition>
+        <argsstring>()</argsstring>
+        <name>compiler_flags</name>
+        <briefdescription>
+<para>return C and C++ compiler flags used to build this version of GNU Radio </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1af402b4ec463fe67d9021ec60680b9a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const std::string</type>
+        <definition>GR_RUNTIME_API const std::string gr::build_time_enabled_components</definition>
+        <argsstring>()</argsstring>
+        <name>build_time_enabled_components</name>
+        <briefdescription>
+<para>return build-time enabled components </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/constants.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aa2e44feae9c6ec9dc20f0b1262245c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> double</type>
+        <definition>GR_RUNTIME_API double gr::feval_dd_example</definition>
+        <argsstring>(feval_dd *f, double x)</argsstring>
+        <name>feval_dd_example</name>
+        <param>
+          <type><ref refid="classgr_1_1feval__dd" kindref="compound">feval_dd</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>trivial examples / test cases showing C++ calling Python code </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a1b6b1659336339a61153542614cad5d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>GR_RUNTIME_API gr_complex gr::feval_cc_example</definition>
+        <argsstring>(feval_cc *f, gr_complex x)</argsstring>
+        <name>feval_cc_example</name>
+        <param>
+          <type><ref refid="classgr_1_1feval__cc" kindref="compound">feval_cc</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a0cbf8fa614334184f291ba641ba32b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::feval_ll_example</definition>
+        <argsstring>(feval_ll *f, long x)</argsstring>
+        <name>feval_ll_example</name>
+        <param>
+          <type><ref refid="classgr_1_1feval__ll" kindref="compound">feval_ll</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a0a98285b7d839c0e7db313304a8c6838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> void</type>
+        <definition>GR_RUNTIME_API void gr::feval_example</definition>
+        <argsstring>(feval *f)</argsstring>
+        <name>feval_example</name>
+        <param>
+          <type><ref refid="classgr_1_1feval" kindref="compound">feval</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/feval.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ac7b35067e04b79bb576f11810ab3d01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a099dd4c6787dfc0ecd2d1ee3b893980c" kindref="member">flowgraph_sptr</ref></type>
+        <definition>GR_RUNTIME_API flowgraph_sptr gr::make_flowgraph</definition>
+        <argsstring>()</argsstring>
+        <name>make_flowgraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a268fb6b7280edddeab19e9bd542bfdfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const endpoint endp)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1endpoint" kindref="compound">endpoint</ref></type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="286" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="287" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a8925f8a4f072870ac43771074969be8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const edge edge)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1edge" kindref="compound">edge</ref></type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="293" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="294" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a545fa866cd7f603ba8f059c845fb46db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const msg_endpoint endp)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1msg__endpoint" kindref="compound">msg_endpoint</ref></type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="300" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="301" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a7ecb08450ec1cbbd0c9e5b7bcf1007be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gr::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const msg_edge edge)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgr_1_1msg__edge" kindref="compound">msg_edge</ref></type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="307" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" bodystart="308" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a1d2b4bea09630779a13238c48256744f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gr::dot_graph_fg</definition>
+        <argsstring>(flowgraph_sptr fg)</argsstring>
+        <name>dot_graph_fg</name>
+        <param>
+          <type><ref refid="namespacegr_1a099dd4c6787dfc0ecd2d1ee3b893980c" kindref="member">flowgraph_sptr</ref></type>
+          <declname>fg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/flowgraph.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a1c109ac3a4a8aee25bac68b626faa483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1af6a8fb2c23cf7c113bb1b5b4249ef105" kindref="member">hier_block2_sptr</ref></type>
+        <definition>GR_RUNTIME_API hier_block2_sptr gr::make_hier_block2</definition>
+        <argsstring>(const std::string &amp;name, gr::io_signature::sptr input_signature, gr::io_signature::sptr output_signature)</argsstring>
+        <name>make_hier_block2</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref></type>
+          <declname>input_signature</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1io__signature_1a7da6c549a1de5d27baaea042f8dd6dc1" kindref="member">gr::io_signature::sptr</ref></type>
+          <declname>output_signature</declname>
+        </param>
+        <briefdescription>
+<para>public constructor for <ref refid="classgr_1_1hier__block2" kindref="compound">hier_block2</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/hier_block2.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a90aad73fa8d8f44b4cc73753906b59a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> std::string</type>
+        <definition>GR_RUNTIME_API std::string gr::dot_graph</definition>
+        <argsstring>(hier_block2_sptr hierblock2)</argsstring>
+        <name>dot_graph</name>
+        <param>
+          <type><ref refid="namespacegr_1af6a8fb2c23cf7c113bb1b5b4249ef105" kindref="member">hier_block2_sptr</ref></type>
+          <declname>hierblock2</declname>
+        </param>
+        <briefdescription>
+<para>Return hierarchical block&apos;s flow graph represented in dot language. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/hier_block2.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1af7c457bd50878cd8c6040a5c31f87ca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1af6a8fb2c23cf7c113bb1b5b4249ef105" kindref="member">hier_block2_sptr</ref></type>
+        <definition>hier_block2_sptr gr::cast_to_hier_block2_sptr</definition>
+        <argsstring>(basic_block_sptr block)</argsstring>
+        <name>cast_to_hier_block2_sptr</name>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/hier_block2.h" line="291" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/hier_block2.h" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a89e20ebe31e60cb89a898e95abc214ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type gr::high_res_timer_now</definition>
+        <argsstring>(void)</argsstring>
+        <name>high_res_timer_now</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the current time in ticks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a948ad62b2bf5af931bdf3208ed842deb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type gr::high_res_timer_now_perfmon</definition>
+        <argsstring>(void)</argsstring>
+        <name>high_res_timer_now_perfmon</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the current time in ticks - for performance monitoring. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" line="55" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a929f45f159af9ecb21c42e9c3addc622" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type gr::high_res_timer_tps</definition>
+        <argsstring>(void)</argsstring>
+        <name>high_res_timer_tps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the number of ticks per second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aaca61766f7d6b04dc83030497a38317f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type gr::high_res_timer_epoch</definition>
+        <argsstring>(void)</argsstring>
+        <name>high_res_timer_epoch</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the tick count at the epoch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/high_res_timer.h" bodystart="150" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1adac12787bc9ff687f3b8010e28dbade6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gr::is_power_of_2</definition>
+        <argsstring>(long x)</argsstring>
+        <name>is_power_of_2</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a6c1470346a3524989b7a8a3639aa79a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> float</type>
+        <definition>GR_RUNTIME_API float gr::fast_atan2f</definition>
+        <argsstring>(float y, float x)</argsstring>
+        <name>fast_atan2f</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Fast arc tangent using table lookup and linear interpolation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>component of input vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>component of input vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float angle angle of vector (x, y) in radians</para></simplesect>
+This function calculates the angle of the vector (x,y) based on a table lookup and linear interpolation. The table uses a 256 point table covering -45 to +45 degrees and uses symmetry to determine the final angle value in the range of -180 to 180 degrees. Note that this function uses the small angle approximation for values close to zero. This routine calculates the arc tangent with an average error of +/- 0.045 degrees. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a54dfb94944c3723997cd4fb461eb06b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float gr::fast_atan2f</definition>
+        <argsstring>(gr_complex z)</argsstring>
+        <name>fast_atan2f</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ace35e8c3e3ad45a5100217d2b6826e1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float gr::branchless_clip</definition>
+        <argsstring>(float x, float clip)</argsstring>
+        <name>branchless_clip</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a854b0614f4de9b30b50b3f72b08fb372" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float gr::clip</definition>
+        <argsstring>(float x, float clip)</argsstring>
+        <name>clip</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a1647aaafa5d4cdaf83297d2ef4b4631f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::binary_slicer</definition>
+        <argsstring>(float x)</argsstring>
+        <name>binary_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="89" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a79a043ea31df74daec0ed58fcd30dbcb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::quad_45deg_slicer</definition>
+        <argsstring>(float r, float i)</argsstring>
+        <name>quad_45deg_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="98" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a4e67c69d040169f765bc7a59ff2288a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::quad_0deg_slicer</definition>
+        <argsstring>(float r, float i)</argsstring>
+        <name>quad_0deg_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="113" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="113" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ad9d3eef41adef1882b0e3924f468d667" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::quad_45deg_slicer</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>quad_45deg_slicer</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="133" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ab4818e44004d1544a95fde2f6c4104e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::quad_0deg_slicer</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>quad_0deg_slicer</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="139" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ad3dc8d79e633ebe6e93f5e68187b8c6b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::branchless_binary_slicer</definition>
+        <argsstring>(float x)</argsstring>
+        <name>branchless_binary_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="146" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a9f3e7d8802ace93c1f3db54e7e233c18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::branchless_quad_0deg_slicer</definition>
+        <argsstring>(float r, float i)</argsstring>
+        <name>branchless_quad_0deg_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="152" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="152" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aa5c066cc69bb1e374f91ede3d8038ce0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::branchless_quad_0deg_slicer</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>branchless_quad_0deg_slicer</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="162" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a3abcc3ece33519067326dfa6691f6acc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::branchless_quad_45deg_slicer</definition>
+        <argsstring>(float r, float i)</argsstring>
+        <name>branchless_quad_45deg_slicer</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="168" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="168" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a82b6aa0694bc39e59425766f0878fb57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gr::branchless_quad_45deg_slicer</definition>
+        <argsstring>(gr_complex x)</argsstring>
+        <name>branchless_quad_45deg_slicer</name>
+        <param>
+          <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="176" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a868e93c5070366155d31b5ba9273c135" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t gr::p2_round_down</definition>
+        <argsstring>(size_t x, size_t pow2)</argsstring>
+        <name>p2_round_down</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pow2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pow2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be a power of 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>x</computeroutput> rounded down to a multiple of <computeroutput>pow2</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="187" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a727ed604f3335973185548fde9be3360" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t gr::p2_round_up</definition>
+        <argsstring>(size_t x, size_t pow2)</argsstring>
+        <name>p2_round_up</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pow2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pow2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be a power of 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>x</computeroutput> rounded up to a multiple of <computeroutput>pow2</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="198" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ae8b39debde051621e6463da462221519" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t gr::p2_modulo</definition>
+        <argsstring>(size_t x, size_t pow2)</argsstring>
+        <name>p2_modulo</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pow2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pow2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be a power of 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>x</computeroutput> modulo <computeroutput>pow2</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="209" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aa84f6248ef92f2e07f8be408c8dcfbc2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t gr::p2_modulo_neg</definition>
+        <argsstring>(size_t x, size_t pow2)</argsstring>
+        <name>p2_modulo_neg</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pow2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pow2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be a power of 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>pow2</computeroutput> - (<computeroutput>x</computeroutput> modulo <computeroutput>pow2</computeroutput>). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="220" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1ae789814b1f6fb727f8be17568c3fa718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> long</type>
+        <definition>GR_RUNTIME_API long gr::message_ncurrently_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>message_ncurrently_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/message.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a247b4ca5ffc9ec61f82c5c455fbcb755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" kindref="member">rt_status_t</ref></type>
+        <definition>GR_RUNTIME_API rt_status_t gr::enable_realtime_scheduling</definition>
+        <argsstring>()</argsstring>
+        <name>enable_realtime_scheduling</name>
+        <briefdescription>
+<para>If possible, enable high-priority &quot;real time&quot; scheduling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a099d21e6203bf7ad09b648d9c8299d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> void</type>
+        <definition>GR_RUNTIME_API void gr::sincos</definition>
+        <argsstring>(double x, double *sin, double *cos)</argsstring>
+        <name>sincos</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>sin</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>cos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/sincos.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aa254de637456cdc476a79191eb660519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> void</type>
+        <definition>GR_RUNTIME_API void gr::sincosf</definition>
+        <argsstring>(float x, float *sin, float *cos)</argsstring>
+        <name>sincosf</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>sin</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>cos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/sincos.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1abf0efe2e5cf8ff1864cadc25207b9a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const char *</type>
+        <definition>GR_RUNTIME_API const char* gr::tmp_path</definition>
+        <argsstring>()</argsstring>
+        <name>tmp_path</name>
+        <briefdescription>
+<para>directory to create temporary files </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/sys_paths.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a29ae30feb71b95139892ed26d5b9d6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const char *</type>
+        <definition>GR_RUNTIME_API const char* gr::appdata_path</definition>
+        <argsstring>()</argsstring>
+        <name>appdata_path</name>
+        <briefdescription>
+<para>directory to store application data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/sys_paths.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aaa9be33db8db83ea30d9ba5cfd3dafc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> const char *</type>
+        <definition>GR_RUNTIME_API const char* gr::userconf_path</definition>
+        <argsstring>()</argsstring>
+        <name>userconf_path</name>
+        <briefdescription>
+<para>directory to store user configuration </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/sys_paths.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1aaf6656b96f6c40adf044ec6e3280b171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a525140fe1b24f760ace21667f234a314" kindref="member">top_block_sptr</ref></type>
+        <definition>GR_RUNTIME_API top_block_sptr gr::make_top_block</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>make_top_block</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/top_block.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1a6c49f447455d7d94b058960bae894f4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1a525140fe1b24f760ace21667f234a314" kindref="member">top_block_sptr</ref></type>
+        <definition>top_block_sptr gr::cast_to_top_block_sptr</definition>
+        <argsstring>(basic_block_sptr block)</argsstring>
+        <name>cast_to_top_block_sptr</name>
+        <param>
+          <type><ref refid="namespacegr_1af9445ec93e4ad7f4eae090015828bfb5" kindref="member">basic_block_sptr</ref></type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/top_block.h" line="146" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/top_block.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Include this header to use the message passing features. </para>    </briefdescription>
+    <detaileddescription>
+<para>System independent way to ask for realtime scheduling.</para><para><simplesect kind="see"><para><ref refid="sys__pri_8h" kindref="compound">sys_pri.h</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/basic_block.h" line="45" column="1"/>
+  </compounddef>
+</doxygen>

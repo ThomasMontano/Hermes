@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1ccsds__encoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::code::ccsds_encoder</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__encoder" prot="public" virt="virtual">gr::fec::generic_encoder</basecompoundref>
+    <includes refid="ccsds__encoder_8h" local="no">ccsds_encoder.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a7dba3cc717ecf9aec3c3628c7439fd72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" kindref="member">generic_encoder::sptr</ref></type>
+        <definition>static generic_encoder::sptr gr::fec::code::ccsds_encoder::make</definition>
+        <argsstring>(int frame_size, int start_state=0, cc_mode_t mode=CC_STREAMING)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_state</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="cc__common_8h_1a5a5e46642313c7ca087f49650efaca33" kindref="member">cc_mode_t</ref></type>
+          <declname>mode</declname>
+          <defval><ref refid="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aa0ac392555537d09c7cd3e678cdd97a97" kindref="member">CC_STREAMING</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build the CCSDS (rate=1/2, K=7, polys=[109,79] convolutional code FECAPI object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits per frame. If using in the tagged stream style, this is the maximum allowable number of bits per frame. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initialization state of the shift register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cc_mode_t mode of the encoding. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ccsds_encoder.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a8e5cfc9c4561f1796dec6e814d15607c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::fec::code::ccsds_encoder::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)=0</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1ac6a41c2f21012253a43cebc7e7b98039">set_frame_size</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the uncoded frame size to <computeroutput>frame_size</computeroutput>. If <computeroutput>frame_size</computeroutput> is greater than the value given to the constructor, the frame size will be capped by that initial value and this function will return false. Otherwise, it returns true. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ccsds_encoder.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a682e57ffcb1746d411e6b079b8dccc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::fec::code::ccsds_encoder::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a0c47f99e01942d4316b5b24619aab58c">rate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the coding rate of this encoder. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ccsds_encoder.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CCSDS Encoding class for convolutional encoding with rate 1/2, K=7, and polynomials [109, 79]. </para>    </briefdescription>
+    <detaileddescription>
+<para>Uses Phil Karn&apos;s (KA9Q) implementation of the CCSDS encoder for rate 1/2, K=7, and CC polynomial [109, 79]. These are non-adjustable in this encoder. For an adjustable CC encoder where we can set the rate, constraint length, and polynomial, see <ref refid="classgr_1_1fec_1_1code_1_1cc__encoder" kindref="compound">gr::fec::code::cc_encoder</ref>.</para><para>The encoder is set up with a number of bits per frame in the constructor. When not being used in a tagged stream mode, this encoder will only process frames of the length provided here. If used in a tagged stream block, this setting becomes the maximum allowable frame size that the block may process.</para><para>The <computeroutput>mode</computeroutput> is a cc_mode_t that specifies how the convolutional encoder will behave and under what conditions.</para><para><itemizedlist>
+<listitem><para>&apos;CC_STREAMING&apos;: mode expects an uninterrupted flow of samples into the encoder, and the output stream is continually encoded.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TERMINATED&apos;: is a mode designed for packet-based systems. This mode adds rate*(k-1) bits to the output as a way to help flush the decoder.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TAILBITING&apos;: is another packet-based method. Instead of adding bits onto the end of the packet, this mode will continue the code between the payloads of packets by pre-initializing the state of the new packet based on the state of the last packet for (k-1) bits.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TRUNCATED&apos;: a truncated code always resets the registers to the <computeroutput>start_state</computeroutput> between frames.</para></listitem>
+</itemizedlist>
+A common convolutional encoder uses K=7, Rate=1/2, Polynomials=[109, 79]. This is the Voyager code from NASA: <itemizedlist>
+<listitem><para>109: b(1101101) <ndash/>&gt; 1 + x + x^3 + x^4 + x^6 </para></listitem>
+<listitem><para>79: b(1001111) <ndash/>&gt; 1 + x^3 + x^4 + x^5 + x^6 </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>gr::fec::code::ccsds_encoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ccsds__encoder"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>gr::fec::code::ccsds_encoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1ccsds__encoder"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="35">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>std::string</label>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ccsds_encoder.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/ccsds_encoder.h" bodystart="80" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a391cc2f87d40fac87feabdae40dd8f2a" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a5ae67e6fcab66da448cf5a1e97a7f70d" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a2425896d3a9b72896db338d2912ed0b4" prot="protected" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ab82cb684e9d420af266e7cbb13affe48" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a756957e732c8e4ee020175874e8ae280" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a80c72ef4103a41368b4f70dc3b008d23" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a1409bf4afed09c66fd0ad3c2b4fa0db7" prot="public" virt="pure-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1af6e5db8309dbdeb90133190fdbbc157d" prot="public" virt="virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a95db2880c3e02e52564ea6a04b6ee243" prot="public" virt="pure-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad8e7379baeed9ae5fe5c1e848a0a9fa7" prot="public" virt="virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1aa72462435284fc66d3b3a2a5b366f4ea" prot="public" virt="pure-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a7dba3cc717ecf9aec3c3628c7439fd72" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1afd01b295f144a57053e5b11a33fff5b6" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a682e57ffcb1746d411e6b079b8dccc60" prot="public" virt="pure-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1ccsds__encoder_1a8e5cfc9c4561f1796dec6e814d15607c" prot="public" virt="pure-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1adb02ab6b53b41fa0b0e65a51ca966f3b" prot="public" virt="non-virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a576c3fc45c1da7e8712272d556be6b23" prot="public" virt="virtual"><scope>gr::fec::code::ccsds_encoder</scope><name>~generic_encoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

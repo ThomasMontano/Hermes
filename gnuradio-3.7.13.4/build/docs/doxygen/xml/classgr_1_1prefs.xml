@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1prefs" kind="class" prot="public">
+    <compoundname>gr::prefs</compoundname>
+    <includes refid="prefs_8h" local="no">gnuradio/prefs.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1prefs_1a1a73553d76840d3679a076d7138ff132" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex gr::prefs::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="172" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1prefs_1a7b718f554550b9ac3d04ecbb6c3ee760" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1aa70f231a69b2f1353b11726cf605ebe1" kindref="member">config_map_t</ref></type>
+        <definition>config_map_t gr::prefs::d_config_map</definition>
+        <argsstring></argsstring>
+        <name>d_config_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="173" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1prefs" kindref="compound">prefs</ref> *</type>
+        <definition>static prefs* gr::prefs::singleton</definition>
+        <argsstring>()</argsstring>
+        <name>singleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="48" column="1"/>
+        <referencedby refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" compoundref="thrift__server__template_8h" startline="82" endline="143">thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::thrift_server_template</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1prefs_1a27b52c37b266b45bec334d85c46649de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::prefs::prefs</definition>
+        <argsstring>()</argsstring>
+        <name>prefs</name>
+        <briefdescription>
+<para>Creates an object to read preference files. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no file name is given (empty arg list or &quot;&quot;), this opens up the standard GNU Radio configuration files in prefix/etc/gnuradio/conf.d as well as ~/.gnuradio/config.conf.</para><para>Only access this through the singleton defined here: <programlisting><codeline><highlight class="normal"><ref refid="classgr_1_1prefs_1a27b52c37b266b45bec334d85c46649de" kindref="member">prefs</ref><sp/>*p<sp/>=<sp/><ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">prefs::singleton</ref>();</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a1b0d4e0d267115e40cb863e00c2e7d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::prefs::~prefs</definition>
+        <argsstring>()</argsstring>
+        <name>~prefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1ad900c0b8738236e90d42028dc447c844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::prefs::add_config_file</definition>
+        <argsstring>(const std::string &amp;configfile)</argsstring>
+        <name>add_config_file</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>configfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If specifying a file name, this opens that specific configuration file of the standard form containing sections and key-value pairs:</para><para><programlisting><codeline><highlight class="normal">[SectionName]</highlight></codeline>
+<codeline><highlight class="normal">key0<sp/>=<sp/>value0</highlight></codeline>
+<codeline><highlight class="normal">key1<sp/>=<sp/>value1</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="79" column="1"/>
+        <referencedby refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" compoundref="thrift__server__template_8h" startline="82" endline="143">thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::thrift_server_template</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a319c1fcc62e5988dfdc1b28dc15b7ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gr::prefs::to_string</definition>
+        <argsstring>()</argsstring>
+        <name>to_string</name>
+        <briefdescription>
+<para>Returns the configuration options as a string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1af67ade1a601658b5545a1b1a25f99217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::prefs::save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <briefdescription>
+<para>Saves the configuration settings to ${HOME}/.gnuradio/config.conf. </para>        </briefdescription>
+        <detaileddescription>
+<para>WARNING: this will overwrite your current config.conf file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a841342862327b276b0962d81300e7d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::prefs::has_section</definition>
+        <argsstring>(const std::string &amp;section)</argsstring>
+        <name>has_section</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <briefdescription>
+<para>Does <computeroutput>section</computeroutput> exist? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1ad163f2aa48ce473edb9d8bc7a401152a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::prefs::has_option</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option)</argsstring>
+        <name>has_option</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+<para>Does <computeroutput>option</computeroutput> exist? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a6f62d9d0edbb6a097c3f0a4b32db52bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const std::string</type>
+        <definition>virtual const std::string gr::prefs::get_string</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, const std::string &amp;default_val)</argsstring>
+        <name>get_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+<para>If option exists return associated value; else default_val. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="109" column="1"/>
+        <referencedby refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" compoundref="thrift__server__template_8h" startline="82" endline="143">thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::thrift_server_template</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1abd565c590be3964cf992662756fe0e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::prefs::set_string</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, const std::string &amp;val)</argsstring>
+        <name>set_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set or add a string <computeroutput>option</computeroutput> to <computeroutput>section</computeroutput> with value <computeroutput>val</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1acde24d8a59b85bfbc2a044284a5069d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::prefs::get_bool</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, bool default_val)</argsstring>
+        <name>get_bool</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+<para>If option exists and value can be converted to bool, return it; else default_val. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a16ad748bc90a60eea06c0f1ebde29574" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::prefs::set_bool</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, bool val)</argsstring>
+        <name>set_bool</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set or add a bool <computeroutput>option</computeroutput> to <computeroutput>section</computeroutput> with value <computeroutput>val</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1ac323d54d0e2cc7aa40929a175b31f17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>virtual long gr::prefs::get_long</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, long default_val)</argsstring>
+        <name>get_long</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+<para>If option exists and value can be converted to long, return it; else default_val. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="140" column="1"/>
+        <referencedby refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" compoundref="thrift__server__template_8h" startline="82" endline="143">thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::thrift_server_template</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a1842c98d9089e8b975b527e96c7d4964" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::prefs::set_long</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, long val)</argsstring>
+        <name>set_long</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set or add a long <computeroutput>option</computeroutput> to <computeroutput>section</computeroutput> with value <computeroutput>val</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a9604f7c58057b75a243cadc305f4924f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gr::prefs::get_double</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, double default_val)</argsstring>
+        <name>get_double</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>default_val</declname>
+        </param>
+        <briefdescription>
+<para>If option exists and value can be converted to double, return it; else default_val. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1aead51ff278625c612d13dd32fbd6e709" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::prefs::set_double</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;option, double val)</argsstring>
+        <name>set_double</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set or add a double <computeroutput>option</computeroutput> to <computeroutput>section</computeroutput> with value <computeroutput>val</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="162" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1prefs_1a66ada5db930e9fe315bfcdd1df1f5b2e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; gr::prefs::_sys_prefs_filenames</definition>
+        <argsstring>()</argsstring>
+        <name>_sys_prefs_filenames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a3795da2cb3d114abd471982521d2c9e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::prefs::_read_files</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;filenames)</argsstring>
+        <name>_read_files</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>filenames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1prefs_1a82bea49dc271bd57b0ec733210e9507d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char *</type>
+        <definition>virtual char* gr::prefs::option_to_env</definition>
+        <argsstring>(std::string section, std::string option)</argsstring>
+        <name>option_to_env</name>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="169" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for representing user preferences a la windows INI files.</para><para>The real implementation is in Python, and is accessible from C++ via the magic of SWIG directors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/prefs.h" bodystart="45" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classgr_1_1prefs_1a3795da2cb3d114abd471982521d2c9e7" prot="protected" virt="virtual"><scope>gr::prefs</scope><name>_read_files</name></member>
+      <member refid="classgr_1_1prefs_1a66ada5db930e9fe315bfcdd1df1f5b2e" prot="protected" virt="virtual"><scope>gr::prefs</scope><name>_sys_prefs_filenames</name></member>
+      <member refid="classgr_1_1prefs_1ad900c0b8738236e90d42028dc447c844" prot="public" virt="non-virtual"><scope>gr::prefs</scope><name>add_config_file</name></member>
+      <member refid="classgr_1_1prefs_1a7b718f554550b9ac3d04ecbb6c3ee760" prot="private" virt="non-virtual"><scope>gr::prefs</scope><name>d_config_map</name></member>
+      <member refid="classgr_1_1prefs_1a1a73553d76840d3679a076d7138ff132" prot="private" virt="non-virtual"><scope>gr::prefs</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1prefs_1acde24d8a59b85bfbc2a044284a5069d4" prot="public" virt="virtual"><scope>gr::prefs</scope><name>get_bool</name></member>
+      <member refid="classgr_1_1prefs_1a9604f7c58057b75a243cadc305f4924f" prot="public" virt="virtual"><scope>gr::prefs</scope><name>get_double</name></member>
+      <member refid="classgr_1_1prefs_1ac323d54d0e2cc7aa40929a175b31f17e" prot="public" virt="virtual"><scope>gr::prefs</scope><name>get_long</name></member>
+      <member refid="classgr_1_1prefs_1a6f62d9d0edbb6a097c3f0a4b32db52bd" prot="public" virt="virtual"><scope>gr::prefs</scope><name>get_string</name></member>
+      <member refid="classgr_1_1prefs_1ad163f2aa48ce473edb9d8bc7a401152a" prot="public" virt="virtual"><scope>gr::prefs</scope><name>has_option</name></member>
+      <member refid="classgr_1_1prefs_1a841342862327b276b0962d81300e7d4f" prot="public" virt="virtual"><scope>gr::prefs</scope><name>has_section</name></member>
+      <member refid="classgr_1_1prefs_1a82bea49dc271bd57b0ec733210e9507d" prot="protected" virt="virtual"><scope>gr::prefs</scope><name>option_to_env</name></member>
+      <member refid="classgr_1_1prefs_1a27b52c37b266b45bec334d85c46649de" prot="public" virt="non-virtual"><scope>gr::prefs</scope><name>prefs</name></member>
+      <member refid="classgr_1_1prefs_1af67ade1a601658b5545a1b1a25f99217" prot="public" virt="non-virtual"><scope>gr::prefs</scope><name>save</name></member>
+      <member refid="classgr_1_1prefs_1a16ad748bc90a60eea06c0f1ebde29574" prot="public" virt="virtual"><scope>gr::prefs</scope><name>set_bool</name></member>
+      <member refid="classgr_1_1prefs_1aead51ff278625c612d13dd32fbd6e709" prot="public" virt="virtual"><scope>gr::prefs</scope><name>set_double</name></member>
+      <member refid="classgr_1_1prefs_1a1842c98d9089e8b975b527e96c7d4964" prot="public" virt="virtual"><scope>gr::prefs</scope><name>set_long</name></member>
+      <member refid="classgr_1_1prefs_1abd565c590be3964cf992662756fe0e20" prot="public" virt="virtual"><scope>gr::prefs</scope><name>set_string</name></member>
+      <member refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" prot="public" virt="non-virtual"><scope>gr::prefs</scope><name>singleton</name></member>
+      <member refid="classgr_1_1prefs_1a319c1fcc62e5988dfdc1b28dc15b7ccd" prot="public" virt="non-virtual"><scope>gr::prefs</scope><name>to_string</name></member>
+      <member refid="classgr_1_1prefs_1a1b0d4e0d267115e40cb863e00c2e7d90" prot="public" virt="virtual"><scope>gr::prefs</scope><name>~prefs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

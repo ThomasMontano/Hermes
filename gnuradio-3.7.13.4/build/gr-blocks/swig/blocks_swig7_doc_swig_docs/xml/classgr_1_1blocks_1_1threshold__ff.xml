@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1threshold__ff" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::threshold_ff</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="threshold__ff_8h" local="no">threshold_ff.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1threshold__ff_1af36b9ca4040f4457a3dfc215125f9c09" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1threshold__ff" kindref="compound">threshold_ff</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;threshold_ff&gt; gr::blocks::threshold_ff::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1a92d2633f33d83cfdc5139d7325f549dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1threshold__ff_1af36b9ca4040f4457a3dfc215125f9c09" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::threshold_ff::make</definition>
+        <argsstring>(float lo, float hi, float initial_state=0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hi</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initial_state</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1a5a63f908ea961c17595cbaeb85d66556" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::threshold_ff::lo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>lo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1adfd6259044746d0bc4d7ecd948443874" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::threshold_ff::set_lo</definition>
+        <argsstring>(float lo)=0</argsstring>
+        <name>set_lo</name>
+        <param>
+          <type>float</type>
+          <declname>lo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1a45f8ae4a7f95ab35aed964868c7ce5da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::threshold_ff::hi</definition>
+        <argsstring>() const =0</argsstring>
+        <name>hi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1af58f1490cc40dbdd849fb3f0ecd3c1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::threshold_ff::set_hi</definition>
+        <argsstring>(float hi)=0</argsstring>
+        <name>set_hi</name>
+        <param>
+          <type>float</type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1aae3260bbaaf34af5e2b8d2630d03f31e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::blocks::threshold_ff::last_state</definition>
+        <argsstring>() const =0</argsstring>
+        <name>last_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1threshold__ff_1a2c54b79f89ac9295237dce24e80648b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::threshold_ff::set_last_state</definition>
+        <argsstring>(float last_state)=0</argsstring>
+        <name>set_last_state</name>
+        <param>
+          <type>float</type>
+          <declname>last_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Output a 1 or zero based on a threshold value. </para>    </briefdescription>
+    <detaileddescription>
+<para>Test the incoming signal against a threshold. If the signal excedes the <computeroutput>hi</computeroutput> value, it will output a 1 until the signal falls below the <computeroutput>lo</computeroutput> value. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="784">
+        <label>gr::blocks::threshold_ff</label>
+        <link refid="classgr_1_1blocks_1_1threshold__ff"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="786">
+        <label>gr::blocks::threshold_ff</label>
+        <link refid="classgr_1_1blocks_1_1threshold__ff"/>
+        <childnode refid="787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="787">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/threshold_ff.h" bodystart="41" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1a45f8ae4a7f95ab35aed964868c7ce5da" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>hi</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1aae3260bbaaf34af5e2b8d2630d03f31e" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>last_state</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1a5a63f908ea961c17595cbaeb85d66556" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>lo</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1a92d2633f33d83cfdc5139d7325f549dd" prot="public" virt="non-virtual"><scope>gr::blocks::threshold_ff</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1af58f1490cc40dbdd849fb3f0ecd3c1be" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>set_hi</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1a2c54b79f89ac9295237dce24e80648b5" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>set_last_state</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1adfd6259044746d0bc4d7ecd948443874" prot="public" virt="pure-virtual"><scope>gr::blocks::threshold_ff</scope><name>set_lo</name></member>
+      <member refid="classgr_1_1blocks_1_1threshold__ff_1af36b9ca4040f4457a3dfc215125f9c09" prot="public" virt="non-virtual"><scope>gr::blocks::threshold_ff</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

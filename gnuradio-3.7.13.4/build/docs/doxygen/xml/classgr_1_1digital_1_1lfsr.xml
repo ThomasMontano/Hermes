@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1lfsr" kind="class" prot="public">
+    <compoundname>gr::digital::lfsr</compoundname>
+    <includes refid="lfsr_8h" local="no">gnuradio/digital/lfsr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1lfsr_1a18bf703f0de9df879223c6c4c2f1f8f9" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::digital::lfsr::d_shift_register</definition>
+        <argsstring></argsstring>
+        <name>d_shift_register</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="93" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1lfsr_1af5aa95325fe88f8a45019430f22bee0e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::digital::lfsr::d_mask</definition>
+        <argsstring></argsstring>
+        <name>d_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="94" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1lfsr_1adcf134765de03434278bb449c5a53e79" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::digital::lfsr::d_seed</definition>
+        <argsstring></argsstring>
+        <name>d_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="95" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1lfsr_1a02a903eecd04704c20d41556a86595c4" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::digital::lfsr::d_shift_register_length</definition>
+        <argsstring></argsstring>
+        <name>d_shift_register_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="96" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1adb35d901e2edbe0151a52662947877bb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t gr::digital::lfsr::popCount</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>popCount</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a07fbc0246427ae29d6a17f7428298f69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::lfsr::lfsr</definition>
+        <argsstring>(uint32_t mask, uint32_t seed, uint32_t reg_len)</argsstring>
+        <name>lfsr</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>reg_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="107" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="107" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a897d05ff702efec35d78a32d81014018" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::digital::lfsr::next_bit</definition>
+        <argsstring>()</argsstring>
+        <name>next_bit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="117" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="117" bodyend="123"/>
+        <referencedby refid="classgr_1_1digital_1_1lfsr_1a395d0211a0d9bab3caf1630a2a6c6838" compoundref="lfsr_8h" startline="150" endline="155">pre_shift</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1aee5eb28c0df04c0f0101a24a41b2c4d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::digital::lfsr::next_bit_scramble</definition>
+        <argsstring>(unsigned char input)</argsstring>
+        <name>next_bit_scramble</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="125" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a86c32820b1fc82e27ca05c9b024abce7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::digital::lfsr::next_bit_descramble</definition>
+        <argsstring>(unsigned char input)</argsstring>
+        <name>next_bit_descramble</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="133" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="133" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a4467de83dae0826b576eec486da8bf83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::lfsr::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset shift register to initial seed value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="144" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a395d0211a0d9bab3caf1630a2a6c6838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::digital::lfsr::pre_shift</definition>
+        <argsstring>(int num)</argsstring>
+        <name>pre_shift</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rotate the register through x number of bits where we are just throwing away the results to get queued up correctly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="150" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="150" bodyend="155"/>
+        <references refid="classgr_1_1digital_1_1lfsr_1a897d05ff702efec35d78a32d81014018" compoundref="lfsr_8h" startline="117" endline="123">next_bit</references>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1lfsr_1a1c1892382c1bcd8c09e0b60775459aea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::digital::lfsr::mask</definition>
+        <argsstring>() const </argsstring>
+        <name>mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="157" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fibonacci Linear Feedback Shift Register using specified polynomial mask. </para>    </briefdescription>
+    <detaileddescription>
+<para>Generates a maximal length pseudo-random sequence of length 2^degree-1</para><para>Constructor: digital::lfsr(int mask, int seed, int reg_len);</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- polynomial coefficients representing the locations of feedback taps from a shift register which are xor&apos;ed together to form the new high order bit.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Some common masks might be: x^4 + x^3 + x^0 = 0x19 x^5 + x^3 + x^0 = 0x29 x^6 + x^5 + x^0 = 0x61</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the initialization vector placed into the register during initialization. Low order bit corresponds to x^0 coefficient <ndash/> the first to be shifted as output.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reg_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- specifies the length of the feedback shift register to be used. During each iteration, the register is rightshifted one and the new bit is placed in bit reg_len. reg_len should generally be at least order(mask) + 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+see <ulink url="http://en.wikipedia.org/wiki/Linear_feedback_shift_register">http://en.wikipedia.org/wiki/Linear_feedback_shift_register</ulink> for more explanation.</para><para><ref refid="classgr_1_1digital_1_1lfsr_1a897d05ff702efec35d78a32d81014018" kindref="member">next_bit()</ref> - Standard LFSR operation <verbatim>Perform one cycle of the LFSR.  The output bit is taken from
+the shift register LSB.  The shift register MSB is assigned from
+the modulo 2 sum of the masked shift register.
+</verbatim></para><para><ref refid="classgr_1_1digital_1_1lfsr_1aee5eb28c0df04c0f0101a24a41b2c4d0" kindref="member">next_bit_scramble(unsigned char input)</ref> - Scramble an input stream <verbatim>Perform one cycle of the LFSR.  The output bit is taken from
+the shift register LSB.  The shift register MSB is assigned from
+the modulo 2 sum of the masked shift register and the input LSB.
+</verbatim></para><para><ref refid="classgr_1_1digital_1_1lfsr_1a86c32820b1fc82e27ca05c9b024abce7" kindref="member">next_bit_descramble(unsigned char input)</ref> - Descramble an input stream <verbatim>Perform one cycle of the LFSR.  The output bit is taken from
+the modulo 2 sum of the masked shift register and the input LSB.
+The shift register MSB is assigned from the LSB of the input.
+</verbatim></para><para>See <ulink url="http://en.wikipedia.org/wiki/Scrambler">http://en.wikipedia.org/wiki/Scrambler</ulink> for operation of these last two functions (see multiplicative scrambler.) </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" line="91" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/lfsr.h" bodystart="90" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1lfsr_1af5aa95325fe88f8a45019430f22bee0e" prot="private" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>d_mask</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1adcf134765de03434278bb449c5a53e79" prot="private" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>d_seed</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a18bf703f0de9df879223c6c4c2f1f8f9" prot="private" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>d_shift_register</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a02a903eecd04704c20d41556a86595c4" prot="private" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>d_shift_register_length</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a07fbc0246427ae29d6a17f7428298f69" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>lfsr</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a1c1892382c1bcd8c09e0b60775459aea" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>mask</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a897d05ff702efec35d78a32d81014018" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>next_bit</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a86c32820b1fc82e27ca05c9b024abce7" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>next_bit_descramble</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1aee5eb28c0df04c0f0101a24a41b2c4d0" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>next_bit_scramble</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1adb35d901e2edbe0151a52662947877bb" prot="private" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>popCount</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a395d0211a0d9bab3caf1630a2a6c6838" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>pre_shift</name></member>
+      <member refid="classgr_1_1digital_1_1lfsr_1a4467de83dae0826b576eec486da8bf83" prot="public" virt="non-virtual"><scope>gr::digital::lfsr</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

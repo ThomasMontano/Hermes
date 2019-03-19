@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1analog_1_1kernel_1_1agc__ff" kind="class" prot="public">
+    <compoundname>gr::analog::kernel::agc_ff</compoundname>
+    <includes refid="agc_8h" local="no">gnuradio/analog/agc.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a877b951ebc50ac4c5ea9c3110100a167" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::_rate</definition>
+        <argsstring></argsstring>
+        <name>_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="144" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a687e123e1a0fe95c34a36e04b0a747cb" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::_reference</definition>
+        <argsstring></argsstring>
+        <name>_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="145" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a01b33b93967f3248a632ea0bd5f1d418" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::_gain</definition>
+        <argsstring></argsstring>
+        <name>_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="146" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a649bee86a424f55947be3e86c1ade614" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::_max_gain</definition>
+        <argsstring></argsstring>
+        <name>_max_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="147" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a7e630cae2f3db5f27571ad2a7537f5ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::analog::kernel::agc_ff::agc_ff</definition>
+        <argsstring>(float rate=1e-4, float reference=1.0, float gain=1.0, float max_gain=0.0)</argsstring>
+        <name>agc_ff</name>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+          <defval>1e-4</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>reference</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_gain</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a floating point value AGC loop implementation object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the update rate of the loop. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference value to adjust signal power to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial gain value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum gain value (0 for unlimited). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="111" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a284bde5afce31c745cbb54db502a3882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::analog::kernel::agc_ff::~agc_ff</definition>
+        <argsstring>()</argsstring>
+        <name>~agc_ff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="116" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1ad097aa5d808e46141b33781ae2487998" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::rate</definition>
+        <argsstring>() const </argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="118" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a68541bc12e28d453e2a989e518945487" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::reference</definition>
+        <argsstring>() const </argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="119" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a8c9887969dbf5b2058b7098c939fd913" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::gain</definition>
+        <argsstring>() const </argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="120" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a6cea3683b21a24d923d23867e4d06583" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::max_gain</definition>
+        <argsstring>() const </argsstring>
+        <name>max_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="121" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1ab6690a261dfdae8c6271c1f775412410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::analog::kernel::agc_ff::set_rate</definition>
+        <argsstring>(float rate)</argsstring>
+        <name>set_rate</name>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="123" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a8e9a580ec979bda34e1ee5a597f0c865" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::analog::kernel::agc_ff::set_reference</definition>
+        <argsstring>(float reference)</argsstring>
+        <name>set_reference</name>
+        <param>
+          <type>float</type>
+          <declname>reference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="124" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a2e6411ed6ffa913f1d4d0c600bde78dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::analog::kernel::agc_ff::set_gain</definition>
+        <argsstring>(float gain)</argsstring>
+        <name>set_gain</name>
+        <param>
+          <type>float</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="125" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a752deb5e5d7635ef03556e6d430a887f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::analog::kernel::agc_ff::set_max_gain</definition>
+        <argsstring>(float max_gain)</argsstring>
+        <name>set_max_gain</name>
+        <param>
+          <type>float</type>
+          <declname>max_gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="126" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1ac29f2b6cc73ec720ab6f446fa6099189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::analog::kernel::agc_ff::scale</definition>
+        <argsstring>(float input)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1analog_1_1kernel_1_1agc__ff_1a6fa2a908077c29f20963c0c58d9a492b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::analog::kernel::agc_ff::scaleN</definition>
+        <argsstring>(float output[], const float input[], unsigned n)</argsstring>
+        <name>scaleN</name>
+        <param>
+          <type>float</type>
+          <declname>output</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="137" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="137" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>high performance Automatic Gain Control class for float signals. </para>    </briefdescription>
+    <detaileddescription>
+<para>Power is approximated by absolute value </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-analog/include/gnuradio/analog/agc.h" bodystart="100" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a01b33b93967f3248a632ea0bd5f1d418" prot="protected" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>_gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a649bee86a424f55947be3e86c1ade614" prot="protected" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>_max_gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a877b951ebc50ac4c5ea9c3110100a167" prot="protected" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>_rate</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a687e123e1a0fe95c34a36e04b0a747cb" prot="protected" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>_reference</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a7e630cae2f3db5f27571ad2a7537f5ed" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>agc_ff</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a8c9887969dbf5b2058b7098c939fd913" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a6cea3683b21a24d923d23867e4d06583" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>max_gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1ad097aa5d808e46141b33781ae2487998" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>rate</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a68541bc12e28d453e2a989e518945487" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>reference</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1ac29f2b6cc73ec720ab6f446fa6099189" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>scale</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a6fa2a908077c29f20963c0c58d9a492b" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>scaleN</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a2e6411ed6ffa913f1d4d0c600bde78dc" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>set_gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a752deb5e5d7635ef03556e6d430a887f" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>set_max_gain</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1ab6690a261dfdae8c6271c1f775412410" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>set_rate</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a8e9a580ec979bda34e1ee5a597f0c865" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>set_reference</name></member>
+      <member refid="classgr_1_1analog_1_1kernel_1_1agc__ff_1a284bde5afce31c745cbb54db502a3882" prot="public" virt="non-virtual"><scope>gr::analog::kernel::agc_ff</scope><name>~agc_ff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1tag__share" kind="class" prot="public">
+    <compoundname>gr::blocks::tag_share</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="tag__share_8h" local="no">tag_share.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1tag__share_1afcaf9a1e9676feb9f7ba6aa682ce5102" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1tag__share" kindref="compound">tag_share</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;tag_share&gt; gr::blocks::tag_share::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_share.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_share.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1tag__share_1aac05b39a721528ce1ee55e7f12bd0726" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1tag__share_1afcaf9a1e9676feb9f7ba6aa682ce5102" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::tag_share::make</definition>
+        <argsstring>(size_t sizeof_io_item, size_t sizeof_share_item, size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_io_item</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_share_item</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizeof_io_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the Input 0/Output 0 stream type. Input 0 stream items will be directly copied to Output 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_share_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the Input 1 (tag share) stream type. This stream type does not have to match the input/output stream type. Tags from Input 1&apos;s items will be combined with Input 0&apos;s item tags and outputted on Output 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector size of the input and output stream items </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_share.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Adds tags from Input 1 onto Input 0&apos;s stream. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block utilizes the GNU Radio runtime&apos;s tag propagation policy to transfer or share Input 1&apos;s tags to Input 0&apos;s stream. This is useful when a signal is detected via a correlate_access_code_bb or a threshold crossing from a <ref refid="classgr_1_1blocks_1_1complex__to__mag__squared" kindref="compound">complex_to_mag_squared</ref> block. The tag from that detection is on the alternate stream, either bytes or floats. Often there is further signal processing that should be done on the complex stream. This block allows the detection tags to be added to the complex stream to trigger downstream processing without the need of redundant trigger inputs on all subsequent blocks. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="749">
+        <label>sync_block</label>
+      </node>
+      <node id="748">
+        <label>gr::blocks::tag_share</label>
+        <link refid="classgr_1_1blocks_1_1tag__share"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="751">
+        <label>sync_block</label>
+      </node>
+      <node id="750">
+        <label>gr::blocks::tag_share</label>
+        <link refid="classgr_1_1blocks_1_1tag__share"/>
+        <childnode refid="751" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_share.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/tag_share.h" bodystart="47" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1tag__share_1aac05b39a721528ce1ee55e7f12bd0726" prot="public" virt="non-virtual"><scope>gr::blocks::tag_share</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1tag__share_1afcaf9a1e9676feb9f7ba6aa682ce5102" prot="public" virt="non-virtual"><scope>gr::blocks::tag_share</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

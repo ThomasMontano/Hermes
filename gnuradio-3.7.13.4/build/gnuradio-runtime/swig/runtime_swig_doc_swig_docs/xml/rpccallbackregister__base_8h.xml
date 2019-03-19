@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="rpccallbackregister__base_8h" kind="file">
+    <compoundname>rpccallbackregister_base.h</compoundname>
+    <includes refid="messages_2msg__accepter_8h" local="no">gnuradio/messages/msg_accepter.h</includes>
+    <includes refid="msg__producer_8h" local="no">gnuradio/messages/msg_producer.h</includes>
+    <includedby refid="rpcserver__base_8h" local="no">rpcserver_base.h</includedby>
+    <incdepgraph>
+      <node id="1104">
+        <label>pmt/api.h</label>
+        <link refid="pmt_2api_8h"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>gnuradio/messages/msg_accepter.h</label>
+        <link refid="messages_2msg__accepter_8h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1102">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1105">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="1110">
+        <label>stdint.h</label>
+      </node>
+      <node id="1114">
+        <label>pmt/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>rpccallbackregister_base.h</label>
+        <link refid="rpccallbackregister_base.h"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>stdexcept</label>
+      </node>
+      <node id="1109">
+        <label>string</label>
+      </node>
+      <node id="1107">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="1113">
+        <label>vector</label>
+      </node>
+      <node id="1115">
+        <label>gnuradio/messages/msg_producer.h</label>
+        <link refid="msg__producer_8h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>pmt/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>iosfwd</label>
+      </node>
+      <node id="1108">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1121">
+        <label>rpcserver_booter_aggregator.h</label>
+        <link refid="rpcserver__booter__aggregator_8h"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>rpccallbackregister_base.h</label>
+        <link refid="rpccallbackregister_base.h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>rpcserver_thrift.h</label>
+        <link refid="rpcserver__thrift_8h"/>
+      </node>
+      <node id="1119">
+        <label>pycallback_object.h</label>
+        <link refid="pycallback__object_8h"/>
+      </node>
+      <node id="1118">
+        <label>rpcregisterhelpers.h</label>
+        <link refid="rpcregisterhelpers_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>rpcmanager.h</label>
+        <link refid="rpcmanager_8h"/>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>rpcserver_aggregator.h</label>
+        <link refid="rpcserver__aggregator_8h"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>rpcserver_base.h</label>
+        <link refid="rpcserver__base_8h"/>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcallbackregister__base" prot="public">callbackregister_base</innerclass>
+    <innerclass refid="structcallbackregister__base_1_1callback__base__t" prot="public">callbackregister_base::callback_base_t</innerclass>
+    <innerclass refid="classcallbackregister__base_1_1callback__t" prot="public">callbackregister_base::callback_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" prot="public" static="no">
+        <name>priv_lvl_t</name>
+        <enumvalue id="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096aa92525427b9ee991675cf4c3409ff214" prot="public">
+          <name>RPC_PRIVLVL_ALL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" prot="public">
+          <name>RPC_PRIVLVL_MIN</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096a68e3ee8aaf4edf52e08235409e536972" prot="public">
+          <name>RPC_PRIVLVL_NONE</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1" prot="public" static="no">
+        <name>KnobType</name>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ae35775437152e283c934245c8e0459b4" prot="public">
+          <name>KNOBBOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a4e1c5d6c90070384625995acf6be89c4" prot="public">
+          <name>KNOBCHAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1afd6640737a5ec928a4d3b4a21e94d80d" prot="public">
+          <name>KNOBINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ac2272a9efc9fc4d7d58b0ec3ce6a5a06" prot="public">
+          <name>KNOBFLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1acd6fc713085dd4116f874a0469bafb32" prot="public">
+          <name>KNOBDOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a03365037ee10598aaa6c8c123a53c8e9" prot="public">
+          <name>KNOBSTRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a3b034b2976dcf24c50ab1faa7fd338bd" prot="public">
+          <name>KNOBLONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a996220b24458174efc01eadf44db17a2" prot="public">
+          <name>KNOBVECBOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1abcc76c5c10b9e74b46a449b8c210cbdb" prot="public">
+          <name>KNOBCOMPLEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1af0efc30b329a31d884f42ccddbf49b89" prot="public">
+          <name>KNOBCOMPLEXD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ad0115e7e073d05c4b43338cd3f6ecdd1" prot="public">
+          <name>KNOBVECCHAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a1c5ac61cb079491a8f8a395e59f99408" prot="public">
+          <name>KNOBVECINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ab460b70bc179e1d3aa970371cb8d95fc" prot="public">
+          <name>KNOBVECFLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ad2830341e4d55535ce2aa06d0b066baf" prot="public">
+          <name>KNOBVECDOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a2940a21d66f658b409ec1d46b5067543" prot="public">
+          <name>KNOBVECSTRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1af1043953a04acfbad59b536bd8254776" prot="public">
+          <name>KNOBVECLONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="52" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="52" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t DisplayType</definition>
+        <argsstring></argsstring>
+        <name>DisplayType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="29" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1acf1fe613bf65594fb6dc171b29c672fd" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPNULL</definition>
+        <argsstring></argsstring>
+        <name>DISPNULL</name>
+        <initializer>= 0x0000</initializer>
+        <briefdescription>
+<para>DisplayType Plotting types. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1ac9c0f5663dfa955e0d6e714b3710c81a" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPTIME</definition>
+        <argsstring></argsstring>
+        <name>DISPTIME</name>
+        <initializer>= 0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="33" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a997c800d49cc5a17cf238328b475d13c" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPXY</definition>
+        <argsstring></argsstring>
+        <name>DISPXY</name>
+        <initializer>= 0x0002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="34" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a973c22c6075b8bd714317c29cd812479" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPPSD</definition>
+        <argsstring></argsstring>
+        <name>DISPPSD</name>
+        <initializer>= 0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="35" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a8a440f760863c16ac87eaf7bcf6c76a2" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPSPEC</definition>
+        <argsstring></argsstring>
+        <name>DISPSPEC</name>
+        <initializer>= 0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="36" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a13e4fffb2223c7ed2e59e4195d542f40" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPRAST</definition>
+        <argsstring></argsstring>
+        <name>DISPRAST</name>
+        <initializer>= 0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a7954eb14e8e9a0096f12d13d282e328d" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPOPTCPLX</definition>
+        <argsstring></argsstring>
+        <name>DISPOPTCPLX</name>
+        <initializer>= 0x0100</initializer>
+        <briefdescription>
+<para>DisplayType Options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a489dcd957b4b81233f826e633a126a2c" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPOPTLOG</definition>
+        <argsstring></argsstring>
+        <name>DISPOPTLOG</name>
+        <initializer>= 0x0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a79ed8e2c66e6ef046893a1db6a91586c" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPOPTSTEM</definition>
+        <argsstring></argsstring>
+        <name>DISPOPTSTEM</name>
+        <initializer>= 0x0400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1a3ee4b04a2921b0adf6e9131cfe60c498" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPOPTSTRIP</definition>
+        <argsstring></argsstring>
+        <name>DISPOPTSTRIP</name>
+        <initializer>= 0x0800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rpccallbackregister__base_8h_1aa51aa641b577645132717b52fd651b79" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t DISPOPTSCATTER</definition>
+        <argsstring></argsstring>
+        <name>DISPOPTSCATTER</name>
+        <initializer>= 0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2012<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RPCCALLBACKREGISTER_BASE_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RPCCALLBACKREGISTER_BASE_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="messages_2msg__accepter_8h" kindref="compound">gnuradio/messages/msg_accepter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="msg__producer_8h" kindref="compound">gnuradio/messages/msg_producer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="rpccallbackregister__base_8h_1acf1fe613bf65594fb6dc171b29c672fd" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1acf1fe613bf65594fb6dc171b29c672fd" kindref="member">DISPNULL</ref><sp/>=<sp/>0x0000;</highlight></codeline>
+<codeline lineno="33" refid="rpccallbackregister__base_8h_1ac9c0f5663dfa955e0d6e714b3710c81a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1ac9c0f5663dfa955e0d6e714b3710c81a" kindref="member">DISPTIME</ref><sp/>=<sp/>0x0001;</highlight></codeline>
+<codeline lineno="34" refid="rpccallbackregister__base_8h_1a997c800d49cc5a17cf238328b475d13c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a997c800d49cc5a17cf238328b475d13c" kindref="member">DISPXY</ref><sp/><sp/><sp/>=<sp/>0x0002;</highlight></codeline>
+<codeline lineno="35" refid="rpccallbackregister__base_8h_1a973c22c6075b8bd714317c29cd812479" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a973c22c6075b8bd714317c29cd812479" kindref="member">DISPPSD</ref><sp/><sp/>=<sp/>0x0004;</highlight></codeline>
+<codeline lineno="36" refid="rpccallbackregister__base_8h_1a8a440f760863c16ac87eaf7bcf6c76a2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a8a440f760863c16ac87eaf7bcf6c76a2" kindref="member">DISPSPEC</ref><sp/>=<sp/>0x0008;</highlight></codeline>
+<codeline lineno="37" refid="rpccallbackregister__base_8h_1a13e4fffb2223c7ed2e59e4195d542f40" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a13e4fffb2223c7ed2e59e4195d542f40" kindref="member">DISPRAST</ref><sp/>=<sp/>0x0010;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="rpccallbackregister__base_8h_1a7954eb14e8e9a0096f12d13d282e328d" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a7954eb14e8e9a0096f12d13d282e328d" kindref="member">DISPOPTCPLX</ref><sp/><sp/><sp/><sp/>=<sp/>0x0100;</highlight></codeline>
+<codeline lineno="41" refid="rpccallbackregister__base_8h_1a489dcd957b4b81233f826e633a126a2c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a489dcd957b4b81233f826e633a126a2c" kindref="member">DISPOPTLOG</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0200;</highlight></codeline>
+<codeline lineno="42" refid="rpccallbackregister__base_8h_1a79ed8e2c66e6ef046893a1db6a91586c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a79ed8e2c66e6ef046893a1db6a91586c" kindref="member">DISPOPTSTEM</ref><sp/><sp/><sp/><sp/>=<sp/>0x0400;</highlight></codeline>
+<codeline lineno="43" refid="rpccallbackregister__base_8h_1a3ee4b04a2921b0adf6e9131cfe60c498" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1a3ee4b04a2921b0adf6e9131cfe60c498" kindref="member">DISPOPTSTRIP</ref><sp/><sp/><sp/>=<sp/>0x0800;</highlight></codeline>
+<codeline lineno="44" refid="rpccallbackregister__base_8h_1aa51aa641b577645132717b52fd651b79" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="rpccallbackregister__base_8h_1aa51aa641b577645132717b52fd651b79" kindref="member">DISPOPTSCATTER</ref><sp/>=<sp/>0x1000;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096aa92525427b9ee991675cf4c3409ff214" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096aa92525427b9ee991675cf4c3409ff214" kindref="member">RPC_PRIVLVL_ALL</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="48" refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" kindref="member">RPC_PRIVLVL_MIN</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="49" refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096a68e3ee8aaf4edf52e08235409e536972" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096a68e3ee8aaf4edf52e08235409e536972" kindref="member">RPC_PRIVLVL_NONE</ref><sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1" kindref="member">KnobType</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1afd6640737a5ec928a4d3b4a21e94d80d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ae35775437152e283c934245c8e0459b4" kindref="member">KNOBBOOL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a4e1c5d6c90070384625995acf6be89c4" kindref="member">KNOBCHAR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1afd6640737a5ec928a4d3b4a21e94d80d" kindref="member">KNOBINT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ac2272a9efc9fc4d7d58b0ec3ce6a5a06" kindref="member">KNOBFLOAT</ref>,</highlight></codeline>
+<codeline lineno="54" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a996220b24458174efc01eadf44db17a2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1acd6fc713085dd4116f874a0469bafb32" kindref="member">KNOBDOUBLE</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a03365037ee10598aaa6c8c123a53c8e9" kindref="member">KNOBSTRING</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a3b034b2976dcf24c50ab1faa7fd338bd" kindref="member">KNOBLONG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a996220b24458174efc01eadf44db17a2" kindref="member">KNOBVECBOOL</ref>,</highlight></codeline>
+<codeline lineno="55" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1af0efc30b329a31d884f42ccddbf49b89" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1abcc76c5c10b9e74b46a449b8c210cbdb" kindref="member">KNOBCOMPLEX</ref>,<sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1af0efc30b329a31d884f42ccddbf49b89" kindref="member">KNOBCOMPLEXD</ref>,</highlight></codeline>
+<codeline lineno="56" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a1c5ac61cb079491a8f8a395e59f99408" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ad0115e7e073d05c4b43338cd3f6ecdd1" kindref="member">KNOBVECCHAR</ref>,<sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a1c5ac61cb079491a8f8a395e59f99408" kindref="member">KNOBVECINT</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ab460b70bc179e1d3aa970371cb8d95fc" kindref="member">KNOBVECFLOAT</ref>,<sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1ad2830341e4d55535ce2aa06d0b066baf" kindref="member">KNOBVECDOUBLE</ref>,</highlight></codeline>
+<codeline lineno="57" refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a2940a21d66f658b409ec1d46b5067543" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1a2940a21d66f658b409ec1d46b5067543" kindref="member">KNOBVECSTRING</ref>,<sp/><sp/><ref refid="rpccallbackregister__base_8h_1a5c2875ed1c5c7e0b8118397f5b4351e1af1043953a04acfbad59b536bd8254776" kindref="member">KNOBVECLONG</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structcallbackregister__base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcallbackregister__base" kindref="compound">callbackregister_base</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62" refid="structcallbackregister__base_1_1callback__base__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcallbackregister__base_1_1callback__base__t" kindref="compound">callback_base_t</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65" refid="structcallbackregister__base_1_1callback__base__t_1a3d539caf26dcd3ceccd1cb7c07c32d30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a3d539caf26dcd3ceccd1cb7c07c32d30" kindref="member">callback_base_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref><sp/>priv_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>units_,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref><sp/>display_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>desc_,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>min_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>max_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/>def)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1ad23e4dc3b75fd84cf35fd57f23a0d31f" kindref="member">priv</ref>(priv_),<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a69fde133b40360e99928050e74063a8c" kindref="member">units</ref>(units_),<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a3dd79706caa3a3ace758bc67ce942d44" kindref="member">description</ref>(desc_),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a32d6f87f799d3d62e9a80f881ffba86d" kindref="member">min</ref>(min_),<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1adbd5a6958d81859f6bc8345071253ee1" kindref="member">max</ref>(max_),<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a5a27b0a3e968017468f600055551cd24" kindref="member">defaultvalue</ref>(def),<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a8354fa254f2b479074d778718ff1bee2" kindref="member">display</ref>(display_)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structcallbackregister__base_1_1callback__base__t_1ad23e4dc3b75fd84cf35fd57f23a0d31f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1ad23e4dc3b75fd84cf35fd57f23a0d31f" kindref="member">priv</ref>;</highlight></codeline>
+<codeline lineno="74" refid="structcallbackregister__base_1_1callback__base__t_1a69fde133b40360e99928050e74063a8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a69fde133b40360e99928050e74063a8c" kindref="member">units</ref>,<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a3dd79706caa3a3ace758bc67ce942d44" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structcallbackregister__base_1_1callback__base__t_1a32d6f87f799d3d62e9a80f881ffba86d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a32d6f87f799d3d62e9a80f881ffba86d" kindref="member">min</ref>,<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1adbd5a6958d81859f6bc8345071253ee1" kindref="member">max</ref>,<sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a5a27b0a3e968017468f600055551cd24" kindref="member">defaultvalue</ref>;</highlight></codeline>
+<codeline lineno="76" refid="structcallbackregister__base_1_1callback__base__t_1a8354fa254f2b479074d778718ff1bee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t_1a8354fa254f2b479074d778718ff1bee2" kindref="member">display</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tsptr&gt;</highlight></codeline>
+<codeline lineno="80" refid="classcallbackregister__base_1_1callback__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcallbackregister__base_1_1callback__t" kindref="compound">callback_t</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1_1callback__base__t" kindref="compound">callback_base_t</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83" refid="classcallbackregister__base_1_1callback__t_1aec00730ac0f7545421ac1bf8767cbc09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcallbackregister__base_1_1callback__t_1aec00730ac0f7545421ac1bf8767cbc09" kindref="member">callback_t</ref>(T*<sp/>callback_,<sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref><sp/>priv_,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>units_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="rpccallbackregister__base_8h_1aba9c0dec36f846b8a092d7d45ad4ecd3" kindref="member">DisplayType</ref><sp/>display_,<sp/>const::<sp/>std::string&amp;<sp/>desc_,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref>&amp;<sp/>min_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref>&amp;<sp/>max_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref>&amp;<sp/>def_)<sp/>:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t" kindref="compound">callback_base_t</ref>(priv_,<sp/>units_,<sp/>display_,<sp/>desc_,<sp/>min_,<sp/>max_,<sp/>def_),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcallbackregister__base_1_1callback__t_1a20a501580a3eac9c134b8c53dd8fef90" kindref="member">callback</ref>(callback_)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classcallbackregister__base_1_1callback__t_1a63bc956cb6a5ad2db306192bf99fef9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcallbackregister__base_1_1callback__t_1a63bc956cb6a5ad2db306192bf99fef9c" kindref="member">callback_t</ref>(T*<sp/>callback_,<sp/><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref><sp/>priv_,<sp/>const::<sp/>std::string&amp;<sp/>desc_)<sp/>:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcallbackregister__base_1_1callback__base__t" kindref="compound">callback_base_t</ref>(priv_,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>desc_,<sp/>pmt::<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref>(),<sp/>pmt::<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref>(),<sp/>pmt::<ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref>()),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcallbackregister__base_1_1callback__t_1a20a501580a3eac9c134b8c53dd8fef90" kindref="member">callback</ref>(callback_)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classcallbackregister__base_1_1callback__t_1a20a501580a3eac9c134b8c53dd8fef90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Tsptr<sp/><ref refid="classcallbackregister__base_1_1callback__t_1a20a501580a3eac9c134b8c53dd8fef90" kindref="member">callback</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classcallbackregister__base_1_1callback__t" kindref="compound">callback_t&lt;gr::messages::msg_accepter, gr::messages::msg_accepter_sptr&gt;</ref><sp/><ref refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" kindref="member">configureCallback_t</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classcallbackregister__base_1_1callback__t" kindref="compound">callback_t&lt;gr::messages::msg_producer, gr::messages::msg_producer_sptr&gt;</ref><sp/><ref refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" kindref="member">queryCallback_t</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classcallbackregister__base_1_1callback__t" kindref="compound">callback_t&lt;gr::messages::msg_accepter, gr::messages::msg_accepter_sptr&gt;</ref><sp/><ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="structcallbackregister__base_1a4c05d278727594bdf05d222c567b38bf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structcallbackregister__base_1a4c05d278727594bdf05d222c567b38bf" kindref="member">callbackregister_base</ref>()<sp/>{;}</highlight></codeline>
+<codeline lineno="105" refid="structcallbackregister__base_1a574cc1d427024846ee5db738be7a0262" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a574cc1d427024846ee5db738be7a0262" kindref="member">~callbackregister_base</ref>()<sp/>{;}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1ac6d504cd5a1cb82455757c8711b42017" kindref="member">registerConfigureCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" kindref="member">configureCallback_t</ref><sp/>callback)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a4df3061020ce40966b5cfe84802b4b7b" kindref="member">unregisterConfigureCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a969518669759cfbefdc9f29d8c6b2153" kindref="member">registerQueryCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" kindref="member">queryCallback_t</ref><sp/>callback)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a6c089e0bfb1de755e0a6dcb09938fc38" kindref="member">unregisterQueryCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a0f6c43c658d74fa922728137370e3f5b" kindref="member">registerHandlerCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref><sp/>callback)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structcallbackregister__base_1acb8e57ef770a6901c34ad237c807646b" kindref="member">unregisterHandlerCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RPCCALLBACKREGISTER_BASE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpccallbackregister_base.h"/>
+  </compounddef>
+</doxygen>

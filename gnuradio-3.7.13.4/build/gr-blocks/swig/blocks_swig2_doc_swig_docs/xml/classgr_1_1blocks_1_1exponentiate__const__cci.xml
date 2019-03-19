@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1exponentiate__const__cci" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::exponentiate_const_cci</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="exponentiate__const__cci_8h" local="no">exponentiate_const_cci.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1exponentiate__const__cci_1a916ac547f2e62f6a4f1a425dda9f2bd8" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1exponentiate__const__cci" kindref="compound">exponentiate_const_cci</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;exponentiate_const_cci&gt; gr::blocks::exponentiate_const_cci::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1exponentiate__const__cci_1a4a41edaf0274c006cc79cb413d357078" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1exponentiate__const__cci_1a916ac547f2e62f6a4f1a425dda9f2bd8" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::exponentiate_const_cci::make</definition>
+        <argsstring>(int exponent, size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1exponentiate__const__cci_1a87a011c61dd21d15b268572833a867c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::exponentiate_const_cci::set_exponent</definition>
+        <argsstring>(int exponent)=0</argsstring>
+        <name>set_exponent</name>
+        <param>
+          <type>int</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exponentiates a complex stream with an integer exponent. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block raises a complex stream to an integer exponent. The exponent must be at least 1. There is a callback function so the exponent can be changed at runtime.</para><para>NOTE: The algorithm uses iterative multiplication to achieve exponentiation, hence it is O(exponent). Therefore, this block could be inefficient for large exponents. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="236">
+        <label>sync_block</label>
+      </node>
+      <node id="235">
+        <label>gr::blocks::exponentiate_const_cci</label>
+        <link refid="classgr_1_1blocks_1_1exponentiate__const__cci"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="238">
+        <label>sync_block</label>
+      </node>
+      <node id="237">
+        <label>gr::blocks::exponentiate_const_cci</label>
+        <link refid="classgr_1_1blocks_1_1exponentiate__const__cci"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/exponentiate_const_cci.h" bodystart="46" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1exponentiate__const__cci_1a4a41edaf0274c006cc79cb413d357078" prot="public" virt="non-virtual"><scope>gr::blocks::exponentiate_const_cci</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1exponentiate__const__cci_1a87a011c61dd21d15b268572833a867c5" prot="public" virt="pure-virtual"><scope>gr::blocks::exponentiate_const_cci</scope><name>set_exponent</name></member>
+      <member refid="classgr_1_1blocks_1_1exponentiate__const__cci_1a916ac547f2e62f6a4f1a425dda9f2bd8" prot="public" virt="non-virtual"><scope>gr::blocks::exponentiate_const_cci</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

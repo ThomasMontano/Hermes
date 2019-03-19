@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1mmse__fir__interpolator__ff" kind="class" prot="public">
+    <compoundname>gr::filter::mmse_fir_interpolator_ff</compoundname>
+    <includes refid="mmse__fir__interpolator__ff_8h" local="no">gnuradio/filter/mmse_fir_interpolator_ff.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a4a581366ca0db6a37812487cf4c035ed" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1filter_1_1kernel_1_1fir__filter__fff" kindref="compound">kernel::fir_filter_fff</ref> * &gt;</type>
+        <definition>std::vector&lt;kernel::fir_filter_fff*&gt; gr::filter::mmse_fir_interpolator_ff::filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a456b2c3ae3b28963693fb545b31c5312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::mmse_fir_interpolator_ff::mmse_fir_interpolator_ff</definition>
+        <argsstring>()</argsstring>
+        <name>mmse_fir_interpolator_ff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a2702762402ad09e9bd22a921c07539fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::filter::mmse_fir_interpolator_ff::~mmse_fir_interpolator_ff</definition>
+        <argsstring>()</argsstring>
+        <name>~mmse_fir_interpolator_ff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a84cd65170fd13d1fcf01ef0b7cd754ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::filter::mmse_fir_interpolator_ff::ntaps</definition>
+        <argsstring>() const </argsstring>
+        <name>ntaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a67102e9e029d3f7e0cdc576254af466d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::filter::mmse_fir_interpolator_ff::nsteps</definition>
+        <argsstring>() const </argsstring>
+        <name>nsteps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a8c9d937cf46b13479a35d23dc078c427" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::filter::mmse_fir_interpolator_ff::interpolate</definition>
+        <argsstring>(const float input[], float mu) const </argsstring>
+        <name>interpolate</name>
+        <param>
+          <type>const float</type>
+          <declname>input</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+<para>compute a single interpolated output value. <computeroutput>input</computeroutput> must have <ref refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a84cd65170fd13d1fcf01ef0b7cd754ac" kindref="member">ntaps()</ref> valid entries. input[0] .. input[<ref refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a84cd65170fd13d1fcf01ef0b7cd754ac" kindref="member">ntaps()</ref> - 1] are referenced to compute the output value. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>mu</computeroutput> must be in the range [0, 1] and specifies the fractional delay.</para><para><simplesect kind="return"><para>the interpolated input value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compute intermediate samples between signal samples x(k*Ts) </para>    </briefdescription>
+    <detaileddescription>
+<para>This implements a Minimum Mean Squared Error interpolator with 8 taps. It is suitable for signals where the bandwidth of interest B = 1/(4*Ts) Where Ts is the time between samples.</para><para>Although mu, the fractional delay, is specified as a float, it is actually quantized. 0.0 &lt;= mu &lt;= 1.0. That is, mu is quantized in the interpolate method to 32nd&apos;s of a sample.</para><para>For more information, in the GNU Radio source code, see: <itemizedlist>
+<listitem><para>gr-filter/lib/gen_interpolator_taps/README </para></listitem>
+<listitem><para>gr-filter/lib/gen_interpolator_taps/praxis.txt </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="6368">
+        <label>std::vector&lt; kernel::fir_filter_fff * &gt;</label>
+        <childnode refid="6369" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6370">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="6367">
+        <label>gr::filter::mmse_fir_interpolator_ff</label>
+        <link refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff"/>
+        <childnode refid="6368" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="6369">
+        <label>gr::filter::kernel::fir_filter_fff</label>
+        <link refid="classgr_1_1filter_1_1kernel_1_1fir__filter__fff"/>
+        <childnode refid="6370" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/mmse_fir_interpolator_ff.h" bodystart="50" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a4a581366ca0db6a37812487cf4c035ed" prot="protected" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>filters</name></member>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a8c9d937cf46b13479a35d23dc078c427" prot="public" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>interpolate</name></member>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a456b2c3ae3b28963693fb545b31c5312" prot="public" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>mmse_fir_interpolator_ff</name></member>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a67102e9e029d3f7e0cdc576254af466d" prot="public" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>nsteps</name></member>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a84cd65170fd13d1fcf01ef0b7cd754ac" prot="public" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>ntaps</name></member>
+      <member refid="classgr_1_1filter_1_1mmse__fir__interpolator__ff_1a2702762402ad09e9bd22a921c07539fc" prot="public" virt="non-virtual"><scope>gr::filter::mmse_fir_interpolator_ff</scope><name>~mmse_fir_interpolator_ff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1transcendental" kind="class" prot="public">
+    <compoundname>gr::blocks::transcendental</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="transcendental_8h" local="no">transcendental.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1transcendental_1ace787e317af310e3b90e89f5083a66c6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1transcendental" kindref="compound">transcendental</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;transcendental&gt; gr::blocks::transcendental::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/transcendental.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/transcendental.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1transcendental_1aa51b71ef7f8d6242238fdd313e742cc8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1transcendental_1ace787e317af310e3b90e89f5083a66c6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::transcendental::make</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;type=&quot;float&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type</declname>
+          <defval>&quot;float&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/transcendental.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A block that performs various transcendental math operations. </para>    </briefdescription>
+    <detaileddescription>
+<para>Possible function names can be found in the cmath library. IO may be either complex or real, double or single precision.</para><para>Possible type strings: float, double, complex_float, complex_double</para><para>output[i] = trans_fcn(input[i]) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="793">
+        <label>sync_block</label>
+      </node>
+      <node id="792">
+        <label>gr::blocks::transcendental</label>
+        <link refid="classgr_1_1blocks_1_1transcendental"/>
+        <childnode refid="793" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="795">
+        <label>sync_block</label>
+      </node>
+      <node id="794">
+        <label>gr::blocks::transcendental</label>
+        <link refid="classgr_1_1blocks_1_1transcendental"/>
+        <childnode refid="795" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/transcendental.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/transcendental.h" bodystart="45" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1transcendental_1aa51b71ef7f8d6242238fdd313e742cc8" prot="public" virt="non-virtual"><scope>gr::blocks::transcendental</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1transcendental_1ace787e317af310e3b90e89f5083a66c6" prot="public" virt="non-virtual"><scope>gr::blocks::transcendental</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcserver__base" kind="class" prot="public" abstract="yes">
+    <compoundname>rpcserver_base</compoundname>
+    <basecompoundref refid="structcallbackregister__base" prot="public" virt="virtual">callbackregister_base</basecompoundref>
+    <derivedcompoundref refid="classrpcserver__aggregator" prot="public" virt="virtual">rpcserver_aggregator</derivedcompoundref>
+    <derivedcompoundref refid="classrpcserver__thrift" prot="public" virt="virtual">rpcserver_thrift</derivedcompoundref>
+    <includes refid="rpcserver__base_8h" local="no">gnuradio/rpcserver_base.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrpcserver__base_1a005153760b2d2452945b3fdcfd57eb9a" prot="protected" static="no" mutable="no">
+        <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+        <definition>priv_lvl_t rpcserver_base::cur_priv</definition>
+        <argsstring></argsstring>
+        <name>cur_priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classrpcserver__base_1ad65d23a4b1e9bfec36bdb3a17df14d22" compoundref="rpcserver__base_8h" startline="43" endline="43">setCurPrivLevel</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcserver__base_1aae87aac17fa3dcdf3f2afce28708e352" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcserver_base::rpcserver_base</definition>
+        <argsstring>()</argsstring>
+        <name>rpcserver_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="31" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1a539c3e3b45b794a8c072fbab20a2c2b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual rpcserver_base::~rpcserver_base</definition>
+        <argsstring>()</argsstring>
+        <name>~rpcserver_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="32" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1a07ca2bf9c26f30cb9d63df1d8cc19f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::registerConfigureCallback</definition>
+        <argsstring>(const std::string &amp;id, const configureCallback_t callback)=0</argsstring>
+        <name>registerConfigureCallback</name>
+        <reimplements refid="structcallbackregister__base_1ac6d504cd5a1cb82455757c8711b42017">registerConfigureCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1a55e13fd15a44332d64b223b904b8fcc7">registerConfigureCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" kindref="member">configureCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="34" column="1"/>
+        <referencedby refid="structrpcbasic__register__set_1a51de2a95c2e182a2130598a081087116" compoundref="rpcregisterhelpers_8h" startline="701" endline="729">rpcbasic_register_set&lt; rpcbasic_register_variable_rw&lt; Tfrom &gt;, Tfrom &gt;::rpcbasic_register_set</referencedby>
+        <referencedby refid="structrpcbasic__register__trigger_1af0b1d8ee78a476cfe521a90a7042a2f4" compoundref="rpcregisterhelpers_8h" startline="867" endline="886">rpcbasic_register_trigger&lt; T &gt;::rpcbasic_register_trigger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1aa46ef83c3bc01bf297fb02487d2b6a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::unregisterConfigureCallback</definition>
+        <argsstring>(const std::string &amp;id)=0</argsstring>
+        <name>unregisterConfigureCallback</name>
+        <reimplements refid="structcallbackregister__base_1a4df3061020ce40966b5cfe84802b4b7b">unregisterConfigureCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1ae766b2e9f906adeafa6c03978ba9ab3b">unregisterConfigureCallback</reimplementedby>
+        <reimplementedby refid="classrpcserver__thrift_1aee8e18dfd4e2bc180706b97a6a0445b3">unregisterConfigureCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="35" column="1"/>
+        <referencedby refid="structrpcbasic__register__set_1ae20c66992db6e92a357e43675ecd46bb" compoundref="rpcregisterhelpers_8h" startline="785" endline="790">rpcbasic_register_set&lt; rpcbasic_register_variable_rw&lt; Tfrom &gt;, Tfrom &gt;::~rpcbasic_register_set</referencedby>
+        <referencedby refid="structrpcbasic__register__trigger_1a0da82a981db4d8eee34fe8a75086b998" compoundref="rpcregisterhelpers_8h" startline="928" endline="933">rpcbasic_register_trigger&lt; T &gt;::~rpcbasic_register_trigger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1aaf6f4bda26c5b56965f919899deea6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::registerQueryCallback</definition>
+        <argsstring>(const std::string &amp;id, const queryCallback_t callback)=0</argsstring>
+        <name>registerQueryCallback</name>
+        <reimplements refid="structcallbackregister__base_1a969518669759cfbefdc9f29d8c6b2153">registerQueryCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1a0989d54adcc1dcda8c59f234e2104808">registerQueryCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" kindref="member">queryCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="37" column="1"/>
+        <referencedby refid="classrpcbasic__register__get_1a923e56d2f4de6a7375413c59a964de29" compoundref="rpcregisterhelpers_8h" startline="1017" endline="1044">rpcbasic_register_get&lt; rpcbasic_register_variable&lt; Tfrom &gt;, Tfrom &gt;::rpcbasic_register_get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1a390b7472ad2fa8add90199b5957360e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::unregisterQueryCallback</definition>
+        <argsstring>(const std::string &amp;id)=0</argsstring>
+        <name>unregisterQueryCallback</name>
+        <reimplements refid="structcallbackregister__base_1a6c089e0bfb1de755e0a6dcb09938fc38">unregisterQueryCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1aa4b578dde95f0e0dbc44b11949487e25">unregisterQueryCallback</reimplementedby>
+        <reimplementedby refid="classrpcserver__thrift_1a051fd62e542584013a6d149b1b315e10">unregisterQueryCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="38" column="1"/>
+        <referencedby refid="classrpcbasic__register__get_1af293ab168e759115157696ae5873e5b4" compoundref="rpcregisterhelpers_8h" startline="1169" endline="1174">rpcbasic_register_get&lt; rpcbasic_register_variable&lt; Tfrom &gt;, Tfrom &gt;::~rpcbasic_register_get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1a97563a53bad9afcbf8a4f7fba8840be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::registerHandlerCallback</definition>
+        <argsstring>(const std::string &amp;id, const handlerCallback_t callback)=0</argsstring>
+        <name>registerHandlerCallback</name>
+        <reimplements refid="structcallbackregister__base_1a0f6c43c658d74fa922728137370e3f5b">registerHandlerCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1ae195829688bcc8b8ffcc4182ed9839b8">registerHandlerCallback</reimplementedby>
+        <reimplementedby refid="classrpcserver__thrift_1aee57799a54b121e6b6062257d20af5a3">registerHandlerCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" kindref="member">handlerCallback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="40" column="1"/>
+        <referencedby refid="classrpcbasic__register__handler_1a988eb7c3331580616d6077a0a02ef8e2" compoundref="rpcregisterhelpers_8h" startline="1426" endline="1449">rpcbasic_register_handler&lt; T &gt;::rpcbasic_register_handler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1a7f0289279ec39bd6096b3964a822f4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::unregisterHandlerCallback</definition>
+        <argsstring>(const std::string &amp;id)=0</argsstring>
+        <name>unregisterHandlerCallback</name>
+        <reimplements refid="structcallbackregister__base_1acb8e57ef770a6901c34ad237c807646b">unregisterHandlerCallback</reimplements>
+        <reimplementedby refid="classrpcserver__aggregator_1aa1c0e4db6a8cba0791f9f1e5bd902172">unregisterHandlerCallback</reimplementedby>
+        <reimplementedby refid="classrpcserver__thrift_1adfcc93ca73bd5b0b06583ac4b816e90e">unregisterHandlerCallback</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="41" column="1"/>
+        <referencedby refid="classrpcbasic__register__handler_1aa69e73464ef6fb4f867a62d636e9650b" compoundref="rpcregisterhelpers_8h" startline="1451" endline="1456">rpcbasic_register_handler&lt; T &gt;::~rpcbasic_register_handler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrpcserver__base_1ad65d23a4b1e9bfec36bdb3a17df14d22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rpcserver_base::setCurPrivLevel</definition>
+        <argsstring>(const priv_lvl_t priv)</argsstring>
+        <name>setCurPrivLevel</name>
+        <param>
+          <type>const <ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+          <declname>priv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" bodystart="43" bodyend="43"/>
+        <references refid="classrpcserver__base_1a005153760b2d2452945b3fdcfd57eb9a" compoundref="rpcserver__base_8h" startline="47">cur_priv</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9564">
+        <label>rpcserver_aggregator</label>
+        <link refid="classrpcserver__aggregator"/>
+        <childnode refid="9562" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9562">
+        <label>rpcserver_base</label>
+        <link refid="classrpcserver__base"/>
+        <childnode refid="9563" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9563">
+        <label>callbackregister_base</label>
+        <link refid="structcallbackregister__base"/>
+      </node>
+      <node id="9565">
+        <label>rpcserver_thrift</label>
+        <link refid="classrpcserver__thrift"/>
+        <childnode refid="9562" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9566">
+        <label>rpcserver_base</label>
+        <link refid="classrpcserver__base"/>
+        <childnode refid="9567" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9567">
+        <label>callbackregister_base</label>
+        <link refid="structcallbackregister__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" line="29" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcserver_base.h" bodystart="28" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structcallbackregister__base_1a4c05d278727594bdf05d222c567b38bf" prot="public" virt="non-virtual"><scope>rpcserver_base</scope><name>callbackregister_base</name></member>
+      <member refid="structcallbackregister__base_1aaa5da700159ea9432baf044f1bd3786f" prot="public" virt="non-virtual"><scope>rpcserver_base</scope><name>configureCallback_t</name></member>
+      <member refid="classrpcserver__base_1a005153760b2d2452945b3fdcfd57eb9a" prot="protected" virt="non-virtual"><scope>rpcserver_base</scope><name>cur_priv</name></member>
+      <member refid="structcallbackregister__base_1a7fdd2153b194fc4c0d0754613af5fda7" prot="public" virt="non-virtual"><scope>rpcserver_base</scope><name>handlerCallback_t</name></member>
+      <member refid="structcallbackregister__base_1a26829e86a28d11055814ee1a6bb1f90c" prot="public" virt="non-virtual"><scope>rpcserver_base</scope><name>queryCallback_t</name></member>
+      <member refid="classrpcserver__base_1a07ca2bf9c26f30cb9d63df1d8cc19f8a" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>registerConfigureCallback</name></member>
+      <member refid="classrpcserver__base_1a97563a53bad9afcbf8a4f7fba8840be7" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>registerHandlerCallback</name></member>
+      <member refid="classrpcserver__base_1aaf6f4bda26c5b56965f919899deea6e6" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>registerQueryCallback</name></member>
+      <member refid="classrpcserver__base_1aae87aac17fa3dcdf3f2afce28708e352" prot="public" virt="non-virtual"><scope>rpcserver_base</scope><name>rpcserver_base</name></member>
+      <member refid="classrpcserver__base_1ad65d23a4b1e9bfec36bdb3a17df14d22" prot="public" virt="virtual"><scope>rpcserver_base</scope><name>setCurPrivLevel</name></member>
+      <member refid="classrpcserver__base_1aa46ef83c3bc01bf297fb02487d2b6a62" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>unregisterConfigureCallback</name></member>
+      <member refid="classrpcserver__base_1a7f0289279ec39bd6096b3964a822f4d0" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>unregisterHandlerCallback</name></member>
+      <member refid="classrpcserver__base_1a390b7472ad2fa8add90199b5957360e6" prot="public" virt="pure-virtual"><scope>rpcserver_base</scope><name>unregisterQueryCallback</name></member>
+      <member refid="structcallbackregister__base_1a574cc1d427024846ee5db738be7a0262" prot="public" virt="virtual"><scope>rpcserver_base</scope><name>~callbackregister_base</name></member>
+      <member refid="classrpcserver__base_1a539c3e3b45b794a8c072fbab20a2c2b7" prot="public" virt="virtual"><scope>rpcserver_base</scope><name>~rpcserver_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

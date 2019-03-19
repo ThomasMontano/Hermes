@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1file__descriptor__source" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::file_descriptor_source</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="file__descriptor__source_8h" local="no">file_descriptor_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1file__descriptor__source_1a22e7d6e236ecc2309af765d04c448fb3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1file__descriptor__source" kindref="compound">file_descriptor_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;file_descriptor_source&gt; gr::blocks::file_descriptor_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="46" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__descriptor__source_1a122b336bca1b1d34a2af0cb225348c96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::file_descriptor_source::read_items</definition>
+        <argsstring>(char *buf, int nitems)=0</argsstring>
+        <name>read_items</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__descriptor__source_1a162029fe3b7567d00502b9913c5c11e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::file_descriptor_source::handle_residue</definition>
+        <argsstring>(char *buf, int nbytes_read)=0</argsstring>
+        <name>handle_residue</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes_read</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__descriptor__source_1a03887156705d53e04cf211f491ef0e38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::file_descriptor_source::flush_residue</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush_residue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1file__descriptor__source_1a956fb472a906883edacaf8c0d987ebef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1file__descriptor__source_1a22e7d6e236ecc2309af765d04c448fb3" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::file_descriptor_source::make</definition>
+        <argsstring>(size_t itemsize, int fd, bool repeat=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a file descriptor source block. The provided file descriptor will be closed when the sink is destroyed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item size of the incoming data stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file descriptor (as an integer). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat the data stream continuously. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Read stream from file descriptor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="244">
+        <label>sync_block</label>
+      </node>
+      <node id="243">
+        <label>gr::blocks::file_descriptor_source</label>
+        <link refid="classgr_1_1blocks_1_1file__descriptor__source"/>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="246">
+        <label>sync_block</label>
+      </node>
+      <node id="245">
+        <label>gr::blocks::file_descriptor_source</label>
+        <link refid="classgr_1_1blocks_1_1file__descriptor__source"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/file_descriptor_source.h" bodystart="37" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__source_1a03887156705d53e04cf211f491ef0e38" prot="protected" virt="pure-virtual"><scope>gr::blocks::file_descriptor_source</scope><name>flush_residue</name></member>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__source_1a162029fe3b7567d00502b9913c5c11e6" prot="protected" virt="pure-virtual"><scope>gr::blocks::file_descriptor_source</scope><name>handle_residue</name></member>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__source_1a956fb472a906883edacaf8c0d987ebef" prot="public" virt="non-virtual"><scope>gr::blocks::file_descriptor_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__source_1a122b336bca1b1d34a2af0cb225348c96" prot="protected" virt="pure-virtual"><scope>gr::blocks::file_descriptor_source</scope><name>read_items</name></member>
+      <member refid="classgr_1_1blocks_1_1file__descriptor__source_1a22e7d6e236ecc2309af765d04c448fb3" prot="public" virt="non-virtual"><scope>gr::blocks::file_descriptor_source</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="thrift__server__template_8h" kind="file">
+    <compoundname>thrift_server_template.h</compoundname>
+    <includes refid="prefs_8h" local="no">gnuradio/prefs.h</includes>
+    <includes local="no">gnuradio/logger.h</includes>
+    <includes refid="thrift__application__base_8h" local="no">gnuradio/thrift_application_base.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">thrift/server/TSimpleServer.h</includes>
+    <includes local="no">thrift/server/TThreadPoolServer.h</includes>
+    <includes local="no">thrift/concurrency/ThreadManager.h</includes>
+    <includes local="no">thrift/concurrency/PlatformThreadFactory.h</includes>
+    <includes local="no">thrift/transport/TServerSocket.h</includes>
+    <includes local="no">thrift/transport/TBufferTransports.h</includes>
+    <includes local="yes">thrift/ControlPort.h</includes>
+    <includedby refid="rpcserver__booter__thrift_8h" local="no">rpcserver_booter_thrift.h</includedby>
+    <incdepgraph>
+      <node id="1745">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1747">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="1749">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1740">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1761">
+        <label>thrift/transport/TBufferTransports.h</label>
+      </node>
+      <node id="1760">
+        <label>thrift/transport/TServerSocket.h</label>
+      </node>
+      <node id="1743">
+        <label>gnuradio/thread/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+      </node>
+      <node id="1751">
+        <label>gnuradio/logger.h</label>
+      </node>
+      <node id="1744">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1741">
+        <label>string</label>
+      </node>
+      <node id="1742">
+        <label>map</label>
+      </node>
+      <node id="1737">
+        <label>thrift_server_template.h</label>
+        <link refid="thrift_server_template.h"/>
+        <childnode refid="1738" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>thrift/server/TSimpleServer.h</label>
+      </node>
+      <node id="1762">
+        <label>thrift/ControlPort.h</label>
+      </node>
+      <node id="1753">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1746">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="1750">
+        <label>vector</label>
+      </node>
+      <node id="1748">
+        <label>boost/thread/barrier.hpp</label>
+      </node>
+      <node id="1757">
+        <label>thrift/server/TThreadPoolServer.h</label>
+      </node>
+      <node id="1739">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1758">
+        <label>thrift/concurrency/ThreadManager.h</label>
+      </node>
+      <node id="1754">
+        <label>boost/scoped_ptr.hpp</label>
+      </node>
+      <node id="1759">
+        <label>thrift/concurrency/PlatformThreadFactory.h</label>
+      </node>
+      <node id="1755">
+        <label>iostream</label>
+      </node>
+      <node id="1752">
+        <label>gnuradio/thrift_application_base.h</label>
+        <link refid="thrift__application__base_8h"/>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1738" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+      </node>
+      <node id="1738">
+        <label>gnuradio/prefs.h</label>
+        <link refid="prefs_8h"/>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1741" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1763">
+        <label>thrift_server_template.h</label>
+        <link refid="thrift_server_template.h"/>
+        <childnode refid="1764" relation="include">
+        </childnode>
+      </node>
+      <node id="1764">
+        <label>rpcserver_booter_thrift.h</label>
+        <link refid="rpcserver__booter__thrift_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classthrift__server__template" prot="public">thrift_server_template</innerclass>
+    <innerclass refid="classthrift__server__template_1_1TBufferedTransportFactory" prot="private">thrift_server_template::TBufferedTransportFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2015<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>THRIFT_SERVER_TEMPLATE_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>THRIFT_SERVER_TEMPLATE_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="prefs_8h" kindref="compound">gnuradio/prefs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuradio/logger.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="thrift__application__base_8h" kindref="compound">gnuradio/thrift_application_base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/server/TSimpleServer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/server/TThreadPoolServer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/concurrency/ThreadManager.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/concurrency/PlatformThreadFactory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/transport/TServerSocket.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thrift/transport/TBufferTransports.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;thrift/ControlPort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">apache;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverBase,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TImplClass&gt;</highlight></codeline>
+<codeline lineno="42" refid="classthrift__server__template" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classthrift__server__template" kindref="compound">thrift_server_template</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,<sp/>TImplClass&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classthrift__server__template" kindref="compound">thrift_server_template</ref>(TImplClass*<sp/>_this);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>~<ref refid="classthrift__server__template" kindref="compound">thrift_server_template</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>TserverBase*<sp/>i_impl();</highlight></codeline>
+<codeline lineno="50" refid="classthrift__server__template_1a415da111d40bc494ae1dfcbbcd9b66a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,<sp/>TImplClass&gt;;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;TserverClass&gt;<sp/>d_handler;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;thrift::TProcessor&gt;<sp/>d_processor;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;thrift::transport::TServerTransport&gt;<sp/>d_serverTransport;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;thrift::transport::TTransportFactory&gt;<sp/>d_transportFactory;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;thrift::protocol::TProtocolFactory&gt;<sp/>d_protocolFactory;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TBufferedTransportFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>thrift::transport::TTransportFactory</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>TBufferedTransportFactory(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_bufferSize)<sp/>:<sp/>bufferSize(_bufferSize)<sp/>{;}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~TBufferedTransportFactory()<sp/>{}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;thrift::transport::TTransport&gt;<sp/>getTransport(</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;thrift::transport::TTransport&gt;<sp/>trans)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;thrift::transport::TTransport&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift::transport::TBufferedTransport(trans,<sp/>bufferSize));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverBase,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TImplClass&gt;</highlight></codeline>
+<codeline lineno="82" refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" refkind="member"><highlight class="normal"><ref refid="classthrift__server__template_1ad1dd82eb57e3dd2e61eeb81029ab99af" kindref="member">thrift_server_template&lt;TserverBase, TserverClass, TImplClass&gt;::thrift_server_template</ref>(TImplClass*<sp/>_this)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>:<sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,<sp/>TImplClass&gt;(_this),</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>d_handler(new<sp/>TserverClass()),</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>d_processor(new<sp/>GNURadio::ControlPortProcessor(d_handler)),</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>d_serverTransport(),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>d_transportFactory(),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>d_protocolFactory(new<sp/>thrift::protocol::TBinaryProtocolFactory())</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>gr::logger_ptr<sp/>logger,<sp/>debug_logger;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>gr::configure_default_loggers(logger,<sp/>debug_logger,<sp/></highlight><highlight class="stringliteral">&quot;controlport&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port,<sp/>nthreads,<sp/>buffersize;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::string<sp/>thrift_config_file<sp/>=<sp/><ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">gr::prefs::singleton</ref>()-&gt;<ref refid="classgr_1_1prefs_1a6f62d9d0edbb6a097c3f0a4b32db52bd" kindref="member">get_string</ref>(</highlight><highlight class="stringliteral">&quot;ControlPort&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;config&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(thrift_config_file.length()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">gr::prefs::singleton</ref>()-&gt;<ref refid="classgr_1_1prefs_1ad900c0b8738236e90d42028dc447c844" kindref="member">add_config_file</ref>(thrift_config_file);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Collect<sp/>configuration<sp/>options<sp/>from<sp/>the<sp/>Thrift<sp/>config<sp/>file;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>defaults<sp/>if<sp/>the<sp/>config<sp/>file<sp/>doesn&apos;t<sp/>exist<sp/>or<sp/>list<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>options.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>port<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>(<ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">gr::prefs::singleton</ref>()-&gt;<ref refid="classgr_1_1prefs_1ac323d54d0e2cc7aa40929a175b31f17e" kindref="member">get_long</ref>(</highlight><highlight class="stringliteral">&quot;thrift&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;port&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TImplClass&gt;::<ref refid="classthrift__application__base_1a99999e960247f0a4c1ade086725a7941" kindref="member">d_default_thrift_port</ref>));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>nthreads<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>(<ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">gr::prefs::singleton</ref>()-&gt;<ref refid="classgr_1_1prefs_1ac323d54d0e2cc7aa40929a175b31f17e" kindref="member">get_long</ref>(</highlight><highlight class="stringliteral">&quot;thrift&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;nthreads&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TImplClass&gt;::<ref refid="classthrift__application__base_1a773a2d8d901c7e2fb119e7605b7fcaec" kindref="member">d_default_num_thrift_threads</ref>));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>buffersize<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>(<ref refid="classgr_1_1prefs_1aca3f179aa11c2b51b60e9f3e76149af8" kindref="member">gr::prefs::singleton</ref>()-&gt;<ref refid="classgr_1_1prefs_1ac323d54d0e2cc7aa40929a175b31f17e" kindref="member">get_long</ref>(</highlight><highlight class="stringliteral">&quot;thrift&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;buffersize&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base</ref>&lt;TserverBase,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TImplClass&gt;::<ref refid="classthrift__application__base_1a293a04e73b000f12bd21dbe2ad785ce6" kindref="member">d_default_thrift_buffer_size</ref>));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>d_serverTransport.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift::transport::TServerSocket(port));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>d_transportFactory.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift_server_template::TBufferedTransportFactory(buffersize));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nthreads<sp/>&lt;=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;Thrift:<sp/>Single-threaded<sp/>server&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;Thrift<sp/>Single-threaded<sp/>server&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base&lt;TserverBase, TImplClass&gt;::d_thriftserver</ref>.reset</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift::server::TSimpleServer(d_processor,<sp/>d_serverTransport,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_transportFactory,<sp/>d_protocolFactory));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;Thrift<sp/>Multi-threaded<sp/>server<sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>d_nthreads<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;thrift::concurrency::ThreadManager&gt;<sp/>threadManager</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(thrift::concurrency::ThreadManager::newSimpleThreadManager(nthreads));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>threadManager-&gt;threadFactory</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(boost::shared_ptr&lt;thrift::concurrency::PlatformThreadFactory&gt;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift::concurrency::PlatformThreadFactory()));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>threadManager-&gt;start();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classthrift__application__base" kindref="compound">thrift_application_base&lt;TserverBase, TImplClass&gt;::d_thriftserver</ref>.reset</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>thrift::server::TThreadPoolServer(d_processor,<sp/>d_serverTransport,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_transportFactory,<sp/>d_protocolFactory,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>threadManager));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverBase,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TImplClass&gt;</highlight></codeline>
+<codeline lineno="146" refid="classthrift__server__template_1a9bdd05f80a00796c9ffa651fdd6233c8" refkind="member"><highlight class="normal"><ref refid="classthrift__server__template_1a9bdd05f80a00796c9ffa651fdd6233c8" kindref="member">thrift_server_template&lt;TserverBase, TserverClass,TImplClass&gt;::~thrift_server_template</ref>()</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverBase,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TserverClass,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TImplClass&gt;</highlight></codeline>
+<codeline lineno="151" refid="classthrift__server__template_1a1a5753c0d401837dd090fad5631383ce" refkind="member"><highlight class="normal">TserverBase*<sp/><ref refid="classthrift__server__template_1a1a5753c0d401837dd090fad5631383ce" kindref="member">thrift_server_template&lt;TserverBase, TserverClass, TImplClass&gt;::i_impl</ref>()</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//std::cerr<sp/>&lt;&lt;<sp/>&quot;thrift_server_template:<sp/>i_impl&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_handler.get();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>THRIFT_SERVER_TEMPLATE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h"/>
+  </compounddef>
+</doxygen>

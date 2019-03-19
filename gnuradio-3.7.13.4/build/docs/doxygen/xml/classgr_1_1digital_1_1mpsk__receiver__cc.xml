@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1mpsk__receiver__cc" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::digital::mpsk_receiver_cc</compoundname>
+    <basecompoundref refid="classgr_1_1block" prot="public" virt="virtual">gr::block</basecompoundref>
+    <basecompoundref refid="classgr_1_1blocks_1_1control__loop" prot="public" virt="virtual">gr::blocks::control_loop</basecompoundref>
+    <includes refid="mpsk__receiver__cc_8h" local="no">gnuradio/digital/mpsk_receiver_cc.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a32addc5cb0788d5afe396e7cca7f0d1a" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1digital_1_1mpsk__receiver__cc" kindref="compound">mpsk_receiver_cc</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;mpsk_receiver_cc&gt; gr::digital::mpsk_receiver_cc::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1aa7336fd30a9b2d50d051c2867a87c841" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a32addc5cb0788d5afe396e7cca7f0d1a" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::digital::mpsk_receiver_cc::make</definition>
+        <argsstring>(unsigned int M, float theta, float loop_bw, float fmin, float fmax, float mu, float gain_mu, float omega, float gain_omega, float omega_rel)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>theta</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>loop_bw</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fmin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fmax</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain_mu</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain_omega</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>omega_rel</declname>
+        </param>
+        <briefdescription>
+<para>Make a M-PSK receiver block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>modulation order of the M-PSK modulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any constant phase rotation from the real axis of the constellation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loop_bw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Loop bandwidth to set gains of phase/freq tracking loop </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum normalized frequency value the loop can achieve </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum normalized frequency value the loop can achieve </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial parameter for the interpolator [0,1] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gain_mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gain parameter of the M&amp;M error signal to adjust mu (~0.05) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omega</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial value for the number of symbols between samples (~number of samples/symbol) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gain_omega</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gain parameter to adjust omega based on the error (~omega^2/4) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omega_rel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sets the maximum (omega*(1+omega_rel)) and minimum (omega*(1+omega_rel)) omega (~0.005)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The constructor also chooses which phase detector and decision maker to use in the work loop based on the value of M. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a680b5b502da7be8b2e62566ae2e72d2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::modulation_order</definition>
+        <argsstring>() const =0</argsstring>
+        <name>modulation_order</name>
+        <briefdescription>
+<para>Returns the modulation order (M) currently set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a090054848cd18384f48bdc6c175ed479" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::theta</definition>
+        <argsstring>() const =0</argsstring>
+        <name>theta</name>
+        <briefdescription>
+<para>Returns current value of theta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a4527e12efecf7cf02026f716d87f09e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::mu</definition>
+        <argsstring>() const =0</argsstring>
+        <name>mu</name>
+        <briefdescription>
+<para>Returns current value of mu. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1adae69e025a9356a5d37981fbcd1b44f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::omega</definition>
+        <argsstring>() const =0</argsstring>
+        <name>omega</name>
+        <briefdescription>
+<para>Returns current value of omega. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a4a5c3749af3051626cce73d6b1918761" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::gain_mu</definition>
+        <argsstring>() const =0</argsstring>
+        <name>gain_mu</name>
+        <briefdescription>
+<para>Returns mu gain factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a8a49baeed4200da5787f2a17bdf3e672" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::gain_omega</definition>
+        <argsstring>() const =0</argsstring>
+        <name>gain_omega</name>
+        <briefdescription>
+<para>Returns omega gain factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a40176625a2fd33b3967e9cf16935de28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::digital::mpsk_receiver_cc::gain_omega_rel</definition>
+        <argsstring>() const =0</argsstring>
+        <name>gain_omega_rel</name>
+        <briefdescription>
+<para>Returns the relative omega limit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a94d6342953d23f8abb227139d4d50794" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_modulation_order</definition>
+        <argsstring>(unsigned int M)=0</argsstring>
+        <name>set_modulation_order</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+<para>Sets the modulation order (M) currently. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a4e035bfb811c99345b93c4ba484b4964" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_theta</definition>
+        <argsstring>(float theta)=0</argsstring>
+        <name>set_theta</name>
+        <param>
+          <type>float</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+<para>Sets value of theta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a5b7c1d65708186959dc46f8a62028c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_mu</definition>
+        <argsstring>(float mu)=0</argsstring>
+        <name>set_mu</name>
+        <param>
+          <type>float</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+<para>Sets value of mu. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1ac0b9bd096f1e223b2d7abdeb9b58a01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_omega</definition>
+        <argsstring>(float omega)=0</argsstring>
+        <name>set_omega</name>
+        <param>
+          <type>float</type>
+          <declname>omega</declname>
+        </param>
+        <briefdescription>
+<para>Sets value of omega and its min and max values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a42180f7221ec215951a437b39f49c72d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_gain_mu</definition>
+        <argsstring>(float gain_mu)=0</argsstring>
+        <name>set_gain_mu</name>
+        <param>
+          <type>float</type>
+          <declname>gain_mu</declname>
+        </param>
+        <briefdescription>
+<para>Sets value for mu gain factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1a03b7e8e247edbca45d267927fc26965b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_gain_omega</definition>
+        <argsstring>(float gain_omega)=0</argsstring>
+        <name>set_gain_omega</name>
+        <param>
+          <type>float</type>
+          <declname>gain_omega</declname>
+        </param>
+        <briefdescription>
+<para>Sets value for omega gain factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1mpsk__receiver__cc_1afadd16b14307d239c8e8b5f5795de728" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::digital::mpsk_receiver_cc::set_gain_omega_rel</definition>
+        <argsstring>(float omega_rel)=0</argsstring>
+        <name>set_gain_omega_rel</name>
+        <param>
+          <type>float</type>
+          <declname>omega_rel</declname>
+        </param>
+        <briefdescription>
+<para>Sets the relative omega limit and resets omega min/max values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This block takes care of receiving M-PSK modulated signals through phase, frequency, and symbol synchronization. </para>    </briefdescription>
+    <detaileddescription>
+<para>It performs carrier frequency and phase locking as well as symbol timing recovery. It works with (D)BPSK, (D)QPSK, and (D)8PSK as tested currently. It should also work for OQPSK and PI/4 DQPSK.</para><para>The phase and frequency synchronization are based on a Costas loop that finds the error of the incoming signal point compared to its nearest constellation point. The frequency and phase of the NCO are updated according to this error. There are optimized phase error detectors for BPSK and QPSK, but 8PSK is done using a brute-force computation of the constellation points to find the minimum.</para><para>The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:</para><para>&quot;G. R. Danesfahani, T. G. Jeans, &quot;Optimisation of modified Mueller and Muller algorithm,&quot; Electronics Letters, Vol. 31, no. 13, 22
+June 1995, pp. 1032 - 1033.&quot;</para><para>This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&amp;M used here reduce self-noise. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6385">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="6386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6384">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="6385" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6382">
+        <label>gr::digital::mpsk_receiver_cc</label>
+        <link refid="classgr_1_1digital_1_1mpsk__receiver__cc"/>
+        <childnode refid="6383" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6388" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6386">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="6388">
+        <label>gr::blocks::control_loop</label>
+        <link refid="classgr_1_1blocks_1_1control__loop"/>
+      </node>
+      <node id="6383">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="6384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6387">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6392">
+        <label>gr::msg_accepter</label>
+        <link refid="classgr_1_1msg__accepter"/>
+        <childnode refid="6393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6396">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="6391">
+        <label>gr::basic_block</label>
+        <link refid="classgr_1_1basic__block"/>
+        <childnode refid="6392" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6394" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6395" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+        <childnode refid="6397" relation="usage">
+          <edgelabel>d_symbol_alias</edgelabel>
+          <edgelabel>d_name</edgelabel>
+          <edgelabel>d_symbol_name</edgelabel>
+        </childnode>
+        <childnode refid="6399" relation="usage">
+          <edgelabel>d_rpc_vars</edgelabel>
+        </childnode>
+      </node>
+      <node id="6398">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="6389">
+        <label>gr::digital::mpsk_receiver_cc</label>
+        <link refid="classgr_1_1digital_1_1mpsk__receiver__cc"/>
+        <childnode refid="6390" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6401" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6395">
+        <label>std::map&lt; pmt::pmt_t, msg_queue_t, pmt::comparator &gt;</label>
+        <childnode refid="6396" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6399">
+        <label>std::vector&lt; boost::any &gt;</label>
+      </node>
+      <node id="6393">
+        <label>gr::messages::msg_accepter</label>
+        <link refid="classgr_1_1messages_1_1msg__accepter"/>
+      </node>
+      <node id="6401">
+        <label>gr::blocks::control_loop</label>
+        <link refid="classgr_1_1blocks_1_1control__loop"/>
+      </node>
+      <node id="6400">
+        <label>std::vector&lt; long &gt;</label>
+      </node>
+      <node id="6390">
+        <label>gr::block</label>
+        <link refid="classgr_1_1block"/>
+        <childnode refid="6391" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6400" relation="usage">
+          <edgelabel>d_min_output_buffer</edgelabel>
+          <edgelabel>d_max_output_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6394">
+        <label>boost::enable_shared_from_this&lt; basic_block &gt;</label>
+      </node>
+      <node id="6397">
+        <label>std::string</label>
+        <childnode refid="6398" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/mpsk_receiver_cc.h" bodystart="70" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classgr_1_1basic__block_1ab82376fe13f515cb904c0d2e9fec87b6" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>_post</name></member>
+      <member refid="classgr_1_1block_1a099f578878243499d63846bbee61979a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>active_thread_priority</name></member>
+      <member refid="classgr_1_1block_1a8b7cc51b9d289124d6843bb392f564fc" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1block_1a8f0ee37749a77d3f40a5bb04233f6028" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a9ddc1f8d8367fe5b436cca7e7b514bb8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>advance_loop</name></member>
+      <member refid="classgr_1_1basic__block_1a42d65e902f4886602ff3d5b124a71ef3" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>alias</name></member>
+      <member refid="classgr_1_1basic__block_1a817f3a7595c32fbce00983977d0dd91e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>alias_pmt</name></member>
+      <member refid="classgr_1_1basic__block_1aad58e9944ff205539855cd6116b03c55" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>alias_set</name></member>
+      <member refid="classgr_1_1block_1a75313b29c3e68574bddf52ad7ab8c99a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>alignment</name></member>
+      <member refid="classgr_1_1basic__block_1a6cc897729213ab4d2e3ade44c6942100" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1a451b45483aec67682289f4cf94e53f74" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>basic_block</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaab729ab9b0c860fece10ea1eddab6ce52" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>BLACK</name></member>
+      <member refid="classgr_1_1block_1a624c3e070c3df38e5d11e4acd0f59b46" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>block</name></member>
+      <member refid="classgr_1_1block_1aebbc2ed68daafc4de5ee0f5df21efe6e" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>block</name></member>
+      <member refid="classgr_1_1basic__block_1aca13d6f083397aada5b44d0f349ce151" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>check_topology</name></member>
+      <member refid="classgr_1_1block_1af19867ade7536783777a5c5e91b69972" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>clear_finished</name></member>
+      <member refid="classgr_1_1basic__block_1a6d7621bc17d7bd50b8b36d905487adcf" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>color</name></member>
+      <member refid="classgr_1_1block_1a47193333ce3fe1536fb1663bf314f63d" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>consume</name></member>
+      <member refid="classgr_1_1block_1a12ea5eba701e22a3d023d0ba7c6ee07c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>consume_each</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a58198399010524f9d24d2614c958a3f4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>control_loop</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a3a26bce3693aefd4728660b7882f7fe2" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>control_loop</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a67112cc95cb9f12cd09e9be144b8cc83" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a2c2c67fcce7a11abbed6eb18b62b1546" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1basic__block_1afc7a00e9e0ff69ceb903d3d6ff506473" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_color</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a3668de07bed21c240ce31daeb4b5f563" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_damping</name></member>
+      <member refid="classgr_1_1block_1a41a376b09fb8bfc8f692edb5f733aaaa" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_debug_logger</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a45fe93c2722efee119906cef0b88e222" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_freq</name></member>
+      <member refid="classgr_1_1basic__block_1a84d6b200bb5e268424e9e4630cb22e5a" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_input_signature</name></member>
+      <member refid="classgr_1_1block_1a7061aa0e90b8cb1750b790f65549e0ae" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a6542b914418ec6586f782f9dc32c66e2" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_loop_bw</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1aa9a824b4eecf293229d122c4cf557b22" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_max_freq</name></member>
+      <member refid="classgr_1_1block_1ab740ebd7e5e88ab5ed7039db9f054db1" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1aefa8ebb27b9d86bef179e30e37f0dfc3" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_message_subscribers</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1ac674611142e1e98f57b2683d6cd9b903" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_min_freq</name></member>
+      <member refid="classgr_1_1block_1a4c393a6daebc82ddf6844a62f1c5e8ae" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_min_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1ad7da20e98a288f84597882e047df63f4" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_name</name></member>
+      <member refid="classgr_1_1basic__block_1a84c091a90172b2eb6d617f6346bbce3f" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_output_signature</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1af36d9458b26770d6a6c7025808be2414" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_phase</name></member>
+      <member refid="classgr_1_1block_1ad72091916b86278b58b6d106876b3e8c" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_pmt_done</name></member>
+      <member refid="classgr_1_1basic__block_1a8d54f7ea6ebf134e68e028294488354d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a4956e5631a93b2ef667a28564e71195b" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_rpc_vars</name></member>
+      <member refid="classgr_1_1block_1aaf5b8dd7bba021af7bd93f39453f7482" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_setlock</name></member>
+      <member refid="classgr_1_1basic__block_1a2de4ae58aaf6af63fe57ecf0e64dcbe0" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_symbol_alias</name></member>
+      <member refid="classgr_1_1basic__block_1af6b5f158f329834b12d9b204cf62a10e" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a7073674b5876118ae50cd7cc5646ad80" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_symbolic_id</name></member>
+      <member refid="classgr_1_1block_1a2460fc9ff6df7f38a51dadba06b94904" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_system_port</name></member>
+      <member refid="classgr_1_1basic__block_1a8afb0c354fb5fc2141fc7580361c2f00" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>d_unique_id</name></member>
+      <member refid="classgr_1_1block_1acad5d6e62ea885cb77d19f72451581c2" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1block_1aa7df9d4ebb09530cd3be2ad78da411b4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>declare_sample_delay</name></member>
+      <member refid="classgr_1_1basic__block_1accb52d0722546dbfda92e4ee699d8276" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>delete_head_blocking</name></member>
+      <member refid="classgr_1_1basic__block_1af9e69c810222df1bccbd159d660eda06" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>delete_head_nowait</name></member>
+      <member refid="classgr_1_1block_1a816ec687bdd384a6cf8493fd54019054" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>detail</name></member>
+      <member refid="classgr_1_1basic__block_1aa0c8bc1d82de984c872fbaefc0ff954b" prot="protected" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>dispatch_msg</name></member>
+      <member refid="classgr_1_1basic__block_1a0ea70146bf5ce65a8c20c0b7234063d9" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1a75b7c42c06430e9f5330f7462a5350a1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>empty_handled_p</name></member>
+      <member refid="classgr_1_1basic__block_1aea4958dfb6cc37d60db6afaba91f6e6e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1basic__block_1aecb5d318b3d3689e6f7f448d29a03032" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1block_1a71d3cc9f05edecef8b7bda7f16580848" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>enable_update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1acffa27c6be8af72ae44773185687d49c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>erase_msg</name></member>
+      <member refid="classgr_1_1block_1a9bbf96f6a81d5c289934a68ef44dd1b4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>expand_minmax_buffer</name></member>
+      <member refid="classgr_1_1block_1a89242cb1ac9d2bf5e75f923745baa576" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>finished</name></member>
+      <member refid="classgr_1_1block_1a13de80e93b11535dfa2d6168610b5f6a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>fixed_rate</name></member>
+      <member refid="classgr_1_1block_1a95e37b19dd73c24113ca9b848db00d16" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>fixed_rate_ninput_to_noutput</name></member>
+      <member refid="classgr_1_1block_1abe37ff91774ef438bdfcddd0a47ec1a6" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>fixed_rate_noutput_to_ninput</name></member>
+      <member refid="classgr_1_1block_1a5bc118d94944d2ff71e378f807fb8d28" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>forecast</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a31b65cd76562c7ba387ceee475d3b102" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>frequency_limit</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a4a5c3749af3051626cce73d6b1918761" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>gain_mu</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a8a49baeed4200da5787f2a17bdf3e672" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>gain_omega</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a40176625a2fd33b3967e9cf16935de28" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>gain_omega_rel</name></member>
+      <member refid="classgr_1_1block_1a0a482fb96a3d7343ffdd86a21538c2e5" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>general_work</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1aebd93dab74b328b6aa63835acb496924" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a5fce1a8e07e0a04d8c135ea803b96a83" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_beta</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1aaca1b1889d39bd2c27df8a381ae8686e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_damping_factor</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1af2b0197808974a7ffd828c585d0d6fdd" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_frequency</name></member>
+      <member refid="classgr_1_1basic__block_1a33724cc678371b3713e13ed29217963e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_iterator</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1aa658282c80a566217ee63fe3c0e522fb" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_loop_bandwidth</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a59853f03891e6263dfc5dd140ce3f3aa" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_max_freq</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a6bf78e9429bf99796ac6c5e9056b2612" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_min_freq</name></member>
+      <member refid="classgr_1_1basic__block_1ac2b4a15fdf99bfebc20cbafea7c2fcf4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_msg_map</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a040caef366e03e6c3b369a068ac057c6" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_phase</name></member>
+      <member refid="classgr_1_1block_1aa0272555827fe26a1878e53ce4be092c" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1a83143d92b16b5bf93bf43a66a46bb60e" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_tags_in_range</name></member>
+      <member refid="classgr_1_1block_1abf2cc497d68c4650be55765d0fe12291" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1block_1a451b95d244e27e815eb3f9e56ea6ac32" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>get_tags_in_window</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa229412131f1cac62bf1cb3c63b12a19d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>GREY</name></member>
+      <member refid="classgr_1_1basic__block_1ac8bf058b47b635100945e20f3cc5d0b0" prot="protected" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>has_msg_handler</name></member>
+      <member refid="classgr_1_1basic__block_1a8cdeb25c366bedbadf918b7f106dbf85" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>has_msg_port</name></member>
+      <member refid="classgr_1_1block_1a71548fe7804c9b932f9bb9d770931af1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>history</name></member>
+      <member refid="classgr_1_1basic__block_1adddacbed1278d56e03fa1d5b93b1d542" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>input_signature</name></member>
+      <member refid="classgr_1_1basic__block_1acbf0d8127f9b1da8dcb327b29391812a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>insert_tail</name></member>
+      <member refid="classgr_1_1block_1aac70128820e047e05993e4ec52b27c2a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>is_pc_rpc_set</name></member>
+      <member refid="classgr_1_1basic__block_1a10bd994a51158fd3803377960d688795" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>is_rpc_set</name></member>
+      <member refid="classgr_1_1block_1a4f67d984bc126aa4d254e62464525b79" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>is_set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ae0ed1517975b23c556b71486ffb972de" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>is_unaligned</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1aa7336fd30a9b2d50d051c2867a87c841" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>make</name></member>
+      <member refid="classgr_1_1block_1af710a90819f19705f2d2ba1aa49d0172" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a5faeaab35423014dc59749d63cfe4cf1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>max_output_buffer</name></member>
+      <member refid="classgr_1_1basic__block_1a8780d41bb2091c00a9637e15e872a7ce" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_is_hier</name></member>
+      <member refid="classgr_1_1basic__block_1a5cc9ea399d0940de8440e028b7352ed7" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_is_hier_in</name></member>
+      <member refid="classgr_1_1basic__block_1a218a3ea133d838c8344fb3914c54ba3a" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_is_hier_out</name></member>
+      <member refid="classgr_1_1basic__block_1a485fa8f9fa04a1abcfe3f111d22e8e5f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_pub</name></member>
+      <member refid="classgr_1_1basic__block_1a362b6de38292cca9c1d56439a6efad04" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_register_in</name></member>
+      <member refid="classgr_1_1basic__block_1ac3047921885668943a13dabd35d5eda4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_register_out</name></member>
+      <member refid="classgr_1_1basic__block_1adddd339f229f55bd96229d7a7dd5cc8f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_sub</name></member>
+      <member refid="classgr_1_1basic__block_1ad5496693b3c7c8be32529d695f83db1c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_port_unsub</name></member>
+      <member refid="classgr_1_1basic__block_1ae92faa0b6775de0100f6d202140403a2" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_ports_in</name></member>
+      <member refid="classgr_1_1basic__block_1ad6351658056b5381f3803233cb75c928" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_ports_out</name></member>
+      <member refid="classgr_1_1basic__block_1a15300c27e1a332bc7dcff6438ec6c080" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>message_subscribers</name></member>
+      <member refid="classgr_1_1block_1a1da7d9e876b5ff5fde12492ce55e9a81" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac28e42e36ef843b999cca3702981ccd7" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>min_output_buffer</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a680b5b502da7be8b2e62566ae2e72d2f" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>modulation_order</name></member>
+      <member refid="classgr_1_1msg__accepter_1ae25bb0b46019f4dbe2bdcecdf50dc755" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>msg_accepter</name></member>
+      <member refid="classgr_1_1basic__block_1a68e92e54cda7a02697074705b9a7c08d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>msg_queue</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a4527e12efecf7cf02026f716d87f09e4" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>mu</name></member>
+      <member refid="classgr_1_1basic__block_1a676337e5495c9ac73c0a551971181477" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>name</name></member>
+      <member refid="classgr_1_1block_1a2279d1eb421203bc5b0f100a6d5dc263" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>nitems_read</name></member>
+      <member refid="classgr_1_1block_1a742128a481fcb9e43a3e0cd535a57f9e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>nitems_written</name></member>
+      <member refid="classgr_1_1basic__block_1a4e3baf2d69f2a00871c89993e28b50ea" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>nmsgs</name></member>
+      <member refid="classgr_1_1block_1a74745ea741b0aae938b003854f6043e0" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>no_pc_rpc</name></member>
+      <member refid="classgr_1_1block_1adf235647d7ec77995751de89d94a22a6" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>notify_msg_neighbors</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1adae69e025a9356a5d37981fbcd1b44f7" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>omega</name></member>
+      <member refid="classgr_1_1block_1a247e034ce4d624c1fee847f7779e90e1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>output_multiple</name></member>
+      <member refid="classgr_1_1block_1a4ff8a6d59b8bd64817aebfbd28d78326" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>output_multiple_set</name></member>
+      <member refid="classgr_1_1basic__block_1a348d5801eeff564e75f508aba22766bd" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>output_signature</name></member>
+      <member refid="classgr_1_1block_1a4989096e4edf5e8171b65e3ce663af1e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a2dba88af74ee077751ebf5c11f470cbc" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a08e5deef4ebd0e6c2e11b839eaeadd9f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1aa4118c626e74926918a9bfd464b728cf" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a00723a35c6e095da35608c8438e16cdf" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a2c211a608a7d4dc40ad63886d1944798" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_input_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1af4a03de0d6609ca0e03b875250b7650c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a3beb47de467a4a117b0c096f8511d3af" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_noutput_items_avg</name></member>
+      <member refid="classgr_1_1block_1ae0725cd4ff4f5040a513c2a61355d434" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_noutput_items_var</name></member>
+      <member refid="classgr_1_1block_1a84ef5905d40b507a2230c996d8857289" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_nproduced</name></member>
+      <member refid="classgr_1_1block_1ad0b4960e100a088caefa99fb39f99a02" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_nproduced_avg</name></member>
+      <member refid="classgr_1_1block_1a1a506f34b8b8c3f968dc0a8cb9da0650" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_nproduced_var</name></member>
+      <member refid="classgr_1_1block_1ab125047ee56cf687e3475674a28d267f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a6ec7670b2a8d6d30113ab82683133b40" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full</name></member>
+      <member refid="classgr_1_1block_1a0ed8f2224fe1d0b27e17cd66723452a8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a0ddfee47fbd0d83826b8584ea7019b84" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full_avg</name></member>
+      <member refid="classgr_1_1block_1a2ad2a99ea794d44956d2878471e5976d" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1affe32b7ec0d84efa56f5cc94723eb36f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_output_buffers_full_var</name></member>
+      <member refid="classgr_1_1block_1a78a27917edcd3b32f10b2166f3362a68" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_throughput_avg</name></member>
+      <member refid="classgr_1_1block_1ae8b89079d24a3216eb1b17d75ec5b8d8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_work_time</name></member>
+      <member refid="classgr_1_1block_1a2df6452cef2999e1b32458a5e542f948" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_work_time_avg</name></member>
+      <member refid="classgr_1_1block_1a2c9fdd36be297e4b503ccd6290663367" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_work_time_total</name></member>
+      <member refid="classgr_1_1block_1a4918e75c4d11a0b7222c9ba250313ebc" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>pc_work_time_var</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a410bd28032522a9ea3357e1760b8846b" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>phase_wrap</name></member>
+      <member refid="classgr_1_1msg__accepter_1a03b0afcc820d3454d29f0ada3b89e2fc" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>post</name></member>
+      <member refid="classgr_1_1block_1a3b37bd70477161aa97d1e868ff2b20d9" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aa5581727d057bdd8113f8b2a3fc5bd66" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>produce</name></member>
+      <member refid="classgr_1_1block_1aa14aceb3623b74b66d235fbb237cec88" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>relative_rate</name></member>
+      <member refid="classgr_1_1block_1a461f6cc92174e83b10c3ec5336036768" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1block_1a94906298cd5995a94172c53dbfbc77dd" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1block_1adb2d3602fe818cef1978090923667009" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>reset_perf_counters</name></member>
+      <member refid="classgr_1_1basic__block_1ac349eee015757c75f8486b36ee08b106" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>rpc_set</name></member>
+      <member refid="classgr_1_1block_1a8bdbb506d7253d841277292c712c1a28" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>sample_delay</name></member>
+      <member refid="classgr_1_1block_1a49b49c097bffefe79f9d730539330edf" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_alignment</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a96941dd371da64d83e3c3f8eab7bfc8a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a1bb58989ff0c57cf2cc90d0804788f6f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_beta</name></member>
+      <member refid="classgr_1_1basic__block_1ad5251b68da76a9ce6bef105ef8136547" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_block_alias</name></member>
+      <member refid="classgr_1_1basic__block_1a2c4a58849217d8b76ba2d25c0dfd8bd0" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_color</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1abb3497f1bbae1f1835808e80e8d5d24f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_damping_factor</name></member>
+      <member refid="classgr_1_1block_1a776fbf15f5280bf8da74929b4ea8bb39" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_detail</name></member>
+      <member refid="classgr_1_1block_1aa927cd4d5b8993122cf60dd556ffe62d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_fixed_rate</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a7739f1f594784e5757fa3f7aecf1de8b" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_frequency</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a42180f7221ec215951a437b39f49c72d" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_gain_mu</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a03b7e8e247edbca45d267927fc26965b" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_gain_omega</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1afadd16b14307d239c8e8b5f5795de728" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_gain_omega_rel</name></member>
+      <member refid="classgr_1_1block_1ac2dac90e45498ad53a19544c01114136" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_history</name></member>
+      <member refid="classgr_1_1basic__block_1a3f3f8f70bd0f0f2925b09bb75725c2b6" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_input_signature</name></member>
+      <member refid="classgr_1_1block_1a0d33c4cc8b0131b9b8df41e3b46784b1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_is_unaligned</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1ad0f94dae4f7d1d47c6bd34d8513aba0f" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_loop_bandwidth</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1aebbd72604f730759ec3b2caa52539bb3" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_max_freq</name></member>
+      <member refid="classgr_1_1block_1ae2405dc2f6c84bb8e59aab56e4ce9d84" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a711fb69e35fb871e9a5e41d6a1f2afb1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a96d021628c08db3b138d3ee7c572ad90" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_max_output_buffer</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a2115b23308e2143b23c5ee6fc8f41e6d" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_min_freq</name></member>
+      <member refid="classgr_1_1block_1a65cfc579150dc4d10c6180d3365aa9a8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_min_noutput_items</name></member>
+      <member refid="classgr_1_1block_1a9d10e3f6747f91b215abe81b60a003d5" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1block_1a46a03397c78096a2f1c7f1b59f225f5b" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_min_output_buffer</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a94d6342953d23f8abb227139d4d50794" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_modulation_order</name></member>
+      <member refid="classgr_1_1basic__block_1a7fed11ec01538bfea999fb37687b43b4" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a5b7c1d65708186959dc46f8a62028c69" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_mu</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1ac0b9bd096f1e223b2d7abdeb9b58a01e" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_omega</name></member>
+      <member refid="classgr_1_1block_1a63d67fd758b70c6f2d7b7d4edcec53b3" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_output_multiple</name></member>
+      <member refid="classgr_1_1basic__block_1a7933b6bc4ad512774bbb40616cc31b4d" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_output_signature</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1ad3a05e49d58e840c46cbffe4b10b9a6b" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_phase</name></member>
+      <member refid="classgr_1_1block_1a05ad2ae50b0f7c922add44e74d9603b8" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_processor_affinity</name></member>
+      <member refid="classgr_1_1block_1aff3003eea3517dd3e8d9a5297c1196b1" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_relative_rate</name></member>
+      <member refid="classgr_1_1block_1a476e218927e426ac88c26431cbf086cd" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_tag_propagation_policy</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a4e035bfb811c99345b93c4ba484b4964" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_theta</name></member>
+      <member refid="classgr_1_1block_1a83e0fd5c4db199e6e6f2fc75cdfb5dfa" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_thread_priority</name></member>
+      <member refid="classgr_1_1block_1a4d914fbc7814a682e25f5b2a40140d47" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>set_unaligned</name></member>
+      <member refid="classgr_1_1block_1a9425064fac92607770042f472e140d7e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>setup_pc_rpc</name></member>
+      <member refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>setup_rpc</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a32addc5cb0788d5afe396e7cca7f0d1a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>sptr</name></member>
+      <member refid="classgr_1_1block_1a7f58745d1374b30a7b866406dc97850f" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>start</name></member>
+      <member refid="classgr_1_1block_1a0863bc16f7c84adf4cddf5d53124450e" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>stop</name></member>
+      <member refid="classgr_1_1basic__block_1ab5199f528de1872b055e632aedabef4e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>symbol_name</name></member>
+      <member refid="classgr_1_1basic__block_1a0436f10fd13ce2a80be2aeae345e903a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>symbolic_id</name></member>
+      <member refid="classgr_1_1block_1a4070b0462cce39d66b0c7c90ef2153d8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>system_handler</name></member>
+      <member refid="classgr_1_1block_1a4892196a19ef044a0eedeaa6566893c8" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>tag_propagation_policy</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4e" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>tag_propagation_policy_t</name></member>
+      <member refid="classgr_1_1digital_1_1mpsk__receiver__cc_1a090054848cd18384f48bdc6c175ed479" prot="public" virt="pure-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>theta</name></member>
+      <member refid="classgr_1_1block_1a585b831aea5775730931d7fb9e6e8253" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>thread_priority</name></member>
+      <member refid="classgr_1_1basic__block_1a84bf6924dfa0bb724caca46575669557" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>to_basic_block</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea5b3fd823d5f918e588008c0bc876e574" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>TPP_ALL_TO_ALL</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4eaadf6e1b257eee0590cc2b26161d08cdc" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>TPP_CUSTOM</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea2e3b11eb10000e0efab110c31a83e502" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>TPP_DONT</name></member>
+      <member refid="classgr_1_1block_1abc40fd4d514724a5446a2b34b2352b4ea747127b6fb520f34be8ae3f951fdc53c" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>TPP_ONE_TO_ONE</name></member>
+      <member refid="classgr_1_1block_1a53a85f2cd9f8ccef49eafad408069557" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>unaligned</name></member>
+      <member refid="classgr_1_1basic__block_1a6e85f514a6c99d39593f0d250e787d2b" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1block_1a460e8e5f15a4c5418ce3fc167c20a973" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>unset_max_noutput_items</name></member>
+      <member refid="classgr_1_1block_1ac077773948a5f55b826dd638e1ed3863" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>unset_processor_affinity</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1acb261d4921aae70126685b9bcb31c84f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>update_gains</name></member>
+      <member refid="classgr_1_1block_1af32c62fff6b1285bf346bfda65e6fc3a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>update_rate</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aa" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>vcolor</name></member>
+      <member refid="classgr_1_1basic__block_1ac84f6979cb9e7650de9d9205901401aaa42ae6a0efeb1be877a188c7ad4778f50" prot="protected" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>WHITE</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca8cac307593cf1087803f28eee28ff45a" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>WORK_CALLED_PRODUCE</name></member>
+      <member refid="classgr_1_1block_1a944affae11431e5064252da6c3eae1fca3e2d37c41af566875030fa1376c4203f" prot="public" virt="non-virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>WORK_DONE</name></member>
+      <member refid="classgr_1_1basic__block_1aa2006a298a9d9c60ea52c6a33e003b96" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>~basic_block</name></member>
+      <member refid="classgr_1_1block_1a1db946ecc4ab437c609802d991e545cc" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>~block</name></member>
+      <member refid="classgr_1_1blocks_1_1control__loop_1a115a3768d189b629e65297f9e12d28c4" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>~control_loop</name></member>
+      <member refid="classgr_1_1msg__accepter_1a4a566e988c3b4ba11d568b340499e307" prot="public" virt="virtual"><scope>gr::digital::mpsk_receiver_cc</scope><name>~msg_accepter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

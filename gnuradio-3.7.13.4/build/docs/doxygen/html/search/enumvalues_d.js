@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['reserved_5foff',['RESERVED_OFF',['../namespacegr_1_1dtv.html#a77a1b17be9a5a8b2fe7e1b38a62b7b7fabb62befa48999318a6cfc9b10984bf0b',1,'gr::dtv']]],
+  ['reserved_5fon',['RESERVED_ON',['../namespacegr_1_1dtv.html#a77a1b17be9a5a8b2fe7e1b38a62b7b7faed045929b1a537b41a8b12e1a86174ed',1,'gr::dtv']]],
+  ['ro_5f0_5f05',['RO_0_05',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfa9a322740668cc12836a9acfeb6d05767',1,'gr::dtv']]],
+  ['ro_5f0_5f10',['RO_0_10',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfa39a16b71daf82f6763257114de108e94',1,'gr::dtv']]],
+  ['ro_5f0_5f15',['RO_0_15',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfaeb3545d27a5a04d4f64e3e302de00d93',1,'gr::dtv']]],
+  ['ro_5f0_5f20',['RO_0_20',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfae6a323becd932077b10564a849631830',1,'gr::dtv']]],
+  ['ro_5f0_5f25',['RO_0_25',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfa2746592ea1b8b36c43089da7b0acb043',1,'gr::dtv']]],
+  ['ro_5f0_5f35',['RO_0_35',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfa110a39ea1d83e9d6191b89878bd575df',1,'gr::dtv']]],
+  ['ro_5freserved',['RO_RESERVED',['../namespacegr_1_1dtv.html#ac3c9756bb2fbf5354a1530bb5d53d2bfaf6c95844f152be0907be49c035680cce',1,'gr::dtv']]],
+  ['rotation_5foff',['ROTATION_OFF',['../namespacegr_1_1dtv.html#ac3f6b9ef15be9a9456ca1a5222d164d0ac6878a9228bb4c0321fa2cebe393bfd9',1,'gr::dtv']]],
+  ['rotation_5fon',['ROTATION_ON',['../namespacegr_1_1dtv.html#ac3f6b9ef15be9a9456ca1a5222d164d0a26bfd28098cc0207bddf607a2d96ed01',1,'gr::dtv']]],
+  ['rpc_5fprivlvl_5fall',['RPC_PRIVLVL_ALL',['../rpccallbackregister__base_8h.html#a49bbe5b25d6264b2ebfc1ffd260cb096aa92525427b9ee991675cf4c3409ff214',1,'rpccallbackregister_base.h']]],
+  ['rpc_5fprivlvl_5fmin',['RPC_PRIVLVL_MIN',['../rpccallbackregister__base_8h.html#a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4',1,'rpccallbackregister_base.h']]],
+  ['rpc_5fprivlvl_5fnone',['RPC_PRIVLVL_NONE',['../rpccallbackregister__base_8h.html#a49bbe5b25d6264b2ebfc1ffd260cb096a68e3ee8aaf4edf52e08235409e536972',1,'rpccallbackregister_base.h']]],
+  ['rt_5fno_5fprivs',['RT_NO_PRIVS',['../namespacegr.html#a4b419c1302ff5014e3c7919ef6c89415ab910c0a53288bf85fa33230beecd39e5',1,'gr']]],
+  ['rt_5fnot_5fimplemented',['RT_NOT_IMPLEMENTED',['../namespacegr.html#a4b419c1302ff5014e3c7919ef6c89415ae9743afa7588625297e5f4b4bc1fffca',1,'gr']]],
+  ['rt_5fok',['RT_OK',['../namespacegr.html#a4b419c1302ff5014e3c7919ef6c89415a5782c718bf523997b63b57858399ae04',1,'gr']]],
+  ['rt_5fother_5ferror',['RT_OTHER_ERROR',['../namespacegr.html#a4b419c1302ff5014e3c7919ef6c89415ab74c3993e18991892f0eabf0e5d218a0',1,'gr']]],
+  ['rt_5fsched_5ffifo',['RT_SCHED_FIFO',['../namespacegr.html#aaedd4b8d3deeba66d106d9dc348b0579a2dda8e8efa8715f466d2d62f5d4377e3',1,'gr']]],
+  ['rt_5fsched_5frr',['RT_SCHED_RR',['../namespacegr.html#aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31',1,'gr']]]
+];

@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-fft
+Description: GNU Radio's FFT signal processing blocks
+Requires: gnuradio-runtime
+Version: 3.7.13.4
+Libs: -L${libdir} -lgnuradio-fft
+Cflags: -I${includedir}

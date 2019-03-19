@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1rms__cf" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::rms_cf</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="rms__cf_8h" local="no">rms_cf.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1rms__cf_1a17e55eb3975e07cf271542fb3ab1ef6b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1rms__cf" kindref="compound">rms_cf</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;rms_cf&gt; gr::blocks::rms_cf::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1rms__cf_1a40d064c25090754547e418b82784dbee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1rms__cf_1a17e55eb3975e07cf271542fb3ab1ef6b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::rms_cf::make</definition>
+        <argsstring>(double alpha=0.0001)</argsstring>
+        <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defval>0.0001</defval>
+        </param>
+        <briefdescription>
+<para>Make an RMS calc. block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gain for running average filter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1rms__cf_1a070ead84bcd83698f7b2e49a6115db87" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::rms_cf::set_alpha</definition>
+        <argsstring>(double alpha)=0</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RMS average power. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="651">
+        <label>sync_block</label>
+      </node>
+      <node id="650">
+        <label>gr::blocks::rms_cf</label>
+        <link refid="classgr_1_1blocks_1_1rms__cf"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="653">
+        <label>sync_block</label>
+      </node>
+      <node id="652">
+        <label>gr::blocks::rms_cf</label>
+        <link refid="classgr_1_1blocks_1_1rms__cf"/>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rms_cf.h" bodystart="36" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1rms__cf_1a40d064c25090754547e418b82784dbee" prot="public" virt="non-virtual"><scope>gr::blocks::rms_cf</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1rms__cf_1a070ead84bcd83698f7b2e49a6115db87" prot="public" virt="pure-virtual"><scope>gr::blocks::rms_cf</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1blocks_1_1rms__cf_1a17e55eb3975e07cf271542fb3ab1ef6b" prot="public" virt="non-virtual"><scope>gr::blocks::rms_cf</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

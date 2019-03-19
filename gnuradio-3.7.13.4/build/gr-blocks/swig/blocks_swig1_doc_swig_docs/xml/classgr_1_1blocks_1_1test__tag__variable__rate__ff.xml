@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1test__tag__variable__rate__ff" kind="class" prot="public">
+    <compoundname>gr::blocks::test_tag_variable_rate_ff</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="test__tag__variable__rate__ff_8h" local="no">test_tag_variable_rate_ff.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1test__tag__variable__rate__ff_1ad4e8a590ae111e64cdb09917e0d60a33" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff" kindref="compound">test_tag_variable_rate_ff</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;test_tag_variable_rate_ff&gt; gr::blocks::test_tag_variable_rate_ff::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/test_tag_variable_rate_ff.h" line="62" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/test_tag_variable_rate_ff.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1test__tag__variable__rate__ff_1aaa799fc827a027d15b30b399943e7c07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff_1ad4e8a590ae111e64cdb09917e0d60a33" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::test_tag_variable_rate_ff::make</definition>
+        <argsstring>(bool update_once=false, double update_step=0.001)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>update_once</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>update_step</declname>
+          <defval>0.001</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a <ref refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff" kindref="compound">test_tag_variable_rate_ff</ref> block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>update_once</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Update the resampling rate once per call to work (default=false). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How much to adjust the resampling rate by when the update occurs (default=0.001). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/test_tag_variable_rate_ff.h" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used for testing tag propagation.</para><para>This block resamples the stream by a factor that starts at 0.5 but varies around by some random walk. The relative rate of the block is initialized to 0.5 and the random number generator is seeded based on the time. For each input, if the random number is &gt;= 0.5, the relative rate is increased by <computeroutput>update_step</computeroutput>; otherwise, it is decreased by <computeroutput>update_step</computeroutput>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The rate of the change of the resampling factor is set by the flag <computeroutput>update_once</computeroutput>. If this is set to true, then the rate is only updated once per work function. If it is set to false (default), then the rate is changed with every input sample.</para><para>The block&apos;s ctor sets the propagation policy to TPP_DONT to stop tags from automatically propagating. Instead, we handle the tag propagation ourselves from within the work function. Because the relative_rate changes so fast, the tag placement cannot be based on a single factor after the call to work and must be handled when the samples are and based on the current resampling rate. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="780">
+        <label>gr::blocks::test_tag_variable_rate_ff</label>
+        <link refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff"/>
+        <childnode refid="781" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="782">
+        <label>gr::blocks::test_tag_variable_rate_ff</label>
+        <link refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff"/>
+        <childnode refid="783" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/test_tag_variable_rate_ff.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/test_tag_variable_rate_ff.h" bodystart="58" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff_1aaa799fc827a027d15b30b399943e7c07" prot="public" virt="non-virtual"><scope>gr::blocks::test_tag_variable_rate_ff</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1test__tag__variable__rate__ff_1ad4e8a590ae111e64cdb09917e0d60a33" prot="public" virt="non-virtual"><scope>gr::blocks::test_tag_variable_rate_ff</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

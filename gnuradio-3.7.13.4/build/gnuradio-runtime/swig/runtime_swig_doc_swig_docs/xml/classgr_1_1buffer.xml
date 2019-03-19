@@ -1,0 +1,834 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1buffer" kind="class" prot="public">
+    <compoundname>gr::buffer</compoundname>
+    <includes refid="buffer_8h" local="no">buffer.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgr_1_1buffer_1acd526cda08365e46391a84fcf8cc73c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class buffer_reader</definition>
+        <argsstring></argsstring>
+        <name>buffer_reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="143" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classgr_1_1buffer_1a18eb15b02b8d6279fa6375bf43b67309" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1aee8990ae0b072c732eb7f07d47796a33" kindref="member">buffer_sptr</ref></type>
+        <definition>GR_RUNTIME_API buffer_sptr make_buffer</definition>
+        <argsstring>(int nitems, size_t sizeof_item, block_sptr link)</argsstring>
+        <name>make_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_item</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+<para>Allocate a buffer that holds at least <computeroutput>nitems</computeroutput> of size <computeroutput>sizeof_item</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The total size of the buffer will be rounded up to a system dependent boundary. This is typically the system page size, but under MS windows is 64KB.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the minimum number of items the buffer will hold. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the size of an item in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the block that writes to this buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classgr_1_1buffer_1acb53d0b2074b12d0cb5d534b09dfcbd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> <ref refid="namespacegr_1a93714a2d6de43676c34b07af3493830d" kindref="member">buffer_reader_sptr</ref></type>
+        <definition>GR_RUNTIME_API buffer_reader_sptr buffer_add_reader</definition>
+        <argsstring>(buffer_sptr buf, int nzero_preload, block_sptr link, int delay)</argsstring>
+        <name>buffer_add_reader</name>
+        <param>
+          <type><ref refid="namespacegr_1aee8990ae0b072c732eb7f07d47796a33" kindref="member">buffer_sptr</ref></type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nzero_preload</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref> and attach it to buffer <computeroutput>buf</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the buffer the <computeroutput><ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref></computeroutput> reads from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nzero_preload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> number of zero items to &quot;preload&quot; into buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the block that reads from the buffer using this <ref refid="classgr_1_1buffer__reader" kindref="compound">gr::buffer_reader</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional setting to declare the buffer&apos;s sample delay. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1buffer_1ae16149310d83aecb8e509b6c6de2818a" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::buffer::d_base</definition>
+        <argsstring></argsstring>
+        <name>d_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="149" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a6cb33e2a667363ffec56c98ba332a975" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::buffer::d_bufsize</definition>
+        <argsstring></argsstring>
+        <name>d_bufsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="150" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a14be6d8f626e91ae07e79a7a04aff52b" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::buffer::d_max_reader_delay</definition>
+        <argsstring></argsstring>
+        <name>d_max_reader_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="153" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1buffer_1ac2a0ec8394740e2a9b1126551fcd7b52" prot="private" static="no" mutable="no">
+        <type>gr::vmcircbuf *</type>
+        <definition>gr::vmcircbuf* gr::buffer::d_vmcircbuf</definition>
+        <argsstring></argsstring>
+        <name>d_vmcircbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="156" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1aea14fec8297006abcc4aac9d1c312d9c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::buffer::d_sizeof_item</definition>
+        <argsstring></argsstring>
+        <name>d_sizeof_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="157" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a9753b3532f2b0fa6b7fafeb593911c7b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1buffer__reader" kindref="compound">buffer_reader</ref> * &gt;</type>
+        <definition>std::vector&lt;buffer_reader *&gt; gr::buffer::d_readers</definition>
+        <argsstring></argsstring>
+        <name>d_readers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="158" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a217cb515edac6fd4529a0a9ddba155d6" prot="private" static="no" mutable="no">
+        <type>boost::weak_ptr&lt; <ref refid="classgr_1_1block" kindref="compound">block</ref> &gt;</type>
+        <definition>boost::weak_ptr&lt;block&gt; gr::buffer::d_link</definition>
+        <argsstring></argsstring>
+        <name>d_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="159" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a29332c6ba773d6adf50528ee423fc67b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex gr::buffer::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="165" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1ae034276ad2deadf1a25017a07295eb33" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::buffer::d_write_index</definition>
+        <argsstring></argsstring>
+        <name>d_write_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="166" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1a8c322379309de2385a05e9bb4295cc2a" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::buffer::d_abs_write_offset</definition>
+        <argsstring></argsstring>
+        <name>d_abs_write_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="167" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1adc29bce8e14dbe56396fe10c2f111c79" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::buffer::d_done</definition>
+        <argsstring></argsstring>
+        <name>d_done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="168" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1aecef756bc40ac8619ff2fe3362c8ac87" prot="private" static="no" mutable="no">
+        <type>std::multimap&lt; uint64_t, <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt;</type>
+        <definition>std::multimap&lt;uint64_t,tag_t&gt; gr::buffer::d_item_tags</definition>
+        <argsstring></argsstring>
+        <name>d_item_tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="169" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1buffer_1af828cd456f9ce3156cee0e8328de153e" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::buffer::d_last_min_items_read</definition>
+        <argsstring></argsstring>
+        <name>d_last_min_items_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="170" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1buffer_1a6a0545719dc27f54505b3a6bb4453249" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::buffer::~buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aa7aeb4ea8384b1ad9ef32261bcc5e2ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::buffer::space_available</definition>
+        <argsstring>()</argsstring>
+        <name>space_available</name>
+        <briefdescription>
+<para>return number of items worth of space available for writing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1abb99dac98aa02d2ed3107d9dddac8545" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::buffer::bufsize</definition>
+        <argsstring>() const </argsstring>
+        <name>bufsize</name>
+        <briefdescription>
+<para>return size of this buffer in items </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a3970bcf4099ddfe0ab3d34bf8044c1fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* gr::buffer::base</definition>
+        <argsstring>() const </argsstring>
+        <name>base</name>
+        <briefdescription>
+<para>return the base address of the buffer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1ad3d1db11817c659e4ff69ff7b06993fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* gr::buffer::write_pointer</definition>
+        <argsstring>()</argsstring>
+        <name>write_pointer</name>
+        <briefdescription>
+<para>return pointer to write buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>The return value points at space that can hold at least <ref refid="classgr_1_1buffer_1aa7aeb4ea8384b1ad9ef32261bcc5e2ae" kindref="member">space_available()</ref> items. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1adbb35c9b612feb6cdc55756ba7c5b08c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::update_write_pointer</definition>
+        <argsstring>(int nitems)</argsstring>
+        <name>update_write_pointer</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+<para>tell buffer that we wrote <computeroutput>nitems</computeroutput> into it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a9d03c27ca88115c9b7c966acdd3fed4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::set_done</definition>
+        <argsstring>(bool done)</argsstring>
+        <name>set_done</name>
+        <param>
+          <type>bool</type>
+          <declname>done</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aaf8072aecd0f3867fe71d9930e7a83c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::buffer::done</definition>
+        <argsstring>() const </argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="89" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aa749e1b47a6ed898cbf6b7a2fe8e04f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+        <definition>block_sptr gr::buffer::link</definition>
+        <argsstring>()</argsstring>
+        <name>link</name>
+        <briefdescription>
+<para>Return the block that writes to this buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="94" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a1e0de5a52385f3c03943f0eaa83c51a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gr::buffer::nreaders</definition>
+        <argsstring>() const </argsstring>
+        <name>nreaders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="96" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a35d299b71427011c360fe2aea94ee4c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1buffer__reader" kindref="compound">buffer_reader</ref> *</type>
+        <definition>buffer_reader* gr::buffer::reader</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>reader</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="97" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a608f2241653a0fd7e3273f211aef903d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref> *</type>
+        <definition>gr::thread::mutex* gr::buffer::mutex</definition>
+        <argsstring>()</argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1ae84c5bd38f9c5171ee5fe3d392a87b0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::buffer::nitems_written</definition>
+        <argsstring>()</argsstring>
+        <name>nitems_written</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="101" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a89cc95c84f69fee453830ec3b2a30d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::reset_nitem_counter</definition>
+        <argsstring>()</argsstring>
+        <name>reset_nitem_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1ab2d506dffae964a1984892d8bd4900f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gr::buffer::get_sizeof_item</definition>
+        <argsstring>()</argsstring>
+        <name>get_sizeof_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="105" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a5a40fb3c9766a4a1838ae8f297abd276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::add_item_tag</definition>
+        <argsstring>(const tag_t &amp;tag)</argsstring>
+        <name>add_item_tag</name>
+        <param>
+          <type>const <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new tag to the buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new tag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a2773056e40c1f34bc5be8b1ca71d8006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::remove_item_tag</definition>
+        <argsstring>(const tag_t &amp;tag, long id)</argsstring>
+        <name>remove_item_tag</name>
+        <param>
+          <type>const <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Removes an existing tag from the buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no such tag is found, does nothing. Note: Doesn&apos;t actually physically delete the tag, but marks it as deleted. For the user, this has the same effect: Any subsequent calls to get_tags_in_range() will not return the tag.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tag that needs to be removed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unique ID of the block calling this function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a407543b3e4c24532b899a6ddffa0c956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::prune_tags</definition>
+        <argsstring>(uint64_t max_time)</argsstring>
+        <name>prune_tags</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>max_time</declname>
+        </param>
+        <briefdescription>
+<para>Removes all tags before <computeroutput>max_time</computeroutput> from buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time (item number) to trim up until. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1af588fe5057e79ed98b5fb2fe2bdfb279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::multimap&lt; uint64_t, <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt;::iterator</type>
+        <definition>std::multimap&lt;uint64_t,tag_t&gt;::iterator gr::buffer::get_tags_begin</definition>
+        <argsstring>()</argsstring>
+        <name>get_tags_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="135" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aa242bbc8aa09cf2381f31891aa918f7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::multimap&lt; uint64_t, <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt;::iterator</type>
+        <definition>std::multimap&lt;uint64_t,tag_t&gt;::iterator gr::buffer::get_tags_end</definition>
+        <argsstring>()</argsstring>
+        <name>get_tags_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="136" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1ab63c65d630f779e75c71244670453e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::multimap&lt; uint64_t, <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt;::iterator</type>
+        <definition>std::multimap&lt;uint64_t,tag_t&gt;::iterator gr::buffer::get_tags_lower_bound</definition>
+        <argsstring>(uint64_t x)</argsstring>
+        <name>get_tags_lower_bound</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="137" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a984e664759fe27468c8fe6d473bd130e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::multimap&lt; uint64_t, <ref refid="structgr_1_1tag__t" kindref="compound">tag_t</ref> &gt;::iterator</type>
+        <definition>std::multimap&lt;uint64_t,tag_t&gt;::iterator gr::buffer::get_tags_upper_bound</definition>
+        <argsstring>(uint64_t x)</argsstring>
+        <name>get_tags_upper_bound</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="138" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1buffer_1a55ab04688b576a8986d1490c980f7bab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::buffer::index_add</definition>
+        <argsstring>(unsigned a, unsigned b)</argsstring>
+        <name>index_add</name>
+        <param>
+          <type>unsigned</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="172" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="172" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aee107b6d06ead342b96a8a361ced0d25" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned gr::buffer::index_sub</definition>
+        <argsstring>(unsigned a, unsigned b)</argsstring>
+        <name>index_sub</name>
+        <param>
+          <type>unsigned</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="183" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="183" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1a4b47e1c8c28ad8e04d08ebeff291be2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::buffer::allocate_buffer</definition>
+        <argsstring>(int nitems, size_t sizeof_item)</argsstring>
+        <name>allocate_buffer</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1acf55707136388abb19d805d2b94bcc01" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::buffer::buffer</definition>
+        <argsstring>(int nitems, size_t sizeof_item, block_sptr link)</argsstring>
+        <name>buffer</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_item</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1accd14906ed065a663a13b5bfa84b4f88" kindref="member">block_sptr</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+<para>constructor is private. Use gr_make_buffer to create instances. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allocate a buffer that holds at least <computeroutput>nitems</computeroutput> of size <computeroutput>sizeof_item</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the minimum number of items the buffer will hold. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeof_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the size of an item in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the block that writes to this buffer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The total size of the buffer will be rounded up to a system dependent boundary. This is typically the system page size, but under MS windows is 64KB. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1buffer_1aa56f822a5356b0dc192e7d2a83af41ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::buffer::drop_reader</definition>
+        <argsstring>(buffer_reader *reader)</argsstring>
+        <name>drop_reader</name>
+        <param>
+          <type><ref refid="classgr_1_1buffer__reader" kindref="compound">buffer_reader</ref> *</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>disassociate <computeroutput>reader</computeroutput> from this buffer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="214" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Single writer, multiple reader fifo. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" line="56" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/buffer.h" bodystart="55" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classgr_1_1buffer_1a5a40fb3c9766a4a1838ae8f297abd276" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>add_item_tag</name></member>
+      <member refid="classgr_1_1buffer_1a4b47e1c8c28ad8e04d08ebeff291be2c" prot="private" virt="virtual"><scope>gr::buffer</scope><name>allocate_buffer</name></member>
+      <member refid="classgr_1_1buffer_1a3970bcf4099ddfe0ab3d34bf8044c1fc" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>base</name></member>
+      <member refid="classgr_1_1buffer_1acf55707136388abb19d805d2b94bcc01" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>buffer</name></member>
+      <member refid="classgr_1_1buffer_1acb53d0b2074b12d0cb5d534b09dfcbd1" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>buffer_add_reader</name></member>
+      <member refid="classgr_1_1buffer_1acd526cda08365e46391a84fcf8cc73c1" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>buffer_reader</name></member>
+      <member refid="classgr_1_1buffer_1abb99dac98aa02d2ed3107d9dddac8545" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>bufsize</name></member>
+      <member refid="classgr_1_1buffer_1a8c322379309de2385a05e9bb4295cc2a" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_abs_write_offset</name></member>
+      <member refid="classgr_1_1buffer_1ae16149310d83aecb8e509b6c6de2818a" prot="protected" virt="non-virtual"><scope>gr::buffer</scope><name>d_base</name></member>
+      <member refid="classgr_1_1buffer_1a6cb33e2a667363ffec56c98ba332a975" prot="protected" virt="non-virtual"><scope>gr::buffer</scope><name>d_bufsize</name></member>
+      <member refid="classgr_1_1buffer_1adc29bce8e14dbe56396fe10c2f111c79" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_done</name></member>
+      <member refid="classgr_1_1buffer_1aecef756bc40ac8619ff2fe3362c8ac87" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_item_tags</name></member>
+      <member refid="classgr_1_1buffer_1af828cd456f9ce3156cee0e8328de153e" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_last_min_items_read</name></member>
+      <member refid="classgr_1_1buffer_1a217cb515edac6fd4529a0a9ddba155d6" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_link</name></member>
+      <member refid="classgr_1_1buffer_1a14be6d8f626e91ae07e79a7a04aff52b" prot="protected" virt="non-virtual"><scope>gr::buffer</scope><name>d_max_reader_delay</name></member>
+      <member refid="classgr_1_1buffer_1a29332c6ba773d6adf50528ee423fc67b" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1buffer_1a9753b3532f2b0fa6b7fafeb593911c7b" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_readers</name></member>
+      <member refid="classgr_1_1buffer_1aea14fec8297006abcc4aac9d1c312d9c" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_sizeof_item</name></member>
+      <member refid="classgr_1_1buffer_1ac2a0ec8394740e2a9b1126551fcd7b52" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_vmcircbuf</name></member>
+      <member refid="classgr_1_1buffer_1ae034276ad2deadf1a25017a07295eb33" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>d_write_index</name></member>
+      <member refid="classgr_1_1buffer_1aaf8072aecd0f3867fe71d9930e7a83c8" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>done</name></member>
+      <member refid="classgr_1_1buffer_1aa56f822a5356b0dc192e7d2a83af41ee" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>drop_reader</name></member>
+      <member refid="classgr_1_1buffer_1ab2d506dffae964a1984892d8bd4900f6" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>get_sizeof_item</name></member>
+      <member refid="classgr_1_1buffer_1af588fe5057e79ed98b5fb2fe2bdfb279" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>get_tags_begin</name></member>
+      <member refid="classgr_1_1buffer_1aa242bbc8aa09cf2381f31891aa918f7e" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>get_tags_end</name></member>
+      <member refid="classgr_1_1buffer_1ab63c65d630f779e75c71244670453e79" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>get_tags_lower_bound</name></member>
+      <member refid="classgr_1_1buffer_1a984e664759fe27468c8fe6d473bd130e" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>get_tags_upper_bound</name></member>
+      <member refid="classgr_1_1buffer_1a55ab04688b576a8986d1490c980f7bab" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>index_add</name></member>
+      <member refid="classgr_1_1buffer_1aee107b6d06ead342b96a8a361ced0d25" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>index_sub</name></member>
+      <member refid="classgr_1_1buffer_1aa749e1b47a6ed898cbf6b7a2fe8e04f6" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>link</name></member>
+      <member refid="classgr_1_1buffer_1a18eb15b02b8d6279fa6375bf43b67309" prot="private" virt="non-virtual"><scope>gr::buffer</scope><name>make_buffer</name></member>
+      <member refid="classgr_1_1buffer_1a608f2241653a0fd7e3273f211aef903d" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>mutex</name></member>
+      <member refid="classgr_1_1buffer_1ae84c5bd38f9c5171ee5fe3d392a87b0a" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>nitems_written</name></member>
+      <member refid="classgr_1_1buffer_1a1e0de5a52385f3c03943f0eaa83c51a7" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>nreaders</name></member>
+      <member refid="classgr_1_1buffer_1a407543b3e4c24532b899a6ddffa0c956" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>prune_tags</name></member>
+      <member refid="classgr_1_1buffer_1a35d299b71427011c360fe2aea94ee4c5" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>reader</name></member>
+      <member refid="classgr_1_1buffer_1a2773056e40c1f34bc5be8b1ca71d8006" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>remove_item_tag</name></member>
+      <member refid="classgr_1_1buffer_1a89cc95c84f69fee453830ec3b2a30d7a" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>reset_nitem_counter</name></member>
+      <member refid="classgr_1_1buffer_1a9d03c27ca88115c9b7c966acdd3fed4c" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>set_done</name></member>
+      <member refid="classgr_1_1buffer_1aa7aeb4ea8384b1ad9ef32261bcc5e2ae" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>space_available</name></member>
+      <member refid="classgr_1_1buffer_1adbb35c9b612feb6cdc55756ba7c5b08c" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>update_write_pointer</name></member>
+      <member refid="classgr_1_1buffer_1ad3d1db11817c659e4ff69ff7b06993fa" prot="public" virt="non-virtual"><scope>gr::buffer</scope><name>write_pointer</name></member>
+      <member refid="classgr_1_1buffer_1a6a0545719dc27f54505b3a6bb4453249" prot="public" virt="virtual"><scope>gr::buffer</scope><name>~buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

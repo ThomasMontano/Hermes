@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic" kind="class" prot="public">
+    <compoundname>gr::fec::code::polar_encoder_systematic</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__encoder" prot="public" virt="non-virtual">gr::fec::generic_encoder</basecompoundref>
+    <basecompoundref refid="classgr_1_1fec_1_1code_1_1polar__common" prot="public" virt="non-virtual">gr::fec::code::polar_common</basecompoundref>
+    <includes refid="polar__encoder__systematic_8h" local="no">polar_encoder_systematic.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1aa6517ae25035b6452e138109d9db5846" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* gr::fec::code::polar_encoder_systematic::d_volk_syst_intermediate</definition>
+        <argsstring></argsstring>
+        <name>d_volk_syst_intermediate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="103" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1ace8928eacf31f432c8196babbee3be40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" kindref="member">generic_encoder::sptr</ref></type>
+        <definition>static generic_encoder::sptr gr::fec::code::polar_encoder_systematic::make</definition>
+        <argsstring>(int block_size, int num_info_bits, std::vector&lt; int &gt; frozen_bit_positions)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_info_bits</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>frozen_bit_positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Factory for a polar code encoder object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>defines the codeword size. It MUST be a power of 2. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_info_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>represents the number of information bits in a block. Also called frame_size. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_bit_positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an integer vector which defines the position of all frozen bits in a block. Its size MUST be equal to block_size - num_info_bits. Also it must be sorted and every position must only occur once. Frozen bit values will be set to ZERO! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1ab2819bb82c0f39ff9918bf8c1afc54b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_encoder_systematic::generic_work</definition>
+        <argsstring>(void *in_buffer, void *out_buffer)</argsstring>
+        <name>generic_work</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a1409bf4afed09c66fd0ad3c2b4fa0db7">generic_work</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>out_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a7f04361d3587b510df3464ee46378b94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double gr::fec::code::polar_encoder_systematic::rate</definition>
+        <argsstring>()</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a0c47f99e01942d4316b5b24619aab58c">rate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the rate of the code. For every 1 input bit, there are r output bits, so the rate is 1/r. Used for setting things like the encoder block&apos;s relative rate.</para><para>This function MUST be reimplemented by the child class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1add1fca212b001167188350e5c0d8fcc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int gr::fec::code::polar_encoder_systematic::get_input_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_input_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1a95db2880c3e02e52564ea6a04b6ee243">get_input_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the input size in items that the encoder object uses to encode a full frame. Often, this number is the number of bits per frame if the input format is unpacked. If the block expects packed bytes, then this value should be the number of bytes (number of bits / 8) per input frame.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="79" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a1f8ef1f87ec649004fa0a2ee887f2fc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int gr::fec::code::polar_encoder_systematic::get_output_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1aa72462435284fc66d3b3a2a5b366f4ea">get_output_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the output size in items that the encoder object produces after encoding a full frame. Often, this number is the number of bits in the outputted frame if the input format is unpacked. If the block produces packed bytes, then this value should be the number of bytes (number of bits / 8) per frame produced. This value is generally something like R*get_input_size() for a 1/R rate code.</para><para>The child class MUST implement this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a8ce6e79423bec039daac135c70352d27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool gr::fec::code::polar_encoder_systematic::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__encoder_1ac6a41c2f21012253a43cebc7e7b98039">set_frame_size</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the size of the frame to encode.</para><para>The child class MUST implement this function and interpret how the <computeroutput>frame_size</computeroutput> information affects the block&apos;s behavior. It should also provide bounds checks. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="91" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a1b554e5e064a33a12f684514a2c6b81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::code::polar_encoder_systematic::~polar_encoder_systematic</definition>
+        <argsstring>()</argsstring>
+        <name>~polar_encoder_systematic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1aed322f2ed1e6b6e6bb041a801f00ce68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fec::code::polar_encoder_systematic::polar_encoder_systematic</definition>
+        <argsstring>(int block_size, int num_info_bits, std::vector&lt; int &gt; frozen_bit_positions)</argsstring>
+        <name>polar_encoder_systematic</name>
+        <param>
+          <type>int</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_info_bits</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>frozen_bit_positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a5475391777a5d6c14174e9bdfd9649cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fec::code::polar_encoder_systematic::bit_reverse_and_reset_frozen_bits</definition>
+        <argsstring>(unsigned char *outbuf, const unsigned char *inbuf)</argsstring>
+        <name>bit_reverse_and_reset_frozen_bits</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>outbuf</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>inbuf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="102" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>systematic POLAR encoder for basic details see &apos;<ref refid="classgr_1_1fec_1_1code_1_1polar__common" kindref="compound">polar_common</ref>&apos; class. </para>    </briefdescription>
+    <detaileddescription>
+<para>expects values with MSB first. It needs a full information word and encodes it in one pass. Output is a codeword of block_size.</para><para>Systematic encoding indicates that the info bit values are present in the codeword. &apos;info_bit_positions&apos; may be obtained by ordering all non frozen_bit_positions in increasing order. One may extract them at their positions after a bit reversal operation. encoder -&gt; decoder chain would need additional bit-reversal after encoding + before decoding. This is unnecessary. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="231">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+      </node>
+      <node id="230">
+        <label>gr::fec::code::polar_encoder_systematic</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>gr::fec::code::polar_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__common"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="238">
+        <label>std::vector&lt; char &gt;</label>
+      </node>
+      <node id="236">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="234">
+        <label>gr::fec::generic_encoder</label>
+        <link refid="classgr_1_1fec_1_1generic__encoder"/>
+        <childnode refid="235" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="233">
+        <label>gr::fec::code::polar_encoder_systematic</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>gr::fec::code::polar_common</label>
+        <link refid="classgr_1_1fec_1_1code_1_1polar__common"/>
+        <childnode refid="238" relation="usage">
+          <edgelabel>d_frozen_bit_values</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>d_info_bit_positions</edgelabel>
+          <edgelabel>d_frozen_bit_positions</edgelabel>
+          <edgelabel>d_info_bit_positions_reversed</edgelabel>
+        </childnode>
+      </node>
+      <node id="239">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="235">
+        <label>std::string</label>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/polar_encoder_systematic.h" bodystart="50" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a391cc2f87d40fac87feabdae40dd8f2a" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a5ae67e6fcab66da448cf5a1e97a7f70d" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a15b98e632515bbb78374d72b3dfa3e3a" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>bit_reverse</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a5475391777a5d6c14174e9bdfd9649cd" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>bit_reverse_and_reset_frozen_bits</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a5d3701369c61cf33d5800cf9bfab7411" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>block_power</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a1cebbcc6e861f44bf754e0f07e9d687c" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>block_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1afbe538964d898927cf27dbec77f3bfea" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_frozen_bit_positions</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a729b68cb8ae99eb2b2b8f6a556ba8452" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_frozen_bit_values</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1adbc8d66432f0aa009d426a3ea643a480" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_info_bit_positions</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ae7596a59436f7f2001dd151443c6c4c1" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_info_bit_positions_reversed</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a2425896d3a9b72896db338d2912ed0b4" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ab82cb684e9d420af266e7cbb13affe48" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a6509b4ff15434282aea0d0595fdb7b95" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_volk_frozen_bit_mask</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a30839795c87aa652d2dc34d198484e97" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_volk_frozen_bits</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1aa6517ae25035b6452e138109d9db5846" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_volk_syst_intermediate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aa3a8d96ac1ae55b5d0e6f6887808eb68" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>d_volk_temp</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a756957e732c8e4ee020175874e8ae280" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a80c72ef4103a41368b4f70dc3b008d23" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1ab2819bb82c0f39ff9918bf8c1afc54b8" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1af6e5db8309dbdeb90133190fdbbc157d" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1add1fca212b001167188350e5c0d8fcc4" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad8e7379baeed9ae5fe5c1e848a0a9fa7" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a1f8ef1f87ec649004fa0a2ee887f2fc0" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1ace8928eacf31f432c8196babbee3be40" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1afd01b295f144a57053e5b11a33fff5b6" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a41365b16260ce4ac0117d079803e9023" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>num_info_bits</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1add22e2355a7d6f5b806b5ae23d3f9ee7" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>polar_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1aed322f2ed1e6b6e6bb041a801f00ce68" prot="private" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>polar_encoder_systematic</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1a410d33ccb406282392b51a501f1fb902" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>print_packed_bit_array</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aaae9ead24f0f30d1add2c9fe29ae410c" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>print_unpacked_bit_array</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a7f04361d3587b510df3464ee46378b94" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a8ce6e79423bec039daac135c70352d27" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ac45c9ce21fe410adc8fd273394c319c7" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>setup_info_bit_positions_reversed</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ad2fe1805bba3d4cb737784bbf6aaf60d" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>setup_volk_vectors</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1ad50b0ff05c38cb33f8e8eaca97f7fd30" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1adb02ab6b53b41fa0b0e65a51ca966f3b" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1adcb9476e3f437f427d763814381bee0b" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>volk_encode</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1aaecd58101069b3d5a6084bde1efc7882" prot="protected" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>volk_encode_block</name></member>
+      <member refid="classgr_1_1fec_1_1generic__encoder_1a576c3fc45c1da7e8712272d556be6b23" prot="public" virt="virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>~generic_encoder</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__common_1ae84e16eddb487c7e6946397859cac5c2" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>~polar_common</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1polar__encoder__systematic_1a1b554e5e064a33a12f684514a2c6b81a" prot="public" virt="non-virtual"><scope>gr::fec::code::polar_encoder_systematic</scope><name>~polar_encoder_systematic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

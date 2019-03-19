@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classrpcbasic__inserter" kind="class" prot="public">
+    <compoundname>rpcbasic_inserter</compoundname>
+    <basecompoundref refid="classrpcinserter__base" prot="public" virt="virtual">rpcinserter_base&lt; T, Tfrom &gt;</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">gnuradio/rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Tfrom</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrpcbasic__inserter_1a1d66af6f64f7bd3cf5c7367c59be2a2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_inserter&lt; T, Tfrom &gt;::rpcbasic_inserter</definition>
+        <argsstring>(T *source, Tfrom(T::*func)() const)</argsstring>
+        <name>rpcbasic_inserter</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>Tfrom(T::*)() const</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="130" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__inserter_1a5d2238baa8ddfe7351a8e410925df93b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_inserter&lt; T, Tfrom &gt;::rpcbasic_inserter</definition>
+        <argsstring>(T *source, Tfrom(T::*func)())</argsstring>
+        <name>rpcbasic_inserter</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>Tfrom(T::*)()</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="134" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classrpcbasic__inserter_1a817b3a9148aeafe99d12847fccf3b61e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt::pmt_t</ref></type>
+        <definition>pmt::pmt_t rpcbasic_inserter&lt; T, Tfrom &gt;::retrieve</definition>
+        <argsstring>()</argsstring>
+        <name>retrieve</name>
+        <reimplements refid="classrpcinserter__base_1a727c8a3ddab04a41bb5cd6e0479e86de">retrieve</reimplements>
+        <briefdescription>
+<para>send <computeroutput>msg</computeroutput> to <computeroutput>msg_producer</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="138" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="138" bodyend="142"/>
+        <references refid="classrpcinserter__base_1a8f89af5214a3c15b93dad9ba4e76b88e" compoundref="rpcregisterhelpers_8h" startline="116">rpcinserter_base&lt; T, Tfrom &gt;::_source</references>
+        <references refid="namespacepmt_1a90faad6086ac00280e0cfd8bb541bd64" compoundref="pmt__sugar_8h" startline="36" endline="39">pmt::mp</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Templated parent class for registering a ControlPort Inserter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9417">
+        <label>gr::messages::msg_producer</label>
+        <link refid="classgr_1_1messages_1_1msg__producer"/>
+      </node>
+      <node id="9416">
+        <label>rpcinserter_base&lt; T, Tfrom &gt;</label>
+        <link refid="classrpcinserter__base"/>
+        <childnode refid="9417" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9415">
+        <label>rpcbasic_inserter&lt; T, Tfrom &gt;</label>
+        <link refid="classrpcbasic__inserter"/>
+        <childnode refid="9416" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9422">
+        <label>T</label>
+      </node>
+      <node id="9420">
+        <label>gr::messages::msg_producer</label>
+        <link refid="classgr_1_1messages_1_1msg__producer"/>
+      </node>
+      <node id="9419">
+        <label>rpcinserter_base&lt; T, Tfrom &gt;</label>
+        <link refid="classrpcinserter__base"/>
+        <childnode refid="9420" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9421" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+        <childnode refid="9422" relation="usage">
+          <edgelabel>_source</edgelabel>
+        </childnode>
+      </node>
+      <node id="9418">
+        <label>rpcbasic_inserter&lt; T, Tfrom &gt;</label>
+        <link refid="classrpcbasic__inserter"/>
+        <childnode refid="9419" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9421">
+        <label>Tfrom</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="126" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classrpcinserter__base_1aab175e82b4c48407c865f3aaff71a8e2" prot="protected" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>_func</name></member>
+      <member refid="classrpcinserter__base_1a8f89af5214a3c15b93dad9ba4e76b88e" prot="protected" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>_source</name></member>
+      <member refid="classgr_1_1messages_1_1msg__producer_1aecc9d396bc43ecd459b88dac2f9ae3de" prot="public" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>msg_producer</name></member>
+      <member refid="classrpcbasic__inserter_1a817b3a9148aeafe99d12847fccf3b61e" prot="public" virt="virtual"><scope>rpcbasic_inserter</scope><name>retrieve</name></member>
+      <member refid="classrpcbasic__inserter_1a1d66af6f64f7bd3cf5c7367c59be2a2d" prot="public" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>rpcbasic_inserter</name></member>
+      <member refid="classrpcbasic__inserter_1a5d2238baa8ddfe7351a8e410925df93b" prot="public" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>rpcbasic_inserter</name></member>
+      <member refid="classrpcinserter__base_1ad0a669031de1cca36cf612f7d4f74b05" prot="public" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>rpcinserter_base</name></member>
+      <member refid="classrpcinserter__base_1a64dc370d338f128215fa33e237166a18" prot="public" virt="non-virtual"><scope>rpcbasic_inserter</scope><name>rpcinserter_base</name></member>
+      <member refid="classgr_1_1messages_1_1msg__producer_1ae2911393628f0a7e7e24d2336f14a9b3" prot="public" virt="virtual"><scope>rpcbasic_inserter</scope><name>~msg_producer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

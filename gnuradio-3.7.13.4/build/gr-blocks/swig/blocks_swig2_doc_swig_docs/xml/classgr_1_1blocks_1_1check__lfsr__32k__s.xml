@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1check__lfsr__32k__s" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::check_lfsr_32k_s</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="check__lfsr__32k__s_8h" local="no">check_lfsr_32k_s.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1check__lfsr__32k__s_1ad14c4608ec9fc93a884ebfd3b46766ec" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1check__lfsr__32k__s" kindref="compound">check_lfsr_32k_s</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;check_lfsr_32k_s&gt; gr::blocks::check_lfsr_32k_s::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1check__lfsr__32k__s_1a85e501ee837450f95fbc1a0bfc8e9d01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1ad14c4608ec9fc93a884ebfd3b46766ec" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::check_lfsr_32k_s::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1check__lfsr__32k__s_1a53d63a6326b7f45ea691f4f0b0f9bb37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gr::blocks::check_lfsr_32k_s::ntotal</definition>
+        <argsstring>() const =0</argsstring>
+        <name>ntotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1check__lfsr__32k__s_1a0bbd22562ee0eccbcfd8d9668e3e651e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gr::blocks::check_lfsr_32k_s::nright</definition>
+        <argsstring>() const =0</argsstring>
+        <name>nright</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1check__lfsr__32k__s_1a16b1b7b0966dae60b21332177d9fcaa5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gr::blocks::check_lfsr_32k_s::runlength</definition>
+        <argsstring>() const =0</argsstring>
+        <name>runlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>sink that checks if its input stream consists of a <ref refid="classgr_1_1blocks_1_1lfsr__32k" kindref="compound">lfsr_32k</ref> sequence. </para>    </briefdescription>
+    <detaileddescription>
+<para>This sink is typically used along with <ref refid="classgr_1_1blocks_1_1lfsr__32k__source__s" kindref="compound">gr::blocks::lfsr_32k_source_s</ref> to test the USRP using its digital loopback mode. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="133">
+        <label>gr::blocks::check_lfsr_32k_s</label>
+        <link refid="classgr_1_1blocks_1_1check__lfsr__32k__s"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="135">
+        <label>gr::blocks::check_lfsr_32k_s</label>
+        <link refid="classgr_1_1blocks_1_1check__lfsr__32k__s"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/check_lfsr_32k_s.h" bodystart="41" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1a85e501ee837450f95fbc1a0bfc8e9d01" prot="public" virt="non-virtual"><scope>gr::blocks::check_lfsr_32k_s</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1a0bbd22562ee0eccbcfd8d9668e3e651e" prot="public" virt="pure-virtual"><scope>gr::blocks::check_lfsr_32k_s</scope><name>nright</name></member>
+      <member refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1a53d63a6326b7f45ea691f4f0b0f9bb37" prot="public" virt="pure-virtual"><scope>gr::blocks::check_lfsr_32k_s</scope><name>ntotal</name></member>
+      <member refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1a16b1b7b0966dae60b21332177d9fcaa5" prot="public" virt="pure-virtual"><scope>gr::blocks::check_lfsr_32k_s</scope><name>runlength</name></member>
+      <member refid="classgr_1_1blocks_1_1check__lfsr__32k__s_1ad14c4608ec9fc93a884ebfd3b46766ec" prot="public" virt="non-virtual"><scope>gr::blocks::check_lfsr_32k_s</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

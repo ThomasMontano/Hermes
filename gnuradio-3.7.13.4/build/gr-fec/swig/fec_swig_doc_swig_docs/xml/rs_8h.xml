@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="rs_8h" kind="file">
+    <compoundname>rs.h</compoundname>
+    <includes refid="api_8h" local="no">gnuradio/fec/api.h</includes>
+    <incdepgraph>
+      <node id="485">
+        <label>gnuradio/fec/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="486" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="484">
+        <label>rs.h</label>
+        <link refid="rs.h"/>
+        <childnode refid="485" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rs_8h_1ac91ed521380923edb62c01a1ad650152" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char Taltab[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Taltab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rs_8h_1afa58e689b97e42deb51097e890e44f1c" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char Tal1tab[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Tal1tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rs_8h_1a8215c744f4328048b458cd982f6671ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void encode_rs_char</definition>
+        <argsstring>(void *rs, unsigned char *data, unsigned char *parity)</argsstring>
+        <name>encode_rs_char</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a05335a44d898d1ee8b443d334e70a3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> int</type>
+        <definition>FEC_API int decode_rs_char</definition>
+        <argsstring>(void *rs, unsigned char *data, int *eras_pos, int no_eras)</argsstring>
+        <name>decode_rs_char</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>eras_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>no_eras</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a37c660080b5a0c5f3a7ff3f7c27f0ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void *</type>
+        <definition>FEC_API void* init_rs_char</definition>
+        <argsstring>(unsigned int symsize, unsigned int gfpoly, unsigned int fcr, unsigned int prim, unsigned int nroots)</argsstring>
+        <name>init_rs_char</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>symsize</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>gfpoly</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>fcr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>nroots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a4ec69b9798a7cdb5c7503436fbc08215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void free_rs_char</definition>
+        <argsstring>(void *rs)</argsstring>
+        <name>free_rs_char</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1af0bfba54e1c3ed32d6d8f032ab1d1310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void encode_rs_int</definition>
+        <argsstring>(void *rs, int *data, int *parity)</argsstring>
+        <name>encode_rs_int</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a87753d3c95a793024bc409549fdee190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> int</type>
+        <definition>FEC_API int decode_rs_int</definition>
+        <argsstring>(void *rs, int *data, int *eras_pos, int no_eras)</argsstring>
+        <name>decode_rs_int</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>eras_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>no_eras</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a57056362ac839e8fad0b1f8d40e0c9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void *</type>
+        <definition>FEC_API void* init_rs_int</definition>
+        <argsstring>(unsigned int symsize, unsigned int gfpoly, unsigned int fcr, unsigned int prim, unsigned int nroots)</argsstring>
+        <name>init_rs_int</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>symsize</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>gfpoly</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>fcr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>nroots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a1c937f277e0b80518386429edeaf3d20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void free_rs_int</definition>
+        <argsstring>(void *rs)</argsstring>
+        <name>free_rs_int</name>
+        <param>
+          <type>void *</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1a7c32cf0da48623a20e9012997d2aaec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> void</type>
+        <definition>FEC_API void encode_rs_8</definition>
+        <argsstring>(unsigned char *data, unsigned char *parity)</argsstring>
+        <name>encode_rs_8</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rs_8h_1ae9b4102262184e0228eab389b5a40d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref> int</type>
+        <definition>FEC_API int decode_rs_8</definition>
+        <argsstring>(unsigned char *data, int *eras_pos, int no_eras)</argsstring>
+        <name>decode_rs_8</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>eras_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>no_eras</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">gnuradio/fec/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>User<sp/>include<sp/>file<sp/>for<sp/>the<sp/>Reed-Solomon<sp/>codec</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2002,<sp/>Phil<sp/>Karn<sp/>KA9Q</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>May<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(GPL)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>General<sp/>purpose<sp/>RS<sp/>codec,<sp/>8-bit<sp/>symbols<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a8215c744f4328048b458cd982f6671ff" kindref="member">encode_rs_char</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parity);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a05335a44d898d1ee8b443d334e70a3a9" kindref="member">decode_rs_char</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*eras_pos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>no_eras);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="rs_8h_1a37c660080b5a0c5f3a7ff3f7c27f0ca0" kindref="member">init_rs_char</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>symsize,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gfpoly,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fcr,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prim,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nroots);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a4ec69b9798a7cdb5c7503436fbc08215" kindref="member">free_rs_char</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>General<sp/>purpose<sp/>RS<sp/>codec,<sp/>integer<sp/>symbols<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1af0bfba54e1c3ed32d6d8f032ab1d1310" kindref="member">encode_rs_int</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*parity);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a87753d3c95a793024bc409549fdee190" kindref="member">decode_rs_int</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*eras_pos,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>no_eras);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="rs_8h_1a57056362ac839e8fad0b1f8d40e0c9db" kindref="member">init_rs_int</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>symsize,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gfpoly,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fcr,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prim,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nroots);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a1c937f277e0b80518386429edeaf3d20" kindref="member">free_rs_int</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*rs);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>CCSDS<sp/>standard<sp/>(255,223)<sp/>RS<sp/>codec<sp/>with<sp/>conventional<sp/>(*not*<sp/>dual-basis)</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>symbol<sp/>representation</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1a7c32cf0da48623a20e9012997d2aaec9" kindref="member">encode_rs_8</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parity);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="api_8h_1a5cf75e044f752f0fdd15434e02a94db8" kindref="member">FEC_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1ae9b4102262184e0228eab389b5a40d13" kindref="member">decode_rs_8</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*eras_pos,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>no_eras);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Tables<sp/>to<sp/>map<sp/>from<sp/>conventional-&gt;dual<sp/>(Taltab)<sp/>and</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>dual-&gt;conventional<sp/>(Tal1tab)<sp/>bases</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="rs_8h_1ac91ed521380923edb62c01a1ad650152" kindref="member">Taltab</ref>[],<ref refid="rs_8h_1afa58e689b97e42deb51097e890e44f1c" kindref="member">Tal1tab</ref>[];</highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/rs.h"/>
+  </compounddef>
+</doxygen>

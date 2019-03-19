@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1repeat" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::repeat</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_interpolator</basecompoundref>
+    <includes refid="repeat_8h" local="no">repeat.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1repeat_1a7d8da9ca0a24a33d52e7468418c541e0" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1repeat" kindref="compound">repeat</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;repeat&gt; gr::blocks::repeat::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1repeat_1af7856bfa1282d23adde64d2fb77979c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1repeat_1a7d8da9ca0a24a33d52e7468418c541e0" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::repeat::make</definition>
+        <argsstring>(size_t itemsize, int repeat)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a repeat block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream itemsize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of times to repeat the input </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1repeat_1a978f344aa6b69de1e52024916d0aafe2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::blocks::repeat::interpolation</definition>
+        <argsstring>() const =0</argsstring>
+        <name>interpolation</name>
+        <briefdescription>
+<para>Return current interpolation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1repeat_1a7d1e8301123f2cf6026b13f6405b4859" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::repeat::set_interpolation</definition>
+        <argsstring>(int interp)=0</argsstring>
+        <name>set_interpolation</name>
+        <param>
+          <type>int</type>
+          <declname>interp</declname>
+        </param>
+        <briefdescription>
+<para>sets the interpolation </para>        </briefdescription>
+        <detaileddescription>
+<para>Call this method in a callback to adjust the interpolation at run time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interpolation to be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" line="66" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>repeat each input <computeroutput>repeat</computeroutput> times</para><para>Message Ports: </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>interpolation (in): Takes a pmt_pair(pmt::mp(&quot;interpolation&quot;), pmt_long interp), setting the interpolation to interp. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="647">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="646">
+        <label>gr::blocks::repeat</label>
+        <link refid="classgr_1_1blocks_1_1repeat"/>
+        <childnode refid="647" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="649">
+        <label>sync_interpolator</label>
+      </node>
+      <node id="648">
+        <label>gr::blocks::repeat</label>
+        <link refid="classgr_1_1blocks_1_1repeat"/>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repeat.h" bodystart="40" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1repeat_1a978f344aa6b69de1e52024916d0aafe2" prot="public" virt="pure-virtual"><scope>gr::blocks::repeat</scope><name>interpolation</name></member>
+      <member refid="classgr_1_1blocks_1_1repeat_1af7856bfa1282d23adde64d2fb77979c3" prot="public" virt="non-virtual"><scope>gr::blocks::repeat</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1repeat_1a7d1e8301123f2cf6026b13f6405b4859" prot="public" virt="pure-virtual"><scope>gr::blocks::repeat</scope><name>set_interpolation</name></member>
+      <member refid="classgr_1_1blocks_1_1repeat_1a7d8da9ca0a24a33d52e7468418c541e0" prot="public" virt="non-virtual"><scope>gr::blocks::repeat</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

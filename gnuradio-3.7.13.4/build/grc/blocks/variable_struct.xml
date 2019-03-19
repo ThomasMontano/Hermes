@@ -1,0 +1,368 @@
+<block>
+  <name>Struct Variable</name>
+  <key>variable_struct</key>
+  <import>def struct(data): return type('Struct', (object,), data)()</import>
+  <var_make>self.$id = $id = struct({#slurp
+#for $i in range(20):
+#set $field = $getVar('field' + str(i))
+#if len(str($field)) > 2
+$field: $getVar('value' + str(i)), #slurp
+#end if
+#end for
+})</var_make>
+  <var_value>struct({#slurp
+#for $i in range(20):
+#set $field = $getVar('field' + str(i))
+#if len(str($field)) > 2
+$field: $getVar('value' + str(i)), #slurp
+#end if
+#end for
+})</var_value>
+  <make></make>
+  <param>
+    <name>Field 0</name>
+    <key>field0</key>
+    <value>field0</value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 1</name>
+    <key>field1</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 2</name>
+    <key>field2</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 3</name>
+    <key>field3</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 4</name>
+    <key>field4</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 5</name>
+    <key>field5</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 6</name>
+    <key>field6</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 7</name>
+    <key>field7</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 8</name>
+    <key>field8</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 9</name>
+    <key>field9</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 10</name>
+    <key>field10</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 11</name>
+    <key>field11</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 12</name>
+    <key>field12</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 13</name>
+    <key>field13</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 14</name>
+    <key>field14</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 15</name>
+    <key>field15</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 16</name>
+    <key>field16</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 17</name>
+    <key>field17</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 18</name>
+    <key>field18</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>Field 19</name>
+    <key>field19</key>
+    <value></value>
+    <type>string</type>
+    <hide>part</hide>
+    <tab>Fields</tab>
+  </param>
+  <param>
+    <name>$field0()</name>
+    <key>value0</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field0() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field1()</name>
+    <key>value1</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field1() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field2()</name>
+    <key>value2</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field2() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field3()</name>
+    <key>value3</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field3() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field4()</name>
+    <key>value4</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field4() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field5()</name>
+    <key>value5</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field5() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field6()</name>
+    <key>value6</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field6() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field7()</name>
+    <key>value7</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field7() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field8()</name>
+    <key>value8</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field8() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field9()</name>
+    <key>value9</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field9() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field10()</name>
+    <key>value10</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field10() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field11()</name>
+    <key>value11</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field11() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field12()</name>
+    <key>value12</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field12() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field13()</name>
+    <key>value13</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field13() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field14()</name>
+    <key>value14</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field14() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field15()</name>
+    <key>value15</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field15() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field16()</name>
+    <key>value16</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field16() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field17()</name>
+    <key>value17</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field17() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field18()</name>
+    <key>value18</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field18() then 'none' else 'all'#</hide>
+  </param>
+  <param>
+    <name>$field19()</name>
+    <key>value19</key>
+    <value>0</value>
+    <type>raw</type>
+    <hide>#if $field19() then 'none' else 'all'#</hide>
+  </param>
+  <check>($str($field0) or "a")[0].isalpha()</check>
+  <check>($str($field0) or "a").isalnum()</check>
+  <check>($str($field1) or "a")[0].isalpha()</check>
+  <check>($str($field1) or "a").isalnum()</check>
+  <check>($str($field2) or "a")[0].isalpha()</check>
+  <check>($str($field2) or "a").isalnum()</check>
+  <check>($str($field3) or "a")[0].isalpha()</check>
+  <check>($str($field3) or "a").isalnum()</check>
+  <check>($str($field4) or "a")[0].isalpha()</check>
+  <check>($str($field4) or "a").isalnum()</check>
+  <check>($str($field5) or "a")[0].isalpha()</check>
+  <check>($str($field5) or "a").isalnum()</check>
+  <check>($str($field6) or "a")[0].isalpha()</check>
+  <check>($str($field6) or "a").isalnum()</check>
+  <check>($str($field7) or "a")[0].isalpha()</check>
+  <check>($str($field7) or "a").isalnum()</check>
+  <check>($str($field8) or "a")[0].isalpha()</check>
+  <check>($str($field8) or "a").isalnum()</check>
+  <check>($str($field9) or "a")[0].isalpha()</check>
+  <check>($str($field9) or "a").isalnum()</check>
+  <check>($str($field10) or "a")[0].isalpha()</check>
+  <check>($str($field10) or "a").isalnum()</check>
+  <check>($str($field11) or "a")[0].isalpha()</check>
+  <check>($str($field11) or "a").isalnum()</check>
+  <check>($str($field12) or "a")[0].isalpha()</check>
+  <check>($str($field12) or "a").isalnum()</check>
+  <check>($str($field13) or "a")[0].isalpha()</check>
+  <check>($str($field13) or "a").isalnum()</check>
+  <check>($str($field14) or "a")[0].isalpha()</check>
+  <check>($str($field14) or "a").isalnum()</check>
+  <check>($str($field15) or "a")[0].isalpha()</check>
+  <check>($str($field15) or "a").isalnum()</check>
+  <check>($str($field16) or "a")[0].isalpha()</check>
+  <check>($str($field16) or "a").isalnum()</check>
+  <check>($str($field17) or "a")[0].isalpha()</check>
+  <check>($str($field17) or "a").isalnum()</check>
+  <check>($str($field18) or "a")[0].isalpha()</check>
+  <check>($str($field18) or "a").isalnum()</check>
+  <check>($str($field19) or "a")[0].isalpha()</check>
+  <check>($str($field19) or "a").isalnum()</check>
+  <doc>This is a simple struct/record like variable.
+
+Attribute/field names can be specified in the tab 'Fields'.
+For each non-empty field a parameter with type raw is shown.
+Value access via the dot operator, e.g. "variable_struct_0.field0"
+  </doc>
+</block>

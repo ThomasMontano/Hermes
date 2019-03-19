@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1short__to__char" kind="class" prot="public">
+    <compoundname>gr::blocks::short_to_char</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="short__to__char_8h" local="no">short_to_char.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1short__to__char_1afca7a1b141dcd27f816141ced3cc33bc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1short__to__char" kindref="compound">short_to_char</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;short_to_char&gt; gr::blocks::short_to_char::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/short_to_char.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/short_to_char.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1short__to__char_1a35615dd424204835565ed3e913097c48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1short__to__char_1afca7a1b141dcd27f816141ced3cc33bc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::short_to_char::make</definition>
+        <argsstring>(size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a short to char block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector length of data streams. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/short_to_char.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert stream of shorts to a stream of chars. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block strips off the least significant byte from the short value.</para><para>[0x00ff, 0x0ff0, 0xff00] =&gt; [0x00, 0x0f, 0xff]</para><para>Converts <computeroutput>vlen</computeroutput> length vectors of input short samples to chars, dividing each element by 256. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="681">
+        <label>sync_block</label>
+      </node>
+      <node id="680">
+        <label>gr::blocks::short_to_char</label>
+        <link refid="classgr_1_1blocks_1_1short__to__char"/>
+        <childnode refid="681" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="683">
+        <label>sync_block</label>
+      </node>
+      <node id="682">
+        <label>gr::blocks::short_to_char</label>
+        <link refid="classgr_1_1blocks_1_1short__to__char"/>
+        <childnode refid="683" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/short_to_char.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/short_to_char.h" bodystart="46" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1short__to__char_1a35615dd424204835565ed3e913097c48" prot="public" virt="non-virtual"><scope>gr::blocks::short_to_char</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1short__to__char_1afca7a1b141dcd27f816141ced3cc33bc" prot="public" virt="non-virtual"><scope>gr::blocks::short_to_char</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="realtime__impl_8h" kind="file">
+    <compoundname>realtime_impl.h</compoundname>
+    <includes refid="gnuradio_2api_8h" local="no">gnuradio/api.h</includes>
+    <includes local="no">stdexcept</includes>
+    <includedby refid="realtime_8h" local="no">realtime.h</includedby>
+    <incdepgraph>
+      <node id="1090">
+        <label>gnuradio/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1091">
+        <label>stdexcept</label>
+      </node>
+      <node id="1089">
+        <label>gnuradio/api.h</label>
+        <link refid="gnuradio_2api_8h"/>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>realtime_impl.h</label>
+        <link refid="realtime_impl.h"/>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1092">
+        <label>realtime_impl.h</label>
+        <link refid="realtime_impl.h"/>
+        <childnode refid="1093" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>sys_pri.h</label>
+        <link refid="sys__pri_8h"/>
+      </node>
+      <node id="1093">
+        <label>realtime.h</label>
+        <link refid="realtime_8h"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgr_1_1impl_1_1rt__sched__param" prot="public">gr::impl::rt_sched_param</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1impl">gr::impl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2006,2008,2013<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_GNURADIO_REALTIME_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_GNURADIO_REALTIME_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnuradio_2api_8h" kindref="compound">gnuradio/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gr<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415a5782c718bf523997b63b57858399ae04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415a5782c718bf523997b63b57858399ae04" kindref="member">RT_OK</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="38" refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ae9743afa7588625297e5f4b4bc1fffca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ae9743afa7588625297e5f4b4bc1fffca" kindref="member">RT_NOT_IMPLEMENTED</ref>,</highlight></codeline>
+<codeline lineno="39" refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab910c0a53288bf85fa33230beecd39e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab910c0a53288bf85fa33230beecd39e5" kindref="member">RT_NO_PRIVS</ref>,</highlight></codeline>
+<codeline lineno="40" refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab74c3993e18991892f0eabf0e5d218a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415ab74c3993e18991892f0eabf0e5d218a0" kindref="member">RT_OTHER_ERROR</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" kindref="member">rt_status_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579" kindref="member">rt_sched_policy</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31" kindref="member">RT_SCHED_RR</ref><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>round<sp/>robin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579a2dda8e8efa8715f466d2d62f5d4377e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579a2dda8e8efa8715f466d2d62f5d4377e3" kindref="member">RT_SCHED_FIFO</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>in<sp/>first<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="namespacegr_1_1impl" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">impl<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Define<sp/>the<sp/>range<sp/>for<sp/>our<sp/>virtual<sp/>priorities<sp/>(don&apos;t<sp/>change</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>these)</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Processes<sp/>(or<sp/>threads)<sp/>with<sp/>numerically<sp/>higher<sp/>priority<sp/>values</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>are<sp/>scheduled<sp/>before<sp/>processes<sp/>with<sp/>numerically<sp/>lower<sp/>priority</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>values.<sp/>Thus,<sp/>the<sp/>value<sp/>returned<sp/>by<sp/>rt_priority_max()<sp/>will<sp/>be</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>greater<sp/>than<sp/>the<sp/>value<sp/>returned<sp/>by<sp/>rt_priority_min().</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rt_priority_min()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rt_priority_max()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>15;<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rt_priority_default()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structgr_1_1impl_1_1rt__sched__param" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/><ref refid="structgr_1_1impl_1_1rt__sched__param" kindref="compound">rt_sched_param</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="structgr_1_1impl_1_1rt__sched__param_1a541e24cacc8fb57b96aa823de4c20b2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgr_1_1impl_1_1rt__sched__param_1a541e24cacc8fb57b96aa823de4c20b2c" kindref="member">priority</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structgr_1_1impl_1_1rt__sched__param_1a05520c3f4db2ecd579bc959daaeb664a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579" kindref="member">rt_sched_policy</ref><sp/><ref refid="structgr_1_1impl_1_1rt__sched__param_1a05520c3f4db2ecd579bc959daaeb664a" kindref="member">policy</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structgr_1_1impl_1_1rt__sched__param_1a35da551b10a20e07086293358fbc32fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgr_1_1impl_1_1rt__sched__param_1a35da551b10a20e07086293358fbc32fd" kindref="member">rt_sched_param</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>priority(rt_priority_default()),<sp/>policy(<ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31" kindref="member">RT_SCHED_RR</ref>){}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structgr_1_1impl_1_1rt__sched__param_1abd9a69ae6d41844c0a881983c60d55a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgr_1_1impl_1_1rt__sched__param_1abd9a69ae6d41844c0a881983c60d55a0" kindref="member">rt_sched_param</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>priority_,<sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579" kindref="member">rt_sched_policy</ref><sp/>policy_<sp/>=<sp/><ref refid="namespacegr_1aaedd4b8d3deeba66d106d9dc348b0579aebbebdbc4c20dca83a48ab9ba8005c31" kindref="member">RT_SCHED_RR</ref>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(priority_<sp/>&lt;<sp/>rt_priority_min()<sp/>||<sp/>priority_<sp/>&gt;<sp/>rt_priority_max())</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::invalid_argument(</highlight><highlight class="stringliteral">&quot;rt_sched_param:<sp/>priority<sp/>out<sp/>of<sp/>range&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>priority<sp/>=<sp/>priority_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>policy<sp/>=<sp/>policy_;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>If<sp/>you<sp/>change<sp/>this,<sp/>you<sp/>need<sp/>to<sp/>change<sp/>the<sp/>code<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gnuradio-runtime/swig/realtime.i,<sp/>see<sp/>note<sp/>there.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref><sp/><ref refid="namespacegr_1a4b419c1302ff5014e3c7919ef6c89415" kindref="member">rt_status_t</ref><sp/><ref refid="namespacegr_1_1impl_1a0d191190f323e3e30ac8ee0f5667ff25" kindref="member">enable_realtime_scheduling</ref>(rt_sched_param<sp/>=<sp/>rt_sched_param());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>impl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>gr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GNURADIO_REALTIME_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h"/>
+  </compounddef>
+</doxygen>

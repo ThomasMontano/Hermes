@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1multiply__const__cc" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::multiply_const_cc</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="multiply__const__cc_8h" local="no">multiply_const_cc.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1multiply__const__cc_1ae33065c547fb22ab6f47c085b46aaaf5" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1multiply__const__cc" kindref="compound">multiply_const_cc</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;multiply_const_cc&gt; gr::blocks::multiply_const_cc::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__cc_1a0b7901479013274d9cf7458fbb902c0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1multiply__const__cc_1ae33065c547fb22ab6f47c085b46aaaf5" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::multiply_const_cc::make</definition>
+        <argsstring>(gr_complex k, size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="classgr_1_1blocks_1_1multiply__const__cc" kindref="compound">multiply_const_cc</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex multiplicative constant </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector length of incoming stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__cc_1a5e378f00e4a233960f8a334a6cc5c405" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>gr_complex</type>
+        <definition>virtual gr_complex gr::blocks::multiply_const_cc::k</definition>
+        <argsstring>() const =0</argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>Return complex multiplicative constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1multiply__const__cc_1a79a41ea9f8e85e204fff7e26753dae29" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::multiply_const_cc::set_k</definition>
+        <argsstring>(gr_complex k)=0</argsstring>
+        <name>set_k</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Set complex multiplicative constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>output = input * complex constant </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="420">
+        <label>gr::blocks::multiply_const_cc</label>
+        <link refid="classgr_1_1blocks_1_1multiply__const__cc"/>
+        <childnode refid="421" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="422">
+        <label>gr::blocks::multiply_const_cc</label>
+        <link refid="classgr_1_1blocks_1_1multiply__const__cc"/>
+        <childnode refid="423" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/multiply_const_cc.h" bodystart="36" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1multiply__const__cc_1a5e378f00e4a233960f8a334a6cc5c405" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_const_cc</scope><name>k</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__cc_1a0b7901479013274d9cf7458fbb902c0b" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_const_cc</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__cc_1a79a41ea9f8e85e204fff7e26753dae29" prot="public" virt="pure-virtual"><scope>gr::blocks::multiply_const_cc</scope><name>set_k</name></member>
+      <member refid="classgr_1_1blocks_1_1multiply__const__cc_1ae33065c547fb22ab6f47c085b46aaaf5" prot="public" virt="non-virtual"><scope>gr::blocks::multiply_const_cc</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__packet__operators__blk" kind="group">
+    <compoundname>packet_operators_blk</compoundname>
+    <title>Packet/Frame Operators</title>
+    <innerclass refid="classgr_1_1digital_1_1correlate__access__code__bb" prot="public">gr::digital::correlate_access_code_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1correlate__access__code__bb__ts" prot="public">gr::digital::correlate_access_code_bb_ts</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1correlate__access__code__ff__ts" prot="public">gr::digital::correlate_access_code_ff_ts</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1correlate__access__code__tag__bb" prot="public">gr::digital::correlate_access_code_tag_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1correlate__access__code__tag__ff" prot="public">gr::digital::correlate_access_code_tag_ff</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1crc32__async__bb" prot="public">gr::digital::crc32_async_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1crc32__bb" prot="public">gr::digital::crc32_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1framer__sink__1" prot="public">gr::digital::framer_sink_1</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__buffer" prot="public">gr::digital::header_buffer</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__format__base" prot="public">gr::digital::header_format_base</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__format__counter" prot="public">gr::digital::header_format_counter</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__format__crc" prot="public">gr::digital::header_format_crc</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__format__default" prot="public">gr::digital::header_format_default</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__format__ofdm" prot="public">gr::digital::header_format_ofdm</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1header__payload__demux" prot="public">gr::digital::header_payload_demux</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1packet__header__default" prot="public">gr::digital::packet_header_default</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1packet__headergenerator__bb" prot="public">gr::digital::packet_headergenerator_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1packet__headerparser__b" prot="public">gr::digital::packet_headerparser_b</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1packet__sink" prot="public">gr::digital::packet_sink</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1protocol__formatter__async" prot="public">gr::digital::protocol_formatter_async</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1protocol__formatter__bb" prot="public">gr::digital::protocol_formatter_bb</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1protocol__parser__b" prot="public">gr::digital::protocol_parser_b</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1simple__correlator" prot="public">gr::digital::simple_correlator</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1simple__framer" prot="public">gr::digital::simple_framer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__packet__operators__blk_1ga3e524c0cd3cf5e9f3697c5489f4e2278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr-digital_2include_2gnuradio_2digital_2api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> unsigned int</type>
+        <definition>DIGITAL_API unsigned int gr::digital::update_crc32</definition>
+        <argsstring>(unsigned int crc, const unsigned char *buf, size_t len)</argsstring>
+        <name>update_crc32</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>update running CRC-32 </para>        </briefdescription>
+        <detaileddescription>
+<para>Update a running CRC with the bytes buf[0..len-1] The CRC should be initialized to all 1&apos;s, and the transmitted value is the 1&apos;s complement of the final running CRC. The resulting CRC should be transmitted in big endian order. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/crc32.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

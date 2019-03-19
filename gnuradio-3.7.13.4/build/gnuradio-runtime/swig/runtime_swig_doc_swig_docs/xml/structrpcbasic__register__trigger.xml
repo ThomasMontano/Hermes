@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structrpcbasic__register__trigger" kind="struct" prot="public">
+    <compoundname>rpcbasic_register_trigger</compoundname>
+    <basecompoundref refid="classrpcbasic__base" prot="public" virt="non-virtual">rpcbasic_base</basecompoundref>
+    <includes refid="rpcregisterhelpers_8h" local="no">rpcregisterhelpers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structrpcbasic__register__trigger_1a934edfad9a76e59ef1e1b4ea457db59b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string rpcbasic_register_trigger&lt; T &gt;::d_id</definition>
+        <argsstring></argsstring>
+        <name>d_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="943" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="943" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrpcbasic__register__trigger_1ae77f18abbb182322080568054576683f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string rpcbasic_register_trigger&lt; T &gt;::d_desc</definition>
+        <argsstring></argsstring>
+        <name>d_desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="944" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrpcbasic__register__trigger_1a83bae0bc61f2673278e95381eea55e60" prot="private" static="no" mutable="no">
+        <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+        <definition>priv_lvl_t rpcbasic_register_trigger&lt; T &gt;::d_minpriv</definition>
+        <argsstring></argsstring>
+        <name>d_minpriv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="945" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrpcbasic__register__trigger_1aa5306026bde3ca423d78918ef31d9051" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* rpcbasic_register_trigger&lt; T &gt;::d_object</definition>
+        <argsstring></argsstring>
+        <name>d_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="946" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="946" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1af0b1d8ee78a476cfe521a90a7042a2f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_register_trigger&lt; T &gt;::rpcbasic_register_trigger</definition>
+        <argsstring>(const std::string &amp;block_alias, const char *functionbase, void(T::*function)(), const char *desc_=&quot;&quot;, priv_lvl_t minpriv_=RPC_PRIVLVL_MIN)</argsstring>
+        <name>rpcbasic_register_trigger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>block_alias</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>functionbase</declname>
+        </param>
+        <param>
+          <type>void(T::*)()</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+          <declname>minpriv_</declname>
+          <defval><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" kindref="member">RPC_PRIVLVL_MIN</ref></defval>
+        </param>
+        <briefdescription>
+<para>Adds the ability to trigger a function over ControlPort. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor is specifically for <ref refid="classgr_1_1block" kindref="compound">gr::block</ref>&apos;s to use to add trigger functions to ControlPort. Generally meant to be used in <ref refid="classgr_1_1basic__block_1a7f8bf6b9f28014657a6e8b5f25ca7802" kindref="member">gr::block::setup_rpc</ref>.</para><para>Uses the block&apos;s alias to create the ControlPort interface. This alias is cross-referenced by the global_block_registry (static variable of type <ref refid="classgr_1_1block__registry" kindref="compound">gr::block_registry</ref>) to get the pointer to the block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Block&apos;s alias; use alias() to get it from the block. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>functionbase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function that we&apos;ll access over ControlPort </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function pointer to the real function accessed when called something like: &amp;[block class]::set_[variable] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string to describing the variable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minpriv_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required minimum privilege level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="867" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="867" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1a9e0289b6dced5cefc560708771920626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_register_trigger&lt; T &gt;::rpcbasic_register_trigger</definition>
+        <argsstring>(const std::string &amp;name, const char *functionbase, T *obj, void(T::*function)(), const char *desc_=&quot;&quot;, priv_lvl_t minpriv_=RPC_PRIVLVL_MIN)</argsstring>
+        <name>rpcbasic_register_trigger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>functionbase</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void(T::*)()</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+          <declname>minpriv_</declname>
+          <defval><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096acc5682c79636a2486c194425df36d2d4" kindref="member">RPC_PRIVLVL_MIN</ref></defval>
+        </param>
+        <briefdescription>
+<para>Adds the ability to trigger a function over ControlPort. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allows us to add non <ref refid="classgr_1_1block" kindref="compound">gr::block</ref> related objects to ControlPort. Instead of using the block&apos;s alias, we give it a <computeroutput>name</computeroutput> and the actual pointer to the object as <computeroutput>obj</computeroutput>. We just need to make sure that the pointer to this object is always valid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the object being set up for ControlPort access </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>functionbase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function that we&apos;ll access over ControlPort </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the object itself </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function pointer to the real function accessed when called something like: &amp;[block class]::set_[variable] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string to describing the variable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minpriv_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required minimum privilege level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="906" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="906" bodyend="926"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1a0da82a981db4d8eee34fe8a75086b998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rpcbasic_register_trigger&lt; T &gt;::~rpcbasic_register_trigger</definition>
+        <argsstring>()</argsstring>
+        <name>~rpcbasic_register_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="928" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="928" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1ac3ec48288ebcc549d41fb0c102274c05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string rpcbasic_register_trigger&lt; T &gt;::description</definition>
+        <argsstring>() const </argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="936" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="936" bodyend="936"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1ad530aa1dfc2befe8b6b4d6688104c5fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+        <definition>priv_lvl_t rpcbasic_register_trigger&lt; T &gt;::privilege_level</definition>
+        <argsstring>() const </argsstring>
+        <name>privilege_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="937" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="937" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1a1d18e5b4627aabc3ca3d1da66a768304" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcbasic_register_trigger&lt; T &gt;::description</definition>
+        <argsstring>(std::string d)</argsstring>
+        <name>description</name>
+        <param>
+          <type>std::string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="939" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="939" bodyend="939"/>
+      </memberdef>
+      <memberdef kind="function" id="structrpcbasic__register__trigger_1a895792c3924627295fca7ea1dbbd0e82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rpcbasic_register_trigger&lt; T &gt;::privilege_level</definition>
+        <argsstring>(priv_lvl_t p)</argsstring>
+        <name>privilege_level</name>
+        <param>
+          <type><ref refid="rpccallbackregister__base_8h_1a49bbe5b25d6264b2ebfc1ffd260cb096" kindref="member">priv_lvl_t</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="940" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="940" bodyend="940"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Registers a &apos;trigger&apos; function to trigger an action over ControlPort. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class allows us to set up triggered events or function calls over ControlPort. When used from a ControlPort client, the <computeroutput>function</computeroutput> established here will be activated. Generally, this is meant to enable some kind of trigger or action that a block or object will perform, such as a reset, start, stop, etc.</para><para>Simpler than the <ref refid="structrpcbasic__register__set" kindref="compound">rpcbasic_register_set</ref> class, the constructor here only takes a few parameters, mostly because there is not actual variable associated with these function calls. It takes in the information to set up the pointer to the object that has the <computeroutput>function</computeroutput>, a ControlPort name (<computeroutput>functionbase</computeroutput>) for the triggered action, a description (<computeroutput>desc_</computeroutput>), and a privilege level (<computeroutput>minpriv_</computeroutput>). </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="527">
+        <label>rpcbasic_base</label>
+        <link refid="classrpcbasic__base"/>
+      </node>
+      <node id="526">
+        <label>rpcbasic_register_trigger&lt; T &gt;</label>
+        <link refid="structrpcbasic__register__trigger"/>
+        <childnode refid="527" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="529">
+        <label>rpcbasic_base</label>
+        <link refid="classrpcbasic__base"/>
+      </node>
+      <node id="528">
+        <label>rpcbasic_register_trigger&lt; T &gt;</label>
+        <link refid="structrpcbasic__register__trigger"/>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" line="845" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/rpcregisterhelpers.h" bodystart="844" bodyend="947"/>
+    <listofallmembers>
+      <member refid="structrpcbasic__register__trigger_1ae77f18abbb182322080568054576683f" prot="private" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>d_desc</name></member>
+      <member refid="structrpcbasic__register__trigger_1a934edfad9a76e59ef1e1b4ea457db59b" prot="private" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>d_id</name></member>
+      <member refid="structrpcbasic__register__trigger_1a83bae0bc61f2673278e95381eea55e60" prot="private" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>d_minpriv</name></member>
+      <member refid="structrpcbasic__register__trigger_1aa5306026bde3ca423d78918ef31d9051" prot="private" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>d_object</name></member>
+      <member refid="structrpcbasic__register__trigger_1ac3ec48288ebcc549d41fb0c102274c05" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>description</name></member>
+      <member refid="structrpcbasic__register__trigger_1a1d18e5b4627aabc3ca3d1da66a768304" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>description</name></member>
+      <member refid="structrpcbasic__register__trigger_1ad530aa1dfc2befe8b6b4d6688104c5fc" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>privilege_level</name></member>
+      <member refid="structrpcbasic__register__trigger_1a895792c3924627295fca7ea1dbbd0e82" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>privilege_level</name></member>
+      <member refid="classrpcbasic__base_1ab0f3d0bf323958aa51750ccea26cefdb" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>rpcbasic_base</name></member>
+      <member refid="structrpcbasic__register__trigger_1af0b1d8ee78a476cfe521a90a7042a2f4" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>rpcbasic_register_trigger</name></member>
+      <member refid="structrpcbasic__register__trigger_1a9e0289b6dced5cefc560708771920626" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>rpcbasic_register_trigger</name></member>
+      <member refid="classrpcbasic__base_1ae3f50018ff739652e1a5420acc1503c3" prot="public" virt="virtual"><scope>rpcbasic_register_trigger</scope><name>~rpcbasic_base</name></member>
+      <member refid="structrpcbasic__register__trigger_1a0da82a981db4d8eee34fe8a75086b998" prot="public" virt="non-virtual"><scope>rpcbasic_register_trigger</scope><name>~rpcbasic_register_trigger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

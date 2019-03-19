@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1wavfile__sink" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::wavfile_sink</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="wavfile__sink_8h" local="no">wavfile_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1wavfile__sink_1a1751f2113c159f070e94047445870060" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1wavfile__sink" kindref="compound">wavfile_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;wavfile_sink&gt; gr::blocks::wavfile_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1wavfile__sink_1ad97864932edd6d74632d1a9c0be32213" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1wavfile__sink_1a1751f2113c159f070e94047445870060" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::wavfile_sink::make</definition>
+        <argsstring>(const char *filename, int n_channels, unsigned int sample_rate, int bits_per_sample=16)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_channels</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_sample</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1wavfile__sink_1a2cecd48d42029da408f5a5b784737101" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::wavfile_sink::open</definition>
+        <argsstring>(const char *filename)=0</argsstring>
+        <name>open</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Opens a new file and writes a WAV header. Thread-safe. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1wavfile__sink_1a43eecb3524653ee9582139eba8419a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::wavfile_sink::close</definition>
+        <argsstring>()=0</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Closes the currently active file and completes the WAV header. Thread-safe. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1wavfile__sink_1a89a17e5d58f5c0ee8d757dc21341650d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::wavfile_sink::set_sample_rate</definition>
+        <argsstring>(unsigned int sample_rate)=0</argsstring>
+        <name>set_sample_rate</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <briefdescription>
+<para>Set the sample rate. This will not affect the WAV file currently opened. Any following <ref refid="classgr_1_1blocks_1_1wavfile__sink_1a2cecd48d42029da408f5a5b784737101" kindref="member">open()</ref> calls will use this new sample rate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1wavfile__sink_1a7953475e82967f2f2bd5ebd7465a4a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::wavfile_sink::set_bits_per_sample</definition>
+        <argsstring>(int bits_per_sample)=0</argsstring>
+        <name>set_bits_per_sample</name>
+        <param>
+          <type>int</type>
+          <declname>bits_per_sample</declname>
+        </param>
+        <briefdescription>
+<para>Set bits per sample. This will not affect the WAV file currently opened (see <ref refid="classgr_1_1blocks_1_1wavfile__sink_1a89a17e5d58f5c0ee8d757dc21341650d" kindref="member">set_sample_rate()</ref>). If the value is neither 8 nor 16, the call is ignored and the current value is kept. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Write stream to a Microsoft PCM (.wav) file. </para>    </briefdescription>
+    <detaileddescription>
+<para>Values must be floats within [-1;1]. Check gr_make_wavfile_sink() for extra info. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="930">
+        <label>gr::blocks::wavfile_sink</label>
+        <link refid="classgr_1_1blocks_1_1wavfile__sink"/>
+        <childnode refid="931" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="932">
+        <label>gr::blocks::wavfile_sink</label>
+        <link refid="classgr_1_1blocks_1_1wavfile__sink"/>
+        <childnode refid="933" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="933">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/wavfile_sink.h" bodystart="40" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1a43eecb3524653ee9582139eba8419a6a" prot="public" virt="pure-virtual"><scope>gr::blocks::wavfile_sink</scope><name>close</name></member>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1ad97864932edd6d74632d1a9c0be32213" prot="public" virt="non-virtual"><scope>gr::blocks::wavfile_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1a2cecd48d42029da408f5a5b784737101" prot="public" virt="pure-virtual"><scope>gr::blocks::wavfile_sink</scope><name>open</name></member>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1a7953475e82967f2f2bd5ebd7465a4a2e" prot="public" virt="pure-virtual"><scope>gr::blocks::wavfile_sink</scope><name>set_bits_per_sample</name></member>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1a89a17e5d58f5c0ee8d757dc21341650d" prot="public" virt="pure-virtual"><scope>gr::blocks::wavfile_sink</scope><name>set_sample_rate</name></member>
+      <member refid="classgr_1_1blocks_1_1wavfile__sink_1a1751f2113c159f070e94047445870060" prot="public" virt="non-virtual"><scope>gr::blocks::wavfile_sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

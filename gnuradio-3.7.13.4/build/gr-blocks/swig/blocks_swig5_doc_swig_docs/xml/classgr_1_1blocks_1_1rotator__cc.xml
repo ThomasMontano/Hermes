@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1rotator__cc" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::rotator_cc</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="rotator__cc_8h" local="no">rotator_cc.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1rotator__cc_1a74189d049616a455fba54576b77b5df9" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1rotator__cc" kindref="compound">rotator_cc</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;rotator_cc&gt; gr::blocks::rotator_cc::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1rotator__cc_1a0e2c9753b88e3de513115c4d2e42c421" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1rotator__cc_1a74189d049616a455fba54576b77b5df9" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::rotator_cc::make</definition>
+        <argsstring>(double phase_inc=0.0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>phase_inc</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Make an complex rotator block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phase_inc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rotational velocity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1rotator__cc_1a4fcd12e78412a7e434cba12ef9bc5f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::rotator_cc::set_phase_inc</definition>
+        <argsstring>(double phase_inc)=0</argsstring>
+        <name>set_phase_inc</name>
+        <param>
+          <type>double</type>
+          <declname>phase_inc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Complex rotator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="660">
+        <label>gr::blocks::rotator_cc</label>
+        <link refid="classgr_1_1blocks_1_1rotator__cc"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="662">
+        <label>gr::blocks::rotator_cc</label>
+        <link refid="classgr_1_1blocks_1_1rotator__cc"/>
+        <childnode refid="663" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/rotator_cc.h" bodystart="36" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1rotator__cc_1a0e2c9753b88e3de513115c4d2e42c421" prot="public" virt="non-virtual"><scope>gr::blocks::rotator_cc</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1rotator__cc_1a4fcd12e78412a7e434cba12ef9bc5f1f" prot="public" virt="pure-virtual"><scope>gr::blocks::rotator_cc</scope><name>set_phase_inc</name></member>
+      <member refid="classgr_1_1blocks_1_1rotator__cc_1a74189d049616a455fba54576b77b5df9" prot="public" virt="non-virtual"><scope>gr::blocks::rotator_cc</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

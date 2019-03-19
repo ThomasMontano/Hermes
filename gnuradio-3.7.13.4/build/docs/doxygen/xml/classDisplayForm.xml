@@ -1,0 +1,1190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classDisplayForm" kind="class" prot="public" abstract="yes">
+    <compoundname>DisplayForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <derivedcompoundref refid="classConstellationDisplayForm" prot="public" virt="non-virtual">ConstellationDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classFreqDisplayForm" prot="public" virt="non-virtual">FreqDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classHistogramDisplayForm" prot="public" virt="non-virtual">HistogramDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classTimeDisplayForm" prot="public" virt="non-virtual">TimeDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classTimeRasterDisplayForm" prot="public" virt="non-virtual">TimeRasterDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classVectorDisplayForm" prot="public" virt="non-virtual">VectorDisplayForm</derivedcompoundref>
+    <derivedcompoundref refid="classWaterfallDisplayForm" prot="public" virt="non-virtual">WaterfallDisplayForm</derivedcompoundref>
+    <includes refid="displayform_8h" local="no">gnuradio/qtgui/displayform.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDisplayForm_1a86fa5017055e168c3fae5eb3d7f283e4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_isclosed</definition>
+        <argsstring></argsstring>
+        <name>d_isclosed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="104" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1aade6348750af73481cfff8216efbb43b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DisplayForm::d_nplots</definition>
+        <argsstring></argsstring>
+        <name>d_nplots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="106" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1af4724f85139232095726995f1d508d09" prot="protected" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* DisplayForm::d_layout</definition>
+        <argsstring></argsstring>
+        <name>d_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="108" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1abf56656f007715e8354032a56fc49f41" prot="protected" static="no" mutable="no">
+        <type><ref refid="classDisplayPlot" kindref="compound">DisplayPlot</ref> *</type>
+        <definition>DisplayPlot* DisplayForm::d_display_plot</definition>
+        <argsstring></argsstring>
+        <name>d_display_plot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="109" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1adc8286416dfdf5f5cda5481fccec353f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_system_specified_flag</definition>
+        <argsstring></argsstring>
+        <name>d_system_specified_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="110" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a4ab89221d1cde5366304ced19d9208f6" prot="protected" static="no" mutable="no">
+        <type>QwtPlotGrid *</type>
+        <definition>QwtPlotGrid* DisplayForm::d_grid</definition>
+        <argsstring></argsstring>
+        <name>d_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="112" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a04d4af916fe658e6f777fb8af948c20a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_menu_on</definition>
+        <argsstring></argsstring>
+        <name>d_menu_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="114" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a976646250b72d68a98761b50a6710c0a" prot="protected" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* DisplayForm::d_menu</definition>
+        <argsstring></argsstring>
+        <name>d_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="115" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a0906b399bc7ff7e6527c7ae6ed26d7e1" prot="protected" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* DisplayForm::d_stop_act</definition>
+        <argsstring></argsstring>
+        <name>d_stop_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="117" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a2bc28fe769680467ffb04ecba1bad265" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_stop_state</definition>
+        <argsstring></argsstring>
+        <name>d_stop_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="118" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a460b2f299c13a007e4c6e939d0eb5fc3" prot="protected" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* DisplayForm::d_grid_act</definition>
+        <argsstring></argsstring>
+        <name>d_grid_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="119" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1ab418baae769e7a68ff2f4316f9e61958" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_grid_state</definition>
+        <argsstring></argsstring>
+        <name>d_grid_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="120" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a887d3b132808904d8e402b3df02b534e" prot="protected" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* DisplayForm::d_axislabelsmenu</definition>
+        <argsstring></argsstring>
+        <name>d_axislabelsmenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="121" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a71dae5185f9232a48428d6ebaf4293bd" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_axislabels</definition>
+        <argsstring></argsstring>
+        <name>d_axislabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="122" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1ae36ede62dffc74715cffa99f6aa28f5f" prot="protected" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* DisplayForm::d_autoscale_act</definition>
+        <argsstring></argsstring>
+        <name>d_autoscale_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="124" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1ac23376477584508d866551390f013c17" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DisplayForm::d_autoscale_state</definition>
+        <argsstring></argsstring>
+        <name>d_autoscale_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="125" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1ac847b6a5bdffa39f574df4fb9db73710" prot="protected" static="no" mutable="no">
+        <type>QList&lt; QMenu * &gt;</type>
+        <definition>QList&lt;QMenu*&gt; DisplayForm::d_lines_menu</definition>
+        <argsstring></argsstring>
+        <name>d_lines_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="127" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a26a480db0df904b524b582ed1d6c3766" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classLineTitleAction" kindref="compound">LineTitleAction</ref> * &gt;</type>
+        <definition>QList&lt;LineTitleAction*&gt; DisplayForm::d_line_title_act</definition>
+        <argsstring></argsstring>
+        <name>d_line_title_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a963be27302e6faa66fbaa2ec645a4e01" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classLineColorMenu" kindref="compound">LineColorMenu</ref> * &gt;</type>
+        <definition>QList&lt;LineColorMenu*&gt; DisplayForm::d_line_color_menu</definition>
+        <argsstring></argsstring>
+        <name>d_line_color_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1aecefe402773c3d59ce01ccb9901385c6" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classLineWidthMenu" kindref="compound">LineWidthMenu</ref> * &gt;</type>
+        <definition>QList&lt;LineWidthMenu*&gt; DisplayForm::d_line_width_menu</definition>
+        <argsstring></argsstring>
+        <name>d_line_width_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="130" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a1ba22ad5eace01f96e394a4371bc7188" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classLineStyleMenu" kindref="compound">LineStyleMenu</ref> * &gt;</type>
+        <definition>QList&lt;LineStyleMenu*&gt; DisplayForm::d_line_style_menu</definition>
+        <argsstring></argsstring>
+        <name>d_line_style_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="131" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a79bb29017981f0b0b371cb4ee1806a2b" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classLineMarkerMenu" kindref="compound">LineMarkerMenu</ref> * &gt;</type>
+        <definition>QList&lt;LineMarkerMenu*&gt; DisplayForm::d_line_marker_menu</definition>
+        <argsstring></argsstring>
+        <name>d_line_marker_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="132" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a5a5f51423ea405e6583b546eefa8c993" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classMarkerAlphaMenu" kindref="compound">MarkerAlphaMenu</ref> * &gt;</type>
+        <definition>QList&lt;MarkerAlphaMenu*&gt; DisplayForm::d_marker_alpha_menu</definition>
+        <argsstring></argsstring>
+        <name>d_marker_alpha_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="133" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1ad63ccb34b3ac71147803a7734f6c5f97" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPopupMenu" kindref="compound">PopupMenu</ref> *</type>
+        <definition>PopupMenu* DisplayForm::d_samp_rate_act</definition>
+        <argsstring></argsstring>
+        <name>d_samp_rate_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="135" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a9e25ea8d1a8ea805d94358729dae6374" prot="protected" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* DisplayForm::d_save_act</definition>
+        <argsstring></argsstring>
+        <name>d_save_act</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="136" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDisplayForm_1a6ca9c4c3bcee3a80bc7c1e3ce45b5050" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DisplayForm::d_update_time</definition>
+        <argsstring></argsstring>
+        <name>d_update_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="138" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDisplayForm_1acd08a4b55f598bf32c512cab875cc495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DisplayForm::DisplayForm</definition>
+        <argsstring>(int nplots=1, QWidget *parent=0)</argsstring>
+        <name>DisplayForm</name>
+        <param>
+          <type>int</type>
+          <declname>nplots</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDisplayForm_1af9c50320f79cc75feffa0538da2e28a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DisplayForm::~DisplayForm</definition>
+        <argsstring>()</argsstring>
+        <name>~DisplayForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDisplayForm_1acaaf27a04b3cff3d6468261b66b8e216" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classDisplayPlot" kindref="compound">DisplayPlot</ref> *</type>
+        <definition>virtual DisplayPlot* DisplayForm::getPlot</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPlot</name>
+        <reimplementedby refid="classVectorDisplayForm_1a3fa0602a2777808a0bb1863ee973187f">getPlot</reimplementedby>
+        <reimplementedby refid="classHistogramDisplayForm_1aa8b4d174d27a78874507100a4dd0c7f4">getPlot</reimplementedby>
+        <reimplementedby refid="classWaterfallDisplayForm_1a375195289c202ec47b018dc0fba87c78">getPlot</reimplementedby>
+        <reimplementedby refid="classTimeDisplayForm_1a472bee0576975b9ea7006e2c57dc8a00">getPlot</reimplementedby>
+        <reimplementedby refid="classConstellationDisplayForm_1a1e1f6d38501b7c7ba25c1d479f9f9004">getPlot</reimplementedby>
+        <reimplementedby refid="classFreqDisplayForm_1a3f11a6ae90be464112720bd8dbf90ff2">getPlot</reimplementedby>
+        <reimplementedby refid="classTimeRasterDisplayForm_1aae48c7e05fee67f923d8a308a7bb77fb">getPlot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDisplayForm_1aba1733c7c006623010c969309cfb896b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDisplayForm_1a02e408c32dda9acfc21041eb38e14c54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DisplayForm::isClosed</definition>
+        <argsstring>() const </argsstring>
+        <name>isClosed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDisplayForm_1a142738daf223e86a02b0c3f2bddd1ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::enableMenu</definition>
+        <argsstring>(bool en=true)</argsstring>
+        <name>enableMenu</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classDisplayForm_1a75f73ce5982efb23f5aab31d03434008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::resizeEvent</definition>
+        <argsstring>(QResizeEvent *e)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a7bcddea0a0ae0ae93f59092106adc080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *e)</argsstring>
+        <name>mousePressEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1af1e8f16a31498cb1b12752bac8adad1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DisplayForm::customEvent</definition>
+        <argsstring>(QEvent *e)=0</argsstring>
+        <name>customEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1aece261d88375aa024514d4c92fd619f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::closeEvent</definition>
+        <argsstring>(QCloseEvent *e)</argsstring>
+        <name>closeEvent</name>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a98c2f2c5936db64ef7866a59dbad0331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setUpdateTime</definition>
+        <argsstring>(double t)</argsstring>
+        <name>setUpdateTime</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a3f7a0d7e58eb601876b244104c159fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setTitle</definition>
+        <argsstring>(const QString &amp;title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1aa168e747c0ff6048f4ed6b431b2779e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setLineLabel</definition>
+        <argsstring>(int which, const QString &amp;label)</argsstring>
+        <name>setLineLabel</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1acf34fd28a90afc9f8984906b7b7a43cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setLineColor</definition>
+        <argsstring>(int which, const QString &amp;color)</argsstring>
+        <name>setLineColor</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a10039325d5ad93f891896d686be9d50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setLineWidth</definition>
+        <argsstring>(int which, int width)</argsstring>
+        <name>setLineWidth</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1acf77ce9f2008eee21b71b8597e6b47df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setLineStyle</definition>
+        <argsstring>(int which, Qt::PenStyle style)</argsstring>
+        <name>setLineStyle</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>Qt::PenStyle</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1ac1a48e6c13d6f956792c27e00b1fa221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setLineMarker</definition>
+        <argsstring>(int which, QwtSymbol::Style style)</argsstring>
+        <name>setLineMarker</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>QwtSymbol::Style</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1ada5564bdeca98b8fb2f251b21dc04531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setMarkerAlpha</definition>
+        <argsstring>(int which, int alpha)</argsstring>
+        <name>setMarkerAlpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a6d360b7520c52f8eaa3b94f6132e8fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString DisplayForm::title</definition>
+        <argsstring>()</argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a72bba06bf752f41f49932bbb1586be1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString DisplayForm::lineLabel</definition>
+        <argsstring>(int which)</argsstring>
+        <name>lineLabel</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a744476d411e3af740d8a56414d0eee92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString DisplayForm::lineColor</definition>
+        <argsstring>(int which)</argsstring>
+        <name>lineColor</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a8c422137ec84eeb9a5429ee9388e5c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DisplayForm::lineWidth</definition>
+        <argsstring>(int which)</argsstring>
+        <name>lineWidth</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a5eff7ed419615113bbf47c38989b433f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::PenStyle</type>
+        <definition>Qt::PenStyle DisplayForm::lineStyle</definition>
+        <argsstring>(int which)</argsstring>
+        <name>lineStyle</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a898cbfcde446f08f33d0353e7dd259fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QwtSymbol::Style</type>
+        <definition>QwtSymbol::Style DisplayForm::lineMarker</definition>
+        <argsstring>(int which)</argsstring>
+        <name>lineMarker</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1ac8f5869c0a23c688bc8ab6fcd8580dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int DisplayForm::markerAlpha</definition>
+        <argsstring>(int which)</argsstring>
+        <name>markerAlpha</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1aad2f19f64e19b06de1cb1348250e4428" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void DisplayForm::setSampleRate</definition>
+        <argsstring>(const QString &amp;rate)</argsstring>
+        <name>setSampleRate</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a663a66d4eaa1b57c94a99be616d27d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setStop</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>setStop</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1ae925081aa3c271f367d302d89f2cd0d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setStop</definition>
+        <argsstring>()</argsstring>
+        <name>setStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a4ae615547f894f0baa9e17528c847e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setGrid</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>setGrid</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a0663ae45ff29e34110a2b3f304e7df2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::setAxisLabels</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>setAxisLabels</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a9dd4a30560338046cb2422e7d7b6e74e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::saveFigure</definition>
+        <argsstring>()</argsstring>
+        <name>saveFigure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a4bdd9b8da5a984d8de55a555d57a0079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::disableLegend</definition>
+        <argsstring>()</argsstring>
+        <name>disableLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classDisplayForm_1a8d3b2b5e9eec6b91691605725b887036" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DisplayForm::newData</definition>
+        <argsstring>(const QEvent *)=0</argsstring>
+        <name>newData</name>
+        <param>
+          <type>const QEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a8ae8b084315de2fa73565a4fb2b53dcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DisplayForm::autoScale</definition>
+        <argsstring>(bool)=0</argsstring>
+        <name>autoScale</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a0896e2c96b80f949f07e7383280a5a36" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::updateGuiTimer</definition>
+        <argsstring>()</argsstring>
+        <name>updateGuiTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDisplayForm_1a2f47e70d2089d51e13a8028f3cd2da1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void DisplayForm::onPlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onPlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classDisplayForm_1acdb320a036906674fc03e0893d96b83d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::plotPointSelected</definition>
+        <argsstring>(const QPointF p, int type)</argsstring>
+        <name>plotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDisplayForm_1aaeca8cf8d2ff7298e3e4d6a8a80849cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DisplayForm::toggleGrid</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleGrid</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for setting up and managing QTGUI plot forms. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3677">
+        <label>TimeRasterDisplayForm</label>
+        <link refid="classTimeRasterDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3676">
+        <label>TimeDisplayForm</label>
+        <link refid="classTimeDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3673">
+        <label>ConstellationDisplayForm</label>
+        <link refid="classConstellationDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3678">
+        <label>VectorDisplayForm</label>
+        <link refid="classVectorDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3674">
+        <label>FreqDisplayForm</label>
+        <link refid="classFreqDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3671">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="3672" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3672">
+        <label>QWidget</label>
+      </node>
+      <node id="3679">
+        <label>WaterfallDisplayForm</label>
+        <link refid="classWaterfallDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3675">
+        <label>HistogramDisplayForm</label>
+        <link refid="classHistogramDisplayForm"/>
+        <childnode refid="3671" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3684">
+        <label>QwtDblClickPlotPicker</label>
+        <link refid="classQwtDblClickPlotPicker"/>
+        <childnode refid="3685" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3687">
+        <label>PopupMenu</label>
+        <link refid="classPopupMenu"/>
+        <childnode refid="3688" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3686">
+        <label>std::vector&lt; QwtPlotCurve * &gt;</label>
+      </node>
+      <node id="3682">
+        <label>DisplayPlot</label>
+        <link refid="classDisplayPlot"/>
+        <childnode refid="3683" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3684" relation="usage">
+          <edgelabel>d_picker</edgelabel>
+        </childnode>
+        <childnode refid="3686" relation="usage">
+          <edgelabel>d_plot_curve</edgelabel>
+        </childnode>
+      </node>
+      <node id="3683">
+        <label>QwtPlot</label>
+      </node>
+      <node id="3688">
+        <label>QAction</label>
+      </node>
+      <node id="3680">
+        <label>DisplayForm</label>
+        <link refid="classDisplayForm"/>
+        <childnode refid="3681" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3682" relation="usage">
+          <edgelabel>d_display_plot</edgelabel>
+        </childnode>
+        <childnode refid="3687" relation="usage">
+          <edgelabel>d_samp_rate_act</edgelabel>
+        </childnode>
+      </node>
+      <node id="3681">
+        <label>QWidget</label>
+      </node>
+      <node id="3685">
+        <label>QwtPlotPicker</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/displayform.h" bodystart="41" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classDisplayForm_1a8ae8b084315de2fa73565a4fb2b53dcf" prot="private" virt="pure-virtual"><scope>DisplayForm</scope><name>autoScale</name></member>
+      <member refid="classDisplayForm_1aece261d88375aa024514d4c92fd619f7" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>closeEvent</name></member>
+      <member refid="classDisplayForm_1af1e8f16a31498cb1b12752bac8adad1f" prot="public" virt="pure-virtual"><scope>DisplayForm</scope><name>customEvent</name></member>
+      <member refid="classDisplayForm_1ae36ede62dffc74715cffa99f6aa28f5f" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_autoscale_act</name></member>
+      <member refid="classDisplayForm_1ac23376477584508d866551390f013c17" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_autoscale_state</name></member>
+      <member refid="classDisplayForm_1a71dae5185f9232a48428d6ebaf4293bd" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_axislabels</name></member>
+      <member refid="classDisplayForm_1a887d3b132808904d8e402b3df02b534e" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_axislabelsmenu</name></member>
+      <member refid="classDisplayForm_1abf56656f007715e8354032a56fc49f41" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_display_plot</name></member>
+      <member refid="classDisplayForm_1a4ab89221d1cde5366304ced19d9208f6" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_grid</name></member>
+      <member refid="classDisplayForm_1a460b2f299c13a007e4c6e939d0eb5fc3" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_grid_act</name></member>
+      <member refid="classDisplayForm_1ab418baae769e7a68ff2f4316f9e61958" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_grid_state</name></member>
+      <member refid="classDisplayForm_1a86fa5017055e168c3fae5eb3d7f283e4" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_isclosed</name></member>
+      <member refid="classDisplayForm_1af4724f85139232095726995f1d508d09" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_layout</name></member>
+      <member refid="classDisplayForm_1a963be27302e6faa66fbaa2ec645a4e01" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_line_color_menu</name></member>
+      <member refid="classDisplayForm_1a79bb29017981f0b0b371cb4ee1806a2b" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_line_marker_menu</name></member>
+      <member refid="classDisplayForm_1a1ba22ad5eace01f96e394a4371bc7188" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_line_style_menu</name></member>
+      <member refid="classDisplayForm_1a26a480db0df904b524b582ed1d6c3766" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_line_title_act</name></member>
+      <member refid="classDisplayForm_1aecefe402773c3d59ce01ccb9901385c6" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_line_width_menu</name></member>
+      <member refid="classDisplayForm_1ac847b6a5bdffa39f574df4fb9db73710" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_lines_menu</name></member>
+      <member refid="classDisplayForm_1a5a5f51423ea405e6583b546eefa8c993" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_marker_alpha_menu</name></member>
+      <member refid="classDisplayForm_1a976646250b72d68a98761b50a6710c0a" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_menu</name></member>
+      <member refid="classDisplayForm_1a04d4af916fe658e6f777fb8af948c20a" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_menu_on</name></member>
+      <member refid="classDisplayForm_1aade6348750af73481cfff8216efbb43b" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_nplots</name></member>
+      <member refid="classDisplayForm_1ad63ccb34b3ac71147803a7734f6c5f97" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_samp_rate_act</name></member>
+      <member refid="classDisplayForm_1a9e25ea8d1a8ea805d94358729dae6374" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_save_act</name></member>
+      <member refid="classDisplayForm_1a0906b399bc7ff7e6527c7ae6ed26d7e1" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_stop_act</name></member>
+      <member refid="classDisplayForm_1a2bc28fe769680467ffb04ecba1bad265" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_stop_state</name></member>
+      <member refid="classDisplayForm_1adc8286416dfdf5f5cda5481fccec353f" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_system_specified_flag</name></member>
+      <member refid="classDisplayForm_1a6ca9c4c3bcee3a80bc7c1e3ce45b5050" prot="protected" virt="non-virtual"><scope>DisplayForm</scope><name>d_update_time</name></member>
+      <member refid="classDisplayForm_1a4bdd9b8da5a984d8de55a555d57a0079" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>disableLegend</name></member>
+      <member refid="classDisplayForm_1acd08a4b55f598bf32c512cab875cc495" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>DisplayForm</name></member>
+      <member refid="classDisplayForm_1a142738daf223e86a02b0c3f2bddd1ec0" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>enableMenu</name></member>
+      <member refid="classDisplayForm_1acaaf27a04b3cff3d6468261b66b8e216" prot="public" virt="pure-virtual"><scope>DisplayForm</scope><name>getPlot</name></member>
+      <member refid="classDisplayForm_1a02e408c32dda9acfc21041eb38e14c54" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>isClosed</name></member>
+      <member refid="classDisplayForm_1a744476d411e3af740d8a56414d0eee92" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>lineColor</name></member>
+      <member refid="classDisplayForm_1a72bba06bf752f41f49932bbb1586be1a" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>lineLabel</name></member>
+      <member refid="classDisplayForm_1a898cbfcde446f08f33d0353e7dd259fc" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>lineMarker</name></member>
+      <member refid="classDisplayForm_1a5eff7ed419615113bbf47c38989b433f" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>lineStyle</name></member>
+      <member refid="classDisplayForm_1a8c422137ec84eeb9a5429ee9388e5c3a" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>lineWidth</name></member>
+      <member refid="classDisplayForm_1ac8f5869c0a23c688bc8ab6fcd8580dff" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>markerAlpha</name></member>
+      <member refid="classDisplayForm_1a7bcddea0a0ae0ae93f59092106adc080" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>mousePressEvent</name></member>
+      <member refid="classDisplayForm_1a8d3b2b5e9eec6b91691605725b887036" prot="private" virt="pure-virtual"><scope>DisplayForm</scope><name>newData</name></member>
+      <member refid="classDisplayForm_1a2f47e70d2089d51e13a8028f3cd2da1a" prot="private" virt="virtual"><scope>DisplayForm</scope><name>onPlotPointSelected</name></member>
+      <member refid="classDisplayForm_1acdb320a036906674fc03e0893d96b83d" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>plotPointSelected</name></member>
+      <member refid="classDisplayForm_1aba1733c7c006623010c969309cfb896b" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>Reset</name></member>
+      <member refid="classDisplayForm_1a75f73ce5982efb23f5aab31d03434008" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>resizeEvent</name></member>
+      <member refid="classDisplayForm_1a9dd4a30560338046cb2422e7d7b6e74e" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>saveFigure</name></member>
+      <member refid="classDisplayForm_1a0663ae45ff29e34110a2b3f304e7df2e" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setAxisLabels</name></member>
+      <member refid="classDisplayForm_1a4ae615547f894f0baa9e17528c847e92" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setGrid</name></member>
+      <member refid="classDisplayForm_1acf34fd28a90afc9f8984906b7b7a43cc" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setLineColor</name></member>
+      <member refid="classDisplayForm_1aa168e747c0ff6048f4ed6b431b2779e3" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setLineLabel</name></member>
+      <member refid="classDisplayForm_1ac1a48e6c13d6f956792c27e00b1fa221" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setLineMarker</name></member>
+      <member refid="classDisplayForm_1acf77ce9f2008eee21b71b8597e6b47df" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setLineStyle</name></member>
+      <member refid="classDisplayForm_1a10039325d5ad93f891896d686be9d50f" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setLineWidth</name></member>
+      <member refid="classDisplayForm_1ada5564bdeca98b8fb2f251b21dc04531" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setMarkerAlpha</name></member>
+      <member refid="classDisplayForm_1aad2f19f64e19b06de1cb1348250e4428" prot="public" virt="virtual"><scope>DisplayForm</scope><name>setSampleRate</name></member>
+      <member refid="classDisplayForm_1a663a66d4eaa1b57c94a99be616d27d1f" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setStop</name></member>
+      <member refid="classDisplayForm_1ae925081aa3c271f367d302d89f2cd0d9" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setStop</name></member>
+      <member refid="classDisplayForm_1a3f7a0d7e58eb601876b244104c159fe1" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setTitle</name></member>
+      <member refid="classDisplayForm_1a98c2f2c5936db64ef7866a59dbad0331" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>setUpdateTime</name></member>
+      <member refid="classDisplayForm_1a6d360b7520c52f8eaa3b94f6132e8fd5" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>title</name></member>
+      <member refid="classDisplayForm_1aaeca8cf8d2ff7298e3e4d6a8a80849cf" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>toggleGrid</name></member>
+      <member refid="classDisplayForm_1a0896e2c96b80f949f07e7383280a5a36" prot="private" virt="non-virtual"><scope>DisplayForm</scope><name>updateGuiTimer</name></member>
+      <member refid="classDisplayForm_1af9c50320f79cc75feffa0538da2e28a2" prot="public" virt="non-virtual"><scope>DisplayForm</scope><name>~DisplayForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

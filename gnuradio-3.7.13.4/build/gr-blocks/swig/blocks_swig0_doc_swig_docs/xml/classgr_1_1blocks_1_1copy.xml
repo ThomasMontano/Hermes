@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1copy" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::copy</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="copy_8h" local="no">copy.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1copy_1a29b26c81c7561638bc298fa89a614493" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1copy" kindref="compound">copy</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;copy&gt; gr::blocks::copy::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1copy_1a6019a24dcee260db470aadcdbad466b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1copy_1a29b26c81c7561638bc298fa89a614493" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::copy::make</definition>
+        <argsstring>(size_t itemsize)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1copy_1a3be406ed10fea768eba624ea02af6cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::copy::set_enabled</definition>
+        <argsstring>(bool enable)=0</argsstring>
+        <name>set_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1copy_1ae65e456e339c576030f6f1a8187227ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::blocks::copy::enabled</definition>
+        <argsstring>() const =0</argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>output[i] = input[i] </para>    </briefdescription>
+    <detaileddescription>
+<para>When enabled (default), this block copies its input to its output. When disabled, this block drops its input on the floor.</para><para>Message Ports:</para><para><itemizedlist>
+<listitem><para>en (input): Receives a PMT bool message to either enable to disable copy. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="179">
+        <label>gr::blocks::copy</label>
+        <link refid="classgr_1_1blocks_1_1copy"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="181">
+        <label>gr::blocks::copy</label>
+        <link refid="classgr_1_1blocks_1_1copy"/>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/copy.h" bodystart="46" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1copy_1ae65e456e339c576030f6f1a8187227ec" prot="public" virt="pure-virtual"><scope>gr::blocks::copy</scope><name>enabled</name></member>
+      <member refid="classgr_1_1blocks_1_1copy_1a6019a24dcee260db470aadcdbad466b9" prot="public" virt="non-virtual"><scope>gr::blocks::copy</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1copy_1a3be406ed10fea768eba624ea02af6cbe" prot="public" virt="pure-virtual"><scope>gr::blocks::copy</scope><name>set_enabled</name></member>
+      <member refid="classgr_1_1blocks_1_1copy_1a29b26c81c7561638bc298fa89a614493" prot="public" virt="non-virtual"><scope>gr::blocks::copy</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classWaterfallUpdateEvent" kind="class" prot="public">
+    <compoundname>WaterfallUpdateEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QEvent</basecompoundref>
+    <includes refid="spectrumUpdateEvents_8h" local="no">gnuradio/qtgui/spectrumUpdateEvents.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWaterfallUpdateEvent_1aaeb6ca516bb8aa9505bcd3a21e8e0e2c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t WaterfallUpdateEvent::_nplots</definition>
+        <argsstring></argsstring>
+        <name>_nplots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="249" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallUpdateEvent_1a8dcf3b18369256e12408b4f72a624c1f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double * &gt;</type>
+        <definition>std::vector&lt;double*&gt; WaterfallUpdateEvent::_dataPoints</definition>
+        <argsstring></argsstring>
+        <name>_dataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="250" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallUpdateEvent_1a0ad7f4091e2d80447234fb5c2cee2d38" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t WaterfallUpdateEvent::_numDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="251" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaterfallUpdateEvent_1a887af615dc96a1cc25520c4c50d75e94" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type WaterfallUpdateEvent::_dataTimestamp</definition>
+        <argsstring></argsstring>
+        <name>_dataTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="253" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1a2f9982631f9ab2fef5b5de248bf3e26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaterfallUpdateEvent::WaterfallUpdateEvent</definition>
+        <argsstring>(const std::vector&lt; double * &gt; dataPoints, const uint64_t numDataPoints, const gr::high_res_timer_type dataTimestamp)</argsstring>
+        <name>WaterfallUpdateEvent</name>
+        <param>
+          <type>const std::vector&lt; double * &gt;</type>
+          <declname>dataPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numDataPoints</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+          <declname>dataTimestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1a45664a7ec2290047b7114458f3ad5b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaterfallUpdateEvent::~WaterfallUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~WaterfallUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1ab1512168346a19ca3a812ea860db4944" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaterfallUpdateEvent::which</definition>
+        <argsstring>() const </argsstring>
+        <name>which</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1a44c68f47ecfa285b9825fb33fa1dd99a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; double * &gt;</type>
+        <definition>const std::vector&lt;double*&gt; WaterfallUpdateEvent::getPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1ae99e84cbe35ad192fb57a20d4fc573da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t WaterfallUpdateEvent::getNumDataPoints</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1a255ea5f9caf2e9920694a22ecb216c5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WaterfallUpdateEvent::getRepeatDataFlag</definition>
+        <argsstring>() const </argsstring>
+        <name>getRepeatDataFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1afc6107f8007caff2ee3b5f4ec1ddf7b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type WaterfallUpdateEvent::getDataTimestamp</definition>
+        <argsstring>() const </argsstring>
+        <name>getDataTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="241" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classWaterfallUpdateEvent_1a8822c8e0cc5a316433a851ebdecd7851" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QEvent::Type</type>
+        <definition>static QEvent::Type WaterfallUpdateEvent::Type</definition>
+        <argsstring>()</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="243" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="243" bodyend="244"/>
+        <references refid="spectrumUpdateEvents_8h_1abae995316b74a1f7a2b9d456566576db" compoundref="spectrumUpdateEvents_8h" startline="35">SpectrumUpdateEventType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11859">
+        <label>QEvent</label>
+      </node>
+      <node id="11858">
+        <label>WaterfallUpdateEvent</label>
+        <link refid="classWaterfallUpdateEvent"/>
+        <childnode refid="11859" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11861">
+        <label>QEvent</label>
+      </node>
+      <node id="11860">
+        <label>WaterfallUpdateEvent</label>
+        <link refid="classWaterfallUpdateEvent"/>
+        <childnode refid="11861" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" line="228" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumUpdateEvents.h" bodystart="227" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classWaterfallUpdateEvent_1a8dcf3b18369256e12408b4f72a624c1f" prot="private" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>_dataPoints</name></member>
+      <member refid="classWaterfallUpdateEvent_1a887af615dc96a1cc25520c4c50d75e94" prot="private" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>_dataTimestamp</name></member>
+      <member refid="classWaterfallUpdateEvent_1aaeb6ca516bb8aa9505bcd3a21e8e0e2c" prot="private" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>_nplots</name></member>
+      <member refid="classWaterfallUpdateEvent_1a0ad7f4091e2d80447234fb5c2cee2d38" prot="private" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>_numDataPoints</name></member>
+      <member refid="classWaterfallUpdateEvent_1afc6107f8007caff2ee3b5f4ec1ddf7b1" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>getDataTimestamp</name></member>
+      <member refid="classWaterfallUpdateEvent_1ae99e84cbe35ad192fb57a20d4fc573da" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>getNumDataPoints</name></member>
+      <member refid="classWaterfallUpdateEvent_1a44c68f47ecfa285b9825fb33fa1dd99a" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>getPoints</name></member>
+      <member refid="classWaterfallUpdateEvent_1a255ea5f9caf2e9920694a22ecb216c5e" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>getRepeatDataFlag</name></member>
+      <member refid="classWaterfallUpdateEvent_1a8822c8e0cc5a316433a851ebdecd7851" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>Type</name></member>
+      <member refid="classWaterfallUpdateEvent_1a2f9982631f9ab2fef5b5de248bf3e26e" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>WaterfallUpdateEvent</name></member>
+      <member refid="classWaterfallUpdateEvent_1ab1512168346a19ca3a812ea860db4944" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>which</name></member>
+      <member refid="classWaterfallUpdateEvent_1a45664a7ec2290047b7114458f3ad5b84" prot="public" virt="non-virtual"><scope>WaterfallUpdateEvent</scope><name>~WaterfallUpdateEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

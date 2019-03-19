@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-dtv
+Description: GNU Radio's digital TV signal processing blocks
+Requires: gnuradio-runtime gnuradio-filter gnuradio-analog
+Version: 3.7.13.4
+Libs: -L${libdir} -lgnuradio-dtv
+Cflags: -I${includedir}

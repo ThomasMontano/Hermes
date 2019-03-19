@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits" kind="class" prot="public">
+    <compoundname>gr::blocks::kernel::unpack_k_bits</compoundname>
+    <includes refid="unpack__k__bits_8h" local="no">unpack_k_bits.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a96e45e2d2f7109daaca192a2663418da" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::blocks::kernel::unpack_k_bits::d_k</definition>
+        <argsstring></argsstring>
+        <name>d_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="79" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a491f3018fd04671c96e06ad364b5b384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::blocks::kernel::unpack_k_bits::unpack_k_bits</definition>
+        <argsstring>(unsigned k)</argsstring>
+        <name>unpack_k_bits</name>
+        <param>
+          <type>unsigned</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Make an <ref refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits" kindref="compound">unpack_k_bits</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits to unpack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1aeadb4a664a6587b7e106a94cc5c65ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::blocks::kernel::unpack_k_bits::~unpack_k_bits</definition>
+        <argsstring>()</argsstring>
+        <name>~unpack_k_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1af3d4d73606e53e0b63b78baf3f710aa1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::blocks::kernel::unpack_k_bits::unpack</definition>
+        <argsstring>(unsigned char *bits, const unsigned char *bytes, int nbytes) const </argsstring>
+        <name>unpack</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+<para>Perform the unpacking. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function performs no bounds checking. It assumes that the input, <computeroutput>in</computeroutput>, has of length <computeroutput>nbytes</computeroutput> and that the output vector, <computeroutput>out</computeroutput>, has k*nbytes available for writing.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output vector (1-bit per byte) of the unpacked data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input vector of bytes to unpack </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of input bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a62d3a0e09a843f3d18530561fc135ae3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::blocks::kernel::unpack_k_bits::unpack_rev</definition>
+        <argsstring>(unsigned char *bits, const unsigned char *bytes, int nbytes) const </argsstring>
+        <name>unpack_rev</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unpacks in reverse order from <ref refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1af3d4d73606e53e0b63b78baf3f710aa1" kindref="member">unpack()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a0858f2c5e7aa17cf5eadfd22d80a084a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::blocks::kernel::unpack_k_bits::k</definition>
+        <argsstring>() const </argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts a byte with k relevant bits to k output bytes with 1 bit in the LSB. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is the algorithm kernel for the <ref refid="classgr_1_1blocks_1_1unpack__k__bits__bb" kindref="compound">gr::blocks::unpack_k_bits_bb</ref> block.</para><para>Example: k = 4 in = [0xf5, 0x08] out = [0,1,0,1, 1,0,0,0]</para><para>k = 8 in = [0xf5, 0x08] out = [1,1,1,1, 0,1,0,1, 0,0,0,0, 1,0,0,0] </para>    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" line="49" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/unpack_k_bits.h" bodystart="48" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a96e45e2d2f7109daaca192a2663418da" prot="private" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>d_k</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a0858f2c5e7aa17cf5eadfd22d80a084a" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>k</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1af3d4d73606e53e0b63b78baf3f710aa1" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>unpack</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a491f3018fd04671c96e06ad364b5b384" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>unpack_k_bits</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1a62d3a0e09a843f3d18530561fc135ae3" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>unpack_rev</name></member>
+      <member refid="classgr_1_1blocks_1_1kernel_1_1unpack__k__bits_1aeadb4a664a6587b7e106a94cc5c65ec4" prot="public" virt="non-virtual"><scope>gr::blocks::kernel::unpack_k_bits</scope><name>~unpack_k_bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

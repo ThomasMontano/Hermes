@@ -1,0 +1,1262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classSpectrumDisplayForm" kind="class" prot="public">
+    <compoundname>SpectrumDisplayForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">SpectrumDisplayForm</basecompoundref>
+    <includes refid="spectrumdisplayform_8h" local="no">gnuradio/qtgui/spectrumdisplayform.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1acbc7502fa00d413ea24188af1cd0c84f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::_historyEntryCount</definition>
+        <argsstring></argsstring>
+        <name>_historyEntryCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="114" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1aa3dc47ef762474ff368276136d7e3aa5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::_historyEntry</definition>
+        <argsstring></argsstring>
+        <name>_historyEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="115" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a41ea2d4e451957eb4e815ffe334e33b3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double * &gt; *</type>
+        <definition>std::vector&lt;double*&gt;* SpectrumDisplayForm::_historyVector</definition>
+        <argsstring></argsstring>
+        <name>_historyVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="116" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a3258e3f2274503794fb5bbd361a82cba" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumDisplayForm::_averagedValues</definition>
+        <argsstring></argsstring>
+        <name>_averagedValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="117" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a23cd3f4d3114b01bf063cf698911cc45" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SpectrumDisplayForm::_numRealDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_numRealDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="118" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a58c5a26d0416bc2630bcecd5132c4915" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumDisplayForm::_realFFTDataPoints</definition>
+        <argsstring></argsstring>
+        <name>_realFFTDataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="119" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1abc48815296df938aa58c493713cb0287" prot="private" static="no" mutable="no">
+        <type>QIntValidator *</type>
+        <definition>QIntValidator* SpectrumDisplayForm::_intValidator</definition>
+        <argsstring></argsstring>
+        <name>_intValidator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="120" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1accebb40c4d10e4c30b6ce837ca26f2f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classFrequencyDisplayPlot" kindref="compound">FrequencyDisplayPlot</ref> *</type>
+        <definition>FrequencyDisplayPlot* SpectrumDisplayForm::_frequencyDisplayPlot</definition>
+        <argsstring></argsstring>
+        <name>_frequencyDisplayPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="121" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a3c26701b1edddc20375398cbac44a28a" prot="private" static="no" mutable="no">
+        <type><ref refid="classWaterfallDisplayPlot" kindref="compound">WaterfallDisplayPlot</ref> *</type>
+        <definition>WaterfallDisplayPlot* SpectrumDisplayForm::_waterfallDisplayPlot</definition>
+        <argsstring></argsstring>
+        <name>_waterfallDisplayPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="122" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a0baeae27a685ed8d5b3d674ce9397333" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimeDomainDisplayPlot" kindref="compound">TimeDomainDisplayPlot</ref> *</type>
+        <definition>TimeDomainDisplayPlot* SpectrumDisplayForm::_timeDomainDisplayPlot</definition>
+        <argsstring></argsstring>
+        <name>_timeDomainDisplayPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="123" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1acd660d888dfb6286d0dfdcb1a8f45ffd" prot="private" static="no" mutable="no">
+        <type><ref refid="classConstellationDisplayPlot" kindref="compound">ConstellationDisplayPlot</ref> *</type>
+        <definition>ConstellationDisplayPlot* SpectrumDisplayForm::_constellationDisplayPlot</definition>
+        <argsstring></argsstring>
+        <name>_constellationDisplayPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="124" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a1e6c309fe499bb308d37650dbed461fa" prot="private" static="no" mutable="no">
+        <type><ref refid="classSpectrumGUIClass" kindref="compound">SpectrumGUIClass</ref> *</type>
+        <definition>SpectrumGUIClass* SpectrumDisplayForm::_system</definition>
+        <argsstring></argsstring>
+        <name>_system</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="125" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a11f09eaa024c553caedc747ddcb12f5a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumDisplayForm::_systemSpecifiedFlag</definition>
+        <argsstring></argsstring>
+        <name>_systemSpecifiedFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="126" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1ae45b069c7eed21085f16f095ca512345" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_centerFrequency</definition>
+        <argsstring></argsstring>
+        <name>_centerFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="127" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1abc7bf7f5129a2d889db5657606d55ed0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_startFrequency</definition>
+        <argsstring></argsstring>
+        <name>_startFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a8cad5f4c34de3bc95f1063375e740e8e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_noiseFloorAmplitude</definition>
+        <argsstring></argsstring>
+        <name>_noiseFloorAmplitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a54dc2e2725127cc11562c4ae9f9e69c2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_peakFrequency</definition>
+        <argsstring></argsstring>
+        <name>_peakFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="130" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a29537773f9fd56a6cb636db06eb5c7d3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_peakAmplitude</definition>
+        <argsstring></argsstring>
+        <name>_peakAmplitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="131" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1ae49b78a74ab8335413d372fa3c0d151a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::_stopFrequency</definition>
+        <argsstring></argsstring>
+        <name>_stopFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="132" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a918612f197496df7b4ce9908fd71ebb1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::d_units</definition>
+        <argsstring></argsstring>
+        <name>d_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="134" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a9038d31675709ab23ec2be267ebd4f84" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumDisplayForm::d_clicked</definition>
+        <argsstring></argsstring>
+        <name>d_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="135" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a974262504c9aa4cb777b64dc6f7baeaf" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::d_clicked_freq</definition>
+        <argsstring></argsstring>
+        <name>d_clicked_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="136" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a1ab112f40975cbf1e33da8d419bea9e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::d_plot_fft</definition>
+        <argsstring></argsstring>
+        <name>d_plot_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="141" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a7bacd20e4d8f16633db318c1b1c5b78a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::d_plot_waterfall</definition>
+        <argsstring></argsstring>
+        <name>d_plot_waterfall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="142" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a69c10e861f05babe6cfa11d087b0b783" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::d_plot_time</definition>
+        <argsstring></argsstring>
+        <name>d_plot_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="143" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1ab54b8ef36b3c6e8662511c8b46782106" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::d_plot_constellation</definition>
+        <argsstring></argsstring>
+        <name>d_plot_constellation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="144" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a2d2e32460ea083d4c9bb52669905ac31" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* SpectrumDisplayForm::displayTimer</definition>
+        <argsstring></argsstring>
+        <name>displayTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="146" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumDisplayForm_1a0d297617b411128912aa78d10aaf2d58" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumDisplayForm::d_update_time</definition>
+        <argsstring></argsstring>
+        <name>d_update_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="147" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpectrumDisplayForm_1af761f1dc67b01e993752d1a563173dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumDisplayForm::SpectrumDisplayForm</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>SpectrumDisplayForm</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a444ea5bf5ad4b5c2dece632c494c9f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumDisplayForm::~SpectrumDisplayForm</definition>
+        <argsstring>()</argsstring>
+        <name>~SpectrumDisplayForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a40e01829478eed3652f6a157adb17e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setSystem</definition>
+        <argsstring>(SpectrumGUIClass *newSystem, const uint64_t numFFTDataPoints, const uint64_t numTimeDomainDataPoints)</argsstring>
+        <name>setSystem</name>
+        <param>
+          <type><ref refid="classSpectrumGUIClass" kindref="compound">SpectrumGUIClass</ref> *</type>
+          <declname>newSystem</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numFFTDataPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numTimeDomainDataPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a25658dd136cdc3d4cd9c0b63e5b2142b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpectrumDisplayForm::getAverageCount</definition>
+        <argsstring>()</argsstring>
+        <name>getAverageCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a5637faa538d3d99b07ffbd740e1d2ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setAverageCount</definition>
+        <argsstring>(const int newCount)</argsstring>
+        <name>setAverageCount</name>
+        <param>
+          <type>const int</type>
+          <declname>newCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1ad4383a67ebfa8adf6f57b80792d27bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a1d5e58bd01a31da8b6c1c5636047dd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::averageDataReset</definition>
+        <argsstring>()</argsstring>
+        <name>averageDataReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a35c663ec37fe3309472b15e8115194a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::resizeBuffers</definition>
+        <argsstring>(const uint64_t numFFTDataPoints, const uint64_t numTimeDomainDataPoints)</argsstring>
+        <name>resizeBuffers</name>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numFFTDataPoints</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>numTimeDomainDataPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1a0be767c6d3abd7628eb3b4dd9b00fa85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SpectrumDisplayForm::getClickedFreq</definition>
+        <argsstring>() const </argsstring>
+        <name>getClickedFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumDisplayForm_1add051dd98c046e9ed266df61e90047f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpectrumDisplayForm::checkClicked</definition>
+        <argsstring>()</argsstring>
+        <name>checkClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a2a82bac7c03b51032c1cb4168535c1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::resizeEvent</definition>
+        <argsstring>(QResizeEvent *e)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ac69753564cbe7ae6f2bf4a00f5a0af0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::customEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>customEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a79843108d4573cf88b5ae95194b17966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::avgLineEdit_valueChanged</definition>
+        <argsstring>(int valueString)</argsstring>
+        <name>avgLineEdit_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>valueString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a4d925e990f9210a53f85242162fce02f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::maxHoldCheckBox_toggled</definition>
+        <argsstring>(bool newState)</argsstring>
+        <name>maxHoldCheckBox_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ac6f2a0410413f25af41180a012c000ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::minHoldCheckBox_toggled</definition>
+        <argsstring>(bool newState)</argsstring>
+        <name>minHoldCheckBox_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1af24f30d8273e233468c2d42413130635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::minHoldResetBtn_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>minHoldResetBtn_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a54b79ddc72dba55c89e70f3eade018c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::maxHoldResetBtn_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>maxHoldResetBtn_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a32ab1ea8eed1a2d2b83bbab627bfa679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::tabChanged</definition>
+        <argsstring>(int index)</argsstring>
+        <name>tabChanged</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ab1d760952a01a96dfdfdb11ba2dbd5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setFrequencyRange</definition>
+        <argsstring>(const double newCenterFrequency, const double newStartFrequency, const double newStopFrequency)</argsstring>
+        <name>setFrequencyRange</name>
+        <param>
+          <type>const double</type>
+          <declname>newCenterFrequency</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>newStartFrequency</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>newStopFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ab2ca7a8d2c188192bcbcd7d41e6c0b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::closeEvent</definition>
+        <argsstring>(QCloseEvent *e)</argsstring>
+        <name>closeEvent</name>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ab79cf3c410c9d5171637db45d49fe303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::windowTypeChanged</definition>
+        <argsstring>(int newItem)</argsstring>
+        <name>windowTypeChanged</name>
+        <param>
+          <type>int</type>
+          <declname>newItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a2d33f48514092358b55bcdb1e7f1485d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::useRFFrequenciesCB</definition>
+        <argsstring>(bool useRFFlag)</argsstring>
+        <name>useRFFrequenciesCB</name>
+        <param>
+          <type>bool</type>
+          <declname>useRFFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a0b32966b6613557d94c570981467a38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::toggleRFFrequencies</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleRFFrequencies</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a8e6d296f08d49ebc54ea9e24e590517c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::waterfallMaximumIntensityChangedCB</definition>
+        <argsstring>(double)</argsstring>
+        <name>waterfallMaximumIntensityChangedCB</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a0a2947491f2b0f49588f0243446b0bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::waterfallMinimumIntensityChangedCB</definition>
+        <argsstring>(double)</argsstring>
+        <name>waterfallMinimumIntensityChangedCB</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a95aec58a4eaf8b565c12f268dbf6422c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::waterfallIntensityColorTypeChanged</definition>
+        <argsstring>(int)</argsstring>
+        <name>waterfallIntensityColorTypeChanged</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a2575583e56fff923bbffc8ff0a985131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::waterfallAutoScaleBtnCB</definition>
+        <argsstring>()</argsstring>
+        <name>waterfallAutoScaleBtnCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a4344851b12052baaea3a334f6008e684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::fftComboBoxSelectedCB</definition>
+        <argsstring>(const QString &amp;)</argsstring>
+        <name>fftComboBoxSelectedCB</name>
+        <param>
+          <type>const QString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a9f50f13cf175ba8107e7fd8d07df2f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::toggleTabFrequency</definition>
+        <argsstring>(const bool state)</argsstring>
+        <name>toggleTabFrequency</name>
+        <param>
+          <type>const bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a337db1b6de9dab4ab504b9facb7320c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::toggleTabWaterfall</definition>
+        <argsstring>(const bool state)</argsstring>
+        <name>toggleTabWaterfall</name>
+        <param>
+          <type>const bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a63593a16d63194f4e1586ca97089d921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::toggleTabTime</definition>
+        <argsstring>(const bool state)</argsstring>
+        <name>toggleTabTime</name>
+        <param>
+          <type>const bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a6afe0ab0268d7e7eaf87a27d332964d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::toggleTabConstellation</definition>
+        <argsstring>(const bool state)</argsstring>
+        <name>toggleTabConstellation</name>
+        <param>
+          <type>const bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1aec5cfb64261afd2899be8ffbd22efcac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setTimeDomainAxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setTimeDomainAxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a00f1766bb5b655acc2f24518150a6787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setConstellationAxis</definition>
+        <argsstring>(double xmin, double xmax, double ymin, double ymax)</argsstring>
+        <name>setConstellationAxis</name>
+        <param>
+          <type>double</type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ymin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ymax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ac0bf899643fcf2edd39dc4f20ab2306d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setConstellationPenSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>setConstellationPenSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a4781b2d273aab2854e47de8c829f5460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setFrequencyAxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setFrequencyAxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a50701ae2dcd832527ba8f99a2cb3accd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::setUpdateTime</definition>
+        <argsstring>(double t)</argsstring>
+        <name>setUpdateTime</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a4a9d43f21efa7d3e71eb7ab63e5fdac7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::newFrequencyData</definition>
+        <argsstring>(const SpectrumUpdateEvent *)</argsstring>
+        <name>newFrequencyData</name>
+        <param>
+          <type>const <ref refid="classSpectrumUpdateEvent" kindref="compound">SpectrumUpdateEvent</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a355e96ccd45e696da7167d0e491c5914" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::updateGuiTimer</definition>
+        <argsstring>()</argsstring>
+        <name>updateGuiTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1ad263c4ac2c10d478651a9df623947643" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::onFFTPlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onFFTPlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1afaab3592072c7752f90cb755b77b6b5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::onWFallPlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onWFallPlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a779bb1428034d5ea5ab6558feb4f35cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::onTimePlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onTimePlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classSpectrumDisplayForm_1a96df124c3ee64b712f63ee58c2f1b058" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::onConstPlotPointSelected</definition>
+        <argsstring>(const QPointF p)</argsstring>
+        <name>onConstPlotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="106" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classSpectrumDisplayForm_1adf54ef9894c94769580c904ab32da477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::plotPointSelected</definition>
+        <argsstring>(const QPointF p, int type)</argsstring>
+        <name>plotPointSelected</name>
+        <param>
+          <type>const QPointF</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="109" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSpectrumDisplayForm_1ac5e1aa75c36bf13e6e6433df92088684" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumDisplayForm::_averageHistory</definition>
+        <argsstring>(const double *newBuffer)</argsstring>
+        <name>_averageHistory</name>
+        <param>
+          <type>const double *</type>
+          <declname>newBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10060">
+        <label>Ui::SpectrumDisplayForm</label>
+      </node>
+      <node id="10059">
+        <label>QWidget</label>
+      </node>
+      <node id="10058">
+        <label>SpectrumDisplayForm</label>
+        <link refid="classSpectrumDisplayForm"/>
+        <childnode refid="10059" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10060" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10063">
+        <label>Ui::SpectrumDisplayForm</label>
+      </node>
+      <node id="10062">
+        <label>QWidget</label>
+      </node>
+      <node id="10061">
+        <label>SpectrumDisplayForm</label>
+        <link refid="classSpectrumDisplayForm"/>
+        <childnode refid="10062" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10063" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/spectrumdisplayform.h" bodystart="40" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classSpectrumDisplayForm_1a3258e3f2274503794fb5bbd361a82cba" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_averagedValues</name></member>
+      <member refid="classSpectrumDisplayForm_1ac5e1aa75c36bf13e6e6433df92088684" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_averageHistory</name></member>
+      <member refid="classSpectrumDisplayForm_1ae45b069c7eed21085f16f095ca512345" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_centerFrequency</name></member>
+      <member refid="classSpectrumDisplayForm_1acd660d888dfb6286d0dfdcb1a8f45ffd" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_constellationDisplayPlot</name></member>
+      <member refid="classSpectrumDisplayForm_1accebb40c4d10e4c30b6ce837ca26f2f3" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_frequencyDisplayPlot</name></member>
+      <member refid="classSpectrumDisplayForm_1aa3dc47ef762474ff368276136d7e3aa5" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_historyEntry</name></member>
+      <member refid="classSpectrumDisplayForm_1acbc7502fa00d413ea24188af1cd0c84f" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_historyEntryCount</name></member>
+      <member refid="classSpectrumDisplayForm_1a41ea2d4e451957eb4e815ffe334e33b3" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_historyVector</name></member>
+      <member refid="classSpectrumDisplayForm_1abc48815296df938aa58c493713cb0287" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_intValidator</name></member>
+      <member refid="classSpectrumDisplayForm_1a8cad5f4c34de3bc95f1063375e740e8e" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_noiseFloorAmplitude</name></member>
+      <member refid="classSpectrumDisplayForm_1a23cd3f4d3114b01bf063cf698911cc45" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_numRealDataPoints</name></member>
+      <member refid="classSpectrumDisplayForm_1a29537773f9fd56a6cb636db06eb5c7d3" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_peakAmplitude</name></member>
+      <member refid="classSpectrumDisplayForm_1a54dc2e2725127cc11562c4ae9f9e69c2" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_peakFrequency</name></member>
+      <member refid="classSpectrumDisplayForm_1a58c5a26d0416bc2630bcecd5132c4915" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_realFFTDataPoints</name></member>
+      <member refid="classSpectrumDisplayForm_1abc7bf7f5129a2d889db5657606d55ed0" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_startFrequency</name></member>
+      <member refid="classSpectrumDisplayForm_1ae49b78a74ab8335413d372fa3c0d151a" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_stopFrequency</name></member>
+      <member refid="classSpectrumDisplayForm_1a1e6c309fe499bb308d37650dbed461fa" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_system</name></member>
+      <member refid="classSpectrumDisplayForm_1a11f09eaa024c553caedc747ddcb12f5a" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_systemSpecifiedFlag</name></member>
+      <member refid="classSpectrumDisplayForm_1a0baeae27a685ed8d5b3d674ce9397333" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_timeDomainDisplayPlot</name></member>
+      <member refid="classSpectrumDisplayForm_1a3c26701b1edddc20375398cbac44a28a" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>_waterfallDisplayPlot</name></member>
+      <member refid="classSpectrumDisplayForm_1a1d5e58bd01a31da8b6c1c5636047dd29" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>averageDataReset</name></member>
+      <member refid="classSpectrumDisplayForm_1a79843108d4573cf88b5ae95194b17966" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>avgLineEdit_valueChanged</name></member>
+      <member refid="classSpectrumDisplayForm_1add051dd98c046e9ed266df61e90047f9" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>checkClicked</name></member>
+      <member refid="classSpectrumDisplayForm_1ab2ca7a8d2c188192bcbcd7d41e6c0b9e" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>closeEvent</name></member>
+      <member refid="classSpectrumDisplayForm_1ac69753564cbe7ae6f2bf4a00f5a0af0d" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>customEvent</name></member>
+      <member refid="classSpectrumDisplayForm_1a9038d31675709ab23ec2be267ebd4f84" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_clicked</name></member>
+      <member refid="classSpectrumDisplayForm_1a974262504c9aa4cb777b64dc6f7baeaf" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_clicked_freq</name></member>
+      <member refid="classSpectrumDisplayForm_1ab54b8ef36b3c6e8662511c8b46782106" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_plot_constellation</name></member>
+      <member refid="classSpectrumDisplayForm_1a1ab112f40975cbf1e33da8d419bea9e4" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_plot_fft</name></member>
+      <member refid="classSpectrumDisplayForm_1a69c10e861f05babe6cfa11d087b0b783" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_plot_time</name></member>
+      <member refid="classSpectrumDisplayForm_1a7bacd20e4d8f16633db318c1b1c5b78a" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_plot_waterfall</name></member>
+      <member refid="classSpectrumDisplayForm_1a918612f197496df7b4ce9908fd71ebb1" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_units</name></member>
+      <member refid="classSpectrumDisplayForm_1a0d297617b411128912aa78d10aaf2d58" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>d_update_time</name></member>
+      <member refid="classSpectrumDisplayForm_1a2d2e32460ea083d4c9bb52669905ac31" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>displayTimer</name></member>
+      <member refid="classSpectrumDisplayForm_1a4344851b12052baaea3a334f6008e684" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>fftComboBoxSelectedCB</name></member>
+      <member refid="classSpectrumDisplayForm_1a25658dd136cdc3d4cd9c0b63e5b2142b" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>getAverageCount</name></member>
+      <member refid="classSpectrumDisplayForm_1a0be767c6d3abd7628eb3b4dd9b00fa85" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>getClickedFreq</name></member>
+      <member refid="classSpectrumDisplayForm_1a4d925e990f9210a53f85242162fce02f" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>maxHoldCheckBox_toggled</name></member>
+      <member refid="classSpectrumDisplayForm_1a54b79ddc72dba55c89e70f3eade018c2" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>maxHoldResetBtn_clicked</name></member>
+      <member refid="classSpectrumDisplayForm_1ac6f2a0410413f25af41180a012c000ae" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>minHoldCheckBox_toggled</name></member>
+      <member refid="classSpectrumDisplayForm_1af24f30d8273e233468c2d42413130635" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>minHoldResetBtn_clicked</name></member>
+      <member refid="classSpectrumDisplayForm_1a4a9d43f21efa7d3e71eb7ab63e5fdac7" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>newFrequencyData</name></member>
+      <member refid="classSpectrumDisplayForm_1a96df124c3ee64b712f63ee58c2f1b058" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>onConstPlotPointSelected</name></member>
+      <member refid="classSpectrumDisplayForm_1ad263c4ac2c10d478651a9df623947643" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>onFFTPlotPointSelected</name></member>
+      <member refid="classSpectrumDisplayForm_1a779bb1428034d5ea5ab6558feb4f35cd" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>onTimePlotPointSelected</name></member>
+      <member refid="classSpectrumDisplayForm_1afaab3592072c7752f90cb755b77b6b5f" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>onWFallPlotPointSelected</name></member>
+      <member refid="classSpectrumDisplayForm_1adf54ef9894c94769580c904ab32da477" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>plotPointSelected</name></member>
+      <member refid="classSpectrumDisplayForm_1ad4383a67ebfa8adf6f57b80792d27bab" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>reset</name></member>
+      <member refid="classSpectrumDisplayForm_1a35c663ec37fe3309472b15e8115194a5" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>resizeBuffers</name></member>
+      <member refid="classSpectrumDisplayForm_1a2a82bac7c03b51032c1cb4168535c1a3" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>resizeEvent</name></member>
+      <member refid="classSpectrumDisplayForm_1a5637faa538d3d99b07ffbd740e1d2ca1" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setAverageCount</name></member>
+      <member refid="classSpectrumDisplayForm_1a00f1766bb5b655acc2f24518150a6787" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setConstellationAxis</name></member>
+      <member refid="classSpectrumDisplayForm_1ac0bf899643fcf2edd39dc4f20ab2306d" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setConstellationPenSize</name></member>
+      <member refid="classSpectrumDisplayForm_1a4781b2d273aab2854e47de8c829f5460" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setFrequencyAxis</name></member>
+      <member refid="classSpectrumDisplayForm_1ab1d760952a01a96dfdfdb11ba2dbd5bc" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setFrequencyRange</name></member>
+      <member refid="classSpectrumDisplayForm_1a40e01829478eed3652f6a157adb17e4b" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setSystem</name></member>
+      <member refid="classSpectrumDisplayForm_1aec5cfb64261afd2899be8ffbd22efcac" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setTimeDomainAxis</name></member>
+      <member refid="classSpectrumDisplayForm_1a50701ae2dcd832527ba8f99a2cb3accd" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>setUpdateTime</name></member>
+      <member refid="classSpectrumDisplayForm_1af761f1dc67b01e993752d1a563173dfb" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>SpectrumDisplayForm</name></member>
+      <member refid="classSpectrumDisplayForm_1a32ab1ea8eed1a2d2b83bbab627bfa679" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>tabChanged</name></member>
+      <member refid="classSpectrumDisplayForm_1a0b32966b6613557d94c570981467a38f" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>toggleRFFrequencies</name></member>
+      <member refid="classSpectrumDisplayForm_1a6afe0ab0268d7e7eaf87a27d332964d5" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>toggleTabConstellation</name></member>
+      <member refid="classSpectrumDisplayForm_1a9f50f13cf175ba8107e7fd8d07df2f6f" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>toggleTabFrequency</name></member>
+      <member refid="classSpectrumDisplayForm_1a63593a16d63194f4e1586ca97089d921" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>toggleTabTime</name></member>
+      <member refid="classSpectrumDisplayForm_1a337db1b6de9dab4ab504b9facb7320c1" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>toggleTabWaterfall</name></member>
+      <member refid="classSpectrumDisplayForm_1a355e96ccd45e696da7167d0e491c5914" prot="private" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>updateGuiTimer</name></member>
+      <member refid="classSpectrumDisplayForm_1a2d33f48514092358b55bcdb1e7f1485d" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>useRFFrequenciesCB</name></member>
+      <member refid="classSpectrumDisplayForm_1a2575583e56fff923bbffc8ff0a985131" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>waterfallAutoScaleBtnCB</name></member>
+      <member refid="classSpectrumDisplayForm_1a95aec58a4eaf8b565c12f268dbf6422c" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>waterfallIntensityColorTypeChanged</name></member>
+      <member refid="classSpectrumDisplayForm_1a8e6d296f08d49ebc54ea9e24e590517c" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>waterfallMaximumIntensityChangedCB</name></member>
+      <member refid="classSpectrumDisplayForm_1a0a2947491f2b0f49588f0243446b0bc5" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>waterfallMinimumIntensityChangedCB</name></member>
+      <member refid="classSpectrumDisplayForm_1ab79cf3c410c9d5171637db45d49fe303" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>windowTypeChanged</name></member>
+      <member refid="classSpectrumDisplayForm_1a444ea5bf5ad4b5c2dece632c494c9f63" prot="public" virt="non-virtual"><scope>SpectrumDisplayForm</scope><name>~SpectrumDisplayForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

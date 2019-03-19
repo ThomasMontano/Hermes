@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1digital_1_1constellation__rect" kind="class" prot="public">
+    <compoundname>gr::digital::constellation_rect</compoundname>
+    <basecompoundref refid="classgr_1_1digital_1_1constellation__sector" prot="public" virt="non-virtual">gr::digital::constellation_sector</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1digital_1_1constellation__expl__rect" prot="public" virt="non-virtual">gr::digital::constellation_expl_rect</derivedcompoundref>
+    <includes refid="constellation_8h" local="no">gnuradio/digital/constellation.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1digital_1_1constellation__rect_1af0543a97fc6aba9ec80ca15772b68d8b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1digital_1_1constellation__rect" kindref="compound">constellation_rect</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;constellation_rect&gt; gr::digital::constellation_rect::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="344" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1digital_1_1constellation__rect_1a66ba81fee2bd6a2a2c7647ff77495063" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::digital::constellation_rect::n_real_sectors</definition>
+        <argsstring></argsstring>
+        <name>n_real_sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="382" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1constellation__rect_1a81a4577078e241d9cb47ed0c5f0c7f0b" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::digital::constellation_rect::n_imag_sectors</definition>
+        <argsstring></argsstring>
+        <name>n_imag_sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="383" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1constellation__rect_1ad9619cb8b0ee8d43b58b9df1f8a008a7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::digital::constellation_rect::d_width_real_sectors</definition>
+        <argsstring></argsstring>
+        <name>d_width_real_sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="384" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1digital_1_1constellation__rect_1acaa5bf319a1908b9ffced8ae5402fc2d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::digital::constellation_rect::d_width_imag_sectors</definition>
+        <argsstring></argsstring>
+        <name>d_width_imag_sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="385" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1afdd8233ca89ea0e422249e74c6bc3606" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1digital_1_1constellation__rect_1af0543a97fc6aba9ec80ca15772b68d8b" kindref="member">constellation_rect::sptr</ref></type>
+        <definition>static constellation_rect::sptr gr::digital::constellation_rect::make</definition>
+        <argsstring>(std::vector&lt; gr_complex &gt; constell, std::vector&lt; int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <declname>constell</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>pre_diff_code</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rotational_symmetry</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>real_sectors</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>imag_sectors</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width_real_sectors</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width_imag_sectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a rectangular constellation object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of constellation points (order of list matches pre_diff_code) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pre_diff_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of alphabet symbols (before applying any differential coding) (order of list matches constell) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotational_symmetry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rotations around unit circle that have the same representation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>real_sectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of sectors the real axis is split in to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imag_sectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of sectors the imag axis is split in to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width_real_sectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of each real sector to calculate decision boundaries. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width_imag_sectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of each imag sector to calculate decision boundaries. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="358" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1a380f72e493c6d291c83f61270a2721ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::constellation_rect::~constellation_rect</definition>
+        <argsstring>()</argsstring>
+        <name>~constellation_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="365" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1ac0e8905982d1003d742315c5642080d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::digital::constellation_rect::constellation_rect</definition>
+        <argsstring>(std::vector&lt; gr_complex &gt; constell, std::vector&lt; int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
+        <name>constellation_rect</name>
+        <param>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <declname>constell</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>pre_diff_code</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rotational_symmetry</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>real_sectors</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>imag_sectors</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width_real_sectors</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width_imag_sectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="369" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1a522c0343de5b051648a65d1f0d13c4bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::digital::constellation_rect::get_sector</definition>
+        <argsstring>(const gr_complex *sample)</argsstring>
+        <name>get_sector</name>
+        <reimplements refid="classgr_1_1digital_1_1constellation__sector_1a5e49b4b5c017b23a89f49ad6ee7aceda">get_sector</reimplements>
+        <param>
+          <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="377" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1ae416550529597615a41581e87d10bd18" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <definition>gr_complex gr::digital::constellation_rect::calc_sector_center</definition>
+        <argsstring>(unsigned int sector)</argsstring>
+        <name>calc_sector_center</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>sector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1digital_1_1constellation__rect_1a0982637274c63d8fc1f972bb20d680c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::digital::constellation_rect::calc_sector_value</definition>
+        <argsstring>(unsigned int sector)</argsstring>
+        <name>calc_sector_value</name>
+        <reimplements refid="classgr_1_1digital_1_1constellation__sector_1a22baa50680ea1f530a1d27677eb2ce08">calc_sector_value</reimplements>
+        <reimplementedby refid="classgr_1_1digital_1_1constellation__expl__rect_1a3ec8dacacdafe68cfc8abdc64713fe57">calc_sector_value</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+          <declname>sector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="379" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Rectangular digital constellation</para><para>Only implemented for 1-(complex)dimensional constellation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Constellation space is divided into rectangular sectors. Each sector is associated with the nearest constellation point.</para><para>Works well for square QAM.</para><para>Works for any generic constellation provided sectors are not too large. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2892">
+        <label>gr::digital::constellation_expl_rect</label>
+        <link refid="classgr_1_1digital_1_1constellation__expl__rect"/>
+        <childnode refid="2888" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2890">
+        <label>gr::digital::constellation</label>
+        <link refid="classgr_1_1digital_1_1constellation"/>
+        <childnode refid="2891" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2891">
+        <label>boost::enable_shared_from_this&lt; constellation &gt;</label>
+      </node>
+      <node id="2889">
+        <label>gr::digital::constellation_sector</label>
+        <link refid="classgr_1_1digital_1_1constellation__sector"/>
+        <childnode refid="2890" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2888">
+        <label>gr::digital::constellation_rect</label>
+        <link refid="classgr_1_1digital_1_1constellation__rect"/>
+        <childnode refid="2889" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2897">
+        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
+        <childnode refid="2898" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2895">
+        <label>gr::digital::constellation</label>
+        <link refid="classgr_1_1digital_1_1constellation"/>
+        <childnode refid="2896" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2897" relation="usage">
+          <edgelabel>d_soft_dec_lut</edgelabel>
+        </childnode>
+        <childnode refid="2899" relation="usage">
+          <edgelabel>d_pre_diff_code</edgelabel>
+        </childnode>
+        <childnode refid="2900" relation="usage">
+          <edgelabel>d_constellation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2898">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="2896">
+        <label>boost::enable_shared_from_this&lt; constellation &gt;</label>
+      </node>
+      <node id="2900">
+        <label>std::vector&lt; gr_complex &gt;</label>
+        <childnode refid="2901" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2894">
+        <label>gr::digital::constellation_sector</label>
+        <link refid="classgr_1_1digital_1_1constellation__sector"/>
+        <childnode refid="2895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2901">
+        <label>std::complex</label>
+      </node>
+      <node id="2893">
+        <label>gr::digital::constellation_rect</label>
+        <link refid="classgr_1_1digital_1_1constellation__rect"/>
+        <childnode refid="2894" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2899">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" line="342" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-digital/include/gnuradio/digital/constellation.h" bodystart="340" bodyend="386"/>
+    <listofallmembers>
+      <member refid="classgr_1_1digital_1_1constellation_1a87690b8ffabf0ebfb8bedced857d5417" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>apply_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a3b622a4a068c98fda6db9f40153af850" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a32d01ed008d3d504708352b854eecb13" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>as_pmt</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a04d4b0e979c23414c06b0965605480d2" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>base</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ae5322f145b0af1fb23010aa3da589e9f" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>bits_per_symbol</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a91d01f94589c9ea4d3a183f455268604" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>calc_arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5bbfb7166739e5ebc7f9b49de59b4062" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>calc_euclidean_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a0842d4f01dfbda896015807f330f646b" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>calc_hard_symbol_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a298ef3c2ae64ce29c42d3a7d8d73c89b" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>calc_metric</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1ae416550529597615a41581e87d10bd18" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>calc_sector_center</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1a0982637274c63d8fc1f972bb20d680c9" prot="protected" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>calc_sector_value</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a2f210b179a72d6e60b8d59a0c66e80a1" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>calc_soft_dec</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a8e917e7cf20203dec421725aad34786b" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a20cea65d404f376a4778a6096816307f" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1ac0e8905982d1003d742315c5642080d3" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>constellation_rect</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__sector_1a7a03acf351d79c374983414fce03336e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>constellation_sector</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a07cd1d356814817f2afb208af5c8b6ef" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_apply_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aa9b5934e548e46e4c7706b3cd22d2f69" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_arity</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a1b5e422bdf7ecbad26e9ed2652956ee9" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a85d49f80821bc8c836588da64c4d9077" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_dimensionality</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a51e8e28141eb4a8e6c18962a2999058f" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_im_max</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aea2610a49f5d0557ed10528a67abb490" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_im_min</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a41dcdc9ef2c25ca07522a4a234b5efbf" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_lut_precision</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad5bd69d3188835883fe11d1a97667d67" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_lut_scale</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a23543df8ec7540e84d9a29f4bf7c8b2d" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a9cfeea23dc49a59975aca5b92b829d37" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_re_max</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a90cfe2d9144a9e2c9e28973cc6ee7cbc" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_re_min</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a6c4d5d1ba5175b419a716a8dca1796a6" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_rotational_symmetry</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad6accef94341a3cea5db2152ec4d174f" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_scalefactor</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1abe43bb5436ccd4ddda306bdddbf7a916" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1acaa5bf319a1908b9ffced8ae5402fc2d" prot="private" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_width_imag_sectors</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1ad9619cb8b0ee8d43b58b9df1f8a008a7" prot="private" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>d_width_real_sectors</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__sector_1a6effec5438491106f5b70420f48d987a" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>decision_maker</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a9de9eb2229e907d55058d081df01683e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>decision_maker_pe</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5dcdd705a7d878b88b7acef8da9e845e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>decision_maker_v</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1ad2b3847821c7a878f24fbb95d9399990" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>dimensionality</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__sector_1a72dfe4159c4a83de8d8e63c920b7c904" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>find_sector_values</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a44e01dd4eff8c625c586a2f236a505ec" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>gen_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1aff2ec26a1d06b878b36335d2bde94197" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>get_closest_point</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a446417e19d701280d20874ad718a16ca" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>get_distance</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1a522c0343de5b051648a65d1f0d13c4bb" prot="protected" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>get_sector</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a1bc7a672bd0e59f6fca46f93ae28c05c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>has_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1afdd8233ca89ea0e422249e74c6bc3606" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>make</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7e12c699256ffb7ff98af6130c257a20" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>map_to_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a76cdc6cba9966b7825ec1dd8b4e33d60" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>map_to_points_v</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1abb8a2cdd79cfc83a9a7ab55cdec6b2fb" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>max_min_axes</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1a81a4577078e241d9cb47ed0c5f0c7f0b" prot="private" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>n_imag_sectors</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1a66ba81fee2bd6a2a2c7647ff77495063" prot="private" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>n_real_sectors</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__sector_1a57631c8e706285bbe13d953c82d147b5" prot="protected" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>n_sectors</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a27ba0660bcd984420d0a095dd0cf2d19" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a12c074528343a796a8b4c79be05bed5e" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a5d6597a0478e123918b1b8823329a54c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>rotational_symmetry</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a18be70826bbe01f8a8df3656c919ab69" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>s_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7cbd7207225ce02f09f37c15b80f1e2a" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>set_pre_diff_code</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a7b4f20eff157d285470bb11c2a1dccc3" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>set_soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1a004c4e9f82442bc6ac28920ae43f1a41" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>soft_dec_lut</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1af40f67a78465490b2766e38c1cc52c2c" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>soft_decision_maker</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1af0543a97fc6aba9ec80ca15772b68d8b" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>sptr</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1afe9722fed840a20157c0e2fe301ff7a8" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>v_points</name></member>
+      <member refid="classgr_1_1digital_1_1constellation_1afaee6d698f66f455ddeec92e1c4f563e" prot="public" virt="virtual"><scope>gr::digital::constellation_rect</scope><name>~constellation</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__rect_1a380f72e493c6d291c83f61270a2721ec" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>~constellation_rect</name></member>
+      <member refid="classgr_1_1digital_1_1constellation__sector_1abed0481be6561b1daa3e5012359149fe" prot="public" virt="non-virtual"><scope>gr::digital::constellation_rect</scope><name>~constellation_sector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

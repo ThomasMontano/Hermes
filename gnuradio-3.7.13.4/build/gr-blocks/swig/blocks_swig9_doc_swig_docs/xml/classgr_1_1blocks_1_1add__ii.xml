@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1add__ii" kind="class" prot="public">
+    <compoundname>gr::blocks::add_ii</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="add__ii_8h" local="no">add_ii.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1add__ii_1a566f14378ac75b035cdbcd2527e4a918" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1add__ii" kindref="compound">add_ii</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;add_ii&gt; gr::blocks::add_ii::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/add_ii.h" line="51" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/add_ii.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1add__ii_1a77c357509c5a3656443ed4ef28f17ef5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1add__ii_1a566f14378ac75b035cdbcd2527e4a918" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::add_ii::make</definition>
+        <argsstring>(size_t vlen=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>vlen</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/add_ii.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>output = sum(input[0], input[1], ..., input[M-1]) </para>    </briefdescription>
+    <detaileddescription>
+<para>Add samples across all input streams. For all <formula id="0">$n$</formula> samples on all <formula id="1">$M$</formula> input streams <formula id="2">$x_m$</formula>:</para><para><formula id="3">\[ y[n] = \sum_{m=0}^{M-1} x_m[n] \]</formula> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="60">
+        <label>gr::blocks::add_ii</label>
+        <link refid="classgr_1_1blocks_1_1add__ii"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="62">
+        <label>gr::blocks::add_ii</label>
+        <link refid="classgr_1_1blocks_1_1add__ii"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/add_ii.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/build/gr-blocks/include/gnuradio/blocks/add_ii.h" bodystart="46" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1add__ii_1a77c357509c5a3656443ed4ef28f17ef5" prot="public" virt="non-virtual"><scope>gr::blocks::add_ii</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1add__ii_1a566f14378ac75b035cdbcd2527e4a918" prot="public" virt="non-virtual"><scope>gr::blocks::add_ii</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

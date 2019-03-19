@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1message__burst__source" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::message_burst_source</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="message__burst__source_8h" local="no">message_burst_source.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1message__burst__source_1a2871be8aac03a9716fd2c226261020c8" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1message__burst__source" kindref="compound">message_burst_source</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;message_burst_source&gt; gr::blocks::message_burst_source::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__burst__source_1abebddea7478a5f3ed91b94fd409619ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__burst__source_1a2871be8aac03a9716fd2c226261020c8" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_burst_source::make</definition>
+        <argsstring>(size_t itemsize, int msgq_limit)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>msgq_limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__burst__source_1ab87fdc31df26c09f3344930ad3cdde65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1message__burst__source_1a2871be8aac03a9716fd2c226261020c8" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::message_burst_source::make</definition>
+        <argsstring>(size_t itemsize, gr::msg_queue::sptr msgq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1message__burst__source_1ad206cf4c8ca5d7795c2d1a402963669d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>gr::msg_queue::sptr</type>
+        <definition>virtual gr::msg_queue::sptr gr::blocks::message_burst_source::msgq</definition>
+        <argsstring>() const =0</argsstring>
+        <name>msgq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Turn received messages into a stream and tag them for UHD to send. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="356">
+        <label>gr::blocks::message_burst_source</label>
+        <link refid="classgr_1_1blocks_1_1message__burst__source"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="358">
+        <label>gr::blocks::message_burst_source</label>
+        <link refid="classgr_1_1blocks_1_1message__burst__source"/>
+        <childnode refid="359" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/message_burst_source.h" bodystart="37" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1message__burst__source_1abebddea7478a5f3ed91b94fd409619ec" prot="public" virt="non-virtual"><scope>gr::blocks::message_burst_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__burst__source_1ab87fdc31df26c09f3344930ad3cdde65" prot="public" virt="non-virtual"><scope>gr::blocks::message_burst_source</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1message__burst__source_1ad206cf4c8ca5d7795c2d1a402963669d" prot="public" virt="pure-virtual"><scope>gr::blocks::message_burst_source</scope><name>msgq</name></member>
+      <member refid="classgr_1_1blocks_1_1message__burst__source_1a2871be8aac03a9716fd2c226261020c8" prot="public" virt="non-virtual"><scope>gr::blocks::message_burst_source</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

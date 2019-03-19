@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classawgn__bp" kind="class" prot="public">
+    <compoundname>awgn_bp</compoundname>
+    <includes refid="awgn__bp_8h" local="no">awgn_bp.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classawgn__bp_1a25d7bcc01e798aab2e31a2473587be3c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int awgn_bp::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+<para>The number of check nodes in the tanner-graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="132" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1ab983b5980646e19182aaa122bcafeaae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int awgn_bp::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+<para>The number of variable nodes in the tanner-graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="135" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1aaa8d2a9ae8db1c3007912a9e494789c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int awgn_bp::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+<para>The dimension of the code used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="138" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a38c7d1a968a85ea696f6050edde55c6e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int awgn_bp::max_iterations</definition>
+        <argsstring></argsstring>
+        <name>max_iterations</name>
+        <briefdescription>
+<para>The maximum number of message passing iterations allowed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="141" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1ad05d84cf99a2cc37950b63d119dd7a90" prot="private" static="no" mutable="no">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat awgn_bp::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+<para>The parity check matrix of the LDPC code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="144" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1aa874e760a6b118ec527237b64191b283" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float awgn_bp::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+<para>The standard-deviation of the AWGN channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="147" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a7a24659df080ee0af5f95d607e81d0d4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;double&gt; &gt; awgn_bp::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+<para>Matrix holding messages from check nodes to variable nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="150" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a1a49f230b6c79c74756d754079046b2a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;double&gt; &gt; awgn_bp::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <briefdescription>
+<para>Matrix holding messages from variable nodes to check nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="153" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a058def18bf2cc9726e3dff2cc1aad62a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; awgn_bp::rx_lr</definition>
+        <argsstring></argsstring>
+        <name>rx_lr</name>
+        <briefdescription>
+<para>The array of likelihood computed from the channel output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="156" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1ab2710793b04fb841bbf60c86364eee65" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; awgn_bp::lr</definition>
+        <argsstring></argsstring>
+        <name>lr</name>
+        <briefdescription>
+<para>The array for holding likelihoods computed on BP decoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="159" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a400aa3e0f1872a252a92ad16983ed9d4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; awgn_bp::nlist</definition>
+        <argsstring></argsstring>
+        <name>nlist</name>
+        <briefdescription>
+<para>List of integer coordinates along each column with non-zero entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="162" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a56813ca5d152ead9ee34a7b0a67f51a9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; awgn_bp::mlist</definition>
+        <argsstring></argsstring>
+        <name>mlist</name>
+        <briefdescription>
+<para>List of integer coordinates along each row with non-zero entries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="165" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a1149ebdb44975b58fbd6e8c3c538ea97" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; awgn_bp::num_nlist</definition>
+        <argsstring></argsstring>
+        <name>num_nlist</name>
+        <briefdescription>
+<para>Weight of each column n. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="168" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a6a2e59fb16add1cac2a4fb39791b020e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; awgn_bp::num_mlist</definition>
+        <argsstring></argsstring>
+        <name>num_mlist</name>
+        <briefdescription>
+<para>Weight of each row m. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="171" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classawgn__bp_1a5086320cb291b83e6a792d1212a335a3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; awgn_bp::estimate</definition>
+        <argsstring></argsstring>
+        <name>estimate</name>
+        <briefdescription>
+<para>The array for holding estimate computed on BP decoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="174" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classawgn__bp_1ac15848f489b53912c0848f37f7c1f6d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>awgn_bp::awgn_bp</definition>
+        <argsstring>()</argsstring>
+        <name>awgn_bp</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="50" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1ad15577b81eea6c26903b1e4cfe689cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>awgn_bp::awgn_bp</definition>
+        <argsstring>(const GF2Mat X, float sgma)</argsstring>
+        <name>awgn_bp</name>
+        <param>
+          <type>const <ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sgma</declname>
+        </param>
+        <briefdescription>
+<para>A constructor for given <ref refid="classGF2Mat" kindref="compound">GF2Mat</ref> and sigma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1af1c3072439365762b647911ba16a3349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>awgn_bp::awgn_bp</definition>
+        <argsstring>(alist _list, float sgma)</argsstring>
+        <name>awgn_bp</name>
+        <param>
+          <type><ref refid="classalist" kindref="compound">alist</ref></type>
+          <declname>_list</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sgma</declname>
+        </param>
+        <briefdescription>
+<para>A constructor for given alist and sigma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1aa923ed04dca60e6c6a9d548aad54092e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::set_alist_sigma</definition>
+        <argsstring>(alist _list, float sgma)</argsstring>
+        <name>set_alist_sigma</name>
+        <param>
+          <type><ref refid="classalist" kindref="compound">alist</ref></type>
+          <declname>_list</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sgma</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the class using given alist and sigma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a196f8338e439be32780e54a7ac7a9c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;double&gt; &gt; awgn_bp::get_Q</definition>
+        <argsstring>()</argsstring>
+        <name>get_Q</name>
+        <briefdescription>
+<para>Returns the variable Q. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a734bffd6f54fc24baf968645665a352b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;double&gt; &gt; awgn_bp::get_R</definition>
+        <argsstring>()</argsstring>
+        <name>get_R</name>
+        <briefdescription>
+<para>Returns the variable R. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a52c532f7629ad3bcb0b53d0b3e2ef0b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGF2Mat" kindref="compound">GF2Mat</ref></type>
+        <definition>GF2Mat awgn_bp::get_H</definition>
+        <argsstring>()</argsstring>
+        <name>get_H</name>
+        <briefdescription>
+<para>Returns the variable H. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a3d1b00ec262557b9442d7df9c3a98b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::rx_lr_calc</definition>
+        <argsstring>(std::vector&lt; float &gt; codeword)</argsstring>
+        <name>rx_lr_calc</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>codeword</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the likelihood ratios given an input vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a50567ae19140a42ccc3cf42888ee4aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; awgn_bp::get_rx_lr</definition>
+        <argsstring>()</argsstring>
+        <name>get_rx_lr</name>
+        <briefdescription>
+<para>Returns the variable rx_lr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a28d5eb62cc3597c51248b23fa5285f4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; awgn_bp::get_lr</definition>
+        <argsstring>()</argsstring>
+        <name>get_lr</name>
+        <briefdescription>
+<para>Returns the variable lr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a27018652b9db5a6c4f7c47f46d674d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::spa_initialize</definition>
+        <argsstring>()</argsstring>
+        <name>spa_initialize</name>
+        <briefdescription>
+<para>Initializes the sum product algorithm set-up. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a2b0af34052384254d379feeb9a2277d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::update_chks</definition>
+        <argsstring>()</argsstring>
+        <name>update_chks</name>
+        <briefdescription>
+<para>Updates the check-nodes based on messages from variable nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1aa83aeb1ea14a62d07846903431f67640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::update_vars</definition>
+        <argsstring>()</argsstring>
+        <name>update_vars</name>
+        <briefdescription>
+<para>Updates the variable-nodes based on messages from check nodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1ae7edf6a89592f907195693a9ba06da21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; awgn_bp::get_estimate</definition>
+        <argsstring>()</argsstring>
+        <name>get_estimate</name>
+        <briefdescription>
+<para>Returns the current estimate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1aeb3ba7d119a06260c50256b79c676736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::compute_init_estimate</definition>
+        <argsstring>(std::vector&lt; float &gt; rx_word)</argsstring>
+        <name>compute_init_estimate</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>rx_word</declname>
+        </param>
+        <briefdescription>
+<para>Computes initial estimate based on the vector rx_word. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a36115199f36ab69932719b0df60ed557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::decision</definition>
+        <argsstring>()</argsstring>
+        <name>decision</name>
+        <briefdescription>
+<para>Computes the estimate based on current likelihood-ratios lr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1aa8358dde1b78c4caf020bc7f56b29784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; awgn_bp::get_syndrome</definition>
+        <argsstring>()</argsstring>
+        <name>get_syndrome</name>
+        <briefdescription>
+<para>Returns the syndrome for the current estimate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1ad1f5703225ed9a1aed0b663c022df418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; awgn_bp::get_syndrome</definition>
+        <argsstring>(const std::vector&lt; char &gt; codeword)</argsstring>
+        <name>get_syndrome</name>
+        <param>
+          <type>const std::vector&lt; char &gt;</type>
+          <declname>codeword</declname>
+        </param>
+        <briefdescription>
+<para>Returns the syndrome for the input codeword. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a3bdd6b9b5439537b7779de0ab024fd58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool awgn_bp::is_codeword</definition>
+        <argsstring>()</argsstring>
+        <name>is_codeword</name>
+        <briefdescription>
+<para>Checks if the current estimate is a codeword. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a65a5c12fa46b78687ff4da161cfebbf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool awgn_bp::is_codeword</definition>
+        <argsstring>(const std::vector&lt; char &gt; codeword)</argsstring>
+        <name>is_codeword</name>
+        <param>
+          <type>const std::vector&lt; char &gt;</type>
+          <declname>codeword</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the input is a codeword. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a4906303890ba62901e1e787b4ddb87d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::set_K</definition>
+        <argsstring>(int k)</argsstring>
+        <name>set_K</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Sets the variable K. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a5ffabeee51ac44a3cf0644c71ff1d4aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int awgn_bp::get_K</definition>
+        <argsstring>()</argsstring>
+        <name>get_K</name>
+        <briefdescription>
+<para>Returns the variable K. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1aaada0691339fe6ead15a2190482f5347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void awgn_bp::set_max_iterations</definition>
+        <argsstring>(int k)</argsstring>
+        <name>set_max_iterations</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Sets the variable max_iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1ad258b823c12a9ed1df64fb652088b9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int awgn_bp::get_max_iterations</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_iterations</name>
+        <briefdescription>
+<para>Returns the variable max_iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classawgn__bp_1a122b458a9bb4b5e41f10f228d2f392b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; awgn_bp::decode</definition>
+        <argsstring>(std::vector&lt; float &gt; rx_word, int *niterations)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>rx_word</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>niterations</declname>
+        </param>
+        <briefdescription>
+<para>Decodes the given vector rx_word by message passing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rx_word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The received samples for decoding. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>niterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of message passing iterations done to decode this codeword. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/awgn_bp.h" bodystart="46" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classawgn__bp_1ac15848f489b53912c0848f37f7c1f6d2" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>awgn_bp</name></member>
+      <member refid="classawgn__bp_1ad15577b81eea6c26903b1e4cfe689cca" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>awgn_bp</name></member>
+      <member refid="classawgn__bp_1af1c3072439365762b647911ba16a3349" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>awgn_bp</name></member>
+      <member refid="classawgn__bp_1aeb3ba7d119a06260c50256b79c676736" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>compute_init_estimate</name></member>
+      <member refid="classawgn__bp_1a36115199f36ab69932719b0df60ed557" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>decision</name></member>
+      <member refid="classawgn__bp_1a122b458a9bb4b5e41f10f228d2f392b4" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>decode</name></member>
+      <member refid="classawgn__bp_1a5086320cb291b83e6a792d1212a335a3" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>estimate</name></member>
+      <member refid="classawgn__bp_1ae7edf6a89592f907195693a9ba06da21" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_estimate</name></member>
+      <member refid="classawgn__bp_1a52c532f7629ad3bcb0b53d0b3e2ef0b9" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_H</name></member>
+      <member refid="classawgn__bp_1a5ffabeee51ac44a3cf0644c71ff1d4aa" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_K</name></member>
+      <member refid="classawgn__bp_1a28d5eb62cc3597c51248b23fa5285f4c" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_lr</name></member>
+      <member refid="classawgn__bp_1ad258b823c12a9ed1df64fb652088b9db" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_max_iterations</name></member>
+      <member refid="classawgn__bp_1a196f8338e439be32780e54a7ac7a9c33" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_Q</name></member>
+      <member refid="classawgn__bp_1a734bffd6f54fc24baf968645665a352b" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_R</name></member>
+      <member refid="classawgn__bp_1a50567ae19140a42ccc3cf42888ee4aee" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_rx_lr</name></member>
+      <member refid="classawgn__bp_1aa8358dde1b78c4caf020bc7f56b29784" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_syndrome</name></member>
+      <member refid="classawgn__bp_1ad1f5703225ed9a1aed0b663c022df418" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>get_syndrome</name></member>
+      <member refid="classawgn__bp_1ad05d84cf99a2cc37950b63d119dd7a90" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>H</name></member>
+      <member refid="classawgn__bp_1a3bdd6b9b5439537b7779de0ab024fd58" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>is_codeword</name></member>
+      <member refid="classawgn__bp_1a65a5c12fa46b78687ff4da161cfebbf1" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>is_codeword</name></member>
+      <member refid="classawgn__bp_1aaa8d2a9ae8db1c3007912a9e494789c6" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>K</name></member>
+      <member refid="classawgn__bp_1ab2710793b04fb841bbf60c86364eee65" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>lr</name></member>
+      <member refid="classawgn__bp_1a25d7bcc01e798aab2e31a2473587be3c" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>M</name></member>
+      <member refid="classawgn__bp_1a38c7d1a968a85ea696f6050edde55c6e" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>max_iterations</name></member>
+      <member refid="classawgn__bp_1a56813ca5d152ead9ee34a7b0a67f51a9" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>mlist</name></member>
+      <member refid="classawgn__bp_1ab983b5980646e19182aaa122bcafeaae" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>N</name></member>
+      <member refid="classawgn__bp_1a400aa3e0f1872a252a92ad16983ed9d4" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>nlist</name></member>
+      <member refid="classawgn__bp_1a6a2e59fb16add1cac2a4fb39791b020e" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>num_mlist</name></member>
+      <member refid="classawgn__bp_1a1149ebdb44975b58fbd6e8c3c538ea97" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>num_nlist</name></member>
+      <member refid="classawgn__bp_1a1a49f230b6c79c74756d754079046b2a" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>Q</name></member>
+      <member refid="classawgn__bp_1a7a24659df080ee0af5f95d607e81d0d4" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>R</name></member>
+      <member refid="classawgn__bp_1a058def18bf2cc9726e3dff2cc1aad62a" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>rx_lr</name></member>
+      <member refid="classawgn__bp_1a3d1b00ec262557b9442d7df9c3a98b30" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>rx_lr_calc</name></member>
+      <member refid="classawgn__bp_1aa923ed04dca60e6c6a9d548aad54092e" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>set_alist_sigma</name></member>
+      <member refid="classawgn__bp_1a4906303890ba62901e1e787b4ddb87d8" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>set_K</name></member>
+      <member refid="classawgn__bp_1aaada0691339fe6ead15a2190482f5347" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>set_max_iterations</name></member>
+      <member refid="classawgn__bp_1aa874e760a6b118ec527237b64191b283" prot="private" virt="non-virtual"><scope>awgn_bp</scope><name>sigma</name></member>
+      <member refid="classawgn__bp_1a27018652b9db5a6c4f7c47f46d674d2b" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>spa_initialize</name></member>
+      <member refid="classawgn__bp_1a2b0af34052384254d379feeb9a2277d2" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>update_chks</name></member>
+      <member refid="classawgn__bp_1aa83aeb1ea14a62d07846903431f67640" prot="public" virt="non-virtual"><scope>awgn_bp</scope><name>update_vars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

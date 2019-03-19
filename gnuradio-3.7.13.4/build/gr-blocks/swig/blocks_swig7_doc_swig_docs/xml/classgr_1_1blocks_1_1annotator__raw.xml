@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1annotator__raw" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::annotator_raw</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="annotator__raw_8h" local="no">annotator_raw.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1annotator__raw_1a95936a65760af50648dd3441779c4f40" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1annotator__raw" kindref="compound">annotator_raw</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;annotator_raw&gt; gr::blocks::annotator_raw::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" line="48" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1annotator__raw_1ac6402a827e56d4fd067b10fae6cde980" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1annotator__raw_1a95936a65760af50648dd3441779c4f40" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::annotator_raw::make</definition>
+        <argsstring>(size_t sizeof_stream_item)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>sizeof_stream_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1annotator__raw_1ae75150cd1f1b21d347c68b87ae848594" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::annotator_raw::add_tag</definition>
+        <argsstring>(uint64_t offset, pmt::pmt_t key, pmt::pmt_t val)=0</argsstring>
+        <name>add_tag</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>raw stream annotator testing block. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block creates arbitrary tags to be sent downstream gnuradio/blocks to be sent are set manually via accessor methods and are sent only once.</para><para>This block is intended for testing of tag related gnuradio/blocks </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="101">
+        <label>sync_block</label>
+      </node>
+      <node id="100">
+        <label>gr::blocks::annotator_raw</label>
+        <link refid="classgr_1_1blocks_1_1annotator__raw"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>sync_block</label>
+      </node>
+      <node id="102">
+        <label>gr::blocks::annotator_raw</label>
+        <link refid="classgr_1_1blocks_1_1annotator__raw"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/annotator_raw.h" bodystart="44" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1annotator__raw_1ae75150cd1f1b21d347c68b87ae848594" prot="public" virt="pure-virtual"><scope>gr::blocks::annotator_raw</scope><name>add_tag</name></member>
+      <member refid="classgr_1_1blocks_1_1annotator__raw_1ac6402a827e56d4fd067b10fae6cde980" prot="public" virt="non-virtual"><scope>gr::blocks::annotator_raw</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1annotator__raw_1a95936a65760af50648dd3441779c4f40" prot="public" virt="non-virtual"><scope>gr::blocks::annotator_raw</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

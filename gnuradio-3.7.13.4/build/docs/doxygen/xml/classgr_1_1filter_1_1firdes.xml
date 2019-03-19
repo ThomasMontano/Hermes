@@ -1,0 +1,1438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1filter_1_1firdes" kind="class" prot="public">
+    <compoundname>gr::filter::firdes</compoundname>
+    <includes refid="firdes_8h" local="no">gnuradio/filter/firdes.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" prot="public" static="no">
+        <name>win_type</name>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9acda2bdcfffaacdcfd2d94b1a31e2c999" prot="public">
+          <name>WIN_NONE</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>don&apos;t use a window </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" prot="public">
+          <name>WIN_HAMMING</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Hamming window; max attenuation 53 dB. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a082fccca16caae201f2da9fc2531a827" prot="public">
+          <name>WIN_HANN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Hann window; max attenuation 44 dB. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9aada50ccfbac560bf7f9e2f469db6ed5a" prot="public">
+          <name>WIN_BLACKMAN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Blackman window; max attenuation 74 dB. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a26810a2831833c94347ad7d1e978c1c5" prot="public">
+          <name>WIN_RECTANGULAR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Basic rectangular window. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a81c930d6a1b64486c9321fe64e27d4ce" prot="public">
+          <name>WIN_KAISER</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Kaiser window; max attenuation a function of beta, google it. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ac79ce2faa8899fdc01091c3791c5e0d8" prot="public">
+          <name>WIN_BLACKMAN_hARRIS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Blackman-harris window. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ac9864fa124129bc08fdd6f514eb657f9" prot="public">
+          <name>WIN_BLACKMAN_HARRIS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>alias to WIN_BLACKMAN_hARRIS for capitalization consistency </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a28c5554200fdb2078cc6fc7444aae444" prot="public">
+          <name>WIN_BARTLETT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Barlett (triangular) window. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ad1b49a48dc318b0ae9937c6444d8cbcf" prot="public">
+          <name>WIN_FLATTOP</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>flat top window; useful in FFTs </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="45" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" bodystart="45" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a6712ee374caa81f322c3d44184a04412" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::window</definition>
+        <argsstring>(win_type type, int ntaps, double beta)</argsstring>
+        <name>window</name>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntaps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a772eb5c542093d65518a6d721483aace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::low_pass</definition>
+        <argsstring>(double gain, double sampling_freq, double cutoff_freq, double transition_width, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>low_pass</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a low-pass FIR filter. The normalized width of the transition band is what sets the number of taps required. Narrow <ndash/>&gt; more taps. Window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a57c2a9eb8dc61d3740d9eb0e02ebb880" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::low_pass_2</definition>
+        <argsstring>(double gain, double sampling_freq, double cutoff_freq, double transition_width, double attenuation_dB, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>low_pass_2</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a low-pass FIR filter. The normalized width of the transition band and the required stop band attenuation is what sets the number of taps required. Narrow <ndash/>&gt; more taps More attenuation <ndash/>&gt; more taps. The window type determines maximum attentuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>beginning of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attenuation_dB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>required stopband attenuation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a2fd3bb98d7eb35da3ef2440a8ee1224c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::high_pass</definition>
+        <argsstring>(double gain, double sampling_freq, double cutoff_freq, double transition_width, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>high_pass</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a high-pass FIR filter. The normalized width of the transition band is what sets the number of taps required. Narrow <ndash/>&gt; more taps. The window determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1afc22d9fb67312a346a365f019aa5e0b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::high_pass_2</definition>
+        <argsstring>(double gain, double sampling_freq, double cutoff_freq, double transition_width, double attenuation_dB, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>high_pass_2</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a high-pass FIR filter. The normalized width of the transition band and the required stop band attenuation is what sets the number of taps required. Narrow <ndash/>&gt; more taps More attenuation <ndash/>&gt; more taps. The window determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attenuation_dB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out of band attenuation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a5a308a91ca9996feeda97197827a945e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::band_pass</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>band_pass</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a band-pass FIR filter. The normalized width of the transition band is what sets the number of taps required. Narrow <ndash/>&gt; more taps. The window determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ace8a7353054bd70e6e9a3d8dbbb1ef47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::band_pass_2</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, double attenuation_dB, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>band_pass_2</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a band-pass FIR filter. The normalized width of the transition band and the required stop band attenuation is what sets the number of taps required. Narrow <ndash/>&gt; more taps. More attenuation <ndash/>&gt; more taps. Window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attenuation_dB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out of band attenuation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ad7c0d09d28ed74682a5189341b109f39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <definition>static std::vector&lt;gr_complex&gt; gr::filter::firdes::complex_band_pass</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>complex_band_pass</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use the &quot;window method&quot; to design a complex band-pass FIR filter. The normalized width of the transition band is what sets the number of taps required. Narrow <ndash/>&gt; more taps. The window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ae0006277ebff2441ab1c229fa122c99e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <definition>static std::vector&lt;gr_complex&gt; gr::filter::firdes::complex_band_pass_2</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, double attenuation_dB, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>complex_band_pass_2</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a complex band-pass FIR filter. The normalized width of the transition band and the required stop band attenuation is what sets the number of taps required. Narrow <ndash/>&gt; more taps More attenuation <ndash/>&gt; more taps. Window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attenuation_dB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out of band attenuation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ab9da311b1d7dc7875c62efd699a3a043" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::band_reject</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>band_reject</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a band-reject FIR filter. The normalized width of the transition band is what sets the number of taps required. Narrow <ndash/>&gt; more taps. Window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ad71a4ba22a8401a2ac3f03d0f7b0d3a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::band_reject_2</definition>
+        <argsstring>(double gain, double sampling_freq, double low_cutoff_freq, double high_cutoff_freq, double transition_width, double attenuation_dB, win_type window=WIN_HAMMING, double beta=6.76)</argsstring>
+        <name>band_reject_2</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>low_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>high_cutoff_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" kindref="member">WIN_HAMMING</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>Use &quot;window method&quot; to design a band-reject FIR filter. The normalized width of the transition band and the required stop band attenuation is what sets the number of taps required. Narrow <ndash/>&gt; more taps More attenuation <ndash/>&gt; more taps. Window type determines maximum attenuation and passband ripple. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>low_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>high_cutoff_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>center of transition band (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of transition band (Hz). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attenuation_dB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out of band attenuation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1afa8d6f36cca0b14c8d16b4e927a13d2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::hilbert</definition>
+        <argsstring>(unsigned int ntaps=19, win_type windowtype=WIN_RECTANGULAR, double beta=6.76)</argsstring>
+        <name>hilbert</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ntaps</declname>
+          <defval>19</defval>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>windowtype</declname>
+          <defval><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a26810a2831833c94347ad7d1e978c1c5" kindref="member">WIN_RECTANGULAR</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defval>6.76</defval>
+        </param>
+        <briefdescription>
+<para>design a Hilbert Transform Filter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ntaps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of taps, must be odd </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>windowtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one kind of <ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">firdes::win_type</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter for Kaiser window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1af37a0f8f92f1e0440033ccdb118df990" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::root_raised_cosine</definition>
+        <argsstring>(double gain, double sampling_freq, double symbol_rate, double alpha, int ntaps)</argsstring>
+        <name>root_raised_cosine</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symbol_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntaps</declname>
+        </param>
+        <briefdescription>
+<para>design a Root Cosine FIR Filter (do we need a window?) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sampling_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling freq (Hz) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>symbol_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol rate, must be a factor of sample rate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>excess bandwidth factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ntaps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of taps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1aa851ebbcb1f36c54f1db27149f487ee4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>static std::vector&lt;float&gt; gr::filter::firdes::gaussian</definition>
+        <argsstring>(double gain, double spb, double bt, int ntaps)</argsstring>
+        <name>gaussian</name>
+        <param>
+          <type>double</type>
+          <declname>gain</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>spb</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntaps</declname>
+        </param>
+        <briefdescription>
+<para>design a Gaussian filter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>overall gain of filter (typically 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>symbol rate, must be a factor of sample rate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bandwidth to bitrate ratio </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ntaps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of taps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="335" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a0ea0826af474c0fb37dc051500cfc598" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double gr::filter::firdes::bessi0</definition>
+        <argsstring>(double x)</argsstring>
+        <name>bessi0</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a44c89305c29a1857e8a529bf9c8b1201" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gr::filter::firdes::sanity_check_1f</definition>
+        <argsstring>(double sampling_freq, double f1, double transition_width)</argsstring>
+        <name>sanity_check_1f</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1ae41f5112c106caed15bb5f0f81beb9e2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gr::filter::firdes::sanity_check_2f</definition>
+        <argsstring>(double sampling_freq, double f1, double f2, double transition_width)</argsstring>
+        <name>sanity_check_2f</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="344" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a755f92db948943bb6dc96f6734e88d60" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gr::filter::firdes::sanity_check_2f_c</definition>
+        <argsstring>(double sampling_freq, double f1, double f2, double transition_width)</argsstring>
+        <name>sanity_check_2f_c</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a2cc8c491735ab3312a997f92203d6483" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::filter::firdes::compute_ntaps</definition>
+        <argsstring>(double sampling_freq, double transition_width, win_type window_type, double beta)</argsstring>
+        <name>compute_ntaps</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" kindref="member">win_type</ref></type>
+          <declname>window_type</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1filter_1_1firdes_1a203eb86248956051cc0c612fb472a439" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::filter::firdes::compute_ntaps_windes</definition>
+        <argsstring>(double sampling_freq, double transition_width, double attenuation_dB)</argsstring>
+        <name>compute_ntaps_windes</name>
+        <param>
+          <type>double</type>
+          <declname>sampling_freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>transition_width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>attenuation_dB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="353" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Finite Impulse Response (FIR) filter design functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-filter/include/gnuradio/filter/firdes.h" bodystart="40" bodyend="356"/>
+    <listofallmembers>
+      <member refid="classgr_1_1filter_1_1firdes_1a5a308a91ca9996feeda97197827a945e" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>band_pass</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ace8a7353054bd70e6e9a3d8dbbb1ef47" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>band_pass_2</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ab9da311b1d7dc7875c62efd699a3a043" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>band_reject</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ad71a4ba22a8401a2ac3f03d0f7b0d3a3" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>band_reject_2</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a0ea0826af474c0fb37dc051500cfc598" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>bessi0</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ad7c0d09d28ed74682a5189341b109f39" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>complex_band_pass</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ae0006277ebff2441ab1c229fa122c99e" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>complex_band_pass_2</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a2cc8c491735ab3312a997f92203d6483" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>compute_ntaps</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a203eb86248956051cc0c612fb472a439" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>compute_ntaps_windes</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1aa851ebbcb1f36c54f1db27149f487ee4" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>gaussian</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a2fd3bb98d7eb35da3ef2440a8ee1224c" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>high_pass</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1afc22d9fb67312a346a365f019aa5e0b5" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>high_pass_2</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1afa8d6f36cca0b14c8d16b4e927a13d2b" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>hilbert</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a772eb5c542093d65518a6d721483aace" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>low_pass</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a57c2a9eb8dc61d3740d9eb0e02ebb880" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>low_pass_2</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1af37a0f8f92f1e0440033ccdb118df990" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>root_raised_cosine</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a44c89305c29a1857e8a529bf9c8b1201" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>sanity_check_1f</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1ae41f5112c106caed15bb5f0f81beb9e2" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>sanity_check_2f</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a755f92db948943bb6dc96f6734e88d60" prot="private" virt="non-virtual"><scope>gr::filter::firdes</scope><name>sanity_check_2f_c</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a28c5554200fdb2078cc6fc7444aae444" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_BARTLETT</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9aada50ccfbac560bf7f9e2f469db6ed5a" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_BLACKMAN</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ac9864fa124129bc08fdd6f514eb657f9" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_BLACKMAN_HARRIS</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ac79ce2faa8899fdc01091c3791c5e0d8" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_BLACKMAN_hARRIS</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9ad1b49a48dc318b0ae9937c6444d8cbcf" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_FLATTOP</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a8ecd24e72826deef18f376646ad3ec95" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_HAMMING</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a082fccca16caae201f2da9fc2531a827" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_HANN</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a81c930d6a1b64486c9321fe64e27d4ce" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_KAISER</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9acda2bdcfffaacdcfd2d94b1a31e2c999" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_NONE</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9a26810a2831833c94347ad7d1e978c1c5" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>WIN_RECTANGULAR</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a5527e5ee7713055268448c55b1b235a9" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>win_type</name></member>
+      <member refid="classgr_1_1filter_1_1firdes_1a6712ee374caa81f322c3d44184a04412" prot="public" virt="non-virtual"><scope>gr::filter::firdes</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

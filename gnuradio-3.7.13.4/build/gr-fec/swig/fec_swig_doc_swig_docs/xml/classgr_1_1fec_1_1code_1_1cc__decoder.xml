@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1fec_1_1code_1_1cc__decoder" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::fec::code::cc_decoder</compoundname>
+    <basecompoundref refid="classgr_1_1fec_1_1generic__decoder" prot="public" virt="virtual">gr::fec::generic_decoder</basecompoundref>
+    <includes refid="cc__decoder_8h" local="no">cc_decoder.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1cc__decoder_1a22301c58929a38e0e5c84691e3b13a04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" kindref="member">generic_decoder::sptr</ref></type>
+        <definition>static generic_decoder::sptr gr::fec::code::cc_decoder::make</definition>
+        <argsstring>(int frame_size, int k, int rate, std::vector&lt; int &gt; polys, int start_state=0, int end_state=-1, cc_mode_t mode=CC_STREAMING, bool padded=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>polys</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_state</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_state</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="cc__common_8h_1a5a5e46642313c7ca087f49650efaca33" kindref="member">cc_mode_t</ref></type>
+          <declname>mode</declname>
+          <defval><ref refid="cc__common_8h_1ae5ac813a96416d2ae3d680a65c1f2d3aa0ac392555537d09c7cd3e678cdd97a97" kindref="member">CC_STREAMING</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>padded</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a convolutional code decoding FEC API object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits per frame. If using in the tagged stream style, this is the maximum allowable number of bits per frame. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constraint length (K) of the encoder. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inverse of the coder&apos;s rate (rate=2 means 2 output bits per 1 input). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>polys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of polynomials as integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initialization state of the shift register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ending state of the shift register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cc_mode_t mode of the encoding. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>padded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the encoded frame is padded to the nearest byte. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1cc__decoder_1a77602c0d15f0bd2425592bad5f14d0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::fec::code::cc_decoder::set_frame_size</definition>
+        <argsstring>(unsigned int frame_size)=0</argsstring>
+        <name>set_frame_size</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__decoder_1a6da8f43baf97fab0691e80355f2fbb74">set_frame_size</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the uncoded frame size to <computeroutput>frame_size</computeroutput>. If <computeroutput>frame_size</computeroutput> is greater than the value given to the constructor, the frame size will be capped by that initial value and this function will return false. Otherwise, it returns true. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fec_1_1code_1_1cc__decoder_1ada09b6ac06494c0da622c9f208983b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gr::fec::code::cc_decoder::rate</definition>
+        <argsstring>()=0</argsstring>
+        <name>rate</name>
+        <reimplements refid="classgr_1_1fec_1_1generic__decoder_1a32869de99deaec078e6b3bdc01444795">rate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the coding rate of this encoder. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="137" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convolutional Code Decoding class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class performs convolutional decoding via the Viterbi algorithm. While it is set up to take variable values for K, rate, and the polynomials, currently, the block is only capable of handling the following settings:</para><para><itemizedlist>
+<listitem><para>K = 7 </para></listitem>
+<listitem><para>rate = 1/2 (given as 2 to the constructor) </para></listitem>
+<listitem><para>polynomials = [109, 79]</para></listitem>
+</itemizedlist>
+This is the well-known convolutional part of the Voyager code implemented in the CCSDS encoder.</para><para>The intent of having this FECAPI code classes fully parameterizable is to eventually allow it to take on generic settings, much like the <ref refid="classgr_1_1fec_1_1code_1_1cc__encoder" kindref="compound">cc_encoder</ref> class where the CCSDS settings would be a highly-optimized version of this.</para><para>The decoder is set up with a number of bits per frame in the constructor. When not being used in a tagged stream mode, this encoder will only process frames of the length provided here. If used in a tagged stream block, this setting becomes the maximum allowable frame size that the block may process.</para><para>The <computeroutput>mode</computeroutput> is a cc_mode_t that specifies how the convolutional encoder will behave and under what conditions.</para><para><itemizedlist>
+<listitem><para>&apos;CC_STREAMING&apos;: mode expects an uninterrupted flow of samples into the encoder, and the output stream is continually encoded. This mode is the only mode for this decoder that has a history requirement because it requires rate*(K-1) bits more to finish the decoding properly. This mode does not work with any deployments that do not allow history.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TERMINATED&apos;: is a mode designed for packet-based systems. This mode adds rate*(k-1) bits to the output as a way to help flush the decoder.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TAILBITING&apos;: is another packet-based method. Instead of adding bits onto the end of the packet, this mode will continue the code between the payloads of packets by pre-initializing the state of the new packet based on the state of the last packet for (k-1) bits.</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>&apos;CC_TRUNCATED&apos;: a truncated code always resets the registers to the <computeroutput>start_state</computeroutput> between frames.</para></listitem>
+</itemizedlist>
+A common convolutional encoder uses K=7, Rate=1/2, Polynomials=[109, 79]. This is the Voyager code from NASA: <itemizedlist>
+<listitem><para>109: b(1101101) <ndash/>&gt; 1 + x + x^3 + x^4 + x^6 </para></listitem>
+<listitem><para>79: b(1001111) <ndash/>&gt; 1 + x^3 + x^4 + x^5 + x^6 </para></listitem>
+</itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>gr::fec::code::cc_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1cc__decoder"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>gr::fec::code::cc_decoder</label>
+        <link refid="classgr_1_1fec_1_1code_1_1cc__decoder"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="23">
+        <label>gr::fec::generic_decoder</label>
+        <link refid="classgr_1_1fec_1_1generic__decoder"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>std::string</label>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" line="99" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-fec/include/gnuradio/fec/cc_decoder.h" bodystart="98" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9a6cbe6022c593cded3c00b929873855" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>alias</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a09d4e84d633630b77a47b80398c209ad" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>base_unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a29d043afec8a523972c67e17bf8f3f78" prot="protected" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>d_logger</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a96ed2f7bb7465e0df29a13b127ad9fd4" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>d_name</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a699ddfa2fc51343b3193149646bab208" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ab32bf0b94adb801b523001de32ee7dfc" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>generic_decoder</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1aeef6c573d354a4fe0c1ff5d78bafd485" prot="public" virt="pure-virtual"><scope>gr::fec::code::cc_decoder</scope><name>generic_work</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a9037426d33b865dda50055380f9b85c8" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_history</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1afaead9faf05cdb871e4c21f5f4dae90c" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_input_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a1f4ba1fe5a0e9b3508724b48400ff537" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_input_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a68f0c06cc9b57e421d4d755fc7eb60d5" prot="public" virt="pure-virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_input_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a75ffb122f2891ee457be1874e198e836" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_iterations</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1ae9a6334b499359f97368569f9b50fbaf" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_output_conversion</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a558263fff172b7867ed96afccb93078f" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_output_item_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a0cad8d8b1977ebb9184b6c36ed73db9a" prot="public" virt="pure-virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_output_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7c46fd20d994c05ece2aa93dc8d3a926" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>get_shift</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1cc__decoder_1a22301c58929a38e0e5c84691e3b13a04" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a2ea0d9d63a13ef1bd22e6517a856b340" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>my_id</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1cc__decoder_1ada09b6ac06494c0da622c9f208983b8e" prot="public" virt="pure-virtual"><scope>gr::fec::code::cc_decoder</scope><name>rate</name></member>
+      <member refid="classgr_1_1fec_1_1code_1_1cc__decoder_1a77602c0d15f0bd2425592bad5f14d0e7" prot="public" virt="pure-virtual"><scope>gr::fec::code::cc_decoder</scope><name>set_frame_size</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a6f9aa291b0766faf1a7cbb4508d4a24d" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a7480b06afbc530f4a524905deab8f70b" prot="public" virt="non-virtual"><scope>gr::fec::code::cc_decoder</scope><name>unique_id</name></member>
+      <member refid="classgr_1_1fec_1_1generic__decoder_1a36a7aeb512d578e53d6f984bfd380667" prot="public" virt="virtual"><scope>gr::fec::code::cc_decoder</scope><name>~generic_decoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

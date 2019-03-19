@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1blocks_1_1repack__bits__bb" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::blocks::repack_bits_bb</compoundname>
+    <basecompoundref prot="public" virt="virtual">tagged_stream_block</basecompoundref>
+    <includes refid="repack__bits__bb_8h" local="no">repack_bits_bb.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1blocks_1_1repack__bits__bb_1aa806ee91c4cc916793fa12e26771af8f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1blocks_1_1repack__bits__bb" kindref="compound">repack_bits_bb</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;repack_bits_bb&gt; gr::blocks::repack_bits_bb::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1repack__bits__bb_1a73ce579c4532b7f602149ad761725b2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1blocks_1_1repack__bits__bb_1aa806ee91c4cc916793fa12e26771af8f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::blocks::repack_bits_bb::make</definition>
+        <argsstring>(int k, int l=8, const std::string &amp;tsb_tag_key=&quot;&quot;, bool align_output=false, endianness_t endianness=GR_LSB_FIRST)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tsb_tag_key</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>align_output</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>endianness_t</type>
+          <declname>endianness</declname>
+          <defval>GR_LSB_FIRST</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of relevant bits on the input stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of relevant bits on the output stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsb_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not empty, this is the key for the length tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If tsb_tag_key is given, this controls if the input or the output is aligned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endianness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The endianness of the output data stream (LSB or MSB). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1blocks_1_1repack__bits__bb_1a8dd008493b82634650179d3004ae459a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::blocks::repack_bits_bb::set_k_and_l</definition>
+        <argsstring>(int k, int l)=0</argsstring>
+        <name>set_k_and_l</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Repack <computeroutput>k</computeroutput> bits from the input stream onto <computeroutput>l</computeroutput> bits of the output stream. </para>    </briefdescription>
+    <detaileddescription>
+<para>No bits are lost here; any value for k and l (within [1, 8]) is allowed. On every fresh input byte, it starts reading on the LSB, and starts copying to the LSB as well.</para><para>When supplying a tag name, this block operates on tagged streams. In this case, it can happen that the input data or the output data becomes unaligned when k * input length is not equal to l * output length. In this case, the <computeroutput>align_output</computeroutput> parameter is used to decide which data packet to align.</para><para>Usually, <computeroutput>align_output</computeroutput> is false for unpacking (k=8, l &lt; 8) and false for reversing that.</para><sect1 id="classgr_1_1blocks_1_1repack__bits__bb_1gr_blocks_repack_example">
+<title>Example</title>
+<para>Say you&apos;re tx&apos;ing 8-PSK and therefore set k=8, l=3 on the transmit side before the modulator. Now assume you&apos;re transmitting a single byte of data. Your incoming tagged stream has length 1, the outgoing has length 3. However, the third item is actually only carrying 2 bits of relevant data, the bits do not align with the boundaries. So you set <computeroutput>align_output</computeroutput> = false, because the output can be unaligned.</para><para>Now say you&apos;re doing the inverse: packing those three items into full bytes. How do you interpret those three bytes? Without this flag, you&apos;d have to assume there&apos;s 9 relevant bits in there, so you&apos;d end up with 2 bytes of output data. But in the packing case, you want the <bold>output</bold> to be aligned; all output bits must be useful. By asserting this flag, the packing algorithm tries to do this and in this case assumes that since we have alignment after 8 bits, the 9th can be discarded. </para></sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="642">
+        <label>gr::blocks::repack_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1repack__bits__bb"/>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>tagged_stream_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="644">
+        <label>gr::blocks::repack_bits_bb</label>
+        <link refid="classgr_1_1blocks_1_1repack__bits__bb"/>
+        <childnode refid="645" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>tagged_stream_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" line="69" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-blocks/include/gnuradio/blocks/repack_bits_bb.h" bodystart="68" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classgr_1_1blocks_1_1repack__bits__bb_1a73ce579c4532b7f602149ad761725b2e" prot="public" virt="non-virtual"><scope>gr::blocks::repack_bits_bb</scope><name>make</name></member>
+      <member refid="classgr_1_1blocks_1_1repack__bits__bb_1a8dd008493b82634650179d3004ae459a" prot="public" virt="pure-virtual"><scope>gr::blocks::repack_bits_bb</scope><name>set_k_and_l</name></member>
+      <member refid="classgr_1_1blocks_1_1repack__bits__bb_1aa806ee91c4cc916793fa12e26771af8f" prot="public" virt="non-virtual"><scope>gr::blocks::repack_bits_bb</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__misc" kind="group">
+    <compoundname>misc</compoundname>
+    <title>Miscellaneous</title>
+    <innerclass refid="classgr_1_1feval__dd" prot="public">gr::feval_dd</innerclass>
+    <innerclass refid="classgr_1_1feval__cc" prot="public">gr::feval_cc</innerclass>
+    <innerclass refid="classgr_1_1feval__ll" prot="public">gr::feval_ll</innerclass>
+    <innerclass refid="classgr_1_1feval" prot="public">gr::feval</innerclass>
+    <innerclass refid="classgr_1_1feval__p" prot="public">gr::feval_p</innerclass>
+    <innerclass refid="classgr_1_1fxpt" prot="public">gr::fxpt</innerclass>
+    <innerclass refid="classgr_1_1fxpt__nco" prot="public">gr::fxpt_nco</innerclass>
+    <innerclass refid="classgr_1_1fxpt__vco" prot="public">gr::fxpt_vco</innerclass>
+    <innerclass refid="classgr_1_1message" prot="public">gr::message</innerclass>
+    <innerclass refid="classgr_1_1msg__queue" prot="public">gr::msg_queue</innerclass>
+    <innerclass refid="classgr_1_1nco" prot="public">gr::nco</innerclass>
+    <innerclass refid="classgr_1_1prefs" prot="public">gr::prefs</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1lfsr__15__1__0" prot="public">gr::blocks::lfsr_15_1_0</innerclass>
+    <innerclass refid="classgr_1_1blocks_1_1lfsr__32k" prot="public">gr::blocks::lfsr_32k</innerclass>
+    <innerclass refid="classgr_1_1digital_1_1lfsr" prot="public">gr::digital::lfsr</innerclass>
+    <innerclass refid="classgr_1_1fft_1_1fft__complex" prot="public">gr::fft::fft_complex</innerclass>
+    <innerclass refid="classgr_1_1fft_1_1fft__real__fwd" prot="public">gr::fft::fft_real_fwd</innerclass>
+    <innerclass refid="classgr_1_1fft_1_1fft__real__rev" prot="public">gr::fft::fft_real_rev</innerclass>
+    <innerclass refid="classgr_1_1fft_1_1goertzel" prot="public">gr::fft::goertzel</innerclass>
+    <innerclass refid="classgr_1_1wavelet_1_1squash__ff" prot="public">gr::wavelet::squash_ff</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1ga6c1470346a3524989b7a8a3639aa79a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio-runtime_2include_2gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> float</type>
+        <definition>GR_RUNTIME_API float gr::fast_atan2f</definition>
+        <argsstring>(float y, float x)</argsstring>
+        <name>fast_atan2f</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Fast arc tangent using table lookup and linear interpolation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>component of input vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>component of input vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float angle angle of vector (x, y) in radians</para></simplesect>
+This function calculates the angle of the vector (x,y) based on a table lookup and linear interpolation. The table uses a 256 point table covering -45 to +45 degrees and uses symmetry to determine the final angle value in the range of -180 to 180 degrees. Note that this function uses the small angle approximation for values close to zero. This routine calculates the arc tangent with an average error of +/- 0.045 degrees. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/math.h" line="58" column="1"/>
+        <referencedby refid="namespacegr_1a54dfb94944c3723997cd4fb461eb06b9" compoundref="math_8h" startline="61" endline="64">gr::fast_atan2f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga247b4ca5ffc9ec61f82c5c455fbcb755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio-runtime_2include_2gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> rt_status_t</type>
+        <definition>GR_RUNTIME_API rt_status_t gr::enable_realtime_scheduling</definition>
+        <argsstring>()</argsstring>
+        <name>enable_realtime_scheduling</name>
+        <briefdescription>
+<para>If possible, enable high-priority &quot;real time&quot; scheduling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0d191190f323e3e30ac8ee0f5667ff25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gnuradio-runtime_2include_2gnuradio_2api_8h_1a0e21de31348d61429c7041fa776dc934" kindref="member">GR_RUNTIME_API</ref> rt_status_t</type>
+        <definition>GR_RUNTIME_API rt_status_t gr::impl::enable_realtime_scheduling</definition>
+        <argsstring>(rt_sched_param=rt_sched_param())</argsstring>
+        <name>enable_realtime_scheduling</name>
+        <param>
+          <type>rt_sched_param</type>
+          <defval>rt_sched_param()</defval>
+        </param>
+        <briefdescription>
+<para>If possible, enable &quot;realtime&quot; scheduling.</para><para>In general, this means that the code will be scheduled before any non-realtime (normal) processes. Note that if your code contains an non-blocking infinite loop and you enable realtime scheduling, it&apos;s possible to hang the system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/realtime_impl.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1msg__queue" kind="class" prot="public">
+    <compoundname>gr::msg_queue</compoundname>
+    <basecompoundref refid="classgr_1_1msg__handler" prot="public" virt="non-virtual">gr::msg_handler</basecompoundref>
+    <includes refid="msg__queue_8h" local="no">msg_queue.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1msg__queue" kindref="compound">msg_queue</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;msg_queue&gt; gr::msg_queue::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1a7ea5e440eaec5a0557d7940cf52fdce6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex gr::msg_queue::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1ab65af87bfd68ee87406c40bdf98aabbc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1ac97ac5b9c82b9ec0cefde945f89b90b2" kindref="member">gr::thread::condition_variable</ref></type>
+        <definition>gr::thread::condition_variable gr::msg_queue::d_not_empty</definition>
+        <argsstring></argsstring>
+        <name>d_not_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="39" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1af409a943522718f6f9394cb7c4f2c4e5" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1ac97ac5b9c82b9ec0cefde945f89b90b2" kindref="member">gr::thread::condition_variable</ref></type>
+        <definition>gr::thread::condition_variable gr::msg_queue::d_not_full</definition>
+        <argsstring></argsstring>
+        <name>d_not_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="40" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1aa56441e20f4e36413737477a11e3f896" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+        <definition>message::sptr gr::msg_queue::d_head</definition>
+        <argsstring></argsstring>
+        <name>d_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="41" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1a9f593bbbedb6a2f20b7db35dd16e41f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+        <definition>message::sptr gr::msg_queue::d_tail</definition>
+        <argsstring></argsstring>
+        <name>d_tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="42" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1a02ef2bb9e090740ecc5babdcece0aeb7" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::msg_queue::d_count</definition>
+        <argsstring></argsstring>
+        <name>d_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="43" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1msg__queue_1ae3d160ff1bf37899423427aa661f79e0" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::msg_queue::d_limit</definition>
+        <argsstring></argsstring>
+        <name>d_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="44" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1msg__queue_1a7eed4546bef023483e5c99569c3f8513" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::msg_queue::make</definition>
+        <argsstring>(unsigned int limit=0)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>limit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1msg__queue_1a4e0bf7f4f3b6313a7b161acd28faa1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::msg_queue::msg_queue</definition>
+        <argsstring>(unsigned int limit)</argsstring>
+        <name>msg_queue</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1ac11dc7a9ad2dd3e5072803f5b55a1fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::msg_queue::~msg_queue</definition>
+        <argsstring>()</argsstring>
+        <name>~msg_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1aff7ef4f7a00ff4fd2cb913428237ce05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void gr::msg_queue::handle</definition>
+        <argsstring>(message::sptr msg)</argsstring>
+        <name>handle</name>
+        <reimplements refid="classgr_1_1msg__handler_1abe918f821b58d8de79ef54eb101161e6">handle</reimplements>
+        <param>
+          <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Generic <ref refid="classgr_1_1msg__handler" kindref="compound">msg_handler</ref> method: insert the message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="55" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1aed4acb745bbcb525a3e2e0bef2fbc07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::msg_queue::insert_tail</definition>
+        <argsstring>(message::sptr msg)</argsstring>
+        <name>insert_tail</name>
+        <param>
+          <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Insert message at tail of queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Block if queue if full. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1a665aa07243ea03eb29611aa143cbc591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+        <definition>message::sptr gr::msg_queue::delete_head</definition>
+        <argsstring>()</argsstring>
+        <name>delete_head</name>
+        <briefdescription>
+<para>Delete message from head of queue and return it. Block if no message is available. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1aff526f53ac85e955cf5ca88d4d364c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1message_1a4896767552c3ea8b4e6263579c504c29" kindref="member">message::sptr</ref></type>
+        <definition>message::sptr gr::msg_queue::delete_head_nowait</definition>
+        <argsstring>()</argsstring>
+        <name>delete_head_nowait</name>
+        <briefdescription>
+<para>If there&apos;s a message in the q, delete it and return it. If no message is available, return 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1a690b7db109fda245dba6a5dbf7ff7698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::msg_queue::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+<para>Delete all messages from the queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1aeb01e5a76bede0d93f0962db4b14cc82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::msg_queue::empty_p</definition>
+        <argsstring>() const </argsstring>
+        <name>empty_p</name>
+        <briefdescription>
+<para>is the queue empty? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1ad1dfafe15c43ad28f16a3c0a7af59d00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::msg_queue::full_p</definition>
+        <argsstring>() const </argsstring>
+        <name>full_p</name>
+        <briefdescription>
+<para>is the queue full? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1ab00433246d1cd6de7f5b0521a2650192" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::msg_queue::count</definition>
+        <argsstring>() const </argsstring>
+        <name>count</name>
+        <briefdescription>
+<para>return number of messages in queue </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1msg__queue_1a52770e3ebd52814076db6f0953c54b19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::msg_queue::limit</definition>
+        <argsstring>() const </argsstring>
+        <name>limit</name>
+        <briefdescription>
+<para>return limit on number of message in queue. 0 -&gt; unbounded </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="90" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>thread-safe message queue </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="254">
+        <label>gr::msg_handler</label>
+        <link refid="classgr_1_1msg__handler"/>
+      </node>
+      <node id="253">
+        <label>gr::msg_queue</label>
+        <link refid="classgr_1_1msg__queue"/>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>gr::msg_handler</label>
+        <link refid="classgr_1_1msg__handler"/>
+      </node>
+      <node id="255">
+        <label>gr::msg_queue</label>
+        <link refid="classgr_1_1msg__queue"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" line="37" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/msg_queue.h" bodystart="36" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classgr_1_1msg__queue_1ab00433246d1cd6de7f5b0521a2650192" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>count</name></member>
+      <member refid="classgr_1_1msg__queue_1a02ef2bb9e090740ecc5babdcece0aeb7" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_count</name></member>
+      <member refid="classgr_1_1msg__queue_1aa56441e20f4e36413737477a11e3f896" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_head</name></member>
+      <member refid="classgr_1_1msg__queue_1ae3d160ff1bf37899423427aa661f79e0" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_limit</name></member>
+      <member refid="classgr_1_1msg__queue_1a7ea5e440eaec5a0557d7940cf52fdce6" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1msg__queue_1ab65af87bfd68ee87406c40bdf98aabbc" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_not_empty</name></member>
+      <member refid="classgr_1_1msg__queue_1af409a943522718f6f9394cb7c4f2c4e5" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_not_full</name></member>
+      <member refid="classgr_1_1msg__queue_1a9f593bbbedb6a2f20b7db35dd16e41f8" prot="private" virt="non-virtual"><scope>gr::msg_queue</scope><name>d_tail</name></member>
+      <member refid="classgr_1_1msg__queue_1a665aa07243ea03eb29611aa143cbc591" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>delete_head</name></member>
+      <member refid="classgr_1_1msg__queue_1aff526f53ac85e955cf5ca88d4d364c6c" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>delete_head_nowait</name></member>
+      <member refid="classgr_1_1msg__queue_1aeb01e5a76bede0d93f0962db4b14cc82" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>empty_p</name></member>
+      <member refid="classgr_1_1msg__queue_1a690b7db109fda245dba6a5dbf7ff7698" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>flush</name></member>
+      <member refid="classgr_1_1msg__queue_1ad1dfafe15c43ad28f16a3c0a7af59d00" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>full_p</name></member>
+      <member refid="classgr_1_1msg__queue_1aff7ef4f7a00ff4fd2cb913428237ce05" prot="public" virt="virtual"><scope>gr::msg_queue</scope><name>handle</name></member>
+      <member refid="classgr_1_1msg__queue_1aed4acb745bbcb525a3e2e0bef2fbc07e" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>insert_tail</name></member>
+      <member refid="classgr_1_1msg__queue_1a52770e3ebd52814076db6f0953c54b19" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>limit</name></member>
+      <member refid="classgr_1_1msg__queue_1a7eed4546bef023483e5c99569c3f8513" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>make</name></member>
+      <member refid="classgr_1_1msg__queue_1a4e0bf7f4f3b6313a7b161acd28faa1df" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>msg_queue</name></member>
+      <member refid="classgr_1_1msg__queue_1a2d5145a97e000e1432b6e1ad31b1e852" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>sptr</name></member>
+      <member refid="classgr_1_1msg__handler_1a4d3eafd0ea1963037dd2fa4223f65388" prot="public" virt="virtual"><scope>gr::msg_queue</scope><name>~msg_handler</name></member>
+      <member refid="classgr_1_1msg__queue_1ac11dc7a9ad2dd3e5072803f5b55a1fe1" prot="public" virt="non-virtual"><scope>gr::msg_queue</scope><name>~msg_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{epsfig}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}
+\begin{document}
+$\lfloor N/2 \rfloor$
+\pagebreak
+
+$g(k)$
+\pagebreak
+
+$ \sum_{k=0}^{K-1} g(k) = 1$
+\pagebreak
+
+$ h \cdot \pi$
+\pagebreak
+
+\[ y[n] = exp (j 2 \pi \frac{f_{\Delta}}{f_s} \sum{x[n]}) \]
+\pagebreak
+
+$ f_{\Delta} $
+\pagebreak
+
+$f_s$
+\pagebreak
+
+\[ k = 2 \pi \frac{f_{\Delta}}{f_s} \]
+\pagebreak
+
+$y[n] = \mathrm{arg}\left(x[n] \, \bar x [n-1]\right)$
+\pagebreak
+
+$x$
+\pagebreak
+
+$A>0$
+\pagebreak
+
+$f\in\mathbb R$
+\pagebreak
+
+$\phi_0\in[0;2\pi]$
+\pagebreak
+
+$f_s>0$
+\pagebreak
+
+$x[n]= A e^{j2\pi( \frac f{f_s} n + \phi_0)}$
+\pagebreak
+
+\begin{align*} y[n] &= \mathrm{arg}\left(A e^{j2\pi\left( \frac f{f_s} n + \phi_0\right)} \overline{A e^{j2\pi( \frac f{f_s} (n-1) + \phi_0)}}\right)\\ & = \mathrm{arg}\left(A^2 e^{j2\pi\left( \frac f{f_s} n + \phi_0\right)} e^{-j2\pi( \frac f{f_s} (n-1) + \phi_0)}\right)\\ & = \mathrm{arg}\left( A^2 e^{j2\pi\left( \frac f{f_s} n + \phi_0 - \frac f{f_s} (n-1) - \phi_0\right)}\right)\\ & = \mathrm{arg}\left( A^2 e^{j2\pi\left( \frac f{f_s} n - \frac f{f_s} (n-1)\right)}\right)\\ & = \mathrm{arg}\left( A^2 e^{j2\pi\left( \frac f{f_s} \left(n-(n-1)\right)\right)}\right)\\ & = \mathrm{arg}\left( A^2 e^{j2\pi \frac f{f_s}}\right) \intertext{$A$ is real, so is $A^2$ and hence only \textit{scales}, therefore $\mathrm{arg}(\cdot)$ is invariant:} &= \mathrm{arg}\left(e^{j2\pi \frac f{f_s}}\right)\\ &= \frac f{f_s}\\ &&\blacksquare \end{align*}
+\pagebreak
+
+$c_i \in C$
+\pagebreak
+
+$s_i \in [00, 01, 10, 11]$
+\pagebreak
+
+$s_0$
+\pagebreak
+
+$c_0$
+\pagebreak
+
+$k_a)$
+\pagebreak
+
+$k_w$
+\pagebreak
+
+$k_a=1$
+\pagebreak
+
+$k_w=2$
+\pagebreak
+
+$k_a$
+\pagebreak
+
+$\hat{\varphi}$
+\pagebreak
+
+\[ M(d) = \frac{|P(d)|^2}{(R(d))^2}, \]
+\pagebreak
+
+\[ R(d) = \frac{1}{2} \sum_{k=0}^{N-1} |r_{k+d}|^2, \]
+\pagebreak
+
+$ x=G^T s $
+\pagebreak
+
+$\overline{x}$
+\pagebreak
+
+$\mathbf{H}\bar{x}^{T}=\overline{0}$
+\pagebreak
+
+$\mathbf{G}=\left[\mathbf{I}_{k}|\mathbf{P}\right]$
+\pagebreak
+
+$\mathbf{I}_{k}$
+\pagebreak
+
+$\mathbf{P}$
+\pagebreak
+
+$\bar{s}$
+\pagebreak
+
+\[\overline{x}=\mathbf{G}^{T}\bar{s}\]
+\pagebreak
+
+\[\left[\begin{array}{ccc} T & A & B\\ E & C & D \end{array}\right]\]
+\pagebreak
+
+\[ y[n] + \sum_{k=1}^{M} a_k y[n-k] = \sum_{k=0}^{N} b_k x[n-k] \]
+\pagebreak
+
+\[ H(z) = \frac{\sum_{k=0}^{N} b_k z^{-k}}{1 + \sum_{k=1}^{M} a_k z^{-k}} \]
+\pagebreak
+
+$y$
+\pagebreak
+
+$a_k$
+\pagebreak
+
+$b_k$
+\pagebreak
+
+$M$
+\pagebreak
+
+$N$
+\pagebreak
+
+$a_0$
+\pagebreak
+
+\[ y[n] - \sum_{k=1}^{M} a_k y[n-k] = \sum_{k=0}^{N} b_k x[n-k] \]
+\pagebreak
+
+\[ H(z) = \frac{\sum_{k=0}^{M} b_k z^{-k}}{1 - \sum_{k=1}^{N} a_k z^{-k}} \]
+\pagebreak
+
+\end{document}

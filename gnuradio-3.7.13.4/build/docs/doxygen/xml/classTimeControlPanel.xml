@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classTimeControlPanel" kind="class" prot="public">
+    <compoundname>TimeControlPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QVBoxLayout</basecompoundref>
+    <includes refid="timecontrolpanel_8h" local="no">gnuradio/qtgui/timecontrolpanel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTimeControlPanel_1ad5104c961b2ec0cfa4d51bd62fc89da5" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimeDisplayForm" kindref="compound">TimeDisplayForm</ref> *</type>
+        <definition>TimeDisplayForm* TimeControlPanel::d_parent</definition>
+        <argsstring></argsstring>
+        <name>d_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="56" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a641a703d6ad060e5ab781e958fa4e779" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* TimeControlPanel::d_axes_box</definition>
+        <argsstring></argsstring>
+        <name>d_axes_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="57" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a337e897afa31c04135621caa6e88e6fa" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* TimeControlPanel::d_trigger_box</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="58" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1aaad2b4515431c4a308895b5580e6e7a8" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* TimeControlPanel::d_extras_box</definition>
+        <argsstring></argsstring>
+        <name>d_extras_box</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="59" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a63320116073c5488fa7af8e358a54539" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* TimeControlPanel::d_axes_layout</definition>
+        <argsstring></argsstring>
+        <name>d_axes_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="61" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1aae6cbbbcd25802c15d0e79b385a9b498" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TimeControlPanel::d_yoff_layout</definition>
+        <argsstring></argsstring>
+        <name>d_yoff_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="62" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a1e271d3a758ce762dbfb576bd031e9e6" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TimeControlPanel::d_yrange_layout</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="63" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a0e3efc2d50bc25e614042323b0edacfb" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TimeControlPanel::d_xmax_layout</definition>
+        <argsstring></argsstring>
+        <name>d_xmax_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a3b285542b018302ecdaf6413689498d8" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* TimeControlPanel::d_trigger_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="65" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a194206229d1d3ac71694d16e94e2adf5" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TimeControlPanel::d_trigger_level_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a209ad4cab26079b027c479945be69e0a" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* TimeControlPanel::d_trigger_delay_layout</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_delay_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="67" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a3b6d2779c70852a19e3ce2bf50d75224" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* TimeControlPanel::d_extras_layout</definition>
+        <argsstring></argsstring>
+        <name>d_extras_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1ac6ca9ecde5fbfdd568d80488eeb5ccf7" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TimeControlPanel::d_yoff_label</definition>
+        <argsstring></argsstring>
+        <name>d_yoff_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a5381527ed67d39ed4bb70e3af8be0320" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TimeControlPanel::d_yrange_label</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="71" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a585683e203a521ca0b4c570515f5c313" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TimeControlPanel::d_xmax_label</definition>
+        <argsstring></argsstring>
+        <name>d_xmax_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="72" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a75aa020cd3ad2aa1335fba7d6457b0e9" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TimeControlPanel::d_trigger_level_label</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="73" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a07dbab0aa204b372738091fa12700ea4" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* TimeControlPanel::d_trigger_delay_label</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_delay_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="74" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a6c31a82fd2ef4647d62b87ba00301e95" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* TimeControlPanel::d_autoscale_check</definition>
+        <argsstring></argsstring>
+        <name>d_autoscale_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="76" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a97773a080f796561ddb0bc80b010748a" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* TimeControlPanel::d_grid_check</definition>
+        <argsstring></argsstring>
+        <name>d_grid_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a70f369d503c18477bfd7a74b2cdca4f8" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* TimeControlPanel::d_axislabels_check</definition>
+        <argsstring></argsstring>
+        <name>d_axislabels_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="78" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a67af35339d5b5f4fcfc8f6370f4f729f" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_yoff_plus</definition>
+        <argsstring></argsstring>
+        <name>d_yoff_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a405b331c361212f67dab86bd605ec7fd" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TimeControlPanel::d_yoff_minus</definition>
+        <argsstring></argsstring>
+        <name>d_yoff_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="80" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a40fc6b59e82c017e240c316d4985244a" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_yrange_plus</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1ac777b02e4c5cd036899d65efe5858c61" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TimeControlPanel::d_yrange_minus</definition>
+        <argsstring></argsstring>
+        <name>d_yrange_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="81" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1afec50a2a473b32c8142a553090dfaed9" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_xmax_plus</definition>
+        <argsstring></argsstring>
+        <name>d_xmax_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1ade87c2814bf9e735b7cfa0fec304d746" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TimeControlPanel::d_xmax_minus</definition>
+        <argsstring></argsstring>
+        <name>d_xmax_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="82" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1ac4272a9714d15ed56275ad832a4f61a6" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* TimeControlPanel::d_trigger_mode_combo</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_mode_combo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="83" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1ae1f4ff7123093a6420300e53098b1c9a" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* TimeControlPanel::d_trigger_slope_combo</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_slope_combo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="84" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a5f2191dc12bb7f12315f3dfc32cb47c7" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_trigger_level_plus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a204b2abff21aa37b66dc85b62773edf0" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TimeControlPanel::d_trigger_level_minus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_level_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="85" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a47ef1d963a648ec0f411c254790b634c" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_trigger_delay_plus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_delay_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1afa3c7bd463078cf8ca1445c3592e9579" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * TimeControlPanel::d_trigger_delay_minus</definition>
+        <argsstring></argsstring>
+        <name>d_trigger_delay_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="86" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1a31eef7d7a15e32fa394dbb18720540a8" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_autoscale_button</definition>
+        <argsstring></argsstring>
+        <name>d_autoscale_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="87" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimeControlPanel_1afcc17df29aa4cc88990ab169e9839230" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* TimeControlPanel::d_stop_button</definition>
+        <argsstring></argsstring>
+        <name>d_stop_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="88" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTimeControlPanel_1a1cfa92e44d2b5fc63ba58362c2f68132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeControlPanel::TimeControlPanel</definition>
+        <argsstring>(TimeDisplayForm *form)</argsstring>
+        <name>TimeControlPanel</name>
+        <param>
+          <type><ref refid="classTimeDisplayForm" kindref="compound">TimeDisplayForm</ref> *</type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimeControlPanel_1adb1c5fca58652ca2f1fe964dcd12f875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TimeControlPanel::~TimeControlPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~TimeControlPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classTimeControlPanel_1a4e5e0e5b846f6ab4bf3a5f66e7049eff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::toggleAutoScale</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleAutoScale</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classTimeControlPanel_1ae7362d583aff237d1a83a9474460f8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::toggleGrid</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>toggleGrid</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classTimeControlPanel_1a8cadff4a4a5462e2f9892fa2100decb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::toggleTriggerMode</definition>
+        <argsstring>(gr::qtgui::trigger_mode mode)</argsstring>
+        <name>toggleTriggerMode</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1a49cbdbc60174a89351f281f769b72b91" kindref="member">gr::qtgui::trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classTimeControlPanel_1af6351bffed6c4f000a589886229d378d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::toggleTriggerSlope</definition>
+        <argsstring>(gr::qtgui::trigger_slope slope)</argsstring>
+        <name>toggleTriggerSlope</name>
+        <param>
+          <type><ref refid="namespacegr_1_1qtgui_1ad9b40f0b7d2d567bd8002fb3b9b0fd10" kindref="member">gr::qtgui::trigger_slope</ref></type>
+          <declname>slope</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classTimeControlPanel_1ad58dd54588da8eefb09ac95373a715c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::toggleStopButton</definition>
+        <argsstring>()</argsstring>
+        <name>toggleStopButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classTimeControlPanel_1a3e9a3a1174032df995b2cf945690484d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TimeControlPanel::signalToggleStopButton</definition>
+        <argsstring>()</argsstring>
+        <name>signalToggleStopButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11203">
+        <label>TimeControlPanel</label>
+        <link refid="classTimeControlPanel"/>
+        <childnode refid="11204" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11204">
+        <label>QVBoxLayout</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11205">
+        <label>TimeControlPanel</label>
+        <link refid="classTimeControlPanel"/>
+        <childnode refid="11206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11206">
+        <label>QVBoxLayout</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" line="38" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/timecontrolpanel.h" bodystart="37" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classTimeControlPanel_1a31eef7d7a15e32fa394dbb18720540a8" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_autoscale_button</name></member>
+      <member refid="classTimeControlPanel_1a6c31a82fd2ef4647d62b87ba00301e95" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_autoscale_check</name></member>
+      <member refid="classTimeControlPanel_1a641a703d6ad060e5ab781e958fa4e779" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_axes_box</name></member>
+      <member refid="classTimeControlPanel_1a63320116073c5488fa7af8e358a54539" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_axes_layout</name></member>
+      <member refid="classTimeControlPanel_1a70f369d503c18477bfd7a74b2cdca4f8" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_axislabels_check</name></member>
+      <member refid="classTimeControlPanel_1aaad2b4515431c4a308895b5580e6e7a8" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_extras_box</name></member>
+      <member refid="classTimeControlPanel_1a3b6d2779c70852a19e3ce2bf50d75224" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_extras_layout</name></member>
+      <member refid="classTimeControlPanel_1a97773a080f796561ddb0bc80b010748a" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_grid_check</name></member>
+      <member refid="classTimeControlPanel_1ad5104c961b2ec0cfa4d51bd62fc89da5" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_parent</name></member>
+      <member refid="classTimeControlPanel_1afcc17df29aa4cc88990ab169e9839230" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_stop_button</name></member>
+      <member refid="classTimeControlPanel_1a337e897afa31c04135621caa6e88e6fa" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_box</name></member>
+      <member refid="classTimeControlPanel_1a07dbab0aa204b372738091fa12700ea4" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_delay_label</name></member>
+      <member refid="classTimeControlPanel_1a209ad4cab26079b027c479945be69e0a" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_delay_layout</name></member>
+      <member refid="classTimeControlPanel_1afa3c7bd463078cf8ca1445c3592e9579" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_delay_minus</name></member>
+      <member refid="classTimeControlPanel_1a47ef1d963a648ec0f411c254790b634c" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_delay_plus</name></member>
+      <member refid="classTimeControlPanel_1a3b285542b018302ecdaf6413689498d8" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_layout</name></member>
+      <member refid="classTimeControlPanel_1a75aa020cd3ad2aa1335fba7d6457b0e9" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_level_label</name></member>
+      <member refid="classTimeControlPanel_1a194206229d1d3ac71694d16e94e2adf5" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_level_layout</name></member>
+      <member refid="classTimeControlPanel_1a204b2abff21aa37b66dc85b62773edf0" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_level_minus</name></member>
+      <member refid="classTimeControlPanel_1a5f2191dc12bb7f12315f3dfc32cb47c7" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_level_plus</name></member>
+      <member refid="classTimeControlPanel_1ac4272a9714d15ed56275ad832a4f61a6" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_mode_combo</name></member>
+      <member refid="classTimeControlPanel_1ae1f4ff7123093a6420300e53098b1c9a" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_trigger_slope_combo</name></member>
+      <member refid="classTimeControlPanel_1a585683e203a521ca0b4c570515f5c313" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_xmax_label</name></member>
+      <member refid="classTimeControlPanel_1a0e3efc2d50bc25e614042323b0edacfb" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_xmax_layout</name></member>
+      <member refid="classTimeControlPanel_1ade87c2814bf9e735b7cfa0fec304d746" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_xmax_minus</name></member>
+      <member refid="classTimeControlPanel_1afec50a2a473b32c8142a553090dfaed9" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_xmax_plus</name></member>
+      <member refid="classTimeControlPanel_1ac6ca9ecde5fbfdd568d80488eeb5ccf7" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yoff_label</name></member>
+      <member refid="classTimeControlPanel_1aae6cbbbcd25802c15d0e79b385a9b498" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yoff_layout</name></member>
+      <member refid="classTimeControlPanel_1a405b331c361212f67dab86bd605ec7fd" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yoff_minus</name></member>
+      <member refid="classTimeControlPanel_1a67af35339d5b5f4fcfc8f6370f4f729f" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yoff_plus</name></member>
+      <member refid="classTimeControlPanel_1a5381527ed67d39ed4bb70e3af8be0320" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yrange_label</name></member>
+      <member refid="classTimeControlPanel_1a1e271d3a758ce762dbfb576bd031e9e6" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yrange_layout</name></member>
+      <member refid="classTimeControlPanel_1ac777b02e4c5cd036899d65efe5858c61" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yrange_minus</name></member>
+      <member refid="classTimeControlPanel_1a40fc6b59e82c017e240c316d4985244a" prot="private" virt="non-virtual"><scope>TimeControlPanel</scope><name>d_yrange_plus</name></member>
+      <member refid="classTimeControlPanel_1a3e9a3a1174032df995b2cf945690484d" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>signalToggleStopButton</name></member>
+      <member refid="classTimeControlPanel_1a1cfa92e44d2b5fc63ba58362c2f68132" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>TimeControlPanel</name></member>
+      <member refid="classTimeControlPanel_1a4e5e0e5b846f6ab4bf3a5f66e7049eff" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>toggleAutoScale</name></member>
+      <member refid="classTimeControlPanel_1ae7362d583aff237d1a83a9474460f8d3" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>toggleGrid</name></member>
+      <member refid="classTimeControlPanel_1ad58dd54588da8eefb09ac95373a715c2" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>toggleStopButton</name></member>
+      <member refid="classTimeControlPanel_1a8cadff4a4a5462e2f9892fa2100decb7" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>toggleTriggerMode</name></member>
+      <member refid="classTimeControlPanel_1af6351bffed6c4f000a589886229d378d" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>toggleTriggerSlope</name></member>
+      <member refid="classTimeControlPanel_1adb1c5fca58652ca2f1fe964dcd12f875" prot="public" virt="non-virtual"><scope>TimeControlPanel</scope><name>~TimeControlPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

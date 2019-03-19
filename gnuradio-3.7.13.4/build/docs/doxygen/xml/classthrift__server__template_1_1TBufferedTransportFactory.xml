@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classthrift__server__template_1_1TBufferedTransportFactory" kind="class" prot="private">
+    <compoundname>thrift_server_template::TBufferedTransportFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TTransportFactory</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classthrift__server__template_1_1TBufferedTransportFactory_1a8963fa9ed5b8b812cb5c44cbbb4a1d03" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory::bufferSize</definition>
+        <argsstring></argsstring>
+        <name>bufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" line="77" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classthrift__server__template_1_1TBufferedTransportFactory_1a4a3b89610f46fdb67e80678891f19088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory::TBufferedTransportFactory</definition>
+        <argsstring>(const unsigned int _bufferSize)</argsstring>
+        <name>TBufferedTransportFactory</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>_bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" line="66" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__server__template_1_1TBufferedTransportFactory_1a93b5f9916cb5571c9be28a5e7021f3af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory::~TBufferedTransportFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~TBufferedTransportFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" line="68" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classthrift__server__template_1_1TBufferedTransportFactory_1a249f6ad9e4cfbb5c82c2dd2de563fded" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>boost::shared_ptr&lt; thrift::transport::TTransport &gt;</type>
+        <definition>virtual boost::shared_ptr&lt;thrift::transport::TTransport&gt; thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory::getTransport</definition>
+        <argsstring>(boost::shared_ptr&lt; thrift::transport::TTransport &gt; trans)</argsstring>
+        <name>getTransport</name>
+        <param>
+          <type>boost::shared_ptr&lt; thrift::transport::TTransport &gt;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" line="70" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" bodystart="70" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Custom TransportFactory that allows you to override the default Thrift buffer size of 512 bytes. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="11024">
+        <label>thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory</label>
+        <childnode refid="11025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11025">
+        <label>thrift::transport::TTransportFactory</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11026">
+        <label>thrift_server_template&lt; TserverBase, TserverClass, TImplClass &gt;::TBufferedTransportFactory</label>
+        <childnode refid="11027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11027">
+        <label>thrift::transport::TTransportFactory</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" line="64" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gnuradio-runtime/include/gnuradio/thrift_server_template.h" bodystart="63" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classthrift__server__template_1_1TBufferedTransportFactory_1a8963fa9ed5b8b812cb5c44cbbb4a1d03" prot="private" virt="non-virtual"><scope>thrift_server_template::TBufferedTransportFactory</scope><name>bufferSize</name></member>
+      <member refid="classthrift__server__template_1_1TBufferedTransportFactory_1a249f6ad9e4cfbb5c82c2dd2de563fded" prot="public" virt="virtual"><scope>thrift_server_template::TBufferedTransportFactory</scope><name>getTransport</name></member>
+      <member refid="classthrift__server__template_1_1TBufferedTransportFactory_1a4a3b89610f46fdb67e80678891f19088" prot="public" virt="non-virtual"><scope>thrift_server_template::TBufferedTransportFactory</scope><name>TBufferedTransportFactory</name></member>
+      <member refid="classthrift__server__template_1_1TBufferedTransportFactory_1a93b5f9916cb5571c9be28a5e7021f3af" prot="public" virt="virtual"><scope>thrift_server_template::TBufferedTransportFactory</scope><name>~TBufferedTransportFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,945 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classSpectrumGUIClass" kind="class" prot="public">
+    <compoundname>SpectrumGUIClass</compoundname>
+    <includes refid="SpectrumGUIClass_8h" local="no">gnuradio/qtgui/SpectrumGUIClass.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classSpectrumGUIClass_1aac6fdce41c1ce4156264a906bf89cedb" prot="public" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long SpectrumGUIClass::MAX_FFT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_FFT_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="93" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a7d170e0bf5bf71113f11abd80a50d1ae" prot="public" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long SpectrumGUIClass::MIN_FFT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MIN_FFT_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="94" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a92be9998745c18fe705e7ad5bb49221e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1thread_1a36ddd13da52283c5a38d285cd901d348" kindref="member">gr::thread::mutex</ref></type>
+        <definition>gr::thread::mutex SpectrumGUIClass::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="115" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1af8b887a188d54343f123da7e80d2805d" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t SpectrumGUIClass::_dataPoints</definition>
+        <argsstring></argsstring>
+        <name>_dataPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="116" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1ad19fb5402e57e3ac3554500cff3fd504" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SpectrumGUIClass::_title</definition>
+        <argsstring></argsstring>
+        <name>_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="117" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a50c6e48266d738e17fee8504490c3c1e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::_centerFrequency</definition>
+        <argsstring></argsstring>
+        <name>_centerFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="118" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1ae2619edfc4261193caf39ff1f7f338d6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::_startFrequency</definition>
+        <argsstring></argsstring>
+        <name>_startFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="119" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1abaf694b4b74c453e1d12123bc42bcd90" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::_stopFrequency</definition>
+        <argsstring></argsstring>
+        <name>_stopFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="120" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a1c508eaea1ab7b35bf3341cd0d6748d5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SpectrumGUIClass::_powerValue</definition>
+        <argsstring></argsstring>
+        <name>_powerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="121" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1ad7085d901cbd23a8be72c278985c41d0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumGUIClass::_windowOpennedFlag</definition>
+        <argsstring></argsstring>
+        <name>_windowOpennedFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="122" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a6dbc97b89c5b47f50f854818bde41bbc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::_windowType</definition>
+        <argsstring></argsstring>
+        <name>_windowType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="123" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a8e2e8ea4bdf7760a15fbad7eec3d834e" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t SpectrumGUIClass::_lastDataPointCount</definition>
+        <argsstring></argsstring>
+        <name>_lastDataPointCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="124" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1ac1c67224da760880d496c4eb0310d836" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::_fftSize</definition>
+        <argsstring></argsstring>
+        <name>_fftSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="125" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a125d935a4261aa1c102a0d89286a871e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumGUIClass::_lastGUIUpdateTime</definition>
+        <argsstring></argsstring>
+        <name>_lastGUIUpdateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="126" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1aaf317b7ba79bbdd0e7e6d3dbda39f70c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SpectrumGUIClass::_pendingGUIUpdateEventsCount</definition>
+        <argsstring></argsstring>
+        <name>_pendingGUIUpdateEventsCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="127" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1aeb93fd239126fb35fe2a1fce2420ebe6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::_droppedEntriesCount</definition>
+        <argsstring></argsstring>
+        <name>_droppedEntriesCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="128" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a6745d8967855c22164f314273836f033" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SpectrumGUIClass::_fftBuffersCreatedFlag</definition>
+        <argsstring></argsstring>
+        <name>_fftBuffersCreatedFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="129" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1ae109598afd2c405fdf6cec1fb6362aae" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::_updateTime</definition>
+        <argsstring></argsstring>
+        <name>_updateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="130" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a27d6ac2746598d0739695dab67c915fd" prot="private" static="no" mutable="no">
+        <type><ref refid="classSpectrumDisplayForm" kindref="compound">SpectrumDisplayForm</ref> *</type>
+        <definition>SpectrumDisplayForm* SpectrumGUIClass::_spectrumDisplayForm</definition>
+        <argsstring></argsstring>
+        <name>_spectrumDisplayForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="132" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a007dbcc42455b648236b39ed83e1cd87" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* SpectrumGUIClass::_fftPoints</definition>
+        <argsstring></argsstring>
+        <name>_fftPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="134" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a365dee68117865a79bb4b5b7230eb21c" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumGUIClass::_realTimeDomainPoints</definition>
+        <argsstring></argsstring>
+        <name>_realTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="135" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSpectrumGUIClass_1a285ed755afa99584919b7486fc8e8b7b" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SpectrumGUIClass::_imagTimeDomainPoints</definition>
+        <argsstring></argsstring>
+        <name>_imagTimeDomainPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="136" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSpectrumGUIClass_1a02abf3a0219e0f26813c491e629e7ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumGUIClass::SpectrumGUIClass</definition>
+        <argsstring>(const uint64_t maxDataSize, const uint64_t fftSize, const double newCenterFrequency, const double newStartFrequency, const double newStopFrequency)</argsstring>
+        <name>SpectrumGUIClass</name>
+        <param>
+          <type>const uint64_t</type>
+          <declname>maxDataSize</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>fftSize</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>newCenterFrequency</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>newStartFrequency</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>newStopFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a1a162389bfac152c5ebe68589cdf9b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpectrumGUIClass::~SpectrumGUIClass</definition>
+        <argsstring>()</argsstring>
+        <name>~SpectrumGUIClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a512f245e6777a4baa4b6144d96c0c8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a7a525528ffccf8ba579ad4cb6e4c703a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::openSpectrumWindow</definition>
+        <argsstring>(QWidget *, const bool frequency=true, const bool waterfall=true, const bool time=true, const bool constellation=true)</argsstring>
+        <name>openSpectrumWindow</name>
+        <param>
+          <type>QWidget *</type>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>frequency</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>waterfall</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>time</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>constellation</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a19279bdb9ae9735a1ae92bc212d968a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setDisplayTitle</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>setDisplayTitle</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a87166379d71bef43a34b6d69e6c4c235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpectrumGUIClass::getWindowOpenFlag</definition>
+        <argsstring>()</argsstring>
+        <name>getWindowOpenFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a54eada85122a9ca5554f6a8238a980a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setWindowOpenFlag</definition>
+        <argsstring>(const bool)</argsstring>
+        <name>setWindowOpenFlag</name>
+        <param>
+          <type>const bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a9a32b28627d005686d37d3876fae5ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setFrequencyRange</definition>
+        <argsstring>(const double, const double, const double)</argsstring>
+        <name>setFrequencyRange</name>
+        <param>
+          <type>const double</type>
+        </param>
+        <param>
+          <type>const double</type>
+        </param>
+        <param>
+          <type>const double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1aed83133202bdfece0f791b7c90102287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::getStartFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>getStartFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ac2a9d5077e656c0d741b6db8c7dafd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::getStopFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>getStopFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a66c03814f89892bb539883224563a588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpectrumGUIClass::getCenterFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>getCenterFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ab9cb54f645cc229581fcb93c231053e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::updateWindow</definition>
+        <argsstring>(const bool, const float *, const uint64_t, const float *, const uint64_t, const float *, const uint64_t, const gr::high_res_timer_type, const bool)</argsstring>
+        <name>updateWindow</name>
+        <param>
+          <type>const bool</type>
+        </param>
+        <param>
+          <type>const float *</type>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+        </param>
+        <param>
+          <type>const float *</type>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+        </param>
+        <param>
+          <type>const float *</type>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+        </param>
+        <param>
+          <type>const <ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        </param>
+        <param>
+          <type>const bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ac0e959225ed0b4e3afaa19d905e573bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SpectrumGUIClass::getPowerValue</definition>
+        <argsstring>()</argsstring>
+        <name>getPowerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a205871a7e520af991dabb056e89c68a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setPowerValue</definition>
+        <argsstring>(const float)</argsstring>
+        <name>setPowerValue</name>
+        <param>
+          <type>const float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1aab0bca0a449c245b2d37a2ad0aa53226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::getWindowType</definition>
+        <argsstring>()</argsstring>
+        <name>getWindowType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a09a98d2ffa66e46bfefd11648403f939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setWindowType</definition>
+        <argsstring>(const int)</argsstring>
+        <name>setWindowType</name>
+        <param>
+          <type>const int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ae7c4bd27ab964a4b1a328ddc5bbdec13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::getFFTSize</definition>
+        <argsstring>()</argsstring>
+        <name>getFFTSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a0a4a9cf2342a87bfb1e7cfd1ed426cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpectrumGUIClass::getFFTSizeIndex</definition>
+        <argsstring>()</argsstring>
+        <name>getFFTSizeIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a076c209c0eda0170df57d532f7fd2de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setFFTSize</definition>
+        <argsstring>(const int)</argsstring>
+        <name>setFFTSize</name>
+        <param>
+          <type>const int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a88bc1eaa73c5dfae88d415a571f063ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        <definition>gr::high_res_timer_type SpectrumGUIClass::getLastGUIUpdateTime</definition>
+        <argsstring>()</argsstring>
+        <name>getLastGUIUpdateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a7a14e8faa5b56f6dc421683e238b1a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setLastGUIUpdateTime</definition>
+        <argsstring>(const gr::high_res_timer_type)</argsstring>
+        <name>setLastGUIUpdateTime</name>
+        <param>
+          <type>const <ref refid="namespacegr_1ad4aea84666e5468efd75c7f580cbd967" kindref="member">gr::high_res_timer_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1afee06c4a3004a19a0962bed7759942bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpectrumGUIClass::getPendingGUIUpdateEvents</definition>
+        <argsstring>()</argsstring>
+        <name>getPendingGUIUpdateEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a8044c04273224643c28255a3afe572fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::incrementPendingGUIUpdateEvents</definition>
+        <argsstring>()</argsstring>
+        <name>incrementPendingGUIUpdateEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1aa4074d3084c586497c658e7d47ca2ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::decrementPendingGUIUpdateEvents</definition>
+        <argsstring>()</argsstring>
+        <name>decrementPendingGUIUpdateEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a3c4cee2cef92ccb37a1d29e053675bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::resetPendingGUIUpdateEvents</definition>
+        <argsstring>()</argsstring>
+        <name>resetPendingGUIUpdateEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a6b6be2003a679676a678c9b490fcf5f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget* SpectrumGUIClass::qwidget</definition>
+        <argsstring>()</argsstring>
+        <name>qwidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ab4403b2567fe35b5065607cbf469c409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setTimeDomainAxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setTimeDomainAxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a916326e205fed30f483235bc4832666e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setConstellationAxis</definition>
+        <argsstring>(double xmin, double xmax, double ymin, double ymax)</argsstring>
+        <name>setConstellationAxis</name>
+        <param>
+          <type>double</type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ymin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ymax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a64f7918904c6194aa052d08ba036410e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setConstellationPenSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>setConstellationPenSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a4873fa3094477bb3c0bc1c56bb7e8aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setFrequencyAxis</definition>
+        <argsstring>(double min, double max)</argsstring>
+        <name>setFrequencyAxis</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ae4f9dfa3c2b62b758ccc5d9ad23ab91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::setUpdateTime</definition>
+        <argsstring>(double t)</argsstring>
+        <name>setUpdateTime</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ab8c043c1352006e0e81fed7d64f93674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpectrumGUIClass::enableRFFreq</definition>
+        <argsstring>(bool en)</argsstring>
+        <name>enableRFFreq</name>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1ac4d8d419062b7fbdf5f45366d4e70219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpectrumGUIClass::checkClicked</definition>
+        <argsstring>()</argsstring>
+        <name>checkClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSpectrumGUIClass_1a77e4899a92d34b4f9787f3c1d2db9743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SpectrumGUIClass::getClickedFreq</definition>
+        <argsstring>()</argsstring>
+        <name>getClickedFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="109" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>QWidget class for controlling plotting. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" line="47" column="1" bodyfile="/home/udooer/Downloads/gnuradio-3.7.13.4/gr-qtgui/include/gnuradio/qtgui/SpectrumGUIClass.h" bodystart="46" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classSpectrumGUIClass_1a50c6e48266d738e17fee8504490c3c1e" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_centerFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1af8b887a188d54343f123da7e80d2805d" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_dataPoints</name></member>
+      <member refid="classSpectrumGUIClass_1aeb93fd239126fb35fe2a1fce2420ebe6" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_droppedEntriesCount</name></member>
+      <member refid="classSpectrumGUIClass_1a6745d8967855c22164f314273836f033" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_fftBuffersCreatedFlag</name></member>
+      <member refid="classSpectrumGUIClass_1a007dbcc42455b648236b39ed83e1cd87" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_fftPoints</name></member>
+      <member refid="classSpectrumGUIClass_1ac1c67224da760880d496c4eb0310d836" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_fftSize</name></member>
+      <member refid="classSpectrumGUIClass_1a285ed755afa99584919b7486fc8e8b7b" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_imagTimeDomainPoints</name></member>
+      <member refid="classSpectrumGUIClass_1a8e2e8ea4bdf7760a15fbad7eec3d834e" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_lastDataPointCount</name></member>
+      <member refid="classSpectrumGUIClass_1a125d935a4261aa1c102a0d89286a871e" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_lastGUIUpdateTime</name></member>
+      <member refid="classSpectrumGUIClass_1aaf317b7ba79bbdd0e7e6d3dbda39f70c" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_pendingGUIUpdateEventsCount</name></member>
+      <member refid="classSpectrumGUIClass_1a1c508eaea1ab7b35bf3341cd0d6748d5" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_powerValue</name></member>
+      <member refid="classSpectrumGUIClass_1a365dee68117865a79bb4b5b7230eb21c" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_realTimeDomainPoints</name></member>
+      <member refid="classSpectrumGUIClass_1a27d6ac2746598d0739695dab67c915fd" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_spectrumDisplayForm</name></member>
+      <member refid="classSpectrumGUIClass_1ae2619edfc4261193caf39ff1f7f338d6" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_startFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1abaf694b4b74c453e1d12123bc42bcd90" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_stopFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1ad19fb5402e57e3ac3554500cff3fd504" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_title</name></member>
+      <member refid="classSpectrumGUIClass_1ae109598afd2c405fdf6cec1fb6362aae" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_updateTime</name></member>
+      <member refid="classSpectrumGUIClass_1ad7085d901cbd23a8be72c278985c41d0" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_windowOpennedFlag</name></member>
+      <member refid="classSpectrumGUIClass_1a6dbc97b89c5b47f50f854818bde41bbc" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>_windowType</name></member>
+      <member refid="classSpectrumGUIClass_1ac4d8d419062b7fbdf5f45366d4e70219" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>checkClicked</name></member>
+      <member refid="classSpectrumGUIClass_1a92be9998745c18fe705e7ad5bb49221e" prot="private" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>d_mutex</name></member>
+      <member refid="classSpectrumGUIClass_1aa4074d3084c586497c658e7d47ca2ba7" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>decrementPendingGUIUpdateEvents</name></member>
+      <member refid="classSpectrumGUIClass_1ab8c043c1352006e0e81fed7d64f93674" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>enableRFFreq</name></member>
+      <member refid="classSpectrumGUIClass_1a66c03814f89892bb539883224563a588" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getCenterFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1a77e4899a92d34b4f9787f3c1d2db9743" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getClickedFreq</name></member>
+      <member refid="classSpectrumGUIClass_1ae7c4bd27ab964a4b1a328ddc5bbdec13" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getFFTSize</name></member>
+      <member refid="classSpectrumGUIClass_1a0a4a9cf2342a87bfb1e7cfd1ed426cbd" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getFFTSizeIndex</name></member>
+      <member refid="classSpectrumGUIClass_1a88bc1eaa73c5dfae88d415a571f063ba" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getLastGUIUpdateTime</name></member>
+      <member refid="classSpectrumGUIClass_1afee06c4a3004a19a0962bed7759942bf" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getPendingGUIUpdateEvents</name></member>
+      <member refid="classSpectrumGUIClass_1ac0e959225ed0b4e3afaa19d905e573bd" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getPowerValue</name></member>
+      <member refid="classSpectrumGUIClass_1aed83133202bdfece0f791b7c90102287" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getStartFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1ac2a9d5077e656c0d741b6db8c7dafd32" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getStopFrequency</name></member>
+      <member refid="classSpectrumGUIClass_1a87166379d71bef43a34b6d69e6c4c235" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getWindowOpenFlag</name></member>
+      <member refid="classSpectrumGUIClass_1aab0bca0a449c245b2d37a2ad0aa53226" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>getWindowType</name></member>
+      <member refid="classSpectrumGUIClass_1a8044c04273224643c28255a3afe572fd" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>incrementPendingGUIUpdateEvents</name></member>
+      <member refid="classSpectrumGUIClass_1aac6fdce41c1ce4156264a906bf89cedb" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>MAX_FFT_SIZE</name></member>
+      <member refid="classSpectrumGUIClass_1a7d170e0bf5bf71113f11abd80a50d1ae" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>MIN_FFT_SIZE</name></member>
+      <member refid="classSpectrumGUIClass_1a7a525528ffccf8ba579ad4cb6e4c703a" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>openSpectrumWindow</name></member>
+      <member refid="classSpectrumGUIClass_1a6b6be2003a679676a678c9b490fcf5f1" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>qwidget</name></member>
+      <member refid="classSpectrumGUIClass_1a512f245e6777a4baa4b6144d96c0c8db" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>reset</name></member>
+      <member refid="classSpectrumGUIClass_1a3c4cee2cef92ccb37a1d29e053675bd6" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>resetPendingGUIUpdateEvents</name></member>
+      <member refid="classSpectrumGUIClass_1a916326e205fed30f483235bc4832666e" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setConstellationAxis</name></member>
+      <member refid="classSpectrumGUIClass_1a64f7918904c6194aa052d08ba036410e" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setConstellationPenSize</name></member>
+      <member refid="classSpectrumGUIClass_1a19279bdb9ae9735a1ae92bc212d968a5" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setDisplayTitle</name></member>
+      <member refid="classSpectrumGUIClass_1a076c209c0eda0170df57d532f7fd2de2" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setFFTSize</name></member>
+      <member refid="classSpectrumGUIClass_1a4873fa3094477bb3c0bc1c56bb7e8aa2" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setFrequencyAxis</name></member>
+      <member refid="classSpectrumGUIClass_1a9a32b28627d005686d37d3876fae5ad4" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setFrequencyRange</name></member>
+      <member refid="classSpectrumGUIClass_1a7a14e8faa5b56f6dc421683e238b1a0c" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setLastGUIUpdateTime</name></member>
+      <member refid="classSpectrumGUIClass_1a205871a7e520af991dabb056e89c68a8" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setPowerValue</name></member>
+      <member refid="classSpectrumGUIClass_1ab4403b2567fe35b5065607cbf469c409" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setTimeDomainAxis</name></member>
+      <member refid="classSpectrumGUIClass_1ae4f9dfa3c2b62b758ccc5d9ad23ab91b" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setUpdateTime</name></member>
+      <member refid="classSpectrumGUIClass_1a54eada85122a9ca5554f6a8238a980a5" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setWindowOpenFlag</name></member>
+      <member refid="classSpectrumGUIClass_1a09a98d2ffa66e46bfefd11648403f939" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>setWindowType</name></member>
+      <member refid="classSpectrumGUIClass_1a02abf3a0219e0f26813c491e629e7ffe" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>SpectrumGUIClass</name></member>
+      <member refid="classSpectrumGUIClass_1ab9cb54f645cc229581fcb93c231053e2" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>updateWindow</name></member>
+      <member refid="classSpectrumGUIClass_1a1a162389bfac152c5ebe68589cdf9b93" prot="public" virt="non-virtual"><scope>SpectrumGUIClass</scope><name>~SpectrumGUIClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
